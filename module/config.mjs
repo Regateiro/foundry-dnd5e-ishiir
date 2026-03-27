@@ -564,6 +564,7 @@ DND5E.limitedUseFormulaPeriods = {
  */
 DND5E.limitedUsePeriods = {
   sr: "DND5E.ShortRest",
+  mr: "DND5E.MixedRest",
   lr: "DND5E.LongRest",
   day: "DND5E.Day",
   ...DND5E.limitedUseFormulaPeriods

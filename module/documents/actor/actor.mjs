@@ -2113,7 +2113,15 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   _getRestResourceRecovery({recoverShortRestResources=true, recoverLongRestResources=true}={}) {
     let updates = {};
     for ( let [k, r] of Object.entries(this.system.resources) ) {
-      if ( Number.isNumeric(r.max) && ((recoverShortRestResources && r.sr) || (recoverLongRestResources && r.lr)) ) {
+      // Skip resources which do not have a numeric maximum
+      if ( !Number.isNumeric(r.max) ) continue;
+
+      // If the resource recovers on a mixed rest, then increase the uses by 1 on a short rest, up to the maximum
+      if ( recoverShortRestResources && r.mr ) {
+        updates[`system.resources.${k}.value`] = Math.min(r.value + 1, Number(r.max));
+      }
+      // Otherwise, fully recover the resource on a short rest or long rest as appropriate
+      else if ( (recoverShortRestResources && r.sr) || (recoverLongRestResources && (r.lr || r.mr)) ) {
         updates[`system.resources.${k}.value`] = Number(r.max);
       }
     }
@@ -2194,14 +2202,23 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     recoverDailyUses=true, rolls}={}) {
     let recovery = [];
     if ( recoverShortRestUses ) recovery.push("sr");
-    if ( recoverLongRestUses ) recovery.push("lr");
+    if ( recoverLongRestUses ) recovery.push("lr", "mr");
     if ( recoverDailyUses ) recovery.push("day");
     let updates = [];
     for ( let item of this.items ) {
       const uses = item.system.uses;
-      if ( recovery.includes(uses?.per) ) {
+      // If the item recovers on a mixed rest, then
+      //   increase the uses by 1 on a short rest, up to the maximum
+      if ( recoverShortRestUses && uses?.per === "mr" ) {
+        updates.push({_id: item.id, "system.uses.value": Math.min(uses.value + 1, uses.max)});
+      }
+      // Otherwise, fully recover the item if the recovery method matches the rest type
+      //   (mr items will also be fully recovered on a long rest)
+      else if ( recovery.includes(uses?.per) ) {
         updates.push({_id: item.id, "system.uses.value": uses.max});
       }
+
+      // Items that fully recharge on a long rest should also have their recharge status reset
       if ( recoverLongRestUses && item.system.recharge?.value ) {
         updates.push({_id: item.id, "system.recharge.charged": true});
       }

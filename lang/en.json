@@ -959,6 +959,7 @@
 "DND5E.RollExample": "e.g. 1d4",
 "DND5E.RollMode": "Roll Mode",
 "DND5E.RollSituationalBonus": "Situational Bonus?",
+"DND5E.MixedRest": "Mixed Rest",
 "DND5E.Movement": "Movement",
 "DND5E.MovementConfig": "Configure Movement Speed",
 "DND5E.MovementConfigHint": "Configure movement speed and special movement attributes.",
