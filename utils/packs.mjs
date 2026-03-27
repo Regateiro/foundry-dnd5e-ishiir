@@ -28,6 +28,9 @@ const argv = yargs(hideBin(process.argv))
   .argv;
 
 
+/**
+ *
+ */
 function packageCommand() {
   return {
     command: "package [action] [pack] [entry]",
