@@ -2116,12 +2116,13 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       // Skip resources which do not have a numeric maximum
       if ( !Number.isNumeric(r.max) ) continue;
 
-      // If the resource recovers on a mixed rest, then increase the uses by 1 on a short rest, up to the maximum
-      if ( recoverShortRestResources && r.mr ) {
+      // If the resource recovers on a mixed rest (sr + lr)
+      //   then increase the uses by 1 on a short rest, up to the maximum
+      if ( recoverShortRestResources && r.sr && r.lr ) {
         updates[`system.resources.${k}.value`] = Math.min(r.value + 1, Number(r.max));
       }
       // Otherwise, fully recover the resource on a short rest or long rest as appropriate
-      else if ( (recoverShortRestResources && r.sr) || (recoverLongRestResources && (r.lr || r.mr)) ) {
+      else if ( r.sr || (recoverLongRestResources && r.lr) ) {
         updates[`system.resources.${k}.value`] = Number(r.max);
       }
     }
@@ -2209,7 +2210,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       const uses = item.system.uses;
       // If the item recovers on a mixed rest, then
       //   increase the uses by 1 on a short rest, up to the maximum
-      if ( recoverShortRestUses && uses?.per === "mr" ) {
+      if ( recoverShortRestUses && !recoverLongRestUses && uses?.per === "mr" ) {
         updates.push({_id: item.id, "system.uses.value": Math.min(uses.value + 1, uses.max)});
       }
       // Otherwise, fully recover the item if the recovery method matches the rest type

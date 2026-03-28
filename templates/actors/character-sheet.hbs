@@ -221,13 +221,23 @@
                         </h4>
                         <div class="attribute-value">
                             <label class="recharge checkbox flexcol">
-                                <span>{{ localize "DND5E.AbbreviationSR" }}</span><input name="system.resources.{{res.name}}.sr" type="checkbox" {{checked res.sr}}/>
+                                {{#if (and res.sr res.lr)}}
+                                    <span>{{ localize "DND5E.AbbreviationMR" }}</span>
+                                {{else}}
+                                    <span>{{ localize "DND5E.AbbreviationSR" }}</span>
+                                {{/if}}
+                                </span><input name="system.resources.{{res.name}}.sr" type="checkbox" {{checked res.sr}}/>
                             </label>
                             <input type="text" name="system.resources.{{res.name}}.value" value="{{res.value}}" placeholder="0" data-dtype="Number">
                             <span class="sep"> / </span>
                             <input type="text" name="system.resources.{{res.name}}.max" value="{{res.max}}" placeholder="0" data-dtype="Number">
                             <label class="recharge checkbox flexcol">
-                                <span>{{ localize "DND5E.AbbreviationLR" }}</span><input name="system.resources.{{res.name}}.lr" type="checkbox" {{checked res.lr}}/>
+                                {{#if (and res.sr res.lr)}}
+                                    <span>{{ localize "DND5E.AbbreviationMR" }}</span>
+                                {{else}}
+                                    <span>{{ localize "DND5E.AbbreviationLR" }}</span>
+                                {{/if}}
+                                <input name="system.resources.{{res.name}}.lr" type="checkbox" {{checked res.lr}}/>
                             </label>
                         </div>
                     </li>
