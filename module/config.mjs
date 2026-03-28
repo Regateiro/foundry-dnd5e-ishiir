@@ -295,6 +295,7 @@ preLocalize("toolProficiencies", { sort: true });
  */
 DND5E.toolIds = {
   alchemist: "SztwZhbhZeCqyAes",
+  armorsmith: "A3EOiW7PDBmRnSqy",
   bagpipes: "yxHi57T5mmVt0oDr",
   brewer: "Y9S75go1hLMXUD48",
   calligrapher: "jhjo20QoiD5exf09",
@@ -308,6 +309,7 @@ DND5E.toolIds = {
   disg: "IBhDAr7WkhWPYLVn",
   drum: "69Dpr25pf4BjkHKb",
   dulcimer: "NtdDkjmpdIMiX7I2",
+  enchanter: "NfYEGy5nOh5UFxCe",
   flute: "eJOrPcAz9EcquyRQ",
   forg: "cG3m4YlHfbQlLEOx",
   glassblower: "rTbVrNcwApnuTz5E",
@@ -324,10 +326,10 @@ DND5E.toolIds = {
   pois: "il2GNi8C0DvGLL9P",
   potter: "hJS8yEVkqgJjwfWa",
   shawm: "G3cqbejJpfB91VhP",
-  smith: "KndVe2insuctjIaj",
   thief: "woWZ1sO5IUVGzo58",
   tinker: "0d08g1i5WXnNrCNA",
   viol: "baoe3U5BfMMMxhCU",
+  weaponsmith: "KndVe2insuctjIaj",
   weaver: "ap9prThUB2y9lDyj",
   woodcarver: "xKErqkLo4ASYr5EP"
 };

@@ -1,11 +1,11 @@
 {
   "_id": "KndVe2insuctjIaj",
-  "name": "Smith's Tools",
+  "name": "Weaponsmith's Tools",
   "type": "tool",
   "img": "icons/skills/trades/smithing-tongs-metal-red.webp",
   "system": {
     "description": {
-      "value": "<p>These special tools include the items needed to pursue a craft or trade in smithing.</p>\n<p>Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.</p>",
+      "value": "<p>These special tools include the items needed to pursue a craft or trade in weaponsmithing.</p>\n<p>Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -26,7 +26,7 @@
     "rarity": "",
     "identified": true,
     "toolType": "art",
-    "baseItem": "smith",
+    "baseItem": "weaponsmith",
     "ability": "str",
     "chatFlavor": "",
     "proficient": null,
@@ -41,7 +41,7 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "2.1.0",
+    "systemVersion": "2.4.2",
     "coreVersion": "10.291",
     "createdTime": 1661787233613,
     "modifiedTime": 1671220959984,
