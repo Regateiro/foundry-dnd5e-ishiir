@@ -614,14 +614,17 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     if ( !this.hasSave ) return null;
     const save = this.system.save;
 
+    // Calculate the bonus to the save DC, which may be a flat number or half the actor's proficiency
+    const bonus = save.bonus === "halfProf" ? Math.floor(this.system.prof._baseProficiency / 2) : Number(save.bonus) || 0;
+
     // Actor spell-DC based scaling
     if ( save.scaling === "spell" ) {
-      save.dc = this.isOwned ? this.actor.system.attributes.spelldc : null;
+      save.dc = this.isOwned ? this.actor.system.attributes.spelldc + bonus : null;
     }
 
     // Ability-score based scaling
     else if ( save.scaling !== "flat" ) {
-      save.dc = this.isOwned ? this.actor.system.abilities[save.scaling].dc : null;
+      save.dc = this.isOwned ? this.actor.system.abilities[save.scaling].dc + bonus : null;
     }
 
     // Update labels

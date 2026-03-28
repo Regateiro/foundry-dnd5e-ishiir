@@ -19,6 +19,7 @@ import { FormulaField } from "../../fields.mjs";
  * @property {string} save.ability        Ability required for the save.
  * @property {number} save.dc             Custom saving throw value.
  * @property {string} save.scaling        Method for automatically determining saving throw DC.
+ * @property {string} save.bonus          Bonus to the saving throw.
  * @mixin
  */
 export default class ActionTemplate extends SystemDataModel {
@@ -53,6 +54,9 @@ export default class ActionTemplate extends SystemDataModel {
         }),
         scaling: new foundry.data.fields.StringField({
           required: true, blank: false, initial: "spell", label: "DND5E.ScalingFormula"
+        }),
+        bonus: new foundry.data.fields.StringField({
+          required: true, blank: false, initial: "0", label: "DND5E.SavingThrowBonus"
         })
       }, {label: "DND5E.SavingThrow"})
     };
