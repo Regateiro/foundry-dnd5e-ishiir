@@ -71,12 +71,12 @@
 ## Quick Reference Table
 | Task | Command |
 |------|---------|
-| Clean cache | `npm run build:clean` |
-| Rebuild all | `npm run build` |
-| Lint only | `npm run lint` |
-| Auto‑fix | `npm run lint:fix` |
-| Watch styles | `npm run watch` |
+| Clean cache | `source .venv/bin/activate && npm run build:clean` |
+| Rebuild all | `source .venv/bin/activate && npm run build` |
+| Lint only | `source .venv/bin/activate && npm run lint` |
+| Auto‑fix | `source .venv/bin/activate && npm run lint:fix` |
+| Watch styles | `source .venv/bin/activate && npm run watch` |
 
 ---
 
-**Tip**: After any change, run `npm run lint && npm run build` to ensure code quality and a fresh bundle.
+**Tip**: After any change, run `source .venv/bin/activate && npm run lint && npm run build` to ensure code quality and a fresh bundle.
