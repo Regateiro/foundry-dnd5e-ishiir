@@ -1667,6 +1667,7 @@ DND5E.consumableResources = [
 DND5E.conditionTypes = {
   blinded: "DND5E.ConBlinded",
   charmed: "DND5E.ConCharmed",
+  dazed: "DND5E.ConDazed",
   deafened: "DND5E.ConDeafened",
   diseased: "DND5E.ConDiseased",
   exhaustion: "DND5E.ConExhaustion",
@@ -1674,6 +1675,7 @@ DND5E.conditionTypes = {
   grappled: "DND5E.ConGrappled",
   incapacitated: "DND5E.ConIncapacitated",
   invisible: "DND5E.ConInvisible",
+  lacerated: "DND5E.ConLacerated",
   paralyzed: "DND5E.ConParalyzed",
   petrified: "DND5E.ConPetrified",
   poisoned: "DND5E.ConPoisoned",
@@ -1711,9 +1713,11 @@ DND5E.languages = {
     children: {
       aarakocra: "DND5E.LanguagesAarakocra",
       abyssal: "DND5E.LanguagesAbyssal",
+      aven: "DND5E.LanguagesAven",
       celestial: "DND5E.LanguagesCelestial",
       deep: "DND5E.LanguagesDeepSpeech",
       draconic: "DND5E.LanguagesDraconic",
+      gatari: "DND5E.LanguagesGatari",
       gith: "DND5E.LanguagesGith",
       gnoll: "DND5E.LanguagesGnoll",
       infernal: "DND5E.LanguagesInfernal",
@@ -1726,12 +1730,15 @@ DND5E.languages = {
           terran: "DND5E.LanguagesTerran"
         }
       },
+      saurian: "DND5E.LanguagesSaurian",
       sylvan: "DND5E.LanguagesSylvan",
-      undercommon: "DND5E.LanguagesUndercommon"
+      undercommon: "DND5E.LanguagesUndercommon",
+      umbral: "DND5E.LanguagesUmbral"
     }
   },
   druidic: "DND5E.LanguagesDruidic",
-  cant: "DND5E.LanguagesThievesCant"
+  cant: "DND5E.LanguagesThievesCant",
+  telepathy: "DND5E.LanguagesTelepathy"
 };
 preLocalize("languages", { key: "label" });
 preLocalize("languages.standard.children", { sort: true });
