@@ -36,6 +36,11 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {string} details.ideal                       Character's ideals.
  * @property {string} details.bond                        Character's bonds.
  * @property {string} details.flaw                        Character's flaws.
+ * @property {TypeData} details.type                      Character's type.
+ * @property {string} details.type.value                  Character's type as defined in the system configuration.
+ * @property {string} details.type.subtype                Character's subtype usually displayed in parenthesis after main type.
+ * @property {string} details.type.swarm                  Size of the individual creatures in a swarm, if a swarm.
+ * @property {string} details.type.custom                 Custom type beyond what is available in the configuration.
  * @property {object} traits
  * @property {SimpleTraitData} traits.weaponProf          Character's weapon proficiencies.
  * @property {SimpleTraitData} traits.armorProf           Character's armor proficiencies.
@@ -105,7 +110,8 @@ export default class CharacterData extends CreatureTemplate {
         trait: new foundry.data.fields.StringField({required: true, label: "DND5E.PersonalityTraits"}),
         ideal: new foundry.data.fields.StringField({required: true, label: "DND5E.Ideals"}),
         bond: new foundry.data.fields.StringField({required: true, label: "DND5E.Bonds"}),
-        flaw: new foundry.data.fields.StringField({required: true, label: "DND5E.Flaws"})
+        flaw: new foundry.data.fields.StringField({required: true, label: "DND5E.Flaws"}),
+        type: new CreatureTypeField()
       }, {label: "DND5E.Details"}),
       traits: new foundry.data.fields.SchemaField({
         ...TraitsFields.common,
