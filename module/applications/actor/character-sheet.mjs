@@ -39,7 +39,7 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
       disableExperience: game.settings.get("dnd5e", "disableExperienceTracking"),
       classLabels: classes.map(c => c.name).join(", "),
       labels: {
-        type: context.system.details.type.label
+        type: context.system.details?.race?.system?.type?.label ?? "Humanoid"
       },
       multiclassLabels: classes.map(c => [c.subclass?.name ?? "", c.name, c.system.levels].filterJoin(" ")).join(", "),
       weightUnit: game.i18n.localize(`DND5E.Abbreviation${
