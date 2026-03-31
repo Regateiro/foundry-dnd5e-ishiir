@@ -20,6 +20,10 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {number} attributes.hp.temp         Temporary HP applied on top of value.
  * @property {number} attributes.hp.tempmax      Temporary change to the maximum HP.
  * @property {string} attributes.hp.formula      Formula used to determine hit points.
+ * @property {object} attributes.fp
+ * @property {number} attributes.fp.value        Current fortitude points.
+ * @property {number} attributes.fp.max          Maximum allowed fortitude points.
+ * @property {number} attributes.fp.threshold    Threshold at which fortitude points are active.
  * @property {object} details
  * @property {TypeData} details.type             Creature type of this NPC.
  * @property {string} details.type.value         NPC's type as defined in the system configuration.
@@ -69,7 +73,18 @@ export default class NPCData extends CreatureTemplate {
           temp: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsTemp"}),
           tempmax: new foundry.data.fields.NumberField({integer: true, initial: 0, label: "DND5E.HitPointsTempMax"}),
           formula: new FormulaField({required: true, label: "DND5E.HPFormula"})
-        }, {label: "DND5E.HitPoints"})
+        }, {label: "DND5E.HitPoints"}),
+        fp: new foundry.data.fields.SchemaField({
+          value: new foundry.data.fields.NumberField({
+            nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.FortitudePointsCurrent"
+          }),
+          max: new foundry.data.fields.NumberField({
+            nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.FortitudePointsMax"
+          }),
+          threshold: new foundry.data.fields.NumberField({
+            nullable: false, integer: true, min: 0, max: 100, initial: 50, label: "DND5E.FortitudePointsThreshold"
+          })
+        }, {label: "DND5E.FortitudePoints"})
       }, {label: "DND5E.Attributes"}),
       details: new foundry.data.fields.SchemaField({
         ...DetailsFields.common,

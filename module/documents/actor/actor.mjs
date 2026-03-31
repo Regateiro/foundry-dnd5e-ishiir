@@ -925,6 +925,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   async applyDamage(amount=0, multiplier=1) {
     amount = Math.floor(parseInt(amount) * multiplier);
     const hp = this.system.attributes.hp;
+    const fp = this.system.attributes.fp;
     if ( !hp ) return this; // Group actors don't have HP at the moment
 
     // Deduct damage from temp HP first
@@ -933,12 +934,25 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Remaining goes to health
     const tmpMax = parseInt(hp.tempmax) || 0;
-    const dh = Math.clamped(hp.value - (amount - dt), 0, Math.max(0, hp.max + tmpMax));
+    var newHP = Math.clamped(hp.value - (amount - dt), 0, Math.max(0, hp.max + tmpMax));
+
+    // Determine hp amount to trigger fortitude points
+    const hpThreshold = Math.max(Math.ceil(hp.max * fp.threshold / 100), 1);
+
+    // Deduct damage from fortitude points if we meet the threshold and have FP available
+    var newFP = fp?.value || 0;
+    if (fp && fp.value > 0 && newHP < hpThreshold) {
+      // If the damage would reduce HP to the threshold or below, spend FP to reduce HP loss to the threshold
+      newFP -= Math.clamped(hpThreshold - newHP, 0, fp.value);
+      // Recalculate HP after FP reduction
+      newHP += (fp.value - newFP);
+    };
 
     // Update the Actor
     const updates = {
       "system.attributes.hp.temp": tmp - dt,
-      "system.attributes.hp.value": dh
+      "system.attributes.hp.value": newHP,
+      "system.attributes.fp.value": newFP
     };
 
     // Delegate damage application to a hook
@@ -949,7 +963,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       isDelta: false,
       isBar: true
     }, updates);
-    return allowed !== false ? this.update(updates, {dhp: -amount}) : this;
+    return allowed !== false ? this.update(updates, {dhp: -amount, delta_thp: -dt, delta_hp: -(hp.value - newHP), delta_fp: -(fp.value - newFP)}) : this;
   }
 
   /* -------------------------------------------- */
