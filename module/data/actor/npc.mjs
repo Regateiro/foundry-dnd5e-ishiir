@@ -20,9 +20,6 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {number} attributes.hp.temp         Temporary HP applied on top of value.
  * @property {number} attributes.hp.tempmax      Temporary change to the maximum HP.
  * @property {string} attributes.hp.formula      Formula used to determine hit points.
- * @property {object} attributes.fp
- * @property {number} attributes.fp.value        Current fortitude points.
- * @property {number} attributes.fp.max          Maximum allowed fortitude points.
  * @property {object} details
  * @property {TypeData} details.type             Creature type of this NPC.
  * @property {string} details.type.value         NPC's type as defined in the system configuration.
@@ -37,9 +34,9 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {object} resources.legact           NPC's legendary actions.
  * @property {number} resources.legact.value     Currently available legendary actions.
  * @property {number} resources.legact.max       Maximum number of legendary actions.
- * @property {object} resources.legres           NPC's legendary resistances.
- * @property {number} resources.legres.value     Currently available legendary resistances.
- * @property {number} resources.legres.max       Maximum number of legendary resistances.
+ * @property {object} resources.legres           NPC's legendary resistances (fortitude points).
+ * @property {number} resources.legres.value     Currently available legendary resistances (fortitude points).
+ * @property {number} resources.legres.max       Maximum number of legendary resistances (fortitude points).
  * @property {object} resources.lair             NPC's lair actions.
  * @property {boolean} resources.lair.value      Does this NPC use lair actions.
  * @property {number} resources.lair.initiative  Initiative count when lair actions are triggered.
@@ -72,15 +69,7 @@ export default class NPCData extends CreatureTemplate {
           temp: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsTemp"}),
           tempmax: new foundry.data.fields.NumberField({integer: true, initial: 0, label: "DND5E.HitPointsTempMax"}),
           formula: new FormulaField({required: true, label: "DND5E.HPFormula"})
-        }, {label: "DND5E.HitPoints"}),
-        fp: new foundry.data.fields.SchemaField({
-          value: new foundry.data.fields.NumberField({
-            nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.FortitudePointsCurrent"
-          }),
-          max: new foundry.data.fields.NumberField({
-            nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.FortitudePointsMax"
-          })
-        }, {label: "DND5E.FortitudePoints"})
+        }, {label: "DND5E.HitPoints"})
       }, {label: "DND5E.Attributes"}),
       details: new foundry.data.fields.SchemaField({
         ...DetailsFields.common,

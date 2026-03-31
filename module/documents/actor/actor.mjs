@@ -925,22 +925,22 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   async applyDamage(amount=0, multiplier=1) {
     amount = Math.floor(parseInt(amount) * multiplier);
     const hp = this.system.attributes.hp;
-    const fp = this.system.attributes.fp;
+    const fp = this.system.resources.legres;
     if ( !hp ) return this; // Group actors don't have HP at the moment
 
     // Deduct damage from temp HP first
     const tmp = parseInt(hp.temp) || 0;
     const dt = amount > 0 ? Math.min(tmp, amount) : 0;
 
-    // Remaining goes to health
+    // Remaining goes to health (which can go negative)
     const tmpMax = parseInt(hp.tempmax) || 0;
-    var newHP = Math.clamped(hp.value - (amount - dt), 0, Math.max(0, hp.max + tmpMax));
+    let newHP = Math.min(hp.value - (amount - dt), Math.max(0, hp.max + tmpMax));
 
     // Determine hp amount to trigger fortitude points
     const hpThreshold = Math.max(Math.ceil(hp.max * game.settings.get("dnd5e", "fortitudePointsThreshold") / 100), 1);
 
     // Deduct damage from fortitude points if we meet the threshold and have FP available
-    var newFP = fp?.value || 0;
+    let newFP = fp?.value || 0;
     if (fp && fp.value > 0 && newHP < hpThreshold) {
       // If the damage would reduce HP to the threshold or below, spend FP to reduce HP loss to the threshold
       newFP -= Math.clamped(hpThreshold - newHP, 0, fp.value);
@@ -948,11 +948,14 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       newHP += (fp.value - newFP);
     };
 
+    // Ensure HP doesn't drop below 0
+    newHP = Math.max(newHP, 0);
+
     // Update the Actor
     const updates = {
       "system.attributes.hp.temp": tmp - dt,
       "system.attributes.hp.value": newHP,
-      "system.attributes.fp.value": newFP
+      "system.resources.legres.value": newFP
     };
 
     // Delegate damage application to a hook
@@ -963,7 +966,14 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       isDelta: false,
       isBar: true
     }, updates);
-    return allowed !== false ? this.update(updates, {dhp: -amount, delta_thp: -dt, delta_hp: -(hp.value - newHP), delta_fp: -(fp.value - newFP)}) : this;
+
+    // If the hook explicitly returns false, prevent the update. Otherwise, apply the update as normal.
+    return allowed !== false ? this.update(updates, {
+      dhp: -amount, 
+      delta_thp: -dt, 
+      delta_hp: -(hp.value - newHP), 
+      delta_fp: -(fp.value - newFP)
+    }) : this;
   }
 
   /* -------------------------------------------- */

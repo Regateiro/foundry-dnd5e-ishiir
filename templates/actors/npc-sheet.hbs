@@ -193,24 +193,13 @@
                         </div>
                     </div>
                     <div class="counter flexrow legendary">
-                        <h4>{{ localize "DND5E.LegRes" }}</h4>
+                        <h4>{{ localize "DND5E.FortitudePoints" }}</h4>
                         <div class="counter-value">
                             <input name="system.resources.legres.value" type="text" step="any"
                                    value="{{system.resources.legres.value}}" placeholder="0"
-                                   data-tooltip="DND5E.LegResRemaining" data-dtype="Number">
+                                   data-tooltip="DND5E.FortitudePointsCurrent" data-dtype="Number">
                             <span class="sep">/</span>
                             {{numberInput system.resources.legres.max name="system.resources.legres.max" min=0 step=1
-                                          placeholder=0}}
-                        </div>
-                    </div>
-                    <div class="counter flexrow legendary">
-                        <h4>{{ localize "DND5E.FortitudePoints" }}</h4>
-                        <div class="counter-value">
-                            <input name="system.attributes.fp.value" type="text" step="any"
-                                   value="{{system.attributes.fp.value}}" placeholder="0"
-                                   data-tooltip="DND5E.FortitudePointsRemaining" data-dtype="Number">
-                            <span class="sep">/</span>
-                            {{numberInput system.attributes.fp.max name="system.attributes.fp.max" min=0 step=1
                                           placeholder=0}}
                         </div>
                     </div>
