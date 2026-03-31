@@ -563,7 +563,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }
 
     // Determine the Encumbrance size class
-    let mod = {tiny: 0.5, sm: 1, med: 1, lg: 2, huge: 4, grg: 8}[this.system.traits.size] || 1;
+    let mod = {tiny: 0.5, sm: 1, med: 1, lg: 2, huge: 4, grg: 8, col: 16}[this.system.traits.size] || 1;
     if ( this.flags.dnd5e?.powerfulBuild ) mod = Math.min(mod * 2, 8);
 
     const strengthMultiplier = game.settings.get("dnd5e", "metricWeightUnits")

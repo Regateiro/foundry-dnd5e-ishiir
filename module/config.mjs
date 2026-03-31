@@ -446,7 +446,8 @@ DND5E.actorSizes = {
   med: "DND5E.SizeMedium",
   lg: "DND5E.SizeLarge",
   huge: "DND5E.SizeHuge",
-  grg: "DND5E.SizeGargantuan"
+  grg: "DND5E.SizeGargantuan",
+  col: "DND5E.SizeColossal"
 };
 preLocalize("actorSizes");
 
@@ -460,7 +461,8 @@ DND5E.tokenSizes = {
   med: 1,
   lg: 2,
   huge: 3,
-  grg: 4
+  grg: 4,
+  col: 5
 };
 
 /**
