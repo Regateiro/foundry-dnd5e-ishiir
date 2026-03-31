@@ -78,6 +78,20 @@ export default function registerSystemSettings() {
     type: Boolean
   });
 
+  game.settings.register("dnd5e", "fortitudePointsThreshold", {
+    name: "Fortitude Points HP Percentage Trigger",
+    hint: "Use Fortitude Points instead of HP at the given HP percentage.",
+    scope: "world",
+    config: true,
+    default: 50,
+    type: Number,
+    range: {
+        min: 0,
+        step: 1,
+        max: 100
+    }
+});
+
   // Use Honor ability score
   game.settings.register("dnd5e", "honorScore", {
     name: "SETTINGS.5eHonorN",

@@ -23,7 +23,6 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {object} attributes.fp
  * @property {number} attributes.fp.value        Current fortitude points.
  * @property {number} attributes.fp.max          Maximum allowed fortitude points.
- * @property {number} attributes.fp.threshold    Threshold at which fortitude points are active.
  * @property {object} details
  * @property {TypeData} details.type             Creature type of this NPC.
  * @property {string} details.type.value         NPC's type as defined in the system configuration.

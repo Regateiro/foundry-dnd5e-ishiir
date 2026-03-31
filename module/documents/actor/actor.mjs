@@ -937,7 +937,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     var newHP = Math.clamped(hp.value - (amount - dt), 0, Math.max(0, hp.max + tmpMax));
 
     // Determine hp amount to trigger fortitude points
-    const hpThreshold = Math.max(Math.ceil(hp.max * fp.threshold / 100), 1);
+    const hpThreshold = Math.max(Math.ceil(hp.max * game.settings.get("dnd5e", "fortitudePointsThreshold") / 100), 1);
 
     // Deduct damage from fortitude points if we meet the threshold and have FP available
     var newFP = fp?.value || 0;
