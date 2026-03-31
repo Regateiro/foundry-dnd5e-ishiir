@@ -79,9 +79,6 @@ export default class NPCData extends CreatureTemplate {
           }),
           max: new foundry.data.fields.NumberField({
             nullable: false, integer: true, min: 0, initial: 0, label: "DND5E.FortitudePointsMax"
-          }),
-          threshold: new foundry.data.fields.NumberField({
-            nullable: false, integer: true, min: 0, max: 100, initial: 50, label: "DND5E.FortitudePointsThreshold"
           })
         }, {label: "DND5E.FortitudePoints"})
       }, {label: "DND5E.Attributes"}),
