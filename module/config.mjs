@@ -2020,6 +2020,28 @@ DND5E.characterFlags = {
     section: "DND5E.Feats",
     type: Boolean
   },
+  bladeMastery: {
+		name: "DND5E.FlagsBladeMastery",
+		hint: "DND5E.FlagsBladeMasteryHint",
+		section: "DND5E.Feats",
+    weapons: [
+      "dagger",
+      "elvish sword",
+      "longsword",
+      "shortsword",
+      "scimitar",
+      "sickle",
+      "rapier",
+      "greatsword"
+    ],
+		type: Boolean
+	},
+	tripleAdvantage: {
+		name: "DND5E.FlagsTripleAdvantage",
+		hint: "DND5E.FlagsTripleAdvantageHint",
+		section: "DND5E.Feats",
+		type: Boolean
+	},
   weaponCriticalThreshold: {
     name: "DND5E.FlagsWeaponCritThreshold",
     hint: "DND5E.FlagsWeaponCritThresholdHint",

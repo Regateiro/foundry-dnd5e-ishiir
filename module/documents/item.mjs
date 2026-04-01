@@ -1331,6 +1331,9 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     // Flags
     const elvenAccuracy = (flags.elvenAccuracy
       && CONFIG.DND5E.characterFlags.elvenAccuracy.abilities.includes(this.abilityMod)) || undefined;
+    const bladeMastery = (flags.bladeMastery
+      && CONFIG.DND5E.characterFlags.bladeMastery.weapons.includes(this.system.baseItem)) || undefined;
+    const tripleAdvantage = (flags.tripleAdvantage) || undefined;
 
     // Compose roll options
     const rollConfig = foundry.utils.mergeObject({
@@ -1340,6 +1343,8 @@ export default class Item5e extends SystemDocumentMixin(Item) {
       title,
       flavor: title,
       elvenAccuracy,
+      bladeMastery,
+      tripleAdvantage,
       halflingLucky: flags.halflingLucky,
       dialogOptions: {
         width: 400,

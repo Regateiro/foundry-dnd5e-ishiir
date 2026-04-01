@@ -51,7 +51,7 @@
 export async function d20Roll({
   parts=[], data={}, event,
   advantage, disadvantage, critical=20, fumble=1, targetValue,
-  elvenAccuracy, halflingLucky, reliableTalent,
+  elvenAccuracy, bladeMastery, tripleAdvantage, halflingLucky, reliableTalent,
   fastForward, chooseModifier=false, template, title, dialogOptions,
   chatMessage=true, messageData={}, rollMode, flavor
 }={}) {
@@ -77,6 +77,8 @@ export async function d20Roll({
     fumble,
     targetValue,
     elvenAccuracy,
+    bladeMastery,
+    tripleAdvantage,
     halflingLucky,
     reliableTalent
   });
