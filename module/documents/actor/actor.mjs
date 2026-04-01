@@ -968,12 +968,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }, updates);
 
     // If the hook explicitly returns false, prevent the update. Otherwise, apply the update as normal.
-    return allowed !== false ? this.update(updates, {
-      dhp: -amount, 
-      delta_thp: -dt, 
-      delta_hp: -(hp.value - newHP), 
-      delta_fp: -(fp.value - newFP)
-    }) : this;
+    return allowed !== false ? this.update(updates, {dhp: -amount, dparts: {thp: -dt, hp: newHP - hp.value, fp: newFP - fp.value}}) : this;
   }
 
   /* -------------------------------------------- */
