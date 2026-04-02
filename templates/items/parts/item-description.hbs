@@ -23,6 +23,11 @@
                 {{selectOptions config.currencies selected=system.price.denomination labelAttr="abbreviation"}}
             </select>
         </div>
+
+        <div class="form-group">
+            <label>{{ localize "DND5E.Masterworked" }}</label>
+            <input type="checkbox" name="system.masterworked" {{checked system.masterworked}}/>
+        </div>
         {{/if}}
 
         {{#if (or labels.toHit labels.derivedDamage)}}
