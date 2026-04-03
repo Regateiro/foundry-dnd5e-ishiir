@@ -928,32 +928,42 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const fp = this.system.resources.legres;
     if ( !hp ) return this; // Group actors don't have HP at the moment
 
-    // Deduct damage from temp HP first
-    const tmp = parseInt(hp.temp) || 0;
-    const dt = amount > 0 ? Math.min(tmp, amount) : 0;
+    // Variable to track the amount of damage to still be applied
+    let damage = amount;
 
-    // Remaining goes to health (which can go negative)
-    const tmpMax = parseInt(hp.tempmax) || 0;
-    let newHP = Math.min(hp.value - (amount - dt), Math.max(0, hp.max + tmpMax));
+    // Deduct damage from temp HP first
+    const oldTHP = parseInt(hp.temp) || 0;
+    const newTHP = oldTHP - (damage > 0 ? Math.min(oldTHP, damage) : 0);
+    const deltaTHP = newTHP - oldTHP;
+    // Update the amount of damage left to apply after temp HP is deducted
+    damage -= (oldTHP - newTHP);
 
     // Determine hp amount to trigger fortitude points
     const hpThreshold = Math.max(Math.ceil(hp.max * game.settings.get("dnd5e", "fortitudePointsThreshold") / 100), 1);
 
-    // Deduct damage from fortitude points if we meet the threshold and have FP available
-    let newFP = fp?.value || 0;
-    if (fp && fp.value > 0 && newHP < hpThreshold) {
-      // If the damage would reduce HP to the threshold or below, spend FP to reduce HP loss to the threshold
-      newFP -= Math.clamped(hpThreshold - newHP, 0, fp.value);
-      // Recalculate HP after FP reduction
-      newHP += (fp.value - newFP);
-    }
+    // Apply damage to HP up to the FP threshold
+    const tmpMax = parseInt(hp.tempmax) || 0;
+    const oldHP = hp.value;
+    const upperHP = Math.clamped(oldHP - damage, hpThreshold, Math.max(0, hp.max + tmpMax));
+    // Update the amount of damage left to apply after HP is deducted
+    damage -= (oldHP - upperHP);
 
-    // Ensure HP doesn't drop below 0
-    newHP = Math.max(newHP, 0);
+    // Deduct damage from fortitude points if we meet the threshold and have FP available
+    const oldFP = fp?.value || 0;
+    const newFP = Math.clamped(oldFP - damage, 0, fp.value);
+    const deltaFP = newFP - oldFP;
+    // Update the amount of damage left to apply after FP is deducted
+    damage -= (oldFP - newFP);
+
+    // Apply damage to HP below the FP threshold
+    const newHP = Math.clamped(upperHP - damage, 0, Math.max(0, hp.max + tmpMax));
+    const deltaHP = newHP - oldHP;
+    // Update the amount of damage left to apply after HP is deducted (irrelevant at this point since HP is the last to be deducted)
+    // damage -= (upperHP - newHP);
 
     // Update the Actor
     const updates = {
-      "system.attributes.hp.temp": tmp - dt,
+      "system.attributes.hp.temp": newTHP,
       "system.attributes.hp.value": newHP,
       "system.resources.legres.value": newFP
     };
@@ -968,7 +978,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }, updates);
 
     // If the hook explicitly returns false, prevent the update. Otherwise, apply the update as normal.
-    return allowed !== false ? this.update(updates, {dhp: -amount, dparts: {thp: -dt, hp: newHP - hp.value, fp: newFP - fp.value}}) : this;
+    return allowed !== false ? this.update(updates, {dhp: -amount, deltas: {thp: deltaTHP, hp: deltaHP, fp: deltaFP}}) : this;
   }
 
   /* -------------------------------------------- */
