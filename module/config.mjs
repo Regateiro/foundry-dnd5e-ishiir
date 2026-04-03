@@ -211,15 +211,21 @@ DND5E.weaponProficienciesMap = {
  * @enum {string}
  */
 DND5E.weaponIds = {
+  avenjavelin: "HuRwsW6OC3viFyHV",
   battleaxe: "I0WocDSuNpGJayPb",
   blowgun: "wNWK6yJMHG9ANqQV",
   club: "nfIRTECQIG81CvM4",
   dagger: "0E565kQUBmndJ1a2",
   dart: "3rCO8MTIdPGSW6IJ",
+  elvishspear: "mdyKjetPwYjEQ7f0",
+  elvishsword: "nS8KPulXL9WfpLBZ",
+  faunishspear: "prusHrcYRoCWd9to",
   flail: "UrH3sMdnUDckIHJ6",
   glaive: "rOG1OM2ihgPjOvFW",
   greataxe: "1Lxk6kmoRhG8qQ0u",
+  greatbow: "mGI1Y32PqK7gcZDb",
   greatclub: "QRCsxkCwWNwswL9o",
+  greatspear: "ePiZJkftoac13FES",
   greatsword: "xMkP8BmFzElcsMaR",
   halberd: "DMejWAc8r8YvDPP1",
   handaxe: "eO7Fbv5WBk5zvGOc",
@@ -247,6 +253,7 @@ DND5E.weaponIds = {
   trident: "F65ANO66ckP8FDMa",
   warpick: "2YdfjN1PIIrSHZii",
   warhammer: "F0Df164Xv1gWcYt0",
+  warspear: "KCSxNvHNLC0D3HPQ",
   whip: "QKTyxoO0YDnAsbYe"
 };
 
@@ -1498,6 +1505,7 @@ DND5E.weaponProperties = {
   fin: "DND5E.WeaponPropertiesFin",
   fir: "DND5E.WeaponPropertiesFir",
   foc: "DND5E.WeaponPropertiesFoc",
+  hdr: "DND5E.WeaponPropertiesHdr",
   hvy: "DND5E.WeaponPropertiesHvy",
   lgt: "DND5E.WeaponPropertiesLgt",
   lod: "DND5E.WeaponPropertiesLod",
