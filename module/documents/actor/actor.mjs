@@ -946,7 +946,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       newFP -= Math.clamped(hpThreshold - newHP, 0, fp.value);
       // Recalculate HP after FP reduction
       newHP += (fp.value - newFP);
-    };
+    }
 
     // Ensure HP doesn't drop below 0
     newHP = Math.max(newHP, 0);

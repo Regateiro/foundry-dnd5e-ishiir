@@ -2029,9 +2029,9 @@ DND5E.characterFlags = {
     type: Boolean
   },
   bladeMastery: {
-		name: "DND5E.FlagsBladeMastery",
-		hint: "DND5E.FlagsBladeMasteryHint",
-		section: "DND5E.Feats",
+    name: "DND5E.FlagsBladeMastery",
+    hint: "DND5E.FlagsBladeMasteryHint",
+    section: "DND5E.Feats",
     weapons: [
       "dagger",
       "elvish sword",
@@ -2042,14 +2042,14 @@ DND5E.characterFlags = {
       "rapier",
       "greatsword"
     ],
-		type: Boolean
-	},
-	tripleAdvantage: {
-		name: "DND5E.FlagsTripleAdvantage",
-		hint: "DND5E.FlagsTripleAdvantageHint",
-		section: "DND5E.Feats",
-		type: Boolean
-	},
+    type: Boolean
+  },
+  tripleAdvantage: {
+    name: "DND5E.FlagsTripleAdvantage",
+    hint: "DND5E.FlagsTripleAdvantageHint",
+    section: "DND5E.Feats",
+    type: Boolean
+  },
   weaponCriticalThreshold: {
     name: "DND5E.FlagsWeaponCritThreshold",
     hint: "DND5E.FlagsWeaponCritThresholdHint",

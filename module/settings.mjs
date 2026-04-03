@@ -86,11 +86,11 @@ export default function registerSystemSettings() {
     default: 50,
     type: Number,
     range: {
-        min: 0,
-        step: 1,
-        max: 100
+      min: 0,
+      step: 1,
+      max: 100
     }
-});
+  });
 
   // Use Honor ability score
   game.settings.register("dnd5e", "honorScore", {
