@@ -273,6 +273,24 @@ Hooks.once("ready", function() {
     // Apply custom compendium styles to the SRD rules compendium.
     const rules = game.packs.get("dnd5e.rules");
     rules.apps = [new applications.journal.SRDCompendium(rules)];
+
+    // If the setting to run tests at startup is enabled, import and run all tests.
+    if ( game.settings.get("dnd5e", "runTestsAtStartup") ) {
+      import("./tests/tests.mjs").then(tests => {
+        // Run all tests
+        tests.runAllTests().then(results => {
+          // Check results and notify the user of the outcome
+          const allPassed = Object.values(results).every(moduleResult => Object.values(moduleResult).every(testResult => Object.values(testResult).every(result => result)));
+          if ( allPassed ) {
+            ui.notifications.info("All tests passed successfully!", {localize: true});
+          } else {
+            ui.notifications.error("Some tests failed. Check the console for details.", {localize: true});
+          }
+          // Log the results to the console for debugging purposes
+          console.debug("Test Results:", results);
+        });
+      });
+    }
   }
 
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to

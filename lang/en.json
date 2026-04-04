@@ -982,6 +982,8 @@
 "DND5E.RollExample": "e.g. 1d4",
 "DND5E.RollMode": "Roll Mode",
 "DND5E.RollSituationalBonus": "Situational Bonus?",
+"DND5E.RunTestsAtStartup": "Run Tests at Startup",
+"DND5E.RunTestsAtStartupHint": "Run all system tests when the game starts.",
 "DND5E.MixedRest": "Mixed Rest",
 "DND5E.Movement": "Movement",
 "DND5E.MovementConfig": "Configure Movement Speed",

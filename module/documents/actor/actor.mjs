@@ -950,7 +950,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Deduct damage from fortitude points if we meet the threshold and have FP available
     const oldFP = fp?.value || 0;
-    const newFP = Math.clamped(oldFP - damage, 0, fp.value);
+    const newFP = Math.clamped(oldFP - damage, 0, oldFP);
     const deltaFP = newFP - oldFP;
     // Update the amount of damage left to apply after FP is deducted
     damage -= (oldFP - newFP);

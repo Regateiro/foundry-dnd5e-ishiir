@@ -266,4 +266,14 @@ export default function registerSystemSettings() {
       }
     }
   });
+
+  // 
+  game.settings.register("dnd5e", "runTestsAtStartup", {
+    name: "DND5E.RunTestsAtStartup",
+    hint: "DND5E.RunTestsAtStartupHint",
+    scope: "client",
+    config: true,
+    default: false,
+    type: Boolean
+  });
 }
