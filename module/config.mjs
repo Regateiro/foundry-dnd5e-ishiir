@@ -2028,6 +2028,12 @@ DND5E.characterFlags = {
     section: "DND5E.Feats",
     type: Boolean
   },
+  armorMastery: {
+    name: "DND5E.ArmorMastery",
+    hint: "DND5E.ArmorMasteryHint",
+    section: "DND5E.Feats",
+    type: Boolean
+  },
   bladeMastery: {
     name: "DND5E.FlagsBladeMastery",
     hint: "DND5E.FlagsBladeMasteryHint",

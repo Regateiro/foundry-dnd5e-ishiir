@@ -931,6 +931,13 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     // Variable to track the amount of damage to still be applied
     let damage = amount;
 
+    // If the actor has armor hit points, apply damage to that first
+    const oldAHP = parseInt(hp.armor) || 0;
+    const newAHP = oldAHP - (damage > 0 ? Math.min(oldAHP, damage) : 0);
+    const deltaAHP = newAHP - oldAHP;
+    // Update the amount of damage left to apply after armor HP is deducted
+    damage -= (oldAHP - newAHP);
+
     // Deduct damage from temp HP first
     const oldTHP = parseInt(hp.temp) || 0;
     const newTHP = oldTHP - (damage > 0 ? Math.min(oldTHP, damage) : 0);
@@ -963,6 +970,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Update the Actor
     const updates = {
+      "system.attributes.hp.armor": newAHP,
       "system.attributes.hp.temp": newTHP,
       "system.attributes.hp.value": newHP,
       "system.resources.legres.value": newFP
@@ -978,7 +986,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }, updates);
 
     // If the hook explicitly returns false, prevent the update. Otherwise, apply the update as normal.
-    return allowed !== false ? this.update(updates, {dhp: -amount, deltas: {thp: deltaTHP, hp: deltaHP, fp: deltaFP}}) : this;
+    return allowed !== false ? this.update(updates, {dhp: -amount, deltas: {thp: deltaTHP, hp: deltaHP, fp: deltaFP, ahp: deltaAHP}}) : this;
   }
 
   /* -------------------------------------------- */
@@ -1868,26 +1876,27 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * Configuration options for a rest.
    *
    * @typedef {object} RestConfiguration
-   * @property {boolean} dialog            Present a dialog window which allows for rolling hit dice as part of the
-   *                                       Short Rest and selecting whether a new day has occurred.
-   * @property {boolean} chat              Should a chat message be created to summarize the results of the rest?
-   * @property {boolean} newDay            Does this rest carry over to a new day?
-   * @property {boolean} [autoHD]          Should hit dice be spent automatically during a short rest?
-   * @property {number} [autoHDThreshold]  How many hit points should be missing before hit dice are
-   *                                       automatically spent during a short rest.
+   * @property {boolean} dialog               Present a dialog window which allows for rolling hit dice as part of the
+   *                                          Short Rest and selecting whether a new day has occurred.
+   * @property {boolean} chat                 Should a chat message be created to summarize the results of the rest?
+   * @property {boolean} newDay               Does this rest carry over to a new day?
+   * @property {boolean} [autoHD]             Should hit dice be spent automatically during a short rest?
+   * @property {number} [autoHDThreshold]     How many hit points should be missing before hit dice are
+   *                                          automatically spent during a short rest.
    */
 
   /**
    * Results from a rest operation.
    *
    * @typedef {object} RestResult
-   * @property {number} dhp            Hit points recovered during the rest.
-   * @property {number} dhd            Hit dice recovered or spent during the rest.
-   * @property {object} updateData     Updates applied to the actor.
-   * @property {object[]} updateItems  Updates applied to actor's items.
-   * @property {boolean} longRest      Whether the rest type was a long rest.
-   * @property {boolean} newDay        Whether a new day occurred during the rest.
-   * @property {Roll[]} rolls          Any rolls that occurred during the rest process, not including hit dice.
+   * @property {number} dhp                   Hit points recovered during the rest.
+   * @property {number} dhd                   Hit dice recovered or spent during the rest.
+   * @property {object} updateData            Updates applied to the actor.
+   * @property {object[]} updateItems         Updates applied to actor's items.
+   * @property {boolean} longRest             Whether the rest type was a long rest.
+   * @property {boolean} newDay               Whether a new day occurred during the rest.
+   * @property {boolean} recoverArmorMastery  Should armor mastery temporary hit points be recovered?
+   * @property {Roll[]} rolls                 Any rolls that occurred during the rest process, not including hit dice.
    */
 
   /* -------------------------------------------- */
@@ -1918,7 +1927,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Display a Dialog for rolling hit dice
     if ( config.dialog ) {
-      try { config.newDay = await ShortRestDialog.shortRestDialog({actor: this, canRoll: hd0 > 0});
+      try { [config.newDay, config.recoverArmorMastery] = await ShortRestDialog.shortRestDialog({actor: this, canRoll: hd0 > 0});
       } catch(err) { return; }
     }
 
@@ -1928,7 +1937,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     // Return the rest result
     const dhd = this.system.attributes.hd - hd0;
     const dhp = this.system.attributes.hp.value - hp0;
-    return this._rest(config.chat, config.newDay, false, dhd, dhp);
+    return this._rest(config.chat, config.newDay, config.recoverArmorMastery, false, dhd, dhp);
   }
 
   /* -------------------------------------------- */
@@ -1954,11 +1963,11 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     if ( Hooks.call("dnd5e.preLongRest", this, config) === false ) return;
 
     if ( config.dialog ) {
-      try { config.newDay = await LongRestDialog.longRestDialog({actor: this}); }
+      try { [config.newDay, config.recoverArmorMastery] = await LongRestDialog.longRestDialog({actor: this}); }
       catch(err) { return; }
     }
 
-    return this._rest(config.chat, config.newDay, true);
+    return this._rest(config.chat, config.newDay, config.recoverArmorMastery, true);
   }
 
   /* -------------------------------------------- */
@@ -1966,15 +1975,17 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /**
    * Perform all of the changes needed for a short or long rest.
    *
-   * @param {boolean} chat           Summarize the results of the rest workflow as a chat message.
-   * @param {boolean} newDay         Has a new day occurred during this rest?
-   * @param {boolean} longRest       Is this a long rest?
-   * @param {number} [dhd=0]         Number of hit dice spent during so far during the rest.
-   * @param {number} [dhp=0]         Number of hit points recovered so far during the rest.
+   * @param {boolean} chat                 Summarize the results of the rest workflow as a chat message.
+   * @param {boolean} newDay               Has a new day occurred during this rest?
+   * @param {boolean} recoverArmorMastery  Should armor mastery temporary hit points be recovered?
+   * @param {boolean} longRest             Is this a long rest?
+   * @param {number} [dhd=0]               Number of hit dice spent during so far during the rest.
+   * @param {number} [dhp=0]               Number of hit points recovered so far during the rest.
    * @returns {Promise<RestResult>}  Consolidated results of the rest workflow.
    * @private
    */
-  async _rest(chat, newDay, longRest, dhd=0, dhp=0) {
+  async _rest(chat, newDay, recoverArmorMastery, longRest, dhd=0, dhp=0) {
+    let armorMasteryUpdates = {};
     let hitPointsRecovered = 0;
     let hitPointUpdates = {};
     let hitDiceRecovered = 0;
@@ -1987,12 +1998,18 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       ({ updates: hitDiceUpdates, hitDiceRecovered } = this._getRestHitDiceRecovery());
     }
 
+    // Recover armor mastery temporary hit points
+    if ( recoverArmorMastery ) {
+      armorMasteryUpdates["system.attributes.hp.armor"] = this.system.attributes.hp.armormax;
+    }
+
     // Figure out the rest of the changes
     const result = {
       dhd: dhd + hitDiceRecovered,
       dhp: dhp + hitPointsRecovered,
       updateData: {
         ...hitPointUpdates,
+        ...armorMasteryUpdates,
         ...this._getRestResourceRecovery({ recoverShortRestResources: !longRest, recoverLongRestResources: longRest }),
         ...this._getRestSpellRecovery({ recoverSpells: longRest })
       },

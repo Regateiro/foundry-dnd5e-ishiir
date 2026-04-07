@@ -18,6 +18,8 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {number} attributes.hp.max                   Override for maximum HP.
  * @property {number} attributes.hp.temp                  Temporary HP applied on top of value.
  * @property {number} attributes.hp.tempmax               Temporary change to the maximum HP.
+ * @property {number} attributes.hp.armor                 Armor Mastery bonus applied to HP.
+ * @property {number} attributes.hp.armormax              Maximum Armor Mastery Hit Points.
  * @property {object} attributes.hp.bonuses
  * @property {string} attributes.hp.bonuses.level         Bonus formula applied for each class level.
  * @property {string} attributes.hp.bonuses.overall       Bonus formula applied to total HP.
@@ -71,6 +73,8 @@ export default class CharacterData extends CreatureTemplate {
           }),
           temp: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsTemp"}),
           tempmax: new foundry.data.fields.NumberField({integer: true, initial: 0, label: "DND5E.HitPointsTempMax"}),
+          armor: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsArmor"}),
+          armormax: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsArmorMax"}),
           bonuses: new foundry.data.fields.SchemaField({
             level: new FormulaField({deterministic: true, label: "DND5E.HitPointsBonusLevel"}),
             overall: new FormulaField({deterministic: true, label: "DND5E.HitPointsBonusOverall"})

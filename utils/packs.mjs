@@ -29,7 +29,9 @@ const argv = yargs(hideBin(process.argv))
 
 
 /**
- *
+ * Defines the "package" command for managing compendium packs, including cleaning source JSON files, compiling them into compendium packs, and extracting existing compendium packs back into JSON files.
+ * 
+ * @returns {object} The command definition for yargs.
  */
 function packageCommand() {
   return {

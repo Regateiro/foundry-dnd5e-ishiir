@@ -19,6 +19,8 @@ import TraitsFields from "./templates/traits.mjs";
  * @property {number} attributes.hp.max          Maximum allowed HP value.
  * @property {number} attributes.hp.temp         Temporary HP applied on top of value.
  * @property {number} attributes.hp.tempmax      Temporary change to the maximum HP.
+ * @property {number} attributes.hp.armor        Armor Mastery Hit Points.
+ * @property {number} attributes.hp.armormax     Maximum Armor Mastery Hit Points.
  * @property {string} attributes.hp.formula      Formula used to determine hit points.
  * @property {object} details
  * @property {TypeData} details.type             Creature type of this NPC.
@@ -68,6 +70,8 @@ export default class NPCData extends CreatureTemplate {
           }),
           temp: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsTemp"}),
           tempmax: new foundry.data.fields.NumberField({integer: true, initial: 0, label: "DND5E.HitPointsTempMax"}),
+          armor: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsArmor"}),
+          armormax: new foundry.data.fields.NumberField({integer: true, initial: 0, min: 0, label: "DND5E.HitPointsArmorMax"}),
           formula: new FormulaField({required: true, label: "DND5E.HPFormula"})
         }, {label: "DND5E.HitPoints"})
       }, {label: "DND5E.Attributes"}),

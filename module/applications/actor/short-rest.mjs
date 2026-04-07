@@ -102,10 +102,11 @@ export default class ShortRestDialog extends Dialog {
             label: game.i18n.localize("DND5E.Rest"),
             callback: html => {
               let newDay = false;
+              let recoverArmorMastery = html.find('input[name="recoverArmorMastery"]')[0].checked;
               if ( game.settings.get("dnd5e", "restVariant") !== "epic" ) {
                 newDay = html.find('input[name="newDay"]')[0].checked;
               }
-              resolve(newDay);
+              resolve([newDay, recoverArmorMastery]);
             }
           },
           cancel: {

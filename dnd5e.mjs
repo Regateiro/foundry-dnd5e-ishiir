@@ -280,7 +280,12 @@ Hooks.once("ready", function() {
         // Run all tests
         tests.runAllTests().then(results => {
           // Check results and notify the user of the outcome
-          const allPassed = Object.values(results).every(moduleResult => Object.values(moduleResult).every(testResult => Object.values(testResult).every(result => result)));
+          const allPassed = Object.values(results).every(moduleResult => {
+            return Object.values(moduleResult).every(testResult => {
+              return Object.values(testResult).every(result => result);
+            });
+          });
+          // Notify the user of the results
           if ( allPassed ) {
             ui.notifications.info("All tests passed successfully!", {localize: true});
           } else {

@@ -880,6 +880,9 @@ h5 {
 .dnd5e.sheet.actor .sheet-header .attributes .attribute input.temphp {
   width: 48%;
 }
+.dnd5e.sheet.actor .sheet-header .attributes .attribute input.armor {
+  width: 0%;
+}
 .dnd5e.sheet.actor h4.box-title {
   height: 18px;
   line-height: 16px;

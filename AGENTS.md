@@ -10,13 +10,8 @@
 - **Auto‑fix lint issues**: `npm run lint:fix`
 - **Watch LESS for hot reload**: `npm run watch`
 
-> Currently the project has no unit tests. If you add test files under a new `tests/` folder, you can run an individual file with:
->
-> ```bash
-> node tests/<file>.js
-> ```
->
-> When a test runner is added in the future, use `npm test`.
+- Tests are places under `./tests` and assume they run inside the Foundry environment.
+>   * Tests depend on the Foundry runtime, meaning that they need to be executed inside the Foundry application.
 
 ## Code Style & Conventions
 - **File format**: All source files are ES modules (`*.mjs`). They live either at the repo root or under `module/`.

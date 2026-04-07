@@ -2,6 +2,9 @@
 
 import { runActorTests } from "./actor/tests.mjs";
 
+/**
+ *
+ */
 export async function runAllTests() {
   // This function runs all tests for the D&D 5e system.
   console.log("Running all tests...");
