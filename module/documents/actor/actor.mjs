@@ -965,7 +965,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     // Apply damage to HP below the FP threshold
     const newHP = Math.clamped(upperHP - damage, 0, Math.max(0, hp.max + tmpMax));
     const deltaHP = newHP - oldHP;
-    // Update the amount of damage left to apply after HP is deducted (irrelevant at this point since HP is the last to be deducted)
+    // Update the amount of damage left to apply after HP is deducted
+    // (irrelevant at this point since HP is the last to be deducted)
     // damage -= (upperHP - newHP);
 
     // Update the Actor
@@ -985,8 +986,11 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       isBar: true
     }, updates);
 
-    // If the hook explicitly returns false, prevent the update. Otherwise, apply the update as normal.
-    return allowed !== false ? this.update(updates, {dhp: -amount, deltas: {thp: deltaTHP, hp: deltaHP, fp: deltaFP, ahp: deltaAHP}}) : this;
+    // If the hook explicitly returns false, prevent the update.
+    // Otherwise, apply the update as normal.
+    return allowed !== false
+      ? this.update(updates, {dhp: -amount, deltas: {thp: deltaTHP, hp: deltaHP, fp: deltaFP, ahp: deltaAHP}})
+      : this;
   }
 
   /* -------------------------------------------- */
@@ -1927,7 +1931,10 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Display a Dialog for rolling hit dice
     if ( config.dialog ) {
-      try { [config.newDay, config.recoverArmorMastery] = await ShortRestDialog.shortRestDialog({actor: this, canRoll: hd0 > 0});
+      try {
+        [config.newDay, config.recoverArmorMastery] = await ShortRestDialog.shortRestDialog(
+          {actor: this, canRoll: hd0 > 0}
+        );
       } catch(err) { return; }
     }
 

@@ -1,7 +1,8 @@
 /**
  * Mixin method for common uses between all actor sheets.
- * @param Base
+ * @param {Function} Base  The base class to mix into.
  * @mixin
+ * @returns {Function}  The mixed class.
  */
 export const ActorSheetMixin = Base => class extends Base {
   /**

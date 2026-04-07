@@ -1,9 +1,10 @@
-// This file serves as the main entry point for running all tests related to the D&D 5e system. It imports and executes tests from various modules, such as actors, items, spells, etc., and aggregates the results.
-
+// Main entry point for running all tests related to the D&D 5e system.
+// Imports and executes tests from various modules and aggregates the results.
 import { runActorTests } from "./actor/tests.mjs";
 
 /**
- *
+ * Runs all tests for the D&D 5e system.
+ * @returns {Promise<object>} The aggregated test results.
  */
 export async function runAllTests() {
   // This function runs all tests for the D&D 5e system.
