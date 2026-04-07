@@ -4,7 +4,7 @@ const DEFAULTS = { thp: 0, hp: 10, fp: 0, ahp: 0, maxhp: 10, tempmax: 0 };
 
 /**
  * Run all actor tests.
- * @returns {object} Test results grouped by suite.
+ * @returns {Promise<object>} Test results grouped by suite.
  */
 export async function runActorTests() {
   console.debug("Running actor tests...");
