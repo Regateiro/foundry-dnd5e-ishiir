@@ -1,6 +1,6 @@
 {
   "_id": "vsgmACFYINloIdPm",
-  "name": "Half Plate Armor",
+  "name": "Halfplate Armor",
   "type": "equipment",
   "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
   "system": {
@@ -77,9 +77,9 @@
       "scaling": "spell"
     },
     "armor": {
-      "value": 15,
+      "value": 16,
       "type": "medium",
-      "dex": 2
+      "dex": 1
     },
     "hp": {
       "value": 0,

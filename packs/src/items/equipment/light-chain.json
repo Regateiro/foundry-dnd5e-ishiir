@@ -1,11 +1,11 @@
 {
-  "_id": "nsXZejlmgalj4he9",
-  "name": "Ring Mail",
+  "_id": "yZhgvV0lbdCQwcqI",
+  "name": "Light Chain Armor",
   "type": "equipment",
-  "img": "icons/equipment/chest/breastplate-banded-simple-leather-brown.webp",
+  "img": "icons/equipment/chest/breastplate-metal-scaled-grey.webp",
   "system": {
     "description": {
-      "value": "<p>This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.</p>",
+      "value": "<p>Made of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -16,9 +16,9 @@
       "license": "CC-BY-4.0"
     },
     "quantity": 1,
-    "weight": 40,
+    "weight": 55,
     "price": {
-      "value": 30,
+      "value": 50,
       "denomination": "gp"
     },
     "attunement": 0,
@@ -35,7 +35,6 @@
       "units": ""
     },
     "cover": null,
-    "crewed": false,
     "target": {
       "value": null,
       "width": null,
@@ -77,9 +76,9 @@
       "scaling": "spell"
     },
     "armor": {
-      "value": 15,
-      "type": "heavy",
-      "dex": 0
+      "value": 14,
+      "type": "medium",
+      "dex": 2
     },
     "hp": {
       "value": 0,
@@ -87,13 +86,12 @@
       "dt": null,
       "conditions": ""
     },
-    "baseItem": "ringmail",
+    "baseItem": "chainmail",
     "speed": {
       "value": null,
       "conditions": ""
     },
-    "strength": null,
-    "stealth": true,
+    "stealth": false,
     "proficient": null
   },
   "effects": [],
@@ -105,11 +103,11 @@
   "flags": {},
   "_stats": {
     "systemId": "dnd5e",
-    "systemVersion": "2.2.2",
+    "systemVersion": "2.4.4",
     "coreVersion": "10.291",
-    "createdTime": 1661787233865,
-    "modifiedTime": 1690539369755,
+    "createdTime": 1775948657404,
+    "modifiedTime": 1775948657404,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!nsXZejlmgalj4he9"
+  "_key": "!items!yZhgvV0lbdCQwcqI"
 }

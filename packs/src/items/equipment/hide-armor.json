@@ -78,8 +78,8 @@
     },
     "armor": {
       "value": 12,
-      "type": "medium",
-      "dex": 2
+      "type": "light",
+      "dex": null
     },
     "hp": {
       "value": 0,
@@ -93,7 +93,7 @@
       "conditions": ""
     },
     "strength": null,
-    "stealth": false,
+    "stealth": true,
     "proficient": null
   },
   "effects": [],

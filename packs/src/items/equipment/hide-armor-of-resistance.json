@@ -78,8 +78,8 @@
     },
     "armor": {
       "value": 12,
-      "type": "medium",
-      "dex": 2
+      "type": "light",
+      "dex": null
     },
     "hp": {
       "value": 0,

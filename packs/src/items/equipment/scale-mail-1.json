@@ -77,9 +77,9 @@
       "scaling": "spell"
     },
     "armor": {
-      "value": 15,
+      "value": 16,
       "type": "medium",
-      "dex": 2
+      "dex": 1
     },
     "hp": {
       "value": 0,

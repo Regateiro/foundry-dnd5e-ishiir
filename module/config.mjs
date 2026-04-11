@@ -676,6 +676,8 @@ DND5E.armorIds = {
   halfplate: "vsgmACFYINloIdPm",
   hide: "n1V07puo0RQxPGuF",
   leather: "WwdpHLXGX5r8uZu5",
+  lightchain: "yZhgvV0lbdCQwcqI",
+  lightscale: "7OLYFLufnp43p4np",
   padded: "GtKV1b5uqFQqpEni",
   plate: "OjkIqlW2UpgFcjZa",
   ringmail: "nsXZejlmgalj4he9",
