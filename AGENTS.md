@@ -10,68 +10,27 @@
 - **Auto‑fix lint issues**: `npm run lint:fix`
 - **Watch LESS for hot reload**: `npm run watch`
 
-- Tests are places under `./tests` and assume they run inside the Foundry environment.
->   * Tests depend on the Foundry runtime, meaning that they need to be executed inside the Foundry application.
+- Tests are under `./tests` and run inside Foundry (not via npm).
 
 ## Code Style & Conventions
-- **File format**: All source files are ES modules (`*.mjs`). They live either at the repo root or under `module/`.
-- **Imports**:
->   * Use relative paths only.
->   * Include file extensions (e.g., `./foo.mjs`).
->   * Avoid wildcard imports; import only what you need.
+- **File format**: All source files are ES modules (`*.mjs`). They live at the repo root or under `module/`.
+- **Imports**: Use relative paths only. Include file extensions (e.g., `./foo.mjs`). Avoid wildcard imports.
 - **Formatting**: ESLint enforces style. Run `npm run lint:fix` to auto‑format.
-- **JSDoc**:
->   * Every public function, class, or module should start with a JSDoc block.
->   * Keep tags short: `@param`, `@returns`, `@throws`.
->   * Example:
->     ```js
->     /**
->      * Calculates the damage of a roll.
->      * @param {string} formula - Roll expression.
->      * @returns {number}
->      */
->     export function damageRoll(formula) {
->       ...
->     }
->     ```
-- **Naming**:
->   * Variables & functions: camelCase
->   * Classes / constructors: PascalCase
->   * Constants: UPPER_SNAKE_CASE
->   * Files: kebab-case, all lowercase
-- **Error handling**:
->   * Use `throw new Error(message)` for unrecoverable errors.
->   * Wrap async operations in `try/catch` and log with `fancyLog()`.
-- **Logging**: Runtime logs go through `fancyLog()` from the CLI package. Do not use `console.log` in production code.
-- **Testing hooks**:
->   * If you add tests, keep them in a dedicated folder to avoid accidental commits of test data.
+- **JSDoc**: Every public function, class, or module needs a JSDoc block. Keep tags short: `@param`, `@returns`, `@throws`.
+- **Naming**: Variables/functions: camelCase | Classes: PascalCase | Constants: UPPER_SNAKE_CASE | Files: kebab-case
+- **Error handling**: Use `throw new Error(message)` for unrecoverable errors. Wrap async ops in `try/catch` and log with `fancyLog()`.
+- **Logging**: Use `fancyLog()` from `@foundryvtt/foundryvtt-cli`. Do not use `console.log` in production.
 
-## Cursor & Copilot Rules
-- No `.cursor/rules/` or `.cursorrules` directories are present.
-- Copilot instructions live in `.github/copilot-instructions.md`. Key takeaways:
->   * Avoid generating large blocks of code without comments.
->   * Prefer concise, focused snippets.
->   * Use JSDoc for public APIs.
->   * Do not add emoji or decorative text unless explicitly requested.
+## Project Structure
+- **Entry point**: `dnd5e.mjs`
+- **Compiled bundle**: `dnd5e-compiled.mjs` (untracked in git)
+- **Assets**: Packs, tokens, and images under `packs/` or `tokens/`
+- **Source**: `module/` directory contains core modules
 
-## Miscellaneous
-- **Assets**: All packs, tokens, and images reside under `packs/` or `tokens/`.
-- **Entry point**: The module's main file is `dnd5e.mjs`.
-- **Compiled bundle**: Generated as `dnd5e-compiled.mjs`; this file should remain untracked in source control.
-- **Package.json scripts**:
->   * `build`: runs code, CSS, and DB build steps.
->   * `lint`: lints all `.mjs` files.
->   * `watch`: watches LESS for changes.
-
-## Quick Reference Table
-| Task | Command |
-|------|---------|
-| Clean cache | `source .venv/bin/activate && npm run build:clean` |
-| Rebuild all | `source .venv/bin/activate && npm run build` |
-| Lint only | `source .venv/bin/activate && npm run lint` |
-| Auto‑fix | `source .venv/bin/activate && npm run lint:fix` |
-| Watch styles | `source .venv/bin/activate && npm run watch` |
+## Misc
+- **Copilot**: See `.github/copilot-instructions.md` for team conventions.
+- **Testing**: If you add tests, keep them in a dedicated folder to avoid accidental commits of test data.
 
 ---
 
-**Tip**: After any change, run `source .venv/bin/activate && npm run lint && npm run build` to ensure code quality and a fresh bundle.
+**Tip**: After any change, run `npm run lint && npm run build` to ensure code quality and a fresh bundle.
