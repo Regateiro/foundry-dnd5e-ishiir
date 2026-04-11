@@ -672,7 +672,6 @@ DND5E.armorProficienciesMap = {
 DND5E.armorIds = {
   breastplate: "SK2HATQ4abKUlV8i",
   chainmail: "rLMflzmxpe8JGTOA",
-  chainshirt: "p2zChy24ZJdVqMSH",
   halfplate: "vsgmACFYINloIdPm",
   hide: "n1V07puo0RQxPGuF",
   leather: "WwdpHLXGX5r8uZu5",
