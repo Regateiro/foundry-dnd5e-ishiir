@@ -77,9 +77,9 @@
       "scaling": "spell"
     },
     "armor": {
-      "value": 16,
+      "value": 17,
       "type": "medium",
-      "dex": 2
+      "dex": 1
     },
     "hp": {
       "value": 0,
@@ -108,7 +108,7 @@
     "systemVersion": "2.2.2",
     "coreVersion": "10.291",
     "createdTime": 1661787233797,
-    "modifiedTime": 1690538868549,
+    "modifiedTime": 1775950041975,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!fO1PuSOtZWLzEHqu"

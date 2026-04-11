@@ -91,7 +91,7 @@
       "value": null,
       "conditions": ""
     },
-    "strength": 15,
+    "strength": 14,
     "stealth": true,
     "proficient": null
   },
@@ -107,7 +107,7 @@
     "systemVersion": "2.1.0",
     "coreVersion": "10.291",
     "createdTime": 1661787233736,
-    "modifiedTime": 1671220961970,
+    "modifiedTime": 1775950041975,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!cKpJmsJmU8YaiuqG"

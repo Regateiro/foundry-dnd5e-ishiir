@@ -1,6 +1,6 @@
 {
   "_id": "vsgmACFYINloIdPm",
-  "name": "Half Plate Armor",
+  "name": "Halfplate Armor",
   "type": "equipment",
   "img": "icons/equipment/chest/breastplate-cuirass-steel-grey.webp",
   "system": {
@@ -77,9 +77,9 @@
       "scaling": "spell"
     },
     "armor": {
-      "value": 15,
+      "value": 16,
       "type": "medium",
-      "dex": 2
+      "dex": 1
     },
     "hp": {
       "value": 0,
@@ -108,7 +108,7 @@
     "systemVersion": "2.2.2",
     "coreVersion": "10.291",
     "createdTime": 1661787233954,
-    "modifiedTime": 1690539014883,
+    "modifiedTime": 1775950041975,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!vsgmACFYINloIdPm"

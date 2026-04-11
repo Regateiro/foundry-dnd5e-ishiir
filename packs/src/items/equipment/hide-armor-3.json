@@ -78,8 +78,8 @@
     },
     "armor": {
       "value": 15,
-      "type": "medium",
-      "dex": 2
+      "type": "light",
+      "dex": null
     },
     "hp": {
       "value": 0,
@@ -108,7 +108,7 @@
     "systemVersion": "2.2.2",
     "coreVersion": "10.291",
     "createdTime": 1661787233573,
-    "modifiedTime": 1690538753935,
+    "modifiedTime": 1775950041975,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!IeM5Ha2cg0RA99q3"
