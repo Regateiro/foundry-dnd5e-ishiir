@@ -653,6 +653,7 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
       // Owned Item management
       html.find(".item-create").click(this._onItemCreate.bind(this));
       html.find(".item-delete").click(this._onItemDelete.bind(this));
+      html.find(".item-masterworked").click(this._onItemMasterworked.bind(this));
       html.find(".item-uses input").click(ev => ev.target.select()).change(this._onUsesChange.bind(this));
       html.find(".item-quantity input").click(ev => ev.target.select()).change(this._onQuantityChange.bind(this));
       html.find(".slot-max-override").click(this._onSpellSlotOverride.bind(this));
@@ -1237,6 +1238,21 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
     }
 
     return item.deleteDialog();
+  }
+
+ /**
+   * Handle masterworking an existing Owned Item for the Actor.
+   * @param {Event} event  The originating click event.
+   * @returns {Promise<Item5e>|undefined}  The masterworked item if something was deleted or the
+   *                                                          advancement manager if advancements need removing.
+   * @private
+   */
+  async _onItemMasterworked(event) {
+    event.preventDefault();
+    const li = event.currentTarget.closest(".item");
+    const item = this.actor.items.get(li.dataset.itemId);
+    if ( !item ) return;
+    return await item.update({"system.masterworked": !item.system.masterworked});
   }
 
   /* -------------------------------------------- */

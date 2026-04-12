@@ -151,6 +151,15 @@
                 <a class="item-control item-delete" data-action="itemDelete" data-tooltip="DND5E.ItemDelete">
                     <i class="fas fa-trash"></i>
                 </a>
+                {{#if item.system.masterworked}}
+                <a class="item-control item-masterworked" data-action="itemMasterworked" data-tooltip="DND5E.Masterworked">
+                    <i class="fa-solid fa-star"></i>
+                </a>
+                {{else}}
+                <a class="item-control item-masterworked" data-action="itemMasterworked" data-tooltip="DND5E.NotMasterworked">
+                    <i class="fa-regular fa-star"></i>
+                </a>
+                {{/if}}
             </div>
             {{/if}}
 

@@ -1760,7 +1760,7 @@ h5 {
   height: calc(var(--form-field-height) + 5px);
   line-height: 1.5em;
 }
-.dnd5e.advancement.flow form[data-type="ItemChoice"] .item-name .item-delete {
+.dnd5e.advancement.flow form[data-type="ItemChoice"] .item-name .item-delete .item-masterworked {
   flex: 0 0 20px;
   margin-inline-end: 1px;
 }
