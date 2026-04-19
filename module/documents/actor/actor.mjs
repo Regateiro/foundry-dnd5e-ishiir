@@ -1992,11 +1992,12 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @private
    */
   async _rest(chat, newDay, recoverArmorMastery, longRest, dhd=0, dhp=0) {
-    let armorMasteryUpdates = {};
     let hitPointsRecovered = 0;
     let hitPointUpdates = {};
     let hitDiceRecovered = 0;
     let hitDiceUpdates = [];
+    let armorMasteryRecovered = 0;
+    let armorMasteryUpdates = {};
     const rolls = [];
 
     // Recover hit points & hit dice on long rest
@@ -2005,8 +2006,9 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       ({ updates: hitDiceUpdates, hitDiceRecovered } = this._getRestHitDiceRecovery());
     }
 
-    // Recover armor mastery temporary hit points
-    if ( recoverArmorMastery ) {
+    // Recover armor mastery temporary hit points if enabled
+    if ( this.flags.dnd5e.armorMastery && recoverArmorMastery ) {
+      armorMasteryRecovered = Number(this.system.attributes.hp.armormax) - Number(this.system.attributes.hp.armor);
       armorMasteryUpdates["system.attributes.hp.armor"] = this.system.attributes.hp.armormax;
     }
 
@@ -2014,6 +2016,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const result = {
       dhd: dhd + hitDiceRecovered,
       dhp: dhp + hitPointsRecovered,
+      dam: armorMasteryRecovered,
       updateData: {
         ...hitPointUpdates,
         ...armorMasteryUpdates,
@@ -2070,10 +2073,11 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @protected
    */
   async _displayRestResultMessage(result, longRest=false) {
-    const { dhd, dhp, newDay } = result;
+    const { dhd, dhp, dam, newDay } = result;
     const diceRestored = dhd !== 0;
     const healthRestored = dhp !== 0;
     const length = longRest ? "Long" : "Short";
+    const armorType = this.system.attributes.ac?.equippedArmor?.system?.armor?.type || "unarmored";
 
     // Summarize the rest duration
     let restFlavor;
@@ -2096,17 +2100,35 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     else if ( longRest && diceRestored && !healthRestored ) message = "DND5E.LongRestResultHitDice";
     else message = `DND5E.${length}RestResultShort`;
 
+    // Localize the initial message
+    message = game.i18n.format(message, {
+      name: this.name,
+      dice: longRest ? dhd : -dhd,
+      health: dhp
+    });
+
+    // Determine the armor mastery message to display
+    const armorMessage = armorType === "unarmored" ? "DND5E.RestArmorMasteryCostUnarmoured" : "DND5E.RestArmorMasteryCostNormal";
+    // If armor mastery temp HP are being recovered, display it in the message
+    if ( this.flags.dnd5e.armorMastery && dam > 0 ) {
+      // The multiplier is 10 for heavy armor, 1 for light armor, and 5 for medium armor / unarmored
+      const multiplier = ( armorType === "heavy" ? 10 : ( armorType === "light" ? 1 : 5 ));
+      // Append the armor mastery recovery message
+      message += "<br/>" + game.i18n.format(armorMessage, {
+        name: this.name,
+        armorType: armorType,
+        armorRecovered: dam,
+        armorCost: dam * multiplier
+      });
+    }
+
     // Create a chat message
     let chatData = {
       user: game.user.id,
       speaker: {actor: this, alias: this.name},
       flavor: game.i18n.localize(restFlavor),
       rolls: result.rolls,
-      content: game.i18n.format(message, {
-        name: this.name,
-        dice: longRest ? dhd : -dhd,
-        health: dhp
-      })
+      content: message
     };
     ChatMessage.applyRollMode(chatData, game.settings.get("core", "rollMode"));
     return ChatMessage.create(chatData);

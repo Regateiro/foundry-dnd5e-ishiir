@@ -2,7 +2,7 @@
   "id": "dnd5e",
   "title": "Sieg5e - Fifth Edition System",
   "description": "A system for playing the improved version of the fifth edition of the worlds most popular role-playing game in the Foundry Virtual Tabletop environment.",
-  "version": "2.4.5",
+  "version": "2.4.6",
   "compatibility": {
     "minimum": "10.303",
     "verified": "11"

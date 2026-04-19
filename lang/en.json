@@ -983,6 +983,8 @@
 "DND5E.ResourceSecondary": "Resource 2",
 "DND5E.ResourceTertiary": "Resource 3",
 "DND5E.Rest": "Rest",
+"DND5E.RestArmorMasteryCostNormal": "{name} also repairs {armorRecovered} hp of their {armorType} armor for {armorCost} silver.",
+"DND5E.RestArmorMasteryCostUnarmoured": "{name} also recovers {armorRecovered} hp of their unarmored defense for {armorCost} silver.",
 "DND5E.RestL": "L. Rest",
 "DND5E.RestS": "S. Rest",
 "DND5E.Ritual": "Ritual",
