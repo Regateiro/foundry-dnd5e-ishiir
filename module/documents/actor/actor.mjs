@@ -2373,28 +2373,31 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * the target actor.
    *
    * @typedef {object} TransformationOptions
-   * @property {boolean} [keepPhysical=false]       Keep physical abilities (str, dex, con)
-   * @property {boolean} [keepMental=false]         Keep mental abilities (int, wis, cha)
-   * @property {boolean} [keepSaves=false]          Keep saving throw proficiencies
-   * @property {boolean} [keepSkills=false]         Keep skill proficiencies
-   * @property {boolean} [mergeSaves=false]         Take the maximum of the save proficiencies
-   * @property {boolean} [mergeSkills=false]        Take the maximum of the skill proficiencies
-   * @property {boolean} [keepClass=false]          Keep proficiency bonus
-   * @property {boolean} [keepFeats=false]          Keep features
-   * @property {boolean} [keepSpells=false]         Keep spells and spellcasting ability
-   * @property {boolean} [keepItems=false]          Keep items
-   * @property {boolean} [keepBio=false]            Keep biography
-   * @property {boolean} [keepVision=false]         Keep vision
-   * @property {boolean} [keepSelf=false]           Keep self
-   * @property {boolean} [keepAE=false]             Keep all effects
-   * @property {boolean} [keepOriginAE=true]        Keep effects which originate on this actor
-   * @property {boolean} [keepOtherOriginAE=true]   Keep effects which originate on another actor
-   * @property {boolean} [keepSpellAE=true]         Keep effects which originate from actors spells
-   * @property {boolean} [keepFeatAE=true]          Keep effects which originate from actors features
-   * @property {boolean} [keepEquipmentAE=true]     Keep effects which originate on actors equipment
-   * @property {boolean} [keepClassAE=true]         Keep effects which originate from actors class/subclass
-   * @property {boolean} [keepBackgroundAE=true]    Keep effects which originate from actors background
-   * @property {boolean} [transformTokens=true]     Transform linked tokens too
+   * @property {boolean} [keepHp=true]                     Keep original actor hit points
+   * @property {boolean} [keepOtherHpAsTemporaryHP=false]  Keep hit points from the new form as temporary HP
+   * @property {boolean} [keepDruidLevelTemporaryHP=false] Keep temporary HP equal to the druid level of the original actor
+   * @property {boolean} [keepPhysical=false]              Keep physical abilities (str, dex, con)
+   * @property {boolean} [keepMental=false]                Keep mental abilities (int, wis, cha)
+   * @property {boolean} [keepSaves=false]                 Keep saving throw proficiencies
+   * @property {boolean} [keepSkills=false]                Keep skill proficiencies
+   * @property {boolean} [mergeSaves=false]                Take the maximum of the save proficiencies
+   * @property {boolean} [mergeSkills=false]               Take the maximum of the skill proficiencies
+   * @property {boolean} [keepClass=false]                 Keep proficiency bonus
+   * @property {boolean} [keepFeats=false]                 Keep features
+   * @property {boolean} [keepSpells=false]                Keep spells and spellcasting ability
+   * @property {boolean} [keepItems=false]                 Keep items
+   * @property {boolean} [keepBio=false]                   Keep biography
+   * @property {boolean} [keepVision=false]                Keep vision
+   * @property {boolean} [keepSelf=false]                  Keep self
+   * @property {boolean} [keepAE=false]                    Keep all effects
+   * @property {boolean} [keepOriginAE=true]               Keep effects which originate on this actor
+   * @property {boolean} [keepOtherOriginAE=true]          Keep effects which originate on another actor
+   * @property {boolean} [keepSpellAE=true]                Keep effects which originate from actors spells
+   * @property {boolean} [keepFeatAE=true]                 Keep effects which originate from actors features
+   * @property {boolean} [keepEquipmentAE=true]            Keep effects which originate on actors equipment
+   * @property {boolean} [keepClassAE=true]                Keep effects which originate from actors class/subclass
+   * @property {boolean} [keepBackgroundAE=true]           Keep effects which originate from actors background
+   * @property {boolean} [transformTokens=true]            Transform linked tokens too
    */
 
   /**
@@ -2405,11 +2408,11 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {boolean} [options.renderSheet=true]  Render the sheet of the transformed actor after the polymorph
    * @returns {Promise<Array<Token>>|null}        Updated token if the transformation was performed.
    */
-  async transformInto(target, { keepPhysical=false, keepMental=false, keepSaves=false, keepSkills=false,
-    mergeSaves=false, mergeSkills=false, keepClass=false, keepFeats=false, keepSpells=false, keepItems=false,
-    keepBio=false, keepVision=false, keepSelf=false, keepAE=false, keepOriginAE=true, keepOtherOriginAE=true,
-    keepSpellAE=true, keepEquipmentAE=true, keepFeatAE=true, keepClassAE=true, keepBackgroundAE=true,
-    transformTokens=true}={}, {renderSheet=true}={}) {
+  async transformInto(target, { keepHP=true, keepOtherHpAsTemporaryHP=false, keepDruidLevelTemporaryHP=false,
+    keepPhysical=false, keepMental=false, keepSaves=false, keepSkills=false, mergeSaves=false, mergeSkills=false,
+    keepClass=false, keepFeats=false, keepSpells=false, keepItems=false, keepBio=false, keepVision=false,
+    keepSelf=false, keepAE=false, keepOriginAE=true, keepOtherOriginAE=true, keepSpellAE=true, keepEquipmentAE=true,
+    keepFeatAE=true, keepClassAE=true, keepBackgroundAE=true, transformTokens=true, druidLevel=0}={}, {renderSheet=true}={}) {
 
     // Ensure the player is allowed to polymorph
     const allowed = game.settings.get("dnd5e", "allowPolymorphing");
@@ -2457,6 +2460,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     d.system.attributes.ac.flat = target.system.attributes.ac.value; // Override AC
 
     // Token appearance updates
+    d.prototypeToken.name = o.name; // Update token name to match actor name
     for ( const k of ["width", "height", "alpha", "lockRotation"] ) {
       d.prototypeToken[k] = source.prototypeToken[k];
     }
@@ -2473,6 +2477,25 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
         d.prototypeToken.sight[k] = sightSource.sight[k];
       }
       d.prototypeToken.detectionModes = sightSource.detectionModes;
+
+      // Process HP options
+      if ( keepHP ) {
+        d.system.attributes.hp.value = o.system.attributes.hp.value; // Keep current HP
+        d.system.attributes.hp.max = o.system.attributes.hp.max; // Keep max HP
+      }
+
+      // Process the transfer from target's HP to temp HP
+      if ( keepOtherHpAsTemporaryHP ) {
+        // Update temp HP to be the HP of the new form if it's higher than current temp HP
+        if ( d.system.attributes.hp.temp < target.system.attributes.hp.value ) {
+          d.system.attributes.hp.temp = target.system.attributes.hp.value;
+        }
+      } else if ( keepDruidLevelTemporaryHP ) {
+        // Process the transfer of druid level to temp HP, if it's higher than current temp HP
+        if ( d.system.attributes.hp.temp < druidLevel ) {
+          d.system.attributes.hp.temp = druidLevel;
+        }
+      }
 
       // Transfer ability scores
       const abilities = d.system.abilities;
@@ -2590,9 +2613,10 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
      * @param {object} [options]
      */
     Hooks.callAll("dnd5e.transformActor", this, target, d, {
-      keepPhysical, keepMental, keepSaves, keepSkills, mergeSaves, mergeSkills, keepClass, keepFeats, keepSpells,
-      keepItems, keepBio, keepVision, keepSelf, keepAE, keepOriginAE, keepOtherOriginAE, keepSpellAE,
-      keepEquipmentAE, keepFeatAE, keepClassAE, keepBackgroundAE, transformTokens
+      keepHP, keepOtherHpAsTemporaryHP, keepDruidLevelTemporaryHP, keepPhysical, keepMental,
+      keepSaves, keepSkills, mergeSaves, mergeSkills, keepClass, keepFeats, keepSpells,
+      keepItems, keepBio, keepVision, keepSelf, keepAE, keepOriginAE, keepOtherOriginAE,
+      keepSpellAE, keepEquipmentAE, keepFeatAE, keepClassAE, keepBackgroundAE, transformTokens
     }, {renderSheet});
 
     // Create new Actor with transformed data
@@ -2646,6 +2670,9 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
     // Obtain a reference to the original actor
     const original = game.actors.get(this.getFlag("dnd5e", "originalActor"));
+
+    // Ensure HP is kept from the current form to the original actor
+    original.system.attributes.hp.value = this.system.attributes.hp.value;
 
     // If we are reverting an unlinked token, grab the previous actorData, and create a new token
     if ( this.isToken ) {

@@ -181,6 +181,9 @@ export default function registerSystemSettings() {
   game.settings.register("dnd5e", "polymorphSettings", {
     scope: "client",
     default: {
+      keepHP: true,
+      keepOtherHpAsTemporaryHP: false,
+      keepDruidLevelTemporaryHP: false,
       keepPhysical: false,
       keepMental: false,
       keepSaves: false,

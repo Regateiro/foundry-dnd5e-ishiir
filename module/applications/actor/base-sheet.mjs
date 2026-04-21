@@ -886,7 +886,8 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
         options: game.settings.get("dnd5e", "polymorphSettings"),
         settings: CONFIG.DND5E.polymorphSettings,
         effectSettings: CONFIG.DND5E.polymorphEffectSettings,
-        isToken: this.actor.isToken
+        isToken: this.actor.isToken,
+        druidLevel: this.actor.classes?.druid?.system?.levels ?? 0
       },
       default: "accept",
       buttons: {
@@ -900,7 +901,7 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
           label: CONFIG.DND5E.transformationPresets.wildshape.label,
           callback: html => this.actor.transformInto(sourceActor, foundry.utils.mergeObject(
             CONFIG.DND5E.transformationPresets.wildshape.options,
-            { transformTokens: rememberOptions(html).transformTokens }
+            { transformTokens: rememberOptions(html).transformTokens, druidLevel: Number(html.find("#druidLevel")[0].value) }
           ))
         },
         polymorph: {

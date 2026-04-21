@@ -30,6 +30,14 @@
             </label>
         </div>
         {{/each}}
+        <br/>
+        <h3>{{localize 'DND5E.PolymorphOtherOptions'}}</h3>
+        <div class="flexrow-fit">
+            <label>
+                {{localize 'DND5E.PolymorphDruidLevelPrompt'}}
+            </label>&nbsp;
+            <input type="number" id="druidLevel" name="druidLevel" value="{{content.druidLevel}}" style="width: 2em;"/>
+        </div>
     </div>
 </div>
 <div class="dialog-buttons">

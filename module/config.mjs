@@ -1537,6 +1537,9 @@ DND5E.sourcePacks = {
  * @enum {string}
  */
 DND5E.polymorphSettings = {
+  keepHP: "DND5E.PolymorphKeepHP",
+  keepOtherHpAsTemporaryHP: "DND5E.PolymorphKeepOtherHpAsTemporaryHP",
+  keepDruidLevelTemporaryHP: "DND5E.PolymorphKeepDruidLevelTemporaryHP",
   keepPhysical: "DND5E.PolymorphKeepPhysical",
   keepMental: "DND5E.PolymorphKeepMental",
   keepSaves: "DND5E.PolymorphKeepSaves",
@@ -1578,22 +1581,21 @@ DND5E.transformationPresets = {
     icon: '<i class="fas fa-paw"></i>',
     label: "DND5E.PolymorphWildShape",
     options: {
+      keepDruidLevelTemporaryHP: true,
       keepBio: true,
       keepClass: true,
       keepMental: true,
       mergeSaves: true,
       mergeSkills: true,
-      keepEquipmentAE: false
+      keepAE: true,
     }
   },
   polymorph: {
     icon: '<i class="fas fa-pastafarianism"></i>',
     label: "DND5E.Polymorph",
     options: {
-      keepEquipmentAE: false,
-      keepClassAE: false,
-      keepFeatAE: false,
-      keepBackgroundAE: false
+      keepOtherHpAsTemporaryHP: true,
+      keepAE: true,
     }
   },
   polymorphSelf: {
