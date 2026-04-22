@@ -196,9 +196,13 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
     }
     else {
       const isActive = !!item.system.equipped;
+      const isMasterworked = !!item.system.masterworked;
       context.toggleClass = isActive ? "active" : "";
       context.toggleTitle = game.i18n.localize(isActive ? "DND5E.Equipped" : "DND5E.Unequipped");
       context.canToggle = "equipped" in item.system;
+      context.toggleMasterworkedClass = isMasterworked ? "active" : "";
+      context.toggleMasterworkedTitle = game.i18n.localize(isMasterworked ? "DND5E.Masterworked" : "DND5E.NotMasterworked");
+      context.toggleMasterworkedIcon = isMasterworked ? "solid" : "regular";
     }
   }
 
@@ -212,6 +216,7 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
     if ( !this.isEditable ) return;
     html.find(".level-selector").change(this._onLevelChange.bind(this));
     html.find(".item-toggle").click(this._onToggleItem.bind(this));
+    html.find(".item-toggle-masterworked").click(this._onToggleItemMasterworked.bind(this));
     html.find(".short-rest").click(this._onShortRest.bind(this));
     html.find(".long-rest").click(this._onLongRest.bind(this));
     html.find(".rollable[data-action]").click(this._onSheetAction.bind(this));
@@ -286,6 +291,20 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
   }
 
   /* -------------------------------------------- */
+
+  /**
+   * Handle toggling the state of an Owned Item within the Actor.
+   * @param {Event} event        The triggering click event.
+   * @returns {Promise<Item5e>}  Item with the updates applied.
+   * @private
+   */
+  _onToggleItemMasterworked(event) {
+    event.preventDefault();
+    const itemId = event.currentTarget.closest(".item").dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    const attr = "system.masterworked";
+    return item.update({[attr]: !foundry.utils.getProperty(item, attr)});
+  }
 
   /**
    * Handle toggling the state of an Owned Item within the Actor.
