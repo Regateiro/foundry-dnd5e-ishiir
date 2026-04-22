@@ -653,7 +653,6 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
       // Owned Item management
       html.find(".item-create").click(this._onItemCreate.bind(this));
       html.find(".item-delete").click(this._onItemDelete.bind(this));
-      html.find(".item-masterworked").click(this._onItemMasterworked.bind(this));
       html.find(".item-uses input").click(ev => ev.target.select()).change(this._onUsesChange.bind(this));
       html.find(".item-quantity input").click(ev => ev.target.select()).change(this._onQuantityChange.bind(this));
       html.find(".slot-max-override").click(this._onSpellSlotOverride.bind(this));
