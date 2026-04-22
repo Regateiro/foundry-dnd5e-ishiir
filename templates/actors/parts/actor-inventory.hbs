@@ -143,6 +143,9 @@
                     <i class="fas fa-shield-alt"></i>
                 </a>
                 {{/if}}
+                <a class="item-control item-toggle-masterworked {{ctx.toggleMasterworkedClass}}" data-action="itemToggle" data-tooltip="{{ctx.toggleMasterworkedTitle}}">
+                    <i class="fa-{{ctx.toggleMasterworkedIcon}} fa-star"></i>
+                </a>
                 {{#unless section.editableName}}
                 <a class="item-control item-edit" data-action="itemEdit" data-tooltip="DND5E.ItemEdit">
                     <i class="fas fa-edit"></i>
@@ -151,15 +154,6 @@
                 <a class="item-control item-delete" data-action="itemDelete" data-tooltip="DND5E.ItemDelete">
                     <i class="fas fa-trash"></i>
                 </a>
-                {{#if item.system.masterworked}}
-                <a class="item-control item-masterworked" data-action="itemMasterworked" data-tooltip="DND5E.Masterworked">
-                    <i class="fa-solid fa-star"></i>
-                </a>
-                {{else}}
-                <a class="item-control item-masterworked" data-action="itemMasterworked" data-tooltip="DND5E.NotMasterworked">
-                    <i class="fa-regular fa-star"></i>
-                </a>
-                {{/if}}
             </div>
             {{/if}}
 

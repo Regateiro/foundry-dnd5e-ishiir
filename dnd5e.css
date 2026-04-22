@@ -2487,18 +2487,26 @@ a.roll-link i {
 .dnd5e.sheet.actor.character .spellbook .item-controls {
   flex: 0 0 68px;
 }
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle-masterworked,
+.dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle-masterworked,
 .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle,
 .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle {
   color: #b5b3a4;
 }
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle-masterworked.active,
+.dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle-masterworked.active,
 .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.active,
 .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.active {
   color: #4b4a44;
 }
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle-masterworked.fixed,
+.dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle-masterworked.fixed,
 .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.fixed,
 .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.fixed {
   color: #44191A;
 }
+.dnd5e.sheet.actor.character .inventory .item-controls .item-toggle-masterworked.fixed:hover,
+.dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle-masterworked.fixed:hover,
 .dnd5e.sheet.actor.character .inventory .item-controls .item-toggle.fixed:hover,
 .dnd5e.sheet.actor.character .spellbook .item-controls .item-toggle.fixed:hover {
   text-shadow: none;

@@ -1241,21 +1241,6 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
     return item.deleteDialog();
   }
 
- /**
-   * Handle masterworking an existing Owned Item for the Actor.
-   * @param {Event} event  The originating click event.
-   * @returns {Promise<Item5e>|undefined}  The masterworked item if something was deleted or the
-   *                                                          advancement manager if advancements need removing.
-   * @private
-   */
-  async _onItemMasterworked(event) {
-    event.preventDefault();
-    const li = event.currentTarget.closest(".item");
-    const item = this.actor.items.get(li.dataset.itemId);
-    if ( !item ) return;
-    return await item.update({"system.masterworked": !item.system.masterworked});
-  }
-
   /* -------------------------------------------- */
 
   /**
