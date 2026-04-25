@@ -1,0 +1,46 @@
+{
+  "_id": "s0f99214e9f33732",
+  "name": "Bard: College of Whispers",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "bard",
+    "identifier": "bard-college-of-whispers",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s91f57b0023d3efd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s6daf695978b2bad"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361411,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s0f99214e9f33732",
+  "flags": {},
+  "sort": 0
+}

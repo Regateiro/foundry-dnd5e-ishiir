@@ -1,0 +1,85 @@
+{
+  "name": "Elemental School",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>A kineticist chooses one primary element on which to focus. This element determines how she accesses the raw power of the Ethereal Plane, and grants you features at 1st level and again at 6th, 10th, 15th, and 20th level.</p><p>Regardless of your chosen element, you use your Charisma modifier when setting Attack Rolls and determining the Saving Throw DC of your abilities.</p><p><b>Spell save DC</b> = 8 + your Proficiency bonus + your Charisma modifier</p><p><b>Spell attack modifier</b> = your Proficiency bonus + your Charisma modifier</p><p><strong>The Elements, intertwined.</strong> Unlike other classes, the kineticist can mix and match her subclass features, provided she has access to multiple different elements through her Expanded Element class feature.</p><p>If so, she can choose from the subclass features available to any of her schools at the appropriate level. For example, if a kineticist picked air as her school at 1st level and then fire at 6th, she can choose her subclass feature at 7th level from either school.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/symbols/elements-air-earth-fire-water.webp",
+  "_id": "se0bbdb0e181919f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361454,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se0bbdb0e181919f",
+  "flags": {},
+  "sort": 0
+}

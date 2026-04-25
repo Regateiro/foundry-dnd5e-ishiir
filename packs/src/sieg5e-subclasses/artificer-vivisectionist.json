@@ -1,0 +1,71 @@
+{
+  "_id": "sde959907fcd6498",
+  "name": "Artificer: Vivisectionist",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "artificer",
+    "identifier": "artificer-vivisectionist",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s57bdf80bd508817",
+            "Compendium.dnd5e.sieg5e-classfeatures.sba2c9843fed780b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s37237360468ebf4",
+            "Compendium.dnd5e.sieg5e-classfeatures.sec11a43830604c9"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.scc79e398e9410cd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s56da437e1206696"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9565d45df966d7e"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361410,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sde959907fcd6498",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Toppling Attacks",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Increase your Eidolon's Strength or Constitution by 1, up to a maximum of 20.</p><p>Creatures no more than one size larger than your Eidolon that are hit by your Eidolon's natural weapon attacks have to make a STR Saving Throw against your spell save DC. On failure, the target creature is knocked Prone.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "creatures no more than one size larger than your Eidolon that are hit by your Eidolon's natural weapon attacks"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "str",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/ranged/projectile-strike-impale-gray.webp",
+  "_id": "s38f40466fcd0f86",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361517,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s38f40466fcd0f86",
+  "flags": {},
+  "sort": 0
+}

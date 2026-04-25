@@ -1,7 +1,7 @@
 {
   "_id": "HuRwsW6OC3viFyHV",
   "name": "Aven Javelin",
- "type": "weapon",
+  "type": "weapon",
   "img": "icons/weapons/ammunition/arrows-bodkin-yellow-red.webp",
   "system": {
     "description": {

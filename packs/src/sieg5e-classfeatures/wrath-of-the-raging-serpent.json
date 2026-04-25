@@ -1,0 +1,85 @@
+{
+  "name": "Wrath of the Raging Serpent",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>While you are raging you can call down your god's fury in the form of a powerful lightning bolt when you hit a creature with a melee weapon attack. The target has to make a Dexterity Saving Throw. The DC is equal to 8 + your Proficiency + your STR modifier. On a failure, the creature takes 12d10 lightning damage, and half as much on a successful one. Any creature that you have Grappled has Disadvantage on this Saving Throw.</p><p>You cannot use this feature again until you have finished a Long Rest, unless you spend a use of your rage to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf48f8201b204ec0",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361430,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf48f8201b204ec0",
+  "flags": {},
+  "sort": 0
+}

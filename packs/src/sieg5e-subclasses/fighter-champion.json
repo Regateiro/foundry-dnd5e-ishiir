@@ -1,0 +1,118 @@
+{
+  "_id": "sff8351c6b3455a4",
+  "name": "Fighter: Champion",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "fighter",
+    "identifier": "fighter-champion",
+    "advancement": [
+      {
+        "title": "Choose Fighting Styles",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "7": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s97d499ca60a9d58",
+            "Compendium.dnd5e.sieg5e-optfeatures.seca00667ae01da3",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa7280b93ed079ef",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0c741fec32f4cce",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa88d8e0b7cefb10",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3da84db02342126",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7099d18e6f372dd",
+            "Compendium.dnd5e.sieg5e-optfeatures.s48479ecc1088203",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb549cdec1d0e0a1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4472fa7a894a2d8",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd0f13083a19dd8d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6faffec38eae402",
+            "Compendium.dnd5e.sieg5e-optfeatures.sfc270730094c7cb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se585d5191d48689",
+            "Compendium.dnd5e.sieg5e-classfeatures.sa026b70b8f94b59"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s6c64c7d66e52e18"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": []
+        }
+      },
+      {
+        "title": "Choose Features",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "choices": {
+            "10": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s86552e815838aec",
+            "Compendium.dnd5e.sieg5e-classfeatures.s2aee1698949012e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sfa5a7dd23f99d3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3bdcd22a0fea152"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/maneuver-greatsword-yellow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361414,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sff8351c6b3455a4",
+  "flags": {},
+  "sort": 0
+}

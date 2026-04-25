@@ -1,0 +1,57 @@
+{
+  "_id": "sd8539e37c057e6c",
+  "name": "Paladin: Oath of the Noble Genie",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oath-of-the-noble-genie",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf8dd7f6038cb544"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5b3c04ad4d7c805"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc0fb5726a65ff9e"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361417,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd8539e37c057e6c",
+  "flags": {},
+  "sort": 0
+}

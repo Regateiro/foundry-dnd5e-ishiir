@@ -1,0 +1,57 @@
+{
+  "_id": "s6be3b4e20259dbe",
+  "name": "Sorcerer: Phoenix Sorcery",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "sorcerer",
+    "identifier": "sorcerer-phoenix-sorcery",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s50e68b13b1d48c5"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4256aca0455756a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd771987a04cb443"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/fire/projectile-feathers-embers-gold.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361419,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6be3b4e20259dbe",
+  "flags": {},
+  "sort": 0
+}

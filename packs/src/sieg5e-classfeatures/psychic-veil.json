@@ -1,0 +1,85 @@
+{
+  "name": "Psychic Veil",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can weave a veil of psychic static to mask yourself. As an Action, you can magically become Invisible, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a Saving Throw.</p><p>If you expend a Psionic Energy Die, you can also affect all creatures of your choice while they are within 20 feet of you. The effect ends early on all affected creatures when any of them deal damage to a creature or force it to make a Saving Throw.</p><p>Once you use this feature, you can't do so again until you finish a Long Rest, unless you expend a Psionic Energy die to use this feature again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5933560bc979c52",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361476,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5933560bc979c52",
+  "flags": {},
+  "sort": 0
+}

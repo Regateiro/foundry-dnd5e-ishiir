@@ -1,0 +1,85 @@
+{
+  "name": "Harmonious Defense",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to weave the energies of all your chosen elements together seamlessly.</p><p>Your Elemental Defense subclass features are no longer exclusive and you can choose to activate any number of them with the same Bonus Action (dismissing them still requires no action on your part).</p><p>If your chosen elements grant you access to different formulas to calculate your AC, you must still decide which one to use when you activate your Elemental Defense.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/defensive/shield-barrier-flaming-pentagon-teal-purple.webp",
+  "_id": "sd413cf9dd341422",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361455,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd413cf9dd341422",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Replicate Magic Item",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Using this infusion, you replicate a particular magic item. You can learn this infusion multiple times; each time you do so, choose a magic item that you can make with it, picking from the Replicable Items tables below. A table's title tells you the level you must be in the class to choose an item from the table. Alternatively, you can choose the magic item from among the common magic items in the game, not including potions or scrolls.</p><p>In the tables, an item's entry tells you whether the item requires attunement. See the item's description in the Dungeon Master's Guide for more information about it, including the type of object required for its making.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Replicable Items (2nd-Level Artificer)</caption><thead><tr><th scope=\"col\">Magic Item</th><th scope=\"col\">Attunement</th></tr></thead><tbody><tr><td>Alchemy jug</td><td>No</td></tr><tr><td>Bag of holding</td><td>No</td></tr><tr><td>Cap of water breathing</td><td>No</td></tr><tr><td>Goggles of night</td><td>No</td></tr><tr><td>Rope of climbing</td><td>No</td></tr><tr><td>Sending stones</td><td>No</td></tr><tr><td>Wand of magic detection</td><td>No</td></tr><tr><td>Wand of secrets</td><td>No</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Replicable Items (6th-Level Artificer)</caption><thead><tr><th scope=\"col\">Magic Item</th><th scope=\"col\">Attunement</th></tr></thead><tbody><tr><td>Boots of elvenkind</td><td>No</td></tr><tr><td>Cloak of elvenkind</td><td>Yes</td></tr><tr><td>Cloak of the manta ray</td><td>No</td></tr><tr><td>Eyes of charming</td><td>Yes</td></tr><tr><td>Gloves of thievery</td><td>No</td></tr><tr><td>Lantern of revealing</td><td>No</td></tr><tr><td>Pipes of haunting</td><td>No</td></tr><tr><td>Ring of water walking</td><td>No</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Replicable Items (10th-Level Artificer)</caption><thead><tr><th scope=\"col\">Magic Item</th><th scope=\"col\">Attunement</th></tr></thead><tbody><tr><td>Boots of striding and springing</td><td>Yes</td></tr><tr><td>Boots of the winterlands</td><td>Yes</td></tr><tr><td>Bracers of archery</td><td>Yes</td></tr><tr><td>Brooch of shielding</td><td>Yes</td></tr><tr><td>Cloak of protection</td><td>Yes</td></tr><tr><td>Eyes of the eagle</td><td>Yes</td></tr><tr><td>Gauntlets of ogre power</td><td>Yes</td></tr><tr><td>Gloves of missile snaring</td><td>Yes</td></tr><tr><td>Gloves of swimming and climbing</td><td>Yes</td></tr><tr><td>Hat of disguise</td><td>Yes</td></tr><tr><td>Headband of intellect</td><td>Yes</td></tr><tr><td>Helm of telepathy</td><td>Yes</td></tr><tr><td>Medallion of thoughts</td><td>Yes</td></tr><tr><td>Necklace of adaptation</td><td>Yes</td></tr><tr><td>Periapt of wound closure</td><td>Yes</td></tr><tr><td>Pipes of the sewers</td><td>Yes</td></tr><tr><td>Quiver of Ehlonna</td><td>No</td></tr><tr><td>Ring of jumping</td><td>Yes</td></tr><tr><td>Ring of mind shielding</td><td>Yes</td></tr><tr><td>Slippers of spider climbing</td><td>Yes</td></tr><tr><td>Ventilating lungs (detailed in 13)</td><td>Yes</td></tr><tr><td>Winged boots</td><td>Yes</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Replicable Items (14th-Level Artificer)</caption><thead><tr><th scope=\"col\">Magic Item</th><th scope=\"col\">Attunement</th></tr></thead><tbody><tr><td>Amulet of health</td><td>Yes</td></tr><tr><td>Arcane propulsion arm (detailed in 13)</td><td>Yes</td></tr><tr><td>Belt of hill giant strength</td><td>Yes</td></tr><tr><td>Boots of levitation</td><td>Yes</td></tr><tr><td>Boots of speed</td><td>Yes</td></tr><tr><td>Bracers of defense</td><td>Yes</td></tr><tr><td>Cloak of the bat</td><td>Yes</td></tr><tr><td>Dimensional shackles</td><td>No</td></tr><tr><td>Gem of seeing</td><td>Yes</td></tr><tr><td>Horn of blasting</td><td>No</td></tr><tr><td>Ring of free action</td><td>Yes</td></tr><tr><td>Ring of protection</td><td>Yes</td></tr><tr><td>Ring of the ram</td><td>Yes</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s975f9e40376c361",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361511,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s975f9e40376c361",
+  "flags": {},
+  "sort": 0
+}

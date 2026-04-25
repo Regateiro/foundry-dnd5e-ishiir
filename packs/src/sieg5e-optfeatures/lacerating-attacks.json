@@ -1,0 +1,85 @@
+{
+  "name": "Lacerating Attacks",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.</p><p>Creatures hit by your Eidolon's natural weapon attacks have to make a CON Saving Throw against your spell save DC. On failure, the target creature is Lacerated. At the end of each of its turns, the creature can repeat the Saving Throw, ending the condition on a success.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "creatures hit by your Eidolon's natural weapon attacks"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/wounds/injury-triple-slash-bleed.webp",
+  "_id": "s513e06f0edbf80f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361516,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s513e06f0edbf80f",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Lifedrinker",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you hit a creature with your pact weapon you can deal 1d8 extra damage to it. You choose the damage type when you select this invocation from the following options: acid, cold, fire, lightning, necrotic, psychic, or radiant. Once per turn, when you deal damage with this invocation, you regain a hit die. You can then choose to spend this hit die immediately, regaining hit points as if you had taken a rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd5010355f88445d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361520,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd5010355f88445d",
+  "flags": {},
+  "sort": 0
+}

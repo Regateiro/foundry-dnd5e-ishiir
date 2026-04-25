@@ -1,0 +1,85 @@
+{
+  "name": "Elemental Overflow",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>A kineticist's body surges with energy from her chosen element whenever she spends kinesis points, causing her to glow with a nimbus of fire, weep water from her pores, or experience some other thematic effect.</p><p>When you have less than half your current maximum number of kinesis points, your Charisma bonus to damage on your kinetic shape is doubled. Additionally, you gain Resistance to one damage type corresponding to one of your chosen elements. You can change the chosen resistance to a different one corresponding to one of your chosen elements at the start of each of your turns.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+  "_id": "sf34739b438317ff",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361455,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf34739b438317ff",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,59 @@
+{
+  "_id": "s7c337a59a6ece45",
+  "name": "Warlock: The Kraken",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "warlock",
+    "identifier": "warlock-the-kraken",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s852a9e8d2b8cb32"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1730e18de8fe298"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0c9ffa915bd5251",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3fa4279605e4b75",
+            "Compendium.dnd5e.sieg5e-classfeatures.sbb1e74ad3490dc7"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/fish/squid-kraken-teal.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361421,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7c337a59a6ece45",
+  "flags": {},
+  "sort": 0
+}

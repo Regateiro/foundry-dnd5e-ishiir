@@ -1,0 +1,68 @@
+{
+  "_id": "s8dbac42163b775d",
+  "name": "Wizard: Hemomancer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "wizard",
+    "identifier": "wizard-hemomancer",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0822964e3cb499c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5475bec6a455fe6"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s02c014b27c67eea"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sce84ce0b771a12f"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/unholy/projectile-helix-blood-red.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361423,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8dbac42163b775d",
+  "flags": {},
+  "sort": 0
+}

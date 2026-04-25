@@ -1,0 +1,85 @@
+{
+  "name": "Ranged Attacks",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Increase your Eidolon's Strength or Dexterity by 1, up to a maximum of 20.</p><p>Your Eidolon gains a ranged natural weapon attack with a range of 80/320. The damage die of this attack is identical to its other natural attacks and uses the same ability score for attack and damage rolls.</p><p>You can choose the damage type of the ranged attack from one of the following: acid, bludgeoning, cold, fire, lightning, necrotic, piercing, poison, radiant, slashing, or thunder.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/abilities/tail-strike-bone-orange.webp",
+  "_id": "sddfdf98eee6220b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361516,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sddfdf98eee6220b",
+  "flags": {},
+  "sort": 0
+}

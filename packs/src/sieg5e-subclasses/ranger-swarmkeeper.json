@@ -1,0 +1,70 @@
+{
+  "_id": "sa76f5940a845aa3",
+  "name": "Ranger: Swarmkeeper",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "ranger",
+    "identifier": "ranger-swarmkeeper",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s340250d2e329e66",
+            "Compendium.dnd5e.sieg5e-classfeatures.s30bd7435fc2f716"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5f9575b8d20c89b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s0b1ba56e6ddf4dd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s76e90cc9f3a12b9"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2aac2c7c22e76b7"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/invertebrates/wasp-swarm-attack.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361418,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa76f5940a845aa3",
+  "flags": {},
+  "sort": 0
+}

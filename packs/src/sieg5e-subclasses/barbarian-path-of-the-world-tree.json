@@ -1,0 +1,57 @@
+{
+  "_id": "s611ddfeeb3ff283",
+  "name": "Barbarian: Path of the World Tree",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "barbarian",
+    "identifier": "barbarian-path-of-the-world-tree",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2d1e20c39ddcb7e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se1f922ea0e9136f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd382b8698774052"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/tree-spirit-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361411,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s611ddfeeb3ff283",
+  "flags": {},
+  "sort": 0
+}

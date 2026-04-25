@@ -1,0 +1,57 @@
+{
+  "_id": "sab7e37458f3713a",
+  "name": "Barbarian: Path of the Wild Heart",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "barbarian",
+    "identifier": "barbarian-path-of-the-wild-heart",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sca34d90d09d62f1"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s884994d9d6ecc48"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s44086ecf148c8ed"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361411,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sab7e37458f3713a",
+  "flags": {},
+  "sort": 0
+}

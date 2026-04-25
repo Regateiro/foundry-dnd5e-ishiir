@@ -1,0 +1,85 @@
+{
+  "name": "Enchanted Shots",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to infuse projectiles with magic. Whenever you make a ranged weapon attack with a nonmagical weapon, you can make it magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p><p>Additionally, whenever you make a ranged weapon attack, you can change the damage type to any other damage type of your choice except bludgeoning, piercing, or slashing.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9dd487d801ef714",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361446,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9dd487d801ef714",
+  "flags": {},
+  "sort": 0
+}

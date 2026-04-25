@@ -1,0 +1,57 @@
+{
+  "_id": "s8ad55a2ff8d0c84",
+  "name": "Druid: Circle of the Shepherd",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "druid",
+    "identifier": "druid-circle-of-the-shepherd",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se2a0756343eb82e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5335a5328d9ae9d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8bbc013461f3971"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/spirit-deer-herd-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361413,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8ad55a2ff8d0c84",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Improved Circle Forms",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>While in a Wild Shape form, you gain the following benefits.</p><ul><li><strong>Lunar Blessing.</strong> Your attacks in a Wild Shape form count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</li><li><strong>Increased Toughness.</strong> You can add your Wisdom modifier to your Constitution Saving Throws.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sef25010e187170e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361444,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sef25010e187170e",
+  "flags": {},
+  "sort": 0
+}

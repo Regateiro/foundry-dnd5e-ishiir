@@ -1,0 +1,85 @@
+{
+  "name": "Improved Reanimated Companion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your companion attacks twice instead of once when you command it to take the Attack action. In addition, you can give it two out of the following benefits. You can change your choice each time you complete a Short or Long Rest.</p><ul><li>Your companion gains Proficiency in Strength or Dexterity Saving Throws (your choice).</li><li>Your companion's Speed increases by 10 feet.</li><li>Your companion's current and maximum hit points increase by an amount equal to your Artificer level.</li><li>You can cast spells is if you were in your companion's space.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s56da437e1206696",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361428,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s56da437e1206696",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Monster Slayer Magic",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn an additional spell when you reach certain levels in this class, as shown in the Monster Slayer Spells table. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Monster Slayer Spells</caption><thead><tr><th scope=\"col\">Ranger Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Protection from Evil and Good</td></tr><tr><td>5th</td><td>Zone of Truth</td></tr><tr><td>9th</td><td>Magic Circle</td></tr><tr><td>13th</td><td>Banishment</td></tr><tr><td>17th</td><td>Hold Monster</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s57790f25906ae2e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361470,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s57790f25906ae2e",
+  "flags": {},
+  "sort": 0
+}

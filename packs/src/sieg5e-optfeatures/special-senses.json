@@ -1,0 +1,85 @@
+{
+  "name": "Special Senses",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Increase your Eidolon's Constitution by 1, up to a maximum of 20.</p><p>Your Eidolon gains one of the following senses of your choice:</p><ul><li>Blindsight within 30 feet.</li><li>Tremorsense within 60 feet.</li><li>Devil's Sight within 120 feet.</li></ul><p>This evolution feat can be selected multiple times.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/mammals/humanoid-wolf-dog-blue.webp",
+  "_id": "s1bcaaed2847c54e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361517,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1bcaaed2847c54e",
+  "flags": {},
+  "sort": 0
+}

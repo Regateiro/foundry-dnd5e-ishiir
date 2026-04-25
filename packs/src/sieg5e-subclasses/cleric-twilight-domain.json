@@ -1,0 +1,46 @@
+{
+  "_id": "s7f0ed1bbae2c2c2",
+  "name": "Cleric: Twilight Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-twilight-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf334f32ae31e4ce"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd24b3cb0fdb3d15"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/time/day-night-sunset-sunrise.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361413,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7f0ed1bbae2c2c2",
+  "flags": {},
+  "sort": 0
+}

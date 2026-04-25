@@ -1,0 +1,85 @@
+{
+  "name": "Investment of the Chain Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you cast Find Familiar, you infuse the summoned familiar with a measure of your eldritch power, granting the creature the following benefits:</p><ul><li>The familiar gains either a Fly Speed or a Swim Speed (your choice) of 40 feet.</li><li>The familiar's weapon attacks are considered magical for the purpose of overcoming Immunity and Resistance to nonmagical attacks.</li><li>If the familiar forces a creature to make a Saving Throw, it uses your spell save DC.</li><li>When the familiar takes damage, you can use your Reaction to grant it Resistance against that damage.</li><li>You can replace your familiar's Attack Roll bonus with your spell attack bonus if it is higher.</li><li>You can replace your familiar's hit point maximum with 5 x your Warlock level if it is higher.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s15705312b8d7f58",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361520,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s15705312b8d7f58",
+  "flags": {},
+  "sort": 0
+}

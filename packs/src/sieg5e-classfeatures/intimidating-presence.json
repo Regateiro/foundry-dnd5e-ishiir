@@ -1,0 +1,85 @@
+{
+  "name": "Intimidating Presence",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you enter a frenzy, you also adopt a menacing presence that frightens foes around you. Any hostile creature that starts its turn within 30 feet of you while you are in a frenzy or enters that area for the first time on a turn and can see or hear you, must succeed on a Wisdom Saving Throw (DC equal to 8 + your Proficiency bonus + your Strength modifier) or be Frightened of you until the start of its next turn.</p><p>If a creature's Saving Throw is successful, it is Immune to your Intimidating Presence for the next 24 hours.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "_id": "sc696804b2082ddb",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361430,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc696804b2082ddb",
+  "flags": {},
+  "sort": 0
+}

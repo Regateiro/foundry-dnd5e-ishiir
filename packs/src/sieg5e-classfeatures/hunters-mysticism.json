@@ -1,0 +1,85 @@
+{
+  "name": "Hunter's Mysticism",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your study of the supernatural gives you a limited ability to use magic. You can cast Detect Magic as a ritual. You can cast Protection from Evil and Good on yourself as a Bonus Action and without expending a Spell Slot, but you cannot cast it again with this feature until you finish a Long Rest. Wisdom is your spellcasting ability for these spells.</p><p>In addition, you gain the ability to speak three of the following languages of your choice: Abyssal, Celestial, Deep Speech, Draconic, Giant, Primordial, Sylvan, or Umbral.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s98d3de4728c7e9c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361451,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s98d3de4728c7e9c",
+  "flags": {},
+  "sort": 0
+}

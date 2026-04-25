@@ -1,0 +1,85 @@
+{
+  "name": "Bond of Fang and Scale",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The bond you share with your drake intensifies, protecting you and stoking the drake's fury. When you summon your drake, it grows wings on its back and gains a Fly Speed equal to its Speed.</p><p>In addition, while your drake is summoned, you and the drake gain the following benefits:</p><ul><li><strong>Drake Mount.</strong> The drake grows to Large size. Its Hit Points increase by 1 for each of your levels in this class.</li><li><strong>Elemental Infusion.</strong> The drake's Bite and Elemental Bolt attacks deal an extra 1d6 damage of the type chosen for the drake's Draconic Essence and counts as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</li><li><strong>Resistance.</strong> You gain Resistance to the damage type chosen for the drake's Draconic Essence.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s349ed4f3101639a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361468,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s349ed4f3101639a",
+  "flags": {},
+  "sort": 0
+}

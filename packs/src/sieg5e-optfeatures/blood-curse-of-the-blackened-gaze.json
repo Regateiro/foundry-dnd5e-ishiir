@@ -1,0 +1,85 @@
+{
+  "name": "Blood Curse of the Blackened Gaze",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Reaction, when a creature you can see within 30 feet of you makes a weapon attack, you can cause that attack to have Disadvantage. If the attack still hits, the target creature takes half damage from it. This curse has no effect on creatures that do not rely on sight or are otherwise Immune to the Blinded condition.</p><p><strong>Amplify.</strong> The target creature has to make a Constitution save or be Blinded until the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when a creature you can see within 30 feet of you makes a weapon attack"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/perception/eye-ringed-glow-angry-small-teal.webp",
+  "_id": "sf598950021ed031",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361513,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf598950021ed031",
+  "flags": {},
+  "sort": 0
+}

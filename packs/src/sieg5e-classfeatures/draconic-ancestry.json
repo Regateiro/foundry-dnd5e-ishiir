@@ -1,0 +1,85 @@
+{
+  "name": "Draconic Ancestry",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your draconic ancestry gives you special abilities. Choose a type of dragon from the table below. The type you choose influences your breath weapon and your damage Resistance.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Ancestry</caption><thead><tr><th scope=\"col\">Dragon</th><th scope=\"col\">Damage Type</th><th scope=\"col\">Breath Weapon</th></tr></thead><tbody><tr><td>Black</td><td>Acid</td><td>5 by 30 ft. line (DEX save)</td></tr><tr><td>Blue</td><td>Lightning</td><td>5 by 30 ft. line (DEX save)</td></tr><tr><td>Brass</td><td>Fire</td><td>5 by 30 ft. line (DEX save)</td></tr><tr><td>Bronze</td><td>Lightning</td><td>5 by 30 ft. line (DEX save)</td></tr><tr><td>Copper</td><td>Acid</td><td>5 by 30 ft. line (DEX save)</td></tr><tr><td>Gold</td><td>Radiant</td><td>15 ft. cone (DEX save)</td></tr><tr><td>Green</td><td>Poison</td><td>15 ft. cone (CON save)</td></tr><tr><td>Red</td><td>Fire</td><td>15 ft. cone (DEX save)</td></tr><tr><td>Silver</td><td>Radiant</td><td>5 by 30 ft. line (CON save)</td></tr><tr><td>White</td><td>Cold</td><td>15 ft. cone (CON save)</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+  "_id": "s950c1dbe8468c61",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361505,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s950c1dbe8468c61",
+  "flags": {},
+  "sort": 0
+}

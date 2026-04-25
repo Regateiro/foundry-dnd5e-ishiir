@@ -1,0 +1,70 @@
+{
+  "_id": "s60acea03129c23b",
+  "name": "Paladin: Oathbreaker",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oathbreaker",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s338ad46588d820f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s18d31e67aef92da",
+            "Compendium.dnd5e.sieg5e-classfeatures.s79d18994d7ba8b7"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s04d3197bfdc1aec"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9426bc0dd00b2ca"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbeb08dc48f37b29"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361417,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s60acea03129c23b",
+  "flags": {},
+  "sort": 0
+}

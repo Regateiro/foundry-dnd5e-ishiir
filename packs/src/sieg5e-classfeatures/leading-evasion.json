@@ -1,0 +1,85 @@
+{
+  "name": "Leading Evasion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you are subjected to an effect that allows you to make a Dexterity Saving Throw to take only half damage, you instead take no damage if you succeed on the Saving Throw, and you take only half damage if you fail. If any creatures within 5 feet of you are making the same Dexterity Saving Throw, you can share this benefit with them for that save.</p><p>You can't use this feature if you have the Incapacitated condition.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s73b9a50b5ce4a7e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361433,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s73b9a50b5ce4a7e",
+  "flags": {},
+  "sort": 0
+}

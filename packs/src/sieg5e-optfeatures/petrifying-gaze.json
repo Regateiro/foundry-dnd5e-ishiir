@@ -1,0 +1,85 @@
+{
+  "name": "Petrifying Gaze",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, your Eidolon can gaze at a creature within 60 feet of it, causing it to gradually turn to stone. The target creature has to make a CON Saving Throw against your spell save DC. On a failed save, it is Restrained as its flesh begins to harden. On a successful save, the creature isn't affected.</p><p>A creature restrained by this ability must make another Constitution Saving Throw at the end of each of its turns. If it successfully saves against this ability three times, the effect ends. If it fails its saves three times, it is turned to stone and subjected to the Petrified condition for the duration. The successes and failures don't need to be consecutive; keep track of both until the target collects three of a kind.</p><p>If the creature is physically broken while petrified, it suffers from similar deformities if it reverts to its original state.</p><p>Once it has used its petrifying gaze it cannot do so again until you finish a Short Rest or you spend a spell slot of 5th level or higher.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "per": "sr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": 1
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/eyes/humanoid-single-blind.webp",
+  "_id": "s53a61a2ec0a21e9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361516,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s53a61a2ec0a21e9",
+  "flags": {},
+  "sort": 0
+}

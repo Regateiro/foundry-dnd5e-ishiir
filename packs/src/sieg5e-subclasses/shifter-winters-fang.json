@@ -1,0 +1,68 @@
+{
+  "_id": "sc05567b9e311b4b",
+  "name": "Shifter: Winter's Fang",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "shifter",
+    "identifier": "shifter-winters-fang",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s50511b7936ad561"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s38b4e5ef228bf67"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1c037ef1a3ac68c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7fb919a00e82154"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/humanoid-wolf-dog-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361419,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc05567b9e311b4b",
+  "flags": {},
+  "sort": 0
+}

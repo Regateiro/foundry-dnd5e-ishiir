@@ -2,14 +2,14 @@
   "id": "dnd5e",
   "title": "Sieg5e - Fifth Edition System",
   "description": "A system for playing the improved version of the fifth edition of the worlds most popular role-playing game in the Foundry Virtual Tabletop environment.",
-  "version": "2.4.8",
+  "version": "2.4.9",
   "compatibility": {
     "minimum": "10.303",
     "verified": "11"
   },
   "url": "https://github.com/Regateiro/foundry-dnd5e-ishiir",
   "manifest": "https://raw.githubusercontent.com/Regateiro/foundry-dnd5e-ishiir/2.4.x/system.json",
-  "download": "https://github.com/Regateiro/foundry-dnd5e-ishiir/releases/download/release-2.4.8/sieg5e-release-2.4.8.zip",
+  "download": "https://github.com/Regateiro/foundry-dnd5e-ishiir/releases/download/release-2.4.9/sieg5e-release-2.4.9.zip",
   "authors": [
     {
       "name": "Atropos",
@@ -145,6 +145,51 @@
       "type": "RollTable",
       "private": false,
       "flags": {}
+    },
+    {
+      "name": "sieg5e-classes",
+      "label": "Classes (Ishiir)",
+      "system": "dnd5e",
+      "path": "packs/sieg5e-classes.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "sieg5e-subclasses",
+      "label": "Subclasses (Ishiir)",
+      "system": "dnd5e",
+      "path": "packs/sieg5e-subclasses.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "sieg5e-classfeatures",
+      "label": "Class Features (Ishiir)",
+      "system": "dnd5e",
+      "path": "packs/sieg5e-classfeatures.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "sieg5e-optfeatures",
+      "label": "Optional Features (Ishiir)",
+      "system": "dnd5e",
+      "path": "packs/sieg5e-optfeatures.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "sieg5e-races",
+      "label": "Races (Ishiir)",
+      "system": "dnd5e",
+      "path": "packs/sieg5e-races.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
     }
   ],
   "packFolders": [
@@ -189,6 +234,18 @@
             "monsterfeatures"
           ]
         }
+      ]
+    },
+    {
+      "name": "Sieg5e Content",
+      "sorting": "m",
+      "color": "#d98d2a",
+      "packs": [
+        "sieg5e-classes",
+        "sieg5e-subclasses",
+        "sieg5e-classfeatures",
+        "sieg5e-optfeatures",
+        "sieg5e-races"
       ]
     }
   ],

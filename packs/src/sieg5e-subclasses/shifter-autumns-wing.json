@@ -1,0 +1,68 @@
+{
+  "_id": "sa50525a77b4c5e8",
+  "name": "Shifter: Autumn's Wing",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "shifter",
+    "identifier": "shifter-autumns-wing",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s739881335b6fac8"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s88d27a91555a84e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0681b7c68d81b49"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa53015986872439"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/abilities/wing-batlike-purple-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361419,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa50525a77b4c5e8",
+  "flags": {},
+  "sort": 0
+}

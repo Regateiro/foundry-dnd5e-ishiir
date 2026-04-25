@@ -1,0 +1,70 @@
+{
+  "_id": "sbc6a5f0ab526583",
+  "name": "Ranger: Monster Slayer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "ranger",
+    "identifier": "ranger-monster-slayer",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s57790f25906ae2e",
+            "Compendium.dnd5e.sieg5e-classfeatures.s38302e6422e1b5b",
+            "Compendium.dnd5e.sieg5e-classfeatures.sa9e950e00e6834a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2eea257395ac1b5"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd13710fcf40b32e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2ac7a691358810c"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/reptiles/serpent-horned-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361418,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbc6a5f0ab526583",
+  "flags": {},
+  "sort": 0
+}

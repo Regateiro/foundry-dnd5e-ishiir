@@ -1,0 +1,46 @@
+{
+  "_id": "s8339f264c7e11a0",
+  "name": "Cleric: Protection Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-protection-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7e6043b1f7e2b0c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.see881783f4fa59b"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361413,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8339f264c7e11a0",
+  "flags": {},
+  "sort": 0
+}

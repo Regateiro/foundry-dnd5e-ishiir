@@ -1,0 +1,66 @@
+{
+  "_id": "s50dd3a8c6ad81c5",
+  "name": "Nessian",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "nessian",
+    "senses": {
+      "darkvision": 60
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s031f75d239ba6ea",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc3e2d40cf72043e"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:per",
+            "skills:itm",
+            "skills:dec"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:fire"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/unholy/demon-female-succubus-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361535,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s50dd3a8c6ad81c5",
+  "flags": {},
+  "sort": 0
+}

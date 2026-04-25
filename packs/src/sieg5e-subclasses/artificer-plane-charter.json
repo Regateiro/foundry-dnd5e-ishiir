@@ -1,0 +1,72 @@
+{
+  "_id": "sc1d79a141515199",
+  "name": "Artificer: Plane Charter",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "artificer",
+    "identifier": "artificer-plane-charter",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s965ed0bfa5d2a90",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7b9bc5e7fc5fae4",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1f9e1a69e071314",
+            "Compendium.dnd5e.sieg5e-classfeatures.sece24ba9639306b",
+            "Compendium.dnd5e.sieg5e-classfeatures.sd448decd1f847bb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.secdbd78dc18f4fd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2e8c9518f933870"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s93a05081912f971"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/meteorite-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361410,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc1d79a141515199",
+  "flags": {},
+  "sort": 0
+}

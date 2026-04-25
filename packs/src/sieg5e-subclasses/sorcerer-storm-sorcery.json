@@ -1,0 +1,57 @@
+{
+  "_id": "sc9359209b3a7d76",
+  "name": "Sorcerer: Storm Sorcery",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "sorcerer",
+    "identifier": "sorcerer-storm-sorcery",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3d2c682e95fbb7b"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s46c4fd3d2dd7e2d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7db9c152765ad32"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/lightning/bolt-strike-explosion-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361420,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc9359209b3a7d76",
+  "flags": {},
+  "sort": 0
+}

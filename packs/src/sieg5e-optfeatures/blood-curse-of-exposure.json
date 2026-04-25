@@ -1,0 +1,85 @@
+{
+  "name": "Blood Curse of Exposure",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When a creature you can see within 30 feet of you takes damage, you can use your Reaction to temporarily weaken its resilience. Until the end of the target's next turn, it loses Resistance to all the damage types dealt by the triggering effect (including for that triggering effect).</p><p><strong>Amplify.</strong> This curse lasts for 1 minute. The cursed creature can make a Constitution Saving Throw at the end of each of its turns, ending the curse on itself at the end of its next turn on a success.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when a creature you can see within 30 feet of you takes damage"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
+  "_id": "sd3de5aac1a53e20",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361512,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd3de5aac1a53e20",
+  "flags": {},
+  "sort": 0
+}

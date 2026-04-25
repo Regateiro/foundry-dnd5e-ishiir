@@ -1,0 +1,59 @@
+{
+  "_id": "sf0da105362a0347",
+  "name": "Half-Elf",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "halfelf",
+    "senses": {
+      "darkvision": 30
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0aedb3b5e616ac9",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4410bd541039acd",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc24af6e44516499"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/social/diplomacy-peace-alliance.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361534,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf0da105362a0347",
+  "flags": {},
+  "sort": 0
+}

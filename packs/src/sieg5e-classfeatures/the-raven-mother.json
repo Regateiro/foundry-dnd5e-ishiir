@@ -1,0 +1,85 @@
+{
+  "name": "The Raven Mother",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your patron is the Raven Mother, a mysterious being who rules the Shadowfell from a palace of ice deep within that dread realm. The Raven Mother watches over the world, anticipating each creature's death and ensuring that it meets its end at the proscribed time and place. As the ruler of the Shadowfell, she dwells in a decayed, dark reflection of the world. Her ability to reach into the world is limited. Thus, she turns to mortal warlocks to serve her will. Warlocks sworn to the Raven Mother receive visions and whispers from her in their dreams, sending them on quests and warning them of impending dangers.</p><p>The Raven Mother's followers are expected to serve her will in the world. She concerns herself with ensuring that those fated to die pass from the world as expected, and bids her agents to defeat those who seek to cheat death through undeath or other imitations of immortality. She hates intelligent undead and expects her followers to strike them down, whereas mindless undead such as skeletons and zombies are little more than stumbling automatons in her eyes.</p><p><strong>Expanded Spell List.</strong> You learn additional spells when you reach certain levels in this class, as shown on the table below. Each of these spells counts as a warlock spell for you, but it doesn't count against the number of warlock spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Raven Mother Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>False Life, Sanctuary</td></tr><tr><td>2nd</td><td>Silence, Spiritual Weapon</td></tr><tr><td>3rd</td><td>Feign Death, Speak with Dead</td></tr><tr><td>4th</td><td>Ice Storm, Death Ward</td></tr><tr><td>5th</td><td>Commune, Cone of Cold</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7cbd2b86d1dd9c8",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361491,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7cbd2b86d1dd9c8",
+  "flags": {},
+  "sort": 0
+}

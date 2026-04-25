@@ -1,0 +1,82 @@
+{
+  "_id": "sa43ded1e0c31e8e",
+  "name": "Kineticist: Water",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "kineticist",
+    "identifier": "kineticist-water",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbec49d82e33f262",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7e6368e895de98d",
+            "Compendium.dnd5e.sieg5e-classfeatures.sd8eb66f0f141334",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8cc7d7ad0f8631d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s851feff929a00d0"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s45b9cff53465ffa"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbe36e622a274ced"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb4317b47804b052"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/water/water-jet-wave-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361415,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa43ded1e0c31e8e",
+  "flags": {},
+  "sort": 0
+}

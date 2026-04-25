@@ -1,0 +1,85 @@
+{
+  "name": "Scholar",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your scholarly efforts bear fruit. While studying magic, you also specialized in an academic field of study. Choose one of the following skills: Arcana, History, Investigation, Medicine, Nature, or Religion. Your gain Proficiency in the chosen skill. If you are already proficient in the skill, you add double your Proficiency bonus to checks you make with it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/sundries/books/book-embossed-spiral-purple-white.webp",
+  "_id": "sbb6f987ee930d3a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361500,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbb6f987ee930d3a",
+  "flags": {},
+  "sort": 0
+}

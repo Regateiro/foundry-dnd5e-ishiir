@@ -1,0 +1,70 @@
+{
+  "_id": "s37362811d234c0e",
+  "name": "Rogue: Assassin",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "rogue",
+    "identifier": "rogue-assassin",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sca073134d23daf9",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb38a2d69355ce8f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3e222e69f59ca89"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s88660cd13924112"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd514ece92f59aa3"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s6b1a710f3dc3389"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/weapons/daggers/dagger-poisoned-curved-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361418,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s37362811d234c0e",
+  "flags": {},
+  "sort": 0
+}

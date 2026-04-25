@@ -1,0 +1,57 @@
+{
+  "_id": "se593f44e4b010ff",
+  "name": "Wizard: School of Enchantment",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "wizard",
+    "identifier": "wizard-school-of-enchantment",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc1fec2d969be726"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s57b02084573ce61"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s946e6a047caa549"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361422,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se593f44e4b010ff",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Aether Walk",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>At the start of your turn, you can magically step into the veil between the planes as long as you aren't Incapacitated. Your movement doesn't provoke Attacks of Opportunity and you can move through other creatures and objects as if they were 3, as well as see and affect creatures and objects on the Ethereal Plane. You take 1d10 force damage if you end your turn inside an object.</p><p>This feature lasts for one minute. If you are inside an object when it ends, you are immediately shunted to the nearest unoccupied space and you take force damage equal to twice the number of feet you moved.</p><p>Once you use this feature, you can't use it again until you finish a Short or a Long Rest - or until you spend a use of your Blood Maledict to regain it. You can use Aether Walk twice between rests starting at 15th level.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s3bb65f8bc503edd",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361436,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3bb65f8bc503edd",
+  "flags": {},
+  "sort": 0
+}

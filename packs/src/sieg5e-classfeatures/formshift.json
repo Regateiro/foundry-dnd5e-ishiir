@@ -1,0 +1,85 @@
+{
+  "name": "Formshift",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>By choice or circumstance, you possess the ability to shift into an animal-like form that outfits you with heightened senses, swiftness, and primal ferocity in battle. You shift forms as a Bonus Action. While shifted, you gain the following benefits as long as you aren't wearing armor heavier than light or a shield:</p><ul><li>You have Advantage on Perception checks.</li><li>Your Speed is doubled.</li><li>When you make a melee weapon attack with your natural weapons, you gain a +2 bonus to the damage roll. This bonus increases as you level.</li></ul><p>If you are able to cast spells, you can't cast them or concentrate on them while shifted.</p><p>Your Formshift lasts for an amount of hours equal to your shifter level. It ends early if you fall Unconscious or you are Incapacitated. You can also end your Formshift as a Bonus Action.</p><p>You can Formshift a number of times shown for your Shifter level in the Formshifts column of the Shifter Features table. You regain one expended use when you finish a Short Rest, and you regain all expended uses when you finish a Long Rest.</p><p>You choose whether your equipment falls to the ground in your space, merges into your shifted form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for your shifted form to wear a piece of equipment, based on your shape and size. Your equipment doesn't change size or shape to match the new form, and any equipment that your shifted form can't wear must either fall to the ground or merge with it. Equipment that merges with your shifted form has no effect until you leave Formshift.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "@scale.shifter.formshifts",
+      "per": "lr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": 1
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp",
+  "_id": "scba5372efaa0ccf",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361478,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!scba5372efaa0ccf",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Pact of the Talisman",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an Ability Check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your Proficiency bonus, and all expended uses are restored when you finish a Long Rest.</p><p>If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a Short or a Long Rest, and it destroys the previous amulet. The talisman turns to ash when you die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se2b52e9c3d9df13",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361522,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se2b52e9c3d9df13",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,90 @@
+{
+  "name": "Brand of Castigation",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you damage a creature with a weapon for which you have an active crimson rite, you can channel hemocraft magic to sear an arcane brand into that creature (no action required). You always know the direction to the branded creature as long as it's on the same plane as you. Further, each time a branded creature deals damage to you or forces you to make a Saving Throw, it takes psychic damage equal to your Hemocraft modifier.</p><p>Your brand lasts until you dismiss it or until you use this feature to apply a brand to another creature. Your brand can be dispelled with Dispel Magic, and is treated as a spell with a level equal to half your blood hunter level (maximum 9th level).</p><p>Once you use this feature, you can't use it again until you finish a Short or a Long Rest - or until you spend a use of your Blood Maledict to regain it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "when you damage a creature with a weapon for which you have an active crimson rite"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": 1,
+      "per": "sr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": 1
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "max(1, @abilities.int.mod, @abilities.wis.mod)",
+          "psychic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/symbols/rune-sigil-hook-white-red.webp",
+  "_id": "sff8f0c1d1c097c7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361435,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sff8f0c1d1c097c7",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,46 @@
+{
+  "_id": "s03980a4196444f1",
+  "name": "Cleric: Moondancer Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-moondancer-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8230f09b42a6119"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/weapons/swords/sword-broad-crystal-paired.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361412,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s03980a4196444f1",
+  "flags": {},
+  "sort": 0
+}

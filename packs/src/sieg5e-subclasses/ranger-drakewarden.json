@@ -1,0 +1,70 @@
+{
+  "_id": "se67a0080b9234f6",
+  "name": "Ranger: Drakewarden",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "ranger",
+    "identifier": "ranger-drakewarden",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s418994bd26bed94",
+            "Compendium.dnd5e.sieg5e-classfeatures.sf02ccb1b899c2ee",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc9187a0353d8e8c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s349ed4f3101639a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4b3384dab4d48cb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sef7fd34eaaf839b"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/abilities/dragon-ice-breath-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361417,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se67a0080b9234f6",
+  "flags": {},
+  "sort": 0
+}

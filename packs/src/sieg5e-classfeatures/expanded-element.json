@@ -1,0 +1,85 @@
+{
+  "name": "Expanded Element",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to use another element or expand your understanding of your own element. You learn the damage types, cantrip, and elemental defense of that elemental school and you quality for all elemental infusions that have that elemental school as prerequisite.</p><p>This also allows you access to powerful composite kinetic shape, by either combining two different elements or focusing on a single one. You gain another element at 14th level, but you can't choose the same element a third time.</p><p>Using a composite shape requires a great deal of energy and costs 2 kinesis points each time. If you do so, increase the number of dice for that kinetic shape by half (rounded up).</p><p>If your composite shape features two of the same element, you double your Charisma modifier when determining the kinetic shape damage and the cost for using a composite shape is reduced to 1 kinesis point.</p><p>You also gain access to whatever infusion any of the included elements normally would allow, but you do pay their kinesis point cost as normal.</p><p>When you do combine elements with different damage types, half of the total damage is dealt as either damage type. For example, if you use a composite shape of the water and fire elements and roll for a total of 20 damage, 10 damage will be dealt as bludgeoning and 10 as fire.</p><p>If the damage number is uneven, you determine which damage type deals the higher amount.</p><p>You can find a table with the resulting composite elements below:</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Composite Elements</caption><thead><tr><th scope=\"col\">\\</th><th scope=\"col\">Air</th><th scope=\"col\">Earth</th><th scope=\"col\">Fire</th><th scope=\"col\">Water</th></tr></thead><tbody><tr><td>Air</td><td>Storm</td><td>Sand</td><td>Plasma</td><td>Blizzard</td></tr><tr><td>Earth</td><td>Sand</td><td>Metal</td><td>Magma</td><td>Mud</td></tr><tr><td>Fire</td><td>Plasma</td><td>Magma</td><td>Blue Fire</td><td>Steam</td></tr><tr><td>Water</td><td>Blizzard</td><td>Mud</td><td>Steam</td><td>Frost</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/light/orbs-smoke-pink.webp",
+  "_id": "s84b24e05edb8438",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361454,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s84b24e05edb8438",
+  "flags": {},
+  "sort": 0
+}

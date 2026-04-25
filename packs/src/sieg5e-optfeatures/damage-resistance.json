@@ -1,0 +1,85 @@
+{
+  "name": "Damage Resistance",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Increase your Eidolon's Constitution by 1, up to a maximum of 20.</p><p>Your Eidolon gains Resistance to one of the following damage types: acid, cold, fire, lightning, necrotic, poison, or radiant.</p><p>This evolution feat can be selected multiple times.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "_id": "s17ef3ef7b33ac5b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361515,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s17ef3ef7b33ac5b",
+  "flags": {},
+  "sort": 0
+}

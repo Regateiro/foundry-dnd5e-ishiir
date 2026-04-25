@@ -1,0 +1,71 @@
+{
+  "_id": "s6db65badb7df6fc",
+  "name": "Artificer: Armorer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "artificer",
+    "identifier": "artificer-armorer",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7b9bc5e7fc5fae4",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8b7a1ad31a8b551",
+            "Compendium.dnd5e.sieg5e-classfeatures.see34c77015588e5",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8db9a441d3ce99c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se8636038dce2524"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s94f22d071595c27"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/armor-shield-barrier-steel.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361408,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6db65badb7df6fc",
+  "flags": {},
+  "sort": 0
+}

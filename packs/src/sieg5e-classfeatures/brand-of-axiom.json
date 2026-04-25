@@ -1,0 +1,85 @@
+{
+  "name": "Brand of Axiom",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your mutagenic hemocraft lets your Brand of Castigation reveal a foe's true nature. Any illusion or invisibility in effect on a creature when you brand it ends, and the creature can't benefit from invisibility or illusion effects while branded by you. If a creature branded by you is in an alternative form (by way of the Polymorph spell, the Change Shape action or Shapechanger trait, the Wild Shape feature, and similar effects), it must succeed on a Wisdom Saving Throw or revert to its true form and be Stunned until the end of your next turn. Whenever a branded creature attempts to alter its form, it must succeed on a Wisdom Saving Throw or have the attempt fail, and it is Stunned until the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7a03b43a738030e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777075361436,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7a03b43a738030e",
+  "flags": {},
+  "sort": 0
+}
