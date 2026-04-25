@@ -1,1 +1,85 @@
-{"name": "Join Fates", "type": "feat", "system": {"description": {"value": "<p>Through a ritual that lasts 10 minutes, you can touch two other creatures and temporarily tie their fates together. Whenever either creature makes an Ability Check or Saving Throw, the other also rolls and the original creature uses the average of the two rolls to determine the effect (rounded up).</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s71328eb10e00e0e", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181817, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s71328eb10e00e0e"}
+{
+  "name": "Join Fates",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through a ritual that lasts 10 minutes, you can touch two other creatures and temporarily tie their fates together. Whenever either creature makes an Ability Check or Saving Throw, the other also rolls and the original creature uses the average of the two rolls to determine the effect (rounded up).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s71328eb10e00e0e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374262,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s71328eb10e00e0e",
+  "flags": {},
+  "sort": 0
+}

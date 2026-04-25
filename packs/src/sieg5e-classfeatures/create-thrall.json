@@ -1,1 +1,85 @@
-{"name": "Create Thrall", "type": "feat", "system": {"description": {"value": "<p>You gain the ability to infect a humanoid's mind with the alien magic of your patron. You can use your action to touch an Incapacitated humanoid. That creature is then Charmed by you until a Remove Curse spell is cast on it, the Charmed condition is removed from it, or you use this feature again.</p><p>You can communicate telepathically with the Charmed creature as long as the two of you are on the same plane of existence.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "se845ded176031a1", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181811, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se845ded176031a1"}
+{
+  "name": "Create Thrall",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to infect a humanoid's mind with the alien magic of your patron. You can use your action to touch an Incapacitated humanoid. That creature is then Charmed by you until a Remove Curse spell is cast on it, the Charmed condition is removed from it, or you use this feature again.</p><p>You can communicate telepathically with the Charmed creature as long as the two of you are on the same plane of existence.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se845ded176031a1",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374254,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se845ded176031a1",
+  "flags": {},
+  "sort": 0
+}

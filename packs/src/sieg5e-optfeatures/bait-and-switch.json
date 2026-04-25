@@ -1,1 +1,85 @@
-{"name": "Bait and Switch", "type": "feat", "system": {"description": {"value": "<p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't Incapacitated. This movement doesn't provoke Opportunity Attacks.</p><p>Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s2898f55afad563c", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181850, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s2898f55afad563c"}
+{
+  "name": "Bait and Switch",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't Incapacitated. This movement doesn't provoke Opportunity Attacks.</p><p>Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s2898f55afad563c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374300,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s2898f55afad563c",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,69 @@
-{"_id": "s8768da277845aa3", "name": "Rogue: Inquisitor", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "rogue", "identifier": "rogue-inquisitor", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s4fe1eb50197c4c5", "Compendium.dnd5e.sieg5e-classfeatures.s53eb7aa86c3b27c"]}}, {"title": "Features", "type": "ItemGrant", "level": 9, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s9e76b2e7de821b7"]}}, {"title": "Features", "type": "ItemGrant", "level": 13, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sefc215061b35698"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s5fe10298682bc8a"]}}]}, "img": "icons/magic/holy/barrier-shield-winged-cross.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181741, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8768da277845aa3"}
+{
+  "_id": "s8768da277845aa3",
+  "name": "Rogue: Inquisitor",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "rogue",
+    "identifier": "rogue-inquisitor",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4fe1eb50197c4c5",
+            "Compendium.dnd5e.sieg5e-classfeatures.s53eb7aa86c3b27c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9e76b2e7de821b7"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sefc215061b35698"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5fe10298682bc8a"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/holy/barrier-shield-winged-cross.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374182,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8768da277845aa3",
+  "flags": {},
+  "sort": 0
+}

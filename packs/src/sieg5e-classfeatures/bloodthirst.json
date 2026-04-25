@@ -1,1 +1,85 @@
-{"name": "Bloodthirst", "type": "feat", "system": {"description": {"value": "<p>If your Sneak Attack hits a Bloodied or Lacerated creature, the target takes extra damage of the weapon's type equal to half your Rogue level (round up). In addition, when an enemy you can see is reduced to 0 Hit Points, you can take a Reaction and move up to your Speed. You can then make one melee attack. You can use this Reaction a number of times equal to your Intelligence, Wisdom, or Charisma modifier (your choice, minimum of once), and you regain all expended uses when you finish a Long Rest.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s40c01f5c667920a", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181798, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s40c01f5c667920a"}
+{
+  "name": "Bloodthirst",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>If your Sneak Attack hits a Bloodied or Lacerated creature, the target takes extra damage of the weapon's type equal to half your Rogue level (round up). In addition, when an enemy you can see is reduced to 0 Hit Points, you can take a Reaction and move up to your Speed. You can then make one melee attack. You can use this Reaction a number of times equal to your Intelligence, Wisdom, or Charisma modifier (your choice, minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s40c01f5c667920a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374241,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s40c01f5c667920a",
+  "flags": {},
+  "sort": 0
+}

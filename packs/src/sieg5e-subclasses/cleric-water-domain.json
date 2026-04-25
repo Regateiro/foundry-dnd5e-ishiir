@@ -1,1 +1,46 @@
-{"_id": "sc847a9817c6729a", "name": "Cleric: Water Domain", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "cleric", "identifier": "cleric-water-domain", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s8f97da3488ce9c4"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sd10d997fdee9a7c"]}}]}, "img": "icons/magic/water/vortex-water-whirlpool-blue.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181736, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sc847a9817c6729a"}
+{
+  "_id": "sc847a9817c6729a",
+  "name": "Cleric: Water Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-water-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8f97da3488ce9c4"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd10d997fdee9a7c"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/water/vortex-water-whirlpool-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374177,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc847a9817c6729a",
+  "flags": {},
+  "sort": 0
+}

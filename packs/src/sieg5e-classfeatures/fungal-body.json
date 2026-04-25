@@ -1,1 +1,85 @@
-{"name": "Fungal Body", "type": "feat", "system": {"description": {"value": "<p>The fungal spores in your body alter you: you can't be Blinded, Deafened, Frightened, or Poisoned, and any critical hit against you counts as a normal hit instead, unless you're Incapacitated.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sc3e3859c0b43950", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181766, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sc3e3859c0b43950"}
+{
+  "name": "Fungal Body",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The fungal spores in your body alter you: you can't be Blinded, Deafened, Frightened, or Poisoned, and any critical hit against you counts as a normal hit instead, unless you're Incapacitated.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc3e3859c0b43950",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374207,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc3e3859c0b43950",
+  "flags": {},
+  "sort": 0
+}

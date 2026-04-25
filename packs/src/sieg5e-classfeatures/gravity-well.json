@@ -1,1 +1,85 @@
-{"name": "Gravity Well", "type": "feat", "system": {"description": {"value": "<p>You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target up to 10 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a Saving Throw against the spell.</p><p>Upon reaching 10th level in this class, the maximum distance you can move a creature in this manner increases to 20 ft.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sfe546abcde57f25", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181824, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sfe546abcde57f25"}
+{
+  "name": "Gravity Well",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You've learned how to manipulate gravity around a living being: whenever you cast a spell on a creature, you can move the target up to 10 feet to an unoccupied space of your choice if the target is willing to move, the spell hits it with an attack, or it fails a Saving Throw against the spell.</p><p>Upon reaching 10th level in this class, the maximum distance you can move a creature in this manner increases to 20 ft.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfe546abcde57f25",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374269,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfe546abcde57f25",
+  "flags": {},
+  "sort": 0
+}

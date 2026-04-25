@@ -1,1 +1,85 @@
-{"name": "Royal Envoy", "type": "feat", "system": {"description": {"value": "<p>You gain Proficiency in the Persuasion skill. If you are already proficient in it, you gain Proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.</p><p>Your Proficiency bonus is doubled for any Ability Check you make that uses Persuasion. You receive this benefit regardless of the skill Proficiency you gain from this feature.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sdef76f6d2d9c1c6", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181773, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sdef76f6d2d9c1c6"}
+{
+  "name": "Royal Envoy",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Proficiency in the Persuasion skill. If you are already proficient in it, you gain Proficiency in one of the following skills of your choice: Animal Handling, Insight, Intimidation, or Performance.</p><p>Your Proficiency bonus is doubled for any Ability Check you make that uses Persuasion. You receive this benefit regardless of the skill Proficiency you gain from this feature.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sdef76f6d2d9c1c6",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374214,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sdef76f6d2d9c1c6",
+  "flags": {},
+  "sort": 0
+}

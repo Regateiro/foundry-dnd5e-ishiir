@@ -1,1 +1,56 @@
-{"_id": "s155426375424586", "name": "Elf (Dark)", "type": "race", "system": {"source": "Ishiir", "identifier": "elf-dark", "senses": {"darkvision": 0}, "movement": {"walk": 30}, "advancement": [{"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s985d0e46a0b3324", "Compendium.dnd5e.sieg5e-classfeatures.sae2d30434ee83d8", "Compendium.dnd5e.sieg5e-classfeatures.s3f0d495d5acfd63", "Compendium.dnd5e.sieg5e-classfeatures.s83a26390cbfaaba", "Compendium.dnd5e.sieg5e-classfeatures.s8ff977395028af9"]}}, {"title": "Skills", "type": "Trait", "level": 1, "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"grants": ["skills:prc"], "choices": []}}]}, "img": "icons/magic/light/orb-hands-humanoid-yellow.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181854, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s155426375424586"}
+{
+  "_id": "s155426375424586",
+  "name": "Elf (Dark)",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "elf-dark",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s985d0e46a0b3324",
+            "Compendium.dnd5e.sieg5e-classfeatures.sae2d30434ee83d8",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3f0d495d5acfd63",
+            "Compendium.dnd5e.sieg5e-classfeatures.s83a26390cbfaaba",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8ff977395028af9"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:prc"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/light/orb-hands-humanoid-yellow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374304,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s155426375424586",
+  "flags": {},
+  "sort": 0
+}

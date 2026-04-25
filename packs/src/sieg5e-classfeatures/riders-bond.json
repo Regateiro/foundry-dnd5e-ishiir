@@ -1,1 +1,85 @@
-{"name": "Rider's Bond", "type": "feat", "system": {"description": {"value": "<p>Your Wyvern Companion gains a variety of benefits while it is bonded to you.</p><p>The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are Incapacitated or absent, your companion acts on its own.</p><p>Your Wyvern Companion has abilities and game statistics determined in part by your level. Your companion uses your Proficiency bonus rather than its own. In addition to the areas where it normally uses its Proficiency bonus, a Wyvern Companion also adds its Proficiency bonus to its AC and to its damage rolls.</p><p>For each level you gain after 3rd, your Wyvern Companion gains an additional hit die and increases its hit points accordingly.</p><p>Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.</p><p>Whenever you use your Second Wind, your Wyvern Companion also regains hit points equal to 5 + your Fighter level.</p><p>Whenver you use Action Surge, your Wyvern Companion can also immediately make one bite attack.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s37c667a694c53b5", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181775, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s37c667a694c53b5"}
+{
+  "name": "Rider's Bond",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your Wyvern Companion gains a variety of benefits while it is bonded to you.</p><p>The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are Incapacitated or absent, your companion acts on its own.</p><p>Your Wyvern Companion has abilities and game statistics determined in part by your level. Your companion uses your Proficiency bonus rather than its own. In addition to the areas where it normally uses its Proficiency bonus, a Wyvern Companion also adds its Proficiency bonus to its AC and to its damage rolls.</p><p>For each level you gain after 3rd, your Wyvern Companion gains an additional hit die and increases its hit points accordingly.</p><p>Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.</p><p>Whenever you use your Second Wind, your Wyvern Companion also regains hit points equal to 5 + your Fighter level.</p><p>Whenver you use Action Surge, your Wyvern Companion can also immediately make one bite attack.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s37c667a694c53b5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374216,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s37c667a694c53b5",
+  "flags": {},
+  "sort": 0
+}

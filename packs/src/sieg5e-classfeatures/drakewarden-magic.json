@@ -1,1 +1,85 @@
-{"name": "Drakewarden Magic", "type": "feat", "system": {"description": {"value": "<p>You learn an additional spell when you reach certain levels in this class, as shown in the table below. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Drakewarden Spells</caption><thead><tr><th scope=\"col\">Ranger Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Cause Fear</td></tr><tr><td>5th</td><td>Dragon's Breath</td></tr><tr><td>9th</td><td>Fear</td></tr><tr><td>13th</td><td>Elemental Bane</td></tr><tr><td>17th</td><td>Summon Dragon</td></tr></tbody></table></div><p>Any of these spells can be cast as if you were in the space of your drake companion.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sc9187a0353d8e8c", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181789, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sc9187a0353d8e8c"}
+{
+  "name": "Drakewarden Magic",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn an additional spell when you reach certain levels in this class, as shown in the table below. The spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Drakewarden Spells</caption><thead><tr><th scope=\"col\">Ranger Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Cause Fear</td></tr><tr><td>5th</td><td>Dragon's Breath</td></tr><tr><td>9th</td><td>Fear</td></tr><tr><td>13th</td><td>Elemental Bane</td></tr><tr><td>17th</td><td>Summon Dragon</td></tr></tbody></table></div><p>Any of these spells can be cast as if you were in the space of your drake companion.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc9187a0353d8e8c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374231,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc9187a0353d8e8c",
+  "flags": {},
+  "sort": 0
+}

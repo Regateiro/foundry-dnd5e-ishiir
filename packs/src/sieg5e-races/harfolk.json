@@ -1,1 +1,65 @@
-{"_id": "s356f20dcb4b5686", "name": "Harfolk", "type": "race", "system": {"source": "Ishiir", "identifier": "harfolk", "senses": {"darkvision": 0}, "movement": {"walk": 30}, "advancement": [{"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sd5a791b64faf80a", "Compendium.dnd5e.sieg5e-classfeatures.sc9f996923346e1c", "Compendium.dnd5e.sieg5e-classfeatures.sf919f8ec54a4412"]}}, {"title": "Skills", "type": "Trait", "level": 1, "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"grants": ["skills:ath"], "choices": []}}, {"title": "Damage Resistances", "type": "Trait", "level": 1, "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"grants": ["dr:cold"]}}]}, "img": "icons/skills/social/intimidation-impressing.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181854, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s356f20dcb4b5686"}
+{
+  "_id": "s356f20dcb4b5686",
+  "name": "Harfolk",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "harfolk",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd5a791b64faf80a",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc9f996923346e1c",
+            "Compendium.dnd5e.sieg5e-classfeatures.sf919f8ec54a4412"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:cold"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374304,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s356f20dcb4b5686",
+  "flags": {},
+  "sort": 0
+}

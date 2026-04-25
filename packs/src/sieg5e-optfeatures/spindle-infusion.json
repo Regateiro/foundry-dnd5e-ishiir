@@ -1,1 +1,85 @@
-{"name": "Spindle Infusion", "type": "feat", "system": {"description": {"value": "<p>By spending an Action and 1 kinesis point, you can cause the energy of your kinetic shape to shootward in a 10-feet long, 5-feet wide spindle that travels 60 feet away from you until it disperses.</p><p>All creatures through whose spaces the spindle passes have to make a Dexterity Saving Throw, taking your kinetic shape damage on failure, and half as much on a success.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s50656338a563b2f", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181845, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s50656338a563b2f"}
+{
+  "name": "Spindle Infusion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>By spending an Action and 1 kinesis point, you can cause the energy of your kinetic shape to shootward in a 10-feet long, 5-feet wide spindle that travels 60 feet away from you until it disperses.</p><p>All creatures through whose spaces the spindle passes have to make a Dexterity Saving Throw, taking your kinetic shape damage on failure, and half as much on a success.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s50656338a563b2f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374294,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s50656338a563b2f",
+  "flags": {},
+  "sort": 0
+}

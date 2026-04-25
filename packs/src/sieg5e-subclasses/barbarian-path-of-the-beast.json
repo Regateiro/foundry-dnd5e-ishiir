@@ -1,1 +1,57 @@
-{"_id": "sa4efad8bae83823", "name": "Barbarian: Path of the Beast", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "barbarian", "identifier": "barbarian-path-of-the-beast", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb1f766dce3fec16"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb4586914f5cdd34"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sdfc65c91ecef664"]}}]}, "img": "icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181733, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sa4efad8bae83823"}
+{
+  "_id": "sa4efad8bae83823",
+  "name": "Barbarian: Path of the Beast",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "barbarian",
+    "identifier": "barbarian-path-of-the-beast",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb1f766dce3fec16"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb4586914f5cdd34"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sdfc65c91ecef664"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/beast-horned-scaled-glowing-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374174,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa4efad8bae83823",
+  "flags": {},
+  "sort": 0
+}

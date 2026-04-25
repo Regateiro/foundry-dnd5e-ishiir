@@ -1,1 +1,85 @@
-{"name": "Action Surge", "type": "feat", "system": {"description": {"value": "<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.</p><p>Once you use this feature, you must finish a Short or a Long Rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "special", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": 0, "max": "@scale.fighter.action-surge", "per": "sr", "recovery": ""}, "consume": {"type": "", "target": null, "amount": 1}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/skills/social/intimidation-impressing.webp", "_id": "sc290e756fbc497a", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181767, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sc290e756fbc497a"}
+{
+  "name": "Action Surge",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action.</p><p>Once you use this feature, you must finish a Short or a Long Rest before you can use it again. Starting at 17th level, you can use it twice before a rest, but only once on the same turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "@scale.fighter.action-surge",
+      "per": "sr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": 1
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "_id": "sc290e756fbc497a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374208,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc290e756fbc497a",
+  "flags": {},
+  "sort": 0
+}

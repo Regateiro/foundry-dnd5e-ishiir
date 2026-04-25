@@ -1,1 +1,57 @@
-{"_id": "s5eef2dbf3819066", "name": "Monk: Way of the Sun Soul", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "monk", "identifier": "monk-way-of-the-sun-soul", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s61b8262b51a6d91"]}}, {"title": "Features", "type": "ItemGrant", "level": 11, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s7d23e111af43ef3"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3ef6f97321d0522"]}}]}, "img": "icons/magic/nature/symbol-sun-yellow.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181738, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s5eef2dbf3819066"}
+{
+  "_id": "s5eef2dbf3819066",
+  "name": "Monk: Way of the Sun Soul",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "monk",
+    "identifier": "monk-way-of-the-sun-soul",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s61b8262b51a6d91"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7d23e111af43ef3"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3ef6f97321d0522"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/symbol-sun-yellow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374179,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5eef2dbf3819066",
+  "flags": {},
+  "sort": 0
+}

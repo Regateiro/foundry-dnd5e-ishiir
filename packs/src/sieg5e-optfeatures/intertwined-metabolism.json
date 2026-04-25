@@ -1,1 +1,85 @@
-{"name": "Intertwined Metabolism", "type": "feat", "system": {"description": {"value": "<p>When you are in Symbiosis with your Eidolon, you are Immune to the Poisoned and Lacerated conditions and to non-magical diseases. If you enter Symbiosis while any of the aforementioned are already affecting either you or your Eidolon or both, they are removed at the end of the same turn.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/control/sihouette-hold-beam-green.webp", "_id": "s90af8ca74041abc", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181836, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s90af8ca74041abc"}
+{
+  "name": "Intertwined Metabolism",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you are in Symbiosis with your Eidolon, you are Immune to the Poisoned and Lacerated conditions and to non-magical diseases. If you enter Symbiosis while any of the aforementioned are already affecting either you or your Eidolon or both, they are removed at the end of the same turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/sihouette-hold-beam-green.webp",
+  "_id": "s90af8ca74041abc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374283,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s90af8ca74041abc",
+  "flags": {},
+  "sort": 0
+}

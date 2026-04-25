@@ -1,1 +1,85 @@
-{"name": "Wails from the Grave", "type": "feat", "system": {"description": {"value": "<p>As you nudge someone closer to the grave, you can channel the power of death to push them over the threshold or harm someone else as well. When you deal your Sneak Attack damage to a creature on your turn, you can cause that creature to take additional damage. Alternatively, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), the original target or the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.</p><p>You can use this feature a number of times equal to your Proficiency bonus, and you regain all expended uses when you finish a Long Rest.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s8e49c9c39ab0ecc", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181797, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8e49c9c39ab0ecc"}
+{
+  "name": "Wails from the Grave",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As you nudge someone closer to the grave, you can channel the power of death to push them over the threshold or harm someone else as well. When you deal your Sneak Attack damage to a creature on your turn, you can cause that creature to take additional damage. Alternatively, you can target a second creature that you can see within 30 feet of the first creature. Roll half the number of Sneak Attack dice for your level (round up), the original target or the second creature takes necrotic damage equal to the roll's total, as wails of the dead sound around them for a moment.</p><p>You can use this feature a number of times equal to your Proficiency bonus, and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8e49c9c39ab0ecc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374239,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8e49c9c39ab0ecc",
+  "flags": {},
+  "sort": 0
+}

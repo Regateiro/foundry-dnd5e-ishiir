@@ -1,1 +1,85 @@
-{"name": "Wind Soul", "type": "feat", "system": {"description": {"value": "<p>You gain Immunity to lightning and thunder damage.</p><p>You also gain a magical Fly Speed of 60 feet. As an Action, you can choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier and grant them a Fly Speed of 60 feet for 1 hour. Once you use this feature, you can't do so again until you finish a Short or a Long Rest or until you spend 5 Sorcery Points to use it again..</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s7db9c152765ad32", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181805, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s7db9c152765ad32"}
+{
+  "name": "Wind Soul",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Immunity to lightning and thunder damage.</p><p>You also gain a magical Fly Speed of 60 feet. As an Action, you can choose a number of creatures within 30 feet of you equal to 3 + your Charisma modifier and grant them a Fly Speed of 60 feet for 1 hour. Once you use this feature, you can't do so again until you finish a Short or a Long Rest or until you spend 5 Sorcery Points to use it again..</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7db9c152765ad32",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374248,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7db9c152765ad32",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,46 @@
-{"_id": "s135c64c8dba96fb", "name": "Cleric: Death Domain", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "cleric", "identifier": "cleric-death-domain", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sd1fa0f3aa79e17d"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sddb0e0c5a3eb984"]}}]}, "img": "icons/magic/death/skull-energy-light-white.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181735, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s135c64c8dba96fb"}
+{
+  "_id": "s135c64c8dba96fb",
+  "name": "Cleric: Death Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-death-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd1fa0f3aa79e17d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sddb0e0c5a3eb984"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/death/skull-energy-light-white.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374176,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s135c64c8dba96fb",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,85 @@
-{"name": "Dread Incarnate", "type": "feat", "system": {"description": {"value": "<p>You gain the following benefits.</p><ul><li><strong>Battle Tyrant.</strong> You have Advantage on Attack Rolls against any creature with the Frightened condition.</li><li><strong>Murderous Intent.</strong> When you roll a 1 or 2 on a damage die for your Sneak Attack, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</li></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s323eeeb1418cb9f", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181799, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s323eeeb1418cb9f"}
+{
+  "name": "Dread Incarnate",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the following benefits.</p><ul><li><strong>Battle Tyrant.</strong> You have Advantage on Attack Rolls against any creature with the Frightened condition.</li><li><strong>Murderous Intent.</strong> When you roll a 1 or 2 on a damage die for your Sneak Attack, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s323eeeb1418cb9f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374241,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s323eeeb1418cb9f",
+  "flags": {},
+  "sort": 0
+}

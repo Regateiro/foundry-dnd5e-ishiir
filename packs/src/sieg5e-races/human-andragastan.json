@@ -1,1 +1,67 @@
-{"_id": "s8d4a83908f16bcb", "name": "Human (Andragastan)", "type": "race", "system": {"source": "Ishiir", "identifier": "human-andragastan", "senses": {"darkvision": 0}, "movement": {"walk": 30}, "advancement": [{"title": "Extra Feat", "type": "AbilityScoreImprovement", "level": 1, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"points": 0}}, {"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb5823659d5727d3", "Compendium.dnd5e.sieg5e-classfeatures.sde3859a58e0b7df"]}}, {"title": "Skills", "type": "Trait", "level": 1, "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"grants": [], "choices": [{"count": 3, "pool": ["skills:*"]}]}}]}, "img": "icons/environment/people/commoner.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181854, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8d4a83908f16bcb"}
+{
+  "_id": "s8d4a83908f16bcb",
+  "name": "Human (Andragastan)",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "human-andragastan",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Extra Feat",
+        "type": "AbilityScoreImprovement",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "points": 0
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb5823659d5727d3",
+            "Compendium.dnd5e.sieg5e-classfeatures.sde3859a58e0b7df"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [],
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "skills:*"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/environment/people/commoner.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374304,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8d4a83908f16bcb",
+  "flags": {},
+  "sort": 0
+}

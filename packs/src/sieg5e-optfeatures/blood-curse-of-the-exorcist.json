@@ -1,1 +1,90 @@
-{"name": "Blood Curse of the Exorcist", "type": "feat", "system": {"description": {"value": "<p>As a Bonus Action, you choose one creature you can see within 30 feet of you that is Charmed or Frightened, or which is under a possession effect. The target creature is no longer Charmed, Frightened, or possessed.</p><p><strong>Amplify.</strong> A creature that Charmed, Frightened, or possessed the target of your curse takes 3d6 psychic damage and must succeed on a Wisdom Saving Throw or be Stunned until the end of your next turn.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "bonus", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "creature"}, "range": {"value": 30, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "save", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [["3d6", "psychic"]], "versatile": ""}, "formula": "", "save": {"ability": "wis", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp", "_id": "s38b389012176347", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181833, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s38b389012176347"}
+{
+  "name": "Blood Curse of the Exorcist",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you choose one creature you can see within 30 feet of you that is Charmed or Frightened, or which is under a possession effect. The target creature is no longer Charmed, Frightened, or possessed.</p><p><strong>Amplify.</strong> A creature that Charmed, Frightened, or possessed the target of your curse takes 3d6 psychic damage and must succeed on a Wisdom Saving Throw or be Stunned until the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d6",
+          "psychic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "_id": "s38b389012176347",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374279,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s38b389012176347",
+  "flags": {},
+  "sort": 0
+}

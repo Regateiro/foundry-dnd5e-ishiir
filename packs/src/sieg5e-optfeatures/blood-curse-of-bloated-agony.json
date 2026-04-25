@@ -1,1 +1,85 @@
-{"name": "Blood Curse of Bloated Agony", "type": "feat", "system": {"description": {"value": "<p>As a Bonus Action, you curse a creature that you can see within 30 feet of you, causing its body to swell until the end of your next turn. For the duration, the creature has Disadvantage on strength checks and Dexterity checks, and takes 1d8 necrotic damage each time it makes an attack.</p><p><strong>Amplify.</strong> This curse lasts for 1 minute. The cursed creature can make a Constitution Saving Throw at the end of each of its turns, ending the curse on itself on a success.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "bonus", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "creature"}, "range": {"value": 30, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "save", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "con", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/control/voodoo-doll-pain-damage-tan.webp", "_id": "sb33f4451be4a5ab", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181832, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sb33f4451be4a5ab"}
+{
+  "name": "Blood Curse of Bloated Agony",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you curse a creature that you can see within 30 feet of you, causing its body to swell until the end of your next turn. For the duration, the creature has Disadvantage on strength checks and Dexterity checks, and takes 1d8 necrotic damage each time it makes an attack.</p><p><strong>Amplify.</strong> This curse lasts for 1 minute. The cursed creature can make a Constitution Saving Throw at the end of each of its turns, ending the curse on itself on a success.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/voodoo-doll-pain-damage-tan.webp",
+  "_id": "sb33f4451be4a5ab",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374279,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb33f4451be4a5ab",
+  "flags": {},
+  "sort": 0
+}

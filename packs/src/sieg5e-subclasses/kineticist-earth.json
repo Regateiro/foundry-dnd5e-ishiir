@@ -1,1 +1,82 @@
-{"_id": "s4b44566eec69ac5", "name": "Kineticist: Earth", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "kineticist", "identifier": "kineticist-earth", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s1754b8a5d07ef8c", "Compendium.dnd5e.sieg5e-classfeatures.s125bb4245909e97", "Compendium.dnd5e.sieg5e-classfeatures.saafe030229c9be0", "Compendium.dnd5e.sieg5e-classfeatures.s8cc7d7ad0f8631d"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s78ca135edcb69be"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s2d26846194a4a28"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sa7c265ad67db845"]}}, {"title": "Features", "type": "ItemGrant", "level": 20, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s59a8a41a24c8452"]}}]}, "img": "icons/magic/earth/orb-stone-smoke-teal.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181738, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s4b44566eec69ac5"}
+{
+  "_id": "s4b44566eec69ac5",
+  "name": "Kineticist: Earth",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "kineticist",
+    "identifier": "kineticist-earth",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1754b8a5d07ef8c",
+            "Compendium.dnd5e.sieg5e-classfeatures.s125bb4245909e97",
+            "Compendium.dnd5e.sieg5e-classfeatures.saafe030229c9be0",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8cc7d7ad0f8631d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s78ca135edcb69be"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2d26846194a4a28"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa7c265ad67db845"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s59a8a41a24c8452"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/earth/orb-stone-smoke-teal.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374179,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4b44566eec69ac5",
+  "flags": {},
+  "sort": 0
+}

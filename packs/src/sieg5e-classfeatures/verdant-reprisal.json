@@ -1,1 +1,85 @@
-{"name": "Verdant Reprisal", "type": "feat", "system": {"description": {"value": "<p>Enemies affected by your Protector's Mark have Disadvantage on attack rolls against targets other than you while they are within 30 feet of you.</p><p>Additionally, if an affected enemy attacks a creature other than you while within that range, you can use your Reaction to move up to your Speed and make a weapon attack against that enemy. If you are mounted, your mount moves up to its own Speed instead. This movement does not provoke Attacks of Opportunity.</p><p>You can use this feature a number of times equal to your Wisdom modifier (minimum of 1) and you regain all expended uses when you finish a Long Rest. Alternatively, you can spend a spell slot of 2nd level or higher to regain a use of this feature (no action required).</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sa70c832ba3c8e0b", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181792, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sa70c832ba3c8e0b"}
+{
+  "name": "Verdant Reprisal",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Enemies affected by your Protector's Mark have Disadvantage on attack rolls against targets other than you while they are within 30 feet of you.</p><p>Additionally, if an affected enemy attacks a creature other than you while within that range, you can use your Reaction to move up to your Speed and make a weapon attack against that enemy. If you are mounted, your mount moves up to its own Speed instead. This movement does not provoke Attacks of Opportunity.</p><p>You can use this feature a number of times equal to your Wisdom modifier (minimum of 1) and you regain all expended uses when you finish a Long Rest. Alternatively, you can spend a spell slot of 2nd level or higher to regain a use of this feature (no action required).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa70c832ba3c8e0b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374234,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa70c832ba3c8e0b",
+  "flags": {},
+  "sort": 0
+}

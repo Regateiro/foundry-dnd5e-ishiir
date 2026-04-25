@@ -1,1 +1,85 @@
-{"name": "Interception", "type": "feat", "system": {"description": {"value": "<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your Reaction to reduce the damage the target takes by 1d10 + your Proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this Reaction.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "reaction", "cost": 1, "condition": "when a creature you can see hits a target, other than you, within 5 feet of you with an attack"}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "1d10 + @attributes.prof", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/skills/melee/swords-parry-block-yellow.webp", "_id": "s7099d18e6f372dd", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181846, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s7099d18e6f372dd"}
+{
+  "name": "Interception",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your Reaction to reduce the damage the target takes by 1d10 + your Proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this Reaction.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when a creature you can see hits a target, other than you, within 5 feet of you with an attack"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "1d10 + @attributes.prof",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/melee/swords-parry-block-yellow.webp",
+  "_id": "s7099d18e6f372dd",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374295,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7099d18e6f372dd",
+  "flags": {},
+  "sort": 0
+}

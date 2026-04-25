@@ -1,1 +1,85 @@
-{"name": "Lunar Phenomenon", "type": "feat", "system": {"description": {"value": "<p>Your lunar phase magic bursts. As a Bonus Action, you can tap into a special power of the lunar phase you are currently in. Alternatively, as part of the Bonus Action you take to change your lunar phase using your Waxing and Waning feature, you can immediately use the power of the lunar phase you are entering:</p><ul><li><strong>Full Moon:</strong> You radiate intense moonlight for a moment. Each creature of your choice within 30 feet of you must succeed on a Constitution Saving Throw against your spell save DC or be Blinded until the end of its next turn. In addition, one creature of your choice in that area regains 3d8 hit points.</li><li><strong>New Moon:</strong> You momentarily emanate an oppressive gloom. Each creature of your choice within 30 feet of you must succeed on a Wisdom Saving Throw against your spell save DC or take 3d10 psychic damage and have its Speed reduced to 0 until the end of its next turn. In addition, you become Invisible until the end of your next turn, or until you make an attack or cast a spell.</li><li><strong>Crescent Moon:</strong> You slip through light and darkness. You can magically teleport to an unoccupied space you can see within 60 feet of yourself. In addition, you also gain Resistance to all damage until the start of your next turn.</li></ul><p>Once you use a phase's Bonus Action, you can't do so again until you finish a Long Rest, unless you spend 5 sorcery points to use it again.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s75bd981828326f5", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181806, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s75bd981828326f5"}
+{
+  "name": "Lunar Phenomenon",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your lunar phase magic bursts. As a Bonus Action, you can tap into a special power of the lunar phase you are currently in. Alternatively, as part of the Bonus Action you take to change your lunar phase using your Waxing and Waning feature, you can immediately use the power of the lunar phase you are entering:</p><ul><li><strong>Full Moon:</strong> You radiate intense moonlight for a moment. Each creature of your choice within 30 feet of you must succeed on a Constitution Saving Throw against your spell save DC or be Blinded until the end of its next turn. In addition, one creature of your choice in that area regains 3d8 hit points.</li><li><strong>New Moon:</strong> You momentarily emanate an oppressive gloom. Each creature of your choice within 30 feet of you must succeed on a Wisdom Saving Throw against your spell save DC or take 3d10 psychic damage and have its Speed reduced to 0 until the end of its next turn. In addition, you become Invisible until the end of your next turn, or until you make an attack or cast a spell.</li><li><strong>Crescent Moon:</strong> You slip through light and darkness. You can magically teleport to an unoccupied space you can see within 60 feet of yourself. In addition, you also gain Resistance to all damage until the start of your next turn.</li></ul><p>Once you use a phase's Bonus Action, you can't do so again until you finish a Long Rest, unless you spend 5 sorcery points to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s75bd981828326f5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374250,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s75bd981828326f5",
+  "flags": {},
+  "sort": 0
+}

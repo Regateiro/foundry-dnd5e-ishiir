@@ -1,1 +1,57 @@
-{"_id": "se1d773fc9d90530", "name": "Druid: Circle of the Land", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "druid", "identifier": "druid-circle-of-the-land", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s644c14a09adfc1c"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sf077858ef890f22"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s50084c26b37a2b0"]}}]}, "img": "icons/environment/wilderness/terrain-river-road-gray.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181736, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se1d773fc9d90530"}
+{
+  "_id": "se1d773fc9d90530",
+  "name": "Druid: Circle of the Land",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "druid",
+    "identifier": "druid-circle-of-the-land",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s644c14a09adfc1c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf077858ef890f22"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s50084c26b37a2b0"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/environment/wilderness/terrain-river-road-gray.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374177,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se1d773fc9d90530",
+  "flags": {},
+  "sort": 0
+}

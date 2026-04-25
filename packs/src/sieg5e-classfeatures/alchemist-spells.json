@@ -1,1 +1,85 @@
-{"name": "Alchemist Spells", "type": "feat", "system": {"description": {"value": "<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Alchemist Spells</caption><thead><tr><th scope=\"col\">Artificer Level</th><th scope=\"col\">Spell</th></tr></thead><tbody><tr><td>3rd</td><td>Healing Word, Ray of Sickness</td></tr><tr><td>5th</td><td>Flaming Sphere, Melf's Acid Arrow</td></tr><tr><td>9th</td><td>Corrosion, Mass Healing Word</td></tr><tr><td>13th</td><td>Death Ward, Vitriolic Sphere</td></tr><tr><td>17th</td><td>Cloudkill, Mass Cure Wounds</td></tr></tbody></table></div>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/symbols/cog-shield-white-blue.webp", "_id": "sc7f64e6fb24b2fc", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181747, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sc7f64e6fb24b2fc"}
+{
+  "name": "Alchemist Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You always have certain spells prepared after you reach particular levels in this class, as shown in the Alchemist Spells table. These spells count as artificer spells for you, but they don't count against the number of artificer spells you prepare.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Alchemist Spells</caption><thead><tr><th scope=\"col\">Artificer Level</th><th scope=\"col\">Spell</th></tr></thead><tbody><tr><td>3rd</td><td>Healing Word, Ray of Sickness</td></tr><tr><td>5th</td><td>Flaming Sphere, Melf's Acid Arrow</td></tr><tr><td>9th</td><td>Corrosion, Mass Healing Word</td></tr><tr><td>13th</td><td>Death Ward, Vitriolic Sphere</td></tr><tr><td>17th</td><td>Cloudkill, Mass Cure Wounds</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/symbols/cog-shield-white-blue.webp",
+  "_id": "sc7f64e6fb24b2fc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374188,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc7f64e6fb24b2fc",
+  "flags": {},
+  "sort": 0
+}

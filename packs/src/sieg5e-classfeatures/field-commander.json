@@ -1,1 +1,85 @@
-{"name": "Field Commander", "type": "feat", "system": {"description": {"value": "<p>You learn how to become the centerpiece of a fighting unit and direct others to fight more effectively. Choose an ally within 60 feet that can see or hear you and isn't incapacitated and select one of the options below. You can use any number of the listed options on the same ally or divide them up between multiple allies.</p><ul><li>On your turn, you can use your Bonus Action to give the target an additional Bonus Action on their next turn. Alternatively, the target can use its Reaction to use this Bonus Action immediately.</li><li>You can use your Reaction to give the target an additional Reaction until the start of your next turn. This Reaction cannot be used on the same turn as their normal Reaction.</li><li>On your turn, you can subtract a multiple of 5 from your Speed and add the amount to the target's Speed for its next turn. The amount of Speed the target gains in this manner cannot be higher than its base Speed. This feature has no effect on a target whose Speed is currently 0. You can choose multiple targets. If you do so, you have to divide the amount you subtract among the targets in multiples of 5. Any one of the targets can choose to use their Reaction to move up to the Speed gained in this manner immediately. This movement does not provoke Opportunity Attacks. If it does not use up all Speed gained in this manner, it loses the rest.</li></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "special", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "ally"}, "range": {"value": 60, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/environment/people/infantry-army.webp", "_id": "s8229c310e283d23", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181814, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8229c310e283d23"}
+{
+  "name": "Field Commander",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn how to become the centerpiece of a fighting unit and direct others to fight more effectively. Choose an ally within 60 feet that can see or hear you and isn't incapacitated and select one of the options below. You can use any number of the listed options on the same ally or divide them up between multiple allies.</p><ul><li>On your turn, you can use your Bonus Action to give the target an additional Bonus Action on their next turn. Alternatively, the target can use its Reaction to use this Bonus Action immediately.</li><li>You can use your Reaction to give the target an additional Reaction until the start of your next turn. This Reaction cannot be used on the same turn as their normal Reaction.</li><li>On your turn, you can subtract a multiple of 5 from your Speed and add the amount to the target's Speed for its next turn. The amount of Speed the target gains in this manner cannot be higher than its base Speed. This feature has no effect on a target whose Speed is currently 0. You can choose multiple targets. If you do so, you have to divide the amount you subtract among the targets in multiples of 5. Any one of the targets can choose to use their Reaction to move up to the Speed gained in this manner immediately. This movement does not provoke Opportunity Attacks. If it does not use up all Speed gained in this manner, it loses the rest.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "ally"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/environment/people/infantry-army.webp",
+  "_id": "s8229c310e283d23",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374258,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8229c310e283d23",
+  "flags": {},
+  "sort": 0
+}

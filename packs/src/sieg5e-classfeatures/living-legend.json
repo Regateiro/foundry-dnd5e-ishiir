@@ -1,1 +1,85 @@
-{"name": "Living Legend", "type": "feat", "system": {"description": {"value": "<p>You can empower yourself with the legends\u2014whether true or exaggerated\u2014of your great deeds. As a Bonus Action, you gain the following benefits for 10 minutes:</p><ul><li>If your total for a Strength, Dexterity, or Charisma check is less than your Charisma score, you can use that score in place of the total.</li><li>Your weapon attacks deal additional damage equal to half your Paladin level. The damage type is the same as the weapon's.</li><li>When you're not Incapacitated and subjected to an effect that allows you to make a Strength, Dexterity, or Constitution Saving Throw to take only half damage, you instead take no damage if you succeed on the Saving Throw and only half damage if you fail. You can't use this feature again until the start of your next turn.</li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you expend a 5th-level spell slot to use it again.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sbd505465ca05d2f", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181787, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sbd505465ca05d2f"}
+{
+  "name": "Living Legend",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can empower yourself with the legends—whether true or exaggerated—of your great deeds. As a Bonus Action, you gain the following benefits for 10 minutes:</p><ul><li>If your total for a Strength, Dexterity, or Charisma check is less than your Charisma score, you can use that score in place of the total.</li><li>Your weapon attacks deal additional damage equal to half your Paladin level. The damage type is the same as the weapon's.</li><li>When you're not Incapacitated and subjected to an effect that allows you to make a Strength, Dexterity, or Constitution Saving Throw to take only half damage, you instead take no damage if you succeed on the Saving Throw and only half damage if you fail. You can't use this feature again until the start of your next turn.</li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you expend a 5th-level spell slot to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sbd505465ca05d2f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374229,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbd505465ca05d2f",
+  "flags": {},
+  "sort": 0
+}

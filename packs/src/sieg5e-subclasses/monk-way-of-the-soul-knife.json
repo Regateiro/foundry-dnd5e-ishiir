@@ -1,1 +1,57 @@
-{"_id": "sd50b24e5e75272b", "name": "Monk: Way of the Soul Knife", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "monk", "identifier": "monk-way-of-the-soul-knife", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s46d683a96946a17"]}}, {"title": "Features", "type": "ItemGrant", "level": 11, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.se6057daa17a0cbc"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sd29d3d96db2b213"]}}]}, "img": "icons/skills/melee/strike-dagger-arcane-pink.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181739, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sd50b24e5e75272b"}
+{
+  "_id": "sd50b24e5e75272b",
+  "name": "Monk: Way of the Soul Knife",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "monk",
+    "identifier": "monk-way-of-the-soul-knife",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s46d683a96946a17"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se6057daa17a0cbc"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd29d3d96db2b213"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/strike-dagger-arcane-pink.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374180,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd50b24e5e75272b",
+  "flags": {},
+  "sort": 0
+}

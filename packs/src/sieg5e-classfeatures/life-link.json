@@ -1,1 +1,85 @@
-{"name": "Life Link", "type": "feat", "system": {"description": {"value": "<p>You create magical bond between your lifeforce and that of your Eidolon. When you or your Eidolon take damage that would reduce you to 0 hitpoints, you are reduced 1 hitpoint instead and the other takes the remainder of the damage.</p><p>The link has no effect on features that outright kill you when you are reduced to 0 hitpoints, such as the Disintegrate spell.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/control/debuff-energy-hold-green.webp", "_id": "s89a3fa081fd1802", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181808, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s89a3fa081fd1802"}
+{
+  "name": "Life Link",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You create magical bond between your lifeforce and that of your Eidolon. When you or your Eidolon take damage that would reduce you to 0 hitpoints, you are reduced 1 hitpoint instead and the other takes the remainder of the damage.</p><p>The link has no effect on features that outright kill you when you are reduced to 0 hitpoints, such as the Disintegrate spell.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/debuff-energy-hold-green.webp",
+  "_id": "s89a3fa081fd1802",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374251,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s89a3fa081fd1802",
+  "flags": {},
+  "sort": 0
+}

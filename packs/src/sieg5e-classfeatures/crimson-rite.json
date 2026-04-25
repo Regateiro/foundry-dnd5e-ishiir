@@ -1,1 +1,90 @@
-{"name": "Crimson Rite", "type": "feat", "system": {"description": {"value": "<p>You learn to invoke a rite of hemocraft that infuses your weapon strikes with elemental energy. As a Bonus Action, you can activate any rite you know on one weapon you're holding. The effect of the rite lasts until you finish a Short or a Long Rest. When you activate a rite, you take necrotic damage equal to one roll of your hemocraft die. This damage can't be reduced in any way.</p><p>While the rite is in effect, attacks you make with this weapon are magical, and deal extra damage equal to your hemocraft die of the type determined by the chosen rite. A weapon can hold only one active rite at a time. Other creatures can't gain the benefit of your rite.</p><p>If you have a Crimson Rite active on a weapon you're holding and a creature within 30 feet of you is reduced to 0 hit points by an effect that includes the chosen damage type, you regain one Hit Die, which you can spend immediately as if you had taken a Rest. This effect cannot be triggered again until the start of your next turn.</p><p>You choose one rite from the crimson rites below when you first gain this feature. You learn an additional crimson rite at 7th level, and again at 14th level.</p><p><strong>Rite of the Flame.</strong> The extra damage dealt by your rite is fire damage.</p><p><strong>Rite of the Frozen.</strong> The extra damage dealt by your rite is cold damage.</p><p><strong>Rite of the Storm.</strong> The extra damage dealt by your rite is lightning damage.</p><p><strong>Rite of the Dead.</strong> The extra damage dealt by your rite is necrotic damage. (Prerequisite: 14th level)</p><p><strong>Rite of the Oracle.</strong> The extra damage dealt by your rite is psychic damage. (Prerequisite: 14th level)</p><p><strong>Rite of the Roar.</strong> The extra damage dealt by your rite is thunder damage. (Prerequisite: 14th level)</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "bonus", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [["@scale.bloodhunter.hemocraft", "necrotic"]], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/skills/melee/strike-sword-dagger-runes-red.webp", "_id": "s40ffa3cbe889123", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181757, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s40ffa3cbe889123"}
+{
+  "name": "Crimson Rite",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to invoke a rite of hemocraft that infuses your weapon strikes with elemental energy. As a Bonus Action, you can activate any rite you know on one weapon you're holding. The effect of the rite lasts until you finish a Short or a Long Rest. When you activate a rite, you take necrotic damage equal to one roll of your hemocraft die. This damage can't be reduced in any way.</p><p>While the rite is in effect, attacks you make with this weapon are magical, and deal extra damage equal to your hemocraft die of the type determined by the chosen rite. A weapon can hold only one active rite at a time. Other creatures can't gain the benefit of your rite.</p><p>If you have a Crimson Rite active on a weapon you're holding and a creature within 30 feet of you is reduced to 0 hit points by an effect that includes the chosen damage type, you regain one Hit Die, which you can spend immediately as if you had taken a Rest. This effect cannot be triggered again until the start of your next turn.</p><p>You choose one rite from the crimson rites below when you first gain this feature. You learn an additional crimson rite at 7th level, and again at 14th level.</p><p><strong>Rite of the Flame.</strong> The extra damage dealt by your rite is fire damage.</p><p><strong>Rite of the Frozen.</strong> The extra damage dealt by your rite is cold damage.</p><p><strong>Rite of the Storm.</strong> The extra damage dealt by your rite is lightning damage.</p><p><strong>Rite of the Dead.</strong> The extra damage dealt by your rite is necrotic damage. (Prerequisite: 14th level)</p><p><strong>Rite of the Oracle.</strong> The extra damage dealt by your rite is psychic damage. (Prerequisite: 14th level)</p><p><strong>Rite of the Roar.</strong> The extra damage dealt by your rite is thunder damage. (Prerequisite: 14th level)</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.bloodhunter.hemocraft",
+          "necrotic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/melee/strike-sword-dagger-runes-red.webp",
+  "_id": "s40ffa3cbe889123",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374197,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s40ffa3cbe889123",
+  "flags": {},
+  "sort": 0
+}

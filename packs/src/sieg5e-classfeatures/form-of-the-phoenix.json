@@ -1,1 +1,85 @@
-{"name": "Form of the Phoenix", "type": "feat", "system": {"description": {"value": "<p>You finally master the spark of fire that dances within you. When you activate your Mantle of Flame feature, you can choose to empower its effects:</p><ul><li>You have a Fly Speed of 40 feet and can hover.</li><li>You have Resistance to all damage.</li><li>If you use your Phoenix Spark, that feature deals an extra 20 fire damage to each creature.</li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you spend 7 sorcery points to use it again.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sd771987a04cb443", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181803, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sd771987a04cb443"}
+{
+  "name": "Form of the Phoenix",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You finally master the spark of fire that dances within you. When you activate your Mantle of Flame feature, you can choose to empower its effects:</p><ul><li>You have a Fly Speed of 40 feet and can hover.</li><li>You have Resistance to all damage.</li><li>If you use your Phoenix Spark, that feature deals an extra 20 fire damage to each creature.</li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you spend 7 sorcery points to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd771987a04cb443",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374246,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd771987a04cb443",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,69 @@
-{"_id": "se0e0b6e78d09ddb", "name": "Sorcerer: Cryomancer", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "sorcerer", "identifier": "sorcerer-cryomancer", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sffd6df1fa2a33f9", "Compendium.dnd5e.sieg5e-classfeatures.sb533c6f986abf90"]}}, {"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s33beca676a91444"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s285eb5171708bec"]}}, {"title": "Features", "type": "ItemGrant", "level": 18, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s967b380e5cd3f21"]}}]}, "img": "icons/magic/water/snowflake-ice-blue-white.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181743, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se0e0b6e78d09ddb"}
+{
+  "_id": "se0e0b6e78d09ddb",
+  "name": "Sorcerer: Cryomancer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "sorcerer",
+    "identifier": "sorcerer-cryomancer",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sffd6df1fa2a33f9",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb533c6f986abf90"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s33beca676a91444"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s285eb5171708bec"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s967b380e5cd3f21"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/water/snowflake-ice-blue-white.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374183,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se0e0b6e78d09ddb",
+  "flags": {},
+  "sort": 0
+}

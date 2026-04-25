@@ -1,1 +1,70 @@
-{"_id": "s4c15424eeee6317", "name": "Artificer: Alchemist", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "artificer", "identifier": "artificer-alchemist", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s065645ec4080237", "Compendium.dnd5e.sieg5e-classfeatures.sc7f64e6fb24b2fc", "Compendium.dnd5e.sieg5e-classfeatures.s947022f7642c528"]}}, {"title": "Features", "type": "ItemGrant", "level": 5, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s59da939b544065f"]}}, {"title": "Features", "type": "ItemGrant", "level": 9, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sfca72dde869f6ae"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s185c328acccd75a"]}}]}, "img": "icons/tools/laboratory/vials-blue-pink.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181730, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s4c15424eeee6317"}
+{
+  "_id": "s4c15424eeee6317",
+  "name": "Artificer: Alchemist",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "artificer",
+    "identifier": "artificer-alchemist",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s065645ec4080237",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc7f64e6fb24b2fc",
+            "Compendium.dnd5e.sieg5e-classfeatures.s947022f7642c528"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s59da939b544065f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sfca72dde869f6ae"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s185c328acccd75a"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/tools/laboratory/vials-blue-pink.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374172,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4c15424eeee6317",
+  "flags": {},
+  "sort": 0
+}

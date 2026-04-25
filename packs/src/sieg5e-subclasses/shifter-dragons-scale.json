@@ -1,1 +1,68 @@
-{"_id": "s797c2b9ff3c9766", "name": "Shifter: Dragon's Scale", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "shifter", "identifier": "shifter-dragons-scale", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s99771c9d83234fb"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.saeccda586e0023e"]}}, {"title": "Features", "type": "ItemGrant", "level": 13, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s51778c87dc05abd"]}}, {"title": "Features", "type": "ItemGrant", "level": 18, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s65f6d9648434c38"]}}]}, "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181742, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s797c2b9ff3c9766"}
+{
+  "_id": "s797c2b9ff3c9766",
+  "name": "Shifter: Dragon's Scale",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "shifter",
+    "identifier": "shifter-dragons-scale",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s99771c9d83234fb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.saeccda586e0023e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s51778c87dc05abd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s65f6d9648434c38"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374183,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s797c2b9ff3c9766",
+  "flags": {},
+  "sort": 0
+}

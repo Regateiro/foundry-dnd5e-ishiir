@@ -1,1 +1,85 @@
-{"name": "Improved Elemental Might", "type": "feat", "system": {"description": {"value": "<p>All features of your Elemental Might with an area of effect have their radius increased to 20 feet. Additionally, its element-specific benefits improve in the following ways:</p><ul><li><strong>Air.</strong> Your movement does not provoke Opportunity Attacks and you can move through the spaces of other creatures unimpeded.</li><li><strong>Earth.</strong> Every creature that fails its Saving Throw against your Elemental Might is knocked Prone.</li><li><strong>Fire.</strong> The critical range of your attacks increases by 1. Your critical hits deal an additional 2d8 fire damage.</li><li><strong>Water.</strong> Every creature that fails its Saving Throw against your Elemental Might has its Speed halved until the start your next turn.</li></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s706e4af48ab97a8", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181765, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s706e4af48ab97a8"}
+{
+  "name": "Improved Elemental Might",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>All features of your Elemental Might with an area of effect have their radius increased to 20 feet. Additionally, its element-specific benefits improve in the following ways:</p><ul><li><strong>Air.</strong> Your movement does not provoke Opportunity Attacks and you can move through the spaces of other creatures unimpeded.</li><li><strong>Earth.</strong> Every creature that fails its Saving Throw against your Elemental Might is knocked Prone.</li><li><strong>Fire.</strong> The critical range of your attacks increases by 1. Your critical hits deal an additional 2d8 fire damage.</li><li><strong>Water.</strong> Every creature that fails its Saving Throw against your Elemental Might has its Speed halved until the start your next turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s706e4af48ab97a8",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374205,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s706e4af48ab97a8",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,85 @@
-{"name": "Ethereal Step", "type": "feat", "system": {"description": {"value": "<p>You learn to step through the Ethereal Plane. As a Bonus Action, you can cast the etherealness spell with this feature, without expending a spell slot, but the spell lasts only 1 minute. During that time, you can use a Bonus Action to switch from the Etheral Plane to back to the Plane you are currently on or vice versa.</p><p>You use this feature a number of times equal to your Wisdom modifier and you can't use it again until you finish a Long Rest.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sf8b0f9197802743", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181790, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sf8b0f9197802743"}
+{
+  "name": "Ethereal Step",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to step through the Ethereal Plane. As a Bonus Action, you can cast the etherealness spell with this feature, without expending a spell slot, but the spell lasts only 1 minute. During that time, you can use a Bonus Action to switch from the Etheral Plane to back to the Plane you are currently on or vice versa.</p><p>You use this feature a number of times equal to your Wisdom modifier and you can't use it again until you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf8b0f9197802743",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374232,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf8b0f9197802743",
+  "flags": {},
+  "sort": 0
+}

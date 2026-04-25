@@ -1,1 +1,46 @@
-{"_id": "se8936d8a4eb7348", "name": "Cleric: Order Domain", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "cleric", "identifier": "cleric-order-domain", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s1e48e16148c25f2"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sf6e711d8f9cfb90"]}}]}, "img": "icons/magic/symbols/cog-glowing-green.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181735, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se8936d8a4eb7348"}
+{
+  "_id": "se8936d8a4eb7348",
+  "name": "Cleric: Order Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-order-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1e48e16148c25f2"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf6e711d8f9cfb90"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/symbols/cog-glowing-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374176,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se8936d8a4eb7348",
+  "flags": {},
+  "sort": 0
+}

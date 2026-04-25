@@ -1,1 +1,85 @@
-{"name": "Primal Defense", "type": "feat", "system": {"description": {"value": "<p>Your animal-like swiftness or thick skin makes it more difficult to land a hit on you.</p><p>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice when you get this feature) and your Constitution modifier.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/control/silhouette-hold-change-green.webp", "_id": "s5ae0b016e990fe5", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181799, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s5ae0b016e990fe5"}
+{
+  "name": "Primal Defense",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your animal-like swiftness or thick skin makes it more difficult to land a hit on you.</p><p>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice when you get this feature) and your Constitution modifier.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/silhouette-hold-change-green.webp",
+  "_id": "s5ae0b016e990fe5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374242,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5ae0b016e990fe5",
+  "flags": {},
+  "sort": 0
+}

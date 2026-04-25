@@ -1,1 +1,57 @@
-{"_id": "se8002734c244bad", "name": "Cleric: Hunt Domain", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "cleric", "identifier": "cleric-hunt-domain", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s4539a237f3d3055"]}}, {"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s740c3d93c9596ed"]}}]}, "img": "icons/magic/nature/stealth-hide-beast-eyes-green.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181735, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se8002734c244bad"}
+{
+  "_id": "se8002734c244bad",
+  "name": "Cleric: Hunt Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-hunt-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4539a237f3d3055"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s740c3d93c9596ed"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/stealth-hide-beast-eyes-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374176,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se8002734c244bad",
+  "flags": {},
+  "sort": 0
+}

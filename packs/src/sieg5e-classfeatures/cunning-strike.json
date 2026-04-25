@@ -1,1 +1,85 @@
-{"name": "Cunning Strike", "type": "feat", "system": {"description": {"value": "<p>You have developed ways to hamper your foes when you use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forego to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Lacerate effect, remove 1d6 from the Sneak Attack's damage before rolling.</p><p>If a Cunning Strike effect requires a Saving Throw, the DC equals 8 + your Proficiency Bonus + your Dexterity or Strength modifier (your choice).</p><ul><li><strong>Distract (Cost: 1d6).</strong> The target must succeed on a Wisdom Saving Throw, or it cannot take Bonus Actions or Reactions until the start of your next turn.</li><li><strong>Lacerate (Cost: 1d6).</strong> The target must make a Constitution Saving Throw. On a failed save, the target is Lacerated for 1 minute. At the end of each of its turns, the Lacerated target can repeat the save, ending the effect on on a success.</li><li><strong>Trip (Cost: 1d6).</strong> If the target is no more than 1 size larger than you, it must succeed on a Dexterity Saving Throw or be knocked Prone.</li></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "special", "cost": 1, "condition": "when you deal sneak attack damage"}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/skills/melee/strike-dagger-white-orange.webp", "_id": "s9402ac383585e63", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181794, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s9402ac383585e63"}
+{
+  "name": "Cunning Strike",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have developed ways to hamper your foes when you use your Sneak Attack. When you deal Sneak Attack damage, you can add one of the following Cunning Strike effects. Each effect has a die cost, which is the number of Sneak Attack damage dice you must forego to add the effect. You remove the die before rolling, and the effect occurs immediately after the attack's damage is dealt. For example, if you add the Lacerate effect, remove 1d6 from the Sneak Attack's damage before rolling.</p><p>If a Cunning Strike effect requires a Saving Throw, the DC equals 8 + your Proficiency Bonus + your Dexterity or Strength modifier (your choice).</p><ul><li><strong>Distract (Cost: 1d6).</strong> The target must succeed on a Wisdom Saving Throw, or it cannot take Bonus Actions or Reactions until the start of your next turn.</li><li><strong>Lacerate (Cost: 1d6).</strong> The target must make a Constitution Saving Throw. On a failed save, the target is Lacerated for 1 minute. At the end of each of its turns, the Lacerated target can repeat the save, ending the effect on on a success.</li><li><strong>Trip (Cost: 1d6).</strong> If the target is no more than 1 size larger than you, it must succeed on a Dexterity Saving Throw or be knocked Prone.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": 1,
+      "condition": "when you deal sneak attack damage"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/melee/strike-dagger-white-orange.webp",
+  "_id": "s9402ac383585e63",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374236,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9402ac383585e63",
+  "flags": {},
+  "sort": 0
+}

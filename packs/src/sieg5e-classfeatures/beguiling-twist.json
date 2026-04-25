@@ -1,1 +1,85 @@
-{"name": "Beguiling Twist", "type": "feat", "system": {"description": {"value": "<p>The magic of the Feywild guards your mind. You have Advantage on Saving Throws against being Charmed or Frightened.</p><p>In addition, whenever you or a creature you can see within 120 feet of you succeeds on a Saving Throw against being Charmed or Frightened, you can use your Reaction to force a different creature you can see within 120 feet of you to make a Wisdom Saving Throw against your spell save DC. If the save fails, the target is Charmed or Frightened by you (your choice) for 1 minute. The target can repeat the Saving Throw at the end of each of its turns, ending the effect on itself on a successful save.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s73dbae490b082e7", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181789, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s73dbae490b082e7"}
+{
+  "name": "Beguiling Twist",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The magic of the Feywild guards your mind. You have Advantage on Saving Throws against being Charmed or Frightened.</p><p>In addition, whenever you or a creature you can see within 120 feet of you succeeds on a Saving Throw against being Charmed or Frightened, you can use your Reaction to force a different creature you can see within 120 feet of you to make a Wisdom Saving Throw against your spell save DC. If the save fails, the target is Charmed or Frightened by you (your choice) for 1 minute. The target can repeat the Saving Throw at the end of each of its turns, ending the effect on itself on a successful save.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s73dbae490b082e7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374231,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s73dbae490b082e7",
+  "flags": {},
+  "sort": 0
+}

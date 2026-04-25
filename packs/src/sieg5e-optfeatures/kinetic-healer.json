@@ -1,1 +1,85 @@
-{"name": "Kinetic Healer", "type": "feat", "system": {"description": {"value": "<p>You gain the ability to harness the cleansing properties of water.</p><p>As an Action, you can touch a creature and spend a number of kinesis points up to the current total you possess and heal the creature. For each kinesis point you spend the creature is healed for 2d8 hitpoints. You can also spend 2 kinesis points to remove any one poison or disease from the creature as part of the same action.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sfa37133c6f6ea07", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181845, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sfa37133c6f6ea07"}
+{
+  "name": "Kinetic Healer",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to harness the cleansing properties of water.</p><p>As an Action, you can touch a creature and spend a number of kinesis points up to the current total you possess and heal the creature. For each kinesis point you spend the creature is healed for 2d8 hitpoints. You can also spend 2 kinesis points to remove any one poison or disease from the creature as part of the same action.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfa37133c6f6ea07",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374294,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfa37133c6f6ea07",
+  "flags": {},
+  "sort": 0
+}

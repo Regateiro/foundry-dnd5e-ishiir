@@ -1,1 +1,85 @@
-{"name": "Hunter's Bane", "type": "feat", "system": {"description": {"value": "<p>You have survived the Hunter's Bane\u2014a dangerous, long-guarded ritual that alters your life's blood, forever binding you to the darkness and honing your senses against it. Choose Intelligence, Wisdom, or Charisma. The chosen ability score is your Hemocraft ability score, which represents how you make use of your dark gift. You can use this ability score in place of the usual one when you make Arcana, Religion, or Survival checks.</p><p>The Hunter's Bane also empowers your body to control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a Saving Throw to resist the feature's effects. The Saving Throw DC is calculated as follows:</p><p><b>Hemocraft save DC</b> = 8 + your Proficiency bonus + your Hemocraft modifier (your choice between Intelligence or Wisdom)</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/unholy/hand-claw-glow-orange.webp", "_id": "s59e46b8c9231cca", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181756, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s59e46b8c9231cca"}
+{
+  "name": "Hunter's Bane",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have survived the Hunter's Bane—a dangerous, long-guarded ritual that alters your life's blood, forever binding you to the darkness and honing your senses against it. Choose Intelligence, Wisdom, or Charisma. The chosen ability score is your Hemocraft ability score, which represents how you make use of your dark gift. You can use this ability score in place of the usual one when you make Arcana, Religion, or Survival checks.</p><p>The Hunter's Bane also empowers your body to control and shape hemocraft magic, using your own blood and life essence to fuel your abilities. Some of your features require your target to make a Saving Throw to resist the feature's effects. The Saving Throw DC is calculated as follows:</p><p><b>Hemocraft save DC</b> = 8 + your Proficiency bonus + your Hemocraft modifier (your choice between Intelligence or Wisdom)</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/unholy/hand-claw-glow-orange.webp",
+  "_id": "s59e46b8c9231cca",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374197,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s59e46b8c9231cca",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,83 @@
-{"_id": "se7b23c16583d96b", "name": "Monk: Way of the Kensei", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "monk", "identifier": "monk-way-of-the-kensei", "advancement": [{"title": "Choose Fighting Styles", "type": "ItemChoice", "icon": "systems/dnd5e/icons/svg/item-choice.svg", "configuration": {"hint": "All choices are presented regardless of prerequisites.", "choices": {"3": 1}, "pool": ["Compendium.dnd5e.sieg5e-optfeatures.s97d499ca60a9d58", "Compendium.dnd5e.sieg5e-optfeatures.seca00667ae01da3", "Compendium.dnd5e.sieg5e-optfeatures.sa7280b93ed079ef", "Compendium.dnd5e.sieg5e-optfeatures.s0c741fec32f4cce", "Compendium.dnd5e.sieg5e-optfeatures.sa88d8e0b7cefb10", "Compendium.dnd5e.sieg5e-optfeatures.s3da84db02342126", "Compendium.dnd5e.sieg5e-optfeatures.s7099d18e6f372dd", "Compendium.dnd5e.sieg5e-optfeatures.s48479ecc1088203", "Compendium.dnd5e.sieg5e-optfeatures.sb549cdec1d0e0a1", "Compendium.dnd5e.sieg5e-optfeatures.s4472fa7a894a2d8", "Compendium.dnd5e.sieg5e-optfeatures.sd0f13083a19dd8d", "Compendium.dnd5e.sieg5e-optfeatures.s6faffec38eae402", "Compendium.dnd5e.sieg5e-optfeatures.sfc270730094c7cb"]}}, {"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.scbcc344230c7361"]}}, {"title": "Features", "type": "ItemGrant", "level": 11, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sd7b6bbfd7c3f55e"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3b6e105f135adf3"]}}]}, "img": "icons/skills/melee/sword-twirl-orange.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181739, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se7b23c16583d96b"}
+{
+  "_id": "se7b23c16583d96b",
+  "name": "Monk: Way of the Kensei",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "monk",
+    "identifier": "monk-way-of-the-kensei",
+    "advancement": [
+      {
+        "title": "Choose Fighting Styles",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "3": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s97d499ca60a9d58",
+            "Compendium.dnd5e.sieg5e-optfeatures.seca00667ae01da3",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa7280b93ed079ef",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0c741fec32f4cce",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa88d8e0b7cefb10",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3da84db02342126",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7099d18e6f372dd",
+            "Compendium.dnd5e.sieg5e-optfeatures.s48479ecc1088203",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb549cdec1d0e0a1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4472fa7a894a2d8",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd0f13083a19dd8d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6faffec38eae402",
+            "Compendium.dnd5e.sieg5e-optfeatures.sfc270730094c7cb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.scbcc344230c7361"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd7b6bbfd7c3f55e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3b6e105f135adf3"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/sword-twirl-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374180,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se7b23c16583d96b",
+  "flags": {},
+  "sort": 0
+}

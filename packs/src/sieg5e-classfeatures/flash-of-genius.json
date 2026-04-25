@@ -1,1 +1,85 @@
-{"name": "Flash of Genius", "type": "feat", "system": {"description": {"value": "<p>When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).</p><p>You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "reaction", "cost": 1, "condition": "when you or another creature you can see within 30 feet of you fails an Ability Check or a Saving Throw"}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": 0, "max": "max(1, @abilities.int.mod)", "per": "lr", "recovery": ""}, "consume": {"type": "", "target": null, "amount": 1}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "max(1, @abilities.int.mod)", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/light/explosion-star-glow-silhouette.webp", "_id": "sfeb057e0d1f9fb6", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181746, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sfeb057e0d1f9fb6"}
+{
+  "name": "Flash of Genius",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you or a creature you can see within 30 feet of you fails an ability check or a saving throw, you can take a Reaction to add a bonus to the roll, potentially causing it to succeed. The bonus equals your Intelligence modifier (minimum of +1).</p><p>You can take this Reaction a number of times equal to your Intelligence modifier (minimum of once). You regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when you or another creature you can see within 30 feet of you fails an Ability Check or a Saving Throw"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "max(1, @abilities.int.mod)",
+      "per": "lr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": 1
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "max(1, @abilities.int.mod)",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+  "_id": "sfeb057e0d1f9fb6",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374187,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfeb057e0d1f9fb6",
+  "flags": {},
+  "sort": 0
+}

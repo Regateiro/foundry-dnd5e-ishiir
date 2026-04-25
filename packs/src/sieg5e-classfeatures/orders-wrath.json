@@ -1,1 +1,85 @@
-{"name": "Order's Wrath", "type": "feat", "system": {"description": {"value": "<p>Enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal damage to a creature on your turn, you can curse that creature until the start of your next turn. When one of your allies hits the cursed creature with an attack, the target also takes 2d8 psychic damage. You can curse a creature in this way only once per turn.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sf6e711d8f9cfb90", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181762, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sf6e711d8f9cfb90"}
+{
+  "name": "Order's Wrath",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Enemies you designate for destruction wilt under the combined efforts of you and your allies. If you deal damage to a creature on your turn, you can curse that creature until the start of your next turn. When one of your allies hits the cursed creature with an attack, the target also takes 2d8 psychic damage. You can curse a creature in this way only once per turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf6e711d8f9cfb90",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374203,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf6e711d8f9cfb90",
+  "flags": {},
+  "sort": 0
+}

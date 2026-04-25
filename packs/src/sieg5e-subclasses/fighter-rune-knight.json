@@ -1,1 +1,106 @@
-{"_id": "sf7a4f456f088858", "name": "Fighter: Rune Knight", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "fighter", "identifier": "fighter-rune-knight", "advancement": [{"title": "Choose Runes", "type": "ItemChoice", "icon": "systems/dnd5e/icons/svg/item-choice.svg", "configuration": {"hint": "All choices are presented regardless of prerequisites.", "choices": {"3": 2, "7": 1, "10": 1, "15": 1}, "pool": ["Compendium.dnd5e.sieg5e-optfeatures.se5a392a4da9c09b", "Compendium.dnd5e.sieg5e-optfeatures.s73df988aacf0bbf", "Compendium.dnd5e.sieg5e-optfeatures.s5dd1f63830af8f2", "Compendium.dnd5e.sieg5e-optfeatures.s99ae3b7bcba227c", "Compendium.dnd5e.sieg5e-optfeatures.s7dea4509a2c6333", "Compendium.dnd5e.sieg5e-optfeatures.s6765373e499131d"]}}, {"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb38a2d69355ce8f", "Compendium.dnd5e.sieg5e-classfeatures.s7a1890398bd9ddc", "Compendium.dnd5e.sieg5e-classfeatures.s9e9874ca1f59172"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sdbf1fd7b6f8fbd9", "Compendium.dnd5e.sieg5e-classfeatures.s9bde4688b8245c0"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sdde0b0891a9b1f3", "Compendium.dnd5e.sieg5e-classfeatures.s696381d82ff3075"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb67eefab4287c5a", "Compendium.dnd5e.sieg5e-classfeatures.sdb200809dd1fbad"]}}, {"title": "Features", "type": "ItemGrant", "level": 18, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s0aad9312264fbc8"]}}]}, "img": "icons/magic/symbols/runes-etched-steel-blade.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181737, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sf7a4f456f088858"}
+{
+  "_id": "sf7a4f456f088858",
+  "name": "Fighter: Rune Knight",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "fighter",
+    "identifier": "fighter-rune-knight",
+    "advancement": [
+      {
+        "title": "Choose Runes",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "3": 2,
+            "7": 1,
+            "10": 1,
+            "15": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.se5a392a4da9c09b",
+            "Compendium.dnd5e.sieg5e-optfeatures.s73df988aacf0bbf",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5dd1f63830af8f2",
+            "Compendium.dnd5e.sieg5e-optfeatures.s99ae3b7bcba227c",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7dea4509a2c6333",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6765373e499131d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb38a2d69355ce8f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7a1890398bd9ddc",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9e9874ca1f59172"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sdbf1fd7b6f8fbd9",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9bde4688b8245c0"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sdde0b0891a9b1f3",
+            "Compendium.dnd5e.sieg5e-classfeatures.s696381d82ff3075"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb67eefab4287c5a",
+            "Compendium.dnd5e.sieg5e-classfeatures.sdb200809dd1fbad"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0aad9312264fbc8"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/symbols/runes-etched-steel-blade.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374178,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf7a4f456f088858",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,85 @@
-{"name": "Elemental Fury", "type": "feat", "system": {"description": {"value": "<p>The might of the elements flows through you. You gain one of the following options of your choice:</p><p><strong>Potent Spellcasting.</strong> You add your Wisdom modifier to the damage you deal with any Druid cantrip.</p><p><strong>Primal Strike.</strong> Once on each of your turns when you hit a creature with an Attack Roll using a weapon or a natural weapon of your Wild Shape, you can cause the target to take an additional 1d8 Acid, Cold, Fire, Lightning, Poison, or Thunder damage (your choice).</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/light/explosion-glow-spiral-teal.webp", "_id": "sd580de50ffb3738", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181764, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sd580de50ffb3738"}
+{
+  "name": "Elemental Fury",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The might of the elements flows through you. You gain one of the following options of your choice:</p><p><strong>Potent Spellcasting.</strong> You add your Wisdom modifier to the damage you deal with any Druid cantrip.</p><p><strong>Primal Strike.</strong> Once on each of your turns when you hit a creature with an Attack Roll using a weapon or a natural weapon of your Wild Shape, you can cause the target to take an additional 1d8 Acid, Cold, Fire, Lightning, Poison, or Thunder damage (your choice).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/light/explosion-glow-spiral-teal.webp",
+  "_id": "sd580de50ffb3738",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374205,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd580de50ffb3738",
+  "flags": {},
+  "sort": 0
+}

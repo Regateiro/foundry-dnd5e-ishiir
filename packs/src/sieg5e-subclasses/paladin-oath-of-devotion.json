@@ -1,1 +1,57 @@
-{"_id": "se65db0fb786564b", "name": "Paladin: Oath of Devotion", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "paladin", "identifier": "paladin-oath-of-devotion", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sc197b8fb94ec46a"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sa53ab3ab3d37914"]}}, {"title": "Features", "type": "ItemGrant", "level": 20, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sbecb9091927bcec"]}}]}, "img": "icons/environment/people/group.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181739, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se65db0fb786564b"}
+{
+  "_id": "se65db0fb786564b",
+  "name": "Paladin: Oath of Devotion",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oath-of-devotion",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc197b8fb94ec46a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa53ab3ab3d37914"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbecb9091927bcec"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/environment/people/group.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374180,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se65db0fb786564b",
+  "flags": {},
+  "sort": 0
+}

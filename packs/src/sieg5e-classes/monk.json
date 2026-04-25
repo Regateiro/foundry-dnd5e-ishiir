@@ -1,1 +1,453 @@
-{"_id": "sd91519fc02a2666", "name": "Monk", "type": "class", "system": {"source": "Ishiir", "identifier": "monk", "hitDice": "d8", "advancement": [{"type": "Trait", "title": "Weapon Proficiencies", "icon": "systems/dnd5e/icons/svg/trait-weapon-proficiencies.svg", "level": 1, "configuration": {"grants": ["weapon:sim", "weapon:mar:scimitar", "weapon:mar:shortsword", "weapon:mar:handcrossbow"]}}, {"type": "Trait", "classRestriction": "primary", "title": "Tool Proficiencies", "icon": "systems/dnd5e/icons/svg/trait-tool-proficiencies.svg", "level": 1, "configuration": {"choices": [{"count": 1, "pool": ["tool:art:*", "tool:music:*"]}]}}, {"type": "ScaleValue", "title": "Martial Arts", "icon": "systems/dnd5e/icons/svg/scale-value.svg", "configuration": {"identifier": "martial-arts", "type": "dice", "scale": {"1": {"faces": 6}, "5": {"faces": 8}, "11": {"faces": 10}, "17": {"faces": 12}}}}, {"type": "ScaleValue", "title": "Ki Points", "icon": "systems/dnd5e/icons/svg/scale-value.svg", "configuration": {"identifier": "ki-points", "type": "number", "scale": {"2": {"value": 2}, "3": {"value": 3}, "4": {"value": 4}, "5": {"value": 5}, "6": {"value": 6}, "7": {"value": 7}, "8": {"value": 8}, "9": {"value": 9}, "10": {"value": 10}, "11": {"value": 11}, "12": {"value": 12}, "13": {"value": 13}, "14": {"value": 14}, "15": {"value": 15}, "16": {"value": 16}, "17": {"value": 17}, "18": {"value": 18}, "19": {"value": 19}, "20": {"value": 20}}}}, {"type": "ScaleValue", "title": "Unarmored Movement", "icon": "systems/dnd5e/icons/svg/scale-value.svg", "configuration": {"identifier": "unarmored-movement", "type": "number", "scale": {"2": {"value": 10}, "6": {"value": 15}, "10": {"value": 20}, "14": {"value": 25}, "18": {"value": 30}}}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 4, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 8, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 12, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 16, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 19, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s604c4d58654b312", "Compendium.dnd5e.sieg5e-classfeatures.s948f8de52a4adc1"]}}, {"title": "Features", "type": "ItemGrant", "level": 2, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s483ca21a0fdaf13", "Compendium.dnd5e.sieg5e-classfeatures.s1b9bfaa752fc683", "Compendium.dnd5e.sieg5e-classfeatures.scbe9a26550d26e8", "Compendium.dnd5e.sieg5e-classfeatures.s8b1999389a5c40d", "Compendium.dnd5e.sieg5e-classfeatures.s5cabc37e591bc42", "Compendium.dnd5e.sieg5e-classfeatures.sb07514d85b9fda3", "Compendium.dnd5e.sieg5e-classfeatures.s40045b9d3cea955", "Compendium.dnd5e.sieg5e-classfeatures.s4fa3587a6a8a11e"]}}, {"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sf460753e0735e8d", "Compendium.dnd5e.sieg5e-classfeatures.s6780d225c0d26e4"]}}, {"title": "Features", "type": "ItemGrant", "level": 4, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s1e10999e1cfebf0", "Compendium.dnd5e.sieg5e-classfeatures.s3d0f3f5775593c8"]}}, {"title": "Features", "type": "ItemGrant", "level": 5, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c", "Compendium.dnd5e.sieg5e-classfeatures.s34e0b3d0f61ad60", "Compendium.dnd5e.sieg5e-classfeatures.se43a7e04afa3dc5"]}}, {"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s31009589f6f6043"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.se5c05267751ad98"]}}, {"title": "Features", "type": "ItemGrant", "level": 9, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb61d4d6e0255132"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3aa5701e436bb2f", "Compendium.dnd5e.sieg5e-classfeatures.s11a1e633a497c96"]}}, {"title": "Features", "type": "ItemGrant", "level": 13, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sbaca8edae4137b7", "Compendium.dnd5e.sieg5e-classfeatures.sd8c6f97491acfc4"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s0c3b2a713ad67f9"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s582a5359def94d8", "Compendium.dnd5e.sieg5e-classfeatures.se612e34e30e5ae4"]}}, {"title": "Features", "type": "ItemGrant", "level": 18, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3e3628faf73515a"]}}, {"title": "Features", "type": "ItemGrant", "level": 20, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3c547bf4bc37a31"]}}, {"title": "Hit Points", "type": "HitPoints", "icon": "systems/dnd5e/icons/svg/hit-points.svg", "value": {"1": "avg"}}, {"title": "Saving Throws", "type": "Trait", "level": 1, "classRestriction": "primary", "icon": "systems/dnd5e/icons/svg/trait-saves.svg", "configuration": {"grants": ["saves:wis"], "choices": [{"count": 2, "pool": ["saves:*"]}], "hint": "Select only 2 major saves (DEX, CON, WIS) or 1 major save and 2 minor saves (STR, INT, CHA) in total."}}, {"title": "Skills", "type": "Trait", "level": 1, "classRestriction": "primary", "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"choices": [{"count": 2, "pool": ["skills:acr", "skills:ath", "skills:his", "skills:ins", "skills:rel", "skills:ste"]}]}}, {"title": "Origin Feat", "type": "AbilityScoreImprovement", "level": 1, "classRestriction": "primary", "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"points": 0}}]}, "img": "icons/magic/control/silhouette-hold-change-blue.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181728, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sd91519fc02a2666"}
+{
+  "_id": "sd91519fc02a2666",
+  "name": "Monk",
+  "type": "class",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "monk",
+    "hitDice": "d8",
+    "advancement": [
+      {
+        "type": "Trait",
+        "title": "Weapon Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-weapon-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "grants": [
+            "weapon:sim",
+            "weapon:mar:scimitar",
+            "weapon:mar:shortsword",
+            "weapon:mar:handcrossbow"
+          ]
+        }
+      },
+      {
+        "type": "Trait",
+        "classRestriction": "primary",
+        "title": "Tool Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-tool-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "tool:art:*",
+                "tool:music:*"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Martial Arts",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "martial-arts",
+          "type": "dice",
+          "scale": {
+            "1": {
+              "faces": 6
+            },
+            "5": {
+              "faces": 8
+            },
+            "11": {
+              "faces": 10
+            },
+            "17": {
+              "faces": 12
+            }
+          }
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Ki Points",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "ki-points",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "3": {
+              "value": 3
+            },
+            "4": {
+              "value": 4
+            },
+            "5": {
+              "value": 5
+            },
+            "6": {
+              "value": 6
+            },
+            "7": {
+              "value": 7
+            },
+            "8": {
+              "value": 8
+            },
+            "9": {
+              "value": 9
+            },
+            "10": {
+              "value": 10
+            },
+            "11": {
+              "value": 11
+            },
+            "12": {
+              "value": 12
+            },
+            "13": {
+              "value": 13
+            },
+            "14": {
+              "value": 14
+            },
+            "15": {
+              "value": 15
+            },
+            "16": {
+              "value": 16
+            },
+            "17": {
+              "value": 17
+            },
+            "18": {
+              "value": 18
+            },
+            "19": {
+              "value": 19
+            },
+            "20": {
+              "value": 20
+            }
+          }
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Unarmored Movement",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "unarmored-movement",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 10
+            },
+            "6": {
+              "value": 15
+            },
+            "10": {
+              "value": 20
+            },
+            "14": {
+              "value": 25
+            },
+            "18": {
+              "value": 30
+            }
+          }
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s604c4d58654b312",
+            "Compendium.dnd5e.sieg5e-classfeatures.s948f8de52a4adc1"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 2,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s483ca21a0fdaf13",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1b9bfaa752fc683",
+            "Compendium.dnd5e.sieg5e-classfeatures.scbe9a26550d26e8",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8b1999389a5c40d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5cabc37e591bc42",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb07514d85b9fda3",
+            "Compendium.dnd5e.sieg5e-classfeatures.s40045b9d3cea955",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4fa3587a6a8a11e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf460753e0735e8d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6780d225c0d26e4"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 4,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1e10999e1cfebf0",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3d0f3f5775593c8"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c",
+            "Compendium.dnd5e.sieg5e-classfeatures.s34e0b3d0f61ad60",
+            "Compendium.dnd5e.sieg5e-classfeatures.se43a7e04afa3dc5"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s31009589f6f6043"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se5c05267751ad98"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb61d4d6e0255132"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3aa5701e436bb2f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s11a1e633a497c96"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbaca8edae4137b7",
+            "Compendium.dnd5e.sieg5e-classfeatures.sd8c6f97491acfc4"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0c3b2a713ad67f9"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s582a5359def94d8",
+            "Compendium.dnd5e.sieg5e-classfeatures.se612e34e30e5ae4"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3e3628faf73515a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3c547bf4bc37a31"
+          ]
+        }
+      },
+      {
+        "title": "Hit Points",
+        "type": "HitPoints",
+        "icon": "systems/dnd5e/icons/svg/hit-points.svg",
+        "value": {
+          "1": "avg"
+        }
+      },
+      {
+        "title": "Saving Throws",
+        "type": "Trait",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/trait-saves.svg",
+        "configuration": {
+          "grants": [
+            "saves:wis"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "saves:*"
+              ]
+            }
+          ],
+          "hint": "Select only 2 major saves (DEX, CON, WIS) or 1 major save and 2 minor saves (STR, INT, CHA) in total."
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:acr",
+                "skills:ath",
+                "skills:his",
+                "skills:ins",
+                "skills:rel",
+                "skills:ste"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Origin Feat",
+        "type": "AbilityScoreImprovement",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "points": 0
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/control/silhouette-hold-change-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374170,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd91519fc02a2666",
+  "flags": {},
+  "sort": 0
+}

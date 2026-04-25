@@ -1,1 +1,85 @@
-{"name": "Witchcraft", "type": "feat", "system": {"description": {"value": "<p>Through arcane study and the guidance of your bonded familiar, you learn special occult practices and abilities. You gain four witchcraft options of your choice. When you finish a Long Rest you can replace one witchcraft you know with another one.</p><p><strong>Amelioration.</strong> As an Action, you touch a creature that is Blinded, Deafened, Poisoned, or is afflicted with a disease and magically alleviate its affliction. The target does not suffer the effects of your choice of one of these conditions until the start of your next turn. This does not remove the effects from the target and has no effect on them if they are reapplied during this time.</p><p><strong>Cackle.</strong> As an Action, you magically disrupt the ability to recover of one creature that can hear you within 60 feet. Until the start of your next turn, the target makes Saving Throws against ongoing effects on it with Disadvantage.</p><p><strong>Evil Eye.</strong> As an Action, you can curse a creature that you can see within 60 feet. The target has to make a Charisma Saving Throw against your spell save DC. On a failure, it subtracts 1d4 from the result of all D20 Tests it makes until the start of your next turn.</p><p><strong>Familiar Focus.</strong> As an Action, you can perceive through your bonded familiar's senses in addition to your own. You can end this effect again as an Action. Additionally, you can cast any spell or use any witchcraft option from your bonded familiar's space.</p><p><strong>Kettle Chant.</strong> When you make a crafting check using alchemist's supplies, cook's utensils, herbalist's kit, or poisoner's kit, you add half your spellcasting ability modifier (rounded down).</p><p><strong>Mind Fog.</strong> As an Action, you can befuddle the mind of a creature you can see within 60 feet and that is currently concentrating. The target immedidately has to make a Concentration Saving Throw. The DC is equal to 10 + half your Witch level (rounded up) + your spellcasting ability modifier.</p><p><strong>Minor Prophecy.</strong> Your gift for divination allows you to foresee minor events. When a creature you can see within 60 feet succeeds on or fails a D20 Test, you can use your Reaction to turn the roll on the D20 into a 9 or 11 (your choice). You cannot use this feature again until you have finished a Short or Long Rest.</p><p><strong>Witch Spittle.</strong> As an Action, you touch a creature and rub spit laced with a minor healing enchantment over its injuries. The target regains hit points equal to your spellcasting ability modifier. If the target is your bonded familiar, it regains additional hit points equal to your Witch level. A creature cannot benefit from this effect again until it has finished a Short or Long Rest.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s901ef0784a2070f", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181816, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s901ef0784a2070f"}
+{
+  "name": "Witchcraft",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through arcane study and the guidance of your bonded familiar, you learn special occult practices and abilities. You gain four witchcraft options of your choice. When you finish a Long Rest you can replace one witchcraft you know with another one.</p><p><strong>Amelioration.</strong> As an Action, you touch a creature that is Blinded, Deafened, Poisoned, or is afflicted with a disease and magically alleviate its affliction. The target does not suffer the effects of your choice of one of these conditions until the start of your next turn. This does not remove the effects from the target and has no effect on them if they are reapplied during this time.</p><p><strong>Cackle.</strong> As an Action, you magically disrupt the ability to recover of one creature that can hear you within 60 feet. Until the start of your next turn, the target makes Saving Throws against ongoing effects on it with Disadvantage.</p><p><strong>Evil Eye.</strong> As an Action, you can curse a creature that you can see within 60 feet. The target has to make a Charisma Saving Throw against your spell save DC. On a failure, it subtracts 1d4 from the result of all D20 Tests it makes until the start of your next turn.</p><p><strong>Familiar Focus.</strong> As an Action, you can perceive through your bonded familiar's senses in addition to your own. You can end this effect again as an Action. Additionally, you can cast any spell or use any witchcraft option from your bonded familiar's space.</p><p><strong>Kettle Chant.</strong> When you make a crafting check using alchemist's supplies, cook's utensils, herbalist's kit, or poisoner's kit, you add half your spellcasting ability modifier (rounded down).</p><p><strong>Mind Fog.</strong> As an Action, you can befuddle the mind of a creature you can see within 60 feet and that is currently concentrating. The target immedidately has to make a Concentration Saving Throw. The DC is equal to 10 + half your Witch level (rounded up) + your spellcasting ability modifier.</p><p><strong>Minor Prophecy.</strong> Your gift for divination allows you to foresee minor events. When a creature you can see within 60 feet succeeds on or fails a D20 Test, you can use your Reaction to turn the roll on the D20 into a 9 or 11 (your choice). You cannot use this feature again until you have finished a Short or Long Rest.</p><p><strong>Witch Spittle.</strong> As an Action, you touch a creature and rub spit laced with a minor healing enchantment over its injuries. The target regains hit points equal to your spellcasting ability modifier. If the target is your bonded familiar, it regains additional hit points equal to your Witch level. A creature cannot benefit from this effect again until it has finished a Short or Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s901ef0784a2070f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374259,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s901ef0784a2070f",
+  "flags": {},
+  "sort": 0
+}

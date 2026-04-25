@@ -1,1 +1,57 @@
-{"_id": "sa4c4d6a5e745357", "name": "Monk: Way of the Long Death", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "monk", "identifier": "monk-way-of-the-long-death", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s8e8a574c32c48b8"]}}, {"title": "Features", "type": "ItemGrant", "level": 11, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sdffd467bc473d45"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s7331be108dd96a5"]}}]}, "img": "icons/magic/death/skull-flames-white-blue.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181738, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sa4c4d6a5e745357"}
+{
+  "_id": "sa4c4d6a5e745357",
+  "name": "Monk: Way of the Long Death",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "monk",
+    "identifier": "monk-way-of-the-long-death",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8e8a574c32c48b8"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sdffd467bc473d45"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7331be108dd96a5"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/death/skull-flames-white-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374179,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa4c4d6a5e745357",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,85 @@
-{"name": "Brand of Tethering", "type": "feat", "system": {"description": {"value": "<p>The psychic damage from your Brand of Castigation increases to twice your Hemocraft modifier (minimum of 2). Additionally, a branded creature can't take the Dash action, and if it attempts to teleport or to leave its current plane by any means, it takes 4d6 psychic damage and must make a Wisdom Saving Throw. On a failure, the attempt to teleport or leave the plane fails.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/control/debuff-chains-red.webp", "_id": "sa0ac6ad96780a73", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181757, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sa0ac6ad96780a73"}
+{
+  "name": "Brand of Tethering",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The psychic damage from your Brand of Castigation increases to twice your Hemocraft modifier (minimum of 2). Additionally, a branded creature can't take the Dash action, and if it attempts to teleport or to leave its current plane by any means, it takes 4d6 psychic damage and must make a Wisdom Saving Throw. On a failure, the attempt to teleport or leave the plane fails.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/debuff-chains-red.webp",
+  "_id": "sa0ac6ad96780a73",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374197,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa0ac6ad96780a73",
+  "flags": {},
+  "sort": 0
+}

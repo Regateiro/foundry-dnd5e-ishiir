@@ -1,1 +1,90 @@
-{"name": "Kinetic Blade", "type": "feat", "system": {"description": {"value": "<p>As a Bonus Action, you form the energy of your element into a weapon-like shape of your choice, which lasts until you are incapacitated or dismiss it as a Bonus Action. You cannot use this shape if you have already used your kinetic blast this turn.</p><p>As an Action, you can make a melee spell attack with this shape against a target of your choice within 5 ft of you, dealing your kinetic shape die + your CHA modifier + your Proficiency modifier damage of your chosen element's type.</p><p>Additionally, your ability to defend yourself with this shape grants you a +1 bonus to your AC while maintaining it.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "action", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "creature"}, "range": {"value": 5, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "msak", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [["@scale.kineticist.kinetic-shape + @abilities.cha.mod + @attributes.prof", ""]], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/weapons/swords/sword-flanged-lightning.webp", "_id": "scf8bd9d1c7b559a", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181776, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!scf8bd9d1c7b559a"}
+{
+  "name": "Kinetic Blade",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you form the energy of your element into a weapon-like shape of your choice, which lasts until you are incapacitated or dismiss it as a Bonus Action. You cannot use this shape if you have already used your kinetic blast this turn.</p><p>As an Action, you can make a melee spell attack with this shape against a target of your choice within 5 ft of you, dealing your kinetic shape die + your CHA modifier + your Proficiency modifier damage of your chosen element's type.</p><p>Additionally, your ability to defend yourself with this shape grants you a +1 bonus to your AC while maintaining it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "msak",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "@scale.kineticist.kinetic-shape + @abilities.cha.mod + @attributes.prof",
+          ""
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/weapons/swords/sword-flanged-lightning.webp",
+  "_id": "scf8bd9d1c7b559a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374217,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!scf8bd9d1c7b559a",
+  "flags": {},
+  "sort": 0
+}

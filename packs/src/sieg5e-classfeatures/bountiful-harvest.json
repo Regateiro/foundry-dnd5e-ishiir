@@ -1,1 +1,85 @@
-{"name": "Bountiful Harvest", "type": "feat", "system": {"description": {"value": "<p>Choose two tools from among alchemist's supplies, cook's utensils, herbalist's kit, or poisoner's kit. Your Proficiency Bonus for checks with the chosen tools is doubled.</p><p>Additionally, when you forage for food or ingredients, you can roll the die on the result column twice and take the higher result.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s1018dad6844153c", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181816, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s1018dad6844153c"}
+{
+  "name": "Bountiful Harvest",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose two tools from among alchemist's supplies, cook's utensils, herbalist's kit, or poisoner's kit. Your Proficiency Bonus for checks with the chosen tools is doubled.</p><p>Additionally, when you forage for food or ingredients, you can roll the die on the result column twice and take the higher result.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s1018dad6844153c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374260,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1018dad6844153c",
+  "flags": {},
+  "sort": 0
+}

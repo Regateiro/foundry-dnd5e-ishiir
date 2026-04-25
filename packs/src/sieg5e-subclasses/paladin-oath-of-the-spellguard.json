@@ -1,1 +1,68 @@
-{"_id": "sf8024608635f317", "name": "Paladin: Oath of the Spellguard", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "paladin", "identifier": "paladin-oath-of-the-spellguard", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s00342e682fe2d93"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s83e2e048e52ff44"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s9065a53a65acd9f"]}}, {"title": "Features", "type": "ItemGrant", "level": 20, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s2ec13f2eeb3582c"]}}]}, "img": "icons/svg/item-bag.svg", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181740, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sf8024608635f317"}
+{
+  "_id": "sf8024608635f317",
+  "name": "Paladin: Oath of the Spellguard",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oath-of-the-spellguard",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s00342e682fe2d93"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s83e2e048e52ff44"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9065a53a65acd9f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2ec13f2eeb3582c"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374181,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf8024608635f317",
+  "flags": {},
+  "sort": 0
+}

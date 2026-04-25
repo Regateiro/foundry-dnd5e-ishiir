@@ -1,1 +1,57 @@
-{"_id": "s9206625c646a4e7", "name": "Wizard: School of Abjuration", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "wizard", "identifier": "wizard-school-of-abjuration", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sfd5978fda2c6d3a"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sc9cc0e93f045028"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.se015b164172c3e0"]}}]}, "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181745, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s9206625c646a4e7"}
+{
+  "_id": "s9206625c646a4e7",
+  "name": "Wizard: School of Abjuration",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "wizard",
+    "identifier": "wizard-school-of-abjuration",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sfd5978fda2c6d3a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc9cc0e93f045028"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se015b164172c3e0"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/barrier-shield-dome-blue-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374185,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9206625c646a4e7",
+  "flags": {},
+  "sort": 0
+}

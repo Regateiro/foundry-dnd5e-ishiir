@@ -1,1 +1,46 @@
-{"_id": "s63ac03cf94e5ad4", "name": "Bard: College of Glamour", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "bard", "identifier": "bard-college-of-glamour", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sfc855626583513c"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s4120aced537eae3"]}}]}, "img": "icons/magic/nature/elemental-plant-humanoid.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181733, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s63ac03cf94e5ad4"}
+{
+  "_id": "s63ac03cf94e5ad4",
+  "name": "Bard: College of Glamour",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "bard",
+    "identifier": "bard-college-of-glamour",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sfc855626583513c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4120aced537eae3"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374175,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s63ac03cf94e5ad4",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,85 @@
-{"name": "Cloak of Flies", "type": "feat", "system": {"description": {"value": "<p>As a Bonus Action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're Incapacitated or you dismiss it as a Bonus Action.</p><p>The aura grants you Advantage on Charisma (Intimidation) checks but Disadvantage on all other Charisma checks. Any other creature that starts or enters for the first time on its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).</p><p>Once you use this invocation, you can't use it again until you finish a Short or a Long Rest.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "se56c024d0bad9ad", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181838, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se56c024d0bad9ad"}
+{
+  "name": "Cloak of Flies",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can surround yourself with a magical aura that looks like buzzing flies. The aura extends 5 feet from you in every direction, but not through total cover. It lasts until you're Incapacitated or you dismiss it as a Bonus Action.</p><p>The aura grants you Advantage on Charisma (Intimidation) checks but Disadvantage on all other Charisma checks. Any other creature that starts or enters for the first time on its turn in the aura takes poison damage equal to your Charisma modifier (minimum of 0 damage).</p><p>Once you use this invocation, you can't use it again until you finish a Short or a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se56c024d0bad9ad",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374286,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se56c024d0bad9ad",
+  "flags": {},
+  "sort": 0
+}

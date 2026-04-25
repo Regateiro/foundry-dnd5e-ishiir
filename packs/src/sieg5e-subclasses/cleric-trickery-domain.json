@@ -1,1 +1,46 @@
-{"_id": "s969b8e542aa103c", "name": "Cleric: Trickery Domain", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "cleric", "identifier": "cleric-trickery-domain", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3f80a30ab6a16f5"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s1f0f61949d45a50"]}}]}, "img": "icons/magic/control/mouth-smile-deception-purple.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181735, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s969b8e542aa103c"}
+{
+  "_id": "s969b8e542aa103c",
+  "name": "Cleric: Trickery Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-trickery-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3f80a30ab6a16f5"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1f0f61949d45a50"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/control/mouth-smile-deception-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374177,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s969b8e542aa103c",
+  "flags": {},
+  "sort": 0
+}

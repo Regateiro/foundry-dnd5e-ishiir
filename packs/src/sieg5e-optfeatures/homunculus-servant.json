@@ -1,1 +1,85 @@
-{"name": "Homunculus Servant", "type": "feat", "system": {"description": {"value": "<p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p><p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p><p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your Proficiency bonus (PB) in several places.</p><p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its Reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a Bonus Action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are Incapacitated, the homunculus can take any action of its choice, not just Dodge.</p><p>The homunculus regains 2d6 hit points if the Mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "se63b85bf9089dd9", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181831, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!se63b85bf9089dd9"}
+{
+  "name": "Homunculus Servant",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn intricate methods for magically creating a special homunculus that serves you. The item you infuse serves as the creature's heart, around which the creature's body instantly forms.</p><p>You determine the homunculus's appearance. Some artificers prefer mechanical-looking birds, whereas some like winged vials or miniature, animate cauldrons.</p><p>The homunculus is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Homunculus Servant stat block, which uses your Proficiency bonus (PB) in several places.</p><p>In combat, the homunculus shares your initiative count, but it takes its turn immediately after yours. It can move and use its Reaction on its own, but the only action it takes on its turn is the Dodge action, unless you take a Bonus Action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are Incapacitated, the homunculus can take any action of its choice, not just Dodge.</p><p>The homunculus regains 2d6 hit points if the Mending spell is cast on it. If you or the homunculus dies, it vanishes, leaving its heart in its space.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se63b85bf9089dd9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374277,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se63b85bf9089dd9",
+  "flags": {},
+  "sort": 0
+}

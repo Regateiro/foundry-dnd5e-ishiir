@@ -1,1 +1,85 @@
-{"name": "Blood Curse of the Infirm", "type": "feat", "system": {"description": {"value": "<p>As a Bonus Action, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.</p><p><strong>Amplify.</strong> The next Constitution Saving Throw the cursed creature makes before this curse ends has Disadvantage.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "bonus", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "creature"}, "range": {"value": 30, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/life/heart-broken-red.webp", "_id": "s6a01b4bceb309ba", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181833, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s6a01b4bceb309ba"}
+{
+  "name": "Blood Curse of the Infirm",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you weaken the health of a creature within 30 feet of you. Until the start of your next turn, whenever the target takes poison or necrotic damage, it takes additional damage of the same type equal to a roll of your hemocraft die.</p><p><strong>Amplify.</strong> The next Constitution Saving Throw the cursed creature makes before this curse ends has Disadvantage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/life/heart-broken-red.webp",
+  "_id": "s6a01b4bceb309ba",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374279,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6a01b4bceb309ba",
+  "flags": {},
+  "sort": 0
+}

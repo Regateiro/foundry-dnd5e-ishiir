@@ -1,1 +1,85 @@
-{"name": "Improved Favored Enemy", "type": "feat", "system": {"description": {"value": "<p>You become more adept at fighting your favored foes. Choose a second creature type as favored enemy. Your damage bonus against all your favored enemies increases to +4. Additionally, you have Advantage on Saving Throws against the spells and abilities used by a favored enemy.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/creatures/abilities/dragon-breath-purple.webp", "_id": "s6f3d969b366fe10", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181787, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s6f3d969b366fe10"}
+{
+  "name": "Improved Favored Enemy",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You become more adept at fighting your favored foes. Choose a second creature type as favored enemy. Your damage bonus against all your favored enemies increases to +4. Additionally, you have Advantage on Saving Throws against the spells and abilities used by a favored enemy.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/abilities/dragon-breath-purple.webp",
+  "_id": "s6f3d969b366fe10",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374230,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6f3d969b366fe10",
+  "flags": {},
+  "sort": 0
+}

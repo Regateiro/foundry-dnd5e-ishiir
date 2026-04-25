@@ -1,1 +1,85 @@
-{"name": "Cleave", "type": "feat", "system": {"description": {"value": "<p>Once per turn when you hit a creature with this weapon, you can also deal damage equal to your STR or DEX (your choice) to any other creature that is within range of your attack and within 5 ft of the original target, provided that your Attack Roll would've also hit these targets. This damage is doubled if the Attack Roll was a critical hit.</p><p>If the attack reduced the original target to 0 hitpoints, you add the excess damage to cleave's effect on one of the additional targets.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s6d5bbfe49681ffc", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181853, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s6d5bbfe49681ffc"}
+{
+  "name": "Cleave",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Once per turn when you hit a creature with this weapon, you can also deal damage equal to your STR or DEX (your choice) to any other creature that is within range of your attack and within 5 ft of the original target, provided that your Attack Roll would've also hit these targets. This damage is doubled if the Attack Roll was a critical hit.</p><p>If the attack reduced the original target to 0 hitpoints, you add the excess damage to cleave's effect on one of the additional targets.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s6d5bbfe49681ffc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374303,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6d5bbfe49681ffc",
+  "flags": {},
+  "sort": 0
+}

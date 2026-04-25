@@ -1,1 +1,85 @@
-{"name": "Nightwalker", "type": "feat", "system": {"description": {"value": "<p>You gain the ability to adopt a shadowy form as a Bonus Action for 10 minutes. While in this form, Attack Rolls have Disadvantage against you, you gain the Spiderclimb trait, and you double your Speed if you start your turn in an area of dim light or darkness.</p><p>You can use this feature once and must finish a Long Rest before you can use it again.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s6422f63fcbf97ce", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181798, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s6422f63fcbf97ce"}
+{
+  "name": "Nightwalker",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to adopt a shadowy form as a Bonus Action for 10 minutes. While in this form, Attack Rolls have Disadvantage against you, you gain the Spiderclimb trait, and you double your Speed if you start your turn in an area of dim light or darkness.</p><p>You can use this feature once and must finish a Long Rest before you can use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s6422f63fcbf97ce",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374241,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6422f63fcbf97ce",
+  "flags": {},
+  "sort": 0
+}

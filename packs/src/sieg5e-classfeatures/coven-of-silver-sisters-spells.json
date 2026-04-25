@@ -1,1 +1,85 @@
-{"name": "Coven of Silver Sisters Spells", "type": "feat", "system": {"description": {"value": "<p>At each indicated Witch level, add the listed spells to your spells prepared.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Silver Sisters Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Shield, Zephyr Strike, Magic Weapon, Branding Smite</td></tr><tr><td>5th</td><td>Blinding Smite, Spirit Guardians</td></tr><tr><td>7th</td><td>Fount of Moonlight, Freedom of Movement</td></tr><tr><td>9th</td><td>Moon Cloak, Steel Wind Strike</td></tr></tbody></table></div>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s4e4918091d33ef4", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181818, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s4e4918091d33ef4"}
+{
+  "name": "Coven of Silver Sisters Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>At each indicated Witch level, add the listed spells to your spells prepared.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Silver Sisters Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Shield, Zephyr Strike, Magic Weapon, Branding Smite</td></tr><tr><td>5th</td><td>Blinding Smite, Spirit Guardians</td></tr><tr><td>7th</td><td>Fount of Moonlight, Freedom of Movement</td></tr><tr><td>9th</td><td>Moon Cloak, Steel Wind Strike</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4e4918091d33ef4",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374263,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4e4918091d33ef4",
+  "flags": {},
+  "sort": 0
+}

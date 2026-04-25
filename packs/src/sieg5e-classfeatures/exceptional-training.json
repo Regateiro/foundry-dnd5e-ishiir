@@ -1,1 +1,85 @@
-{"name": "Exceptional Training", "type": "feat", "system": {"description": {"value": "<p>You can use your Bonus Action to give magically allow your companion to act more swiftly. On its next turn, it can use its Bonus Action to use the Dash, Disengage, Dodge, or Help action (your choice).</p><p>Additionally, your companion's attacks count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s0677e522440aa53", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181788, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s0677e522440aa53"}
+{
+  "name": "Exceptional Training",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can use your Bonus Action to give magically allow your companion to act more swiftly. On its next turn, it can use its Bonus Action to use the Dash, Disengage, Dodge, or Help action (your choice).</p><p>Additionally, your companion's attacks count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s0677e522440aa53",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374230,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s0677e522440aa53",
+  "flags": {},
+  "sort": 0
+}

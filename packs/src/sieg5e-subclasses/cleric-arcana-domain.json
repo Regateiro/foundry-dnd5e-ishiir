@@ -1,1 +1,47 @@
-{"_id": "s1e709623cac5214", "name": "Cleric: Arcana Domain", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "cleric", "identifier": "cleric-arcana-domain", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sc9cc0e93f045028", "Compendium.dnd5e.sieg5e-classfeatures.s7b0182fa2ae3b69"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s3dbe8610aec9c13"]}}]}, "img": "icons/magic/sonic/explosion-shock-wave-teal.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181734, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s1e709623cac5214"}
+{
+  "_id": "s1e709623cac5214",
+  "name": "Cleric: Arcana Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-arcana-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc9cc0e93f045028",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7b0182fa2ae3b69"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3dbe8610aec9c13"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/sonic/explosion-shock-wave-teal.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374176,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1e709623cac5214",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,85 @@
-{"name": "Blood Curse of the Adder's Kiss", "type": "feat", "system": {"description": {"value": "<p>When you damage a creature with a weapon attack, you can afflict them with a magical venom. At the start of each of its turns, the affected creature takes poison damage equal to 2 x your Proficiency. At the end of each of its turns, the target makes a Constitution Saving Throw. If the target suffers from the Poisoned condition, it makes this save with Disadvantage.</p><p>If it succeeds on the save three times, the venom's effect on it ends. Every time it fails the save - up until including the third time - the poison damage increases by 2 x your Proficiency. After the third failed save the poison lasts for 1 hour.</p><p><strong>Amplify.</strong> The target cannot benefit from any healing while affected by the poison.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s6052132f57fa10e", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181832, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s6052132f57fa10e"}
+{
+  "name": "Blood Curse of the Adder's Kiss",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you damage a creature with a weapon attack, you can afflict them with a magical venom. At the start of each of its turns, the affected creature takes poison damage equal to 2 x your Proficiency. At the end of each of its turns, the target makes a Constitution Saving Throw. If the target suffers from the Poisoned condition, it makes this save with Disadvantage.</p><p>If it succeeds on the save three times, the venom's effect on it ends. Every time it fails the save - up until including the third time - the poison damage increases by 2 x your Proficiency. After the third failed save the poison lasts for 1 hour.</p><p><strong>Amplify.</strong> The target cannot benefit from any healing while affected by the poison.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s6052132f57fa10e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374279,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6052132f57fa10e",
+  "flags": {},
+  "sort": 0
+}

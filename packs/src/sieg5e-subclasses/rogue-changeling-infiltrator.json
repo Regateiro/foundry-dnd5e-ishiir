@@ -1,1 +1,69 @@
-{"_id": "sbe45a7f860064ba", "name": "Rogue: Changeling Infiltrator", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "rogue", "identifier": "rogue-changeling-infiltrator", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s59c234b370e824c", "Compendium.dnd5e.sieg5e-classfeatures.s70e72a505a2c23c"]}}, {"title": "Features", "type": "ItemGrant", "level": 9, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s2846d9b0aecabae"]}}, {"title": "Features", "type": "ItemGrant", "level": 13, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s86abfe03ea71528"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s9d27f1dd9db5a6b"]}}]}, "img": "icons/magic/perception/hand-eye-pink.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181741, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sbe45a7f860064ba"}
+{
+  "_id": "sbe45a7f860064ba",
+  "name": "Rogue: Changeling Infiltrator",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "rogue",
+    "identifier": "rogue-changeling-infiltrator",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s59c234b370e824c",
+            "Compendium.dnd5e.sieg5e-classfeatures.s70e72a505a2c23c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2846d9b0aecabae"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s86abfe03ea71528"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9d27f1dd9db5a6b"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/perception/hand-eye-pink.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374182,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbe45a7f860064ba",
+  "flags": {},
+  "sort": 0
+}

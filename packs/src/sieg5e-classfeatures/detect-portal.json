@@ -1,1 +1,85 @@
-{"name": "Detect Portal", "type": "feat", "system": {"description": {"value": "<p>You gain the ability to magically sense the presence of a planar portal. As an Action, you detect the distance and direction to the closest planar portal within 1 mile of you.</p><p>Once you use this feature, you can't use it again until you finish a Short or a Long Rest.</p><p>See the \"Planar Travel\" section in chapter 2 of the Dungeon Master's Guide for examples of planar portals.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sbbd3901c1d5cef7", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181790, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sbbd3901c1d5cef7"}
+{
+  "name": "Detect Portal",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to magically sense the presence of a planar portal. As an Action, you detect the distance and direction to the closest planar portal within 1 mile of you.</p><p>Once you use this feature, you can't use it again until you finish a Short or a Long Rest.</p><p>See the \"Planar Travel\" section in chapter 2 of the Dungeon Master's Guide for examples of planar portals.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sbbd3901c1d5cef7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374232,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbbd3901c1d5cef7",
+  "flags": {},
+  "sort": 0
+}

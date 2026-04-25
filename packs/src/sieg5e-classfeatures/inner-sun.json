@@ -1,1 +1,85 @@
-{"name": "Inner Sun", "type": "feat", "system": {"description": {"value": "<p>You can expend 1 to 10 Ki Points as an Action and bathe the area in a 30-foot Emanation in a blinding light. Each creature of your choice in the area has to make a Constitution Saving Throw. On a failed save, a target takes 1d10 radiant damage per Ki Point spent and is Blinded until the end of your next turn. On a successful save, it takes half as much damage and isn't Blinded.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s3ef6f97321d0522", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181782, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s3ef6f97321d0522"}
+{
+  "name": "Inner Sun",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can expend 1 to 10 Ki Points as an Action and bathe the area in a 30-foot Emanation in a blinding light. Each creature of your choice in the area has to make a Constitution Saving Throw. On a failed save, a target takes 1d10 radiant damage per Ki Point spent and is Blinded until the end of your next turn. On a successful save, it takes half as much damage and isn't Blinded.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s3ef6f97321d0522",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374224,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3ef6f97321d0522",
+  "flags": {},
+  "sort": 0
+}

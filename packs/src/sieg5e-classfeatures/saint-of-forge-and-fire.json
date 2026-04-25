@@ -1,1 +1,85 @@
-{"name": "Saint of Forge and Fire", "type": "feat", "system": {"description": {"value": "<p>Your blessed affinity with fire and metal becomes more powerful:</p><ul><li>You gain Immunity to fire damage.</li><li>You can now use your Blessing of the Forge feature a number of times equal to your Wisdom modifier and you regain all expended uses on a Long Rest.</li></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sb234f90cf8eca14", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181761, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sb234f90cf8eca14"}
+{
+  "name": "Saint of Forge and Fire",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your blessed affinity with fire and metal becomes more powerful:</p><ul><li>You gain Immunity to fire damage.</li><li>You can now use your Blessing of the Forge feature a number of times equal to your Wisdom modifier and you regain all expended uses on a Long Rest.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb234f90cf8eca14",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374201,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb234f90cf8eca14",
+  "flags": {},
+  "sort": 0
+}

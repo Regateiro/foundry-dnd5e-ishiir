@@ -1,1 +1,77 @@
-{"_id": "s8427141ba006d24", "name": "Draaken", "type": "race", "system": {"source": "Ishiir", "identifier": "draaken", "senses": {"darkvision": 60}, "movement": {"walk": 30}, "advancement": [{"title": "Damage Resistances", "type": "Trait", "level": 1, "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"hint": "Choose the damage resistance associated with your Draconic Ancestry.", "choices": [{"count": 1, "pool": ["dr:acid", "dr:cold", "dr:fire", "dr:lightning", "dr:poison", "dr:radiant"]}]}}, {"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s950c1dbe8468c61", "Compendium.dnd5e.sieg5e-classfeatures.s13bd3878d4c233f", "Compendium.dnd5e.sieg5e-classfeatures.sb1d26b9c9e7e359"]}}, {"title": "Skills", "type": "Trait", "level": 1, "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"grants": ["skills:his", "skills:arc"], "choices": []}}]}, "img": "icons/creatures/reptiles/dragon-horned-blue.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181853, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8427141ba006d24"}
+{
+  "_id": "s8427141ba006d24",
+  "name": "Draaken",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "draaken",
+    "senses": {
+      "darkvision": 60
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "hint": "Choose the damage resistance associated with your Draconic Ancestry.",
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "dr:acid",
+                "dr:cold",
+                "dr:fire",
+                "dr:lightning",
+                "dr:poison",
+                "dr:radiant"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s950c1dbe8468c61",
+            "Compendium.dnd5e.sieg5e-classfeatures.s13bd3878d4c233f",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb1d26b9c9e7e359"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:his",
+            "skills:arc"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/reptiles/dragon-horned-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374303,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8427141ba006d24",
+  "flags": {},
+  "sort": 0
+}

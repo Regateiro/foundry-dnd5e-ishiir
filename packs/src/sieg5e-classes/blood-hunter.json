@@ -1,1 +1,446 @@
-{"_id": "sde0ec63e8ff6f54", "name": "Blood Hunter", "type": "class", "system": {"source": "Ishiir", "identifier": "blood-hunter", "hitDice": "d12", "advancement": [{"type": "Trait", "title": "Armor Proficiencies", "icon": "systems/dnd5e/icons/svg/trait-armor-proficiencies.svg", "level": 1, "configuration": {"grants": ["armor:lgt", "armor:med", "armor:shl"]}}, {"type": "Trait", "title": "Weapon Proficiencies", "icon": "systems/dnd5e/icons/svg/trait-weapon-proficiencies.svg", "level": 1, "configuration": {"grants": ["weapon:sim", "weapon:mar"]}}, {"type": "Trait", "title": "Tool Proficiencies", "icon": "systems/dnd5e/icons/svg/trait-tool-proficiencies.svg", "level": 1, "configuration": {"grants": ["tool:art:alchemist"]}}, {"type": "ScaleValue", "title": "Hemocraft Die", "icon": "systems/dnd5e/icons/svg/scale-value.svg", "configuration": {"identifier": "hemocraft", "type": "dice", "scale": {"1": {"faces": 4}, "5": {"faces": 6}, "11": {"faces": 8}, "17": {"faces": 10}}}}, {"type": "ScaleValue", "title": "Blood Maledict", "icon": "systems/dnd5e/icons/svg/scale-value.svg", "configuration": {"identifier": "blood-maledict", "type": "number", "scale": {"1": {"value": 1}, "6": {"value": 2}, "13": {"value": 3}, "17": {"value": 4}}}}, {"type": "ScaleValue", "title": "Crimson Rites", "icon": "systems/dnd5e/icons/svg/scale-value.svg", "configuration": {"identifier": "crimson-rites", "type": "number", "scale": {"2": {"value": 1}, "7": {"value": 2}, "14": {"value": 3}}}}, {"title": "Choose Fighting Styles", "type": "ItemChoice", "icon": "systems/dnd5e/icons/svg/item-choice.svg", "configuration": {"hint": "All choices are presented regardless of prerequisites.", "choices": {"2": 1}, "pool": ["Compendium.dnd5e.sieg5e-optfeatures.s97d499ca60a9d58", "Compendium.dnd5e.sieg5e-optfeatures.seca00667ae01da3", "Compendium.dnd5e.sieg5e-optfeatures.sa7280b93ed079ef", "Compendium.dnd5e.sieg5e-optfeatures.s0c741fec32f4cce", "Compendium.dnd5e.sieg5e-optfeatures.sa88d8e0b7cefb10", "Compendium.dnd5e.sieg5e-optfeatures.s3da84db02342126", "Compendium.dnd5e.sieg5e-optfeatures.s7099d18e6f372dd", "Compendium.dnd5e.sieg5e-optfeatures.s48479ecc1088203", "Compendium.dnd5e.sieg5e-optfeatures.sb549cdec1d0e0a1", "Compendium.dnd5e.sieg5e-optfeatures.s4472fa7a894a2d8", "Compendium.dnd5e.sieg5e-optfeatures.sd0f13083a19dd8d", "Compendium.dnd5e.sieg5e-optfeatures.s6faffec38eae402", "Compendium.dnd5e.sieg5e-optfeatures.sfc270730094c7cb"]}}, {"title": "Choose Blood Curses", "type": "ItemChoice", "icon": "systems/dnd5e/icons/svg/item-choice.svg", "configuration": {"hint": "All choices are presented regardless of prerequisites.", "choices": {"1": 1, "6": 1, "10": 1, "14": 1, "18": 1}, "pool": ["Compendium.dnd5e.sieg5e-optfeatures.sd987598f6a0a44a", "Compendium.dnd5e.sieg5e-optfeatures.sb33f4451be4a5ab", "Compendium.dnd5e.sieg5e-optfeatures.s536f076f526c575", "Compendium.dnd5e.sieg5e-optfeatures.sd3de5aac1a53e20", "Compendium.dnd5e.sieg5e-optfeatures.s6052132f57fa10e", "Compendium.dnd5e.sieg5e-optfeatures.s18d3f52a133cba4", "Compendium.dnd5e.sieg5e-optfeatures.sf598950021ed031", "Compendium.dnd5e.sieg5e-optfeatures.s38b389012176347", "Compendium.dnd5e.sieg5e-optfeatures.sa3c82d0b13495ca", "Compendium.dnd5e.sieg5e-optfeatures.s5354355c8116207", "Compendium.dnd5e.sieg5e-optfeatures.s6a01b4bceb309ba", "Compendium.dnd5e.sieg5e-optfeatures.s1f3561b435b9cef", "Compendium.dnd5e.sieg5e-optfeatures.s6e8124d7141396d", "Compendium.dnd5e.sieg5e-optfeatures.s1037ebeda5b110a"]}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 4, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 8, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 12, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 16, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Ability Score Improvement", "type": "AbilityScoreImprovement", "level": 19, "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"cap": 2, "points": 2}}, {"title": "Features", "type": "ItemGrant", "level": 1, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s59e46b8c9231cca", "Compendium.dnd5e.sieg5e-classfeatures.se4ec083778d1719", "Compendium.dnd5e.sieg5e-classfeatures.s7aa6336054d9465"]}}, {"title": "Features", "type": "ItemGrant", "level": 2, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s0e8d1361f0f0a78", "Compendium.dnd5e.sieg5e-classfeatures.s40ffa3cbe889123"]}}, {"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sc928f2354684678"]}}, {"title": "Features", "type": "ItemGrant", "level": 4, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s1e10999e1cfebf0"]}}, {"title": "Features", "type": "ItemGrant", "level": 5, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"]}}, {"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sc17b2c5636a6046", "Compendium.dnd5e.sieg5e-classfeatures.s810fad0302fd904"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s104bf2ffbac07c0"]}}, {"title": "Features", "type": "ItemGrant", "level": 9, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sff8f0c1d1c097c7", "Compendium.dnd5e.sieg5e-classfeatures.sa26554c9efec68d"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s2798305fdbc3909"]}}, {"title": "Features", "type": "ItemGrant", "level": 13, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sa0ac6ad96780a73", "Compendium.dnd5e.sieg5e-classfeatures.s723db0e3f058861"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sbf4faf374f00a36", "Compendium.dnd5e.sieg5e-classfeatures.s1bc79e0f2500f14"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.se044f3f1181043e"]}}, {"title": "Features", "type": "ItemGrant", "level": 20, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s63b4d9e5d602574"]}}, {"title": "Hit Points", "type": "HitPoints", "icon": "systems/dnd5e/icons/svg/hit-points.svg", "value": {"1": "avg"}}, {"title": "Saving Throws", "type": "Trait", "level": 1, "classRestriction": "primary", "icon": "systems/dnd5e/icons/svg/trait-saves.svg", "configuration": {"grants": ["saves:con"], "choices": [{"count": 2, "pool": ["saves:*"]}], "hint": "Select only 2 major saves (DEX, CON, WIS) or 1 major save and 2 minor saves (STR, INT, CHA) in total."}}, {"title": "Skills", "type": "Trait", "level": 1, "classRestriction": "primary", "icon": "systems/dnd5e/icons/svg/trait-skills.svg", "configuration": {"choices": [{"count": 3, "pool": ["skills:acr", "skills:arc", "skills:ath", "skills:his", "skills:ins", "skills:inv", "skills:rel", "skills:sur"]}]}}, {"title": "Origin Feat", "type": "AbilityScoreImprovement", "level": 1, "classRestriction": "primary", "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg", "configuration": {"points": 0}}]}, "img": "icons/skills/melee/strike-sword-blood-red.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181727, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sde0ec63e8ff6f54"}
+{
+  "_id": "sde0ec63e8ff6f54",
+  "name": "Blood Hunter",
+  "type": "class",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "blood-hunter",
+    "hitDice": "d12",
+    "advancement": [
+      {
+        "type": "Trait",
+        "title": "Armor Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-armor-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:shl"
+          ]
+        }
+      },
+      {
+        "type": "Trait",
+        "title": "Weapon Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-weapon-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "grants": [
+            "weapon:sim",
+            "weapon:mar"
+          ]
+        }
+      },
+      {
+        "type": "Trait",
+        "title": "Tool Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-tool-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "grants": [
+            "tool:art:alchemist"
+          ]
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Hemocraft Die",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "hemocraft",
+          "type": "dice",
+          "scale": {
+            "1": {
+              "faces": 4
+            },
+            "5": {
+              "faces": 6
+            },
+            "11": {
+              "faces": 8
+            },
+            "17": {
+              "faces": 10
+            }
+          }
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Blood Maledict",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "blood-maledict",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 1
+            },
+            "6": {
+              "value": 2
+            },
+            "13": {
+              "value": 3
+            },
+            "17": {
+              "value": 4
+            }
+          }
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Crimson Rites",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "crimson-rites",
+          "type": "number",
+          "scale": {
+            "2": {
+              "value": 1
+            },
+            "7": {
+              "value": 2
+            },
+            "14": {
+              "value": 3
+            }
+          }
+        }
+      },
+      {
+        "title": "Choose Fighting Styles",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "2": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s97d499ca60a9d58",
+            "Compendium.dnd5e.sieg5e-optfeatures.seca00667ae01da3",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa7280b93ed079ef",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0c741fec32f4cce",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa88d8e0b7cefb10",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3da84db02342126",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7099d18e6f372dd",
+            "Compendium.dnd5e.sieg5e-optfeatures.s48479ecc1088203",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb549cdec1d0e0a1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4472fa7a894a2d8",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd0f13083a19dd8d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6faffec38eae402",
+            "Compendium.dnd5e.sieg5e-optfeatures.sfc270730094c7cb"
+          ]
+        }
+      },
+      {
+        "title": "Choose Blood Curses",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "1": 1,
+            "6": 1,
+            "10": 1,
+            "14": 1,
+            "18": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.sd987598f6a0a44a",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb33f4451be4a5ab",
+            "Compendium.dnd5e.sieg5e-optfeatures.s536f076f526c575",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd3de5aac1a53e20",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6052132f57fa10e",
+            "Compendium.dnd5e.sieg5e-optfeatures.s18d3f52a133cba4",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf598950021ed031",
+            "Compendium.dnd5e.sieg5e-optfeatures.s38b389012176347",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa3c82d0b13495ca",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5354355c8116207",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6a01b4bceb309ba",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1f3561b435b9cef",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6e8124d7141396d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1037ebeda5b110a"
+          ]
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s59e46b8c9231cca",
+            "Compendium.dnd5e.sieg5e-classfeatures.se4ec083778d1719",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7aa6336054d9465"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 2,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0e8d1361f0f0a78",
+            "Compendium.dnd5e.sieg5e-classfeatures.s40ffa3cbe889123"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc928f2354684678"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 4,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1e10999e1cfebf0"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc17b2c5636a6046",
+            "Compendium.dnd5e.sieg5e-classfeatures.s810fad0302fd904"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s104bf2ffbac07c0"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sff8f0c1d1c097c7",
+            "Compendium.dnd5e.sieg5e-classfeatures.sa26554c9efec68d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2798305fdbc3909"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa0ac6ad96780a73",
+            "Compendium.dnd5e.sieg5e-classfeatures.s723db0e3f058861"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbf4faf374f00a36",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1bc79e0f2500f14"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se044f3f1181043e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s63b4d9e5d602574"
+          ]
+        }
+      },
+      {
+        "title": "Hit Points",
+        "type": "HitPoints",
+        "icon": "systems/dnd5e/icons/svg/hit-points.svg",
+        "value": {
+          "1": "avg"
+        }
+      },
+      {
+        "title": "Saving Throws",
+        "type": "Trait",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/trait-saves.svg",
+        "configuration": {
+          "grants": [
+            "saves:con"
+          ],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "saves:*"
+              ]
+            }
+          ],
+          "hint": "Select only 2 major saves (DEX, CON, WIS) or 1 major save and 2 minor saves (STR, INT, CHA) in total."
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "choices": [
+            {
+              "count": 3,
+              "pool": [
+                "skills:acr",
+                "skills:arc",
+                "skills:ath",
+                "skills:his",
+                "skills:ins",
+                "skills:inv",
+                "skills:rel",
+                "skills:sur"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Origin Feat",
+        "type": "AbilityScoreImprovement",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "points": 0
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/strike-sword-blood-red.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374169,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sde0ec63e8ff6f54",
+  "flags": {},
+  "sort": 0
+}

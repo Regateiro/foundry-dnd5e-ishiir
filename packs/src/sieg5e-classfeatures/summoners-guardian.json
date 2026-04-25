@@ -1,1 +1,85 @@
-{"name": "Summoner's Guardian", "type": "feat", "system": {"description": {"value": "<p>Your improved connection with your Eidolon allows it to defend you more effectively. You can use your Bonus Action to command your Eidolon to take a guarding stance while it is within 5 feet of you.</p><p>The stance lasts until the start of your next turn. It ends early if your Eidolon is no longer within 5 feet of you or it is Incapacitated.</p><p>While the stance is active, all Attack Rolls that target you have Disadvantage.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "bonus", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/creatures/magical/construct-golem-stone-blue.webp", "_id": "s7247809f3c9b162", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181808, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s7247809f3c9b162"}
+{
+  "name": "Summoner's Guardian",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your improved connection with your Eidolon allows it to defend you more effectively. You can use your Bonus Action to command your Eidolon to take a guarding stance while it is within 5 feet of you.</p><p>The stance lasts until the start of your next turn. It ends early if your Eidolon is no longer within 5 feet of you or it is Incapacitated.</p><p>While the stance is active, all Attack Rolls that target you have Disadvantage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/magical/construct-golem-stone-blue.webp",
+  "_id": "s7247809f3c9b162",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374251,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7247809f3c9b162",
+  "flags": {},
+  "sort": 0
+}

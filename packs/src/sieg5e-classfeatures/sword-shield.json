@@ -1,1 +1,85 @@
-{"name": "Sword Shield", "type": "feat", "system": {"description": {"value": "<p>You have learned to fight with your Spiritual Weapon like a seamless unit, using it to attack as well as defend.</p><p>When a creature you can see hits you with an Attack Roll while your Spiritual Weapon is within 5 ft of you, you can use your Reaction to gain a +5 bonus to AC against that attack, potentially causing it to miss you.</p><p>If the attack misses, you can make one weapon attack or melee spell attack with your Spiritual Weapon against the attacker as part of this Reaction.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s8230f09b42a6119", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181762, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8230f09b42a6119"}
+{
+  "name": "Sword Shield",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to fight with your Spiritual Weapon like a seamless unit, using it to attack as well as defend.</p><p>When a creature you can see hits you with an Attack Roll while your Spiritual Weapon is within 5 ft of you, you can use your Reaction to gain a +5 bonus to AC against that attack, potentially causing it to miss you.</p><p>If the attack misses, you can make one weapon attack or melee spell attack with your Spiritual Weapon against the attacker as part of this Reaction.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8230f09b42a6119",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374202,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8230f09b42a6119",
+  "flags": {},
+  "sort": 0
+}

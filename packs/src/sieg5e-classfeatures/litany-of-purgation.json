@@ -1,1 +1,85 @@
-{"name": "Litany of Purgation", "type": "feat", "system": {"description": {"value": "<p>When a creature is affected by your Inspiring Surge, it can immediately repeat a Saving Throw against one on-going effect on it that normally allows for repeated Saving Throws at the end of its turn. If it spends an additional hit die, it can make this Saving Throw with Advantage. The target does not regain additional hitpoints from spending this additional hit die.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "sd930e44ec9ae841", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181815, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sd930e44ec9ae841"}
+{
+  "name": "Litany of Purgation",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When a creature is affected by your Inspiring Surge, it can immediately repeat a Saving Throw against one on-going effect on it that normally allows for repeated Saving Throws at the end of its turn. If it spends an additional hit die, it can make this Saving Throw with Advantage. The target does not regain additional hitpoints from spending this additional hit die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd930e44ec9ae841",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374259,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd930e44ec9ae841",
+  "flags": {},
+  "sort": 0
+}

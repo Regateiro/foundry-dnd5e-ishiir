@@ -1,1 +1,85 @@
-{"name": "Brutal Beating", "type": "feat", "system": {"description": {"value": "<p>When you take the Attack action and use your Sneak Attack, you can immediately make another attack. If the target is suffering from a condition, you can add half your Sneak Attack dice (rounded down) to that attack.</p><p>You also learn the following new way to use your Sneak Attack:</p><ul><li><strong>Stun (Cost: 6d6).</strong> The target has to make a Constitution Saving Throw or become Stunned until the end of your next turn.</li></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s37d8ab170f341ca", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181798, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s37d8ab170f341ca"}
+{
+  "name": "Brutal Beating",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you take the Attack action and use your Sneak Attack, you can immediately make another attack. If the target is suffering from a condition, you can add half your Sneak Attack dice (rounded down) to that attack.</p><p>You also learn the following new way to use your Sneak Attack:</p><ul><li><strong>Stun (Cost: 6d6).</strong> The target has to make a Constitution Saving Throw or become Stunned until the end of your next turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s37d8ab170f341ca",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374240,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s37d8ab170f341ca",
+  "flags": {},
+  "sort": 0
+}

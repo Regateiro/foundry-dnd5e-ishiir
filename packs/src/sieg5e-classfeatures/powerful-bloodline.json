@@ -1,1 +1,85 @@
-{"name": "Powerful Bloodline", "type": "feat", "system": {"description": {"value": "<p>Your companion grows to Large size and the reach of its bite attack increase to 10 feet, it also no longer suffers from restrictions to its flying capabilities while you are riding it as long it is at least one size larger than you.</p><p>Additionally, your companion's attacks count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/svg/item-bag.svg", "_id": "s93da6c6dea192b3", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181775, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s93da6c6dea192b3"}
+{
+  "name": "Powerful Bloodline",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your companion grows to Large size and the reach of its bite attack increase to 10 feet, it also no longer suffers from restrictions to its flying capabilities while you are riding it as long it is at least one size larger than you.</p><p>Additionally, your companion's attacks count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s93da6c6dea192b3",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374216,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s93da6c6dea192b3",
+  "flags": {},
+  "sort": 0
+}

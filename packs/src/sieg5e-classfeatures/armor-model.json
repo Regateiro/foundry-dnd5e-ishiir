@@ -1,1 +1,85 @@
-{"name": "Armor Model", "type": "feat", "system": {"description": {"value": "<p>You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.</p><p>Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls. If your armor has an enhancement bonus, it is added to these attack and damage rolls.</p><p>You can change the armor's model whenever you finish a Short or a Long Rest, provided you have armorsmith's tools in hand.</p><p><strong>Dreadnought.</strong> You design your armor to become a towering juggernaut in battle. It has the following features:</p><ul></ul><p><strong>Guardian.</strong> You design your armor to be in the front line of conflict. It has the following features:</p><ul></ul><p><strong>Infiltrator.</strong> You customize your armor for subtle undertakings. It has the following features:</p><ul></ul>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/equipment/hand/gauntlet-armored-grey.webp", "_id": "s8db9a441d3ce99c", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181748, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8db9a441d3ce99c"}
+{
+  "name": "Armor Model",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can customize your Arcane Armor. When you do so, choose one of the following armor models: Guardian or Infiltrator. The model you choose gives you special benefits while you wear it.</p><p>Each model includes a special weapon. When you attack with that weapon, you can add your Intelligence modifier, instead of Strength or Dexterity, to the attack and damage rolls. If your armor has an enhancement bonus, it is added to these attack and damage rolls.</p><p>You can change the armor's model whenever you finish a Short or a Long Rest, provided you have armorsmith's tools in hand.</p><p><strong>Dreadnought.</strong> You design your armor to become a towering juggernaut in battle. It has the following features:</p><ul></ul><p><strong>Guardian.</strong> You design your armor to be in the front line of conflict. It has the following features:</p><ul></ul><p><strong>Infiltrator.</strong> You customize your armor for subtle undertakings. It has the following features:</p><ul></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/equipment/hand/gauntlet-armored-grey.webp",
+  "_id": "s8db9a441d3ce99c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374188,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8db9a441d3ce99c",
+  "flags": {},
+  "sort": 0
+}

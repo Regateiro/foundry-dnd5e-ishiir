@@ -1,1 +1,85 @@
-{"name": "Siphon Life", "type": "feat", "system": {"description": {"value": "<p>One of the things that contributes the most to the reputation Shadowborn have among other races, is their ability to harness residual life energy from the dead. For this reason, Shadowborn are very conscious of when they use this ability.</p><p>As an Action, you can siphon energy from a creature within 5 ft of you that has died within the last 24 hours. If you do so, you can spend hit dice as if you had taken a rest. You cannot use this feature more than once on the same creature.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "action", "cost": 1, "condition": "target has died within the last 24 hours and has not been targeted by this feature before"}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "creature"}, "range": {"value": 5, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/unholy/hands-cloud-light-pink.webp", "_id": "sb48602422e0c615", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181828, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!sb48602422e0c615"}
+{
+  "name": "Siphon Life",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>One of the things that contributes the most to the reputation Shadowborn have among other races, is their ability to harness residual life energy from the dead. For this reason, Shadowborn are very conscious of when they use this ability.</p><p>As an Action, you can siphon energy from a creature within 5 ft of you that has died within the last 24 hours. If you do so, you can spend hit dice as if you had taken a rest. You cannot use this feature more than once on the same creature.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "target has died within the last 24 hours and has not been targeted by this feature before"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/unholy/hands-cloud-light-pink.webp",
+  "_id": "sb48602422e0c615",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374274,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb48602422e0c615",
+  "flags": {},
+  "sort": 0
+}

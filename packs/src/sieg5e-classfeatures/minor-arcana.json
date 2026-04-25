@@ -1,1 +1,85 @@
-{"name": "Minor Arcana", "type": "feat", "system": {"description": {"value": "<p>When you finish a Short or a Long Rest, you can expend one pact magic spell slot to gain a number of free castings for lesser spells until you finish your next Short or a Long Rest.</p><p>You can choose only warlock spells that you know and each chosen spell must not have a clause that grants it additional or enhanced effects when it is cast at a higher level. The total spell level of the chosen spells must be equal to or lower than the level of the expended pact magic slot. You can choose the same spell multiple times.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "special", "cost": null, "condition": "when you finish a Short or a Long Rest"}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/sundries/books/book-eye-purple.webp", "_id": "s3f21066df704f6e", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181810, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s3f21066df704f6e"}
+{
+  "name": "Minor Arcana",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you finish a Short or a Long Rest, you can expend one pact magic spell slot to gain a number of free castings for lesser spells until you finish your next Short or a Long Rest.</p><p>You can choose only warlock spells that you know and each chosen spell must not have a clause that grants it additional or enhanced effects when it is cast at a higher level. The total spell level of the chosen spells must be equal to or lower than the level of the expended pact magic slot. You can choose the same spell multiple times.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "when you finish a Short or a Long Rest"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/sundries/books/book-eye-purple.webp",
+  "_id": "s3f21066df704f6e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374253,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3f21066df704f6e",
+  "flags": {},
+  "sort": 0
+}

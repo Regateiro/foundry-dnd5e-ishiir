@@ -1,1 +1,90 @@
-{"name": "Blood Curse of Corrosion", "type": "feat", "system": {"description": {"value": "<p>As a Bonus Action, you deal acid damage equal to three rolls of your hemocraft die to a creature you can see within 30 feet of you. The target then has to make a Constitution Saving Throw. On a failure, attack rolls against the target have Advantage until the end of your next turn. On a success, only the first attack roll has Advantage.</p><p><strong>Amplify.</strong> Every time the target takes damage while under this curse's effect, it takes additional acid damage equal to one roll of your hemocraft die.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "bonus", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "creature"}, "range": {"value": 30, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "save", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [["2 * @attributes.prof", "acid"]], "versatile": ""}, "formula": "", "save": {"ability": "con", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/acid/dissolve-arm-flesh.webp", "_id": "s536f076f526c575", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181832, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s536f076f526c575"}
+{
+  "name": "Blood Curse of Corrosion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you deal acid damage equal to three rolls of your hemocraft die to a creature you can see within 30 feet of you. The target then has to make a Constitution Saving Throw. On a failure, attack rolls against the target have Advantage until the end of your next turn. On a success, only the first attack roll has Advantage.</p><p><strong>Amplify.</strong> Every time the target takes damage while under this curse's effect, it takes additional acid damage equal to one roll of your hemocraft die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2 * @attributes.prof",
+          "acid"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/acid/dissolve-arm-flesh.webp",
+  "_id": "s536f076f526c575",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374279,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s536f076f526c575",
+  "flags": {},
+  "sort": 0
+}

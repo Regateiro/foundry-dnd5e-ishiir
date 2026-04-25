@@ -1,1 +1,128 @@
-{"_id": "s57d41a3468f6df6", "name": "Fighter: Battle Master", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "fighter", "identifier": "fighter-battle-master", "advancement": [{"title": "Choose Maneuvers", "type": "ItemChoice", "icon": "systems/dnd5e/icons/svg/item-choice.svg", "configuration": {"hint": "All choices are presented regardless of prerequisites.", "choices": {"3": 3, "7": 2, "10": 2, "15": 2}, "pool": ["Compendium.dnd5e.sieg5e-optfeatures.s67d438f6c23009b", "Compendium.dnd5e.sieg5e-optfeatures.s2898f55afad563c", "Compendium.dnd5e.sieg5e-optfeatures.s434064b779d63d0", "Compendium.dnd5e.sieg5e-optfeatures.sdc791c8eb246c18", "Compendium.dnd5e.sieg5e-optfeatures.s18c9a54eb44907d", "Compendium.dnd5e.sieg5e-optfeatures.s1d65fbf6243bf76", "Compendium.dnd5e.sieg5e-optfeatures.s150a2a3a2e2b187", "Compendium.dnd5e.sieg5e-optfeatures.s73a387fbf2faded", "Compendium.dnd5e.sieg5e-optfeatures.s5a2829762217a70", "Compendium.dnd5e.sieg5e-optfeatures.sc6c946a3ac8fbe9", "Compendium.dnd5e.sieg5e-optfeatures.s9a89674b63b8a1a", "Compendium.dnd5e.sieg5e-optfeatures.s8d78d319fec6aff", "Compendium.dnd5e.sieg5e-optfeatures.s52962f751b9b8d1", "Compendium.dnd5e.sieg5e-optfeatures.sda0228a37eafb68", "Compendium.dnd5e.sieg5e-optfeatures.sf0a5dd572b832ae", "Compendium.dnd5e.sieg5e-optfeatures.s9f5b330e4296904", "Compendium.dnd5e.sieg5e-optfeatures.s8f798ab8b6a552f", "Compendium.dnd5e.sieg5e-optfeatures.sbf1654c9f3ebe19", "Compendium.dnd5e.sieg5e-optfeatures.s1095b9a5cc4da29", "Compendium.dnd5e.sieg5e-optfeatures.s73ac288334d9898", "Compendium.dnd5e.sieg5e-optfeatures.s0620abdbc0db722", "Compendium.dnd5e.sieg5e-optfeatures.s094366fb59da465", "Compendium.dnd5e.sieg5e-optfeatures.sbbc47a76f944b33", "Compendium.dnd5e.sieg5e-optfeatures.sc6eeabaaced8a8a"]}}, {"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s9cda01a2b62d76d", "Compendium.dnd5e.sieg5e-classfeatures.se3b9f8ec8469631", "Compendium.dnd5e.sieg5e-classfeatures.se6c99702b8755f2", "Compendium.dnd5e.sieg5e-classfeatures.s2c360f274355b4b"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sef8b3ca09799011", "Compendium.dnd5e.sieg5e-classfeatures.sde09ca29935de5b", "Compendium.dnd5e.sieg5e-classfeatures.s3bad60190386eeb"]}}, {"title": "Features", "type": "ItemGrant", "level": 10, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sf857a4d538600e6", "Compendium.dnd5e.sieg5e-classfeatures.sdbfa9dd998749f1"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s1bd22f300348e8a", "Compendium.dnd5e.sieg5e-classfeatures.sa8b899fd4d09410", "Compendium.dnd5e.sieg5e-classfeatures.sae87ed1dcc42f89"]}}, {"title": "Features", "type": "ItemGrant", "level": 18, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s55574d778df51a2", "Compendium.dnd5e.sieg5e-classfeatures.s60c2e4be2f4e77d"]}}]}, "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181737, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s57d41a3468f6df6"}
+{
+  "_id": "s57d41a3468f6df6",
+  "name": "Fighter: Battle Master",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "fighter",
+    "identifier": "fighter-battle-master",
+    "advancement": [
+      {
+        "title": "Choose Maneuvers",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "3": 3,
+            "7": 2,
+            "10": 2,
+            "15": 2
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s67d438f6c23009b",
+            "Compendium.dnd5e.sieg5e-optfeatures.s2898f55afad563c",
+            "Compendium.dnd5e.sieg5e-optfeatures.s434064b779d63d0",
+            "Compendium.dnd5e.sieg5e-optfeatures.sdc791c8eb246c18",
+            "Compendium.dnd5e.sieg5e-optfeatures.s18c9a54eb44907d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1d65fbf6243bf76",
+            "Compendium.dnd5e.sieg5e-optfeatures.s150a2a3a2e2b187",
+            "Compendium.dnd5e.sieg5e-optfeatures.s73a387fbf2faded",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5a2829762217a70",
+            "Compendium.dnd5e.sieg5e-optfeatures.sc6c946a3ac8fbe9",
+            "Compendium.dnd5e.sieg5e-optfeatures.s9a89674b63b8a1a",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8d78d319fec6aff",
+            "Compendium.dnd5e.sieg5e-optfeatures.s52962f751b9b8d1",
+            "Compendium.dnd5e.sieg5e-optfeatures.sda0228a37eafb68",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf0a5dd572b832ae",
+            "Compendium.dnd5e.sieg5e-optfeatures.s9f5b330e4296904",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8f798ab8b6a552f",
+            "Compendium.dnd5e.sieg5e-optfeatures.sbf1654c9f3ebe19",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1095b9a5cc4da29",
+            "Compendium.dnd5e.sieg5e-optfeatures.s73ac288334d9898",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0620abdbc0db722",
+            "Compendium.dnd5e.sieg5e-optfeatures.s094366fb59da465",
+            "Compendium.dnd5e.sieg5e-optfeatures.sbbc47a76f944b33",
+            "Compendium.dnd5e.sieg5e-optfeatures.sc6eeabaaced8a8a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9cda01a2b62d76d",
+            "Compendium.dnd5e.sieg5e-classfeatures.se3b9f8ec8469631",
+            "Compendium.dnd5e.sieg5e-classfeatures.se6c99702b8755f2",
+            "Compendium.dnd5e.sieg5e-classfeatures.s2c360f274355b4b"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sef8b3ca09799011",
+            "Compendium.dnd5e.sieg5e-classfeatures.sde09ca29935de5b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3bad60190386eeb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf857a4d538600e6",
+            "Compendium.dnd5e.sieg5e-classfeatures.sdbfa9dd998749f1"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1bd22f300348e8a",
+            "Compendium.dnd5e.sieg5e-classfeatures.sa8b899fd4d09410",
+            "Compendium.dnd5e.sieg5e-classfeatures.sae87ed1dcc42f89"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s55574d778df51a2",
+            "Compendium.dnd5e.sieg5e-classfeatures.s60c2e4be2f4e77d"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374178,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s57d41a3468f6df6",
+  "flags": {},
+  "sort": 0
+}

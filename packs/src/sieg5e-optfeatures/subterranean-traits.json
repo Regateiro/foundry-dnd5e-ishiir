@@ -1,1 +1,85 @@
-{"name": "Subterranean Traits", "type": "feat", "system": {"description": {"value": "<p>Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.</p><p>Your Eidolon gains a Climb Speed equal to its Speed and a Burrow Speed equal to half its Speed.</p><p>Additionally, the darkvision range of your Eidolon increases to 120 feet.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "", "cost": null, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": null, "width": null, "units": "", "type": ""}, "range": {"value": null, "long": null, "units": ""}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": null, "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/magic/earth/projectile-stone-landslide.webp", "_id": "s47d94235a15d699", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181837, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s47d94235a15d699"}
+{
+  "name": "Subterranean Traits",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Increase one ability score of your Eidolon from among Strength, Dexterity, or Constitution by 1.</p><p>Your Eidolon gains a Climb Speed equal to its Speed and a Burrow Speed equal to half its Speed.</p><p>Additionally, the darkvision range of your Eidolon increases to 120 feet.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/earth/projectile-stone-landslide.webp",
+  "_id": "s47d94235a15d699",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374284,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s47d94235a15d699",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,46 @@
-{"_id": "s8838f786a8dc1a9", "name": "Bard: College of Lore", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "bard", "identifier": "bard-college-of-lore", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s80695084b0a5056"]}}, {"title": "Features", "type": "ItemGrant", "level": 14, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s2db5ff562ca94eb"]}}]}, "img": "icons/skills/trades/academics-book-study-purple.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181733, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s8838f786a8dc1a9"}
+{
+  "_id": "s8838f786a8dc1a9",
+  "name": "Bard: College of Lore",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "bard",
+    "identifier": "bard-college-of-lore",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s80695084b0a5056"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2db5ff562ca94eb"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/trades/academics-book-study-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374175,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8838f786a8dc1a9",
+  "flags": {},
+  "sort": 0
+}

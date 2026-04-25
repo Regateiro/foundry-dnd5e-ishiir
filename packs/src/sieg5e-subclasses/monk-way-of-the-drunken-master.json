@@ -1,1 +1,57 @@
-{"_id": "s21adc891104b49d", "name": "Monk: Way of the Drunken Master", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "monk", "identifier": "monk-way-of-the-drunken-master", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 6, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s9f8610b354766c3"]}}, {"title": "Features", "type": "ItemGrant", "level": 11, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sc8c40b0e68ed56f"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.safc8034cc595ed1"]}}]}, "img": "icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181738, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s21adc891104b49d"}
+{
+  "_id": "s21adc891104b49d",
+  "name": "Monk: Way of the Drunken Master",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "monk",
+    "identifier": "monk-way-of-the-drunken-master",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9f8610b354766c3"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc8c40b0e68ed56f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.safc8034cc595ed1"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/consumables/drinks/alcohol-beer-stein-wooden-metal-brown.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374179,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s21adc891104b49d",
+  "flags": {},
+  "sort": 0
+}

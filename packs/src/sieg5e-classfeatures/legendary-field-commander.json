@@ -1,1 +1,85 @@
-{"name": "Legendary Field Commander", "type": "feat", "system": {"description": {"value": "<p>As an Action, you can choose one ally within 60 feet of you that can see or hear you. That ally gains an additional action on their next turn. Alternatively, the target can take its Reaction to use this action immediately.</p>", "chat": "", "unidentified": ""}, "source": "", "activation": {"type": "action", "cost": 1, "condition": ""}, "duration": {"value": "", "units": ""}, "cover": null, "crewed": false, "target": {"value": 1, "width": null, "units": "", "type": "ally"}, "range": {"value": 60, "long": null, "units": "ft"}, "uses": {"value": null, "max": "", "per": null, "recovery": ""}, "consume": {"type": "", "target": null, "amount": null}, "ability": null, "actionType": "util", "attackBonus": "", "chatFlavor": "", "critical": {"threshold": null, "damage": ""}, "damage": {"parts": [], "versatile": ""}, "formula": "", "save": {"ability": "", "dc": null, "scaling": "spell"}, "type": {"value": "", "subtype": ""}, "requirements": "", "recharge": {"value": null, "charged": null}}, "img": "icons/skills/melee/spear-tips-quintuple-orange.webp", "_id": "s060ffff573b777c", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181814, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s060ffff573b777c"}
+{
+  "name": "Legendary Field Commander",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you can choose one ally within 60 feet of you that can see or hear you. That ally gains an additional action on their next turn. Alternatively, the target can take its Reaction to use this action immediately.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "ally"
+    },
+    "range": {
+      "value": 60,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/melee/spear-tips-quintuple-orange.webp",
+  "_id": "s060ffff573b777c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374258,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s060ffff573b777c",
+  "flags": {},
+  "sort": 0
+}

@@ -1,1 +1,68 @@
-{"_id": "s3be7eb9a2777800", "name": "Ranger: Ranger Knight Conclave", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "ranger", "identifier": "ranger-ranger-knight-conclave", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s0b333d0c5069564"]}}, {"title": "Features", "type": "ItemGrant", "level": 7, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sa70c832ba3c8e0b"]}}, {"title": "Features", "type": "ItemGrant", "level": 11, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.sb85b757b03679ae"]}}, {"title": "Features", "type": "ItemGrant", "level": 15, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s4bc3df085355eb1"]}}]}, "img": "icons/svg/item-bag.svg", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181740, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s3be7eb9a2777800"}
+{
+  "_id": "s3be7eb9a2777800",
+  "name": "Ranger: Ranger Knight Conclave",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "ranger",
+    "identifier": "ranger-ranger-knight-conclave",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0b333d0c5069564"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa70c832ba3c8e0b"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb85b757b03679ae"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4bc3df085355eb1"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374181,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3be7eb9a2777800",
+  "flags": {},
+  "sort": 0
+}

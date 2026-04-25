@@ -1,1 +1,69 @@
-{"_id": "s5a96b5a85c3aed1", "name": "Rogue: Thug", "type": "subclass", "system": {"source": "Ishiir", "classIdentifier": "rogue", "identifier": "rogue-thug", "advancement": [{"title": "Features", "type": "ItemGrant", "level": 3, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s997b4e8dc683466", "Compendium.dnd5e.sieg5e-classfeatures.s96ab6456ffbdc05"]}}, {"title": "Features", "type": "ItemGrant", "level": 9, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s2a76294e7c5d6e1"]}}, {"title": "Features", "type": "ItemGrant", "level": 13, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s84e5874e87c8544"]}}, {"title": "Features", "type": "ItemGrant", "level": 17, "icon": "systems/dnd5e/icons/svg/item-grant.svg", "configuration": {"items": ["Compendium.dnd5e.sieg5e-classfeatures.s37d8ab170f341ca"]}}]}, "img": "icons/skills/wounds/injury-face-impact-orange.webp", "_stats": {"systemId": "dnd5e", "systemVersion": "2.4.9", "coreVersion": "10.303", "createdTime": 1777072572464, "modifiedTime": 1777076181741, "lastModifiedBy": "dnd5ebuilder0000"}, "_key": "!items!s5a96b5a85c3aed1"}
+{
+  "_id": "s5a96b5a85c3aed1",
+  "name": "Rogue: Thug",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "rogue",
+    "identifier": "rogue-thug",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s997b4e8dc683466",
+            "Compendium.dnd5e.sieg5e-classfeatures.s96ab6456ffbdc05"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2a76294e7c5d6e1"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s84e5874e87c8544"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s37d8ab170f341ca"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/wounds/injury-face-impact-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777076374182,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5a96b5a85c3aed1",
+  "flags": {},
+  "sort": 0
+}
