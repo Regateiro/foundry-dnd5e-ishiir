@@ -14,7 +14,6 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s57bdf80bd508817",
             "Compendium.dnd5e.sieg5e-classfeatures.sba2c9843fed780b",
             "Compendium.dnd5e.sieg5e-classfeatures.s37237360468ebf4",
             "Compendium.dnd5e.sieg5e-classfeatures.sec11a43830604c9"
@@ -56,13 +55,13 @@
       }
     ]
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/unholy/strike-body-life-soul-purple.webp",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374174,
+    "modifiedTime": 1777110211596,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sde959907fcd6498",

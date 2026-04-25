@@ -1,9 +1,9 @@
 {
-  "name": "Hollow Warden",
+  "name": "Way of the Long Death",
   "type": "feat",
   "system": {
     "description": {
-      "value": "",
+      "value": "<p>Monks of the Way of the Long Death are obsessed with the meaning and mechanics of dying. They capture creatures and prepare elaborate experiments to capture, record, and understand the moments of their demise. They use this knowledge to guide their understanding of martial arts, yielding a deadly fighting style.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -70,16 +70,16 @@
     }
   },
   "img": "icons/svg/item-bag.svg",
-  "_id": "sbbe90cded8dceb0",
+  "_id": "sf38eb0c848b9e3d",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374235,
+    "modifiedTime": 1777110211642,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!sbbe90cded8dceb0",
+  "_key": "!items!sf38eb0c848b9e3d",
   "flags": {},
   "sort": 0
 }

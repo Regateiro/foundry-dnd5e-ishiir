@@ -14,7 +14,6 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s93fe058b7143eac",
             "Compendium.dnd5e.sieg5e-classfeatures.sf9cb76790443ee5"
           ]
         }
@@ -65,13 +64,13 @@
       }
     ]
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/skills/melee/maneuver-daggers-paired-orange.webp",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374178,
+    "modifiedTime": 1777110211600,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sf20c232a1fcdb78",

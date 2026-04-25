@@ -65,13 +65,13 @@
       }
     ]
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/time/day-night-sunset-sunrise.webp",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374185,
+    "modifiedTime": 1777110211607,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s39da1a837918c5c",

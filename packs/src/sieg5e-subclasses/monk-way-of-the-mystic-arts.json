@@ -1,23 +1,12 @@
 {
-  "_id": "scfd0576c3463a91",
-  "name": "Monk: Warrior of the Mystic Arts",
+  "_id": "sa114bdbdb9cbce3",
+  "name": "Monk: Way of the Mystic Arts",
   "type": "subclass",
   "system": {
     "source": "Ishiir",
     "classIdentifier": "monk",
-    "identifier": "monk-warrior-of-the-mystic-arts",
+    "identifier": "monk-way-of-the-mystic-arts",
     "advancement": [
-      {
-        "title": "Features",
-        "type": "ItemGrant",
-        "level": 3,
-        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
-        "configuration": {
-          "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s7c11aea3bdef756"
-          ]
-        }
-      },
       {
         "title": "Features",
         "type": "ItemGrant",
@@ -53,16 +42,16 @@
       }
     ]
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/light/hand-sparks-glow-yellow.webp",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374179,
+    "modifiedTime": 1777110211601,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!scfd0576c3463a91",
+  "_key": "!items!sa114bdbdb9cbce3",
   "flags": {},
   "sort": 0
 }

@@ -1,23 +1,12 @@
 {
-  "_id": "s8fd10a5bd8e8753",
-  "name": "Warlock: Spider Queen",
+  "_id": "sd0aeb867b2ae1bc",
+  "name": "Warlock: The Spider Queen",
   "type": "subclass",
   "system": {
     "source": "Ishiir",
     "classIdentifier": "warlock",
-    "identifier": "warlock-spider-queen",
+    "identifier": "warlock-the-spider-queen",
     "advancement": [
-      {
-        "title": "Features",
-        "type": "ItemGrant",
-        "level": 3,
-        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
-        "configuration": {
-          "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sa9a84e22518d509"
-          ]
-        }
-      },
       {
         "title": "Features",
         "type": "ItemGrant",
@@ -59,10 +48,10 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374185,
+    "modifiedTime": 1777110211607,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s8fd10a5bd8e8753",
+  "_key": "!items!sd0aeb867b2ae1bc",
   "flags": {},
   "sort": 0
 }

@@ -14,7 +14,6 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s603b360f03e5fbd",
             "Compendium.dnd5e.sieg5e-classfeatures.scaa3ca81daa8043",
             "Compendium.dnd5e.sieg5e-classfeatures.s909d15daeba3d14"
           ]
@@ -56,13 +55,13 @@
       }
     ]
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/defensive/shield-barrier-blades-teal.webp",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374182,
+    "modifiedTime": 1777110211604,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s3fb3f29b25dd865",

@@ -10,7 +10,7 @@ install:
 	@echo "Deployment to development environment complete."
 
 regenerate-packs:
-	@curl -s "https://regateiro.pt/sieg5e/?gen=True&source=Ishiir&features=True&optfeatures=True&classes=True&subclasses=True&races=True&output=json" > sieg5e.json
+	@curl -s "https://regateiro.pt/sieg5e/api" > sieg5e.json
 	@bash -c "rm -rf packs/src/sieg5e-{classes,subclasses,classfeatures,optfeatures,races}"
 	@bash -c "mkdir -p packs/src/sieg5e-{classes,subclasses,classfeatures,optfeatures,races}"
 	@python3 generate-ishiir-packs.py

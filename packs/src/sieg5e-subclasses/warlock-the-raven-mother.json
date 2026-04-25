@@ -10,17 +10,6 @@
       {
         "title": "Features",
         "type": "ItemGrant",
-        "level": 3,
-        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
-        "configuration": {
-          "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s7cbd2b86d1dd9c8"
-          ]
-        }
-      },
-      {
-        "title": "Features",
-        "type": "ItemGrant",
         "level": 6,
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
@@ -53,13 +42,13 @@
       }
     ]
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/creatures/birds/corvid-flying-wings-purple.webp",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777076374184,
+    "modifiedTime": 1777110211606,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s5361d82040a59da",
