@@ -1,0 +1,85 @@
+{
+  "name": "Dazzling Footwork",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>While you aren't wearing armor or wielding a Shield, you gain the following benefits.</p><ul><li><strong>Dance Virtuoso.</strong> You have Advantage on any Charisma (Performance) check you make that involves you dancing.</li><li><strong>Unarmored Defense.</strong> Your base Armor Class equals 10 plus your Dexterity and Charisma modifiers.</li><li><strong>Agile Strikes.</strong> When you expend a use of your Bardic Inspiration as part of an Action, a Bonus Action, or a Reaction, you can make one Unarmed Strike as part of that action, Bonus Action, or Reaction.</li><li><strong>Bardic Damage.</strong> You can use Dexterity instead of Strength for the Attack Rolls of your Unarmed Strikes. When you deal damage with an Unarmed Strike, you can deal Bludgeoning damage equal to a roll of your Bardic Inspiration die plus your Dexterity modifier, instead of the strike's normal damage. This roll doesn't expend the die.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8044aa1a445de3a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428324,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8044aa1a445de3a",
+  "flags": {},
+  "sort": 0
+}

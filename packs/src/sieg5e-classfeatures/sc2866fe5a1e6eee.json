@@ -1,0 +1,85 @@
+{
+  "name": "Crescent Dance",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can harness your connection to Vaeraustraee to emulate her warrior aspect, entering the Cresent Dance. To do so, you can't be wearing medium or heavy armor or using a shield. It graces you with supernatural speed, agility, and focus.</p><p>You can use a Bonus Action to start the Crescent Dance, which lasts for 1 minute. It ends early if you are Incapacitated, if you don medium or heavy armor or a shield. You can also dismiss the Crescent Dance at any time you choose (no action required).</p><p>While your Crescent Dance is active, you gain the following benefits:</p><ul><li>You gain a bonus to your AC equal to your Wisdom modifier (minimum of +1).</li><li>Your Speed increases by 10 feet.</li><li>You have Advantage on Dexterity (Acrobatics) checks.</li><li>You gain a bonus to any Constitution Saving Throws you make to maintain Concentration on a spell. The bonus equals your Wisdom modifier (minimum of +1).</li><li>If you currently have a Spiritual Weapon summoned via the spell of the same name and you move on your turn, you can move your Spiritual Weapon the same distance.</li></ul><p>You can use this feature twice. You regain all expended uses of it when you finish a Short or a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc2866fe5a1e6eee",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428333,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc2866fe5a1e6eee",
+  "flags": {},
+  "sort": 0
+}

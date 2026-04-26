@@ -1,0 +1,85 @@
+{
+  "name": "Open Hand Technique",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can manipulate your enemy's ki when you harness your own. Whenever you hit a creature with one of the attacks granted by your Flurry of Blows, you can impose one of the following effects on that target.</p><ul><li>If it is no more than 1 size larger than you, it must succeed on a Dexterity Saving Throw or be knocked Prone.</li><li>It must make a Strength Saving Throw. If it fails, you can push it up to 15 feet away from you.</li><li>It must make a Constitution Saving Throw. If it fails, it can't take Reactions until the end of your next turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/unholy/strike-hand-glow-pink.webp",
+  "_id": "s43d98e7cd35e88d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428348,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s43d98e7cd35e88d",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Circle Forms",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can channel lunar magic when you assume a Wild Shape form, granting you the benefits below.</p><ul><li><strong>Challenge Rating.</strong> The maximum Challenge Rating for the form equals your Druid level divided by 3 (round down).</li><li><strong>Armor Class.</strong> Until you leave the form, your AC equals 13 plus your Wisdom modifier if that total is higher than the Beast's AC.</li><li><strong>Temporary Hit Points.</strong> You gain a number of Temporary Hit Points equal to three times your Druid level.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s1b209c021511aad",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428339,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1b209c021511aad",
+  "flags": {},
+  "sort": 0
+}

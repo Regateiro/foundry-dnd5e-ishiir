@@ -1,0 +1,85 @@
+{
+  "name": "Omens and Portents",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can perceive signs of the future in everyday objects and events, such as flights of birds or ripples made in water by a thrown stone. You can cast the Augury spell without expending a spell slot and, when you cast the spell in this way, the spell has no verbal, somatic, or material components. Once you cast the spell in this way, you cannot do so again until you finish a Long Rest.</p><p>In addition, until you finish a Long Rest, when you cast a divination spell that includes a chance the DM gives you no answer or a random reading—such as augury, commune, or divination—reduce that chance by 25 percent.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s71d0964155ba5ef",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428331,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s71d0964155ba5ef",
+  "flags": {},
+  "sort": 0
+}

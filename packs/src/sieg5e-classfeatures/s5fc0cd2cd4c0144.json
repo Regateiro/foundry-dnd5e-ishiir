@@ -1,0 +1,85 @@
+{
+  "name": "Elemental Might",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can spend one use of your Wild Shape to empower your body with the might of the elements. Choose one of the following elements (air, earth, fire, water). Depending on your choice, you gain the following benefits for 10 minutes:</p><ul><li>You gain a bonus to any Constitution Saving Throws you make to maintain Concentration on a spell. The bonus equals your Wisdom modifier (minimum of +1).</li><li>Once per turn when you hit a creature with a melee weapon attack, you can force the target creature and creatures of your choice within 10 feet of the target to make a Constitution Saving Throw against your spell save DC. A target takes damage equal to a number of D6 x 1/2 your proficiency (rounded down) on a failure, and half as much on a success. The damage type is determined by your chosen element, as per the table below. The number of damage dice are doubled on all affected targets if the original attack was a critical hit.</li><li>You gain one damage Resistance and an additional benefit based on your chosen element for the duration, as per the table below.</li></ul><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Element-specific Benefits</caption><thead><tr><th scope=\"col\">Elemental</th><th scope=\"col\">Damage Type</th><th scope=\"col\">Additional Benefit</th></tr></thead><tbody><tr><td>Air</td><td>Lightning</td><td>Your Speed increases by 10 feet.</td></tr><tr><td>Earth</td><td>Thunder</td><td>You reduce any bludgeoning, piercing, or slashing damage you take by an amount equal to your Proficiency.</td></tr><tr><td>Fire</td><td>Fire</td><td>The damage dice of your Elemental Might become D8s.</td></tr><tr><td>Water</td><td>Cold</td><td>All space within a 10-feet Emanation is 3 for hostile creatures.</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5fc0cd2cd4c0144",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428338,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5fc0cd2cd4c0144",
+  "flags": {},
+  "sort": 0
+}

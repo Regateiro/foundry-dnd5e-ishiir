@@ -1,0 +1,85 @@
+{
+  "name": "Circle Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you reach a Druid level specified in the Circle of the Moon Spells table, you thereafter always have the listed spells prepared.</p><p>In addition, you can cast the spells from this feature while you're in a Wild Shape form.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Circle of the Sea Spells</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Circle Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Cure Wounds, Moonbeam, Starry Wisp</td></tr><tr><td>5th</td><td>Conjure Animals</td></tr><tr><td>7th</td><td>Fount of Moonlight</td></tr><tr><td>9th</td><td>Mass Cure Wounds</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/water/projectile-ice-teardrop.webp",
+  "_id": "s448a5276e1ae1b9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428339,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s448a5276e1ae1b9",
+  "flags": {},
+  "sort": 0
+}

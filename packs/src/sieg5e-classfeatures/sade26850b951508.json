@@ -1,0 +1,85 @@
+{
+  "name": "Treacherous Nature",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Proficiency in deception or stealth. Additionally, you can use your Lay on Hands to target creature that cannot see you, that is not aware you are hostile to it or that is under some other effect that makes it non-hostile to you, e.g. the Charmed condition.</p><p>The target has to make a Constitution Saving Throw. On a failure, the creature takes necrotic damage equal to the number of points spent from the pool. On a success, the creature takes half as much damage. You then regain hit points equal to the damage dealt.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sade26850b951508",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428354,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sade26850b951508",
+  "flags": {},
+  "sort": 0
+}

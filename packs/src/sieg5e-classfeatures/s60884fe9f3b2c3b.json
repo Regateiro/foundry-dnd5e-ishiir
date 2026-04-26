@@ -1,0 +1,85 @@
+{
+  "name": "Hybrid Transformation",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to control the lycanthropic curse that courses through your veins. As a Bonus Action, you transform into a special hybrid form for up to 1 hour. You can speak, use equipment, and wear armor while in this form, and can revert to your normal form as a Bonus Action. You automatically revert to your normal form if you fall unconscious or die.</p><p>This feature replaces the rules for lycanthropy in the Monster Manual. You can use this feature twice, and you regain all expended uses when you finish a Short or a Long Rest. Alternatively, you can expend a use of your Blood Maledict feature to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s60884fe9f3b2c3b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428328,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s60884fe9f3b2c3b",
+  "flags": {},
+  "sort": 0
+}

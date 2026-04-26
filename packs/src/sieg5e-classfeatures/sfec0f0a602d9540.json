@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Shadow Spawn",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you envelope yourself in a coat of shadows for 1 minute. For the duration, you gain Advantage on all Dexterity (Stealth) checks while you are in dim light or darkness. This benefit lasts for one minute or until you are Incapacitated. It is also suppressed until the end of your next turn if you are in bright light or you take radiant damage.</p><p>If you damage a creature that cannot see you with a spell or an attack while this effect is active on you, you can choose to deal maximum damage. You can do so only once per use of this Channel Divinity.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfec0f0a602d9540",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428331,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfec0f0a602d9540",
+  "flags": {},
+  "sort": 0
+}

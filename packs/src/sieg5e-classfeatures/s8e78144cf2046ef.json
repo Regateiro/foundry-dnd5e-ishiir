@@ -1,0 +1,85 @@
+{
+  "name": "Mighty Coils",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Spectral coils start appearing around you when you enter your rage. While you are raging, your reach with Unarmed Strikes increases by 5 ft and you ignore all size restrictions and Immunities for attempting grapples.</p><p>Once per turn, if you successfully hit a creature with an Unarmed Strike while raging, you can attempt to Grapple it.</p><p>You can use your Bonus Action to force a creature you Grappled in this manner to make a STR Saving Throw. The DC is equal to 8 + your Proficiency + your STR modifier. On a failure, the creature takes force damage equal to your Proficiency + your STR modifier + your rage bonus damage and is Restrained until the end of your next turn. On a success, the creature takes half as much damage and isn't Restrained.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8e78144cf2046ef",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428322,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8e78144cf2046ef",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Form of the Beast",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your bestial spark manifests in the form of natural weapons.</p><p>Choose one of the following options: bite, claws, horns, hooves, pincers, or tail. You permanently gain the selected option as a natural weapon. It deals 1d8 damage on a hit. You can choose whether it deals bludgeoning, piercing, or slashing damage when you select it. It counts as a simple weapon for you and you use your Strength modifier for attack and damage rolls with it.</p><p>You can choose how the natural weapon looks exactly. For example, the bite option might give you long fangs, mandibles, or even a beak.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s2560c61d63da866",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428321,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s2560c61d63da866",
+  "flags": {},
+  "sort": 0
+}

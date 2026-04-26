@@ -51,6 +51,19 @@
       {
         "title": "Features",
         "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se272cd1fb435cea",
+            "Compendium.dnd5e.sieg5e-classfeatures.saa32867703f797d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s65a27b7c4cf8fc8"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
         "level": 7,
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
@@ -100,7 +113,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217151223,
+    "modifiedTime": 1777218428305,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!se90f9f13cdafddd",

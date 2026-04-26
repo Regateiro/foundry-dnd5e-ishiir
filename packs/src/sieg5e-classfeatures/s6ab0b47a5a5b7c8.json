@@ -1,0 +1,85 @@
+{
+  "name": "Genie's Vessel",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your patron gifts you a magical vessel that grants you a measure of the genie's power. The vessel is a Tiny object, and you can use it as a spellcasting focus for your warlock spells. You decide what the object is, or you can determine what it is randomly by rolling on the Genie's Vessel table.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Genie's Vessel</caption><thead><tr><th scope=\"col\">d6</th><th scope=\"col\">Vessel</th></tr></thead><tbody><tr><td>1</td><td>Oil lamp</td></tr><tr><td>2</td><td>Urn</td></tr><tr><td>3</td><td>Ring with a compartment</td></tr><tr><td>4</td><td>Stoppered bottle</td></tr><tr><td>5</td><td>Hollow statuette</td></tr><tr><td>6</td><td>Ornate lantern</td></tr></tbody></table></div><p>While you are touching the vessel, you can use it in the following ways:</p><p>The vessel's AC equals your spell save DC. Its hit points equal your warlock level plus your Proficiency bonus, and it is Immune to poison and psychic damage.</p><p>If the vessel is destroyed or you lose it, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a Short or a Long Rest, and the previous vessel is destroyed if it still exists. The vessel vanishes in a flare of elemental power when you die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s6ab0b47a5a5b7c8",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428371,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6ab0b47a5a5b7c8",
+  "flags": {},
+  "sort": 0
+}

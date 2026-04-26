@@ -1,0 +1,85 @@
+{
+  "name": "Tenets of Devotion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Though the exact words and strictures of the Oath of Devotion vary, paladins of this oath share these tenets.</p><p><strong>Honesty.</strong> Don't lie or cheat. Let your word be your promise.</p><p><strong>Courage.</strong> Never fear to act, though caution is wise.</p><p><strong>Compassion.</strong> Aid others, protect the weak, and punish those who threaten them. Show mercy to your foes, but temper it with wisdom.</p><p><strong>Honor.</strong> Treat others with fairness, and let your honorable deeds be an example to them. Do as much good as possible while causing the least amount of harm.</p><p><strong>Duty.</strong> Be responsible for your actions and their consequences, protect those entrusted to your care, and obey those who have just authority over you.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5df3319820a4b64",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428352,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5df3319820a4b64",
+  "flags": {},
+  "sort": 0
+}

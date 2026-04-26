@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you roll initiative, you regain a number of superiority dice equal to half your maximum (rounded down).</p>",
+      "value": "<p>When you roll initiative, you regain a number of superiority dice equal to half your maximum (rounded down)</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189502,
+    "modifiedTime": 1777218428343,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s7a03fded292adf3",

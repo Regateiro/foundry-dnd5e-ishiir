@@ -1,0 +1,85 @@
+{
+  "name": "Draconic Magic",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn additional spells when you reach certain levels in this class. These spells depend on the damage type of your chosen ancestry, as shown in the tables below. The spells count as sorcerer spells for you, but they don't count against the number of sorcerer spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Acid Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Create Or Destroy Water, Tasha's Caustic Brew, Darkvision, Melf's Acid Arrow</td></tr><tr><td>5th</td><td>Corrosion, Hunger of Hadar</td></tr><tr><td>7th</td><td>Vitriolic Sphere, Watery Sphere</td></tr><tr><td>9th</td><td>Acid Pit, Passwall</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Cold Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Armor of Agathys, Grease, Rime's Binding Ice, Snilloc's Snowball Swarm</td></tr><tr><td>5th</td><td>Sleet Storm, Slow</td></tr><tr><td>7th</td><td>Ice Storm, Stoneskin</td></tr><tr><td>9th</td><td>Cone of Cold, Hold Monster</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Fire Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Burning Hands, Hellish Rebuke, Heat Metal, Scorching Ray</td></tr><tr><td>5th</td><td>Fireball, Flame Stride</td></tr><tr><td>7th</td><td>Fire Shield, Wall of Fire</td></tr><tr><td>9th</td><td>Flame Strike, Immolation</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Lightning Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Gift of Alacrity, Witch Bolt, Mirror Image, Misty Step</td></tr><tr><td>5th</td><td>Haste, Lightning Bolt</td></tr><tr><td>7th</td><td>Freedom of Movement, Storm Sphere</td></tr><tr><td>9th</td><td>Far Step, Mislead</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Necrotic Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Hex, Shadow Ray, Blindness/Deafness, Infirmity</td></tr><tr><td>5th</td><td>Bestow Curse, Dark Orb</td></tr><tr><td>7th</td><td>Blight, Shadow of Moil</td></tr><tr><td>9th</td><td>Enervation, Negative Energy Flood</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Poison Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Command, Ray of Sickness, Protection from Poison, Ray of Enfeeblement</td></tr><tr><td>5th</td><td>Stinking Cloud, Tongues</td></tr><tr><td>7th</td><td>Dominate Beast, Greater Invisibility</td></tr><tr><td>9th</td><td>Cloudkill, Contagion</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Radiant Spells</caption><thead><tr><th scope=\"col\">Sorcerer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Bless, Cure Wounds, Lesser Restoration, Zone of Truth</td></tr><tr><td>5th</td><td>Daylight, Mass Healing Word</td></tr><tr><td>7th</td><td>Banishment, Guardian of Faith</td></tr><tr><td>9th</td><td>Mass Cure Wounds, Circle of Power</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa20b8a0c7bc987e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428364,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa20b8a0c7bc987e",
+  "flags": {},
+  "sort": 0
+}

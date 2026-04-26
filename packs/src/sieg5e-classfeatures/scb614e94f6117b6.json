@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>Your superiority dice turn into d10s. They turn into d12s.</p>",
+      "value": "<p>Your superiority dice turn into d10s. At 18th level, they turn into d12s.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189505,
+    "modifiedTime": 1777218428345,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!scb614e94f6117b6",

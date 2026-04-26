@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You gain Proficiency with alchemist's supplies. If you already have this Proficiency, you gain Proficiency with one other type of artisan's tools of your choice.</p>",
+      "value": "<p>You gain Proficiency with armorsmith's tools. If you already have this Proficiency, you gain Proficiency with one other type of artisan's tools of your choice.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189468,
+    "modifiedTime": 1777218428319,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sacdfa3483dc424a",

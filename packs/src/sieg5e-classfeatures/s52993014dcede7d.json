@@ -1,0 +1,85 @@
+{
+  "name": "Dragon Ancestor",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You choose one type of dragon as your ancestor. The damage type associated with each dragon is used by features you gain later.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Ancestry</caption><thead><tr><th scope=\"col\">Dragon</th><th scope=\"col\">Damage Type</th></tr></thead><tbody><tr><td>Black</td><td>Acid</td></tr><tr><td>Blue</td><td>Lightning</td></tr><tr><td>Brass</td><td>Fire</td></tr><tr><td>Bronze</td><td>Lightning</td></tr><tr><td>Copper</td><td>Acid</td></tr><tr><td>Gold</td><td>Radiant</td></tr><tr><td>Green</td><td>Poison</td></tr><tr><td>Red</td><td>Fire</td></tr><tr><td>Silver</td><td>Radiant</td></tr><tr><td>White</td><td>Cold</td></tr></tbody></table></div><p>You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your Proficiency bonus is doubled if it applies to the check.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/abilities/dragon-fire-breath-orange.webp",
+  "_id": "s52993014dcede7d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428364,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s52993014dcede7d",
+  "flags": {},
+  "sort": 0
+}

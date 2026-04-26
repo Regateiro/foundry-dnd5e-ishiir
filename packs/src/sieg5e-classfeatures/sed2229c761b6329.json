@@ -1,0 +1,85 @@
+{
+  "name": "Bonus Proficiencies",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Proficiency with thieves' tools. You also gain Proficiency in Sleight of Hand and one additional skill of your choice. If you are already proficient with thieves' tools or in Sleight of Hand, choose another skill Proficiency for each Proficiency you already have.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/trades/academics-investigation-puzzles.webp",
+  "_id": "sed2229c761b6329",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428325,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sed2229c761b6329",
+  "flags": {},
+  "sort": 0
+}

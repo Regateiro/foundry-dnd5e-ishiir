@@ -1,0 +1,85 @@
+{
+  "name": "Oath Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you reach a Paladin level specified in the Genie Spells table, you thereafter always have the listed spells prepared.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Oath of the Noble Genie Spells</caption><thead><tr><th scope=\"col\">Paladin Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Chromatic Orb, Elementalism, Thunderous Smite</td></tr><tr><td>5th</td><td>Mirror Image, Phantasmal Force</td></tr><tr><td>9th</td><td>Fly, Gaseous Form</td></tr><tr><td>13th</td><td>Conjure Minor Elementals, Summon Elemental</td></tr><tr><td>17th</td><td>Banishing Smite, Contact Other Plane</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "scba1cd6334c88ad",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428354,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!scba1cd6334c88ad",
+  "flags": {},
+  "sort": 0
+}

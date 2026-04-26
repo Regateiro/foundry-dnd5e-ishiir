@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Elemental Smite",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose the patron of your oath from Dao, Djinni, Efreeti, or Marid. Whenever you use Divine Smite, you can invoke the effect corresponding to your patron.</p><ul><li><strong>Dao's Crush.</strong> The target has to make a Strength Saving Throw or be Restrained for 1 minute. On its turn, the target can make a Strength check against your Spell Save DC to end the effect.</li><li><strong>Djinni's Escape.</strong> You teleport to an unoccupied space you can see within 30 feet of yourself and take on a mist-like form, which lasts until the end of your next turn. While in this form, you have Immunity to the Grappled, Prone, and Restrained conditions.</li><li><strong>Efreeti's Fury.</strong> The target takes additional fire damage equal to a number of D8s x 1/2 your Proficiency (rounded down). Any die size increment to your Divine Smite also affects this feature. The target is then set ablaze for 1 minute. While under this effect, the target takes fire damage equal to 2 x your Proficiency at the start of each of its turns. At the end of any of its turns, it can make a Dexterity Saving Throw against your Spell Save DC to end the effect.</li><li><strong>Marid's Surge.</strong> The target and each creature of your choice in a 10-foot Emanation originating from you makes a Strength Saving Throw against your spell save DC. On a failed save, the creature is pushed 15 feet straight away from you and has the Prone condition.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8201b5d9ddf62eb",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428354,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8201b5d9ddf62eb",
+  "flags": {},
+  "sort": 0
+}

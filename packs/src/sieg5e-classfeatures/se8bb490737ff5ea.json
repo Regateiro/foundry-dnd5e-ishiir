@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Power of Many",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When a creature you can see within 30 feet of you fails a Saving Throw, you can use your Reaction to choose a different creature you can see within 30 feet of it or you and that isn't already targeted by the same effect to make the same Saving Throw as well. The second creature is not subject to any effects from the Saving Throw and the first creature can use its roll instead of its own if it is higher.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se8bb490737ff5ea",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428335,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se8bb490737ff5ea",
+  "flags": {},
+  "sort": 0
+}

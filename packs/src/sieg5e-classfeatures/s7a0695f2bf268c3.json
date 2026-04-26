@@ -1,0 +1,85 @@
+{
+  "name": "Rite Focus",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your weapon becomes a conduit for the power of your pact with your chosen patron. While you have an active crimson rite, you can use your weapon as a spellcasting focus for your warlock spells, and you gain a specific benefit based on your chosen pact.</p><p><strong>The Archfey.</strong> Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Dexterity Saving Throw against your hemocraft save DC. On a failure, the creature casts dim light in a 10 feet radius and cannot benefit from being Invisible until the end of your next turn. Additionally, Attack Rolls against the creature have Advantage for the duration.</p><p><strong>The Dragon.</strong> When you activate your Crimson Rite, you can change the damage type of your rite to that associated with your draconic patron (as per the warlord dragon patron's Draconic Arcana feature). Additionally, you gain blindsight out to a range of 10 ft. </p><p><strong>The Celestial.</strong> As a Bonus Action or as part of the same Bonus Action used to activate your Crimson Rite, you expend one use of your Blood Maledict feature to heal one creature you can see within 60 feet of you. That creature regains a number of hit points equal to one roll of your hemocraft die + your Hemocraft modifier (minimum of +1).</p><p><strong>The Fathomless.</strong> You can breathe underwater. Additionally, you suffer no Disadvantage on melee weapon attacks for fighting underwater and, once per turn when you damage a creature with a weapon for which you have an active crimson rite, you can reduce that creature's Speed by 10 feet until the start of your next turn.</p><p><strong>The Fiend.</strong> While using the Rite of the Flame, your hemocraft die increases by 1 step for the purposes of dealing damage with your weapon. Additionally, the damage from this rite ignores Resistance to fire damage.</p><p><strong>The Genie.</strong> As a Bonus Action or as part of the same Bonus Action used to activate your Crimson Rite, you expend a use of your Blood Maledict feature to give yourself a Fly Speed of 30 feet, which lasts for a number of rounds equal to your Hemocraft modifier (minimum of 1 round).</p><p><strong>The Great Old One.</strong> When you score a critical hit against a creature, that creature and any other creatures of your choice within 10 feet of it are Frightened of you until the end of your next turn.</p><p><strong>The Hexblade.</strong> When you attack a creature with a weapon for which you have an active crimson rite and the target is under a curse effect (such as the Hex or Bane spell or a blood curse), your crit range against that target increases by 1 step.</p><p><strong>The Kraken.</strong> You can breathe underwater and suffer no Disadvantage on melee weapon attacks for fighting underwater. Additionally, you gain darkvision with a range of 30 feet. If you already have darkvision, its range increases by 30 feet.</p><p><strong>The Spider Queen.</strong> Once on your turn, when you damage a creature with a weapon for which you have an active crimson rite, you can expend one use of your Blood Maledict to force the creature to make a Constitution Saving Throw against your hemocraft save DC. On a failure, the creature is Poisoned until the end of your next turn. This feature ignores Immunity to the poisoned condition.</p><p><strong>The Raven Mother.</strong> A shadowy spirit appears on your shoulder. The spirit assumes the form and game statistics of a raven, and it always obeys your commands, which you can give telepathically. The spirit disappears if it is more than 100 feet from you, but can be resummoned onto your shoulder as a Bonus Action as long as your Crimson Rite is active. The spirit is incorporeal and cannot physically interact with anything except you. It is Immune to all damage and conditions.</p><p>While the raven is perched on your shoulder, you gain darkvision with a range of 30 feet and a bonus to your passive Wisdom (Perception) score and to Wisdom (Perception) checks. The bonus equals your Hemocraft modifier.</p><p><strong>The Seeker.</strong> When a creature you can see within 10 feet damages you with a melee attack, you can use your Reaction to expend one use of your Blood Maledict to deal radiant damage to the attacker. The damage equals one roll of your hemocraft die + your Hemocraft modifier (minimum of +1).</p><p><strong>The Undead.</strong> When you take necrotic damage, you can use your Reaction to halve that damage. In addition, your appearance changes to reflect some aspect of your patron while you have any crimson rite active.</p><p><strong>The Undying.</strong> When you reduce a hostile creature to 0 hit points, you regain a number of hit points equal to one roll of your hemocraft die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7a0695f2bf268c3",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428329,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7a0695f2bf268c3",
+  "flags": {},
+  "sort": 0
+}

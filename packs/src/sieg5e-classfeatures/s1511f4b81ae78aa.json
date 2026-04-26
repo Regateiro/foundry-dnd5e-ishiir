@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You gain Proficiency in two of the following skills of your choice: Arcana, History, Insight, Investigation, Nature, or Perception. You can choose to gain Proficiency with thieves' tools in place of one skill choice.</p>",
+      "value": "<p>You gain Proficiency in three of the following skills of your choice: Acrobatics, Athletics, Investigation, Medicine, Nature, Perception, Stealth, or Survival. You can choose to gain Proficiency with thieves' tools in place of one skill choice.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189504,
+    "modifiedTime": 1777218428344,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s1511f4b81ae78aa",

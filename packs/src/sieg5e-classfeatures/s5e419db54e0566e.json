@@ -1,0 +1,85 @@
+{
+  "name": "Words of the First World",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to invoke primordial fey magic and direct it with your voice, be that song, poetry, or a recital of an ancient tale. You learn Sylvan. In addition, you gain the following options:</p><ul><li><strong>Curse of Ill Fortune.</strong> You can expend one of your Bardic Inspirations as a Bonus Action to curse a creature you can see within 60 feet with bad luck. The curse lasts until the start of your next turn or until you activate its effect as a Reaction.</li><li>Whenever the creature succeeds on a D20 Test, you can choose to force it to reroll the D20 and take the lower result.</li><li>Alternatively, if the creature is missed by an Attack Roll, you can immediately have the attacker reroll the D20 and take the higher result.</li><li><strong>Mantle of Midnight.</strong> As a Bonus Action, you can expend a use of your Bardic Inspiration to turn an ally you can see within 60 feet of yourself Invisible until the start of your next turn. The invisibility ends early if it attacks, casts a spell, or otherwise performs a hostile action.</li><li><strong>Tread the Unseen Path.</strong> As a Bonus Action, you can expend a use of your Bardic Inspiration and teleport yourself or an ally you can see within 60 feet to an unoccupied space you can see within 30 feet of the original position.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5e419db54e0566e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428325,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5e419db54e0566e",
+  "flags": {},
+  "sort": 0
+}

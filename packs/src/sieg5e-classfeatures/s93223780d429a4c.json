@@ -1,0 +1,85 @@
+{
+  "name": "Blessing of the Ravaged Body",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have a pool of power fueled by your zealous fervor that replenishes when you finish a Long Rest. The pool has a number of points equal to five times your Cleric level. You cannot benefit from this feature while you are wearing armor.</p><p>As a Bonus Action, you draw power from the pool to give yourself Temporary Hit Points, up to the maximum amount remaining in the pool.</p><p>You can also expend 5 points from the pool to remove the Charmed, Frightened or Poisoned conditions from yourself, those points do not also give Temporary Hit Points.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s93223780d429a4c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428337,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s93223780d429a4c",
+  "flags": {},
+  "sort": 0
+}

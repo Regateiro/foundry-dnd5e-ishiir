@@ -1,0 +1,85 @@
+{
+  "name": "Domain Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain domain spells at the cleric levels listed on the Fate Domain Spells table. See the Divine Domain class feature for how domain spells work.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Fate Domain Spells</caption><thead><tr><th scope=\"col\">Cleric Level</th><th scope=\"col\">Domain Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Dissonant Whispers, Heroism, See Invisibility, Fortune's Favor</td></tr><tr><td>5th</td><td>Beacon of Hope, Clairvoyance</td></tr><tr><td>7th</td><td>Death Ward, Divination</td></tr><tr><td>9th</td><td>Commune, Geas</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc275dbd855d0de8",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428331,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc275dbd855d0de8",
+  "flags": {},
+  "sort": 0
+}

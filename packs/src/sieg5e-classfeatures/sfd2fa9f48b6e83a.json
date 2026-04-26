@@ -1,0 +1,85 @@
+{
+  "name": "Shield of Ineffable Darkness",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can invoke the power of darkness to punish anyone fool enough to harm you. As a Reaction when a creature you can see damages you, that creature has to make a CON Saving Throw or become Blinded until the end of your next turn.</p><p>You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain one use when you finish a Short Rest and all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfd2fa9f48b6e83a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428331,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfd2fa9f48b6e83a",
+  "flags": {},
+  "sort": 0
+}

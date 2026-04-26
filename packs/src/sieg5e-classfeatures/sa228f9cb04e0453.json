@@ -1,0 +1,85 @@
+{
+  "name": "Primeval Companion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Starting when you choose this circle, you can call upon the primeval creature whose spirit is bound to you. As an Action, you can expend one use of your Wild Shape feature to summon your primeval companion, rather than assuming a beast form. The companion appears in an unoccupied space of your choice within 30 feet of you.</p><p>The primeval companion is friendly to you and your companions, and it obeys your commands. See this creature's game statistics in the Primeval Companion stat block, which uses your Proficiency bonus (PB) in several places. You can determine the cosmetic appearance of the companion; for example, your companion may evoke ancient predators like raptors or saber-toothed tigers, or it might be more inclined for defense, appearing as an armored ankylosaurus or a wooly rhino. These choices have no effect on the companion's game statistics.</p><p>The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are Incapacitated or absent, your companion acts on its own. If you are small enough to ride it, your companion's initiative changes to match yours and it can any of its actions during your turn or immediately after.</p><p>The companion remains until it is reduced to 0 hit points or until you die, at which point the companion vanishes. If you use this feature to summon the companion again and you already have a companion present, the first companion immediately vanishes. Anything the companion was wearing or carrying is left behind when the companion vanishes.</p><p>You can also channel your magic through your primeval companion. When you cast a spell with a range other than self, the spell can originate from you or your primeval companion.</p><p>In addition, if the primeval companion is affected by a spell you cast that allows creatures to make a Saving Throw against its effects, the primeval companion has Advantage on its Saving Throw. If the primeval companion would normally take half damage on a successful save against this spell, the companion instead takes no damage on a successful save and half damage with no additional effects on a failed save.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa228f9cb04e0453",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428339,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa228f9cb04e0453",
+  "flags": {},
+  "sort": 0
+}

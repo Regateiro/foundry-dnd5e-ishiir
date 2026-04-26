@@ -1,0 +1,85 @@
+{
+  "name": "Channeler",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn how to contact spirits beyond the grave, letting their power and knowledge flow through you. You gain the following benefits.</p><ul><li><strong>Guiding Whispers.</strong> You know the Guidance cantrip. It has a range of 60 feet when you cast it.</li><li><strong>Spiritual Focus.</strong> You employ tools that aid you in channeling spirits. You gain a Gaming Set (Playing Cards). You have Proficiency with this Gaming Set, and you can use the cards or one of the following items as a Spellcasting Focus for your Bard spells: Arcane Focus (Crystal or Orb), Candle, or Ink Pen.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc0111e095ef9301",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428326,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc0111e095ef9301",
+  "flags": {},
+  "sort": 0
+}

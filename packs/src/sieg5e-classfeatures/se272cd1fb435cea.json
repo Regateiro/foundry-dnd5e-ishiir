@@ -1,0 +1,85 @@
+{
+  "name": "Mutagencraft",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to master forbidden alchemical formulas—known as mutagens—that can temporarily alter your mental and physical abilities.</p><p>As a Bonus Action, you consume a mutagen, whose effects last until you finish a Short or a Long Rest unless otherwise specified.</p><p>Mutagens are designed for the specific biology of the character who concocted them, and your mutagens have no effect on other creatures. They are also unstable by nature, losing their potency over time and becoming inert if not used before you finish your next Short or a Long Rest.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Mutagencraft</caption><thead><tr><th scope=\"col\">Blood Hunter Level</th><th scope=\"col\">Mutagens Created</th><th scope=\"col\">Formulas Known</th></tr></thead><tbody><tr><td>3rd</td><td>1</td><td>4</td></tr><tr><td>7th</td><td>2</td><td>5</td></tr><tr><td>11th</td><td>2</td><td>6</td></tr><tr><td>15th</td><td>3</td><td>7</td></tr><tr><td>18th</td><td>3</td><td>8</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se272cd1fb435cea",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428328,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se272cd1fb435cea",
+  "flags": {},
+  "sort": 0
+}

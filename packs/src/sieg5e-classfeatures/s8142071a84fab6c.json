@@ -1,0 +1,85 @@
+{
+  "name": "Storm Aura",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You emanate a stormy, magical aura while you rage. The aura extends 10 feet from you in every direction, but not through total cover.</p><p>Your aura has an effect that is active for the duration of your rage, and an additional empowered effect.</p><p>You can empower your aura only once per rage.</p><p>Choose blaze, thunderstorm, or blizzard. Your aura's effect depends on your choice, as detailed below. You can change this choice whenever you finish a Short or a Long Rest.</p><p>If your aura's effects require a Saving Throw, the DC equals 8 + your Proficiency bonus + your Constitution modifier.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8142071a84fab6c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428322,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8142071a84fab6c",
+  "flags": {},
+  "sort": 0
+}

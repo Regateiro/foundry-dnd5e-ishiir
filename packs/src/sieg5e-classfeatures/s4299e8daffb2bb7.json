@@ -1,0 +1,85 @@
+{
+  "name": "Circle Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your mystical connection to the land infuses you with the ability to cast certain spells. At 3rd, 5th, 7th, and 9th level you gain access to circle spells connected to the land where you became a druid. Choose that land—arctic, coast, desert, forest, grassland, mountain, swamp, or Underdark—and consult the associated list of spells.</p><p>Once you gain access to a circle spell, you always have it prepared, and it doesn't count against the number of spells you can prepare each day. If you gain access to a spell that doesn't appear on the druid spell list, the spell is nonetheless a druid spell for you. You can cast these spells while in your Wildshape form.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Arid</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Circle Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Blur, Burning Hands, Fire Bolt</td></tr><tr><td>5th</td><td>Fireball</td></tr><tr><td>7th</td><td>Blight</td></tr><tr><td>9th</td><td>Wall of Stone</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Polar</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Circle Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Fog Cloud, Hold Person, Ray of Frost</td></tr><tr><td>5th</td><td>Sleet Storm</td></tr><tr><td>7th</td><td>Ice Storm</td></tr><tr><td>9th</td><td>Cone of Cold</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Temperate</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Circle Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Misty Step, Shocking Grasp, Sleep</td></tr><tr><td>5th</td><td>Lightning Bolt</td></tr><tr><td>7th</td><td>Freedom of Movement</td></tr><tr><td>9th</td><td>Tree Stride</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Tropical</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Circle Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Acid Splash, Ray of Sickness, Web</td></tr><tr><td>5th</td><td>Stinking Cloud</td></tr><tr><td>7th</td><td>Polymorph</td></tr><tr><td>9th</td><td>Insect Plague</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/water/projectile-ice-teardrop.webp",
+  "_id": "s4299e8daffb2bb7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428338,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4299e8daffb2bb7",
+  "flags": {},
+  "sort": 0
+}

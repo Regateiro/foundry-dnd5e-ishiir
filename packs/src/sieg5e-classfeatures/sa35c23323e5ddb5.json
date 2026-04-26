@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you gain access to this element, you gain Proficiency in one of the following skills of your choice: Acrobatics, Sleight of Hand, Stealth, or Performance.</p>",
+      "value": "<p>When you gain access to this element, you gain Proficiency in one of the following skills of your choice: Athletics, Intimidation, Nature, or Perception.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189508,
+    "modifiedTime": 1777218428346,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sa35c23323e5ddb5",

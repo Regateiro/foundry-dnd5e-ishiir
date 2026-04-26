@@ -1,0 +1,85 @@
+{
+  "name": "Negative Energy Manipulation",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have a pool of deathly energy represented by a number of points equal to twice your Wizard level + your Intelligence modifier.</p><p>When you roll damage for a necromancy spell or an undead you control, you can deal additional necrotic damage by spending points from the pool, up to its current maximum.</p><p>When a creature of at least CR 1/8 dies within 60 feet of you, you can use your Reaction to harvest part of its remaining life force, regaining a number of points equal to the creature's CR (minimum of 1). You cannot do so if the creature is an undead or construct.</p><p>You regain expended points equal to your Proficiency when you finish a Short Rest and all expended points when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s91abe92a474ddbb",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428378,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s91abe92a474ddbb",
+  "flags": {},
+  "sort": 0
+}

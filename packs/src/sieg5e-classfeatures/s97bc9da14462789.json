@@ -1,0 +1,85 @@
+{
+  "name": "Psychic Slash",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can spend 1 ki point to channel ki into your attacks you augment your soul knives to inflict devastating psionic attacks.</p><p>Whenever you hit a creature with one of the attacks granted by your Flurry of Blows and that attack inflicts psychic damage, you can impose one of the following effects on the target:</p><p><strong>Life Drain.</strong> You gain temporary hit points equal to half the damage your attack deals.</p><p><strong>Invoke Terror.</strong> The target must succeed on a Wisdom Saving Throw or become Frightened of you until the end of your next turn.</p><p><strong>Invoke Wrath.</strong> The target suffers Disadvantage on all Attack Rolls against targets other than you until the end of your next turn.</p><p><strong>Astral Slide.</strong> You teleport the target up to 10 feet to a destination you can see.</p><p><strong>Synaptic Overload.</strong> The target has to make an Intelligence Saving Throw or take double damage the next time it takes psychic damage from you before the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s97bc9da14462789",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428351,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s97bc9da14462789",
+  "flags": {},
+  "sort": 0
+}

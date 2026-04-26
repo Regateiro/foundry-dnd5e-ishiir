@@ -1,0 +1,85 @@
+{
+  "name": "One with the Waves",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You no longer have need for weapons. You learn to throw your weight around with the might of the waves and your hands become instruments of Gargan's will - and with that, his crushing, inescapable grasp. You can roll a d8 in place of the normal damage of your Unarmed Strike. If you have both hands free or are attacking a target that you have Grappled, this die changes to a d12.</p><p>Additionally, you gain a Swim Speed equal to your Speed. If you already have a Swim Speed, that Swim Speed instead increases by 30 feet.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s64b403ca077df47",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428322,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s64b403ca077df47",
+  "flags": {},
+  "sort": 0
+}

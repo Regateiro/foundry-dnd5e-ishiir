@@ -1,0 +1,85 @@
+{
+  "name": "Draconic Arcana",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose a draconic patron from the following table. Each patron is associated with a damage type.</p><p>Every time you gain access to a new spell level on your Dragon Expanded Spells table, including this one, you can replace one of the spells listed for that spell level with another spell of the same level that deals damage of the chosen type. You can change your choice for one spell learned in this manner whenever you gain another level in this class.</p><p>Additionally, you can change the damage type of any of your cantrips to the chosen type above when you cast them.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Draconic Patron</caption><thead><tr><th scope=\"col\">Draconic Patron</th><th scope=\"col\">Damage Type</th></tr></thead><tbody><tr><td>Black</td><td>Acid</td></tr><tr><td>Blue</td><td>Lightning</td></tr><tr><td>Brass</td><td>Fire</td></tr><tr><td>Bronze</td><td>Lightning</td></tr><tr><td>Copper</td><td>Acid</td></tr><tr><td>Gold</td><td>Radiant</td></tr><tr><td>Green</td><td>Poison</td></tr><tr><td>Jabberwock</td><td>Fire</td></tr><tr><td>Night</td><td>Force</td></tr><tr><td>Red</td><td>Fire</td></tr><tr><td>Shadow</td><td>Necrotic</td></tr><tr><td>Silver</td><td>Radiant</td></tr><tr><td>Sylvan</td><td>Poison</td></tr><tr><td>White</td><td>Cold</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb5036d24c2f634d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428372,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb5036d24c2f634d",
+  "flags": {},
+  "sort": 0
+}

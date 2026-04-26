@@ -1,0 +1,85 @@
+{
+  "name": "Spirits from Beyond",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>While holding a Spellcasting Focus, you can take a Bonus Action to expend one use of your Bardic Inspiration and call forth the powers of a spirit. Roll the Bardic Inspiration die and refer to the Spirits from Beyond table to determine the spirit you channel, then choose one creature you can see within 30 feet of yourself as the spirit's target. The spirit immediately takes effect; if a spirit's effect requires a Saving Throw, the DC equals your Bard spell save DC.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Spirits from Beyond</caption><thead><tr><th scope=\"col\">Bardic Insp. Die</th><th scope=\"col\">Spirit</th></tr></thead><tbody><tr><td>1</td><td>Beloved. The target regains Hit Points equal to one roll of your Bardic Inspiration die plus your Charisma modifier.</td></tr><tr><td>2</td><td>Sharpshooter. The target takes Force damage equal to one roll of your Bardic Inspiration die plus your Charisma modifier.</td></tr><tr><td>3</td><td>Avenger. Until the end of your next turn, any creature that hits the target with a melee attack roll takes Force damage equal to a roll of your Bardic Inspiration die.</td></tr><tr><td>4</td><td>Renegade. The target can immediately take a Reaction to teleport up to 30 feet to an unoccupied space it can see.</td></tr><tr><td>5</td><td>Fortune Teller. The target has Advantage on D20 Tests until the start of your next turn.</td></tr><tr><td>6</td><td>Wayfarer. The target gains Temporary Hit Points equal to a roll of your Bardic Inspiration die plus your Bard level. While it has these Temporary Hit Points, the target's Speed increases by 10 feet.</td></tr><tr><td>7</td><td>Trickster. The target makes a Wisdom Saving Throw. On a failed save, the target takes Psychic damage equal to two rolls of your Bardic Inspiration die and has the Charmed condition until the start of your next turn. On a successful save, the target takes half as much damage only.</td></tr><tr><td>8</td><td>Shade. The target gains the Invisible condition until the end of its next turn or until the target makes an attack roll, deals damage, or casts a spell. When the invisibility ends, each creature in a 5-foot Emanation originating from the target must succeed on a Constitution Saving Throw or take Necrotic damage equal to two rolls of your Bardic Inspiration die.</td></tr><tr><td>9</td><td>Arsonist. The target makes a Dexterity Saving Throw, taking Fire damage equal to four rolls of your Bardic Inspiration die on a failed save or half as much on a successful one.</td></tr><tr><td>10</td><td>Coward. The target and each creature of your choice in a 30-foot Emanation originating from the target must succeed on a Wisdom Saving Throw or have the Frightened condition until the start of your next turn. While Frightened, a creature's Speed is halved, and it can take either an Action or a Bonus Action, not both.</td></tr><tr><td>11</td><td>Brute. Each creature of your choice in a 30-foot Emanation originating from the target makes a Strength Saving Throw. On a failed save, a creature takes Thunder damage equal to three rolls of your Bardic Inspiration die and has the Prone condition. On a successful save, a creature takes half as much damage only.</td></tr><tr><td>12</td><td>Controlled Channeling. You determine the spirit's effect by choosing one of the other rows in this table.</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9061d0eaf247879",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428326,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9061d0eaf247879",
+  "flags": {},
+  "sort": 0
+}

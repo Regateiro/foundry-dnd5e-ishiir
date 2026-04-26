@@ -1,0 +1,85 @@
+{
+  "name": "Battlerager Armor",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Proficiency in heavy armor and ignore all restrictions for Barbarian class features while wearing heavy armor. You also gain the ability to modify your armor with spikes, blades, and other hazardous materials and turn it into a weapon: spiked armor.</p><p>Every time you finish a Short Rest, you can use this feature to remove these materials from your current spiked armor and attach them to another armor of your choice.</p><p>Spiked armor has the same properties as the original armor. Additionally, it counts as a heavy martial melee weapon with a reach of 5 ft that you are proficient in. On a hit, it deals 1d4 piercing damage. You use your Strength modifier for the attack and damage rolls. If spiked your armor has a permanent bonus to its armor class (e.g. the masterwork property), you add this bonus to your attack and damage rolls with it.</p><p>When you are raging and wearing spiked armor, you can make one attack with your spiked armor as a Bonus Action.</p><p>Additionally, when you successfully grapple a creature or shove it Prone, the creature also takes damage equal to your Strength modifier. If you are raging, you add your rage damage bonus to this damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5740f6583a343e1",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428321,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5740f6583a343e1",
+  "flags": {},
+  "sort": 0
+}

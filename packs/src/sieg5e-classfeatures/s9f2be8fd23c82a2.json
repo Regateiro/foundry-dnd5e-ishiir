@@ -1,0 +1,85 @@
+{
+  "name": "Hexblade's Curse",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to place a baleful curse on someone. As a Bonus Action, choose one creature you can see within 30 feet of you. The target is cursed for 1 minute. The curse ends early if the target dies, you die, or you are Incapacitated. Until the curse ends, you gain the following benefits:</p><ul><li>You gain a bonus to damage rolls against the cursed target. The bonus equals your Proficiency bonus.</li><li>Any Attack Roll you make against the cursed target is a critical hit on a roll of 19 or 20 on the d20.</li><li>If the cursed target dies, you regain hit points equal to your warlock level + your Charisma modifier (minimum of 1 hit point).</li></ul><p>You can use this feature a number of times equal to half your Proficiency (rounded up). You can regain all expended uses when you finish a Short or a Long Rest. You can also expend a Pact Magic slot to regain a number of expended uses up to half the slots spell level (rounded up).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9f2be8fd23c82a2",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428370,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9f2be8fd23c82a2",
+  "flags": {},
+  "sort": 0
+}

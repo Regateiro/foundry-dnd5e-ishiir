@@ -1,0 +1,85 @@
+{
+  "name": "Oath Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain oath spells at the paladin levels listed in the Oath of Glory Spells table. See the Sacred Oath class feature for how oath spells work.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Oath of Glory Spells</caption><thead><tr><th scope=\"col\">Paladin Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Guiding Bolt, Heroism</td></tr><tr><td>5th</td><td>Enhance Ability, Magic Weapon</td></tr><tr><td>9th</td><td>Haste, Protection from Energy</td></tr><tr><td>13th</td><td>Compulsion, Freedom of Movement</td></tr><tr><td>17th</td><td>Legend Lore, Yolande's Regal Presence</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s48b56d01f19fd7a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428356,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s48b56d01f19fd7a",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Oath Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain oath spells at the paladin levels listed.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Oath of the Crown Spells</caption><thead><tr><th scope=\"col\">Paladin Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Command, Compelled Duel</td></tr><tr><td>5th</td><td>Warding Bond, Zone of Truth</td></tr><tr><td>9th</td><td>Aura of Vitality, Spirit Guardians</td></tr><tr><td>13th</td><td>Banishment, Guardian of Faith</td></tr><tr><td>17th</td><td>Circle of Power, Geas</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sac78de7bdad211f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428353,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sac78de7bdad211f",
+  "flags": {},
+  "sort": 0
+}

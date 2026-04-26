@@ -1,0 +1,85 @@
+{
+  "name": "Spirit Totem",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can call forth nature spirits to influence the world around you. As a Bonus Action, you can magically summon an incorporeal spirit to a point you can see within 60 feet of you. The spirit creates an aura in a 30-foot radius around that point. It counts as neither a creature nor an object, though it has the spectral appearance of the creature it represents.</p><p>As a Bonus Action, you can move the spirit up to 60 feet to a point you can see.</p><p>The spirit persists for 1 minute or until you're Incapacitated. Once you use this feature, you can't use it again until you finish a Short or a Long Rest. You can also spend a use of your Wildshape (no action required) to regain a use of this feature. But you can not have more than one spirit totem active at the same time.</p><p>The effect of the spirit's aura depends on the type of spirit you summon from the options below.</p><p><strong>Bear Spirit.</strong> The bear spirit grants you and your allies its might and endurance. Each creature of your choice in the aura when the spirit appears gains temporary hit points equal to 5 + your druid level. In addition, you and your allies gain Advantage on strength checks and Strength Saving Throws while in the aura.</p><p><strong>Hawk Spirit.</strong> The hawk spirit is a consummate hunter, aiding you and your allies with its keen sight. When a creature makes an Attack Roll against a target in the spirit's aura, you can use your Reaction to grant Advantage to that Attack Roll. In addition, you and your allies have Advantage on Wisdom (Perception) checks while in the aura.</p><p><strong>Unicorn Spirit.</strong> The unicorn spirit lends its protection to those nearby. You and your allies gain Advantage on all Ability Checks made to detect creatures in the spirit's aura. In addition, if you cast a spell using a spell slot that restores hit points to any creature inside or outside the aura, each creature of your choice in the aura also regains hit points equal to your druid level.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s61d9adc85f78bce",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428339,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s61d9adc85f78bce",
+  "flags": {},
+  "sort": 0
+}

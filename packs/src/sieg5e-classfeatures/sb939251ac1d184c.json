@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Sanctified Mark",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you cast the Hunter's Mark spell or transfer its effect to a new target, you can transform the spell into a Sanctified Mark as part of the same Bonus Action. The effect persists while this casting of Hunter's Mark is active, including when you select a new target. Sanctified Mark retains all the usual effects of Hunter's Mark in addition to the following:</p><ul><li>The target of this effect cannot benefit from Invisibility against you. And the range of any Locate X spell you cast to track the creature is doubled.</li><li>When you hit the target with a weapon attack, you can choose to change the damage type of your weapon and Sanctified Mark to radiant or necrotic.</li><li>The spell does not count towards your Concentration limit, though you still have to roll Concentration Saving Throws as normal. If you fail a Concentration Saving Throws, you lose Concentration on all spells you are concentrating on.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb939251ac1d184c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428333,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb939251ac1d184c",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Expanded Spell List",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your patron lets you choose from an expanded list of spells. When you gain access to a new pact magic spell level, you can select one of the options listed for your patron. You learn that spell and it does not count against the number of warlock spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Archfey Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Faerie Fire, Sleep</td></tr><tr><td>2nd</td><td>Calm Emotions, Phantasmal Force</td></tr><tr><td>3rd</td><td>Blink, Plant Growth</td></tr><tr><td>4th</td><td>Dominate Beast, Greater Invisibility</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Celestial Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Cure Wounds, Guiding Bolt</td></tr><tr><td>2nd</td><td>Flaming Sphere, Lesser Restoration</td></tr><tr><td>3rd</td><td>Daylight, Revivify</td></tr><tr><td>4th</td><td>Guardian of Faith, Wall of Fire</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Dragon Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Cause Fear, Command</td></tr><tr><td>2nd</td><td>Darkvision, Dragon's Breath</td></tr><tr><td>3rd</td><td>Counterspell, Dispel Magic</td></tr><tr><td>4th</td><td>Elemental Bane, Spell Turning</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Fathomless Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Create Or Destroy Water, Thunderwave</td></tr><tr><td>2nd</td><td>Gust of Wind, Silence</td></tr><tr><td>3rd</td><td>Lightning Bolt, Sleet Storm</td></tr><tr><td>4th</td><td>Control Water, Summon Elemental (Water only)</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Fiend Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Burning Hands, Command</td></tr><tr><td>2nd</td><td>Blindness/Deafness, Scorching Ray</td></tr><tr><td>3rd</td><td>Fireball, Stinking Cloud</td></tr><tr><td>4th</td><td>Fire Shield, Wall of Fire</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Genie Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Detect Evil and Good, Sanctuary (Dao), Thunderwave (Djinni), Burning Hands (Efreeti), Fog Cloud (Marid)</td></tr><tr><td>2nd</td><td>Phantasmal Force, Spike Growth (Dao), Gust of Wind (Djinni), Scorching Ray (Efreeti), Blur (Marid)</td></tr><tr><td>3rd</td><td>Create Food and Water, Meld into Stone (Dao), Wind Wall (Djinni), Fireball (Efreeti), Sleet Storm (Marid)</td></tr><tr><td>4th</td><td>Phantasmal Killer, Stone Shape (Dao), Greater Invisibility (Djinni), Fire Shield (Efreeti), Control Water (Marid)</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Great Old One Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Dissonant Whispers, Tasha's Hideous Laughter</td></tr><tr><td>2nd</td><td>Detect Thoughts, Phantasmal Force</td></tr><tr><td>3rd</td><td>Clairvoyance, Sending</td></tr><tr><td>4th</td><td>Dominate Beast, Evard's Black Tentacles</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Hexblade Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Shield, Wrathful Smite</td></tr><tr><td>2nd</td><td>Blur, Branding Smite</td></tr><tr><td>3rd</td><td>Blink, Elemental Weapon</td></tr><tr><td>4th</td><td>Phantasmal Killer, Staggering Smite</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Kraken Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Thunderwave, Create Or Destroy Water</td></tr><tr><td>2nd</td><td>Augury, Gust of Wind</td></tr><tr><td>3rd</td><td>Call Lightning, Water Breathing</td></tr><tr><td>4th</td><td>Evard's Black Tentacles, Control Water</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Spider Queen Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Faerie Fire, Jump</td></tr><tr><td>2nd</td><td>Darkness, Web</td></tr><tr><td>3rd</td><td>Fear, Vampiric Touch</td></tr><tr><td>4th</td><td>Dimension Door, Giant Insect</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Raven Mother Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>False Life, Sanctuary</td></tr><tr><td>2nd</td><td>Silence, Spiritual Weapon</td></tr><tr><td>3rd</td><td>Feign Death, Speak with Dead</td></tr><tr><td>4th</td><td>Ice Storm, Death Ward</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Seeker Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Feather Fall, Jump</td></tr><tr><td>2nd</td><td>Levitate, Locate Object</td></tr><tr><td>3rd</td><td>Clairvoyance, Sending</td></tr><tr><td>4th</td><td>Arcane Eye, Locate Creature</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Undead Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>Bane, False Life</td></tr><tr><td>2nd</td><td>Blindness/Deafness, Phantasmal Force</td></tr><tr><td>3rd</td><td>Phantom Steed, Speak with Dead</td></tr><tr><td>4th</td><td>Death Ward, Greater Invisibility</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Undying Expanded Spells</caption><thead><tr><th scope=\"col\">Spell Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>1st</td><td>False Life, Ray of Sickness</td></tr><tr><td>2nd</td><td>Blindness/Deafness, Silence</td></tr><tr><td>3rd</td><td>Feign Death, Speak with Dead</td></tr><tr><td>4th</td><td>Aura of Life, Death Ward</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/encase-creature-monster-hold.webp",
+  "_id": "s76dd35dd803f77b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428328,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s76dd35dd803f77b",
+  "flags": {},
+  "sort": 0
+}

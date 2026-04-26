@@ -1,0 +1,85 @@
+{
+  "name": "Hybrid Transformation Features",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>While you are transformed, you gain the following benefits and drawbacks:</p><p><strong>Feral Might.</strong> You have Advantage on strength checks and Strength Saving Throws, and you have a +2 bonus to melee damage rolls. This bonus increases to +3 at 9th level and to +4 at 16th level.</p><p><strong>Resilient Hide.</strong> While you are not wearing heavy armor, you have a +1 bonus to AC. This bonus increases to +2 at 11th level.</p><p><strong>Predatory Strikes.</strong> You can apply your Crimson Rite feature to your Unarmed Strikes, which you treat as one weapon. You can use Dexterity instead of Strength for the attack and damage rolls of your Unarmed Strikes, which deal 1d8 bludgeoning, piercing, or slashing damage (your choice). This damage increases to 1d10 at 11th level and 1d12 at 17th level.</p><p>Additionally, when you use the Attack action to make an Unarmed Strike, you can make one additional Unarmed Strike as a Bonus Action.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s2b8908139013d12",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428328,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s2b8908139013d12",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Wild Surge",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.</p><p>If the effect requires a Saving Throw, the DC equals 8 + your Proficiency bonus + your Constitution modifier.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Wild Magic</caption><thead><tr><th scope=\"col\">d8</th><th scope=\"col\">Magical Effect</th></tr></thead><tbody><tr><td>1</td><td>Shadowy tendrils lash around you. Each creature of your choice that you can see within 30 feet of you must succeed on a Constitution Saving Throw or take 1d12 necrotic damage. You also gain 1d12 temporary hit points.</td></tr><tr><td>2</td><td>You teleport up to 30 feet to an unoccupied space you can see. Until your rage ends, you can use this effect again on each of your turns as a Bonus Action.</td></tr><tr><td>3</td><td>An intangible spirit, which looks like a flumph or a pixie (your choice), appears within 5 feet of one creature of your choice that you can see within 30 feet of you. At the end of the current turn, the spirit explodes, and each creature within 5 feet of it must succeed on a Dexterity Saving Throw or take 1d6 force damage. Until your rage ends, you can use this effect again, summoning another spirit, on each of your turns as a Bonus Action.</td></tr><tr><td>4</td><td>Magic infuses one weapon of your choice that you are holding. Until your rage ends, the weapon's damage type changes to force, and it gains the light and thrown properties, with a normal range of 20 feet and a long range of 60 feet. If the weapon leaves your hand, the weapon reappears in your hand at the end of the current turn.</td></tr><tr><td>5</td><td>Whenever a creature hits you with an Attack Roll before your rage ends, that creature takes 1d6 force damage, as magic lashes out in retribution.</td></tr><tr><td>6</td><td>Until your rage ends, you are surrounded by multi colored, protective lights; you gain a +1 bonus to AC, and while within 10 feet of you, your allies gain the same bonus.</td></tr><tr><td>7</td><td>Flowers and vines temporarily grow around you. Until your rage ends, the ground within 15 feet of you is 3 for your enemies.</td></tr><tr><td>8</td><td>A bolt of light shoots from your chest. Another creature of your choice that you can see within 30 feet of you must succeed on a Constitution Saving Throw or take 1d6 radiant damage and be Blinded until the start of your next turn. Until your rage ends, you can use this effect again on each of your turns as a Bonus Action.</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s3f39525f6c6feaa",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428323,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3f39525f6c6feaa",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Bestial Fury",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you enter your rage, the influence of your bestial spark on your form intensifies. You gain the listed benefit for your natural weapon for the duration of your rage. This effect only applies to attacks with your chosen natural weapon.</p><p><strong>Bite.</strong> When you damage a creature, you regain hitpoints equal to half your Proficiency (rounded up). This amount is doubled against creatures that have half or less of their maximum hitpoints and tripled if you reduce it to 0 hitpoints.</p><p><strong>Claws.</strong> Once on each of your turns when you attack a creature, you can immediately make another attack.</p><p><strong>Horns.</strong> Your critical range increases by 1. On your turn, when you move towards a creature in a straight line for the first time, you can add 1 damage for every 5 ft spent as part of that movement to the first melee weapon damage roll you make against that creature.</p><p><strong>Hooves.</strong> Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to shove the target as part of this attack. Attacks against Prone creatures deal additional damage equal to your Proficiency.</p><p><strong>Pincers.</strong> Once per turn, when you hit a creature that is no more than 1 size larger than you, you can attempt to grapple the target as part of this attack. Creatures Grappled by you have Disadvantage on Attack Rolls.</p><p><strong>Tail.</strong> Your reach increases by 5 feet and when an enemy provokes an Opportunity Attack from you, you can make the attack without spending a Reaction, but you cannot make another Opportunity Attack until the start of your next turn.</p><p>If a creature you can see within your reach hits you with an Attack Roll, you can use your Reaction to add your Strength modifier to your AC against that attack, possibly causing it to miss.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s1c368907184b225",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428321,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1c368907184b225",
+  "flags": {},
+  "sort": 0
+}

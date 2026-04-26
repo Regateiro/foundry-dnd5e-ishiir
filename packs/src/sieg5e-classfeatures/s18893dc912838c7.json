@@ -1,0 +1,85 @@
+{
+  "name": "Steps of the Fey",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your patron grants you the ability to move between the boundaries of the planes. You learn the Misty Step spell and you can cast it without expending a spell slot a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p><p>In addition, whenever you cast that spell, you can choose one of the following additional effects.</p><p><strong>Refreshing Step.</strong> Immediately after you teleport, you or one creature you can see within 10 feet of yourself gains Temporary Hit Points equal to half your Warlock level (rounded down) + your Charisma modifier.</p><p><strong>Taunting Step.</strong> Creatures within 5 feet of the space you left must succeed on a Wisdom Saving Throw against your spell save DC or have Disadvantage on Attack Rolls against creatures other than you until the start of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s18893dc912838c7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428369,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s18893dc912838c7",
+  "flags": {},
+  "sort": 0
+}

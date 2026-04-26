@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the following Channel Divinity options. See the Sacred Oath class feature for how Channel Divinity works.</p><p><strong>Watcher's Will.</strong> You can use your Channel Divinity to invest your presence with the warding power of your faith. As an Action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). For 1 minute, you and the chosen creatures have Advantage on Intelligence, Wisdom, and Charisma Saving Throws.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "",
+      "per": "lr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/lightning/bolt-strike-smoke-yellow.webp",
+  "_id": "sda1957570f52e78",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428357,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sda1957570f52e78",
+  "flags": {},
+  "sort": 0
+}

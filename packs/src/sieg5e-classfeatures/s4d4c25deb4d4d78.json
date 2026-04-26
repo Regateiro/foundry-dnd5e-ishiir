@@ -1,0 +1,85 @@
+{
+  "name": "Mantle of Flame",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can unleash the phoenix fire that blazes within you.</p><p>As a Bonus Action, you magically wreathe yourself in swirling fire, as your eyes glow like hot coals. For 1 minute, you gain the following benefits:</p><ul><li>You shed bright light in a 30-foot radius and dim light for an additional 30 feet.</li><li>Any creature takes fire damage equal to your Charisma modifier if it hits you with a melee attack from within 10 feet of you or if it touches you.</li><li>Whenever you roll fire damage on your turn, the roll gains a bonus to equal to your Charisma modifier.</li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you spend 2 sorcery points to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4d4c25deb4d4d78",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428365,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4d4c25deb4d4d78",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Draconic Disciple",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can channel draconic power to magnify your presence and imbue your Unarmed Strikes with the essence of a dragon's breath. You gain the following benefits:</p><ul><li><strong>Draconic Presence.</strong> If you fail a Charisma (Intimidation) or Charisma (Persuasion) check, you can use your Reaction to reroll the check, as you tap into the mighty presence of dragons. Once you use this feature, you can't use it again until you finish a Short or a Long Rest.</li><li><strong>Draconic Strike.</strong> When you damage a target with an Unarmed Strike, you can change the damage type to acid, cold, fire, lightning, or poison.</li><li><strong>Tongue of Dragons.</strong> You learn to speak, read, and write Draconic or one other language of your choice.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa547612b4947189",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428350,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa547612b4947189",
+  "flags": {},
+  "sort": 0
+}

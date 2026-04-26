@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Cleansing Current",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can use your Channel Divinity to summon a current of magical water to cleanse allies and wash away your foes.</p><p>The current rushes from your position in a line 15 ft wide and 30 ft long. You can end one disease or poison currently affecting any of your allies in the area of effect. If an ally is afflicted by multiple such effects, you choose which one to remove.</p><p>All hostile creatures in the area of effect have to make a STR Saving Throw against your spell save DC. On a failure, they are pushed 10 ft away from you in a straight line and knocked Prone.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se04389b7bd7931c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428336,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se04389b7bd7931c",
+  "flags": {},
+  "sort": 0
+}

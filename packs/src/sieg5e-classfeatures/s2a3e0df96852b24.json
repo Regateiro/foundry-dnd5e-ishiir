@@ -1,0 +1,85 @@
+{
+  "name": "Protector's Mark",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you hit a creature with a weapon, you can deal an extra 1d6 damage of the weapon's type to the target, which can take this extra damage only once per turn. The creature is then marked by you until the end of your next turn. While it is within 5 feet of you, the marked creature has Disadvantage on attack rolls against targets other than you and counts as your Favored Enemy. This mark ends early if you are Incapacitated or die.</p><p>The extra damage increases to 2d6 when you reach 11th level in this class.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s2a3e0df96852b24",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428359,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s2a3e0df96852b24",
+  "flags": {},
+  "sort": 0
+}

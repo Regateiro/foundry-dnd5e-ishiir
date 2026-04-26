@@ -1,0 +1,85 @@
+{
+  "name": "Mystic Focus",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You keep your magical power and martial focus in perfect balance, allowing you to convert spell slots into Ki Points, or convert Ki Points into spell slots.</p><p><strong>Converting Spell Slots to Ki Points.</strong> You can expend a spell slot to regain a number of expended Ki Points equal to the slot's level (no action required).</p><p><strong>Recovering Spell Slots.</strong> As a Bonus Action, you can transform unexpended Ki Points to recover one expended spell slot. The Recovering Spell Slots table shows the cost of recovering a spell slot of a given level, and it lists the minimum Monk level you must be to recover a slot. You can recover a spell slot no higher than level 4.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Recovering Spell Slots</caption><thead><tr><th scope=\"col\">Spell Slot Level</th><th scope=\"col\">Ki Point Cost</th><th scope=\"col\">Min. Monk Level</th></tr></thead><tbody><tr><td>1</td><td>2</td><td>6</td></tr><tr><td>2</td><td>3</td><td>7</td></tr><tr><td>3</td><td>5</td><td>13</td></tr><tr><td>4</td><td>6</td><td>19</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4943879942bd90f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428348,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4943879942bd90f",
+  "flags": {},
+  "sort": 0
+}

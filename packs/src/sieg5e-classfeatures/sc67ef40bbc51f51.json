@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Bone-Chilling Cold",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can use your Channel Divinity to inflict your enemies with a deep, biting cold that cripples their ability to fight or cast spells.</p><p>As an Action, you present your holy symbol and choose a number of creatures up to equal to your Proficiency you can see within 30 feet of you. Each affected creature has to make a CON Saving Throw. Any creature affected by your Winter's Touch class feature has Disadvantage on this Saving Throw.</p><p>On a failure, their movement Speed is halved and they have Disadvantage on Ability Checks and Attack Rolls for 1 minute. If the creature attempts to cast a spell with a casting time of 1 action, roll a d20. On an 11 or higher, the creature completes the spell as normal. On a 10 or lower, the spell is lost. At the end of their turn, they can repeat the Saving Throw, ending the effect on a success.</p><p>This feature has no effect on creatures that are Immune to cold damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc67ef40bbc51f51",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428337,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc67ef40bbc51f51",
+  "flags": {},
+  "sort": 0
+}

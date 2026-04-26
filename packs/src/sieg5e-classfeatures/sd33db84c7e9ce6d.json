@@ -1,0 +1,85 @@
+{
+  "name": "Symbiotic Entity",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to channel magic into your spores. As a Bonus Action, you can expend a use of your Wild Shape feature to awaken those spores, rather than transforming into a beast form, and you gain 4 temporary hit points for each level you have in this class. While this feature is active, you gain the following benefits:</p><ul><li>When you deal your Halo of Spores damage, roll the damage die a second time and add it to the total.</li><li>Your weapon attacks and spells deal additional damage equal to your Halo of Spores to creatures within the area of effect of your Halo of Spores.</li></ul><p>These benefits last for 10 minutes, until you lose all these temporary hit points, or until you use your Wild Shape again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd33db84c7e9ce6d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428340,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd33db84c7e9ce6d",
+  "flags": {},
+  "sort": 0
+}

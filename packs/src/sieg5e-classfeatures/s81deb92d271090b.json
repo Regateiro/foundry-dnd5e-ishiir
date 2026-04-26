@@ -1,0 +1,85 @@
+{
+  "name": "Tumbling Fool",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You master a variety of acrobatic techniques that allow you to evade danger. As a Bonus Action, you can tumble. When you tumble, you gain the following benefits for the rest of your turn:</p><ul><li>You gain the benefits of taking the Dash and Disengage actions.</li><li>You gain a Climb Speed equal to your current Speed.</li><li>You take half damage from falling.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s81deb92d271090b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428325,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s81deb92d271090b",
+  "flags": {},
+  "sort": 0
+}

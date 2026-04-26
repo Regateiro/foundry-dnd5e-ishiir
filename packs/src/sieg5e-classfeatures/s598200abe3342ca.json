@@ -1,0 +1,85 @@
+{
+  "name": "Rite of Dawn",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn the Rite of the Dawn as part of your Crimson Rite feature. When you activate the Rite of the Dawn, the extra damage dealt by your rite is radiant damage. Additionally, while that rite is active on your weapon, you gain the following benefits:</p><ul><li>Your weapon sheds bright light out to a range of 20 feet. This light counts as sunlight when you reach lvl 11 in this class.</li><li>You have Resistance to necrotic damage.</li><li>When you hit an undead creature with a weapon for which the Rite of the Dawn is active, you roll an additional hemocraft die when determining the extra damage from the rite.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s598200abe3342ca",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428327,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s598200abe3342ca",
+  "flags": {},
+  "sort": 0
+}

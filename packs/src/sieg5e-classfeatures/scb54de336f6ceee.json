@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You gain Proficiency with heavy armor. You also gain Proficiency with armorsmith's tools. If you already have this tool Proficiency, you gain Proficiency with one other type of artisan's tools of your choice.</p>",
+      "value": "<p>You gain the following benefits.</p><p><strong>Tool Proficiency.</strong> You gain proficiency with Calligrapher's Supplies and Cartographer's Tools. If you already have one of these proficiencies, you gain proficiency with one other type of Artisan's Tools of your choice (or with two other types if you have both).</p><p><strong>Scroll Crafting.</strong> When you craft a Spell Scroll, the amount of time required to craft it is halved.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189469,
+    "modifiedTime": 1777218428319,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!scb54de336f6ceee",

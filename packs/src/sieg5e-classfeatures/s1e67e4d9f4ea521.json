@@ -1,0 +1,85 @@
+{
+  "name": "Ordained Huntsman",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Proficiency in three of the following skills: Animal Handling, Nature, Perception, Stealth, Survival. You can use your Wisdom in place any ability score normally used for any of these skills, regardless of whether you obtained them through this feature.</p><p>Additionally, you can perform up to two tasks during the Travel Phase of Overland Travel.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s1e67e4d9f4ea521",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428332,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1e67e4d9f4ea521",
+  "flags": {},
+  "sort": 0
+}

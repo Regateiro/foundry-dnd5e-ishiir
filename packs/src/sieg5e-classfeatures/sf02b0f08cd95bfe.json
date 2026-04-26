@@ -1,0 +1,85 @@
+{
+  "name": "Channel Divinity: Rebuke the Defiler",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to rebuke those who lash out at your in violence.</p><p>As a Reaction when a creature you can see within 30 feet of you inflicts damage, you force that creature to make a Wisdom save. On a failed Saving Throw, it takes psychic damage equal to the damage dealt. On a successful save, it takes half that damage.</p><p>If the creature made multiple attacks, select one attack to determine the damage dealt. If the creature used one or more effects that damaged multiple targets, choose the damage take by one of those targets from one of the effects.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf02b0f08cd95bfe",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428330,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf02b0f08cd95bfe",
+  "flags": {},
+  "sort": 0
+}

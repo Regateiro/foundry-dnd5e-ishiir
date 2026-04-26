@@ -1,0 +1,85 @@
+{
+  "name": "Ties That Bind",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can temporarily tie your fate to others. As an Action, you can touch one object or creature and magically tie a strand of fate from yourself to it for 1 hour or until you use this feature again. An unwilling creature must succeed on a Wisdom Saving Throw against your spell save DC to resist this effect. While the target is bound to you and on the same plane of existence as you, you can sense the direction to the target's location, and you know the direction of its movement if it is in motion.</p><p>In addition, once per turn when you cast a spell using a spell slot to deal damage or restore hit points to the target, roll a d6, and the target receives extra damage or healing, respectively, equal to the number rolled.</p><p>You can use this feature's action a number of times equal to your Proficiency bonus, and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5a8629f3983b0f9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428332,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5a8629f3983b0f9",
+  "flags": {},
+  "sort": 0
+}

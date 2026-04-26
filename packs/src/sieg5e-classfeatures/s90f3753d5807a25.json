@@ -1,0 +1,85 @@
+{
+  "name": "Star Map",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You've created a star chart as part of your heavenly studies. It is a Tiny object and can serve as a spellcasting focus for your druid spells. You determine its form by rolling on the Star Map table or by choosing one.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Star Map</caption><thead><tr><th scope=\"col\">d6</th><th scope=\"col\">Map Form</th></tr></thead><tbody><tr><td>1</td><td>A scroll covered with depictions of constellations</td></tr><tr><td>2</td><td>A stone tablet with fine holes drilled through it</td></tr><tr><td>3</td><td>A speckled owlbear hide, tooled with raised marks</td></tr><tr><td>4</td><td>A collection of maps bound in an ebony cover</td></tr><tr><td>5</td><td>A crystal that projects starry patterns when placed before a light</td></tr><tr><td>6</td><td>Glass disks that depict constellations</td></tr></tbody></table></div><p>While holding this map, you have these benefits:</p><ul><li>You know the Guidance cantrip.</li><li>You have the Guiding Bolt spell prepared. It counts as a druid spell for you, and it doesn't count against the number of spells you can have prepared.</li><li>You can cast Guiding Bolt without expending a spell slot. You can do so a number of times equal to your Proficiency bonus, and you regain all expended uses when you finish a Long Rest.</li></ul><p>If you lose the map, you can perform a 1-hour ceremony to magically create a replacement. This ceremony can be performed during a Short or a Long Rest, and it destroys the previous map.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s90f3753d5807a25",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777218428340,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s90f3753d5807a25",
+  "flags": {},
+  "sort": 0
+}
