@@ -14,8 +14,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s62b945405560121",
-            "Compendium.dnd5e.sieg5e-classfeatures.s15ea3b1cad92b01"
+            "Compendium.dnd5e.sieg5e-classfeatures.sd373c9323fa3b68",
+            "Compendium.dnd5e.sieg5e-classfeatures.sbe8efbe018757dc"
           ]
         }
       },
@@ -26,7 +26,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sccb549db636570e"
+            "Compendium.dnd5e.sieg5e-classfeatures.s3945c847a8421cc"
           ]
         }
       },
@@ -37,8 +37,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s39ff5dcc4940fff",
-            "Compendium.dnd5e.sieg5e-classfeatures.s95920a341f57543"
+            "Compendium.dnd5e.sieg5e-classfeatures.sc8d86088ad2548f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5060f4b9601b8cb"
           ]
         }
       },
@@ -49,7 +49,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s1635b1c2f514b64"
+            "Compendium.dnd5e.sieg5e-classfeatures.s1f5a121711293e8"
           ]
         }
       },
@@ -60,7 +60,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s17ea76ae04f2a1a"
+            "Compendium.dnd5e.sieg5e-classfeatures.sad894e59390ed53"
           ]
         }
       }
@@ -72,7 +72,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590952,
+    "modifiedTime": 1777214759123,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s51b2fd15d0488d5",

@@ -1,0 +1,85 @@
+{
+  "name": "Bestial Soul",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The feral power within you increases, causing the natural weapons of your Form of the Beast to count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p><p>You can also alter your form to help you adapt to your surroundings. When you finish a Short or a Long Rest, choose one of the following benefits, which lasts until you finish your next Short or a Long Rest:</p><ul><li>You gain a Swim Speed equal to your Speed, and you can breathe underwater.</li><li>You gain a Climb Speed equal to your Speed, and you can climb difficult surfaces, including upside down on ceilings, without needing to make an Ability Check.</li><li>When you jump, you can make a Strength (Athletics) check and extend your jump by a number of feet equal to the check's total. You can make this special check only once per turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sbf0a5c7390bad23",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759135,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbf0a5c7390bad23",
+  "flags": {},
+  "sort": 0
+}

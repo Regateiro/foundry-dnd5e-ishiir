@@ -14,8 +14,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s37097aa4de77cfb",
-            "Compendium.dnd5e.sieg5e-classfeatures.seb34cf28b958417"
+            "Compendium.dnd5e.sieg5e-classfeatures.s857512c469ffd59",
+            "Compendium.dnd5e.sieg5e-classfeatures.sa596b1382940dff"
           ]
         }
       },
@@ -26,7 +26,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sf8e4f40c748bbe7"
+            "Compendium.dnd5e.sieg5e-classfeatures.sc080541007a5440"
           ]
         }
       },
@@ -37,7 +37,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s75bd981828326f5"
+            "Compendium.dnd5e.sieg5e-classfeatures.s71fbfb3138a5883"
           ]
         }
       }
@@ -49,7 +49,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590951,
+    "modifiedTime": 1777214759123,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s82c7e17c2996b14",

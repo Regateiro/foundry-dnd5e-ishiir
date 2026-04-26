@@ -1,0 +1,85 @@
+{
+  "name": "Magic Mushrooms",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you or your bonded familiar can cause enchanted mushrooms to spring up from the ground in a 10-feet circle around a point you can see within 60 feet.</p><p>The effect of the mushrooms depends on the type you choose from the options below, which you can activate as a Reaction when a creature steps into the area. Immediately afterwards, the mushrooms disappear.</p><p><strong>Fortifying Fungus.</strong> The triggering creature and all other creatures in the area gain temporary hit points equal to your spellcasting ability modifier + half your Witch level.</p><p><strong>Nightcap.</strong> The triggering creature and all creatures in the area have to make a Wisdom Saving Throw. On a failure, they fall asleep until the start of the triggering creature's next turn. An affected creature wakes up early if it takes damage or another creature uses an Action to shake it awake.</p><p><strong>Venomgill.</strong> The triggering creature and all creatures in the area have to make a Constitution Saving Throw. On a failure, they are Poisoned until the start of the triggering creature's next turn.</p><p>You can use this feature three times and you regain all expended uses when you finish a Short or Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf44699c9ad4b6fa",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759215,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf44699c9ad4b6fa",
+  "flags": {},
+  "sort": 0
+}

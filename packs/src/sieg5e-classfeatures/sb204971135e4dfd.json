@@ -1,0 +1,85 @@
+{
+  "name": "Fire Lord",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your mastery of fire allows you to infuse your own self with the essence of flame.</p><p>As an Action, you undergo the transformation and gain the following benefits for 1 minute:</p><ul><li>You shed bright light in a 60 feet radius and dim light in a radius of 30 feet beyond that.</li><li>You gain Immunity to fire damage.</li><li>Creatures in the bright light have Disadvantage on Saving Throws against infusions that include the fire element.</li><li>You radiate intense heat in a 10 feet radius around you. Any creature of your choice that enters that radius for the first time on a turn or starts its turn there, takes half your kinetic shape damage.</li></ul><p>Once you have used this ability, you can't use it again until you have finished a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb204971135e4dfd",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759167,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb204971135e4dfd",
+  "flags": {},
+  "sort": 0
+}

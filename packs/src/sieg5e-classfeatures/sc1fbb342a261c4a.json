@@ -1,0 +1,85 @@
+{
+  "name": "Fury",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The tentacles slam into your foes. Pick up to 5 creatures that you can see within 30 ft. of the portal. Those creatures must make Dexterity Saving Throws against your Warlock spell save DC. Creatures that fail their Saving Throws take 10d6 bludgeoning damage and are Restrained for 1 minute. Creatures that succeed take half the bludgeoning damage and are not Restrained. On its turn, a Restrained creature can use its action to attempt Strength (Athletics) or Dexterity (Acrobatics) check against your Warlock spell save DC to end its Restrained condition.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc1fbb342a261c4a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759209,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc1fbb342a261c4a",
+  "flags": {},
+  "sort": 0
+}

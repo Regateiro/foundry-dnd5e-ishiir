@@ -1,0 +1,85 @@
+{
+  "name": "Aegis of Rime",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Resistance to cold damage.</p><p>Additionally, when you cast a spell of 1st level or higher that deals cold damage, you form a protective layer of magical ice on yourself.</p><p>While under this effect, the first time you take damage, that damage is reduced by an amount equal to your sorcerer level + your Charisma modifier. The effect then ends on you.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s98edc0ab3623034",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759202,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s98edc0ab3623034",
+  "flags": {},
+  "sort": 0
+}

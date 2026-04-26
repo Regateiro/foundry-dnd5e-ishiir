@@ -1,0 +1,85 @@
+{
+  "name": "Eldritch Invocation",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain one eldritch invocation available to the warlock class. You cannot select an invocation for which you do not meet all prerequisites, including certain class features available only to the warlock class. A list of the available options can be found on the Optional Features page.</p><p>Additionally, when you gain a level in this class, you can replace the invocation you know with another invocation that you could learn at that level. You use your levels in this class in place of warlock levels to determine whether you meet the prerequisites.</p><p>If an invocation allows you to cast a spell, you must have access to the appropriate spell level, even if the invocation does not require you to expend a spell slot to cast it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se373931707db386",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759144,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se373931707db386",
+  "flags": {},
+  "sort": 0
+}

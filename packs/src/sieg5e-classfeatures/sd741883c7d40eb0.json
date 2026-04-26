@@ -1,0 +1,85 @@
+{
+  "name": "Greater Winged Aspect",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain one of the following features of your choice.</p><ul><li><strong>Silent Flight.</strong> While flying, you can hide as a Bonus Action and your wings cause no sound when you move while flying. If you attack while hidden, the benefits of being hidden persist against the target of your attack until the end of your turn.</li><li><strong>On Swift Wings.</strong> When you move, you can choose a creature that is within 5 ft and at least one size smaller than you and move the creature with you until the end of the current turn. The creature's movement doesn't provoke Opportunity Attacks.</li><li><strong>Deadly Talons.</strong> The critical range with your natural weapons increases by 1. When you critically hit with your natural weapons, you roll your weapon damage dice two additional times and add them to the damage.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd741883c7d40eb0",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759195,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd741883c7d40eb0",
+  "flags": {},
+  "sort": 0
+}

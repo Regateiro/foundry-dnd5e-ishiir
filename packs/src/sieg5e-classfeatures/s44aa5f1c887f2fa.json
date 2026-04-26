@@ -1,0 +1,85 @@
+{
+  "name": "Savage Resilience",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your hit point maximum increases by 3 and increases by 1 again whenever you gain a level in this class.</p><p>Additionally, allies within 60 feet that can see or hear you, take reduced damage from bludgeoning, piercing, and slashing damage while you are not Incapacitated. The reduction is equal to your Leadership ability modifier.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s44aa5f1c887f2fa",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759212,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s44aa5f1c887f2fa",
+  "flags": {},
+  "sort": 0
+}

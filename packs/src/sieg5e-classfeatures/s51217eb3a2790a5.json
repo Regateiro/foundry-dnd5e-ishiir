@@ -1,0 +1,85 @@
+{
+  "name": "Clockwork Cavalcade",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You summon spirits of order to expunge disorder around you. As an Action, you summon the spirits in a 30-foot cube originating from you. The spirits look like modrons or other constructs of your choice. The spirits are intangible and invulnerable, and they create the following effects within the cube before vanishing:</p><ul><li>The spirits restore up to 100 hit points, divided as you choose among any number of creatures of your choice in the cube.</li><li>Any damaged objects entirely in the cube are repaired instantly.</li><li>Every spell of 6th level or lower ends on creatures and objects of your choice in the cube.</li></ul><p>Once you use this action, you can't use it again until you finish a Long Rest, unless you spend 7 sorcery points to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s51217eb3a2790a5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759201,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s51217eb3a2790a5",
+  "flags": {},
+  "sort": 0
+}

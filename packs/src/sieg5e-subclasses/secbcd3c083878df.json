@@ -14,9 +14,9 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sdcabec42cc21e2e",
-            "Compendium.dnd5e.sieg5e-classfeatures.sb186af72e313eef",
-            "Compendium.dnd5e.sieg5e-classfeatures.s16e155e1f547260"
+            "Compendium.dnd5e.sieg5e-classfeatures.s58a3b020c4c6f66",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8ac217b04c5a7ff",
+            "Compendium.dnd5e.sieg5e-classfeatures.s641b410cd9167f1"
           ]
         }
       },
@@ -27,7 +27,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sf6fac02ddf406a4"
+            "Compendium.dnd5e.sieg5e-classfeatures.s0bc1b920ba34895"
           ]
         }
       },
@@ -38,7 +38,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.se5ae56331422bad"
+            "Compendium.dnd5e.sieg5e-classfeatures.s7c9858491908077"
           ]
         }
       },
@@ -49,7 +49,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sbe5d05552d01d61"
+            "Compendium.dnd5e.sieg5e-classfeatures.sb68f29ee5339aa2"
           ]
         }
       },
@@ -60,7 +60,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.saca4d31729c53ec"
+            "Compendium.dnd5e.sieg5e-classfeatures.s8a95192b3de06f4"
           ]
         }
       }
@@ -72,7 +72,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590954,
+    "modifiedTime": 1777214759126,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!secbcd3c083878df",

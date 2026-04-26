@@ -1,0 +1,85 @@
+{
+  "name": "Formation Fighting",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>While you are not incapacitated, allies within 5 ft of you have half-cover against weapon attacks and you add your Leadership ability modifier to the damage roll of the first weapon attack they hit with on a turn. You can extend this benefit to allies that are farther than 5 ft away from you, as long as they are within 5 ft of an ally that already is under the effect of this feature and isn't incapacitated.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s3c2a417a00827d2",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3c2a417a00827d2",
+  "flags": {},
+  "sort": 0
+}

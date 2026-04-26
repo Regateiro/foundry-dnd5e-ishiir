@@ -1,0 +1,85 @@
+{
+  "name": "Alleyway Rituals",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn the following additional Cauldron Rituals:</p><p><strong>Beguiling Performance.</strong> Choose one creature. When the target performs a Perform check, it can treat a d20 roll of 8 or lower as a 9. If the Perform check is successful, it treats the result of the roll as 1 step better.</p><p><strong>Drunkard's Luck.</strong> Choose one creature. When the target makes a Carouse check, it adds your spellcasting ability modifier to the result of the d20 roll.</p><p><strong>Eagle Eyes.</strong> Choose one creature. When the target performs a Guard check, it can treat a d20 roll of 8 or lower as a 9. If the Guard check results in an encounter, the target cannot be surprised and adds your spellcasting ability modifier to its initiative roll.</p><p><strong>Gutter Remedies.</strong> When you perform an Attend check, you can treat a d20 roll of 8 or lower as a 9. If your Attend check is successful, you roll an additional d4 and add it to the result of the die on the result column.</p><p><strong>Magpie's Blessing.</strong> Choose one creature. When the target makes a Pickpocket check, it rolls 2d8 and adds them to the result of the die on the result column if the check was successful. If the check was a failure, it adds your spellcasting ability modifier to any checks made to evade the authorities.</p><p><strong>Twisted Fortune.</strong> Choose one creature. The target rolls 2d8 and adds them to the result of the die on the result column, regardless of whether the Gambling check was successful or not.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sed48bdb29975435",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759213,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sed48bdb29975435",
+  "flags": {},
+  "sort": 0
+}

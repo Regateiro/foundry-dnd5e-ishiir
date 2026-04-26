@@ -1,0 +1,85 @@
+{
+  "name": "Plane Charter Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you reach an Artificer level specified in the Plane Charter Spells table, you thereafter always have the listed spells prepared.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Plane Charter Spells</caption><thead><tr><th scope=\"col\">Artificer Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3</td><td>Faerie Fire, Guiding Bolt</td></tr><tr><td>5</td><td>Locate Object, Misty Step</td></tr><tr><td>9</td><td>Blink, Clairvoyance</td></tr><tr><td>13</td><td>Dimension Door, Locate Creature</td></tr><tr><td>17</td><td>Scrying, Teleportation Circle</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/symbols/cog-shield-white-blue.webp",
+  "_id": "s85b3eb06cc223e8",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759131,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s85b3eb06cc223e8",
+  "flags": {},
+  "sort": 0
+}

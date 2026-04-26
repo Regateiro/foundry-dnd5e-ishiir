@@ -1,0 +1,85 @@
+{
+  "name": "Eternal Spellguard",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can empower your Aura of Protection, granting the benefits below for 1 minute or until you end them (no action required). Once you use this feature, you can't use it again until you finish a Long Rest. You can restore your use of this ability by expending a level 5 spell slot (no action required).</p><ul><li><strong>Improved Spell-Breaking Blade.</strong> You add your Charisma modifier to the Ability Check of Counterspell and Dispel Magic when using Spell-Breaking Blade.</li><li><strong>Protection from Magic.</strong> You and your allies in the aura have Advantage on Saving Throws against spells.</li><li><strong>Spell Ward.</strong> Spell attack rolls against you and your allies in the aura have Disadvantage.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s30ae9a6cec1fc92",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759179,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s30ae9a6cec1fc92",
+  "flags": {},
+  "sort": 0
+}

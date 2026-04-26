@@ -1,0 +1,85 @@
+{
+  "name": "Blood Sacrifice",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you take a Short Rest and use your Arcane Recovery class feature, you can spend a number of hit dice up to equal to your Proficiency modifier.</p><p>The number of hit dice spent in this manner is added to the total level of spell slots that you can recover with Arcane Recovery.</p><p>Additionally, when a creature of at least CR 1/8 afflicted with the Lacerated condition from one of your spells dies within 120 feet of you, you regain one hit die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8fcbf280803d75b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759224,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8fcbf280803d75b",
+  "flags": {},
+  "sort": 0
+}

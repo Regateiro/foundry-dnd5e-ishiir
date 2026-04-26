@@ -1,0 +1,85 @@
+{
+  "name": "Touch of the Long Death",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your touch can channel the energy of death into a creature. As an Action, you touch one creature within 5 feet of you, and you expend 1 to 10 ki points. The target must make a Constitution Saving Throw, and it takes 2d10 necrotic damage per ki point spent on a failed save, or half as much damage on a successful one. A creature that failed this Saving Throw has to repeat the Saving Throw at the end of each of its turn. On a failure, it takes necrotic damage equal to your monk level. Until it succeeds, the creature cannot benefit from healing.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s168da17119597fc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777214759172,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s168da17119597fc",
+  "flags": {},
+  "sort": 0
+}

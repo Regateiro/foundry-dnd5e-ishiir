@@ -14,9 +14,9 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sf6c66626ec41cab",
-            "Compendium.dnd5e.sieg5e-classfeatures.s2e3012823dd4edd",
-            "Compendium.dnd5e.sieg5e-classfeatures.sa1657c3d21a941a"
+            "Compendium.dnd5e.sieg5e-classfeatures.s5ae939bc00260da",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6896efe39d19e72",
+            "Compendium.dnd5e.sieg5e-classfeatures.s0cfd6bbfe9343a9"
           ]
         }
       },
@@ -27,7 +27,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s0677e522440aa53"
+            "Compendium.dnd5e.sieg5e-classfeatures.s6923d5bb60a98ad"
           ]
         }
       },
@@ -37,7 +37,9 @@
         "level": 11,
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
-          "items": []
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd7fbf7e92050461"
+          ]
         }
       },
       {
@@ -50,7 +52,7 @@
           },
           "pool": [
             "Compendium.dnd5e.sieg5e-classfeatures.sdbb3e25a54e0c41",
-            "Compendium.dnd5e.sieg5e-classfeatures.s2877882c40786e3"
+            "Compendium.dnd5e.sieg5e-classfeatures.s4609bcd9ecf4ada"
           ]
         }
       },
@@ -60,7 +62,9 @@
         "level": 15,
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
-          "items": []
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa8a80ec305aba1b"
+          ]
         }
       },
       {
@@ -73,7 +77,7 @@
           },
           "pool": [
             "Compendium.dnd5e.sieg5e-classfeatures.sce9a82acc8539da",
-            "Compendium.dnd5e.sieg5e-classfeatures.s172ee1defa1220d"
+            "Compendium.dnd5e.sieg5e-classfeatures.s6b780cf4e185c53"
           ]
         }
       }
@@ -85,7 +89,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590948,
+    "modifiedTime": 1777214759120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sc35fc418f8f81bb",
