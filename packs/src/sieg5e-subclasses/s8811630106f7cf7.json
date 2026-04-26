@@ -14,9 +14,9 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sff267618dee5254",
-            "Compendium.dnd5e.sieg5e-classfeatures.sbd1e9ab1070d76f",
-            "Compendium.dnd5e.sieg5e-classfeatures.sc6725c1918a582f"
+            "Compendium.dnd5e.sieg5e-classfeatures.s07504f7b5b188fe",
+            "Compendium.dnd5e.sieg5e-classfeatures.s22d3edd3d037a51",
+            "Compendium.dnd5e.sieg5e-classfeatures.s664649f01ff7dfe"
           ]
         }
       },
@@ -27,7 +27,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sf888b16e8833f7e"
+            "Compendium.dnd5e.sieg5e-classfeatures.sb5acc9e1622e102"
           ]
         }
       },
@@ -38,7 +38,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s99eb870040facc1"
+            "Compendium.dnd5e.sieg5e-classfeatures.s9762659ebe8977d"
           ]
         }
       },
@@ -49,7 +49,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.scd5d250dca84861"
+            "Compendium.dnd5e.sieg5e-classfeatures.sf7c67c2451fca4c"
           ]
         }
       },
@@ -60,7 +60,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sc381d90cf44fe33"
+            "Compendium.dnd5e.sieg5e-classfeatures.s7ab3cc689856806"
           ]
         }
       }
@@ -72,7 +72,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777216750448,
+    "modifiedTime": 1777217151243,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s8811630106f7cf7",

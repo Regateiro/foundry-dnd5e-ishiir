@@ -64,8 +64,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sa3a891acf41292c",
-            "Compendium.dnd5e.sieg5e-classfeatures.s119f2cfa3004d67"
+            "Compendium.dnd5e.sieg5e-classfeatures.sd28b6b318ab9383",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3d418768035c063"
           ]
         }
       },
@@ -76,7 +76,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s568cef8f2e6d003"
+            "Compendium.dnd5e.sieg5e-classfeatures.s4e366867e8c78cd"
           ]
         }
       },
@@ -87,8 +87,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s0f89986e6b00a91",
-            "Compendium.dnd5e.sieg5e-classfeatures.s58d8adeb58b905f"
+            "Compendium.dnd5e.sieg5e-classfeatures.s7eb3eaa41afcf23",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6556482212efd89"
           ]
         }
       },
@@ -99,7 +99,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s745d99143c59e23"
+            "Compendium.dnd5e.sieg5e-classfeatures.sab3ef56c3b4f09c"
           ]
         }
       },
@@ -110,7 +110,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s0988267cf89b957"
+            "Compendium.dnd5e.sieg5e-classfeatures.sea37cf3ea7f2cca"
           ]
         }
       }
@@ -122,7 +122,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777216750445,
+    "modifiedTime": 1777217151239,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s9facca5bfc1cf75",

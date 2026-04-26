@@ -1,0 +1,85 @@
+{
+  "name": "Mob Rule",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You use your Cunning Strike feature, you learn the following new way to use your Sneak Attack:</p><ul><li><strong>Bully (Cost: 3d6).</strong> The target has to make a Constitution Saving Throw or all Attack Rolls against it have Advantage until the end of your next turn.</li><li><strong>Cow (Cost: 2d6).</strong> The target has to make a Wisdom Saving Throw or it has Disadvantage on Attack Rolls against you.</li></ul><p>Additionally, you can reduce the die cost of any of your Cunning Strike options by 1 (to a minimum of 0) while none of your target's allies are within 5 feet of it and at least 1 of your allies is within their melee reach. You can do so only once per turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "scaac03fbfa05f3a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189535,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!scaac03fbfa05f3a",
+  "flags": {},
+  "sort": 0
+}

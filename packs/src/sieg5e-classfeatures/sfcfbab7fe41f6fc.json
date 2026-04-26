@@ -1,0 +1,85 @@
+{
+  "name": "Event Horizon",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you can magically emit a powerful field of gravitational energy that tugs at other creatures for up to 1 minute or until your Concentration ends (as if you were concentrating on a spell). For the duration, whenever a creature hostile to you starts its turn within 60 feet of you, it must make a Strength Saving Throw against your spell save DC. On a failed save, it takes 4d10 + Intelligence modifier force damage, and its Speed is reduced to 0 until the start of its next turn. On a successful save, it takes half as much damage, and every foot it moves this turn costs 2 extra feet of movement.</p><p>Once you use this feature, you can't do so again until you finish a Long Rest or until you expend a spell slot of 5th level or higher to use this feature again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfcfbab7fe41f6fc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189574,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfcfbab7fe41f6fc",
+  "flags": {},
+  "sort": 0
+}

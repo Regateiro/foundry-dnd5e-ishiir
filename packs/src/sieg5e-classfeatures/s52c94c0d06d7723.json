@@ -1,0 +1,85 @@
+{
+  "name": "Improved Fanged Aspect",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain one of the following features of your choice.</p><ul><li><strong>Pack Tactics.</strong> You have Advantage on Attack Rolls with your natural weapons against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't Incapacitated.</li><li><strong>A Friend in Deed.</strong> You can take the Help action as a Bonus Action and with a range of 30 feet. You can always use the Help action to give someone Advantage on a skill check, even if you are not proficient in the relevant skill yourself.</li><li><strong>Thick Hide.</strong> The temporary hit points gained through your Martial Mastery (Unarmored Defense) increase by half (rounded down). Additionally, you have Advantage on Saving Throws against becoming Poisoned or Lacerated.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s52c94c0d06d7723",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189539,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s52c94c0d06d7723",
+  "flags": {},
+  "sort": 0
+}

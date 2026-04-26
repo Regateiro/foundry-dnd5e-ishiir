@@ -1,0 +1,85 @@
+{
+  "name": "Zephyr Defense",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you are hit by an attack, you can use your Reaction to make a Dexterity (Acrobatics) check and subtract the result of the roll from the damage taken.</p><p>You can use this feature a number of times equal to your Dexterity modifier and you can regain all expended uses when you finish a Short or a Long Rest. You can also spend a use of your Second Wind to regain a use of this feature (no action required).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s54e701b0ec73cec",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189500,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s54e701b0ec73cec",
+  "flags": {},
+  "sort": 0
+}

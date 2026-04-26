@@ -1,0 +1,85 @@
+{
+  "name": "Clawed Aspect",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You adopt a feline aspect, granting you physical traits such as the vertical pupils, sharp nails, and elongated canines.</p><p>You gain a darkvision range of 60 feet. If you already possess darkvision, add 60 ft to its range.</p><p>Additionally, once per turn when you hit a creature with your natural weapons, you can force the target to make a Constitution Saving Throw. On a failure, the target is Lacerated. The DC for this is 8 + your Proficiency + your Strength or Dexterity modifier (your choice). The target can repeat the Saving Throw at the end of each of its turns, ending the effect on itself on a success. Creatures who cannot bleed are Immune to this feature.</p><p>Once you reach level 10 in this class, any laceration inflicted with your natural weapons deals damage equal to thrice your Proficiency, rather than twice.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "scf8924c2b516ac1",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189539,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!scf8924c2b516ac1",
+  "flags": {},
+  "sort": 0
+}

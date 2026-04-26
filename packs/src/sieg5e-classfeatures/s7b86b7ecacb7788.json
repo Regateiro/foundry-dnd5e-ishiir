@@ -1,0 +1,85 @@
+{
+  "name": "Improved Clawed Aspect",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain one of the following features of your choice.</p><ul><li><strong>Stalker's Ambush.</strong> Any attack with your natural weapons against a creature that is Surprised has Advantage and adds an additional roll of your Natural Weapons die to the damage.</li><li><strong>Swift Climber.</strong> You gain a Climb Speed equal to your Speed and when you take fall damage, you can use your Reaction to decrease that damage by an amount equal to five times your Shifter level.</li><li><strong>Feral Pounce.</strong> When you use Primal Pounce and your attack hits, you can force the target to make a Strength Saving Throw if it is no more than one size larger than you. The DC for this is 8 + your Proficiency + your Strength or Dexterity modifier (your choice). On a failure, the target is knocked Prone.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7b86b7ecacb7788",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189539,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7b86b7ecacb7788",
+  "flags": {},
+  "sort": 0
+}

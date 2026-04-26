@@ -1,0 +1,85 @@
+{
+  "name": "Elemental Rebuke",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you are hit by an Attack Roll, you can take a Reaction to halve the attack's damage against yourself (round down) and force the attacker to make a Dexterity Saving Throw against your spell save DC. On a failed save, the attacker takes damage equal to 4d10 plus your Charisma modifier; the damage type is that associated with your genie patron as per your Aura of Elemental Shielding. On a successful save, the attacker takes half as much damage.</p><p>You can use this feature a number of times equal to your Charisma modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd59b88940a24c29",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189520,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd59b88940a24c29",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Battle Familiar",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your familiar gains 1 additional hit point for each of your Witch levels and its AC increases by 2. It uses your spellcasting attack bonus in place of its own attack bonus and your spellcasting save DC in place of any DC for its features.</p><p>Your familiar's weapon attacks deal an additional 1d4 damage of a type determined by your chosen Wild Domain, as seen in the table below. This additional damage increases at 5th level (1d6), 11th level (1d8), and 17th level (1d10) in this class.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Familiar Bonus Damage</caption><thead><tr><th scope=\"col\">Wild Domain</th><th scope=\"col\">Damage Type</th></tr></thead><tbody><tr><td>Dunes</td><td>Fire</td></tr><tr><td>Marshes</td><td>Acid</td></tr><tr><td>Peaks</td><td>Lightning</td></tr><tr><td>Tundras</td><td>Cold</td></tr><tr><td>Waves</td><td>Cold</td></tr><tr><td>Wealds</td><td>Radiant</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s641b410cd9167f1",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189567,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s641b410cd9167f1",
+  "flags": {},
+  "sort": 0
+}

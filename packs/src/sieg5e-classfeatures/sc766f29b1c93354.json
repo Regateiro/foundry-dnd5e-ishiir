@@ -1,0 +1,90 @@
+{
+  "name": "Blood Curse of Corrosion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your blood curse can infuse a creature's body with terrible toxins. You gain the Blood Curse of Corrosion for your Blood Maledict feature. This doesn't count against your number of blood curses known.</p><p>Additionally, you gain an additional use of your Blood Maledict feature.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "2 * @attributes.prof",
+          "acid"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "con",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/acid/dissolve-arm-flesh.webp",
+  "_id": "sc766f29b1c93354",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189481,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc766f29b1c93354",
+  "flags": {},
+  "sort": 0
+}

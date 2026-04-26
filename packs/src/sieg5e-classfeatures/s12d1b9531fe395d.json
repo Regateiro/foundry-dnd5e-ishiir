@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You gain Expertise in two of your skill proficiencies of your choice. Performance and Persuasion are recommended if you have Proficiency in them.</p><p>At Bard level 9, you gain Expertise in two more of your skill proficiencies of your choice.</p>",
+      "value": "<p>Choose two of your skill proficiencies, or one of your skill proficiencies and your Proficiency with thieves' tools. Your Proficiency bonus is doubled for any Ability Check you make that uses either of the chosen proficiencies.</p><p>At 6th level, you can choose two more of your proficiencies (in skills or with thieves' tools) to gain this benefit.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777216804138,
+    "modifiedTime": 1777217189631,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s12d1b9531fe395d",

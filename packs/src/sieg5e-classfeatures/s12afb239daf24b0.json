@@ -1,0 +1,85 @@
+{
+  "name": "Maneuvers",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The maneuvers are presented in alphabetical order.</p><h5>Commander's Strike</h5><p>When you take the Attack action on your turn, you can forgo one of your attacks to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its Reaction to make one weapon attack, adding the superiority die to the attack's damage roll.</p><h5>Disarming Attack</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength Saving Throw. On a failed save, it drops the object you choose. The object lands at its feet.</p><h5>Distracting Strike</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next Attack Roll against the target by an attacker other than you has Advantage if the attack is made before the start of your next turn.</p><h5>Evasive Footwork</h5><p>As a Bonus Action, you can expend one Superiority Die and take the Disengage action. You also roll the die and add the number rolled to your AC until the start of your next turn.</p><h5>Feinting Attack</h5><p>When you make a melee weapon attack, you can expend one superiority die to perform a feint. The target of the attack has to make a Wisdom Saving Throw. On a failure, you have Advantage on this attack roll against the target and you add your superiority die to the damage if the attack hits.</p><h5>Goading Attack</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom Saving Throw. On a failed save, the target has Disadvantage on all Attack Rolls against targets other than you until the end of your next turn.</p><h5>Lunging Attack</h5><p>As a Bonus Action, you can expend one Superiority Die and take the Dash action. If you move at least 5 feet in a straight line immediately before hitting with a melee attack as part of the Attack action on this turn, you can add the Superiority Die to the attack's damage roll.</p><h5>Maneuvering Attack</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its Reaction to move up to half its Speed without provoking Opportunity Attacks from the target of your attack.</p><h5>Menacing Attack</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom Saving Throw. On a failed save, it is Frightened of you until the end of your next turn.</p><h5>Parry</h5><p>When another creature damages you with a melee attack, you can use your Reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + STR or DEX modifier (your choice) + fighter level.</p><h5>Precision Attack</h5><p>When you miss with an Attack Roll, you can expend one Superiority Die, roll that die, and add it to the Attack Roll, potentially causing the attack to hit.</p><h5>Pushing Attack</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength Saving Throw. On a failed save, you push the target up to 15 feet away from you.</p><h5>Rally</h5><p>As a Bonus Action, you can expend one Superiority Die to bolster the resolve of a companion. Choose an ally of yours within 30 feet of yourself who can see or hear you. That creature gains Temporary Hit Points equal to the Superiority Die roll plus half your Fighter level (round down).</p><h5>Riposte</h5><p>When a creature misses you with a melee attack, you can use your Reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll.</p><h5>Staggering Strike</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock a target off-balance. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Constitution Saving Throw. On a failed save, the target cannot take Bonus Actions or Reactions until the end of your next turn.</p><h5>Sweeping Attack</h5><p>When you make a melee weapon attack, you can expend one superiority die to perform a powerful arcing swing around you. The original target and any other creature within your reach has to make a Dexterity Saving Throw. On a failure, a target takes damage equal to one roll of your superiority die.</p><h5>Trip Attack</h5><p>When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is no more than 1 size larger than you, it must make a Strength Saving Throw. On a failed save, you knock the target Prone.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s12afb239daf24b0",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189497,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s12afb239daf24b0",
+  "flags": {},
+  "sort": 0
+}

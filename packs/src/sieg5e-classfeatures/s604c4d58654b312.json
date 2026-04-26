@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.</p>",
+      "value": "<p>While you are wearing no armor and not wielding a shield, your AC equals 10 + your Strength or Dexterity modifier (your choice) + your Wisdom modifier.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777216804133,
+    "modifiedTime": 1777217189625,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s604c4d58654b312",

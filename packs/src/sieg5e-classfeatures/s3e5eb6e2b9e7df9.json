@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>Your Speed increases by 10 feet while you aren't wearing heavy armor.</p>",
+      "value": "<p>Your Speed increases by 10 feet while you aren't wearing any armor or wielding a shield.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777216804134,
+    "modifiedTime": 1777217189633,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s3e5eb6e2b9e7df9",

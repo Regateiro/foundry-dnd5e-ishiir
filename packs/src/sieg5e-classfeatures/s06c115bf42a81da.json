@@ -1,0 +1,85 @@
+{
+  "name": "Sun Shield",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You can expend 4 Ki Points as an Action and become wreathed in a luminous, magical aura for 10 minutes. You shed bright light in a 30-foot radius and dim light for an additional 30 feet. This light counts as sunlight. You can extinguish or restore the light as a Bonus Action.</p><p>If a creature hits you with a melee attack while this light shines, it takes radiant damage equal to a roll of your Martial Arts die.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s06c115bf42a81da",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189514,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s06c115bf42a81da",
+  "flags": {},
+  "sort": 0
+}

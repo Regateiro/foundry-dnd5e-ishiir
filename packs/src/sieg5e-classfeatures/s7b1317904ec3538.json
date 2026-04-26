@@ -1,0 +1,85 @@
+{
+  "name": "Runic Mastery",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You add Symbol to your spellbook and it doesn't count against the number of prepared spells for you. When you cast the spell, you can choose a number of creatures equal to your Intelligence modifier. The chosen creatures are exempt from the spell's effect when it is triggered.</p><p>Additionally, you can cast the spell without a spell slot and without material components. You cannot do so again until you have finished a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7b1317904ec3538",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189575,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7b1317904ec3538",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Awakened Astral Self",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your connection to your astral self is complete, allowing you to unleash its full potential. As a Bonus Action, you can spend 3 ki points to summon the arms, visage, and body of your astral self and awaken it for 10 minutes. Alternatively, you can spend these ki points as part of the same Bonus Action you used for another Monk feature. This awakening ends early if you are Incapacitated or die.</p><p>The cost is reduced by 1 each if you have currently summoned your astral arms and your astral visage.</p><p>While your astral self is awakened, you gain the following benefits.</p><p><strong>Armor of the Spirit.</strong> You gain a +2 bonus to Armor Class.</p><p><strong>Astral Barrage.</strong> Whenever you use the Extra Attack feature to attack twice, you can instead attack three times if all the attacks are made with your astral arms.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "saea91c4ea3c9f4c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189515,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!saea91c4ea3c9f4c",
+  "flags": {},
+  "sort": 0
+}

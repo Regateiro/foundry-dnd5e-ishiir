@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you're subjected to an effect that allows you to make a Dexterity Saving Throw to take only half damage, you instead take no damage if you succeed on the Saving Throw and only half damage if you fail.</p><p>You don't benefit from this feature if you have the Incapacitated condition.</p>",
+      "value": "<p>You can nimbly dodge out of the way of certain dangers. When you're subjected to an effect that allows you to make a Dexterity Saving Throw to take only half damage, you instead take no damage if you succeed on the Saving Throw and only half damage if you fail. You can't use this feature if you have the Incapacitated condition.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777216804173,
+    "modifiedTime": 1777217189631,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!se5c05267751ad98",

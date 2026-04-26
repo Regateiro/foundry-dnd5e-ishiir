@@ -1,0 +1,85 @@
+{
+  "name": "Wyvern Bond",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have undergone specialized training that allows you to bond with and ride a wyvern.</p><p>With 8 hours of work and the expenditure of 50 gp worth of rare herbs and fine food, you call forth a wyvern from the wilderness to serve as your faithful companion. See its game statistics in the accompanying Wyvern Companion stat block. You choose the damage type for its Draconic Blood feature.</p><p>At the end of the 8 hours, your Wyvern Companion appears and gains all the benefits of your Rider's Bond ability. You can have only one Wyvern Companion at a time.</p><p>If your Wyvern Companion is ever slain, the life bond you share allows you to return it to life. To do so you have to spend 1 hour, 25 gp worth of ingredients, and a use of your Second Wind or 2 of your Hit Dice to return it to life with a special ritual.</p><p>You can return your Wyvern Companion to life in this manner even if you do not possess any part of its body, but to do so you have spend double the required resources and the ritual instead requires 8 hours.</p><p>If you use this ability to return a former Wyvern Companion to life while you have a current Wyvern Companion, your current companion leaves you and is replaced by the restored companion.</p><p>You can mount your companion even if you are the same size. If you ride it, your companion's initiative changes to match yours and it can use any of its actions during your turn or immediately after. While you ride it, your companion's flying speed is halved and it has to end its flying movement on the ground.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s68aedca10f3e0b7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189506,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s68aedca10f3e0b7",
+  "flags": {},
+  "sort": 0
+}

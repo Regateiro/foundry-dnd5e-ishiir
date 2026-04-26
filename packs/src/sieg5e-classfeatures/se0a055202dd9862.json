@@ -1,0 +1,85 @@
+{
+  "name": "Sword Sage's Aegis",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you use your Arcane Aegis to protect an ally, you can choose up to three creatures to gain its benefits. (You are a valid target as well).</p><p>Additionally, when you have no Reaction remaining and a creature triggers the Reaction attack from your Arcane Aegis feature, you can spend 2 sorcery points to use the attack without a Reaction. You can do so only once per turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se0a055202dd9862",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189544,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se0a055202dd9862",
+  "flags": {},
+  "sort": 0
+}

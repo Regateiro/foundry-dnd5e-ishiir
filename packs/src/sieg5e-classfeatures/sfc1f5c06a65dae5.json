@@ -1,0 +1,85 @@
+{
+  "name": "Empowered Channeling",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your ability to channel spirits improves. You gain the following benefits.</p><ul><li><strong>Power from Beyond.</strong> Once per turn, when you cast a Bard spell that deals damage or restores Hit Points, roll a d6. You gain a bonus to one of the spell's damage rolls or to the total Hit Points the spell restores equal to the number rolled.</li><li><strong>Spiritual Manifestation.</strong> You always have the Spirit Guardians spell prepared. You can cast the spell once without a spell slot, and you regain the ability to cast it in this way when you finish a Long Rest.</li></ul><p>Whenever you start casting the spell, you can modify it so the spirits also guard against worldly threats. When cast in this way, you and allies within the spell's Emanation have Half Cover. Once you modify the spell in this way, you can't do so again until you finish a Short or Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfc1f5c06a65dae5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189478,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfc1f5c06a65dae5",
+  "flags": {},
+  "sort": 0
+}

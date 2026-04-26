@@ -1,0 +1,85 @@
+{
+  "name": "Coven of Wildkeepers Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose a Wild Domain. At each indicated Witch level, add the corresponding listed spells to your spells prepared.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Dunes Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Earth Tremor, Silent Image, Dust Devil, Mirror Image</td></tr><tr><td>5th</td><td>Haste, Wall of Sand</td></tr><tr><td>7th</td><td>Blight, Hallucinatory Terrain</td></tr><tr><td>9th</td><td>Maelstrom, Mislead</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Marshes Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Grease, Ray of Sickness, Envenom, Ray of Enfeeblement</td></tr><tr><td>5th</td><td>Corrosion, Water Walk</td></tr><tr><td>7th</td><td>Evard's Black Tentacles, Vitriolic Sphere</td></tr><tr><td>9th</td><td>Acid Pit, Insect Plague</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Peaks Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Feather Fall, Witch Bolt, Earthbind, Darkvision</td></tr><tr><td>5th</td><td>Erupting Earth, Lightning Bolt</td></tr><tr><td>7th</td><td>Stoneskin, Wall of Stone</td></tr><tr><td>9th</td><td>Blindsense, Transmute Rock</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Tundras Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Fog Cloud, Ice Knife, Blindness/Deafness, Snilloc's Snowball Swarm</td></tr><tr><td>5th</td><td>Slow, Glacial Spike</td></tr><tr><td>7th</td><td>Ice Storm, Freedom of Movement</td></tr><tr><td>9th</td><td>Cone of Cold, Control Winds</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Waves Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Charm Person, Fog Cloud, Enthrall, Water Blast</td></tr><tr><td>5th</td><td>Tidal Wave, Water Breathing</td></tr><tr><td>7th</td><td>Control Water, Watery Sphere</td></tr><tr><td>9th</td><td>Dominate Person, Maelstrom</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Wealds Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Animal Friendship, Beast Bond, Barkskin, Pass without Trace</td></tr><tr><td>5th</td><td>Conjure Animals, Speak with Plants</td></tr><tr><td>7th</td><td>Conjure Nature Spirits, Guardian of Nature</td></tr><tr><td>9th</td><td>Tree Stride, Wrath of Nature</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s58a3b020c4c6f66",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189567,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s58a3b020c4c6f66",
+  "flags": {},
+  "sort": 0
+}

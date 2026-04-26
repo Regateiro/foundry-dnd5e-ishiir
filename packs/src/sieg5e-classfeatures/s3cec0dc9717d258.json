@@ -1,0 +1,85 @@
+{
+  "name": "Runic Shield",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn to invoke your rune magic to protect your allies. When another creature you can see within 60 feet of you is hit by an Attack Roll, you can use your Reaction to force the attacker to reroll the d20 and use the new roll.</p><p>You can use this feature a number of times equal to your Proficiency bonus, and you regain all expended uses when you finish a Long Rest. Additionally, you can spend one use of your Second Wind to regain one use.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s3cec0dc9717d258",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777217189503,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3cec0dc9717d258",
+  "flags": {},
+  "sort": 0
+}
