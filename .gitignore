@@ -1,7 +1,7 @@
 # Build Artifacts
 dnd5e-compiled*
 dnd5e.lock
-sieg5e.json
+sieg5e-*.json
 
 # IDE
 .idea/
