@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": null,
+      "value": 0,
       "max": "@scale.sorcerer.sorcery-points",
       "per": "lr",
       "recovery": ""
@@ -76,10 +76,8 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210591020,
+    "modifiedTime": 1777210995581,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s876f4c97b82810b",
-  "flags": {},
-  "sort": 0
+  "_key": "!items!s876f4c97b82810b"
 }

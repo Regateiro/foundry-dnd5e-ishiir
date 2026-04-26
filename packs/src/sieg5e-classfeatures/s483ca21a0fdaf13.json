@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": null,
+      "value": 0,
       "max": "@scale.monk.ki-points",
       "per": "sr",
       "recovery": ""
@@ -76,10 +76,8 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590990,
+    "modifiedTime": 1777210995574,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s483ca21a0fdaf13",
-  "flags": {},
-  "sort": 0
+  "_key": "!items!s483ca21a0fdaf13"
 }

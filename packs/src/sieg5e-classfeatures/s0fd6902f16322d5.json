@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": null,
+      "value": 0,
       "max": "@scale.kineticist.kinesis-points",
       "per": "lr",
       "recovery": ""
@@ -76,10 +76,8 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590987,
+    "modifiedTime": 1777210995573,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s0fd6902f16322d5",
-  "flags": {},
-  "sort": 0
+  "_key": "!items!s0fd6902f16322d5"
 }
