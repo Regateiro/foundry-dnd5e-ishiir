@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": 0,
+      "value": null,
       "max": "@scale.fighter.second-wind",
       "per": "lr",
       "recovery": ""
@@ -84,5 +84,7 @@
     "modifiedTime": 1777210995570,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!sa86851d9575db76"
+  "_key": "!items!sa86851d9575db76",
+  "flags": {},
+  "sort": 0
 }

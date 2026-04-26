@@ -1,9 +1,9 @@
 {
-  "name": "Feral Instinct",
+  "name": "Honed Technique",
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>Your instincts are so honed that you have Advantage on initiative rolls.</p><p>Additionally, you cannot be Surprised while you are not Incapacitated.</p>",
+      "value": "<p>Once per turn, you can reroll your superiority die and take either result.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -69,17 +69,17 @@
       "charged": null
     }
   },
-  "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
-  "_id": "s1fa63c9e1ee3391",
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9163b8284287ef1",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777213764554,
+    "modifiedTime": 1777213764559,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s1fa63c9e1ee3391",
+  "_key": "!items!s9163b8284287ef1",
   "flags": {},
   "sort": 0
 }

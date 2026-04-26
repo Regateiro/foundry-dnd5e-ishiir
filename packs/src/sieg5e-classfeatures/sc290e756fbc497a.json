@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": 0,
+      "value": null,
       "max": "@scale.fighter.action-surge",
       "per": "sr",
       "recovery": ""
@@ -79,5 +79,7 @@
     "modifiedTime": 1777210995570,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!sc290e756fbc497a"
+  "_key": "!items!sc290e756fbc497a",
+  "flags": {},
+  "sort": 0
 }

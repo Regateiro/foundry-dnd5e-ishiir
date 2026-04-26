@@ -1,9 +1,9 @@
 {
-  "name": "Feral Instinct",
+  "name": "Surgical Weapon",
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>Your instincts are so honed that you have Advantage on initiative rolls.</p><p>Additionally, you cannot be Surprised while you are not Incapacitated.</p>",
+      "value": "<p>This magic weapon grants a +2 bonus to damage rolls and skill checks to harvest ingredients from monsters made with it.</p><p>The bonus increases to +4 when you reach 10th level in this class. This bonus is subject to the enhancement bonus limit from items.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -69,17 +69,17 @@
       "charged": null
     }
   },
-  "img": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
-  "_id": "s1fa63c9e1ee3391",
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa5d6da16203dc6f",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777213764554,
+    "modifiedTime": 1777213764577,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s1fa63c9e1ee3391",
+  "_key": "!items!sa5d6da16203dc6f",
   "flags": {},
   "sort": 0
 }

@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You can expend one superiority die and use a Bonus Action on your turn to feint, choosing one creature within 5 feet of you as your target. You have Advantage on your next Attack Roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll.</p>",
+      "value": "<p>When you make a melee weapon attack, you can expend one superiority die to perform a feint. The target of the attack has to make a Wisdom Saving Throw. On a failure, you have Advantage on this attack roll against the target and you add your superiority die to the damage if the attack hits.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210591074,
+    "modifiedTime": 1777213764583,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s5a2829762217a70",

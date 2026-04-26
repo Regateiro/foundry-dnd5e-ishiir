@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": 0,
+      "value": null,
       "max": "@scale.fighter.indomitable",
       "per": "lr",
       "recovery": ""
@@ -79,5 +79,7 @@
     "modifiedTime": 1777210995571,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!scda9c4e67d71089"
+  "_key": "!items!scda9c4e67d71089",
+  "flags": {},
+  "sort": 0
 }

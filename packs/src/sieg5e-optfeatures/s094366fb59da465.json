@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original Attack Roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack.</p>",
+      "value": "<p>When you make a melee weapon attack, you can expend one superiority die to perform a powerful arcing swing around you. The original target and any other creature within your reach has to make a Dexterity Saving Throw. On a failure, a target takes damage equal to one roll of your superiority die.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210591075,
+    "modifiedTime": 1777213764584,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s094366fb59da465",

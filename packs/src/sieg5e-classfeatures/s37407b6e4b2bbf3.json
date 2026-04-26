@@ -31,7 +31,7 @@
       "units": ""
     },
     "uses": {
-      "value": 0,
+      "value": null,
       "max": "max(1, @abilities.int.mod)",
       "per": "lr",
       "recovery": ""
@@ -79,5 +79,7 @@
     "modifiedTime": 1777210995565,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s37407b6e4b2bbf3"
+  "_key": "!items!s37407b6e4b2bbf3",
+  "flags": {},
+  "sort": 0
 }

@@ -118,7 +118,8 @@
             "Compendium.dnd5e.sieg5e-optfeatures.s3a302980e1afc4b",
             "Compendium.dnd5e.sieg5e-optfeatures.s7b231161b33c536",
             "Compendium.dnd5e.sieg5e-optfeatures.s92355efe8f278ff",
-            "Compendium.dnd5e.sieg5e-optfeatures.s32629b5673a0165"
+            "Compendium.dnd5e.sieg5e-optfeatures.s32629b5673a0165",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa5d6da16203dc6f"
           ]
         }
       },
@@ -355,7 +356,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590933,
+    "modifiedTime": 1777213764547,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s35bf9929c87fcf4",

@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't Incapacitated. This movement doesn't provoke Opportunity Attacks.</p><p>Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>",
+      "value": "<p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't Incapacitated. This movement doesn't provoke Opportunity Attacks.</p><p>Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled. This effect ends early if either of you become Incapaciated or you are more than 5 feet away from each other. The AC bonus from this maneuver does not stack with that from Evasive Footwork.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210591074,
+    "modifiedTime": 1777213764583,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s2898f55afad563c",
