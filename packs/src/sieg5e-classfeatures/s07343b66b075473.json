@@ -1,0 +1,85 @@
+{
+  "name": "Mantle of Whispers (College of Whispers)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you cloak yourself in dark magic that preys upon the instinctual fears of your foes. When you use this feature, you can designate any number of creatures to be unaffected by it. The effect lasts for 1 hour or until you are Incapacitated or dismiss this effect as a Bonus Action.</p><p>When a creature sees you while you are under this effect, it has to make a Wisdom Saving Throw. On a success, the creature becomes Immune to this feature for the next 24 hours. A creature that is Immune to the Frightened condition is unaffected by this feature.</p><p>On a failure, the creature's enchanted subconscious forces it to ignore you, to the point it denies your existence altogether. You are automatically treated as Hidden from the creature for the duration. All memories of you while affected by this feature are likewise suppressed, even after the effect ends.</p><p>If the creature is in Combat with you, it can repeat the Saving Throw at the end of each of its turns, ending the effect on a success.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest. You can also restore your use of it by expending a level 3+ spell slot (no action required).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s07343b66b075473",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804141,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s07343b66b075473",
+  "flags": {},
+  "sort": 0
+}

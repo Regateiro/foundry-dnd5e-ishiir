@@ -1,0 +1,85 @@
+{
+  "name": "Swarmkeeper Magic (Swarmkeeper)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn the Mage Hand cantrip if you don't already know it. When you cast it, the hand takes the form of your swarming nature spirits.</p><p>You also learn an additional spell of 1st level or higher when you reach certain levels in this class, as shown in the Swarmkeeper Spells table. Each spell counts as a ranger spell for you, but it doesn't count against the number of ranger spells you know.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Swarmkeeper Spells</caption><thead><tr><th scope=\"col\">Ranger Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Faerie Fire</td></tr><tr><td>5th</td><td>Web</td></tr><tr><td>9th</td><td>Gaseous Form</td></tr><tr><td>13th</td><td>Arcane Eye</td></tr><tr><td>17th</td><td>Insect Plague</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa5c95e7e757bd8f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804189,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa5c95e7e757bd8f",
+  "flags": {},
+  "sort": 0
+}

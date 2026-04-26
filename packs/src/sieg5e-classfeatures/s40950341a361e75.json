@@ -1,0 +1,85 @@
+{
+  "name": "Poisoned Beauty (The Spider Queen)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to use a shard of the Spider Queen's alien beauty, causing other creatures to become enraptured by your appearance. As a Bonus Action, pick a creature you can see. That creature must succeed on a Charisma Saving Throw or become Charmed by you. While Charmed, it also gains vulnerability to poison damage. This benefit lasts for one minute or until you or your allies damages the creature. Once you use this ability, you cannot use it again until you complete a Short or a Long Rest, unless you expend a Pact Magic spell slot (no action required) to restore your use of it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s40950341a361e75",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804216,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s40950341a361e75",
+  "flags": {},
+  "sort": 0
+}

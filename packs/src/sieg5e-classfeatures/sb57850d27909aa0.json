@@ -1,0 +1,85 @@
+{
+  "name": "Titanic Bond (Circle of the Primeval)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The primeval companion can grow to Large size if you so choose, and when you summon it, you can grant it either a Climb Speed, Swim Speed, Fly Speed or Burrow Speed equal to its Speed.</p><p>In turn, the primeval companion lends you some of its terrifying might. Once per turn while your primeval companion is summoned, when you hit a creature with an attack or deal damage to a creature you can see with a spell you cast, you can force that creature to make a Wisdom Saving Throw against your spell save DC; on a failure, the creature is Frightened of you until the end of your next turn.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb57850d27909aa0",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804153,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb57850d27909aa0",
+  "flags": {},
+  "sort": 0
+}

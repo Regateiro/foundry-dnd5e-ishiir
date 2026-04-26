@@ -1,0 +1,85 @@
+{
+  "name": "Battering Roots (Path of the World Tree)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Tendrils of the World Tree extend from your melee weapons. While you wield any melee weapon, your reach with that weapon increases by 10 feet.</p><p>Once per turn, when you hit a creature with a melee weapon attack while raging, you can use the Shove action against that same creature. You can count as Huge for the purpose of this Shove.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa60142ddeb9e4c5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804137,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa60142ddeb9e4c5",
+  "flags": {},
+  "sort": 0
+}

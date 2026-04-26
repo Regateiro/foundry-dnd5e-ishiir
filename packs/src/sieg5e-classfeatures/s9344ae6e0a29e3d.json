@@ -1,0 +1,85 @@
+{
+  "name": "Gale Stride (Dervish)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you use Second Wind and Tactical Shift, you can move up to your full Speed instead. If you choose to not receive healing from Second Wind, you can activate it without a Bonus Action. You can do so only once on your turn.</p><p>Additionally, this movement allows you to move through the spaces of hostile creatures, treating them as 3.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9344ae6e0a29e3d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804161,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9344ae6e0a29e3d",
+  "flags": {},
+  "sort": 0
+}

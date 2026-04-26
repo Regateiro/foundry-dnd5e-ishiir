@@ -1,0 +1,85 @@
+{
+  "name": "One with the Blade (Way of the Kensei)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You extend your ki into your kensei weapons, granting you the following benefits.</p><p><strong>Magic Kensei Weapons.</strong> Your attacks with your kensei weapons count as magical for the purpose of overcoming Resistance and Immunity to nonmagical attacks and damage.</p><p><strong>Deft Riposte.</strong> When you spend Ki on your Deflect Attack feature, you can attack with a monk weapon you are currently wielding instead of forcing the target to make a Dexterity Saving Throw, provided the target is within your reach.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s79e1b72cf834108",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804177,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s79e1b72cf834108",
+  "flags": {},
+  "sort": 0
+}

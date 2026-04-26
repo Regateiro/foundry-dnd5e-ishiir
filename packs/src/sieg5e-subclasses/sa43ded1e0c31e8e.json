@@ -14,10 +14,10 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s0971f8ff128c608",
-            "Compendium.dnd5e.sieg5e-classfeatures.sdb8e1e64d08eb2b",
-            "Compendium.dnd5e.sieg5e-classfeatures.sfd26d8e9d502a80",
-            "Compendium.dnd5e.sieg5e-classfeatures.s2daf58deba2e147"
+            "Compendium.dnd5e.sieg5e-classfeatures.s5a87aef45791cef",
+            "Compendium.dnd5e.sieg5e-classfeatures.s0b00667dab25c20",
+            "Compendium.dnd5e.sieg5e-classfeatures.sea6a098d9a29f2e",
+            "Compendium.dnd5e.sieg5e-classfeatures.s652409402c8265b"
           ]
         }
       },
@@ -28,7 +28,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s8455e9ccfcbeb46"
+            "Compendium.dnd5e.sieg5e-classfeatures.sbfa820c5fb40fd9"
           ]
         }
       },
@@ -39,7 +39,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s8041468fd0cdeec"
+            "Compendium.dnd5e.sieg5e-classfeatures.s8322e5d9b00410e"
           ]
         }
       },
@@ -50,7 +50,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s60660f645e854f8"
+            "Compendium.dnd5e.sieg5e-classfeatures.s98798c141fd1f74"
           ]
         }
       },
@@ -61,7 +61,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s8d0e80a63659a88"
+            "Compendium.dnd5e.sieg5e-classfeatures.s9d19506727da4dd"
           ]
         }
       }
@@ -73,7 +73,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777214759118,
+    "modifiedTime": 1777216750437,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sa43ded1e0c31e8e",

@@ -1,0 +1,85 @@
+{
+  "name": "Breath Weapon (Wyvern Knight)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, your companion can exhale destructive energy in a 30 feet cone. The damage type is that of its Draconic Blood feature. Each creature in the cone must make a Dexterity Saving Throw against your companion's Save DC, which is equal to 8 + your proficiency + its Constitution modifier, taking 8d6 damage on a failed save, or half as much damage on a successful one.</p><p>Your companion cannot use this feature again until it has finished a Short or Long Rest, or until you expend a use of your Second Wind to allow it use it again (no action required).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sbf43d3d55fc06b9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804167,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbf43d3d55fc06b9",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Brand of Sundering (Order of the Ghostslayer)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your strikes expose a fragment of your foe's essence, leaving them vulnerable to your Crimson Rite feature.</p><p>Whenever you hit a creature with a weapon for which you have an active crimson rite, you roll an additional hemocraft die when determining the extra damage from the rite.</p><p>Additionally, if a branded creature has the Incorporeal Movement trait or a similar feature, it can't move through creatures or objects while branded and it cannot benefit from being Invisible.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s8b51cddeffda7cf",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804143,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8b51cddeffda7cf",
+  "flags": {},
+  "sort": 0
+}

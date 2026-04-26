@@ -1,0 +1,85 @@
+{
+  "name": "Weapon Bond (Eldritch Knight)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a Short Rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.</p><p>Once you have bonded a weapon to yourself, you can't be Disarmed of that weapon unless you are Incapacitated. If it is on the same plane of existence, you can summon that weapon as a Bonus Action on your turn, causing it to teleport instantly to your hand.</p><p>You can have up to two bonded weapons, but can summon only one at a time with your Bonus Action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf8a2c8b01a544d4",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804162,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf8a2c8b01a544d4",
+  "flags": {},
+  "sort": 0
+}

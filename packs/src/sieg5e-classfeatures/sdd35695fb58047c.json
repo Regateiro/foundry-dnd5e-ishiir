@@ -1,0 +1,85 @@
+{
+  "name": "Aura of Malevolence (Slayer)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Creatures that start their turn within 10 feet of you or enter it for the first time on a turn, take psychic damage equal to your Intelligence, Wisdom, or Charisma modifier (your choice) and have Disadvantage on Saving Throws against the Frightened and Lacerated conditions while within the aura The aura is inactive while you have the Incapacitated condition.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sdd35695fb58047c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804198,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sdd35695fb58047c",
+  "flags": {},
+  "sort": 0
+}

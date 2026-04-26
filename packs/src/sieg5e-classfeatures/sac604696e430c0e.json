@@ -1,0 +1,85 @@
+{
+  "name": "Scholar of the Beyond (Veil Wardens)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You and your bonded familiar gain Proficiency in the Arcana and Religion skills and both of you can use your spellcasting ability score in place of the usual ability score for these skills.</p><p>Additionally, you can cast Detect Evil and Good without expending a spell slot a number of times equal to your spellcasting ability modifier. You regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sac604696e430c0e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804224,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sac604696e430c0e",
+  "flags": {},
+  "sort": 0
+}

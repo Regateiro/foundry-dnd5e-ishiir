@@ -1,0 +1,85 @@
+{
+  "name": "Panache (Swashbuckler)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You also learn the following new ways to use your Sneak Attack:</p><ul><li><strong>Disarm (Cost: 1d6).</strong> The target has to make a Strength or Dexterity Saving Throw (target's choice) or drop 1 item of your choice that it is holding. The target has Advantage on this Saving Throw if it is holding the item with both hands or is at least 1 size larger than you. This feature has no effect against a creature more than 2 sizes larges than you.</li><li><strong>Goad (Cost: 1d6).</strong> The target has to make a Wisdom Saving Throw or have Disadvantage on Attack Rolls against targets other than you and be unable to make Opportunity Attacks against targets other than you until the start of your next turn.</li><li><strong>Parrying Stance (Cost: 2d6).</strong> Roll 2d6. You gain a bonus to your AC equal to half the number rolled (rounded up) until the start of your next turn.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd733deb9fca2646",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804195,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd733deb9fca2646",
+  "flags": {},
+  "sort": 0
+}

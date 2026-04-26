@@ -1,0 +1,85 @@
+{
+  "name": "Viper's Venom (Order of the Serpent)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you damage a creature with a weapon affected by your Rite of the Viper, it has to make a Constitution Saving Throw against your Hemocraft save DC. You can force a creature to make this Saving Throw only once per turn.</p><p>On a failure, a target is Poisoned for 1 minute. It can repeat the Saving Throw at the end of each of its turn, ending the effect on a success.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb95715ab708a933",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804144,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb95715ab708a933",
+  "flags": {},
+  "sort": 0
+}

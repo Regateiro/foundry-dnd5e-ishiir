@@ -1,0 +1,85 @@
+{
+  "name": "Warcry (Warchief)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When your allies are affected by your Inspiring Surge, you can choose to apply one of the following additional effects per ally:</p><ul><li>The target has Resistance to bludgeoning, piercing, and slashing damage until the start of your next turn.</li><li>The target's Speed is doubled until the start of your next turn.</li><li>The target has Advantage on melee weapon Attack Rolls until the start of your next turn, but Attack Rolls against it also have Advantage for the duration.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4deefd2a5398c8e",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804219,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4deefd2a5398c8e",
+  "flags": {},
+  "sort": 0
+}

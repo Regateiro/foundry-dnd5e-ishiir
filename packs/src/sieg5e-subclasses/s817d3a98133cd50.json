@@ -14,9 +14,9 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s4369727913a0bf8",
-            "Compendium.dnd5e.sieg5e-classfeatures.s7ffa0baea54bebf",
-            "Compendium.dnd5e.sieg5e-classfeatures.sf44699c9ad4b6fa"
+            "Compendium.dnd5e.sieg5e-classfeatures.seb94dbb6a1da6ad",
+            "Compendium.dnd5e.sieg5e-classfeatures.se5a3a2786401d93",
+            "Compendium.dnd5e.sieg5e-classfeatures.sddafbb530047b7e"
           ]
         }
       },
@@ -27,7 +27,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sbcd94f9ffc182b2"
+            "Compendium.dnd5e.sieg5e-classfeatures.se1e1296f6dba3e8"
           ]
         }
       },
@@ -38,7 +38,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s8d44cc3e0db4095"
+            "Compendium.dnd5e.sieg5e-classfeatures.sa455e92ff3044c8"
           ]
         }
       },
@@ -49,7 +49,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s8de21e42e50dd7e"
+            "Compendium.dnd5e.sieg5e-classfeatures.sf24545dec09fa09"
           ]
         }
       },
@@ -60,7 +60,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s3a293f89a0f1c70"
+            "Compendium.dnd5e.sieg5e-classfeatures.s27415bf5df515fc"
           ]
         }
       }
@@ -72,7 +72,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777214759125,
+    "modifiedTime": 1777216750447,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s817d3a98133cd50",

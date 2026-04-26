@@ -1,0 +1,85 @@
+{
+  "name": "Seasonal Avatar (Seasons)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The radius of your Awakened Season increases to 60 feet. Additionally, you have the following spell prepared based on your chosen season. You can cast this spell once without expending a spell slot. You cannot do so again until you have finished a Long Rest.</p><p><strong>Spring.</strong> Power Word Fortify.</p><p><strong>Summer.</strong> Sunburst.</p><p><strong>Autumn.</strong> Abi-Dalzim's Horrid Wilting.</p><p><strong>Winter.</strong> Polar Ray.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s24a14e9ecdf5e04",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804223,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s24a14e9ecdf5e04",
+  "flags": {},
+  "sort": 0
+}

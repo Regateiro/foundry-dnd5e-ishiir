@@ -1,0 +1,85 @@
+{
+  "name": "Avatar of Peace (Oath of Redemption)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You mantle yourself in magical serenity. As a Bonus Action, you gain the following benefits for 10 minutes:</p><ul><li>You have Resistance to all damage and Advantage on all Saving Throws. If you deal damage to a creature, force it to make a Saving Throw, or otherwise target it with a harmful effect, this feature stops working until the end of your next turn.</li><li>Any creature that damages or your allies you while in your Aura of Protection takes 10 radiant damage. It takes this damage only once per turn. This damage does not suspend any of your subclass features.</li><li>If you heal a target with your Lay on Hands, the amount of healing it receives per point is doubled. </li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you expend a 5th-level spell slot to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa1dff7f79b49c9d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804182,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa1dff7f79b49c9d",
+  "flags": {},
+  "sort": 0
+}

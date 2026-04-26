@@ -1,0 +1,85 @@
+{
+  "name": "Psionic Spells (Psionics)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Spell selection is part of what defines a wizard and their individual fields of expertise. When creating your Psionics wizard, consider spells that are thematically appropriate for that tradition. Psionics as a theme generally includes spells that do the following:</p><ul><li>contact or manipulate minds</li><li>allow the caster to perceive distant locations or planes</li><li>alter perception</li><li>move objects and creatures</li><li>teleport</li><li>deal psychic or force damage</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4030123d6bafe44",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804230,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4030123d6bafe44",
+  "flags": {},
+  "sort": 0
+}

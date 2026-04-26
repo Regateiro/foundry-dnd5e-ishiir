@@ -1,0 +1,85 @@
+{
+  "name": "Planar Recovery (Host Caller)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to regain some of your magical energy by drawning from the essence of the planes. Once per Long Rest when you finish a Short Rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your summoner level (rounded up), and none of the slots can be 3rd level or higher.</p><p>For example, if you're a 4th-level summoner, you can recover up to two levels worth of spell slots.</p><p>You can recover either a 2nd-level spell slot or two 1st-level spell slots.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sad75de5b5413616",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sad75de5b5413616",
+  "flags": {},
+  "sort": 0
+}

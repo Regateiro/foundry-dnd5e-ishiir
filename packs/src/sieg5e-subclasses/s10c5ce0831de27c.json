@@ -14,9 +14,9 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.se41fd42039657a7",
-            "Compendium.dnd5e.sieg5e-classfeatures.s8b5603bdfd6e776",
-            "Compendium.dnd5e.sieg5e-classfeatures.se0d0bf34420a774"
+            "Compendium.dnd5e.sieg5e-classfeatures.se537713f5f7777c",
+            "Compendium.dnd5e.sieg5e-classfeatures.se4142f53be811e1",
+            "Compendium.dnd5e.sieg5e-classfeatures.s743498d12b29423"
           ]
         }
       },
@@ -27,7 +27,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s2f5ccc34d0079ba"
+            "Compendium.dnd5e.sieg5e-classfeatures.sc4e390324dd4f29"
           ]
         }
       },
@@ -38,7 +38,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sbcc3a91c6e71e28"
+            "Compendium.dnd5e.sieg5e-classfeatures.s1ee83df29cc1d8e"
           ]
         }
       },
@@ -49,7 +49,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s77f60483beabb3e"
+            "Compendium.dnd5e.sieg5e-classfeatures.sd6bf69d1a5b6355"
           ]
         }
       },
@@ -60,7 +60,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s653a8d6c9d363ad"
+            "Compendium.dnd5e.sieg5e-classfeatures.s3d50e10b11e7280"
           ]
         }
       }
@@ -72,7 +72,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777214759117,
+    "modifiedTime": 1777216750435,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s10c5ce0831de27c",

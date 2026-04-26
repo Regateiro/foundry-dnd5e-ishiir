@@ -1,0 +1,85 @@
+{
+  "name": "Companion's Bond (Beast Conclave)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your animal companion gains a variety of benefits while it is linked to you.</p><p>The animal companion loses its Multiattack action, if it has one.</p><p>The companion obeys your commands as best it can. It rolls for initiative like any other creature, but you determine its actions, decisions, attitudes, and so on. If you are Incapacitated or absent, your companion acts on its own.</p><p>When using your Natural Explorer feature, you and your animal companion can both move stealthily at a normal pace.</p><p>Your animal companion has abilities and game statistics determined in part by your level. Your companion uses your Proficiency bonus rather than its own. In addition to the areas where it normally uses its Proficiency bonus, an animal companion also adds its Proficiency bonus to its AC and to its damage rolls.</p><p>Your animal companion gains Proficiency in two skills of your choice. It also becomes proficient with all Saving Throws.</p><p>For each level you gain after 3rd, your animal companion gains an additional hit die and increases its hit points accordingly.</p><p>Whenever you gain the Ability Score Improvement class feature, your companion's abilities also improve. Your companion can increase one ability score of your choice by 2, or it can increase two ability scores of your choice by 1. As normal, your companion can't increase an ability score above 20 using this feature unless its description specifies otherwise.</p><p>Your companion shares your alignment, and has a personality trait and a flaw that you can roll for or select from the tables below. Your companion shares your ideal, and its bond is always, \"The ranger who travels with me is a beloved companion for whom I would gladly give my life.\"</p><p>Your animal companion gains the benefits of your Favored Enemy feature, and of your Improved Favored Enemy feature when you gain that feature at 6th level. It uses the favored enemies you selected for those features.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Companion Trait</caption><thead><tr><th scope=\"col\">d6</th><th scope=\"col\">Trait</th></tr></thead><tbody><tr><td>1</td><td>I'm dauntless in the face of adversity.</td></tr><tr><td>2</td><td>Threaten my friends, threaten me.</td></tr><tr><td>3</td><td>I stay on alert so others can rest.</td></tr><tr><td>4</td><td>People see an animal and underestimate me.</td></tr><tr><td>5</td><td>I have a knack for showing up in the nick of time.</td></tr><tr><td>6</td><td>I put my friends' needs before my own in all things.</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Companion Flaw</caption><thead><tr><th scope=\"col\">d6</th><th scope=\"col\">Flaw</th></tr></thead><tbody><tr><td>1</td><td>If there's food left unattended, I'll eat it.</td></tr><tr><td>2</td><td>I growl at strangers, and all people except my ranger are strangers to me.</td></tr><tr><td>3</td><td>Any time is a good time for a belly rub.</td></tr><tr><td>4</td><td>I'm deathly afraid of water.</td></tr><tr><td>5</td><td>My idea of hello is a flurry of licks to the face.</td></tr><tr><td>6</td><td>I jump on creatures to tell them how much I love them.</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "seead2218ac4978c",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804184,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!seead2218ac4978c",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Wrath of the Wild (Hollow Warden)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You draw on the strange and ancient horrors of the land for power. While you are Concentrating on a Ranger spell or are under the effect of a Ranger spell that you have cast, you gain the following benefits:</p><ul><li><strong>Ancient Armor.</strong> You gain a bonus to your AC equal to your Wisdom modifier. Your body is wreathed in rotten bark or beastly bristles.</li><li><strong>Unnerving Aura.</strong> When an enemy starts its turn within a 10-foot Emanation originating from you, it has to make a Wisdom Saving Throw against your spell save DC. On a failure, it cannot take Bonus Actions or Reactions until the start of your next turn. The shadows lengthen around you, insects begin to crawl out of the ground, or carrion birds circle overhead.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s98995b9585d9971",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804190,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s98995b9585d9971",
+  "flags": {},
+  "sort": 0
+}

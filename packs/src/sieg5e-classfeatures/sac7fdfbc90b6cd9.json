@@ -1,0 +1,85 @@
+{
+  "name": "Frozen Soul (Cryomancer)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you magically transform into a creature of living ice. In this form, you have Resistance to piercing, bludgeoning, and slashing damage as well as Immunity to cold damage and poison.</p><p>Additionally, if a creature hits you with a melee attack from within 10 ft or touches you while you are under the effect of your Aegis of Rime feature, it is immediately affected by your Clinging Frost feature. If it was already affected, it instead immediately makes a Constitution Saving Throw as if at the end of its turn, suffering the usual effect on a failure. Succeeding on this Saving Throw does not count towards the three successes needed to clear the effect. </p><p>Finally, creatures affected by your Clinging Frost suffer a -2 penalty to Constitution Saving Throws against your spells that deal cold damage.</p><p>You remain in this form for 1 minute. It ends early if you are incapacitated, if you die, or if you dismiss it as a Bonus Action.</p><p>You cannot use this feature again until you finish a Long Rest or you spend 7 sorcery points to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sac7fdfbc90b6cd9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804209,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sac7fdfbc90b6cd9",
+  "flags": {},
+  "sort": 0
+}

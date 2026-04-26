@@ -1,0 +1,85 @@
+{
+  "name": "The Master's Odem (The Dragon)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you open a small portal and call upon the raw energy of your patron's powerful breath weapon.</p><p>Every creature in the area of effect, which originates from your position, has to make a Saving Throw against your spell save DC. A target takes 15d10 damage on a failed save, and half as much on a successful one. The shape, Saving Throw, and damage type of the breath weapon depends on your draconic patron.</p><p>You cannot use this feature again until you have finished a Long Rest.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Master's Odem</caption><thead><tr><th scope=\"col\">Draconic Patron</th><th scope=\"col\">Breath Weapon</th></tr></thead><tbody><tr><td>Black</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Blue</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Brass</td><td>90 ft cone (DEX save)</td></tr><tr><td>Bronze</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Copper</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Gold</td><td>90 ft cone (DEX save)</td></tr><tr><td>Green</td><td>90 ft cone (CON save)</td></tr><tr><td>Jabberwock</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Night</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Red</td><td>90 ft cone (DEX save)</td></tr><tr><td>Shadow</td><td>90 ft cone (CON save)</td></tr><tr><td>Silver</td><td>120x10 ft line (DEX save)</td></tr><tr><td>Sylvan</td><td>90 ft cone (CON save)</td></tr><tr><td>White</td><td>90 ft cone (CON save)</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s983b7ee6c52d23b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804217,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s983b7ee6c52d23b",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Avenging Angel (Oath of Vengeance)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You become an avatar of vengeance. As a Bonus Action, you gain the following benefits for 10 minutes:</p><ul><li>You sprout spectral wings on your back, have a Fly Speed of 60 feet, and can hover.</li><li>If an enemy creature within your Aura of Protection damages you or your allies, it is automatically affected by your Vow of Enmity (no action required). This does not consume a use of your Channel Divinity.</li><li>If an enemy creature starts its turn in your Aura of Protection or enters it for the first time on a turn, it has to make a Wisdom Saving Throw or become Frightened for 1 minute. If the creature is under the effect of your Vow of Enmity, it has Disadvantage on this Saving Throw. At the end of each of its turns, the creature can repeat the Saving Throw, ending the effect on a success. </li></ul><p>Once you use this feature, you can't use it again until you finish a Long Rest, unless you expend a 5th-level spell slot to use it again.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s63a13597fedd06d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804180,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s63a13597fedd06d",
+  "flags": {},
+  "sort": 0
+}

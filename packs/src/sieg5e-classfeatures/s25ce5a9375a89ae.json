@@ -1,0 +1,85 @@
+{
+  "name": "Insidious Whispers (College of Whispers)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Any spell you cast ignores Immunity to and Advantage on Saving Throws against the Charmed condition unless the target also has Immunity to or Advantage on Saving Throws against the Frightened condition, respectively.</p><p>Additionally, any creature Charmed by a spell cast by you suppresses all memories of the duration. This effect is suspended if the target becomes Immune to the Frightened condition.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s25ce5a9375a89ae",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804141,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s25ce5a9375a89ae",
+  "flags": {},
+  "sort": 0
+}

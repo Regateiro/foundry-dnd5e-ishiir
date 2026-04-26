@@ -1,0 +1,85 @@
+{
+  "name": "Aura of Alacrity (Oath of Glory)",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You emanate an aura that fills you and your companions with supernatural speed, allowing you to race across a battlefield in formation. Your Speed increases by 10 feet. In addition, if you aren't Incapacitated, the Speed of any ally who starts their turn within 10 feet of you increases by 10 feet until the end of that turn.</p><p>When you reach 18th level in this class, the range of the aura increases to 30 feet.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s1bc3d97dd75d74b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777216804182,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1bc3d97dd75d74b",
+  "flags": {},
+  "sort": 0
+}
