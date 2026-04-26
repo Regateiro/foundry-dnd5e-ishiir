@@ -1,0 +1,85 @@
+{
+  "name": "Icy Glare",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When a creature you can see within 30 feet of yourself deals damage to you or forces you to make a Saving Throw, you can use your Reaction to force the creature to make a Wisdom Saving Throw. On a failure, the target takes 4d8 cold damage and its Speed is reduced 0 until the start of your next turn. On a success, it takes half as much damage and its Speed isn't reduced. This damage ignores Resistance.</p><p>You can use this Reaction a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf5ce2020e380517",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591010,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf5ce2020e380517",
+  "flags": {},
+  "sort": 0
+}

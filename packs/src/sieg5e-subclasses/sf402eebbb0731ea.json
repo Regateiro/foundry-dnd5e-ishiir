@@ -1,0 +1,69 @@
+{
+  "_id": "sf402eebbb0731ea",
+  "name": "Ranger: Hunter Conclave",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "ranger",
+    "identifier": "ranger-hunter-conclave",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3b8816482bb2a3a",
+            "Compendium.dnd5e.sieg5e-classfeatures.s955e366ff6e01e6"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf397f469aad0d7c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.saf06d21d42db29f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9d2e4afbd19be4b"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/targeting/crosshair-scope-sniper-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590948,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf402eebbb0731ea",
+  "flags": {},
+  "sort": 0
+}

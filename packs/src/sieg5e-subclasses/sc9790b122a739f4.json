@@ -1,0 +1,57 @@
+{
+  "_id": "sc9790b122a739f4",
+  "name": "Paladin: Oath of the Ancients",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oath-of-the-ancients",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf8492bca617b5ea"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s937340e412c634d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb8ef313a524a6fc"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/meteorite-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590947,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc9790b122a739f4",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,69 @@
+{
+  "_id": "s17845d1036ae8ab",
+  "name": "Sorcerer: Divine Soul",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "sorcerer",
+    "identifier": "sorcerer-divine-soul",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sded1fa1a965650a",
+            "Compendium.dnd5e.sieg5e-classfeatures.s0db509dcb1bf81c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1b0e1a8c348a81e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s60fef5469967f9a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf7d6de79cbb8b44"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/holy/angel-winged-humanoid-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s17845d1036ae8ab",
+  "flags": {},
+  "sort": 0
+}

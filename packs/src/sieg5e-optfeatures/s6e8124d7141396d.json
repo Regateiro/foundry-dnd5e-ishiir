@@ -1,0 +1,85 @@
+{
+  "name": "Blood Curse of the Muddled Mind",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you curse a creature that you can see within 30 feet of you that is concentrating on a spell or using a feature that requires Concentration. The target has to make a Charisma Saving Throw. On a failure, the affected creature has Disadvantage on Wisdom, Intelligence, and Concentration Saving Throws until the start of your next turn.</p><p><strong>Amplify.</strong> This curse lasts for 1 minute. The cursed creature can make a Charisma Saving Throw at the end of each of its turns, ending the curse on itself at the start of your next turn on a success.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "cha",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/hypnosis-mesmerism-swirl.webp",
+  "_id": "s6e8124d7141396d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591054,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6e8124d7141396d",
+  "flags": {},
+  "sort": 0
+}

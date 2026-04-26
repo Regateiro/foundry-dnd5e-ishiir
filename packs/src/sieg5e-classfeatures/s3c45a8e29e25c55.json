@@ -1,0 +1,85 @@
+{
+  "name": "Improved Elemental Fury",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The option you chose for Elemental Fury grows more powerful:</p><p><strong>Potent Spellcasting.</strong> When you cast a Druid spell of 1st level or higher that deals damage, you add your Wisdom modifier to one damage roll of the spell.</p><p><strong>Primal Strike.</strong> The extra damage of your Primal Strike increases to 2d8.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/light/explosion-star-large-teal.webp",
+  "_id": "s3c45a8e29e25c55",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590975,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3c45a8e29e25c55",
+  "flags": {},
+  "sort": 0
+}

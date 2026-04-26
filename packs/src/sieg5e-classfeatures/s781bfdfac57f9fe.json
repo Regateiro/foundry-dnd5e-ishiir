@@ -1,0 +1,85 @@
+{
+  "name": "Tinker's Magic",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You know the Mending cantrip.</p><p>As a Magic action while holding Tinker's Tools, you can create one item in an unoccupied space within 5 feet of yourself, choosing the item from the following list:</p><ul><li>Ball Bearings</li><li>Basket</li><li>Bedroll</li><li>Bell</li><li>Blanket</li><li>Block and Tackle</li><li>Bottle, Glass</li><li>Bucket</li><li>Caltrops</li><li>Candle</li><li>Crowbar</li><li>Flask</li><li>Grappling Hook</li><li>Hunting Trap</li><li>Jug</li><li>Lamp</li><li>Manacles</li><li>Net</li><li>Oil</li><li>Paper</li><li>Parchment</li><li>Pole</li><li>Pouch</li><li>Rope</li><li>Sack</li><li>Shovel</li><li>Spikes, Iron</li><li>String</li><li>Tinderbox</li><li>Torch</li><li>Vial</li></ul><p>The item lasts until you finish a Long Rest, at which point it vanishes.</p><p>You can use this feature a number of times equal to your Intelligence modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "you must be holding Tinker's Tools"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/social/diplomacy-offering-ritual.webp",
+  "_id": "s781bfdfac57f9fe",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590955,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s781bfdfac57f9fe",
+  "flags": {},
+  "sort": 0
+}

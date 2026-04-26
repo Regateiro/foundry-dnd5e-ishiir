@@ -1,0 +1,85 @@
+{
+  "name": "Natural Weapons",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Even when not shifted, your form is permanently altered to include fangs, claws, or talons. When you make a melee weapon attack with these natural weapons, you roll a d6 and add your Strength or Dexterity modifier to the attack and damage roll (your choice).</p><p>This die changes as you gain shifter levels, as shown in the Natural Weapons column of the Shifter table.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/claws/claw-talons-yellow-red.webp",
+  "_id": "se651f50e241358f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591017,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se651f50e241358f",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "sb6e8e8980246f39",
+  "name": "Centaur",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "centaur",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 50
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sebf8ffdadcc2f3b",
+            "Compendium.dnd5e.sieg5e-classfeatures.sdf87c6a21d99fc3",
+            "Compendium.dnd5e.sieg5e-classfeatures.se3011da877b6857",
+            "Compendium.dnd5e.sieg5e-classfeatures.sf8059f24c2f1a46"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:nat",
+            "skills:prc",
+            "skills:sur"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/abilities/bull-head-horns-glowing.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb6e8e8980246f39",
+  "flags": {},
+  "sort": 0
+}

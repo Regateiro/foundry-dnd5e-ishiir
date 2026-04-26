@@ -1,0 +1,70 @@
+{
+  "_id": "s4aae8519f9d19de",
+  "name": "Rogue: Mastermind",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "rogue",
+    "identifier": "rogue-mastermind",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd51a4ac9fd984b5",
+            "Compendium.dnd5e.sieg5e-classfeatures.s58acb7df5bc9c18"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s13db9fa56da6ef6",
+            "Compendium.dnd5e.sieg5e-classfeatures.sbde7aa4cce77bf6"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s16766d81f6e6ce9"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8f590c4cd8d6479"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/perception/silhouette-stealth-shadow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590949,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4aae8519f9d19de",
+  "flags": {},
+  "sort": 0
+}

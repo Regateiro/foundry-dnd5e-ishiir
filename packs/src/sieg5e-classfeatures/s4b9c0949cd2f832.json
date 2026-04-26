@@ -1,0 +1,85 @@
+{
+  "name": "Natural Explorer",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You are a master of navigating the natural world, and you react with swift and decisive action when attacked. This grants you the following benefits:</p><ul><li>You ignore 3.</li><li>You have Advantage on initiative rolls.</li><li>On your first turn during combat, you have Advantage on Attack Rolls against creatures that have not yet acted.</li></ul><p>In addition, you are skilled at navigating the wilderness. You gain the following benefits when traveling for an hour or more:</p><ul><li>Difficult terrain doesn't slow your group's travel.</li><li>Your group can't become lost except by magical means.</li><li>When performing a task during the Travelling Phase of Overland Travel, you may additionally perform the Lookout task or assist with it.</li><li>If you are traveling alone, you can move stealthily at a normal pace.</li><li>When you forage, you find twice as much food as you normally would.</li><li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/nature/tree-roots-glow-yellow.webp",
+  "_id": "s4b9c0949cd2f832",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590986,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4b9c0949cd2f832",
+  "flags": {},
+  "sort": 0
+}

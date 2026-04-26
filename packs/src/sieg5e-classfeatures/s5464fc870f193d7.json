@@ -1,0 +1,85 @@
+{
+  "name": "Sylvan Adept",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your Words of the First World improve in the following ways:</p><ul><li><strong>Sticky Misfortune.</strong> If the reroll does not turn success into failure or vice versa, the curse instead lasts 1 minute or until it changes the outcome of a roll when you activate it the next time.</li><li><strong>Gloaming Cloak.</strong> The creature affected by your Mantle of Midnight becomes Hidden instead of Invisible, ignoring all the usual restrictions for hiding in plain view.</li><li><strong>Sylvan Farstride.</strong> Tread the Unseen Path's teleport distance increases to 60 feet.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5464fc870f193d7",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590966,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5464fc870f193d7",
+  "flags": {},
+  "sort": 0
+}

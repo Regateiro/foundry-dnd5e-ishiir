@@ -1,0 +1,57 @@
+{
+  "_id": "scb2fff1ef9a4041",
+  "name": "Paladin: Oath of Redemption",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oath-of-redemption",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s95531bf6aa26c46"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3e0e0693b098cf7"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s573a1e2298b5b86"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590948,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!scb2fff1ef9a4041",
+  "flags": {},
+  "sort": 0
+}

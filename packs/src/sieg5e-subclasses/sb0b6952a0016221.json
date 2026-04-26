@@ -1,0 +1,58 @@
+{
+  "_id": "sb0b6952a0016221",
+  "name": "Warlock: The Great Old One",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "warlock",
+    "identifier": "warlock-the-great-old-one",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0f13f709f5e86fa"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s145c99eebbc1544",
+            "Compendium.dnd5e.sieg5e-classfeatures.sed5d0b8d2562087"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se845ded176031a1"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/magical/spirit-fear-energy-pink.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590952,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb0b6952a0016221",
+  "flags": {},
+  "sort": 0
+}

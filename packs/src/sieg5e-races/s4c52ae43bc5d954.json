@@ -1,0 +1,43 @@
+{
+  "_id": "s4c52ae43bc5d954",
+  "name": "Gnome (Forest)",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "gnome-forest",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 25
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7ad8dd53d6ad12b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3fdfd3b4179f435",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1889be4dc9d66a1",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8e9571ef6676829"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/trades/academics-investigation-puzzles.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591077,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4c52ae43bc5d954",
+  "flags": {},
+  "sort": 0
+}

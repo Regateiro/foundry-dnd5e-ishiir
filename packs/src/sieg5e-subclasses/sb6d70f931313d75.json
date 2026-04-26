@@ -1,0 +1,57 @@
+{
+  "_id": "sb6d70f931313d75",
+  "name": "Paladin: Oath of the Crown",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "paladin",
+    "identifier": "paladin-oath-of-the-crown",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3124b182c191c94"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s29cf614fed1dfa3"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1159bcbad7704ce"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/control/control-influence-crown-gold.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590947,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb6d70f931313d75",
+  "flags": {},
+  "sort": 0
+}

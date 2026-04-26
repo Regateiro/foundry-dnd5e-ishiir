@@ -1,0 +1,85 @@
+{
+  "name": "Lunar Cycle",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When Initiative is rolled, you enter one of the below Lunar Phases of your choice, as long as you are not wearing any armor or shield.</p><p>Each Lunar Phase has a passive and an active effect. You can trigger the active effect at the start of your turn (no action required). After you do so, you automatically enter the next Lunar Phase on the start of your next turn.</p><p>The order of Lunar Phases is New Moon -> Crescent Moon -> Full Moon, after which the cycle repeats.</p><p><strong>New Moon.</strong> You gain temporary hit points equal to your spellcasting ability modifier. If you activate this effect, you gain additional temporary hit points equal to twice your Witch level.</p><p><strong>Crescent Moon.</strong> Your Speed increases by 10 feet. If you activate this effect, your speed is doubled and you cannot be targeted by Attacks of Opportunity.</p><p><strong>Full Moon.</strong> Your melee weapon attacks deal additional 1d4 radiant damage. If you activate this effect, the radiant damage increases to 2d4.</p><p>The additional damage increases at 5th level (1d6/2d6), 11th level (1d8/2d8), and 17th level (1d10/2d10) in this class.</p><p>You lose the benefits of any Lunar Phase when you don armor or a shield.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9d481988584eec6",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591038,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9d481988584eec6",
+  "flags": {},
+  "sort": 0
+}

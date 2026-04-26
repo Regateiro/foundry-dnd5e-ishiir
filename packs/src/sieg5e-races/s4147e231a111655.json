@@ -1,0 +1,56 @@
+{
+  "_id": "s4147e231a111655",
+  "name": "Dwarf (Hill)",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "dwarf-hill",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 25
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s33f7d2c96a38e13",
+            "Compendium.dnd5e.sieg5e-classfeatures.sf50a9c8c89bff36",
+            "Compendium.dnd5e.sieg5e-classfeatures.s88df4aa92712010",
+            "Compendium.dnd5e.sieg5e-classfeatures.sde609b88129742d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s11c26fd09f7c17c",
+            "Compendium.dnd5e.sieg5e-classfeatures.s0a62dd0c5af108f"
+          ]
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:poison"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/trades/mining-pickaxe-stone-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591077,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4147e231a111655",
+  "flags": {},
+  "sort": 0
+}

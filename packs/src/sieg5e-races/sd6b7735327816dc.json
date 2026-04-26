@@ -1,0 +1,67 @@
+{
+  "_id": "sd6b7735327816dc",
+  "name": "Aven (Kenku)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "aven-kenku",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s493137304c5bb3b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s2095f8fd053a818",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6ad1da92db96751",
+            "Compendium.dnd5e.sieg5e-classfeatures.s70f4bab58d336eb",
+            "Compendium.dnd5e.sieg5e-classfeatures.se871e39cbb72ea6"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:None"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:radiant"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/birds/corvid-call-sound-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630210,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd6b7735327816dc",
+  "flags": {},
+  "sort": 0
+}

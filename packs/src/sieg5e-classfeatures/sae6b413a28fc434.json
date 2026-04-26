@@ -1,0 +1,85 @@
+{
+  "name": "Step through the Circle",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As an Action, you create a 10-feet radius circle of mushrooms at a point you can see within 30 feet. You can only have up to three of these circles at the same time. Whenever you create an additional one beyond that number, the oldest one disappears. A circle lasts for 1 year or until you trigger one of the following effects an Action:</p><p><strong>Travel Back.</strong> You and up to 8 other willing creatures of your choice within 10 feet are teleported to the circle's location.</p><p><strong>Travel Forth.</strong> You and up to 8 other willing creatures within the circle are teleported as per the effect of the Plane Shift spell.</p><p>Once you have triggered one of the above effects, you cannot do so again until you have finished a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sae6b413a28fc434",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591038,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sae6b413a28fc434",
+  "flags": {},
+  "sort": 0
+}

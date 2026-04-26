@@ -1,0 +1,46 @@
+{
+  "_id": "se40a696097ce94a",
+  "name": "Cleric: Winter Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-winter-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se78e0b1325fe759"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd24290a89450eed"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/water/snowflake-ice-snow-white.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590944,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se40a696097ce94a",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Draconic Companion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your familiar takes on draconic features and changes its creature type to dragon if it wasn't already one. It has Resistance against the damage type associated with your draconic patron. Additionally, its size increases to Medium.</p><p>As an Action, your familiar can exhale destructive energy in a 30 ft cone. Each creature in the area has to make a DEX Saving Throw against your Spell Save DC. A target takes damage of the type associated with your patron equal to 2d6 + an additional 1d6 x your Proficiency on a failed saved and half as much on a successful one.</p><p>Your familiar cannot use this action again until you have finished a Short or a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s267b9ce0bfd18ab",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591060,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s267b9ce0bfd18ab",
+  "flags": {},
+  "sort": 0
+}

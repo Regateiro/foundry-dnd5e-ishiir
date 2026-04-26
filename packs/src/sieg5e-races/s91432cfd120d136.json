@@ -1,0 +1,66 @@
+{
+  "_id": "s91432cfd120d136",
+  "name": "Genasi (Earth)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "genasi-earth",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.scbae19767704ab4",
+            "Compendium.dnd5e.sieg5e-classfeatures.sba6e14912e10302",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9ca81df3708acd3",
+            "Compendium.dnd5e.sieg5e-classfeatures.s33ce7e5b6bf60c4"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:poison"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s91432cfd120d136",
+  "flags": {},
+  "sort": 0
+}

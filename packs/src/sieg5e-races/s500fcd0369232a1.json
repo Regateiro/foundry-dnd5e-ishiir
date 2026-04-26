@@ -1,0 +1,58 @@
+{
+  "_id": "s500fcd0369232a1",
+  "name": "Minotaur",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "minotaur",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb2ae266c4a3e92f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9e594af933f7841",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb74e0b016affe8c",
+            "Compendium.dnd5e.sieg5e-classfeatures.sfcc48d403b52403",
+            "Compendium.dnd5e.sieg5e-classfeatures.sec7273b8381219e",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6e041c09b3cd3c9"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath",
+            "skills:sur"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/bull-horns-eyes-glowin-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630212,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s500fcd0369232a1",
+  "flags": {},
+  "sort": 0
+}

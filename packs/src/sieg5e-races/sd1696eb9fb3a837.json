@@ -1,0 +1,67 @@
+{
+  "_id": "sd1696eb9fb3a837",
+  "name": "Genasi (Fire)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "genasi-fire",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1b3d61eb7f81a57",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9de2a636a131ef1",
+            "Compendium.dnd5e.sieg5e-classfeatures.s68fde9642bfac74",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1bcc81290e9ec6a"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:None",
+            "skills:prc"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:fire"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd1696eb9fb3a837",
+  "flags": {},
+  "sort": 0
+}

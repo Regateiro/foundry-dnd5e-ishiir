@@ -1,0 +1,415 @@
+{
+  "_id": "s7b4a7971694fb89",
+  "name": "Warlock",
+  "type": "class",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "warlock",
+    "hitDice": "d8",
+    "advancement": [
+      {
+        "type": "Trait",
+        "title": "Armor Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-armor-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "grants": [
+            "armor:lgt"
+          ]
+        }
+      },
+      {
+        "type": "Trait",
+        "title": "Weapon Proficiencies",
+        "icon": "systems/dnd5e/icons/svg/trait-weapon-proficiencies.svg",
+        "level": 1,
+        "configuration": {
+          "grants": [
+            "weapon:sim"
+          ]
+        }
+      },
+      {
+        "type": "ScaleValue",
+        "title": "Invocations Known",
+        "icon": "systems/dnd5e/icons/svg/scale-value.svg",
+        "configuration": {
+          "identifier": "invocation-known",
+          "type": "number",
+          "scale": {
+            "1": {
+              "value": 1
+            },
+            "2": {
+              "value": 3
+            },
+            "5": {
+              "value": 5
+            },
+            "7": {
+              "value": 6
+            },
+            "9": {
+              "value": 7
+            },
+            "12": {
+              "value": 8
+            },
+            "15": {
+              "value": 9
+            },
+            "18": {
+              "value": 10
+            }
+          }
+        }
+      },
+      {
+        "title": "Choose Eldritch Invocations",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "1": 1,
+            "2": 2,
+            "5": 2,
+            "7": 1,
+            "9": 1,
+            "12": 1,
+            "15": 1,
+            "18": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s9518840c07cb944",
+            "Compendium.dnd5e.sieg5e-optfeatures.s59ece74134d438d",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf6c7b73cdeb88b7",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd5ed802534e3301",
+            "Compendium.dnd5e.sieg5e-optfeatures.sc685cd87198f208",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3fc094c5cafdab3",
+            "Compendium.dnd5e.sieg5e-optfeatures.s551ff9cdd085e3d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s87e869e5fb03fdb",
+            "Compendium.dnd5e.sieg5e-optfeatures.s667f14575a5aff1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s80c939852a96e20",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8975b4614799ccb",
+            "Compendium.dnd5e.sieg5e-optfeatures.s291763ddfd7fd35",
+            "Compendium.dnd5e.sieg5e-optfeatures.s70ddd4200fc31e9",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4f4ae69c8538992",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6b198d9217b06e7",
+            "Compendium.dnd5e.sieg5e-optfeatures.sbba0cfb86e2978b",
+            "Compendium.dnd5e.sieg5e-optfeatures.se56c024d0bad9ad",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf8ac73bd5a88880",
+            "Compendium.dnd5e.sieg5e-optfeatures.s786b661fa1fcb7e",
+            "Compendium.dnd5e.sieg5e-optfeatures.s267b9ce0bfd18ab",
+            "Compendium.dnd5e.sieg5e-optfeatures.s28f36506e0e9ac5",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4abbfe6e68a5ba3",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6e76ea668627b66",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8945f4a315a392a",
+            "Compendium.dnd5e.sieg5e-optfeatures.s150ea8c2eed82aa",
+            "Compendium.dnd5e.sieg5e-optfeatures.s2f45d3ae6d9b418",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5e6518dbf835d97",
+            "Compendium.dnd5e.sieg5e-optfeatures.s736000b06195c4e",
+            "Compendium.dnd5e.sieg5e-optfeatures.sc375a2e5b1b63b2",
+            "Compendium.dnd5e.sieg5e-optfeatures.s848a790f2001bb0",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6b83e8dd56e8695",
+            "Compendium.dnd5e.sieg5e-optfeatures.s766a40995e2aa2d",
+            "Compendium.dnd5e.sieg5e-optfeatures.scbf74ba8a6d365e",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf92d5971d6deb04",
+            "Compendium.dnd5e.sieg5e-optfeatures.s9f3ef5496a4065b",
+            "Compendium.dnd5e.sieg5e-optfeatures.s84ed12579f3eab2",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7e431300d2241a8",
+            "Compendium.dnd5e.sieg5e-optfeatures.sae3fb9dbbf813a3",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6fa4b712321d784",
+            "Compendium.dnd5e.sieg5e-optfeatures.s22489bed464ff05",
+            "Compendium.dnd5e.sieg5e-optfeatures.s15705312b8d7f58",
+            "Compendium.dnd5e.sieg5e-optfeatures.s79bd4d38129f6a1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s9743c7457d57fe0",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd5010355f88445d",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd9e146a494844c9",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf8a6dd91ad00297",
+            "Compendium.dnd5e.sieg5e-optfeatures.sc4053ae9dbcec64",
+            "Compendium.dnd5e.sieg5e-optfeatures.s13e3b8790532461",
+            "Compendium.dnd5e.sieg5e-optfeatures.s95325cef70e26e2",
+            "Compendium.dnd5e.sieg5e-optfeatures.s35d260567394a36",
+            "Compendium.dnd5e.sieg5e-optfeatures.s88542a59e1c732a",
+            "Compendium.dnd5e.sieg5e-optfeatures.sf6edb456a1f9129",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4077e0064d582ff",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb8165131cf0d692",
+            "Compendium.dnd5e.sieg5e-optfeatures.s911723fc1699263",
+            "Compendium.dnd5e.sieg5e-optfeatures.s2c16a3543344236",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1c49ff486e9d825",
+            "Compendium.dnd5e.sieg5e-optfeatures.s2b3634535a722cd",
+            "Compendium.dnd5e.sieg5e-optfeatures.se2b52e9c3d9df13",
+            "Compendium.dnd5e.sieg5e-optfeatures.s223c69a0cc43882",
+            "Compendium.dnd5e.sieg5e-optfeatures.s285d3fc67657cd2",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb0dfc47bc31e0dd",
+            "Compendium.dnd5e.sieg5e-optfeatures.scf1560501313f55",
+            "Compendium.dnd5e.sieg5e-optfeatures.sc0b94d7a72dfcf7",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7291024c4b51a71",
+            "Compendium.dnd5e.sieg5e-optfeatures.sea0ec4eb44ccb89",
+            "Compendium.dnd5e.sieg5e-optfeatures.s09eeaab7e08a51b",
+            "Compendium.dnd5e.sieg5e-optfeatures.s92f265cf191ca74",
+            "Compendium.dnd5e.sieg5e-optfeatures.sdf7adee97276e34",
+            "Compendium.dnd5e.sieg5e-optfeatures.s2d1bc197e83a731",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6d596d3b7c9a630",
+            "Compendium.dnd5e.sieg5e-optfeatures.s31ec3be01c77e0e",
+            "Compendium.dnd5e.sieg5e-optfeatures.sbddd2e048d93ab3",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1d13c3a4912752c",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd7b96166ae7dda1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8cd80b266bf4efc",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5e4561f44e4d7f9",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb1a5cbe1eb5d582",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd99e523e9c9cb08",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1387bd1db04cd38",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6f1a3ea33199065",
+            "Compendium.dnd5e.sieg5e-optfeatures.s04c1500b66120d0",
+            "Compendium.dnd5e.sieg5e-optfeatures.s9ea44d84820d964",
+            "Compendium.dnd5e.sieg5e-optfeatures.se7016c52ceeda6d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3ab1fb3081f1574"
+          ]
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 4,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 8,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 12,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 16,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Ability Score Improvement",
+        "type": "AbilityScoreImprovement",
+        "level": 19,
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "cap": 2,
+          "points": 2
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s94f776149198c90",
+            "Compendium.dnd5e.sieg5e-classfeatures.sec89d6fe2fecab7"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 2,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s240826511f0c2bb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s38be1c50c4a9c63"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3f21066df704f6e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s05861cbf09e5922"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s77b307447d2e113"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2399d0ff8279722"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sae3e092917d4bdc"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s97220a698724c77"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 20,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb7b9aca50007ead"
+          ]
+        }
+      },
+      {
+        "title": "Hit Points",
+        "type": "HitPoints",
+        "icon": "systems/dnd5e/icons/svg/hit-points.svg",
+        "value": {
+          "1": "avg"
+        }
+      },
+      {
+        "title": "Saving Throws",
+        "type": "Trait",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/trait-saves.svg",
+        "configuration": {
+          "grants": [],
+          "choices": [
+            {
+              "count": 1,
+              "pool": [
+                "saves:int",
+                "saves:wis",
+                "saves:cha"
+              ]
+            },
+            {
+              "count": 2,
+              "pool": [
+                "saves:*"
+              ]
+            }
+          ],
+          "hint": "Select only 2 major saves (DEX, CON, WIS) or 1 major save and 2 minor saves (STR, INT, CHA) in total."
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:arc",
+                "skills:dec",
+                "skills:his",
+                "skills:itm",
+                "skills:inv",
+                "skills:nat",
+                "skills:rel"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "title": "Origin Feat",
+        "type": "AbilityScoreImprovement",
+        "level": 1,
+        "classRestriction": "primary",
+        "icon": "systems/dnd5e/icons/svg/ability-score-improvement.svg",
+        "configuration": {
+          "points": 0
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/bat-giant-tattered-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590937,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7b4a7971694fb89",
+  "flags": {},
+  "sort": 0
+}

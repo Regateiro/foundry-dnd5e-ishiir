@@ -1,0 +1,85 @@
+{
+  "name": "Improved Awakened Season",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The effect of your Awakened Season improves in the following ways:</p><p><strong>Spring.</strong> Affected creatures that start their turn in the area or enter it for the first time on a turn, regain hit points equal to your spellcasting ability modifier. This effect does not receive the bonus healing from Awakened Season.</p><p><strong>Summer.</strong> You add your spellcasting ability modifier to any radiant or fire damage you deal to affected creatures in the area.</p><p><strong>Autumn.</strong> You add your spellcasting ability modifier to any lightning or necrotic damage you deal to affected creatures in the area.</p><p><strong>Winter.</strong> You add your spellcasting ability modifier to any cold damage you deal to affected creatures in the area.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s3c5fdab0e1e50a8",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591038,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3c5fdab0e1e50a8",
+  "flags": {},
+  "sort": 0
+}

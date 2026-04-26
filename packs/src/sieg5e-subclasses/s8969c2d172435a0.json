@@ -1,0 +1,46 @@
+{
+  "_id": "s8969c2d172435a0",
+  "name": "Cleric: War Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-war-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s61b7c8d5acd9f73"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/spear-tips-quintuple-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590944,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8969c2d172435a0",
+  "flags": {},
+  "sort": 0
+}

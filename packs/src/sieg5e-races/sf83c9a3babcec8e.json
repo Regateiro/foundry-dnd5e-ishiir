@@ -1,0 +1,58 @@
+{
+  "_id": "sf83c9a3babcec8e",
+  "name": "Deminymph (Wood Nymph)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "deminymph-wood-nymph",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s31fba6d70d26d09",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1b591a8ff2af47f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s0889b70533411b9",
+            "Compendium.dnd5e.sieg5e-classfeatures.sa07d177fc3c352d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4831f53d557988b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s15e6554315b8e74"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:nat",
+            "skills:prc"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf83c9a3babcec8e",
+  "flags": {},
+  "sort": 0
+}

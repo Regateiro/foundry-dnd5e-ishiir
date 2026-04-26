@@ -1,0 +1,85 @@
+{
+  "name": "Maximized Spell",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you roll damage for a spell, you can spend 2 sorcery points and choose a number damage dice up to your Charisma modifier (minimum of one). You maximize the rolled result for the chosen dice.</p><p>You can use Maximized Spell even if you have already used a different Metamagic option during the casting of the spell.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": "when you roll damage for a spells"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/fire/orb-vortex.webp",
+  "_id": "s7e19261811082ea",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591073,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7e19261811082ea",
+  "flags": {},
+  "sort": 0
+}

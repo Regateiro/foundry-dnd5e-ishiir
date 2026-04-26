@@ -1,0 +1,71 @@
+{
+  "_id": "s4cef07208f30197",
+  "name": "Artificer: Battle Smith",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "artificer",
+    "identifier": "artificer-battle-smith",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s065645ec4080237",
+            "Compendium.dnd5e.sieg5e-classfeatures.s2eb93530a07dc90",
+            "Compendium.dnd5e.sieg5e-classfeatures.s22b8ec994150d90",
+            "Compendium.dnd5e.sieg5e-classfeatures.sf20f3e38f1c4396"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 5,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s37407b6e4b2bbf3"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s06cb478285be37a"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/tools/smithing/furnace-fire-metal-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590940,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4cef07208f30197",
+  "flags": {},
+  "sort": 0
+}

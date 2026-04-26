@@ -1,0 +1,66 @@
+{
+  "_id": "sbea0e1823020fab",
+  "name": "Giantkin (Laestrygonian)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "giantkin-laestrygonian",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s214cb32b0f15cc6",
+            "Compendium.dnd5e.sieg5e-classfeatures.sdb93f5fdbf23144",
+            "Compendium.dnd5e.sieg5e-classfeatures.sd3df90abcc654b1",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6d7f102e9f5b9a0"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:poison"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbea0e1823020fab",
+  "flags": {},
+  "sort": 0
+}

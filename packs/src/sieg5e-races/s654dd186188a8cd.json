@@ -1,0 +1,58 @@
+{
+  "_id": "s654dd186188a8cd",
+  "name": "Deminymph (Water Nymph)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "deminymph-water-nymph",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30,
+      "swim": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s31fba6d70d26d09",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1b591a8ff2af47f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6df8c963d082624",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8c2ccb8458cccef",
+            "Compendium.dnd5e.sieg5e-classfeatures.s98e75b592cae475",
+            "Compendium.dnd5e.sieg5e-classfeatures.s205965a1b54bb55"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:prf"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s654dd186188a8cd",
+  "flags": {},
+  "sort": 0
+}

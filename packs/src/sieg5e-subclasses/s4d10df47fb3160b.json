@@ -1,0 +1,80 @@
+{
+  "_id": "s4d10df47fb3160b",
+  "name": "Summoner: Symbiosist",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "summoner",
+    "identifier": "summoner-symbiosist",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s39273ed3f247726",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5b0dc25b861b6dc"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb8b9f9856fa7e16"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa1ebb210893f50c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s644dc7f9a8bd619"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8c0c96be6cf0367"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/control/silhouette-hold-beam-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590952,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4d10df47fb3160b",
+  "flags": {},
+  "sort": 0
+}

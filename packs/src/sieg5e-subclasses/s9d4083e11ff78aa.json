@@ -1,0 +1,69 @@
+{
+  "_id": "s9d4083e11ff78aa",
+  "name": "Sorcerer: Pyromancer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "sorcerer",
+    "identifier": "sorcerer-pyromancer",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s791bcbd992024ef",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5627bd87d95c7da"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbe30978618814d7"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb7420efd501057d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2f283e06f22f7bd"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/fire/flame-burning-hand-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9d4083e11ff78aa",
+  "flags": {},
+  "sort": 0
+}

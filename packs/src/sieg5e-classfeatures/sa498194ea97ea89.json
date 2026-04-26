@@ -1,0 +1,85 @@
+{
+  "name": "Walker in Dreams",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The magic of the Feywild grants you the ability to travel mentally or physically through dreamlands.</p><p>When you finish a Short Rest, you can cast one of the following spells, without expending a spell slot or requiring material components: Dream (with you as the messenger), Scrying, or Teleportation Circle.</p><p>This use of Teleportation Circle is special. Rather than opening a portal to a permanent Teleportation Circle, it opens a portal to the last location where you finished a Long Rest on your current plane of existence. If you haven't taken a Long Rest on your current plane, the spell fails but isn't wasted.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sa498194ea97ea89",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590975,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa498194ea97ea89",
+  "flags": {},
+  "sort": 0
+}

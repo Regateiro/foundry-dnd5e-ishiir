@@ -1,0 +1,85 @@
+{
+  "name": "Grim Psychometry",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain a supernatural talent for discerning the secrets surrounding mysterious relics or places touched by evil. You can use your hemocraft ability score for History checks and whenever you make a History check to recall information about the sinister or tragic history of an object you are touching or your current location, you have Advantage on the check. At the DM's discretion, a suitably high roll might cause your character to experience brief visions of the past connected to the object or location.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/perception/hand-eye-fire-blue.webp",
+  "_id": "sa26554c9efec68d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590967,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa26554c9efec68d",
+  "flags": {},
+  "sort": 0
+}

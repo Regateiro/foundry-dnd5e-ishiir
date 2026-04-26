@@ -1,0 +1,70 @@
+{
+  "_id": "se8206d20c81d87e",
+  "name": "Wizard: Bladesinging",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "wizard",
+    "identifier": "wizard-bladesinging",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s25f9a8e513eb84d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4efbb5013bfd963",
+            "Compendium.dnd5e.sieg5e-classfeatures.sfbe2f856dab020b"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9e4c65cdd69fa51"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3da013e546c8caf"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/trades/music-singing-voice-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590955,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se8206d20c81d87e",
+  "flags": {},
+  "sort": 0
+}

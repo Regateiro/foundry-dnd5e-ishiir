@@ -1,0 +1,85 @@
+{
+  "name": "Empress of the Fathoms",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your mastery of water allows you to infuse your own self with the essence of waves.</p><p>As an Action, you undergo the transformation and gain the following benefits for 1 minute:</p><ul><li>You ignore all water-based effects such as the Tsunami spell or a natural vortex.</li><li>You gain Immunity to cold damage.</li><li>Water flows from everywhere, including up from the ground and dropping as rain to form a vortex of writhing watery tentacles in a 60 feet radius around you that makes the area 3. You and any number of creatures of your choice in the area unaffected.</li><li>Any other creature that enters the area for the first time on a turn or starts its turn there has to make a Dexterity Saving Throw against your save DC or be Grappled and Restrained. It can make a Strength check as an Action on its turn to no longer be Grappled and Restrained.</li></ul><p>Once you have used this ability, you can't use it again until you have finished a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb4317b47804b052",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590990,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb4317b47804b052",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "s73e44a44313482b",
+  "name": "Awakened Forest Owl",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "awakened-forest-owl",
+    "senses": {
+      "darkvision": 120
+    },
+    "movement": {
+      "walk": 10,
+      "fly": 50
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4eb0d1ed06b1411",
+            "Compendium.dnd5e.sieg5e-classfeatures.se00a0eb1e7f0864",
+            "Compendium.dnd5e.sieg5e-classfeatures.sf2a4a759dd718a6",
+            "Compendium.dnd5e.sieg5e-classfeatures.se6c0dc3e6229ced",
+            "Compendium.dnd5e.sieg5e-classfeatures.s04816d63157d3a0"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:prc",
+            "skills:ste"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/birds/raptor-owl-flying-moon.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591077,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s73e44a44313482b",
+  "flags": {},
+  "sort": 0
+}

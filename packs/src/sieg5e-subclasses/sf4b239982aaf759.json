@@ -1,0 +1,80 @@
+{
+  "_id": "sf4b239982aaf759",
+  "name": "Fighter: Eldritch Knight",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "fighter",
+    "identifier": "fighter-eldritch-knight",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4fe1eb50197c4c5",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3514f4b359dfa0f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa646c1c9e447764"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s7aa88ab4ff2a72e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se0da13232e04d5d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3c4605fdc4d2a2a"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/weapons/swords/sword-flanged-lightning.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590945,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf4b239982aaf759",
+  "flags": {},
+  "sort": 0
+}

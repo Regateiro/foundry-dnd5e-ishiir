@@ -1,0 +1,68 @@
+{
+  "_id": "sd26db8eb6d3e5a9",
+  "name": "Blood Hunter: Order of the Ghostslayer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "blood-hunter",
+    "identifier": "blood-hunter-order-of-the-ghostslayer",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3bb65f8bc503edd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 11,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb6e9b2de0ef74a7"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd908eb96310f716"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5d586a3a7f7e5a8"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/death/undead-ghost-scream-teal.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590942,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd26db8eb6d3e5a9",
+  "flags": {},
+  "sort": 0
+}

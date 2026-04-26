@@ -1,0 +1,85 @@
+{
+  "name": "Lore Master",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain Proficiency in two of the following skills: Animal Handling, Arcana, Deception, History, Insight, Intimidation, Investigation, Medicine, Nature, Perception, Performance, Persuasion, Religion, Survival.</p><p>Alternatively, you may replace a chosen skill with one of the following tools: Alchemist's Supplies, Cook's Utensils, Enchanter's Supplies, Herbalist's Kit, Poisoner's Kit, or Tinkerer's Tools.</p><p>If you are already proficient in a chosen skill or tool, you add double your Proficiency bonus to checks you make with it.</p><p>Additionally, you can use Intelligence for skill checks with a chosen skill or tool if it normally uses a different ability score.</p><p>You can choose two additional skills or tools for this feature when you reach 10th level in this class.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4f1fa1e4dbaf792",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591042,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4f1fa1e4dbaf792",
+  "flags": {},
+  "sort": 0
+}

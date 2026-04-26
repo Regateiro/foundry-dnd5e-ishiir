@@ -1,0 +1,85 @@
+{
+  "name": "Perfected Bond",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your bond to your drake reaches the pinnacle of its power. While your drake is summoned, you and the drake gain the following benefits:</p><ul><li><strong>Empowered Attack.</strong> The drake's Bite, Elemental Bolt, and Infused Strikes attacks deal an extra 1d6 damage of the type chosen for its Draconic Essence (for a total of 2d6 extra damage).</li><li><strong>Draconic Might.</strong> The drake grows to Huge size. Its Strength and Constitution are increased by 4 and its Hit Points increase by an additional 2 for each of your levels in this class.</li><li><strong>Enhanced Breath.</strong> The size of your Drake's Breath increases to 60 feet and you regain its use on a Short Rest.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sef7fd34eaaf839b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591006,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sef7fd34eaaf839b",
+  "flags": {},
+  "sort": 0
+}

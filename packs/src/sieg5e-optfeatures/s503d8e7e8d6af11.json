@@ -1,0 +1,85 @@
+{
+  "name": "Wall Infusion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>By spending an Action and 3 kinesis points, you can use your kinetic shape to create a wall of churning elements, flensing debris, or roiling energy that lasts for 1 minute or until your Concentration ends (as if concentrating on a spell). You can make the wall up to 60 feet long, 20 feet high, and 1 foot thick, or a ringed wall up to 20 feet in diameter, 20 feet high, and 1 foot thick.</p><p>When the wall appears, each creature within its area must make a Dexterity Saving Throw against your save DC. On a failed save, a creature takes half your kinetic shape's damage, or half as much damage on a successful save.</p><p>A creature takes the same damage when it enters the wall for the first time on a turn or ends its turn there.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s503d8e7e8d6af11",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591068,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s503d8e7e8d6af11",
+  "flags": {},
+  "sort": 0
+}

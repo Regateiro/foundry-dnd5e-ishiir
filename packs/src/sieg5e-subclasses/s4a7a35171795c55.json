@@ -1,0 +1,57 @@
+{
+  "_id": "s4a7a35171795c55",
+  "name": "Druid: Circle of Dreams",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "druid",
+    "identifier": "druid-circle-of-dreams",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0be7c0f3d82c600"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0a7172b99471511"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa498194ea97ea89"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/unholy/orb-swirling-teal.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590944,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4a7a35171795c55",
+  "flags": {},
+  "sort": 0
+}

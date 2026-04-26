@@ -1,0 +1,85 @@
+{
+  "name": "Ecclesitheurgy",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You learn two cantrips and two spells from the cleric spell list. A spell you choose must be of a level you can cast, as shown on the Wizard table. Whenever you gain a wizard level after this one, you can replace one of the wizard spells you add to your spellbook with a spell from the cleric spell list. Any of the spells gained in this manner count as wizard spells for you.</p><p>Additionally, you can copy cleric spells into your spellbook from scrolls or the spellbooks of other theurgists. If you do so, they count as wizard spells for you.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd71a8bac5d901d5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591043,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd71a8bac5d901d5",
+  "flags": {},
+  "sort": 0
+}

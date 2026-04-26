@@ -1,0 +1,57 @@
+{
+  "_id": "sb1566098d8c3da8",
+  "name": "Orc",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "orc",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 35
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s80ca50b21f64fc1",
+            "Compendium.dnd5e.sieg5e-classfeatures.s32a92a796189fe5",
+            "Compendium.dnd5e.sieg5e-classfeatures.s30952ed492124e7",
+            "Compendium.dnd5e.sieg5e-classfeatures.sdb339ac76b3c7de",
+            "Compendium.dnd5e.sieg5e-classfeatures.sffc88598de85c43",
+            "Compendium.dnd5e.sieg5e-classfeatures.s779dc5e43a82edb"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:itm"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/melee/hand-grip-hammer-spiked-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591078,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb1566098d8c3da8",
+  "flags": {},
+  "sort": 0
+}

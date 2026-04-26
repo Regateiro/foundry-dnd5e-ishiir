@@ -1,0 +1,57 @@
+{
+  "_id": "s78354fa3203d084",
+  "name": "Druid: Circle of Stars",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "druid",
+    "identifier": "druid-circle-of-stars",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se7c3d03ade88d7d"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1c854dfd61fca6a"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s6d13f9cef35ef03"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/trades/academics-astronomy-navigation-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590944,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s78354fa3203d084",
+  "flags": {},
+  "sort": 0
+}

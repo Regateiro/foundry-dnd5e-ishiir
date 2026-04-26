@@ -1,0 +1,57 @@
+{
+  "_id": "s5361d82040a59da",
+  "name": "Warlock: The Raven Mother",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "warlock",
+    "identifier": "warlock-the-raven-mother",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s18d506a145a3e81"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s863bfddeb9a6427"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbe6836c7a34559b"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/birds/corvid-flying-wings-purple.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590952,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5361d82040a59da",
+  "flags": {},
+  "sort": 0
+}

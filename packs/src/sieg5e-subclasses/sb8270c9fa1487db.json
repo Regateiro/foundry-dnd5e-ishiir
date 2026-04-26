@@ -1,0 +1,57 @@
+{
+  "_id": "sb8270c9fa1487db",
+  "name": "Warlock: The Seeker",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "warlock",
+    "identifier": "warlock-the-seeker",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s6fb88e0692712b2"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sce3f41332ee6930"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sf6b9143c64c9d4f"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590952,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb8270c9fa1487db",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,131 @@
+{
+  "_id": "s9facca5bfc1cf75",
+  "name": "Summoner: Eidolon Master",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "summoner",
+    "identifier": "summoner-eidolon-master",
+    "advancement": [
+      {
+        "title": "Choose Evolution Feats",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "3": 1,
+            "14": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s27cca51784c931d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s819780f042aadb5",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3ec461267558988",
+            "Compendium.dnd5e.sieg5e-optfeatures.s488390a5163d538",
+            "Compendium.dnd5e.sieg5e-optfeatures.s17ef3ef7b33ac5b",
+            "Compendium.dnd5e.sieg5e-optfeatures.s623d101a630c53d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8461dd639f510f7",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1cd7dad2765b6b1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s59012cc9cc5c0aa",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8d0d887bd9c9a1a",
+            "Compendium.dnd5e.sieg5e-optfeatures.s27d21eb03fa1e50",
+            "Compendium.dnd5e.sieg5e-optfeatures.sfac588db77c9fcb",
+            "Compendium.dnd5e.sieg5e-optfeatures.s35623a5fc8d799d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0c6d534497ceaf2",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5251930784a5c54",
+            "Compendium.dnd5e.sieg5e-optfeatures.s9c1e6fd65da17ac",
+            "Compendium.dnd5e.sieg5e-optfeatures.s97f47d97b343017",
+            "Compendium.dnd5e.sieg5e-optfeatures.s90af8ca74041abc",
+            "Compendium.dnd5e.sieg5e-optfeatures.s513e06f0edbf80f",
+            "Compendium.dnd5e.sieg5e-optfeatures.s5d6348adcfae91d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s99b630c606076e8",
+            "Compendium.dnd5e.sieg5e-optfeatures.s08403f2c6027d2f",
+            "Compendium.dnd5e.sieg5e-optfeatures.s53a61a2ec0a21e9",
+            "Compendium.dnd5e.sieg5e-optfeatures.sab3735b18344311",
+            "Compendium.dnd5e.sieg5e-optfeatures.sddfdf98eee6220b",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3a9ee4c9577a8c5",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0610a49a2aa17de",
+            "Compendium.dnd5e.sieg5e-optfeatures.s84aff8cf3908f7f",
+            "Compendium.dnd5e.sieg5e-optfeatures.sca2073ab9861565",
+            "Compendium.dnd5e.sieg5e-optfeatures.s1bcaaed2847c54e",
+            "Compendium.dnd5e.sieg5e-optfeatures.s47d94235a15d699",
+            "Compendium.dnd5e.sieg5e-optfeatures.s38f40466fcd0f86",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7238be5e865102e",
+            "Compendium.dnd5e.sieg5e-optfeatures.s61b48186684db74",
+            "Compendium.dnd5e.sieg5e-optfeatures.se37b4c05e87d1b4",
+            "Compendium.dnd5e.sieg5e-optfeatures.s2286d7ff759dc28"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa7527a35be7bc0a",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9e342bdb146e0dd"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s2ad5c06368ef4be"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s39ff5dcc4940fff",
+            "Compendium.dnd5e.sieg5e-classfeatures.s95920a341f57543"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s317bad13f3311df"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd1fa7f8a0e1a6a4"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/magical/construct-iron-stomping-yellow.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9facca5bfc1cf75",
+  "flags": {},
+  "sort": 0
+}

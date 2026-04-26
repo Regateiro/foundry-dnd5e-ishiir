@@ -1,0 +1,85 @@
+{
+  "name": "Ride the Wind",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you jump, you can use your Reaction to increase your jumping distance by half your Speed. When you take fall damage, you can use your Reaction to reduce the damage by an amount equal to five times your character level. If you already have a feature that allows you to reduce fall damage as a Reaction, you gain the benefits of both features when you use your Reaction to reduce fall damage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when you jump or take fall damage"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/debuff-energy-hold-levitate-blue-yellow.webp",
+  "_id": "s34f5c045f6a12b1",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630202,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s34f5c045f6a12b1",
+  "flags": {},
+  "sort": 0
+}

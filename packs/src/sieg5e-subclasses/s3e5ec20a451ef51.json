@@ -1,0 +1,70 @@
+{
+  "_id": "s3e5ec20a451ef51",
+  "name": "Shifter: Spring's Branch",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "shifter",
+    "identifier": "shifter-springs-branch",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sda1bbf55bf4ed79",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8bb3f44b3ee5884",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4fe1eb50197c4c5"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd567309f12e3613"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s81a91452b1f099e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa1844470bab0788"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/thorns-hand-glow-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590950,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3e5ec20a451ef51",
+  "flags": {},
+  "sort": 0
+}

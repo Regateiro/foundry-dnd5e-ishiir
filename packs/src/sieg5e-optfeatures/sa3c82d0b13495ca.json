@@ -1,0 +1,85 @@
+{
+  "name": "Blood Curse of the Fallen Puppet",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When a creature you can see within 30 feet of you drops to 0 hit points, you can use your Reaction to instill that creature with a final act of aggression. The creature immediately makes one weapon attack against a target of your choice within its range.</p><p><strong>Amplify.</strong> You can first cause the cursed creature to move up to half its Speed, and you grant a bonus to its Attack Roll equal to your Hemocraft modifier (minimum of +1).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when a creature you can see within 30 feet of you drops to 0 hit points"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "max(1, @abilities.int.mod, @abilities.wis.mod)",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/control-influence-puppet.webp",
+  "_id": "sa3c82d0b13495ca",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591054,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sa3c82d0b13495ca",
+  "flags": {},
+  "sort": 0
+}

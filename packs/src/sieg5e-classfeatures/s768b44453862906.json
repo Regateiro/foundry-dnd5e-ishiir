@@ -1,0 +1,85 @@
+{
+  "name": "Soul of Darkness",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain strength from darkness. As a Bonus Action, you fade into the shadows. You regain hit points equal to your cleric level and gain Resistance to all damage for one minute. In addition, while this duration lasts you can use a Bonus Action to teleport up to 30 feet to an unoccupied space you can see that is in dim light or darkness. It ends early if you become Incapacitated or if you dismiss it as a Bonus Action.</p><p>Once you use this feature you cannot use it again until you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s768b44453862906",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590971,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s768b44453862906",
+  "flags": {},
+  "sort": 0
+}

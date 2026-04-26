@@ -1,0 +1,81 @@
+{
+  "_id": "s10c5ce0831de27c",
+  "name": "Fighter: Cavalier",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "fighter",
+    "identifier": "fighter-cavalier",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8cc7d7ad0f8631d",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc48ef4fbd73a144",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9631402041fd9bb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1dec0f9b97df1c8"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s6afb92f400afd62"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1e8130ffe8b8a86"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se4666418943521d"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/environment/people/cavalry-heavy.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590945,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s10c5ce0831de27c",
+  "flags": {},
+  "sort": 0
+}

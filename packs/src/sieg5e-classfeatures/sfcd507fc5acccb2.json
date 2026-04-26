@@ -1,0 +1,85 @@
+{
+  "name": "Metamagic",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Because your magic flows from within, you can alter your spells to suit your needs; you gain two Metamagic options of your choice from the list below. You use the chosen options to temporarily modify spells you cast. To use an option, you must spend the number of Sorcery Points that it costs.</p><p>You can use only one Metamagic option on a spell when you cast it unless otherwise noted in one of those options.</p><p>When you finish a Short or a Long Rest you can replace one metamagic you know with another one. You gain two more options at Sorcerer level 10 and two more at Sorcerer level 17.</p><h5>Careful Spell</h5><p>When you cast a spell that forces other creatures to make a Saving Throw, you can protect some of those creatures from the spell's full force. To do so, you spend 1 sorcery point and choose a number of those creatures up to your Charisma modifier (minimum of one creature). The chosen creatures automatically succeed on their Saving Throws against the spell, and they take no damage if they would normally take half damage on a successful save.</p><h5>Distant Spell</h5><p>When you cast a spell that has a range of 5 feet or greater, you can spend 1 sorcery point to double the range of the spell.</p><p>When you cast a spell that has a range of touch, you can spend 1 sorcery point to make the range of the spell 30 feet.</p><h5>Empowered Spell</h5><p>When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls.</p><p>You can use Empowered Spell even if you have already used a different Metamagic option during the casting of the spell.</p><h5>Extended Spell</h5><p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point to double its duration, to a maximum duration of 24 hours.</p><p>If the affected spell requires Concentration, you have Advantage on any Saving Throw you make to maintain that Concentration.</p><h5>Heightened Spell</h5><p>When you cast a spell that forces a creature to make a Saving Throw to resist its effects, you can spend 2 sorcery points to give one target of the spell Disadvantage on all its Saving Throws made against the spell.</p><h5>Maximized Spell</h5><p>When you roll damage for a spell, you can spend 2 sorcery points and choose a number damage dice up to your Charisma modifier (minimum of one). You maximize the rolled result for the chosen dice.</p><p>You can use Maximized Spell even if you have already used a different Metamagic option during the casting of the spell.</p><h5>Quickened Spell</h5><p>When you cast a spell that has a casting time of an Action, you can spend 2 Sorcery Points to change the casting time to a Bonus Action for this casting. You can't modify a spell in this way if you've already cast a level 1+ spell on the current turn, nor can you cast a level 1+ spell on this turn after modifying a spell in this way.</p><h5>Seeking Spell</h5><p>If you make an Attack Roll for a spell and miss, you can spend 1 sorcery point to reroll the d20, and you must use the new roll.</p><p>You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.</p><h5>Subtle Spell</h5><p>When you cast a spell, you can spend 1 sorcery point to cast it without any somatic, verbal and material components, unless that material component has a cost or is consumed by the spell.</p><h5>Twinned Spell</h5><p>When you cast a spell that targets only one creature and doesn't have a range of self, you can spend a number of sorcery points equal to the spell's level to target a second creature in range with the same spell (1 sorcery point if the spell is a cantrip).</p><p>To be eligible, a spell must be incapable of targeting more than one creature at the spell's current level. For example, Magic Missile and Scorching Ray aren't eligible, but Ray of Frost and Chromatic Orb are.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/unholy/orb-colllecting-energy-green.webp",
+  "_id": "sfcd507fc5acccb2",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591020,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfcd507fc5acccb2",
+  "flags": {},
+  "sort": 0
+}

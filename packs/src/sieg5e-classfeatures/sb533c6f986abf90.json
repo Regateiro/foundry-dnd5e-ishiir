@@ -1,0 +1,85 @@
+{
+  "name": "Clinging Frost",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Whenever you hit a creature with a spell of 1st level or higher that deals cold damage or it fails a save against such a spell, the magical cold you command starts clinging to it for 1 minute, reducing its Speed by 10 feet.</p><p>At the end of each of its turns, an affected creature can make a Constitution Saving Throw against your spell save DC. Each time it fails this Saving Throw, it suffers additional effects as per below. If it succeeds three times, the effect of your Clinging Frost ends on it.</p><ul><li><strong>One failed save:</strong> The affected creature cannot take Reactions.</li><li><strong>Two failed save:</strong> The affected creature has Disadvantage on Attack Rolls and Ability Checks.</li><li><strong>Three failed save:</strong> The affected creature is Frozen for 1 minute but does not have Resistance against cold damage caused by your spells and the effect of your Clinging Frost ends on it.</li></ul><p>This feature has no effect on creatures that cannot be Frozen.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb533c6f986abf90",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591025,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb533c6f986abf90",
+  "flags": {},
+  "sort": 0
+}

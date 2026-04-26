@@ -1,0 +1,85 @@
+{
+  "name": "Spell Mastery",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose two spells in your spellbook as your signature spells. Choose one benefit for each signature spell from the list below. Whenever you cast one of your signature spells, it gains the chosen benefit. You cannot choose the same benefit for both of your signature spells.</p><p><strong>Intensified.</strong> The spell counts as 2 spell levels higher for the purpose of dealing damage.</p><p><strong>Labyrinthine.</strong> The spell cannot be counterspelled or dispelled.</p><p><strong>Focus.</strong> The spell no longer requires Concentration.</p><p><strong>Magnified.</strong> The spell's area of effect is doubled and you can exempt a number of creatures equal to your INT modifier from the effect.</p><p><strong>Overhelming.</strong> The Spell Save DC for this spell receives a +3 bonus.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/unholy/beam-impact-purple.webp",
+  "_id": "s19f8de73e05f223",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591040,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s19f8de73e05f223",
+  "flags": {},
+  "sort": 0
+}

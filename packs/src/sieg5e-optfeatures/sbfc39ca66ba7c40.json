@@ -1,0 +1,85 @@
+{
+  "name": "Burning Infusion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you damage a creature with your kinetic shape, you can force it to make a Dexterity Saving Throw against your save DC. On a failure, the target is set ablaze, burning for fire damage equal to double your Proficiency modifier at the start of each of its turns.</p><p>It can repeat the Saving Throw at the end of each of its turns, ending the effect on a success. Alternatively, it or another creature can use an Action to douse the flames.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sbfc39ca66ba7c40",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591066,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbfc39ca66ba7c40",
+  "flags": {},
+  "sort": 0
+}

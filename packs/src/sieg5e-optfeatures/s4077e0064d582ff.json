@@ -1,0 +1,85 @@
+{
+  "name": "Moon Bow",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The damage die of your pact weapon increases by one size. Once per turn, when you hit a creature with your pact weapon, you can force it to make a Dexterity Saving Throw. The DC equals 8 + Proficiency + your spellcasting ability + the weapon's enhancement bonus. On a failed save, the target sheds dim light in a 10-feet radius and cannot benefit from invisibility until the start of your next turn. During that time, all Attack Rolls against the target have Advantage.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s4077e0064d582ff",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591063,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4077e0064d582ff",
+  "flags": {},
+  "sort": 0
+}

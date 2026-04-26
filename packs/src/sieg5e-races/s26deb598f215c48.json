@@ -1,0 +1,61 @@
+{
+  "_id": "s26deb598f215c48",
+  "name": "Naga (Copperscale)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "naga-copperscale",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30,
+      "swim": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s663245f45cd26a6",
+            "Compendium.dnd5e.sieg5e-classfeatures.s84b6e1c9b53dc71",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5d73a0603b8d34b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s65714314055574a",
+            "Compendium.dnd5e.sieg5e-classfeatures.s383949382fc556d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s42f964139a7a523",
+            "Compendium.dnd5e.sieg5e-classfeatures.sae5a76cc5896cfc"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath",
+            "skills:itm",
+            "skills:sur"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/abilities/tail-swipe-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630212,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s26deb598f215c48",
+  "flags": {},
+  "sort": 0
+}

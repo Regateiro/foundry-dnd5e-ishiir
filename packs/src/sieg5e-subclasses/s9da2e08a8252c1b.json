@@ -1,0 +1,57 @@
+{
+  "_id": "s9da2e08a8252c1b",
+  "name": "Warlock: The Genie",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "warlock",
+    "identifier": "warlock-the-genie",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sec258babb561b1e"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb23efcea2431459"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s020da4c5f20f0d6"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/magical/spirit-undead-ghost-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590952,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9da2e08a8252c1b",
+  "flags": {},
+  "sort": 0
+}

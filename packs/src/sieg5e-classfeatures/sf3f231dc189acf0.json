@@ -1,0 +1,85 @@
+{
+  "name": "Archfamiliar",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your occult bond with your familiar is at the height of its power, granting you the following benefits:</p><p><strong>Bonded Magic.</strong> Choose three Witch spells of 1st or 2nd level. You always have the chosen spells prepared. Your bonded familiar also learns these spells. Both of you can cast these spells without spell slots and without material components. It uses your spellcasting attack bonus and spell save DC for these spells.</p><p><strong>Life Ward.</strong> When either you or your bonded familiar drop to 0 hit points but aren't killed out right, you can change the affected target's hit points to a number equal to triple your Witch level. You cannot use this feature again until you have completed a Long Rest.</p><p><strong>Longevity.</strong> The mystical powers coursing through you grant you an extended life span. For every nine years that pass, your body ages only one year.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sf3f231dc189acf0",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591036,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf3f231dc189acf0",
+  "flags": {},
+  "sort": 0
+}

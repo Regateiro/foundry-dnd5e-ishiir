@@ -1,0 +1,85 @@
+{
+  "name": "Coven of Seasons Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose a season. At each indicated Witch level, add the corresponding listed spells to your spells prepared.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Spring Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Goodberry, Healing Word, Healing Spirit, Lesser Restoration</td></tr><tr><td>5th</td><td>Mass Healing Word, Plant Growth</td></tr><tr><td>7th</td><td>Aura of Purity, Conjure Woodland Beings</td></tr><tr><td>9th</td><td>Greater Restoration, Raise Dead</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Summer Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Color Spray, Entangle, Heat Metal, Scorching Ray</td></tr><tr><td>5th</td><td>Fireball, Haste</td></tr><tr><td>7th</td><td>Aura of Life, Death Ward</td></tr><tr><td>9th</td><td>Dawn, Flame Strike</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Autumn Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Fog Cloud, Witch Bolt, Death Armor, Warding Wind</td></tr><tr><td>5th</td><td>Call Lightning, Thunder Step</td></tr><tr><td>7th</td><td>Blight, Storm Sphere</td></tr><tr><td>9th</td><td>Enervation, Jallarzi's Storm of Radiance</td></tr></tbody></table></div><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Coven of Winter Spells</caption><thead><tr><th scope=\"col\">Witch Level</th><th scope=\"col\">Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Armor of Agathys, Ice Knife, Rime's Binding Ice, Snilloc's Snowball Swarm</td></tr><tr><td>5th</td><td>Glacial Spike, Sleet Storm</td></tr><tr><td>7th</td><td>Ice Storm, Stoneskin</td></tr><tr><td>9th</td><td>Cone of Cold, Dream</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sd2751636ff63bb1",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591038,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd2751636ff63bb1",
+  "flags": {},
+  "sort": 0
+}

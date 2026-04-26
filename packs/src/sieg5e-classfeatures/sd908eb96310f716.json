@@ -1,0 +1,90 @@
+{
+  "name": "Blood Curse of the Exorcist",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You hone your hemocraft to tear corruption from the minds and bodies of your allies—and to punish those responsible for it. You gain the Blood Curse of the Exorcist for your Blood Maledict feature. This doesn't count against your number of blood curses known.</p><p>Additionally, you gain an additional use of your Blood Maledict feature.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 30,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "save",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "3d6",
+          "psychic"
+        ]
+      ],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "wis",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
+  "_id": "sd908eb96310f716",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590968,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd908eb96310f716",
+  "flags": {},
+  "sort": 0
+}

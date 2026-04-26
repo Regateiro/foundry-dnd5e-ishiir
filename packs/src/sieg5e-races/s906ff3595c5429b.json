@@ -1,0 +1,68 @@
+{
+  "_id": "s906ff3595c5429b",
+  "name": "Aven (Falconian)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "aven-falconian",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s493137304c5bb3b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s33b630a20ef1d64",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb709a7d24376674",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7978f1a701e5e01",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9c7b6990807e326"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:prc",
+            "skills:per"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:radiant"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/birds/corvid-call-sound-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630210,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s906ff3595c5429b",
+  "flags": {},
+  "sort": 0
+}

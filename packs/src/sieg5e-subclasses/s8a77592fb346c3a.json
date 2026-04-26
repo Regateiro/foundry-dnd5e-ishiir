@@ -1,0 +1,72 @@
+{
+  "_id": "s8a77592fb346c3a",
+  "name": "Bard: College of Swords",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "bard",
+    "identifier": "bard-college-of-swords",
+    "advancement": [
+      {
+        "title": "Choose Fighting Styles",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "3": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.s97d499ca60a9d58",
+            "Compendium.dnd5e.sieg5e-optfeatures.seca00667ae01da3",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa7280b93ed079ef",
+            "Compendium.dnd5e.sieg5e-optfeatures.s0c741fec32f4cce",
+            "Compendium.dnd5e.sieg5e-optfeatures.sa88d8e0b7cefb10",
+            "Compendium.dnd5e.sieg5e-optfeatures.s3da84db02342126",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7099d18e6f372dd",
+            "Compendium.dnd5e.sieg5e-optfeatures.s48479ecc1088203",
+            "Compendium.dnd5e.sieg5e-optfeatures.sb549cdec1d0e0a1",
+            "Compendium.dnd5e.sieg5e-optfeatures.s4472fa7a894a2d8",
+            "Compendium.dnd5e.sieg5e-optfeatures.sd0f13083a19dd8d",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6faffec38eae402",
+            "Compendium.dnd5e.sieg5e-optfeatures.sfc270730094c7cb"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sec05bfb148f00a2"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/light/swords-light-glowing-white.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590942,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8a77592fb346c3a",
+  "flags": {},
+  "sort": 0
+}

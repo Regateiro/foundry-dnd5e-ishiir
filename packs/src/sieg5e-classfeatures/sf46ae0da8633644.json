@@ -1,0 +1,85 @@
+{
+  "name": "Wild Companion",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to summon a spirit that assumes an animal form: as an Action, you can expend a use of your Wild Shape feature to cast the Find Familiar spell, without material components.</p><p>When you cast the spell in this way, the familiar is a fey instead of a beast.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/mammals/rabbit-movement-glowing-green.webp",
+  "_id": "sf46ae0da8633644",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590975,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf46ae0da8633644",
+  "flags": {},
+  "sort": 0
+}

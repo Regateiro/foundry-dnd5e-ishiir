@@ -1,0 +1,85 @@
+{
+  "name": "Storm Rune",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Using this rune, you can glimpse the future like a storm giant seer. While wearing or carrying an object inscribed with this rune, you have Advantage on Intelligence (Arcana) checks, and you can't be Surprised as long as you aren't Incapacitated.</p><p>In addition, you can invoke the rune as a Bonus Action to enter a prophetic state for 1 minute or until you're Incapacitated. Until the state ends, when you or another creature you can see within 60 feet of you makes an Attack Roll, a Saving Throw, or an Ability Check, you can use your Reaction to cause the roll to have Advantage or Disadvantage. Once you invoke this rune, you can't do so again until you finish a Short or a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s6765373e499131d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591076,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6765373e499131d",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,56 @@
+{
+  "_id": "s128fe64276e1d48",
+  "name": "Genasi (Water)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "genasi-water",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30,
+      "swim": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.saac746f96e7a00f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6c7c8babb30cfed",
+            "Compendium.dnd5e.sieg5e-classfeatures.s49f3d4fedce9899",
+            "Compendium.dnd5e.sieg5e-classfeatures.s371b702a16931b7",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9910f30e6f74086"
+          ]
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:acid"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s128fe64276e1d48",
+  "flags": {},
+  "sort": 0
+}

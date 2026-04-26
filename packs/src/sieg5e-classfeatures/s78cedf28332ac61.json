@@ -1,0 +1,85 @@
+{
+  "name": "Fighting Spirit",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your intensity in battle can shield you and help you strike true. As a Bonus Action on your turn, you can give yourself Advantage on weapon Attack Rolls until the end of the current turn. When you do so, you also gain temporary hit points equal to your fighter level + Wisdom modifier.</p><p>You can use this feature three times. You regain one use when you finish a Short Rest and all expended uses of it when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s78cedf28332ac61",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590986,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s78cedf28332ac61",
+  "flags": {},
+  "sort": 0
+}

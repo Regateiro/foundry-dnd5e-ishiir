@@ -1,0 +1,46 @@
+{
+  "_id": "saf59f4b68047de8",
+  "name": "Cleric: Life Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-life-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s83f3af5ef697811"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s4b0052055954de2"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/life/heart-hand-gold-green.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590943,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!saf59f4b68047de8",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,57 @@
+{
+  "_id": "s0fd5f8a5b3f74d7",
+  "name": "Lizardfolk (Varanu)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "lizardfolk-varanu",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30,
+      "climb": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s07f8c2490c17407",
+            "Compendium.dnd5e.sieg5e-classfeatures.s9710dbd4ca70105",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4ec102285103b65",
+            "Compendium.dnd5e.sieg5e-classfeatures.s677bea89722bbeb",
+            "Compendium.dnd5e.sieg5e-classfeatures.s7542cc9106d4255"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:None"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/reptiles/lizard-mouth-glowing-red.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630212,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s0fd5f8a5b3f74d7",
+  "flags": {},
+  "sort": 0
+}

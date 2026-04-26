@@ -1,0 +1,85 @@
+{
+  "name": "Constricting Grasp",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have Proficiency in the Athletics skill. You can choose to grapple a creature with your coils instead of your hands. If you do so, you can attempt and maintain a grapple even when your hands are occupied, but your Speed is also reduced to 0 while you maintain the grapple. Any creature that is the same size or smaller than you has Disadvantage on skill checks to try and escape this grapple on subsequent turns. Any creature that is a smaller size than you is also restrained while Grappled in this manner.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+  "_id": "sae5a76cc5896cfc",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630202,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sae5a76cc5896cfc",
+  "flags": {},
+  "sort": 0
+}

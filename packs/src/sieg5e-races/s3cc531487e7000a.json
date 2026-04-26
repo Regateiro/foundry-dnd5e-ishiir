@@ -1,0 +1,78 @@
+{
+  "_id": "s3cc531487e7000a",
+  "name": "Shadowborn",
+  "type": "race",
+  "system": {
+    "source": "Ishiir",
+    "identifier": "shadowborn",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1040602e3f6b896",
+            "Compendium.dnd5e.sieg5e-classfeatures.s13d4999fc7ffb19",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc1938e54b349dea",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb48602422e0c615"
+          ]
+        }
+      },
+      {
+        "title": "Damage Immunities",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "di:necrotic",
+            "di:poison"
+          ]
+        }
+      },
+      {
+        "title": "Damage Vulnerabilities",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dv:radiant"
+          ]
+        }
+      },
+      {
+        "title": "Condition Immunities",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "ci:diseased",
+            "ci:poisoned"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/water/water-elemental-blue-teeth.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591078,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s3cc531487e7000a",
+  "flags": {},
+  "sort": 0
+}

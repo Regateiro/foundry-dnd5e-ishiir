@@ -1,0 +1,81 @@
+{
+  "_id": "s817d3a98133cd50",
+  "name": "Witch: Mushroom Circles",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "witch",
+    "identifier": "witch-mushroom-circles",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s75551fc4c2dd638",
+            "Compendium.dnd5e.sieg5e-classfeatures.s2ca790d94ce5053",
+            "Compendium.dnd5e.sieg5e-classfeatures.s39a7b537b2c3221"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb1a220b6c14c1c9"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s072ac0d25d35d20"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa45385bd2a4f7a8"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sae6b413a28fc434"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/mushrooms-fire-glow-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590953,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s817d3a98133cd50",
+  "flags": {},
+  "sort": 0
+}

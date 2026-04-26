@@ -1,0 +1,85 @@
+{
+  "name": "Bounding Leap",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you make a jump, you can use your Dexterity score in place of your Strength score to determine the distance you can cover. Additionally, the distance for your Long Jump is increased by 10 feet and by 5 feet for your High Jump. This bonus distance is halved when you make either jump as standing jump.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/movement/arrow-upward-blue.webp",
+  "_id": "s4889b2386ee256b",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630197,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4889b2386ee256b",
+  "flags": {},
+  "sort": 0
+}

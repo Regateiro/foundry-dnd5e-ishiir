@@ -1,0 +1,46 @@
+{
+  "_id": "s4a20dd5e82a63be",
+  "name": "Cleric: Strength Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-strength-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s731444e5bfddb3c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd74bdf5108f29a8"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590943,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s4a20dd5e82a63be",
+  "flags": {},
+  "sort": 0
+}

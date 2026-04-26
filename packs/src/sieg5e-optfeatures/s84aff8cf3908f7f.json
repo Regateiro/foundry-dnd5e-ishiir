@@ -1,0 +1,85 @@
+{
+  "name": "Shimmering Hide",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your Eidolon projects a magical illusion that blurs its appearance to the naked eye and makes it difficult to tell its actual position and movements, causing Attack Rolls against it to have Disadvantage. If it takes damage, this trait is disrupted until the start of its next turn. This trait is also disrupted while the Eidolon is Incapacitated or has a Speed of 0.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+  "_id": "s84aff8cf3908f7f",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591058,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s84aff8cf3908f7f",
+  "flags": {},
+  "sort": 0
+}

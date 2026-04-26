@@ -1,0 +1,85 @@
+{
+  "name": "Eidolon Resilience",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Choose one ability score. Your Eidolon gains the following benefits:</p><ul><li>Increase the chosen ability score by 1, to a maximum of 20.</li><li>Your Eidolon gains Proficiency in Saving Throws using the chosen ability.</li></ul><p>This evolution feat can be selected multiple times.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/magical/humanoid-silhouette-green.webp",
+  "_id": "s623d101a630c53d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591056,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s623d101a630c53d",
+  "flags": {},
+  "sort": 0
+}

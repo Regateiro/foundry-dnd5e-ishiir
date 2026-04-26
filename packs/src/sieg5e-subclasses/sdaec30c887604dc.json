@@ -1,0 +1,107 @@
+{
+  "_id": "sdaec30c887604dc",
+  "name": "Fighter: Arcane Archer",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "fighter",
+    "identifier": "fighter-arcane-archer",
+    "advancement": [
+      {
+        "title": "Choose Arcane Shots",
+        "type": "ItemChoice",
+        "icon": "systems/dnd5e/icons/svg/item-choice.svg",
+        "configuration": {
+          "hint": "All choices are presented regardless of prerequisites.",
+          "choices": {
+            "3": 2,
+            "7": 1,
+            "10": 1,
+            "15": 1,
+            "18": 1
+          },
+          "pool": [
+            "Compendium.dnd5e.sieg5e-optfeatures.sd151b384d03e783",
+            "Compendium.dnd5e.sieg5e-optfeatures.se29b2300b2bd5db",
+            "Compendium.dnd5e.sieg5e-optfeatures.s8964d70ef51a6cd",
+            "Compendium.dnd5e.sieg5e-optfeatures.s6e1636f0be269f7",
+            "Compendium.dnd5e.sieg5e-optfeatures.s421e111f36c5731",
+            "Compendium.dnd5e.sieg5e-optfeatures.s7f5e74c5d4912f7",
+            "Compendium.dnd5e.sieg5e-optfeatures.sbfd6299dea6fcbd",
+            "Compendium.dnd5e.sieg5e-optfeatures.s905b898ac7c62f4"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s9dd487d801ef714",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1d92f2029b92474",
+            "Compendium.dnd5e.sieg5e-classfeatures.s55cd2e0938a8b43",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3fc663be2af8f35"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 7,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sa3ae628c2813d25"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3f0df4c714638df"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 15,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s738dcc6d79e9f11"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 18,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sb50ef87d3d8d4fd"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/sonic/projectile-shock-wave-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590945,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sdaec30c887604dc",
+  "flags": {},
+  "sort": 0
+}

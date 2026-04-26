@@ -1,0 +1,85 @@
+{
+  "name": "Greater Clawed Aspect",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain one of the following features of your choice.</p><ul><li><strong>Stalker's Rake.</strong> You can Hide as a Bonus Action. If you hit a creature with your natural weapons while hidden, it has Disadvantage on the next Saving Throw against your Clawed Aspect. Additionally, creatures Lacerated by you cannot make Opportunity Attacks.</li><li><strong>Big Game Hunter.</strong> When you use Primal Pounce and your attack hits, you can also attempt to Climb onto a Bigger Creature as per the Additional Combat Actions as a Bonus Action.</li><li><strong>Disembowel.</strong> If you hit a Prone creature with your natural weapons, you can force it to make the Saving Throw against your Clawed Aspect again, ignoring the usual per-turn limit. Once per turn, if the Prone creature is already Lacerated, it takes the damage from the condition immediately after the attack if it fails the Saving Throw.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sddfc21f53c88d00",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591019,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sddfc21f53c88d00",
+  "flags": {},
+  "sort": 0
+}

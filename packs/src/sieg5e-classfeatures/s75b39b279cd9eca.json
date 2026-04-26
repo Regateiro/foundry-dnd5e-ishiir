@@ -1,0 +1,85 @@
+{
+  "name": "Hurricane Queen",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your mastery of air allows you to infuse your own self with the essence of storms.</p><p>As an Action, you undergo the transformation and gain the following benefits for 1 minute:</p><ul><li>You ignore all wind-based effects such as the Whirlwind spell or even a natural tornado.</li><li>You gain Immunity to lightning damage.</li><li>You are surrounded by a 60 foot radius aura of stormlike winds of such intensity that they render ranged weapon attacks against you completely impossible. You and any number of creatures of your choice in the area are unaffected.</li><li>Any other creature is Deafened while in this area, must spend 4 feet for every 1 foot of movement while in it, and has to succeed on a Strength Saving Throw against your save DC at the start of its turn or when it enters the area for the first time or be knocked Prone or hurled 20 feet away in a direction that you choose.</li></ul><p>Once you have used this ability, you can't use it again until you have finished a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s75b39b279cd9eca",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590988,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s75b39b279cd9eca",
+  "flags": {},
+  "sort": 0
+}

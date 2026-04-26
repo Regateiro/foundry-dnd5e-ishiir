@@ -1,0 +1,68 @@
+{
+  "_id": "s9af9f7d56d48e2c",
+  "name": "Genasi (Air)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "genasi-air",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 35
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se436047d4264827",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc4c7f23c73a2171",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5ead33c44765bd0",
+            "Compendium.dnd5e.sieg5e-classfeatures.s40efea0c05496ad",
+            "Compendium.dnd5e.sieg5e-classfeatures.s34f5c045f6a12b1",
+            "Compendium.dnd5e.sieg5e-classfeatures.s13ffb34474db014"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:acr"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:lightning"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/defensive/armor-stone-skin.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9af9f7d56d48e2c",
+  "flags": {},
+  "sort": 0
+}

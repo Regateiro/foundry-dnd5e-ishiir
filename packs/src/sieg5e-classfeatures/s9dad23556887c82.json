@@ -1,0 +1,85 @@
+{
+  "name": "Extraordinary Acrobatics",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You gain the ability to move along vertical surfaces on your turn without falling during the move and you can use your Dexterity in place of your Strength to determine the distance of your jumps.</p><p>In addition, once per turn when you take the Attack action, you can replace one of your attacks with an attempt to Climb onto a Bigger Creature, as per the Additional Combat Actions. You can attempt and maintain this special grapple even when you don't have a free hand.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s9dad23556887c82",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590982,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s9dad23556887c82",
+  "flags": {},
+  "sort": 0
+}

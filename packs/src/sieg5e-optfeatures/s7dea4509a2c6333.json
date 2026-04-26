@@ -1,0 +1,85 @@
+{
+  "name": "Stone Rune",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>This rune's magic channels the judiciousness associated with stone giants. While wearing or carrying an object inscribed with this rune, you have Advantage on Wisdom (Insight) checks, and you have darkvision out to a range of 120 feet.</p><p>In addition, when a creature you can see ends its turn within 30 feet of you, you can use your Reaction to invoke the rune and force the creature to make a Wisdom Saving Throw. Unless the save succeeds, the creature is Charmed by you for 1 minute. While Charmed in this way, the creature has a Speed of 0 and is Incapacitated, descending into a dreamy stupor. The creature repeats the Saving Throw at the end of each of its turns, ending the effect on a success. Once you invoke this rune, you can't do so again until you finish a Short or a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s7dea4509a2c6333",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591076,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s7dea4509a2c6333",
+  "flags": {},
+  "sort": 0
+}

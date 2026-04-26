@@ -1,0 +1,58 @@
+{
+  "_id": "s876f7b611c3ce1f",
+  "name": "Faun",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "faun",
+    "senses": {
+      "darkvision": 60
+    },
+    "movement": {
+      "walk": 35
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd40b46cb52b4459",
+            "Compendium.dnd5e.sieg5e-classfeatures.s62e321cf89d39ad",
+            "Compendium.dnd5e.sieg5e-classfeatures.se1900c90efc4e95",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4889b2386ee256b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s40eacfdfe6da3fe",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc80c59549418096",
+            "Compendium.dnd5e.sieg5e-classfeatures.sdb33820dd57e03f"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:prf"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/nature/elemental-plant-humanoid.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s876f7b611c3ce1f",
+  "flags": {},
+  "sort": 0
+}

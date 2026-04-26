@@ -1,0 +1,65 @@
+{
+  "_id": "s65ec3756791e2c1",
+  "name": "Aven (Ibisian)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "aven-ibisian",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s493137304c5bb3b",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc234464b7198e0d",
+            "Compendium.dnd5e.sieg5e-classfeatures.s27fb78067ddefa4"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:None"
+          ],
+          "choices": []
+        }
+      },
+      {
+        "title": "Damage Resistances",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "dr:radiant"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/birds/corvid-call-sound-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630210,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s65ec3756791e2c1",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Banishment Specialist",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you cast Banishment, you can treat it as one spell level higher than the Spell Slot you expended for the purpose of determining its effects and it does not count against your Concentration limit, though the initial instance of the spell ends if you cast it again.</p><p>If you fail a Concentration Saving Throw and you are currently Concentration on more than one spell, you lose Concentration on both spells.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s32cdd1fa943f99d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591039,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s32cdd1fa943f99d",
+  "flags": {},
+  "sort": 0
+}

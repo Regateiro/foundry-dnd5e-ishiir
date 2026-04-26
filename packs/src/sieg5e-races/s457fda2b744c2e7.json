@@ -1,0 +1,57 @@
+{
+  "_id": "s457fda2b744c2e7",
+  "name": "Gatari (Leontari)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "gatari-leontari",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 35
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s802c77738b15250",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6586fcaefd7f697",
+            "Compendium.dnd5e.sieg5e-classfeatures.sac4fc20a9da2d69",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5e8e5863ebaea93",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8a2faaf3b1e68bb",
+            "Compendium.dnd5e.sieg5e-classfeatures.s60e914fa0105f60"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:per"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/mammals/humanoid-fox-cat-archer.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s457fda2b744c2e7",
+  "flags": {},
+  "sort": 0
+}

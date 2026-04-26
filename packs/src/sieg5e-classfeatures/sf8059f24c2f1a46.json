@@ -1,0 +1,85 @@
+{
+  "name": "Steppe Skirmisher",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>If you move at least 30 feet in a straight line right before attacking a creature and you hit it with melee weapon attack, that target must succeed on a Strength Saving Throw (DC 8 + your Proficiency bonus + your Strength modifier) or be knocked Prone. You can use this feature only once on each of your turns.</p><p>You can move up to half your Speed as a Reaction when an enemy ends its turn within 10 feet of you after moving towards you and you are not already within 5 feet of a different enemy. This movement doesn't provoke Opportunity Attacks.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "reaction",
+      "cost": 1,
+      "condition": "when an enemy ends its turn within 10 feet of you after moving towards you and you are not already within 5 feet of a different enemy"
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/melee/strike-axe-red.webp",
+  "_id": "sf8059f24c2f1a46",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630195,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf8059f24c2f1a46",
+  "flags": {},
+  "sort": 0
+}

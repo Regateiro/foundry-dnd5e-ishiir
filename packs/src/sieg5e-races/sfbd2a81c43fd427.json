@@ -1,0 +1,55 @@
+{
+  "_id": "sfbd2a81c43fd427",
+  "name": "Giantkin (Cyclopean)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "giantkin-cyclopean",
+    "senses": {
+      "darkvision": 60
+    },
+    "movement": {
+      "walk": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s214cb32b0f15cc6",
+            "Compendium.dnd5e.sieg5e-classfeatures.s10d98f46e7c78b0",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb0815eafaa92345",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8ea8064771203d1"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/skills/social/intimidation-impressing.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630211,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfbd2a81c43fd427",
+  "flags": {},
+  "sort": 0
+}

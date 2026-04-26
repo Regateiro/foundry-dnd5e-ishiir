@@ -1,0 +1,60 @@
+{
+  "_id": "sfa02c3fcf8290ff",
+  "name": "Lizardfolk (Gatorian)",
+  "type": "race",
+  "system": {
+    "source": "Arkaeos",
+    "identifier": "lizardfolk-gatorian",
+    "senses": {
+      "darkvision": 0
+    },
+    "movement": {
+      "walk": 30,
+      "swim": 30
+    },
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s07f8c2490c17407",
+            "Compendium.dnd5e.sieg5e-classfeatures.sffbdfc5c99ebf01",
+            "Compendium.dnd5e.sieg5e-classfeatures.s83a15feb86afff7",
+            "Compendium.dnd5e.sieg5e-classfeatures.sbf8b03d5a1876ef",
+            "Compendium.dnd5e.sieg5e-classfeatures.s4b30ed125c2dc0e",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc157f7f1c5b5c0b",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5b3a2f96eaa84a3"
+          ]
+        }
+      },
+      {
+        "title": "Skills",
+        "type": "Trait",
+        "level": 1,
+        "icon": "systems/dnd5e/icons/svg/trait-skills.svg",
+        "configuration": {
+          "grants": [
+            "skills:ath",
+            "skills:itm"
+          ],
+          "choices": []
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/reptiles/lizard-mouth-glowing-red.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210630212,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfa02c3fcf8290ff",
+  "flags": {},
+  "sort": 0
+}

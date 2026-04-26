@@ -1,0 +1,69 @@
+{
+  "_id": "s23ac340ea5d1e82",
+  "name": "Rogue: Soulknife",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "rogue",
+    "identifier": "rogue-soulknife",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s39eb74812f31d72",
+            "Compendium.dnd5e.sieg5e-classfeatures.sc0ade5ffeaaf685"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 9,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s5933560bc979c52"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 13,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s21345d9cfb7fa7b"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s744e3639b0b8468"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/weapons/daggers/dagger-magical-glowing-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590950,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s23ac340ea5d1e82",
+  "flags": {},
+  "sort": 0
+}

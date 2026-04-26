@@ -1,0 +1,85 @@
+{
+  "name": "Insightful Striking",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can choose one creature you can see within 30 feet of yourself. Your magic grants you a brief vision of the target's defenses. Until the end of your next turn, you gain one of the following effects of your choice:</p><ul><li>The next time you make an Attack Roll against the target, roll a d6 and add the number rolled to the total.</li><li>The next time the target must make a Saving Throw against a spell you cast, the target must roll a d6 and subtract the number rolled from the Saving Throw.</li></ul><p>You can use this Bonus Action a number of times equal to your Proficiency bonus, and you regain all expended uses when you finish a Long Rest.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5f0e3a99289e34a",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590971,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5f0e3a99289e34a",
+  "flags": {},
+  "sort": 0
+}

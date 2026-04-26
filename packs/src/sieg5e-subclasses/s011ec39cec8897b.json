@@ -1,0 +1,58 @@
+{
+  "_id": "s011ec39cec8897b",
+  "name": "Warlock: The Fathomless",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "warlock",
+    "identifier": "warlock-the-fathomless",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sc80e8359c75a3e7",
+            "Compendium.dnd5e.sieg5e-classfeatures.s1e2e8e5e4ca218c"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s3ebf0dfb1d24e9f"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s0718704ccf7f426"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/water/bubbles-air-water-light.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210590952,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s011ec39cec8897b",
+  "flags": {},
+  "sort": 0
+}

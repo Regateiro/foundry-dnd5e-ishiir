@@ -1,0 +1,85 @@
+{
+  "name": "Living Bomb",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The damage dealt by your Heart of Fire feature increases to three times your Proficiency.</p><p>When a creature affected by your Heart of Fire feature that you can see is reduced to 0 hit points by fire damage, you can use your Reaction to make it explode violently. Any creature in a 20 feet radius around the target has to make a DEX Saving Throw against your spell save DC. On a failure, a creature takes fire damage equal to a number of d6 x your Proficiency and is then set aflame as per your Heart of Fire feature. On a success, it takes half as much damage and isn't set aflame.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sb7420efd501057d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1777210591023,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sb7420efd501057d",
+  "flags": {},
+  "sort": 0
+}
