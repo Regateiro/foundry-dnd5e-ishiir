@@ -13,6 +13,8 @@ regenerate-packs-ishiir:
 	@curl -s "https://regateiro.pt/sieg5e/api?source=Ishiir" > sieg5e-ishiir.json
 	@curl -s "https://regateiro.pt/sieg5e/api?source=Arkaeos" > sieg5e-arkaeos.json
 	@python3 generate_ishiir_packs.py ishiir
+	@.venv/bin/npm run build:clean
+	@.venv/bin/npm run build
 
 lint-py:
 	@isort --profile black ./generate_ishiir_packs.py

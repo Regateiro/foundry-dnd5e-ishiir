@@ -19,6 +19,7 @@ DEFAULT_STATS = {
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
+    "modifiedTime": int(datetime.timestamp(datetime.now()) * 1000),
     "lastModifiedBy": "dnd5ebuilder0000",
 }
 
@@ -64,10 +65,7 @@ def _import(src: str) -> None:
                 continue
 
             # Inject metadata before writing
-            pack_data["_stats"] = {
-                **DEFAULT_STATS,
-                "modifiedTime": int(datetime.timestamp(datetime.now()) * 1000),
-            }
+            pack_data["_stats"] = DEFAULT_STATS
             pack_data["_key"] = f"!items!{pack_data['_id']}"
 
             with open(filepath, "w", encoding="utf-8") as fd:
