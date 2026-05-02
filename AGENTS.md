@@ -101,6 +101,9 @@ Implementation in `module/canvas/token.mjs`:
 - `Token5e.sortTokens()` implements the sorting logic
 - `_onUpdate()` updates `lastMoved` when a token's x/y changes, then calls `globalThis.canvas.primary.sortChildren()` to re-sort tokens immediately
 
+## Foundry Core Reference
+The system extends Foundry VTT's core classes (e.g., `Token`, `Actor`, `Item`). Refer to `foundry.js` in your Foundry data directory for the base implementation. **Do not import from or modify foundry.js** — use it only for understanding the inherited behavior and API.
+
 ## Release Process
 - CI triggered by pushing a tag matching `release-x.x.x`
 - `system.json` version must match the tag version
