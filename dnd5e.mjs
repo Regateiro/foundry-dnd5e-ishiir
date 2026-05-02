@@ -324,15 +324,28 @@ Hooks.once("ready", function() {
 /*  Canvas Initialization                       */
 /* -------------------------------------------- */
 
+/**
+ * Hook that runs when the canvas is fully initialized.
+ * Patches the canvas's _sortObjects method to use our custom token sorting logic,
+ * then triggers an initial sort of all tokens on the canvas.
+ */
 Hooks.on("canvasReady", () => {
   console.log("DnD5e | canvasReady hook running");
   const PrimaryCanvasGroup = globalThis.canvas.primary.constructor;
 
+  // Store the original Foundry sort function so we can fall back to it for non-tokens.
   const originalSort = PrimaryCanvasGroup._sortObjects;
+
+  // Override _sortObjects to intercept token sorting and use our custom logic.
+  // This method is called by Foundry whenever objects on the canvas need to be sorted
+  // (e.g., for z-index ordering). We check if both objects are TokenMesh instances
+  // and if they have valid documents before applying our custom sort order.
   PrimaryCanvasGroup._sortObjects = (a, b) => {
     const aIsToken = a.constructor.name === "TokenMesh";
     const bIsToken = b.constructor.name === "TokenMesh";
 
+    // Only apply custom sorting when both objects are tokens with valid documents.
+    // Otherwise, fall back to the original Foundry sorting behavior.
     if (aIsToken && bIsToken && a.document && b.document) {
       return dnd5e.canvas.Token5e.sortTokens(a.document.object, b.document.object);
     }
@@ -340,6 +353,8 @@ Hooks.on("canvasReady", () => {
     return originalSort.call(PrimaryCanvasGroup, a, b);
   };
 
+  // Force an immediate sort of all tokens on the canvas so they appear in the
+  // correct z-order when the scene first loads.
   globalThis.canvas.primary.sortChildren();
 });
 

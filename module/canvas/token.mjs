@@ -26,21 +26,22 @@ export default class Token5e extends Token {
    * @returns {number} Sorting order
    */
   static sortTokens(tokenA, tokenB) {
+    // First sort by size: smaller tokens should appear on top (higher z-index)
     const tokenASize = tokenA.document.width * tokenA.document.height;
     const tokenBSize = tokenB.document.width * tokenB.document.height;
-
     if ( tokenASize !== tokenBSize ) return tokenBSize - tokenASize;
 
+    // Second sort by actor type: player characters ("character") appear above NPCs
     const tokenAType = tokenA.document.actor?.type;
     const tokenBType = tokenB.document.actor?.type;
     const tokenAisPlayer = tokenAType === "character";
     const tokenBisPlayer = tokenBType === "character";
-
     if ( tokenAisPlayer !== tokenBisPlayer ) return tokenAisPlayer - tokenBisPlayer;
 
+    // Third sort by last moved time: more recently moved tokens appear on top
+    // Uses static Map to track movement timestamps; defaults to 0 if not yet moved
     const tokenAMovedTime = Token5e.lastMoved.get(tokenA.document.id) ?? 0;
     const tokenBMovedTime = Token5e.lastMoved.get(tokenB.document.id) ?? 0;
-
     return tokenAMovedTime - tokenBMovedTime;
   }
 
@@ -49,10 +50,15 @@ export default class Token5e extends Token {
   /** @inheritdoc */
   _onUpdate(...args) {
     const [data] = args;
+    // Track when this token was last moved by updating the static Map.
+    // The timestamp is used by sortTokens() to sort by "most recently moved on top".
     if ( data.hasOwnProperty("x") || data.hasOwnProperty("y") ) {
       Token5e.lastMoved.set(this.document.id, Date.now());
     }
+    // Force immediate re-sort of all tokens on the canvas so the moved token's new
+    // position in the z-order is reflected right away (e.g., for same-size, same-type tokens).
     globalThis.canvas.primary.sortChildren();
+    // Perform the rest of the updates
     return super._onUpdate(...args);
   }
 
