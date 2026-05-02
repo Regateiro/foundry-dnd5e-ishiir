@@ -104,6 +104,51 @@ Implementation in `module/canvas/token.mjs`:
 ## Foundry Core Reference
 The system extends Foundry VTT's core classes (e.g., `Token`, `Actor`, `Item`). Refer to `foundry.js` in your Foundry data directory for the base implementation. **Do not import from or modify foundry.js** — use it only for understanding the inherited behavior and API.
 
+### Global Variables
+Foundry VTT exposes several global variables to systems and modules at runtime via `foundry.js`. These are available globally without requiring imports:
+
+| Variable | Type | Description |
+|----------|-----|-------------|
+| `globalThis.vtt` | `string` | String prefix for console logging ("Foundry VTT") |
+| `globalThis.game` | `Game` | The singleton Game instance |
+| `globalThis.SIGNED_EULA` | `boolean` | Whether the EULA has been signed |
+| `globalThis.ROUTE_PREFIX` | `string` | Route prefix applied to this game |
+| `globalThis.MESSAGES` | `Array` | Critical server-side startup messages to display |
+| `globalThis.ui` | `Object<Application>` | Collection of open application instances (`ui.windows`) |
+| `globalThis.logger` | `Console` | Client-side console logger |
+| `globalThis.Color` | `foundry.utils.Color` | Color management and manipulation class |
+| `globalThis.CONFIG` | `Object` | Game configuration object (document types, constants, etc.) |
+| `globalThis.Hooks` | `Hooks` | Event hook registration and dispatch system |
+| `globalThis.TextEditor` | `TextEditor` | Rich text editor (TinyMCE/ProseMirror) |
+| `globalThis.SortingHelpers` | `SortingHelpers` | Sorting utilities for placeable objects |
+| `globalThis.canvas` | `Canvas` | The game canvas instance |
+| `globalThis.dnd5e` | `Object` | System configuration (DND5E module) |
+
+#### Global Classes (not on globalThis, but available via game.*)
+- **`Hooks`**: Event system for registering callbacks (`Hooks.on()`, `Hooks.call()`, `Hooks.callAll()`)
+- **`TextEditor`**: Rich text editing via TinyMCE or ProseMirror
+- **`SortingHelpers`**: Integer sorting algorithms for placeables
+- **`ClientKeybindings`**: Keybinding management (`game.keybindings`)
+- **`KeyboardManager`**: Keyboard input handling
+- **`MouseManager`**: Mouse input handling
+- **`GamepadManager`**: Gamepad input handling
+- **`TooltipManager`**: Tooltip rendering and positioning
+- **`Tour`** / **`Tours`**: New user experience tours
+- **`ImageHelper`**: Image processing utilities
+- **`VideoHelper`**: Video playback utilities
+- **`ClipboardHelper`**: Clipboard access (`game.clipboard`)
+- **`ClientSettings`**: Settings management (`game.settings`)
+- **`DocumentIndex`**: Document indexing for search
+- **`WordTree`**: Prefix-based lookups for search
+- **`Localization`**: i18n support (`game.i18n`)
+
+### Modified Functions
+The dnd5e project modifies some core Foundry functions for custom behavior:
+
+| Function | Location | Description |
+|----------|----------|-------------|
+| `PrimaryCanvasGroup._sortObjects` | `dnd5e.mjs:343` | Overrides the canvas sorting logic to use custom token sorting (smaller tokens on top, player tokens on top of NPC, more recently moved on top). Calls `Token5e.sortTokens()` for TokenMesh objects. |
+
 ## Release Process
 - CI triggered by pushing a tag matching `release-x.x.x`
 - `system.json` version must match the tag version
