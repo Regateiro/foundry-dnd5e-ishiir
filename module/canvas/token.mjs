@@ -1,12 +1,59 @@
 /**
  * Extend the base Token class to implement additional system-specific logic.
  */
+
 export default class Token5e extends Token {
+
+  /**
+   * Track the last time each token was moved for sorting purposes.
+   * @type {Map<string, number>}
+   */
+  static lastMoved = new Map();
 
   /** @inheritdoc */
   _drawBar(number, bar, data) {
     if ( data.attribute === "attributes.hp" ) return this._drawHPBar(number, bar, data);
     return super._drawBar(number, bar, data);
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Custom sorting function for token draw order.
+   * Order: smaller tokens on top > player tokens on top of NPC > more recently moved on top.
+   * @param {Token} tokenA  First token
+   * @param {Token} tokenB  Second token
+   * @returns {number} Sorting order
+   */
+  static sortTokens(tokenA, tokenB) {
+    const tokenASize = tokenA.document.width * tokenA.document.height;
+    const tokenBSize = tokenB.document.width * tokenB.document.height;
+
+    if ( tokenASize !== tokenBSize ) return tokenBSize - tokenASize;
+
+    const tokenAType = tokenA.document.actor?.type;
+    const tokenBType = tokenB.document.actor?.type;
+    const tokenAisPlayer = tokenAType === "character";
+    const tokenBisPlayer = tokenBType === "character";
+
+    if ( tokenAisPlayer !== tokenBisPlayer ) return tokenAisPlayer - tokenBisPlayer;
+
+    const tokenAMovedTime = Token5e.lastMoved.get(tokenA.document.id) ?? 0;
+    const tokenBMovedTime = Token5e.lastMoved.get(tokenB.document.id) ?? 0;
+
+    return tokenAMovedTime - tokenBMovedTime;
+  }
+
+  /* -------------------------------------------- */
+
+  /** @inheritdoc */
+  _onUpdate(...args) {
+    const [data] = args;
+    if ( data.hasOwnProperty("x") || data.hasOwnProperty("y") ) {
+      Token5e.lastMoved.set(this.document.id, Date.now());
+    }
+    globalThis.canvas.primary.sortChildren();
+    return super._onUpdate(...args);
   }
 
   /* -------------------------------------------- */

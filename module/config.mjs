@@ -1590,7 +1590,7 @@ DND5E.transformationPresets = {
       keepItems: true,
       mergeSaves: true,
       mergeSkills: true,
-      keepAE: true,
+      keepAE: true
     }
   },
   polymorph: {
@@ -1598,7 +1598,7 @@ DND5E.transformationPresets = {
     label: "DND5E.Polymorph",
     options: {
       keepOtherHpAsTemporaryHP: true,
-      keepAE: true,
+      keepAE: true
     }
   },
   polymorphSelf: {

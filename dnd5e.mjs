@@ -324,6 +324,29 @@ Hooks.once("ready", function() {
 /*  Canvas Initialization                       */
 /* -------------------------------------------- */
 
+Hooks.on("canvasReady", () => {
+  console.log("DnD5e | canvasReady hook running");
+  const PrimaryCanvasGroup = globalThis.canvas.primary.constructor;
+
+  const originalSort = PrimaryCanvasGroup._sortObjects;
+  PrimaryCanvasGroup._sortObjects = (a, b) => {
+    const aIsToken = a.constructor.name === "TokenMesh";
+    const bIsToken = b.constructor.name === "TokenMesh";
+
+    if (aIsToken && bIsToken && a.document && b.document) {
+      return dnd5e.canvas.Token5e.sortTokens(a.document.object, b.document.object);
+    }
+
+    return originalSort.call(PrimaryCanvasGroup, a, b);
+  };
+
+  globalThis.canvas.primary.sortChildren();
+});
+
+/* -------------------------------------------- */
+/*  Canvas Initialization                       */
+/* -------------------------------------------- */
+
 Hooks.on("canvasInit", gameCanvas => {
   gameCanvas.grid.diagonalRule = game.settings.get("dnd5e", "diagonalMovement");
   SquareGrid.prototype.measureDistances = canvas.measureDistances;

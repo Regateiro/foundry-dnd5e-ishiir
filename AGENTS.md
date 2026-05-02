@@ -93,6 +93,14 @@ Configured in `system.json` flags for development:
 - Extensions: `css`, `hbs`, `json`
 - Paths: `dnd5e.css`, `templates/`, `lang/`
 
+## Token Sorting
+Tokens are sorted by: smaller tokens on top > player tokens on top of NPC > more recently moved on top.
+
+Implementation in `module/canvas/token.mjs`:
+- `Token5e.lastMoved` (static Map) tracks the last time each token was moved
+- `Token5e.sortTokens()` implements the sorting logic
+- `_onUpdate()` updates `lastMoved` when a token's x/y changes, then calls `globalThis.canvas.primary.sortChildren()` to re-sort tokens immediately
+
 ## Release Process
 - CI triggered by pushing a tag matching `release-x.x.x`
 - `system.json` version must match the tag version

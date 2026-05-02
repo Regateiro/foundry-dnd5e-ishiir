@@ -2114,12 +2114,12 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       // The multiplier is 10 for heavy armor, 1 for light armor, and 5 for medium armor / unarmored
       const multiplier = ( armorType === "heavy" ? 10 : ( armorType === "light" ? 1 : 5 ));
       // Append the armor mastery recovery message
-      message += "<br/>" + game.i18n.format(armorMessage, {
+      message += `<br/>${game.i18n.format(armorMessage, {
         name: this.name,
         armorType: armorType,
         armorRecovered: dam,
         armorCost: dam * multiplier
-      });
+      })}`;
     }
 
     // Create a chat message
