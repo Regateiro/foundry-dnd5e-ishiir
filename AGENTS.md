@@ -148,6 +148,7 @@ The dnd5e project modifies some core Foundry functions for custom behavior:
 | Function | Location | Description |
 |----------|----------|-------------|
 | `PrimaryCanvasGroup._sortObjects` | `dnd5e.mjs:343` | Overrides the canvas sorting logic to use custom token sorting (smaller tokens on top, player tokens on top of NPC, more recently moved on top). Calls `Token5e.sortTokens()` for TokenMesh objects. |
+| `Ruler` class patches | `dnd5e.mjs:380` (canvasReady hook) | Adds elevation support to Ruler: mouse wheel controls elevation per segment, displays cumulative elevation in labels, updates token elevation after movement with rounding to nearest 5ft |
 
 ## Release Process
 - CI triggered by pushing a tag matching `release-x.x.x`

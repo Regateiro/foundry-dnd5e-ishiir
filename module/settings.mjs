@@ -41,7 +41,10 @@ export default function registerSystemSettings() {
       5105: "SETTINGS.5eDiagDMG",
       EUCL: "SETTINGS.5eDiagEuclidean"
     },
-    onChange: rule => canvas.grid.diagonalRule = rule
+    onChange: rule => {
+      canvas.grid.diagonalRule = rule;
+      if (canvas.grid.parent) canvas.grid.parent.diagonalRule = rule;
+    }
   });
 
   // Allow rotating square templates

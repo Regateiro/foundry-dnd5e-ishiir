@@ -22,6 +22,15 @@ This is a fork of the official `foundryvtt/dnd5e` system with the following cust
 
 ### Custom Code Features
 
+#### Ruler Elevation
+- Mouse wheel scroll to adjust vertical elevation while measuring distance
+- Supports all three diagonal movement rules:
+  - **555**: max(groundDistance, elevationDistance)
+  - **5105**: groundDistance + (elevationDistance * 0.5)
+  - **EUCL**: sqrt(ground² + elevation²)
+- Displays cumulative elevation in ruler labels (e.g., "25.0ft | ↑15.0ft")
+- After movement (SPACEBAR), token elevation is updated (rounded up to nearest 5ft)
+
 #### Token Sorting
 - Modified token sorting so smaller tokens render on top
 - Player tokens render on top of NPC tokens
