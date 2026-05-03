@@ -75,17 +75,16 @@ export function measureDistancesWithElevation(groundSegments) {
 /**
  * Installs patches on the Ruler class to add elevation support.
  *
- * @param {Function} Ruler The Ruler class constructor
  * @param {object} gameCanvas The canvas instance
  */
-export function installRulerPatches(Ruler, gameCanvas) {
+export function installRulerPatches(gameCanvas) {
   // Patch _getSegmentLabel to show cumulative elevation
   // This function is called by Foundry for each segment label as the ruler is drawn.
   // We modify it to append elevation information to the distance label.
   //
   // The original function returns a string like "25ft" but we modify it to show
   // "25ft | ↑20ft" when there's elevation change, where ↑ indicates rising.
-  Ruler.prototype._getSegmentLabel = function(segment, distance) {
+  CONFIG.Canvas.rulerClass.prototype._getSegmentLabel = function(segment, distance) {
     const scene = globalThis.canvas.scene;
     const gridDistance = scene?.grid?.distance || 5;
     const segmentElevations = this.segmentElevations || [0];
@@ -259,18 +258,6 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
   };
 
   // === Step 4: Patch the Ruler class ===
-  // The Ruler class may not be available when canvasReady fires, so we try to get it
-  // immediately, or defer to a timeout if it's not ready yet.
-  let Ruler = foundry.applications?.controls?.Ruler;
-  if (!Ruler) {
-    setTimeout(() => {
-      const rulerInstance = globalThis.canvas?.controls?.ruler;
-      Ruler = rulerInstance ? rulerInstance.constructor : null;
-      if (Ruler) {
-        installRulerPatches(Ruler, gameCanvas);
-      }
-    }, 1000);
-  } else {
-    installRulerPatches(Ruler, gameCanvas);
-  }
+  // The Ruler class is available from CONFIG.Canvas.rulerClass when canvasReady fires.
+  installRulerPatches(gameCanvas);
 }
