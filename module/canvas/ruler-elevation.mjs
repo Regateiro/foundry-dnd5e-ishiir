@@ -84,7 +84,7 @@ export function installRulerPatches(gameCanvas) {
   //
   // The original function returns a string like "25ft" but we modify it to show
   // "25ft | ↑20ft" when there's elevation change, where ↑ indicates rising.
-  CONFIG.Canvas.rulerClass.prototype._getSegmentLabel = function(segment, distance) {
+  Ruler.prototype._getSegmentLabel = function(segment, distance) {
     const scene = globalThis.canvas.scene;
     const gridDistance = scene?.grid?.distance || 5;
     const segmentElevations = this.segmentElevations || [0];
@@ -258,6 +258,5 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
   };
 
   // === Step 4: Patch the Ruler class ===
-  // The Ruler class is available from CONFIG.Canvas.rulerClass when canvasReady fires.
   installRulerPatches(gameCanvas);
 }
