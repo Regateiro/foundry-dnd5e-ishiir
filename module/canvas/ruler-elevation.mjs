@@ -146,6 +146,19 @@ export function installRulerPatches(Ruler, gameCanvas) {
     };
   }
 
+  // Patch _removeWaypoint() to remove elevation slot
+  // When a waypoint is removed (right-click), we need to remove the corresponding elevation slot
+  const originalRemoveWaypoint = Ruler.prototype._removeWaypoint;
+  if (originalRemoveWaypoint) {
+    Ruler.prototype._removeWaypoint = function(point, options) {
+      // Remove the last elevation slot when a waypoint is removed
+      if (this.segmentElevations && this.segmentElevations.length > 1) {
+        this.segmentElevations.pop();
+      }
+      return originalRemoveWaypoint.call(this, point, options);
+    };
+  }
+
   // Patch moveToken() to apply elevation to token
   // After the token moves via SPACEBAR, we need to update its elevation.
   // We get the token BEFORE movement (state is valid), then calculate cumulative elevation
