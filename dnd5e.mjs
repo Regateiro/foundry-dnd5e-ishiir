@@ -458,7 +458,7 @@ Hooks.on("canvasReady", gameCanvas => {
     return groundSegments;
   }
 
-// === Step 3: Override measureDistances to add elevation ===
+  // === Step 3: Override measureDistances to add elevation ===
   // Wrap the dnd5e measureDistances with elevation logic.
   // First call the original (which handles diagonal rules), then add elevation adjustment.
   const originalMeasure = gameCanvas.grid.measureDistances;
@@ -487,6 +487,8 @@ Hooks.on("canvasReady", gameCanvas => {
 
   /**
    * Installs patches on the Ruler class to add elevation support.
+   *
+   * @param {Function} Ruler The Ruler class constructor
    *
    * Patches:
    * - _getSegmentLabel: Modifies the distance label to show cumulative elevation per segment
@@ -546,7 +548,7 @@ Hooks.on("canvasReady", gameCanvas => {
     // === Initialize ruler instance with elevation tracking ===
     const rulerInstance = globalThis.canvas.controls.ruler;
     if (rulerInstance) {
-      // segmentElevations: Array storing elevation in grid units (not feet) for each segment.
+      // SegmentElevations: Array storing elevation in grid units (not feet) for each segment.
       // Index 0 corresponds to the first segment, etc. Each value is an integer representing
       // how many grid squares of elevation change that segment has.
       rulerInstance.segmentElevations = [0];
