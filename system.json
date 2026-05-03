@@ -2,14 +2,14 @@
   "id": "dnd5e",
   "title": "Sieg5e - Fifth Edition System",
   "description": "A system for playing the improved version of the fifth edition of the worlds most popular role-playing game in the Foundry Virtual Tabletop environment.",
-  "version": "2.4.11",
+  "version": "2.4.12",
   "compatibility": {
     "minimum": "10.303",
     "verified": "11"
   },
   "url": "https://github.com/Regateiro/foundry-dnd5e-ishiir",
   "manifest": "https://raw.githubusercontent.com/Regateiro/foundry-dnd5e-ishiir/2.4.x/system.json",
-  "download": "https://github.com/Regateiro/foundry-dnd5e-ishiir/releases/download/release-2.4.11/sieg5e-release-2.4.11.zip",
+  "download": "https://github.com/Regateiro/foundry-dnd5e-ishiir/releases/download/release-2.4.12/sieg5e-release-2.4.12.zip",
   "authors": [
     {
       "name": "Atropos",
