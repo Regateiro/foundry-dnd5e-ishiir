@@ -73,6 +73,11 @@
 ├── icons/                    # Icon assets
 ├── templates/                # Handlebars HTML templates
 ├── json/                     # Source JSON for compendia
+├── docs/                     # Runtime reference docs
+│   ├── foundry.js            # Foundry VTT core class references
+│   ├── commons.js            # Core utilities & constants
+│   ├── SIEG5E_FEATURES.md    # Sieg5e-specific feature documentation
+│   └── FOUNDRY_RULER_SYNC.md # Ruler synchronization system docs
 ├── sieg5e-ishiir.json        # Generated pack source data (Ishiir)
 ├── sieg5e-arkaeos.json       # Generated pack source data (Arkaeos)
 ├── tests/                    # Foundry VTT test suite
