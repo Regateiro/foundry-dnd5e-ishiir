@@ -62,20 +62,15 @@ Adds vertical elevation support to the Foundry VTT Ruler measurement tool, allow
 Called from `canvasReady` hook in `dnd5e.mjs`. Sets up:
 1. Applies dnd5e measureDistances function to grid
 2. Sets diagonal movement rule from settings
-3. Overrides measureDistances to add elevation
-4. Installs Ruler patches
+3. Replaces `Ruler._computeDistance` to calculate 3D distances with elevation
+4. Calls `installRulerPatches(gameCanvas)`
 
-#### `measureDistancesWithElevation(groundSegments)`
-Adds elevation to distance calculations based on diagonal rule:
-- **EUCL**: `sqrt(ground² + elevation²)` (Pythagorean theorem)
-- **5105**: `ground + (elevation / 10) * 5` (each 10ft adds 5ft)
-- **555**: `max(ground, elevation)` (distance is the greater)
-
-#### `installRulerPatches(Ruler, gameCanvas)`
+#### `installRulerPatches(gameCanvas)`
 Patches Ruler prototype methods:
+- `toJSON`: Serializes `segmentElevations` for remote sync
+- `update`: Restores `segmentElevations` from remote data, forces re-render
 - `_getSegmentLabel`: Shows cumulative elevation in labels
 - `clear`: Resets elevation array when ruler deactivated
-- `setWaypoints`: Adds elevation slot for new waypoints
 - `_removeWaypoint`: Removes elevation slot when waypoint removed
 - `moveToken`: Applies elevation to token after movement
 - Wheel event handler: Adjusts elevation with mouse scroll

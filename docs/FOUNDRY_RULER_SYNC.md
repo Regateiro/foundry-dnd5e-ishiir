@@ -112,9 +112,9 @@ ruler.toJSON() ------> broadcastActivity({ruler: ...})   |
 - `destination`: PIXI.Point
 - `_state`: number (Ruler.STATES enum: INACTIVE=0, STARTING=1, MEASURING=2, MOVING=3)
 
-### What Does NOT Get Synced
+### What Does NOT Get Synced (natively)
 - Any custom properties on waypoints
-- Any properties added to the Ruler instance (e.g., this system's `segmentElevations`)
+- **`segmentElevations`** — synced via our custom `toJSON()` patch (see below)
 
 ### Broadcast Frequency
 - Ruler data is broadcast on every mouse move event while the ruler is active
@@ -136,38 +136,32 @@ Ruler.prototype.toJSON = function() {
 };
 ```
 
-### 2. Mouse Wheel Handler
+### 2. Mouse Wheel Handler (in `installRulerPatches`)
 After adjusting elevation, broadcasts the full ruler state:
 ```javascript
 game.user.broadcastActivity({ ruler: ruler.toJSON() });
 ```
 
-### 3. Patch: Ruler.update
-On receiving client, restores elevation data before calling original update:
+### 3. Patch: Ruler.update (in `installRulerPatches`)
+On receiving client, restores elevation data, then forces re-render:
 ```javascript
 Ruler.prototype.update = function(data) {
   if (data.segmentElevations) {
     this.segmentElevations = data.segmentElevations;
-    globalThis.__remoteRulerWithElevation = this;
   }
-  // ... force re-render
+  // Force re-render with elevation
+  this._computeDistance(true);
+  this.ruler.clear();
+  this._drawMeasuredPath();
+  return result;
 };
-```
-
-### 4. Remote Ruler Elevation Lookup
-When measuring, we must use the remote ruler's elevation (not local ruler):
-```javascript
-// __remoteRulerWithElevation is set in update() patch
-if (globalThis.__remoteRulerWithElevation) {
-  ruler = globalThis.__remoteRulerWithElevation;
-}
 ```
 
 ### Data Flow (Sender → Receiver)
 1. **Sender**: Wheel event → adjust segmentElevations → broadcastActivity({ ruler: ruler.toJSON() })
 2. **Receiver**: UserActivity._handleUserActivity → Controls.updateRuler → Ruler.update(data)
-3. **Receiver**: update() restores segmentElevations and stores ruler for measurement
-4. **Receiver**: measureDistancesWithElevation reads remote ruler's segmentElevations
+3. **Receiver**: update() restores segmentElevations, then calls _computeDistance(true) and re-renders
+4. **Receiver**: _computeDistance applies 3D distance using the restored segmentElevations
 
 ## How This System Adds Elevation
 
@@ -194,8 +188,31 @@ const cumulativeElevation = this.segmentElevations?.reduce((a, b) => a + b, 0) |
 ### Mouse Wheel Handler
 Adjusts the current (last) segment's elevation by ±1 grid unit per scroll.
 
-### measureDistancesWithElevation
-Intercepts `canvas.grid.measureDistances` to apply elevation to distance calculations based on diagonal movement rules (EUCL, 5105, 555).
+### Patch: Ruler._computeDistance (in `setupRulerElevation`)
+Replaces the original to apply elevation to distance calculations based on diagonal movement rules (EUCL, 5105, 555):
+- Gets ground-only distances from `canvas.grid.measureDistances`
+- For each segment, computes 3D distance using `segmentElevations[i]`
+- Applies the diagonal rule formula (Euclidean hypotenuse, 5105 linear, or 555 max)
+- Sets `segment.distance`, `segment.cumDistance`, `segment.cumDeltaElevation`
+- Generates label text via `_getSegmentLabel`
+
+## Architecture Summary
+
+The elevation system is split into two phases:
+
+### Phase 1: `setupRulerElevation()` — Called from canvasReady hook
+1. Sets `gameCanvas.grid.measureDistances` from dnd5e's diagonal-aware function
+2. Sets `gameCanvas.grid.parent.diagonalRule` from game settings
+3. Replaces `Ruler._computeDistance` to calculate 3D distances with elevation
+
+### Phase 2: `installRulerPatches()` — Called from within setupRulerElevation
+1. Patches `toJSON()` to serialize `segmentElevations`
+2. Patches `update()` to restore `segmentElevations` from remote data
+3. Patches `_getSegmentLabel()` to append elevation to labels
+4. Patches `clear()` to reset `segmentElevations` to `[0]`
+5. Patches `_removeWaypoint()` to pop corresponding elevation slot
+6. Patches `moveToken()` to apply cumulative elevation to token
+7. Installs mouse wheel handler for adjusting elevation during measurement
 
 ## Relevant Source Files
 - `docs/foundry.js` - Core Foundry implementation
