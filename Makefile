@@ -5,6 +5,9 @@ configure-env:
 	@npm install
 
 install:
+	@echo "Rebuilding system..."
+	@.venv/bin/npm run build:clean
+	@.venv/bin/npm run build
 	@echo "Deploying to development environment..."
 	@rsync -avz --delete --exclude 'node_modules' --exclude '.venv' --exclude '.git' ./ /home/regateiro/.local/share/FoundryVTT/Data/systems/dnd5e
 	@echo "Deployment to development environment complete."

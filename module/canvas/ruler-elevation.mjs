@@ -203,9 +203,9 @@ export function installRulerPatches(gameCanvas) {
     const delta = event.deltaY > 0 ? -1 : 1;
 
     // Ensure array exists and matches segments length
-    ruler.segmentElevations = ruler.segmentElevations || [0];
-    while (ruler.segmentElevations.length < (ruler.segments?.length || 1)) {
-      ruler.segmentElevations.push(0);
+    const targetLen = ruler.segments.length;
+    if (!ruler.segmentElevations || ruler.segmentElevations.length < targetLen) {
+      ruler.segmentElevations = Array.from({ length: targetLen }, () => 0);
     }
 
     // Adjust only the current (last) segment - that's where the user is measuring
@@ -225,6 +225,22 @@ export function installRulerPatches(gameCanvas) {
   };
 
   gameCanvas.app.view.addEventListener("wheel", handleWheel, { passive: false });
+}
+
+/**
+ * Compute 3D distance from ground distance, elevation (in feet), and diagonal rule.
+ *
+ * @param {number} groundDistance - Ground distance in feet
+ * @param {number} elevationFeet - Elevation in feet
+ * @param {string} diagonalRule - Diagonal movement rule (EUCL, 5105, or 555)
+ * @returns {number} 3D-adjusted distance in feet
+ */
+function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
+  switch (diagonalRule) {
+    case "EUCL": return Math.hypot(groundDistance, elevationFeet);
+    case "5105": return groundDistance + (elevationFeet / 10) * 5;
+    default:     return Math.max(groundDistance, elevationFeet);
+  }
 }
 
 /**
@@ -278,21 +294,8 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
       const elevation = this.segmentElevations[i] || 0;
       // Convert elevation to feet: e.g., 2 units * 5ft = 10ft
       const elevationFeet = Math.abs(elevation) * gridDistance;
-      let adjustedDistance = d;
-
       // Apply 3D distance formula if there's elevation
-      if (elevation) {
-        if (diagonalRule === "EUCL") {
-          // Euclidean: straight-line 3D distance (hypotenuse)
-          adjustedDistance = Math.hypot(d, elevationFeet);
-        } else if (diagonalRule === "5105") {
-          // 5105: add 5ft for every 10ft of elevation gained
-          adjustedDistance = d + ((elevationFeet / 10) * 5);
-        } else {
-          // 555 (default): use the greater of ground or elevation distance
-          adjustedDistance = Math.max(d, elevationFeet);
-        }
-      }
+      const adjustedDistance = elevation ? compute3DDistance(d, elevationFeet, diagonalRule) : d;
 
       cumulativeDistance += adjustedDistance;
       cumulativeDeltaElevation += (elevation * gridDistance);
