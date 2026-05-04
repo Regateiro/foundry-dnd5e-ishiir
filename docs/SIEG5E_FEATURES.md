@@ -49,6 +49,7 @@ Adds vertical elevation support to the Foundry VTT Ruler measurement tool, allow
 - Displays cumulative elevation in ruler labels (e.g., "25.0ft | ↑15.0ft")
 - After movement (SPACEBAR), token elevation updates (rounded up to nearest 5ft)
 - Ctrl+Click to add waypoints, Right-click to remove waypoints
+- **Elevation syncs to other connected clients** - when you adjust elevation, other players see the adjusted distance on their screen
 
 ### Diagonal Rules
 - **555 (PHB)**: `max(groundDistance, elevationDistance)`
@@ -86,6 +87,7 @@ Patches Ruler prototype methods:
 4. Press SPACEBAR to move - token elevation updates (rounded to nearest 5ft)
 5. Ctrl+Click to add waypoints
 6. Right-click to remove last waypoint
+7. **Multiplayer**: Elevation changes are automatically synced to other connected clients via broadcastActivity
 
 ### Settings
 The diagonal movement rule (555, 5105, EUCL) affects how elevation is calculated. This is controlled by the "diagonalMovement" setting in `module/settings.mjs`.

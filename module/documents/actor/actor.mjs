@@ -2375,7 +2375,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @typedef {object} TransformationOptions
    * @property {boolean} [keepHp=true]                     Keep original actor hit points
    * @property {boolean} [keepOtherHpAsTemporaryHP=false]  Keep hit points from the new form as temporary HP
-   * @property {boolean} [keepDruidLevelTemporaryHP=false] Keep temporary HP equal to the druid level of the original actor
+   * @property {boolean} [keepDruidLevelTemporaryHP=false] Keep temporary HP equal to the effective druid level
    * @property {boolean} [keepPhysical=false]              Keep physical abilities (str, dex, con)
    * @property {boolean} [keepMental=false]                Keep mental abilities (int, wis, cha)
    * @property {boolean} [keepSaves=false]                 Keep saving throw proficiencies
@@ -2412,7 +2412,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     keepPhysical=false, keepMental=false, keepSaves=false, keepSkills=false, mergeSaves=false, mergeSkills=false,
     keepClass=false, keepFeats=false, keepSpells=false, keepItems=false, keepBio=false, keepVision=false,
     keepSelf=false, keepAE=false, keepOriginAE=true, keepOtherOriginAE=true, keepSpellAE=true, keepEquipmentAE=true,
-    keepFeatAE=true, keepClassAE=true, keepBackgroundAE=true, transformTokens=true, druidLevel=0}={}, {renderSheet=true}={}) {
+    keepFeatAE=true, keepClassAE=true, keepBackgroundAE=true, transformTokens=true, druidLevel=0}={},
+  {renderSheet=true}={}) {
 
     // Ensure the player is allowed to polymorph
     const allowed = game.settings.get("dnd5e", "allowPolymorphing");

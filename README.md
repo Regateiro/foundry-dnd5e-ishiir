@@ -30,6 +30,7 @@ This is a fork of the official `foundryvtt/dnd5e` system with the following cust
   - **EUCL**: sqrt(ground² + elevation²)
 - Displays cumulative elevation in ruler labels (e.g., "25.0ft | ↑15.0ft")
 - After movement (SPACEBAR), token elevation is updated (rounded up to nearest 5ft)
+- **Elevation syncs to other connected clients** - when you adjust elevation, other players see the adjusted distance on their screen
 
 #### Token Sorting
 - Modified token sorting so smaller tokens render on top
