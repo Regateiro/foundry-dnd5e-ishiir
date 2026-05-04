@@ -4,7 +4,7 @@
  *
  * Features:
  * - Mouse wheel to adjust elevation per segment
- * - Display cumulative elevation in ruler labels
+ * - Display cumulative distance and elevation in ruler labels
  * - Apply elevation to token after movement (rounded to nearest 5ft)
  * - Support for all diagonal movement rules (555, 5105, EUCL)
  * - Sync elevation to other connected clients via broadcastActivity
@@ -76,22 +76,28 @@ export function installRulerPatches(gameCanvas) {
 
   // === Patch: Ruler._getSegmentLabel() ===
   //
-  // Purpose: Show cumulative elevation in ruler labels.
+  // Purpose: Show cumulative distance and elevation in ruler labels.
   //
-  // Why: Users need to see the elevation change while measuring.
-  // Original returns "25ft", we return "25ft | ↑20ft" when there's elevation.
+  // Why: Users need to see the total distance and elevation change while measuring.
+  // Original returns "25ft", we return "25ft > 75ft | ↑20ft" when there's cumulative
+  // distance or elevation. Cumulative distance is only shown when it differs from the
+  // segment distance (to avoid redundant "25ft > 25ft" on the first segment).
   Ruler.prototype._getSegmentLabel = function(segment) {
     // Get this segment's distance, cumulative distance and cumulative elevation change
-    const segmentDistance = segment?.distance || 0;
-    const segmentCumDistance = segment?.cumDistance || 0;
+    const segmentDistance = Math.ceil((segment?.distance || 0) * 10) / 10;
+    const segmentCumDistance = Math.ceil((segment?.cumDistance || 0) * 10) / 10;
     const segmentCumDeltaElevation = segment?.cumDeltaElevation || 0;
-    // Format: "segment > cumulative" e.g., "10ft > 30ft"
-    const segmentLabel = `${Math.ceil(segmentDistance * 10) / 10}ft > ${Math.ceil(segmentCumDistance * 10) / 10}ft`;
 
+    // Format segment label.
+    let segmentLabel = `${segmentDistance}ft`;
+    // Append cumulative distance if different than segment distance.
+    if (segmentCumDistance !== segmentDistance) {
+      segmentLabel = `${segmentLabel} > ${segmentCumDistance}ft`;
+    }
     // Append elevation info if cumulative elevation change is not zero
     if (segmentCumDeltaElevation !== 0) {
       const direction = segmentCumDeltaElevation >= 0 ? "↑" : "↓"; // ↑ = up, ↓ = down
-      return `${segmentLabel} | ${direction}${Math.abs(segmentCumDeltaElevation)}ft`;
+      segmentLabel = `${segmentLabel} | ${direction}${Math.abs(segmentCumDeltaElevation)}ft`;
     }
     return segmentLabel;
   };
@@ -233,16 +239,16 @@ export function installRulerPatches(gameCanvas) {
 /**
  * Compute 3D distance from ground distance, elevation (in feet), and diagonal rule.
  *
- * @param {number} groundDistance - Ground distance in feet
- * @param {number} elevationFeet - Elevation in feet
- * @param {string} diagonalRule - Diagonal movement rule (EUCL, 5105, or 555)
+ * @param {number} groundDistance Ground distance in feet
+ * @param {number} elevationFeet Elevation in feet
+ * @param {string} diagonalRule Diagonal movement rule (EUCL, 5105, or 555)
  * @returns {number} 3D-adjusted distance in feet
  */
 function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
   switch (diagonalRule) {
     case "EUCL": return Math.hypot(groundDistance, elevationFeet);
-    case "5105": return groundDistance + (elevationFeet / 10) * 5;
-    default:     return Math.max(groundDistance, elevationFeet);
+    case "5105": return groundDistance + ((elevationFeet / 10) * 5);
+    default: return Math.max(groundDistance, elevationFeet);
   }
 }
 
