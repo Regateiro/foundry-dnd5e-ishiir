@@ -205,7 +205,10 @@ export function installRulerPatches(gameCanvas) {
     // Ensure array exists and matches segments length
     const targetLen = ruler.segments.length;
     if (!ruler.segmentElevations || ruler.segmentElevations.length < targetLen) {
-      ruler.segmentElevations = Array.from({ length: targetLen }, () => 0);
+      ruler.segmentElevations ??= [];
+      while (ruler.segmentElevations.length < targetLen) {
+        ruler.segmentElevations.push(0);
+      }
     }
 
     // Adjust only the current (last) segment - that's where the user is measuring
