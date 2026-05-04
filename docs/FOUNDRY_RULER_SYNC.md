@@ -137,12 +137,19 @@ Ruler.prototype.toJSON = function() {
 ```
 
 ### 2. Mouse Wheel Handler (in `installRulerPatches`)
-After adjusting elevation, broadcasts the full ruler state:
+Adjusts elevation with mouse wheel while measuring. After adjusting, broadcasts the full ruler state:
 ```javascript
 game.user.broadcastActivity({ ruler: ruler.toJSON() });
 ```
 
-### 3. Patch: Ruler.update (in `installRulerPatches`)
+### 3. Keyboard Handler (in `installRulerPatches`)
+Adjusts elevation with arrow keys while measuring:
+- **ArrowUp**: increase elevation by 1 grid unit
+- **ArrowDown**: decrease elevation by 1 grid unit
+- Only active when `ruler._state === 2` (MEASURING state)
+- Broadcasts to other clients after each adjustment
+
+### 4. Patch: Ruler.update (in `installRulerPatches`)
 On receiving client, restores elevation data, then forces re-render:
 ```javascript
 Ruler.prototype.update = function(data) {

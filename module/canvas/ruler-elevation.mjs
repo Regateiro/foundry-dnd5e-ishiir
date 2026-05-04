@@ -3,7 +3,7 @@
  * Adds vertical elevation support to the Ruler measurement tool.
  *
  * Features:
- * - Mouse wheel to adjust elevation per segment
+ * - Mouse wheel or arrow keys (↑/↓) to adjust elevation per segment
  * - Display cumulative distance and elevation in ruler labels
  * - Apply elevation to token after movement (rounded to nearest 5ft)
  * - Support for all diagonal movement rules (555, 5105, EUCL)
@@ -18,6 +18,39 @@
  * For remote sync: segmentElevations is included in toJSON() and restored in update().
  */
 
+
+/**
+ * Adjust the current (last) ruler segment's elevation and re-render.
+ * This function is called by both the mouse wheel handler and arrow key keybindings.
+ *
+ * @param {Ruler} ruler The active ruler instance
+ * @param {number} delta Elevation change in grid units (+1 = ascend, -1 = descend)
+ */
+export function adjustElevation(ruler, delta) {
+  // Ensure array exists and matches segments length
+  const targetLen = ruler.segments.length;
+  if (!ruler.segmentElevations || ruler.segmentElevations.length < targetLen) {
+    ruler.segmentElevations ??= [];
+    while (ruler.segmentElevations.length < targetLen) {
+      ruler.segmentElevations.push(0);
+    }
+  }
+
+  // Adjust only the current (last) segment - that's where the user is measuring
+  const lastIndex = ruler.segments.length - 1;
+  ruler.segmentElevations[lastIndex] = (ruler.segmentElevations[lastIndex] || 0) + delta;
+
+  // Force re-render - _drawMeasuredPath will apply elevation before drawing labels
+  ruler._computeDistance(true);
+  ruler.ruler.clear();
+  ruler._drawMeasuredPath();
+
+  // Broadcast to other connected clients
+  // This triggers the full sync flow: toJSON -> broadcastActivity -> update() on receivers
+  if (game.user.hasPermission("SHOW_RULER")) {
+    game.user.broadcastActivity({ ruler: ruler.toJSON() });
+  }
+}
 
 /**
  * Installs patches on the Ruler class to add elevation support.
@@ -189,51 +222,79 @@ export function installRulerPatches(gameCanvas) {
   // 1. Listen for wheel events on the canvas view
   // 2. Check that ruler is in MEASURING state (_state === 2)
   // 3. Determine direction: scroll up = increase, scroll down = decrease
-  // 4. Adjust the last segment's elevation by ±1 grid unit
-  // 5. Force re-render to show new label
-  // 6. Broadcast to other clients via broadcastActivity
+  // 4. Delegate to adjustElevation()
   //
   // Note: We use passive: false to allow preventDefault() to stop page scrolling.
   const handleWheel = event => {
-    // Get fresh reference each time (ruler can change)
     const ruler = globalThis.canvas?.controls?.ruler;
     if (!ruler || !ruler.segments?.length) return;
-
-    // Only adjust when actively measuring
     if (ruler._state !== 2) return;
+
     event.preventDefault();
     event.stopPropagation();
 
     // DeltaY > 0 means scrolling down (toward user) = descend = decrease elevation
     // deltaY < 0 means scrolling up (away from user) = ascend = increase elevation
     const delta = event.deltaY > 0 ? -1 : 1;
-
-    // Ensure array exists and matches segments length
-    const targetLen = ruler.segments.length;
-    if (!ruler.segmentElevations || ruler.segmentElevations.length < targetLen) {
-      ruler.segmentElevations ??= [];
-      while (ruler.segmentElevations.length < targetLen) {
-        ruler.segmentElevations.push(0);
-      }
-    }
-
-    // Adjust only the current (last) segment - that's where the user is measuring
-    const lastIndex = ruler.segments.length - 1;
-    ruler.segmentElevations[lastIndex] = (ruler.segmentElevations[lastIndex] || 0) + delta;
-
-    // Force re-render - _drawMeasuredPath will apply elevation before drawing labels
-    ruler._computeDistance(true);
-    ruler.ruler.clear();
-    ruler._drawMeasuredPath();
-
-    // Broadcast to other connected clients
-    // This triggers the full sync flow: toJSON -> broadcastActivity -> update() on receivers
-    if (game.user.hasPermission("SHOW_RULER")) {
-      game.user.broadcastActivity({ ruler: ruler.toJSON() });
-    }
+    adjustElevation(ruler, delta);
   };
 
   gameCanvas.app.view.addEventListener("wheel", handleWheel, { passive: false });
+}
+
+/**
+ * Register keybindings for elevation adjustment with arrow keys.
+ * These PRIORITY keybindings override the core pan keybindings when the ruler
+ * is in MEASURING state, allowing arrow keys to adjust elevation instead of panning.
+ *
+ * @param {string} namespace The module namespace (e.g., "dnd5e")
+ */
+export function registerElevationKeybindings(namespace) {
+  // ArrowUp keybinding - ascend when ruler is measuring
+  // Also supports Ctrl+ArrowUp to adjust elevation while holding Ctrl to create segments
+  game.keybindings.register(namespace, "rulerElevationUp", {
+    name: "Sieg5e.RulerElevationUp",
+    hint: "Sieg5e.RulerElevationUpHint",
+    editable: [
+      { key: "ArrowUp" },
+      { key: "Numpad8" },
+      { key: "ArrowUp", modifiers: ["Control"] },
+      { key: "Numpad8", modifiers: ["Control"] }
+    ],
+    precedence: CONST.KEYBINDING_PRECEDENCE.PRIORITY,
+    repeat: true,
+    onDown: () => {
+      const ruler = globalThis.canvas?.controls?.ruler;
+      if (ruler && ruler.segments?.length && ruler._state === 2) {
+        adjustElevation(ruler, 1);
+        return true; // Consume the event, preventing pan
+      }
+      return false; // Let core pan keybinding fire
+    }
+  });
+
+  // ArrowDown keybinding - descend when ruler is measuring
+  // Also supports Ctrl+ArrowDown to adjust elevation while holding Ctrl to create segments
+  game.keybindings.register(namespace, "rulerElevationDown", {
+    name: "Sieg5e.RulerElevationDown",
+    hint: "Sieg5e.RulerElevationDownHint",
+    editable: [
+      { key: "ArrowDown" },
+      { key: "Numpad2" },
+      { key: "ArrowDown", modifiers: ["Control"] },
+      { key: "Numpad2", modifiers: ["Control"] }
+    ],
+    precedence: CONST.KEYBINDING_PRECEDENCE.PRIORITY,
+    repeat: true,
+    onDown: () => {
+      const ruler = globalThis.canvas?.controls?.ruler;
+      if (ruler && ruler.segments?.length && ruler._state === 2) {
+        adjustElevation(ruler, -1);
+        return true; // Consume the event, preventing pan
+      }
+      return false; // Let core pan keybinding fire
+    }
+  });
 }
 
 /**

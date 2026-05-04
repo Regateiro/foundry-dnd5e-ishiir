@@ -1450,5 +1450,10 @@
 "SETTINGS.5eSanityN": "Sanity Ability Score",
 "SETTINGS.5eUndoChanges": "Undo Changes",
 
-"SOURCE.BOOK.SRD": "System Reference Document 5.1"
+"SOURCE.BOOK.SRD": "System Reference Document 5.1",
+
+"Sieg5e.RulerElevationUp": "Adjust Elevation Up",
+"Sieg5e.RulerElevationUpHint": "Increase ruler segment elevation while measuring",
+"Sieg5e.RulerElevationDown": "Adjust Elevation Down",
+"Sieg5e.RulerElevationDownHint": "Decrease ruler segment elevation while measuring"
 }

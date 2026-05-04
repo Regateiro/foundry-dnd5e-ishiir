@@ -205,8 +205,8 @@ The dnd5e project modifies some core Foundry functions for custom behavior:
 
 | Function | Location | Description |
 |----------|----------|-------------|
-| `PrimaryCanvasGroup._sortObjects` | `dnd5e.mjs:343` | Overrides the canvas sorting logic to use custom token sorting (smaller tokens on top, player tokens on top of NPC, more recently moved on top). Calls `Token5e.sortTokens()` for TokenMesh objects. |
-| `Ruler` class patches | `module/canvas/ruler-elevation.mjs` (called from `dnd5e.mjs:380` canvasReady hook) | Two-phase setup: `setupRulerElevation()` configures diagonal rules and replaces `Ruler._computeDistance` for 3D distance; `installRulerPatches()` patches `toJSON()`, `update()`, `_getSegmentLabel()`, `clear()`, `_removeWaypoint()`, `moveToken()`, and installs the mouse wheel handler. Syncs elevation to remote clients via `broadcastActivity` |
+| `PrimaryCanvasGroup._sortObjects` | `dnd5e.mjs:347` | Overrides the canvas sorting logic to use custom token sorting (smaller tokens on top, player tokens on top of NPC, more recently moved on top). Calls `Token5e.sortTokens()` for TokenMesh objects. |
+| `Ruler` class patches | `module/canvas/ruler-elevation.mjs` (called from `dnd5e.mjs:374` canvasReady hook) | Two-phase setup: `setupRulerElevation()` configures diagonal rules and replaces `Ruler._computeDistance` for 3D distance; `installRulerPatches()` patches `toJSON()`, `update()`, `_getSegmentLabel()`, `clear()`, `_removeWaypoint()`, `moveToken()`, and installs the mouse wheel handler. Syncs elevation to remote clients via `broadcastActivity` |
 
 ## Release Process
 - CI triggered by pushing a tag matching `release-x.x.x`

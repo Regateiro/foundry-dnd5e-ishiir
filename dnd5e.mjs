@@ -128,6 +128,10 @@ Hooks.once("init", function() {
   utils.registerHandlebarsHelpers();
   utils.preloadHandlebarsTemplates();
 
+  // Register arrow key bindings for ruler elevation adjustment
+  // These PRIORITY keybindings override the core pan keybindings when the ruler is measuring
+  canvas.registerElevationKeybindings("dnd5e");
+
   enrichers.registerCustomEnrichers();
 });
 

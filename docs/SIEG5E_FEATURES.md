@@ -8,7 +8,7 @@ This document describes all custom features added to the dnd5e system in the Sie
 ## 1. Token Sorting
 
 **File:** `module/canvas/token.mjs`  
-**Hook:** `dnd5e.mjs:332` (canvasReady)
+**Hook:** `dnd5e.mjs:336` (canvasReady)
 
 ### Description
 Custom token sorting that controls z-index rendering order on the canvas.
@@ -25,7 +25,7 @@ Custom token sorting that controls z-index rendering order on the canvas.
 
 ### Code Location
 ```javascript
-// dnd5e.mjs line 332
+// dnd5e.mjs line 336
 Hooks.on("canvasReady", () => {
   PrimaryCanvasGroup._sortObjects = (a, b) => {
     if (both are tokens) return Token5e.sortTokens(a.document.object, b.document.object);
@@ -39,7 +39,7 @@ Hooks.on("canvasReady", () => {
 ## 2. Ruler Elevation
 
 **File:** `module/canvas/ruler-elevation.mjs`  
-**Hook:** `dnd5e.mjs:379` (canvasReady)
+**Hook:** `dnd5e.mjs:374` (canvasReady)
 
 ### Description
 Adds vertical elevation support to the Foundry VTT Ruler measurement tool, allowing users to measure 3D distances including altitude changes.
