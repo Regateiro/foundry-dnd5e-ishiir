@@ -102,7 +102,7 @@ Implementation in `module/canvas/token.mjs`:
 - `_onUpdate()` updates `lastMoved` when a token's x/y changes, then calls `globalThis.canvas.primary.sortChildren()` to re-sort tokens immediately
 
 ## Foundry Core Reference
-The system extends Foundry VTT's core classes (e.g., `Token`, `Actor`, `Item`). Refer to `foundry.js` in your Foundry data directory for the base implementation. **Do not import from or modify foundry.js** — use it only for understanding the inherited behavior and API.
+The system extends Foundry VTT's core classes (e.g., `Token`, `Actor`, `Item`). Refer to `docs/foundry.js` and `docs/commons.js` for the base implementation. **Do not import from or modify these files** — use them only for understanding the inherited behavior and API.
 
 ### Global Variables
 Foundry VTT exposes several global variables to systems and modules at runtime via `foundry.js`. These are available globally without requiring imports:
@@ -123,6 +123,59 @@ Foundry VTT exposes several global variables to systems and modules at runtime v
 | `globalThis.SortingHelpers` | `SortingHelpers` | Sorting utilities for placeable objects |
 | `globalThis.canvas` | `Canvas` | The game canvas instance |
 | `globalThis.dnd5e` | `Object` | System configuration (DND5E module) |
+
+### Common Utilities & Constants
+Refer to `docs/commons.js` for Foundry VTT's shared utilities and constants. These are also available at runtime:
+
+#### Color Class
+`Color` extends `Number` to represent hex colors with manipulation methods:
+
+| Property/Method | Type | Description |
+|----------------|-----|-------------|
+| `.css` | `string` | CSS-compatible color string |
+| `.rgb` | `[number, number, number]` | RGB array [r, g, b] in [0, 1] |
+| `.r`, `.g`, `.b` | `number` | Individual channel values in [0, 1] |
+| `.hsv` | `[number, number, number]` | HSV array |
+| `.maximum`, `.minimum` | `number` | Max/min channel value |
+| `.equals(other)` | `boolean` | Compare two colors |
+| `.toRGBA(alpha)` | `string` | CSS RGBA string |
+| `.mix(other, weight)` | `Color` | Mix with another color |
+| `.multiply(other)` | `Color` | Multiply by color/scalar |
+| `.add(other)` | `Color` | Add color/scalar |
+| `.subtract(other)` | `Color` | Subtract color/scalar |
+| `.maximize(other)` | `Color` | Channel-wise max |
+| `.minimize(other)` | `Color` | Channel-wise min |
+| `Color.from(color)` | `Color` | Factory from various inputs |
+| `Color.fromRGB(rgb)` | `Color` | Factory from RGB array |
+| `Color.fromHSV(hsv)` | `Color` | Factory from HSV array |
+
+#### Core Constants
+Key constants from `CONST`:
+
+| Constant | Type | Description |
+|----------|-----|-------------|
+| `VTT` | `string` | "Foundry Virtual Tabletop" |
+| `WEBSITE_URL` | `string` | https://foundryvtt.com |
+| `DEFAULT_TOKEN` | `string` | Default token image path |
+| `DOCUMENT_TYPES` | `string[]` | Allowed document types |
+| `DOCUMENT_OWNERSHIP_LEVELS` | `enum` | Ownership levels (INHERIT, NONE, LIMITED, OBSERVER, OWNER) |
+| `USER_ROLES` | `enum` | User roles (NONE, PLAYER, TRUSTED, ASSISTANT, GAMEMASTER) |
+| `ACTIVE_EFFECT_MODES` | `enum` | Effect application modes (CUSTOM, MULTIPLY, ADD, DOWNGRADE, UPGRADE, OVERRIDE) |
+| `GRID_TYPES` | `enum` | Grid types (GRIDLESS, SQUARE, HEXODDR, HEXEVENR, HEXODDQ, HEXEVENQ) |
+| `TOKEN_DISPOSITIONS` | `enum` | Token dispositions (HOSTILE, NEUTRAL, FRIENDLY) |
+| `COMPATIBILITY_MODES` | `enum` | Compatibility warning modes (SILENT, WARNING, ERROR, FAILURE) |
+| `DICE_ROLL_MODES` | `enum` | Roll visibility (PUBLIC, PRIVATE, BLIND, SELF) |
+
+#### Helper Functions
+Utility functions from `foundry.js` helpers:
+
+| Function | Description |
+|----------|-------------|
+| `logCompatibilityWarning(message, options)` | Log filtered compatibility warnings |
+| `debounce(callback, delay)` | Wrap callback in debounced timeout |
+| `deepClone(original, options)` | Clone simple data structures |
+| `diffObject(original, other, options)` | Deep difference between objects |
+| `benchmark(func, iterations, ...args)` | Performance benchmark helper |
 
 #### Global Classes (not on globalThis, but available via game.*)
 - **`Hooks`**: Event system for registering callbacks (`Hooks.on()`, `Hooks.call()`, `Hooks.callAll()`)
