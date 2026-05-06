@@ -12,6 +12,7 @@ docs/*.js
 .venv/
 *.code-workspace
 *.iml
+PrivateRules.mak
 
 # Node Modules
 node_modules/

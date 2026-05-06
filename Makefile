@@ -1,4 +1,10 @@
+-include PrivateRules.mak
+
+AUTH_TOKEN ?=
+
+
 .PHONY: install lint-py
+
 configure-env:
 	@pipx install nodeenv
 	@nodeenv .venv
@@ -13,8 +19,8 @@ install:
 	@echo "Deployment to development environment complete."
 
 regenerate-packs-ishiir:
-	@curl -s "https://regateiro.pt/sieg5e/api?source=Ishiir" > sieg5e-ishiir.json
-	@curl -s "https://regateiro.pt/sieg5e/api?source=Arkaeos" > sieg5e-arkaeos.json
+	@curl -s -H "Authorization: Bearer $(AUTH_TOKEN)" "https://regateiro.pt/sieg5e/api?source=Ishiir" > sieg5e-ishiir.json
+	@curl -s -H "Authorization: Bearer $(AUTH_TOKEN)" "https://regateiro.pt/sieg5e/api?source=Arkaeos" > sieg5e-arkaeos.json
 	@python3 generate_ishiir_packs.py ishiir
 	@.venv/bin/npm run build:clean
 	@.venv/bin/npm run build
