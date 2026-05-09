@@ -121,16 +121,19 @@ export function installRulerPatches(gameCanvas) {
     const segmentCumDistance = Math.ceil((segment?.cumDistance || 0) * 10) / 10;
     const segmentCumDeltaElevation = segment?.cumDeltaElevation || 0;
 
+    // Get the unit string from the scene grid scale
+    const units = canvas.scene.grid.units;
+
     // Format segment label.
-    let segmentLabel = `${segmentDistance}ft`;
+    let segmentLabel = `${segmentDistance}${units}`;
     // Append cumulative distance if different than segment distance.
     if (segmentCumDistance !== segmentDistance) {
-      segmentLabel = `${segmentLabel} > ${segmentCumDistance}ft`;
+      segmentLabel = `${segmentLabel} > ${segmentCumDistance}${units}`;
     }
     // Append elevation info if cumulative elevation change is not zero
     if (segmentCumDeltaElevation !== 0) {
       const direction = segmentCumDeltaElevation >= 0 ? "↑" : "↓"; // ↑ = up, ↓ = down
-      segmentLabel = `${segmentLabel} | ${direction}${Math.abs(segmentCumDeltaElevation)}ft`;
+      segmentLabel = `${segmentLabel} | ${direction}${Math.abs(segmentCumDeltaElevation)}${units}`;
     }
     return segmentLabel;
   };
