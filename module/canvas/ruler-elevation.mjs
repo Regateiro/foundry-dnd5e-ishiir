@@ -335,7 +335,16 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
   // Step 2: Set the diagonal movement rule
   // The dnd5e measureDistances reads from this.parent.diagonalRule (InterfaceCanvasGroup).
   // We set it from game settings so the correct formula is used for elevation calculations.
-  const diagonalRule = game.settings.get("dnd5e", "diagonalMovement");
+  // Hex grids always use 5/5/5 rule
+  // (standard D&D 5e hex movement)
+  let diagonalRule = game.settings.get("dnd5e", "diagonalMovement");
+  const hexTypes = [
+    CONST.GRID_TYPES.HEXODDR,
+    CONST.GRID_TYPES.HEXEVENR,
+    CONST.GRID_TYPES.HEXODDQ,
+    CONST.GRID_TYPES.HEXEVENQ
+  ];
+  if (hexTypes.includes(gameCanvas.grid.type)) diagonalRule = "555";
   gameCanvas.grid.parent.diagonalRule = diagonalRule;
 
   // Step 3: Replace Ruler._computeDistance to apply elevation
@@ -356,7 +365,8 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
     // Get ground-only distances from grid (array of distances for each segment)
     const distances = canvas.grid.measureDistances(this.segments, { gridSpaces: true });
     const gridDistance = canvas.scene?.grid?.distance || 5;
-    const diagonalRule = game.settings.get("dnd5e", "diagonalMovement");
+    // Read diagonal rule from the grid parent (already handles hex grid override)
+    const diagonalRule = gameCanvas.grid.parent.diagonalRule;
 
     // Create variables to store cumulative distance and elevation change between segments
     let cumulativeDistance = 0;
