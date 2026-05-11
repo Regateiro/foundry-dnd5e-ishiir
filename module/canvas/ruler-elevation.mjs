@@ -20,6 +20,25 @@
 
 
 /**
+ * Get the active ruler if it is currently measuring. Returns null otherwise.
+ * Encapsulates the "get ruler + check state" pattern shared by wheel and key bindings.
+ * @returns {Ruler | null}
+ */
+function getActiveRuler() {
+  const ruler = canvas?.controls?.ruler;
+  if (!ruler || !ruler.segments?.length || ruler._state !== 2) return null;
+  return ruler;
+}
+
+/**
+ * Get the grid distance in feet, falling back to 5.
+ * @returns {number}
+ */
+function getGridDistance() {
+  return canvas.scene?.grid?.distance || 5;
+}
+
+/**
  * Adjust the current (last) ruler segment's elevation and re-render.
  * This function is called by both the mouse wheel handler and arrow key keybindings.
  *
@@ -138,6 +157,10 @@ export function installRulerPatches(gameCanvas) {
     return segmentLabel;
   };
 
+  // Guard: avoid re-patching on scene switch (canvasReady fires again).
+  if (gameCanvas._sieg5eRulerPatched) return;
+  gameCanvas._sieg5eRulerPatched = true;
+
   // === Initialize segmentElevations on the local ruler instance ===
   //
   // The ruler instance on canvas.controls.ruler needs to have segmentElevations
@@ -207,7 +230,7 @@ export function installRulerPatches(gameCanvas) {
 
       // Apply elevation delta to token after movement completes
       if (result && token && cumulativeElevation !== 0) {
-        const gridDistance = globalThis.canvas.scene?.grid?.distance || 5;
+        const gridDistance = getGridDistance();
         const elevationDelta = cumulativeElevation * gridDistance;
         // Round to nearest 5ft (D&D standard)
         const roundedElevationDelta = Math.ceil(elevationDelta / 5) * 5;
@@ -228,10 +251,13 @@ export function installRulerPatches(gameCanvas) {
   // 4. Delegate to adjustElevation()
   //
   // Note: We use passive: false to allow preventDefault() to stop page scrolling.
+  // Guard: avoid double-registration when canvasReady fires on scene switch.
+  if (gameCanvas.app.view._sieg5eElevationWheelHandler) return;
+  gameCanvas.app.view._sieg5eElevationWheelHandler = true;
+
   const handleWheel = event => {
-    const ruler = globalThis.canvas?.controls?.ruler;
-    if (!ruler || !ruler.segments?.length) return;
-    if (ruler._state !== 2) return;
+    const ruler = getActiveRuler();
+    if (!ruler) return;
 
     event.preventDefault();
     event.stopPropagation();
@@ -267,8 +293,8 @@ export function registerElevationKeybindings(namespace) {
     precedence: CONST.KEYBINDING_PRECEDENCE.PRIORITY,
     repeat: true,
     onDown: () => {
-      const ruler = globalThis.canvas?.controls?.ruler;
-      if (ruler && ruler.segments?.length && ruler._state === 2) {
+      const ruler = getActiveRuler();
+      if (ruler) {
         adjustElevation(ruler, 1);
         return true; // Consume the event, preventing pan
       }
@@ -290,8 +316,8 @@ export function registerElevationKeybindings(namespace) {
     precedence: CONST.KEYBINDING_PRECEDENCE.PRIORITY,
     repeat: true,
     onDown: () => {
-      const ruler = globalThis.canvas?.controls?.ruler;
-      if (ruler && ruler.segments?.length && ruler._state === 2) {
+      const ruler = getActiveRuler();
+      if (ruler) {
         adjustElevation(ruler, -1);
         return true; // Consume the event, preventing pan
       }
@@ -364,7 +390,7 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
   Ruler.prototype._computeDistance = function(force) {
     // Get ground-only distances from grid (array of distances for each segment)
     const distances = canvas.grid.measureDistances(this.segments, { gridSpaces: true });
-    const gridDistance = canvas.scene?.grid?.distance || 5;
+    const gridDistance = getGridDistance();
     // Read diagonal rule from the grid parent (already handles hex grid override)
     const diagonalRule = gameCanvas.grid.parent.diagonalRule;
 

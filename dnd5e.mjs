@@ -332,9 +332,19 @@ Hooks.once("ready", function() {
  * Hook that runs when the canvas is fully initialized.
  * Patches the canvas's _sortObjects method to use our custom token sorting logic,
  * then triggers an initial sort of all tokens on the canvas.
+ * Also sets up ruler elevation support.
  */
-Hooks.on("canvasReady", () => {
-
+Hooks.on("canvasReady", gameCanvas => {
+  // --- Custom token sorting ---
+  //
+  // Purpose: Override _sortObjects to use our custom token z-ordering.
+  //
+  // How it works:
+  // 1. Intercept every sort comparison between two objects on the canvas
+  // 2. If both are TokenMesh instances with valid documents, apply custom sort
+  // 3. Otherwise, fall back to the original Foundry sorting behavior
+  //
+  // Sort order: smaller tokens on top > player tokens on top of NPC > more recently moved on top
   const PrimaryCanvasGroup = globalThis.canvas.primary.constructor;
 
   // Store the original Foundry sort function so we can fall back to it for non-tokens.
@@ -360,18 +370,11 @@ Hooks.on("canvasReady", () => {
   // Force an immediate sort of all tokens on the canvas so they appear in the
   // correct z-order when the scene first loads.
   globalThis.canvas.primary.sortChildren();
-});
 
-/* -------------------------------------------- */
-/*  Canvas Initialization                       */
-/* -------------------------------------------- */
-
-/**
- * Canvas ready hook that sets up Ruler elevation support.
- * This allows players to measure 3D distances (including vertical elevation)
- * using the ruler tool with mouse wheel controls.
- */
-Hooks.on("canvasReady", gameCanvas => {
+  // --- Ruler elevation support ---
+  //
+  // Purpose: Set up 3D distance calculations, mouse wheel, and keybinding support
+  // for ruler elevation measurement.
   const { setupRulerElevation } = canvas;
   setupRulerElevation(gameCanvas, canvas);
 });
