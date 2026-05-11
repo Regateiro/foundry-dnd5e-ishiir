@@ -77,6 +77,10 @@ export function adjustElevation(ruler, delta) {
  * @param {object} gameCanvas The canvas instance
  */
 export function installRulerPatches(gameCanvas) {
+  // Guard: avoid re-patching on scene switch (canvasReady fires again).
+  if (gameCanvas._sieg5eRulerPatched) return;
+  gameCanvas._sieg5eRulerPatched = true;
+
   // === Patch: Ruler.toJSON() ===
   //
   // Purpose: Include segmentElevations in the serialized ruler data.
@@ -156,10 +160,6 @@ export function installRulerPatches(gameCanvas) {
     }
     return segmentLabel;
   };
-
-  // Guard: avoid re-patching on scene switch (canvasReady fires again).
-  if (gameCanvas._sieg5eRulerPatched) return;
-  gameCanvas._sieg5eRulerPatched = true;
 
   // === Initialize segmentElevations on the local ruler instance ===
   //
@@ -251,10 +251,6 @@ export function installRulerPatches(gameCanvas) {
   // 4. Delegate to adjustElevation()
   //
   // Note: We use passive: false to allow preventDefault() to stop page scrolling.
-  // Guard: avoid double-registration when canvasReady fires on scene switch.
-  if (gameCanvas.app.view._sieg5eElevationWheelHandler) return;
-  gameCanvas.app.view._sieg5eElevationWheelHandler = true;
-
   const handleWheel = event => {
     const ruler = getActiveRuler();
     if (!ruler) return;
