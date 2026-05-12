@@ -5,8 +5,8 @@ import { runRulerElevationTests } from "./ruler/tests.mjs";
 
 /**
  * Assert helper that compares expected vs actual for failure reporting.
- * @param {*} expected - The expected value
- * @param {*} actual - The actual value
+ * @param {*} expected The expected value
+ * @param {*} actual The actual value
  * @returns {{passed: boolean, expected: *, actual: *}}
  */
 export function assert(expected, actual) {
@@ -19,9 +19,9 @@ export function assert(expected, actual) {
 
 /**
  * Assert helper for floating-point tolerance comparisons.
- * @param {number} expected - The expected value
- * @param {number} actual - The actual value
- * @param {number} [tolerance=0.001] - Acceptable difference
+ * @param {number} expected The expected value
+ * @param {number} actual The actual value
+ * @param {number} [tolerance=0.001] Acceptable difference
  * @returns {{passed: boolean, expected: *, actual: *}}
  */
 export function assertApprox(expected, actual, tolerance = 0.001) {
@@ -31,8 +31,8 @@ export function assertApprox(expected, actual, tolerance = 0.001) {
 
 /**
  * Walk a nested results object and collect all failing test paths with their expected/actual values.
- * @param {object} obj - The results object to walk
- * @param {string} [prefix] - Current path prefix
+ * @param {object} obj The results object to walk
+ * @param {string} [prefix] Current path prefix
  * @returns {Array<{path: string, expected: *, actual: *}>}
  */
 export function collectFailures(obj, prefix = "") {
@@ -56,7 +56,7 @@ export function collectFailures(obj, prefix = "") {
 
 /**
  * Format failure details for console output.
- * @param {Array<{path: string, expected: *, actual: *}>} failures - Array of failure objects
+ * @param {Array<{path: string, expected: *, actual: *}>} failures Array of failure objects
  * @returns {string}
  */
 export function formatFailures(failures) {
@@ -69,10 +69,10 @@ export function formatFailures(failures) {
     lines.push(`  ┌─ ${f.path}`);
     lines.push(`  │  Expected: ${JSON.stringify(f.expected)}`);
     lines.push(`  │  Actual:   ${JSON.stringify(f.actual)}`);
-    lines.push(`  └───────────`);
+    lines.push("  └───────────");
   }
 
-  return lines.join("\n") + "\n";
+  return `${lines.join("\n")}\n`;
 }
 
 /**

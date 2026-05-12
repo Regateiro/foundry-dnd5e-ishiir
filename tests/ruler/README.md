@@ -24,7 +24,7 @@ Tests the `compute3DDistance(groundDistance, elevationFeet, diagonalRule)` funct
 | `default_01` | `(15, 15, "INVALID")` | `15` | Unknown rule falls through to 555: max(15,15) = 15 |
 | `negElev_01` | `(10, -10, "555")` | `10` | Negative elevation uses abs: max(10,10) = 10 |
 | `negElev_02` | `(10, -10, "EUCL")` | `≈14.142` | Negative elevation uses abs: hypot(10,10) |
-| `negElev_03` | `(10, 10, "5105")` | `15` | Source passes Math.abs(elev), so 10 not -10 |
+| `negElev_03` | `(10, 10, "5105")` | `15` | Positive elev input to 5105 rule |
 
 ### 2. `getGridDistance` (2 tests)
 
@@ -84,6 +84,7 @@ Tests Ruler.update patch: `this.segmentElevations = data.segmentElevations` (if 
 | `update_02` | same | `[1] === -1` | Second element restored |
 | `update_03` | same | `[2] === 2` | Third element restored |
 | `update_no_elev_01` | `{ x:1, y:1 }` (no elev) | unchanged `[5]` → `[0] === 5` | No data → no change |
+| `update_empty_arr` | `{ segmentElevations: [] }` | `[]` | Empty array assigned |
 
 ### 7. `clear` Patch (3 tests)
 
@@ -113,14 +114,14 @@ Tests Ruler.moveToken patch: `elevationDelta = cumElev × gridDist`, `rounded = 
 
 | Test | `segmentElevations` | Grid dist | Cum elev | Expected token elevation | Logic |
 |------|---------------------|-----------|----------|-------------------------|-------|
-| `move_01` | `[2]` | 5 | 2 | `true` (simulated) | Result is true |
-| `move_02` | `[2]` | 5 | 2 | `10` (2×5=10, ceil(10/5)×5=10) | Exact 5ft multiple |
-| `move_03` | `[0]` | — | 0 | `true` (simulated) | Result is true |
-| `move_04` | `[0]` | — | 0 | `!shouldUpdate` → `true` | No update when cum=0 |
-| `move_05` | `segments=[]` | — | — | `true` (early return) | No segments → false |
-| `move_06` | `[2]` | 5 | 2 | `true` (simulated) | Result is true |
-| `move_07` | `[2]` | 5 | 2 | `10` | 2×5=10, ceil(10/5)×5=10 |
-| `move_08` | `[3]` | 5 | 3 | `15` | 3×5=15, ceil(15/5)×5=15 |
+| `move_01` | `segments=[]` | — | — | `false` (early return) | No segments → false |
+| `move_02` | `[0]` | 5 | 0 | `true` (!shouldUpdate) | No update when cum=0 |
+| `move_03` | `[2]` | 5 | 2 | `true` (shouldUpdate) | Update when cum≠0 |
+| `move_04` | `[2]` | 5 | 2 | `10` | 2×5=10, ceil(10/5)×5=10 |
+| `move_05` | `[3]` | 5 | 3 | `15` | 3×5=15, ceil(15/5)×5=15 |
+| `move_06` | `[2]` | 5 | 2 | `10` | 2×5=10, ceil(10/5)×5=10 |
+| `move_07` | `[1]` | 5 | 1 | `5` | 1×5=5, ceil(5/5)×5=5 |
+| `move_08` | `[2.4]` | 5 | 2.4 | `15` | 2.4×5=12, ceil(12/5)×5=15 |
 
 ### 10. `_getSegmentLabel` (7 tests)
 
@@ -232,7 +233,7 @@ Tests total cumulative distance across multiple segments with all diagonal rules
 | `555_seg_03` | `[10,10,10]` + elev `[0,2,-3]` 555 | `seg[2].cumDistance === 40` | max(10,15)=15 |
 | `5105_seg_01` | `[10,10,10]` + elev `[0,2,-3]` 5105 | `seg[0].cumDistance === 10` | No elevation |
 | `5105_seg_02` | `[10,10,10]` + elev `[0,2,-3]` 5105 | `seg[1].cumDistance === 25` | 10+(10/10)*5 |
-| `5105_seg_03` | `[10,10,10]` + elev `[0,2,-3]` 5105 | `seg[2].cumDistance === 45` | 10+(15/10)*5=17.5 |
+| `5105_seg_03` | `[10,10,10]` + elev `[0,2,3]` 5105 | `seg[2].cumDistance === 45` | 10+20+20=45 |
 | `zero_seg_01` | `[0,0]` | `seg[0].cumDistance === 0` | Zero distance |
 | `zero_seg_02` | `[0,0]` | `seg[1].cumDistance === 0` | Zero cumulative |
 | `large_path_01` | `[5,10,15,20,25,30,35,40,45,50]` | `seg[0].cumDistance === 5` | First segment |
@@ -307,7 +308,7 @@ Tests the full `adjustElevation` → `_computeDistance` chain via actual functio
 | `chain_adj_cumDelta` | +1 → cumDelta = 1×5 = 5 | `5` | Elevation in feet accumulated |
 | `chain_adj2_segElev` | After +2 → segmentElevations[0] = 3 | `3` | Accumulation: 1+2 |
 | `chain_adj2_dist` | +2 → elev=3×5=15ft, 555: max(5,15)=15 | `15` | 555 formula: elev > ground |
-| `chain_adj2_cum` | Cumulative distance = 15 | `15` | 3D distance accumulated |
+| `chain_adj2_cum` | Cumulative distance = 5+15 | `15` | 3D distance accumulated |
 | `chain_adj2_cumDelta` | +2 → cumDelta = 3×5 = 15 | `15` | Elevation accumulated |
 | `chain_desc_segElev` | After -1 → segmentElevations[0] = 2 | `2` | Descend: 3-1=2 |
 | `chain_desc_dist` | -1 → elev=2×5=10ft, 555: max(5,10)=10 | `10` | 555 formula: elev > ground |
@@ -336,7 +337,7 @@ Tests `_computeDistance` replacement — actually invokes the patched method. Ve
 | `invoke_last_0` | First segment → last = false | `false` | Last flag: i !== last |
 | `invoke_last_1` | Second segment → last = false | `false` | Last flag: i !== last |
 | `invoke_last_2` | Third segment → last = true | `true` | Last flag: i === last |
-| `invoke_text_set` | text field is non-empty string | `true` | _getSegmentLabel populates text |
+| `invoke_text_set` | text field is non-empty string | `true` | Label populated |
 
 ---
 
@@ -396,9 +397,9 @@ User measures 3-segment path, adjusts elevation per segment via scroll.
 
 | Test | Description | Expected | Logic |
 |------|-------------|----------|-------|
-| `seg0_elev` | First segment elevation | `2` | User scrolled up 2 units |
-| `seg1_elev` | Second segment elevation | `-1` | User scrolled down 1 unit |
-| `seg2_elev` | Third segment elevation | `1` | User scrolled up 1 unit |
+| `seg0_elev` | First segment elevation | `2` | Assert(2, actual) |
+| `seg1_elev` | Second segment elevation | `-1` | Assert(-1, actual) |
+| `seg2_elev` | Third segment elevation | `1` | Assert(1, actual) |
 | `total_elev` | Cumulative elevation | `2` | 2 + (-1) + 1 = 2 |
 
 ### 2. `moveTokenWithElevation` (4 tests)
