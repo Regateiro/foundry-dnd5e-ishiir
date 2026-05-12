@@ -1,5 +1,7 @@
 // This file contains tests for the Actor class in the DND5E system.
 
+import { assert } from "../tests.mjs";
+
 const DEFAULTS = { thp: 0, hp: 10, fp: 0, ahp: 0, maxhp: 10, tempmax: 0 };
 
 /**
@@ -662,7 +664,7 @@ async function runSuite(actor, tests) {
 
     for (const [key, expectedValue] of Object.entries(test.expected)) {
       const actualValue = getActualValue(actor, key);
-      results[`test${test.id}_${key}`] = actualValue === expectedValue;
+      results[`test${test.id}_${key}`] = assert(expectedValue, actualValue);
     }
   }
 

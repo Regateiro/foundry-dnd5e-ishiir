@@ -293,6 +293,51 @@ Tests diagonal rule flow: square grids respect user choice, hex grids always for
 | `hex_type_3` | HEXODDR (3) | EUCL | `555` | All hex types force 555 |
 | `hex_type_4` | HEXEVENR (4) | EUCL | `555` | All hex types force 555 |
 
+### 18. `adjustElevationChain` (10 tests)
+
+Tests the full `adjustElevation` → `_computeDistance` chain via actual function invocation. Verifies `segmentElevations` mutation, 555 distance formula, cumDeltaElevation accumulation.
+
+| Test | Description | Expected | Logic |
+|------|-------------|----------|-------|
+| `chain_initial_dist` | Zero elevation → distance = 5 | `5` | No elevation, ground distance |
+| `chain_initial_cum` | Zero elevation → cumDistance = 5 | `5` | No elevation, cum = ground |
+| `chain_initial_delta` | Zero elevation → cumDelta = 0 | `0` | No elevation delta |
+| `chain_adj_segElev` | After +1 → segmentElevations[0] = 1 | `1` | adjustElevation mutates array |
+| `chain_adj_ground` | +1 → elev=1×5=5ft, 555: max(5,5)=5 | `5` | 555 formula: equal → ground |
+| `chain_adj_cumDelta` | +1 → cumDelta = 1×5 = 5 | `5` | Elevation in feet accumulated |
+| `chain_adj2_segElev` | After +2 → segmentElevations[0] = 3 | `3` | Accumulation: 1+2 |
+| `chain_adj2_dist` | +2 → elev=3×5=15ft, 555: max(5,15)=15 | `15` | 555 formula: elev > ground |
+| `chain_adj2_cum` | Cumulative distance = 15 | `15` | 3D distance accumulated |
+| `chain_adj2_cumDelta` | +2 → cumDelta = 3×5 = 15 | `15` | Elevation accumulated |
+| `chain_desc_segElev` | After -1 → segmentElevations[0] = 2 | `2` | Descend: 3-1=2 |
+| `chain_desc_dist` | -1 → elev=2×5=10ft, 555: max(5,10)=10 | `10` | 555 formula: elev > ground |
+| `chain_desc_cumDelta` | -1 → cumDelta = 2×5 = 10 | `10` | Cumulative delta reset |
+
+### 19. `computeDistanceInvocation` (15 tests)
+
+Tests `_computeDistance` replacement — actually invokes the patched method. Verifies `segmentElevations` array consumption, EUCL formula, negative elevation abs, last flag, text field.
+
+| Test | Description | Expected | Logic |
+|------|-------------|----------|-------|
+| `invoke_replaced` | _computeDistance !== original | `true` | Method replaced |
+| `invoke_zero_dist` | Zero elevation → distance unchanged | `10` | No 3D adjustment |
+| `invoke_zero_cum` | Zero elevation → cumDistance = 10 | `10` | No elevation to accumulate |
+| `invoke_zero_delta` | Zero elevation → cumDelta = 0 | `0` | No elevation delta |
+| `invoke_eucl_dist` | EUCL: elev=2×5=10ft → hypot(10,10)≈14.142 | `≈14.142` | Euclidean 3D distance |
+| `invoke_eucl_cum` | Cumulative: 10+14.142 | `≈24.142` | 3D distance accumulated |
+| `invoke_eucl_delta` | cumDelta = 2×5 = 10 | `10` | Elevation in feet |
+| `invoke_all_seg0` | All segments elevated → seg0 = hypot(10,5) | `≈11.180` | segmentElevations[0] consumed |
+| `invoke_all_seg1` | All segments elevated → seg1 = hypot(10,5) | `≈11.180` | segmentElevations[1] consumed |
+| `invoke_all_seg2` | All segments elevated → seg2 = hypot(10,5) | `≈11.180` | segmentElevations[2] consumed |
+| `invoke_all_cum` | 3×11.180 | `≈33.540` | All segments accumulated |
+| `invoke_all_delta` | cumDelta = (1+1+1)×5 = 15 | `15` | Total elevation change |
+| `invoke_neg_cumDelta` | Negative elev: (-1)×5 = -5 | `-5` | Negative delta accumulates |
+| `invoke_neg_dist` | Negative: abs(elev)=1 → hypot(10,5) | `≈11.180` | abs() used for distance |
+| `invoke_last_0` | First segment → last = false | `false` | Last flag: i !== last |
+| `invoke_last_1` | Second segment → last = false | `false` | Last flag: i !== last |
+| `invoke_last_2` | Third segment → last = true | `true` | Last flag: i === last |
+| `invoke_text_set` | text field is non-empty string | `true` | _getSegmentLabel populates text |
+
 ---
 
 ## Test Execution
@@ -325,7 +370,9 @@ Results structure:
     "setupRulerElevation": {...},
     "cumulativeDistance": {...},
     "computeDistanceFields": {...},
-    "diagonalRuleFlow": {...}
+    "diagonalRuleFlow": {...},
+    "adjustElevationChain": {...},
+    "computeDistanceInvocation": {...}
   },
   "e2e": {
     "measurePathWithElevation": {...},
@@ -454,7 +501,8 @@ Full path simulation with all fields computed.
 - **Patch logic tests**: Simulate patch behavior without calling real Foundry methods
 - **Mock object tests**: Use mock canvas/ruler/game objects for integration testing
 - **Save/restore pattern**: Always save `globalThis.canvas` and restore after tests
+- **Actual invocation tests**: Call real patched methods to verify segmentElevations consumption
 
 ## Total
 
-**17 unit/integration suites + 10 e2e scenarios, 203 assertions, 0 failures**
+**19 unit/integration suites + 10 e2e scenarios, 238 assertions, 0 failures**

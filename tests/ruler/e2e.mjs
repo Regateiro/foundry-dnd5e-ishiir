@@ -1,6 +1,8 @@
 // End-to-end tests for ruler elevation common user workflows.
 // These tests simulate realistic user scenarios by chaining multiple operations.
 
+import { assert } from "../tests.mjs";
+
 /**
  * Run all end-to-end tests.
  * @returns {Promise<object>} Test results grouped by scenario.
@@ -57,13 +59,13 @@ async function test_measurePathWithElevation() {
   ruler.segmentElevations[2] = 1;
 
   // Verify elevations
-  results["seg0_elev"] = ruler.segmentElevations[0] === 2;
-  results["seg1_elev"] = ruler.segmentElevations[1] === -1;
-  results["seg2_elev"] = ruler.segmentElevations[2] === 1;
+  results["seg0_elev"] = assert(ruler.segmentElevations[0], 2, ruler.segmentElevations[0]);
+  results["seg1_elev"] = assert(ruler.segmentElevations[1], -1, ruler.segmentElevations[1]);
+  results["seg2_elev"] = assert(ruler.segmentElevations[2], 1, ruler.segmentElevations[2]);
 
   // Verify cumulative elevation
   const totalElev = ruler.segmentElevations.reduce((a, b) => a + b, 0);
-  results["total_elev"] = totalElev === 2; // 2 + (-1) + 1 = 2
+  results["total_elev"] = assert(totalElev, 2, totalElev);
 
   return results;
 }
@@ -91,10 +93,10 @@ async function test_moveTokenWithElevation() {
   const tokenStartElevation = 0;
   const tokenEndElevation = tokenStartElevation + roundedElevationDelta;
 
-  results["cumulative_elev"] = cumulativeElevation === 2;
-  results["elevation_delta_ft"] = elevationDelta === 10;
-  results["rounded_delta"] = roundedElevationDelta === 10;
-  results["token_end_elev"] = tokenEndElevation === 10;
+  results["cumulative_elev"] = assert(cumulativeElevation, 2, cumulativeElevation);
+  results["elevation_delta_ft"] = assert(elevationDelta, 10, elevationDelta);
+  results["rounded_delta"] = assert(roundedElevationDelta, 10, roundedElevationDelta);
+  results["token_end_elev"] = assert(tokenEndElevation, 10, tokenEndElevation);
 
   return results;
 }
@@ -125,9 +127,9 @@ async function test_clearAndMeasureAgain() {
     _state: 2
   };
 
-  results["old_elev"] = oldRuler.segmentElevations[0] === 2;
-  results["new_elev"] = newRuler.segmentElevations[0] === 0;
-  results["new_elev_length"] = newRuler.segmentElevations.length === 1;
+  results["old_elev"] = assert(oldRuler.segmentElevations[0], 2, oldRuler.segmentElevations[0]);
+  results["new_elev"] = assert(newRuler.segmentElevations[0], 0, newRuler.segmentElevations[0]);
+  results["new_elev_length"] = assert(newRuler.segmentElevations.length, 1, newRuler.segmentElevations.length);
 
   return results;
 }
@@ -161,17 +163,17 @@ async function test_removeWaypoints() {
     ruler.segmentElevations.pop();
   }
 
-  results["elev_length"] = ruler.segmentElevations.length === 2;
-  results["elev_0"] = ruler.segmentElevations[0] === 0;
-  results["elev_1"] = ruler.segmentElevations[1] === 2; // Was index 2, now index 1
+  results["elev_length"] = assert(ruler.segmentElevations.length, 2, ruler.segmentElevations.length);
+  results["elev_0"] = assert(ruler.segmentElevations[0], 0, ruler.segmentElevations[0]);
+  results["elev_1"] = assert(ruler.segmentElevations[1], 2, ruler.segmentElevations[1]);
 
   // Remove first waypoint
   if (ruler.segmentElevations.length > 1) {
     ruler.segmentElevations.pop();
   }
 
-  results["final_length"] = ruler.segmentElevations.length === 1;
-  results["final_elev"] = ruler.segmentElevations[0] === 0;
+  results["final_length"] = assert(ruler.segmentElevations.length, 1, ruler.segmentElevations.length);
+  results["final_elev"] = assert(ruler.segmentElevations[0], 0, ruler.segmentElevations[0]);
 
   return results;
 }
@@ -194,21 +196,21 @@ async function test_switchGridTypes() {
   const hexTypes = [3, 4, 5, 6];
   if (hexTypes.includes(squareGrid.type)) diagonalRule = "555";
   
-  results["square_rule"] = diagonalRule === "5105";
+  results["square_rule"] = assert(diagonalRule, "5105", diagonalRule);
 
   // Switch to hex grid - should override to 555
   const hexGrid = { type: 3 };
   diagonalRule = "5105"; // User still has 5105 selected
   if (hexTypes.includes(hexGrid.type)) diagonalRule = "555";
   
-  results["hex_rule"] = diagonalRule === "555";
+  results["hex_rule"] = assert(diagonalRule, "555", diagonalRule);
 
   // Switch back to square - should respect user choice
   const squareGrid2 = { type: 0 };
   diagonalRule = "EUCL";
   if (hexTypes.includes(squareGrid2.type)) diagonalRule = "555";
   
-  results["square_rule_2"] = diagonalRule === "EUCL";
+  results["square_rule_2"] = assert(diagonalRule, "EUCL", diagonalRule);
 
   return results;
 }
@@ -230,18 +232,18 @@ async function test_multipleDiagonalRules() {
 
   // EUCL rule
   const euclDist = Math.hypot(groundDistance, elevationFeet);
-  results["eucl_dist"] = Math.abs(euclDist - 14.142) < 0.001;
+  results["eucl_dist"] = assert(Math.abs(euclDist - 14.142) < 0.001, true, Math.abs(euclDist - 14.142) < 0.001);
 
   // 5105 rule
   const rule5105Dist = groundDistance + ((elevationFeet / 10) * 5);
-  results["5105_dist"] = rule5105Dist === 15;
+  results["5105_dist"] = assert(rule5105Dist, 15, rule5105Dist);
 
   // 555 rule
   const rule555Dist = Math.max(groundDistance, elevationFeet);
-  results["555_dist"] = rule555Dist === 10;
+  results["555_dist"] = assert(rule555Dist, 10, rule555Dist);
 
-  // Verify order: 555 < 5105 < EUCL for equal ground/elevation
-  results["order"] = rule555Dist <= rule5105Dist && rule5105Dist <= euclDist;
+  // Verify order: 555 < EUCL < 5105 for equal ground/elevation
+  results["order"] = assert(rule555Dist <= euclDist && euclDist <= rule5105Dist, true, rule555Dist <= euclDist && euclDist <= rule5105Dist);
 
   return results;
 }
@@ -293,9 +295,9 @@ async function test_remoteSync() {
 
   remoteRuler.update(serialized);
 
-  results["serialized_elev"] = JSON.stringify(serialized.segmentElevations) === "[0,2]";
-  results["remote_elev_0"] = remoteRuler.segmentElevations[0] === 0;
-  results["remote_elev_1"] = remoteRuler.segmentElevations[1] === 2;
+  results["serialized_elev"] = assert(JSON.stringify(serialized.segmentElevations) === "[0,2]", true, JSON.stringify(serialized.segmentElevations));
+  results["remote_elev_0"] = assert(remoteRuler.segmentElevations[0], 0, remoteRuler.segmentElevations[0]);
+  results["remote_elev_1"] = assert(remoteRuler.segmentElevations[1], 2, remoteRuler.segmentElevations[1]);
 
   return results;
 }
@@ -323,17 +325,17 @@ async function test_keyboardElevation() {
     ruler.segmentElevations[0] += 1;
   }
 
-  results["after_up"] = ruler.segmentElevations[0] === 3;
+  results["after_up"] = assert(ruler.segmentElevations[0], 3, ruler.segmentElevations[0]);
 
   // User presses ArrowDown 1 time (descend 1 grid unit)
   ruler.segmentElevations[0] -= 1;
 
-  results["after_down"] = ruler.segmentElevations[0] === 2;
+  results["after_down"] = assert(ruler.segmentElevations[0], 2, ruler.segmentElevations[0]);
 
   // User presses Numpad2 (ArrowDown equivalent)
   ruler.segmentElevations[0] -= 1;
 
-  results["after_numpad"] = ruler.segmentElevations[0] === 1;
+  results["after_numpad"] = assert(ruler.segmentElevations[0], 1, ruler.segmentElevations[0]);
 
   return results;
 }
@@ -369,7 +371,7 @@ async function test_wheelElevation() {
     ruler.segmentElevations[0] += delta;
   }
 
-  results["final_elev"] = ruler.segmentElevations[0] === 2; // 1+1-1+1 = 2
+  results["final_elev"] = assert(ruler.segmentElevations[0], 2, ruler.segmentElevations[0]);
 
   return results;
 }
@@ -416,26 +418,26 @@ async function test_complexMultiSegmentPath() {
   }
 
   // Verify distances
-  results["seg0_dist"] = segments[0].distance === 5;
-  results["seg1_dist"] = segments[1].distance === 10; // max(5,10)
-  results["seg2_dist"] = segments[2].distance === 5;  // max(5,5)
-  results["seg3_dist"] = segments[3].distance === 15; // max(5,15)
+  results["seg0_dist"] = assert(segments[0].distance, 5, segments[0].distance);
+  results["seg1_dist"] = assert(segments[1].distance, 10, segments[1].distance);
+  results["seg2_dist"] = assert(segments[2].distance, 5, segments[2].distance);
+  results["seg3_dist"] = assert(segments[3].distance, 15, segments[3].distance);
 
   // Verify cumulative distances
-  results["seg0_cum"] = segments[0].cumDistance === 5;
-  results["seg1_cum"] = segments[1].cumDistance === 15; // 5+10
-  results["seg2_cum"] = segments[2].cumDistance === 20; // 15+5
-  results["seg3_cum"] = segments[3].cumDistance === 35; // 20+15
+  results["seg0_cum"] = assert(segments[0].cumDistance, 5, segments[0].cumDistance);
+  results["seg1_cum"] = assert(segments[1].cumDistance, 15, segments[1].cumDistance);
+  results["seg2_cum"] = assert(segments[2].cumDistance, 20, segments[2].cumDistance);
+  results["seg3_cum"] = assert(segments[3].cumDistance, 35, segments[3].cumDistance);
 
   // Verify cumulative elevation
-  results["seg0_cumDelta"] = segments[0].cumDeltaElevation === 0;
-  results["seg1_cumDelta"] = segments[1].cumDeltaElevation === 10; // 0+2*5
-  results["seg2_cumDelta"] = segments[2].cumDeltaElevation === 5;  // 10+(-1)*5
-  results["seg3_cumDelta"] = segments[3].cumDeltaElevation === 20; // 5+3*5
+  results["seg0_cumDelta"] = assert(segments[0].cumDeltaElevation, 0, segments[0].cumDeltaElevation);
+  results["seg1_cumDelta"] = assert(segments[1].cumDeltaElevation, 10, segments[1].cumDeltaElevation);
+  results["seg2_cumDelta"] = assert(segments[2].cumDeltaElevation, 5, segments[2].cumDeltaElevation);
+  results["seg3_cumDelta"] = assert(segments[3].cumDeltaElevation, 20, segments[3].cumDeltaElevation);
 
   // Verify last flag
-  results["seg0_last"] = segments[0].last === false;
-  results["seg3_last"] = segments[3].last === true;
+  results["seg0_last"] = assert(segments[0].last, false, segments[0].last);
+  results["seg3_last"] = assert(segments[3].last, true, segments[3].last);
 
   return results;
 }

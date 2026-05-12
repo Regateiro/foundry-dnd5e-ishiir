@@ -283,20 +283,22 @@ Hooks.once("ready", function() {
       import("./tests/tests.mjs").then(tests => {
         // Run all tests
         tests.runAllTests().then(results => {
-          // Check results and notify the user of the outcome
-          const allPassed = Object.values(results).every(moduleResult => {
-            return Object.values(moduleResult).every(testResult => {
-              return Object.values(testResult).every(result => result);
-            });
-          });
-          // Notify the user of the results
-          if ( allPassed ) {
-            ui.notifications.info("All tests passed successfully!", {localize: true});
-          } else {
-            ui.notifications.error("Some tests failed. Check the console for details.", {localize: true});
+          // Collect all failures with expected/actual values
+          const allFailures = [];
+          for (const [moduleName, moduleResult] of Object.entries(results)) {
+            const failures = tests.collectFailures(moduleResult, moduleName);
+            allFailures.push(...failures);
           }
-          // Log the results to the console for debugging purposes
-          console.debug("Test Results:", results);
+
+          // Notify the user of the outcome
+          if ( allFailures.length === 0 ) {
+            ui.notifications.info("All tests passed successfully!", {localize: true});
+            console.log("\n✅ All tests passed!");
+          } else {
+            ui.notifications.error(`Test failures: ${allFailures.length} test(s) failed. Check the console for details.`, {localize: true});
+            console.log(`\n📊 Test Results: ${allFailures.length} failure(s)\n`);
+            console.log(tests.formatFailures(allFailures));
+          }
         });
       });
     }
