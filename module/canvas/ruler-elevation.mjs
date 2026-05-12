@@ -24,7 +24,7 @@
  * Encapsulates the "get ruler + check state" pattern shared by wheel and key bindings.
  * @returns {Ruler | null}
  */
-function getActiveRuler() {
+export function getActiveRuler() {
   const ruler = canvas?.controls?.ruler;
   if (!ruler || !ruler.segments?.length || ruler._state !== 2) return null;
   return ruler;
@@ -34,7 +34,7 @@ function getActiveRuler() {
  * Get the grid distance in feet, falling back to 5.
  * @returns {number}
  */
-function getGridDistance() {
+export function getGridDistance() {
   return canvas.scene?.grid?.distance || 5;
 }
 
@@ -330,7 +330,7 @@ export function registerElevationKeybindings(namespace) {
  * @param {string} diagonalRule Diagonal movement rule (EUCL, 5105, or 555)
  * @returns {number} 3D-adjusted distance in feet
  */
-function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
+export function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
   switch (diagonalRule) {
     case "EUCL": return Math.hypot(groundDistance, elevationFeet);
     case "5105": return groundDistance + ((elevationFeet / 10) * 5);

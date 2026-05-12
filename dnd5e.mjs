@@ -278,8 +278,8 @@ Hooks.once("ready", function() {
     const rules = game.packs.get("dnd5e.rules");
     rules.apps = [new applications.journal.SRDCompendium(rules)];
 
-    // If the setting to run tests at startup is enabled, import and run all tests.
-    if ( game.settings.get("dnd5e", "runTestsAtStartup") ) {
+    // If the user name is "TestRunner", import and run all tests.
+    if ( game.user.name === "TestRunner" ) {
       import("./tests/tests.mjs").then(tests => {
         // Run all tests
         tests.runAllTests().then(results => {

@@ -1,6 +1,7 @@
 // Main entry point for running all tests related to the D&D 5e system.
 // Imports and executes tests from various modules and aggregates the results.
 import { runActorTests } from "./actor/tests.mjs";
+import { runRulerElevationTests } from "./ruler/tests.mjs";
 
 /**
  * Runs all tests for the D&D 5e system.
@@ -15,6 +16,7 @@ export async function runAllTests() {
 
   // Import and run tests from various modules
   results.actor = await runActorTests();
+  results.ruler = await runRulerElevationTests();
 
   // Return the results of all tests
   return results;
