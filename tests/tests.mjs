@@ -2,6 +2,9 @@
 // Imports and executes tests from various modules and aggregates the results.
 import { runActorTests } from "./actor/tests.mjs";
 import { runRulerElevationTests } from "./ruler/tests.mjs";
+import { runExtendedActorTests } from "./actor/extended-tests.mjs";
+import { runExtendedRulerElevationTests } from "./ruler/extended-tests.mjs";
+import { runExtendedInfrastructureTests } from "./extended-tests.mjs";
 
 /**
  * Assert helper that compares expected vs actual for failure reporting.
@@ -87,8 +90,14 @@ export async function runAllTests() {
   const results = {};
 
   // Import and run tests from various modules
+  // Core test suites
   results.actor = await runActorTests();
   results.ruler = await runRulerElevationTests();
+
+  // Additional tests covering previously untested logic paths
+  results.extended_actor = await runExtendedActorTests();
+  results.extended_ruler = await runExtendedRulerElevationTests();
+  results.infrastructure = await runExtendedInfrastructureTests();
 
   // Return the results of all tests
   return results;
