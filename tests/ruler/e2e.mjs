@@ -8,8 +8,6 @@ import { assert } from "../tests.mjs";
  * @returns {Promise<object>} Test results grouped by scenario.
  */
 export async function runE2ETests() {
-  console.debug("Running ruler elevation end-to-end tests...");
-
   const results = {
     measurePathWithElevation: await test_measurePathWithElevation(),
     moveTokenWithElevation: await test_moveTokenWithElevation(),
@@ -36,7 +34,6 @@ export async function runE2ETests() {
  * @returns {Promise<object>} Test results.
  */
 async function test_measurePathWithElevation() {
-  console.debug("E2E: measurePathWithElevation");
   const results = {};
 
   // Simulate user measuring a path and adjusting elevation
@@ -81,7 +78,6 @@ async function test_measurePathWithElevation() {
  * @returns {Promise<object>} Test results.
  */
 async function test_moveTokenWithElevation() {
-  console.debug("E2E: moveTokenWithElevation");
   const results = {};
 
   const gridDistance = 5; // 5ft grid
@@ -113,7 +109,6 @@ async function test_moveTokenWithElevation() {
  * @returns {Promise<object>} Test results.
  */
 async function test_clearAndMeasureAgain() {
-  console.debug("E2E: clearAndMeasureAgain");
   const results = {};
 
   // Simulate ruler with elevation data
@@ -147,7 +142,6 @@ async function test_clearAndMeasureAgain() {
  * @returns {Promise<object>} Test results.
  */
 async function test_removeWaypoints() {
-  console.debug("E2E: removeWaypoints");
   const results = {};
 
   // Simulate ruler with 3 segments
@@ -192,7 +186,6 @@ async function test_removeWaypoints() {
  * @returns {Promise<object>} Test results.
  */
 async function test_switchGridTypes() {
-  console.debug("E2E: switchGridTypes");
   const results = {};
 
   // Square grid - user chooses 5105
@@ -230,7 +223,6 @@ async function test_switchGridTypes() {
  * @returns {Promise<object>} Test results.
  */
 async function test_multipleDiagonalRules() {
-  console.debug("E2E: multipleDiagonalRules");
   const results = {};
 
   const groundDistance = 10;
@@ -264,7 +256,6 @@ async function test_multipleDiagonalRules() {
  * @returns {Promise<object>} Test results.
  */
 async function test_remoteSync() {
-  console.debug("E2E: remoteSync");
   const results = {};
 
   // Local ruler state
@@ -319,7 +310,6 @@ async function test_remoteSync() {
  * @returns {Promise<object>} Test results.
  */
 async function test_keyboardElevation() {
-  console.debug("E2E: keyboardElevation");
   const results = {};
 
   const ruler = {
@@ -358,7 +348,6 @@ async function test_keyboardElevation() {
  * @returns {Promise<object>} Test results.
  */
 async function test_wheelElevation() {
-  console.debug("E2E: wheelElevation");
   const results = {};
 
   const ruler = {
@@ -395,7 +384,6 @@ async function test_wheelElevation() {
  * @returns {Promise<object>} Test results.
  */
 async function test_complexMultiSegmentPath() {
-  console.debug("E2E: complexMultiSegmentPath");
   const results = {};
 
   const gridDistance = 5;

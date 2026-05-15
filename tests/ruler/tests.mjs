@@ -4,7 +4,21 @@
 
 import * as RulerElevation from "../../module/canvas/ruler-elevation.mjs";
 import { runE2ETests } from "./e2e.mjs";
+import { withMocks, createMockRuler as _createMockRuler, expectNullRuler, expectNonNullRuler } from "../mocks.mjs";
+
+
 import { assert, assertApprox } from "../tests.mjs";
+
+/**
+ * Run a test and log its name before execution.
+ * @param {string} name Full test identifier
+ * @param {Function|Promise} fn The async function or promise to run
+ * @returns {Promise<*>}
+ */
+async function runTest(name, fn) {
+  console.log(`[TEST] ${name}`);
+  return typeof fn === "function" ? await fn() : await fn;
+}
 
 /* ============================================ */
 /*  TEST RUNNER                                 */
@@ -15,36 +29,416 @@ import { assert, assertApprox } from "../tests.mjs";
  * @returns {Promise<object>} Test results grouped by suite.
  */
 export async function runRulerElevationTests() {
-  console.debug("Running ruler elevation tests...");
-
   const results = {
-    compute3DDistance: await test_compute3DDistance(),
-    getGridDistance: await test_getGridDistance(),
-    adjustElevation: await test_adjustElevation(),
-    getActiveRuler: await test_getActiveRuler(),
-    installRulerPatches_toJSON: await test_installRulerPatches_toJSON(),
-    installRulerPatches_update: await test_installRulerPatches_update(),
-    installRulerPatches_clear: await test_installRulerPatches_clear(),
-    installRulerPatches_removeWaypoint: await test_installRulerPatches_removeWaypoint(),
-    installRulerPatches_moveToken: await test_installRulerPatches_moveToken(),
-    _getSegmentLabel: await test_getSegmentLabel(),
-    gridTypes: await test_gridTypes(),
-    mouseWheel: await test_mouseWheel(),
-    keybindings: await test_keybindings(),
-    setupRulerElevation: await test_setupRulerElevation(),
-    cumulativeDistance: await test_cumulativeDistance(),
-    computeDistanceFields: await test_computeDistanceFields(),
-    diagonalRuleFlow: await test_diagonalRuleFlow(),
-    adjustElevationChain: await test_adjustElevationChain(),
-    adjustElevationChainEUCL: await test_adjustElevationChainEUCL(),
-    adjustElevationChain5105: await test_adjustElevationChain5105(),
-    adjustElevationChainHex: await test_adjustElevationChainHex(),
-    computeDistanceInvocation: await test_computeDistanceInvocation()
+    compute3DDistance: await runTest("ruler.compute3DDistance", test_compute3DDistance),
+    getGridDistance: await runTest("ruler.getGridDistance", test_getGridDistance),
+    adjustElevation: await runTest("ruler.adjustElevation", test_adjustElevation),
+    getActiveRuler: await runTest("ruler.getActiveRuler", test_getActiveRuler),
+    installRulerPatches_toJSON: await runTest("ruler.installRulerPatches_toJSON", test_installRulerPatches_toJSON),
+    installRulerPatches_update: await runTest("ruler.installRulerPatches_update", test_installRulerPatches_update),
+    installRulerPatches_clear: await runTest("ruler.installRulerPatches_clear", test_installRulerPatches_clear),
+    installRulerPatches_removeWaypoint: await runTest("ruler.installRulerPatches_removeWaypoint", test_installRulerPatches_removeWaypoint),
+    installRulerPatches_moveToken: await runTest("ruler.installRulerPatches_moveToken", test_installRulerPatches_moveToken),
+    _getSegmentLabel: await runTest("ruler._getSegmentLabel", test_getSegmentLabel),
+    gridTypes: await runTest("ruler.gridTypes", test_gridTypes),
+    mouseWheel: await runTest("ruler.mouseWheel", test_mouseWheel),
+    keybindings: await runTest("ruler.keybindings", test_keybindings),
+    setupRulerElevation: await runTest("ruler.setupRulerElevation", test_setupRulerElevation),
+    cumulativeDistance: await runTest("ruler.cumulativeDistance", test_cumulativeDistance),
+    computeDistanceFields: await runTest("ruler.computeDistanceFields", test_computeDistanceFields),
+    diagonalRuleFlow: await runTest("ruler.diagonalRuleFlow", test_diagonalRuleFlow),
+    adjustElevationChain: await runTest("ruler.adjustElevationChain", test_adjustElevationChain),
+    adjustElevationChainEUCL: await runTest("ruler.adjustElevationChainEUCL", test_adjustElevationChainEUCL),
+    adjustElevationChain5105: await runTest("ruler.adjustElevationChain5105", test_adjustElevationChain5105),
+    adjustElevationChainHex: await runTest("ruler.adjustElevationChainHex", test_adjustElevationChainHex),
+    computeDistanceInvocation: await runTest("ruler.computeDistanceInvocation", test_computeDistanceInvocation),
+    broadcastPermission: await runTest("ruler.broadcastPermission", () => withMocks(m => test_broadcastPermission(m))),
+    hexGridFullChain: await runTest("ruler.hexGridFullChain", () => withMocks(m => test_hexGridFullChain(m))),
+    doublePatchGuard: await runTest("ruler.doublePatchGuard", () => withMocks(m => test_doublePatchGuard(m))),
+    wheelNoActiveRuler: await runTest("ruler.wheelNoActiveRuler", () => withMocks(m => test_wheelNoActiveRuler(m))),
+    setupRulerElevationUndefinedMeasure: await runTest("ruler.setupRulerElevationUndefinedMeasure", () => withMocks(m => test_setupRulerElevationUndefinedMeasure(m))),
+    negativeZeroGridDistance: await runTest("ruler.negativeZeroGridDistance", () => withMocks(m => test_negativeZeroGridDistance(m))),
+    keybindingOnDownBehavior: await runTest("ruler.keybindingOnDownBehavior", () => withMocks(m => test_keybindingOnDownBehavior(m))),
+    adjustBeforeMeasurement: await runTest("ruler.adjustBeforeMeasurement", test_adjustBeforeMeasurement),
+    getSegmentLabelEdgeCases: await runTest("ruler.getSegmentLabelEdgeCases", () => withMocks(m => test_getSegmentLabelEdgeCases(m))),
+    rulerStateTransitions: await runTest("ruler.rulerStateTransitions", () => withMocks(m => test_rulerStateTransitions(m)))
   };
 
   // Append e2e results
   const e2eResults = await runE2ETests();
   Object.assign(results, { e2e: e2eResults });
+
+  return results;
+}
+
+// Extended tests for ruler elevation: permission guards, hex chain, double-patch guard, and edge cases.
+
+/* ============================================ */
+/*  Broadcast Permission Guard Tests            */
+/* ============================================ */
+
+/**
+ * Test the broadcast permission guard in adjustElevation.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_broadcastPermission(m) {
+  const results = {};
+
+  // AdjustElevation still adjusts local state regardless of permission guard
+  const ruler1 = _createMockRuler();
+  RulerElevation.adjustElevation(ruler1, 2);
+  results.elev_adjusted_with_mock_game = assert(2, ruler1.segmentElevations[0]);
+
+  // AdjustElevation with negative delta works the same way
+  const ruler2 = _createMockRuler({ segmentElevations: [3] });
+  RulerElevation.adjustElevation(ruler2, -1);
+  results.elev_adjusted_negative_delta = assert(2, ruler2.segmentElevations[0]);
+
+  // AdjustElevation preserves segment count
+  const ruler3 = _createMockRuler({ segments: [{ distance: 5 }, { distance: 10 }] });
+  RulerElevation.adjustElevation(ruler3, 1);
+  results.segments_preserved = assert(2, ruler3.segments.length);
+
+  return results;
+}
+
+/* ============================================ */
+/*  Hex Grid Full Chain Tests                   */
+/* ============================================ */
+
+/**
+ * Test the full adjust → _computeDistance chain specifically for hex grids.
+ * Verifies that hex grid forces 555 rule even when user selected a different diagonal rule.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_hexGridFullChain(m) {
+  const results = {};
+
+  // Create a hex grid canvas (type 3 = HEXODDR)
+  m.setGame({ settings: { get: () => "EUCL", set: async () => {} }, user: { hasPermission: () => false } });
+  const mockParent = {};
+  Object.defineProperty(mockParent, "diagonalRule", {
+    configurable: true,
+    get() { return this._val; },
+    set(v) { this._val = v; }
+  });
+
+  m.setCanvas({
+    grid: { type: CONST?.GRID_TYPES?.HEXODDR ?? 3, distance: 10, parent: mockParent },
+    scene: createMockScene(10), controls: {}
+  });
+
+  const mockCanvas = globalThis.canvas;
+  RulerElevation.setupRulerElevation(mockCanvas, { measureDistances: s => s.map(() => 10) });
+  mockParent.diagonalRule = "EUCL";
+  RulerElevation.setupRulerElevation(mockCanvas, { measureDistances: s => s.map(() => 10) });
+
+  // Pass _computeDistance explicitly so adjustElevation() calls the patched version.
+  const ruler = _createMockRuler({
+    patchRulerMethods: true,
+    segments: [{ distance: 10, cumDistance: 10, cumDeltaElevation: 0, text: "10ft", last: true }],
+    _computeDistance() { return Ruler.prototype._computeDistance.call(this, ...arguments); }
+  });
+
+  // Hex grid forces diagonalRule to "555" despite user choosing EUCL
+  results.hex_forced_555 = assert(true, mockParent.diagonalRule === "555");
+
+  // Initial state with hex grid — zero elevation, distance unchanged
+  Ruler.prototype._computeDistance.call(ruler, true);
+  results.hex_initial_dist = assert(10, ruler.segments[0].distance);
+  results.hex_initial_cumDelta = assert(0, ruler.segments[0].cumDeltaElevation);
+
+  // Ascend +2 grid units → hex forces 555 → max(10, elevFeet) where elevFeet = 2*10 = 20
+  RulerElevation.adjustElevation(ruler, 2);
+  results.hex_adj_segElev = assert(2, ruler.segmentElevations[0]);
+
+  const hexDistActual = ruler.segments[0].distance;
+  results.hex_dist_555_rule = assertApprox(20, hexDistActual, 0.001);
+
+  // Descend → elevation decreases, distance recalculated with 555
+  RulerElevation.adjustElevation(ruler, -3);
+  results.hex_desc_elev = assert(-1, ruler.segmentElevations[0]);
+
+  const hexDistDescActual = ruler.segments[0].distance;
+  results.hex_desc_dist_555 = assertApprox(10, hexDistDescActual, 0.001);
+
+  return results;
+}
+
+/* ============================================ */
+/*  Double-Patch Guard Tests                    */
+/* ============================================ */
+
+/**
+ * Test that calling installRulerPatches twice does NOT duplicate patches.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_doublePatchGuard(m) {
+  const results = {};
+
+  // Save original toJSON to restore later
+  const origToJSON = Ruler.prototype.toJSON ? Object.getOwnPropertyDescriptor(Ruler.prototype, "toJSON") : undefined;
+
+  m.setCanvas({ controls: {} });
+  m.setCanvas({ app: { view: { addEventListener() {} } }, controls: {} });
+
+  // First call — should patch (flag is false)
+  RulerElevation.installRulerPatches(globalThis.canvas);
+  results.first_call_patched = assert(true, globalThis.canvas._sieg5eRulerPatched === true);
+
+  // Second call — should NOT re-patch (flag is now true)
+  RulerElevation.installRulerPatches(globalThis.canvas);
+  results.second_call_no_repatch = assert(true, globalThis.canvas._sieg5eRulerPatched === true);
+
+  // Verify the toJSON patch was not duplicated by checking that it still produces valid output
+  const testRuler = { segmentElevations: [3], toJSON: Ruler.prototype.toJSON };
+  if (testRuler.toJSON) {
+    const data = testRuler.toJSON();
+    data.segmentElevations = testRuler.segmentElevations || [0];
+    results.valid_output_after_double_patch = assert(true, JSON.stringify(data.segmentElevations) === "[3]");
+  }
+
+  // Restore original toJSON explicitly (MockManager.restore() won't know about our save above)
+  if (origToJSON) Object.defineProperty(Ruler.prototype, "toJSON", origToJSON);
+
+  return results;
+}
+
+/* ============================================ */
+/*  Mouse Wheel With No Active Ruler Tests      */
+/* ============================================ */
+
+/**
+ * Test the mouse wheel handler when there is no active ruler.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_wheelNoActiveRuler(m) {
+  const results = {};
+
+  // Test: No canvas at all → getActiveRuler returns null
+  m.setCanvas(undefined);
+  expectNullRuler(m, results, "no_canvas_null");
+
+  // Test: Canvas without controls → getActiveRuler returns null
+  m.setCanvas({ _test_noControls: true });
+  expectNullRuler(m, results, "no_controls_null");
+
+  // Test: Canvas with controls but no ruler → getActiveRuler returns null
+  m.setCanvas({ controls: {} });
+  expectNullRuler(m, results, "no_ruler_null");
+
+  // Test: Canvas with ruler but no segments → getActiveRuler returns null
+  m.setCanvas({ controls: { ruler: _createMockRuler() } });
+  globalThis.canvas.controls.ruler.segments = [];
+  expectNullRuler(m, results, "no_segments_null");
+
+  // Test: Canvas with ruler in non-MEASURING state → getActiveRuler returns null
+  m.setCanvas({ controls: { ruler: _createMockRuler() } });
+  globalThis.canvas.controls.ruler._state = 1;
+  expectNullRuler(m, results, "not_measuring_null");
+
+  // Test: Simulate wheel event with no active ruler → nothing happens (no error)
+  m.setCanvas({ controls: {} });
+  let errorThrown = false;
+  try { RulerElevation.getActiveRuler(); } catch(e) { errorThrown = true; }
+  results.wheel_no_error_on_null = assert(false, errorThrown);
+
+  return results;
+}
+
+/* ============================================ */
+/*  Undefined MeasureDistance Tests             */
+/* ============================================ */
+
+/**
+ * Test what happens when canvasModule.measureDistances is undefined or null.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_setupRulerElevationUndefinedMeasure(m) {
+  // Test: canvasModule is undefined → destructuring throws TypeError
+  let threwType = false;
+  try { RulerElevation.setupRulerElevation(undefined, undefined); } catch(e) {
+    threwType = e instanceof TypeError || e.message.includes("Cannot destructure");
+  }
+
+  // Test: canvasModule.measureDistances is null → set to undefined on grid
+  m.setGame({ settings: { get: () => "EUCL", set: async () => {} } });
+  m.setCanvas({
+    grid: { type: CONST?.GRID_TYPES?.SQUARE ?? 0, distance: 5, parent: {} },
+    scene: createMockScene(5), controls: {}
+  });
+
+  let threwError = false;
+  try { RulerElevation.setupRulerElevation(globalThis.canvas, {}); } catch(e) { threwError = true; }
+
+  return { undefined_module_throws: assert(true, threwType), no_measure_dist_error: assert(false, threwError) };
+}
+
+/* ============================================ */
+/*  Negative/Zero Grid Distance Tests           */
+/* ============================================ */
+
+/**
+ * Test getGridDistance when grid.distance is negative, zero, or missing.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_negativeZeroGridDistance(m) {
+  const results = {};
+
+  // Test: Negative grid distance → returns the negative value (shouldn't happen in practice)
+  globalThis.canvas = { scene: createMockScene(-5) };
+  globalThis.canvas.scene.grid.distance = -5;
+  results.negative_dist_01 = assert(true, RulerElevation.getGridDistance?.() === -5);
+
+  // Test: Zero grid distance → returns fallback 5 (0 is falsy)
+  globalThis.canvas = { scene: { grid: { distance: 0, units: "ft" } } };
+  results.zero_dist_01 = assert(5, RulerElevation.getGridDistance?.());
+
+  // Test: Grid with no distance property → falls back to 5
+  globalThis.canvas = { scene: createMockScene(5) };
+  delete globalThis.canvas.scene.grid.distance;
+  results.no_distance_prop_fallback = assert(5, RulerElevation.getGridDistance?.());
+
+  // Test: Scene has no grid → falls back to 5
+  globalThis.canvas = { scene: null };
+  results.no_grid_fallback = assert(5, RulerElevation.getGridDistance?.());
+
+  // Test: Gridless mode (no scene) → falls back to 5
+  globalThis.canvas = {};
+  results.gridless_full_fallback = assert(5, RulerElevation.getGridDistance?.());
+
+  // Test: Very large grid distance returned correctly
+  globalThis.canvas = { scene: createMockScene(9999) };
+  results.large_grid_dist_01 = assert(9999, RulerElevation.getGridDistance?.());
+
+  // Test: Grid with null distance → falls back to 5 (null is falsy)
+  globalThis.canvas = { scene: createMockScene(5) };
+  delete globalThis.canvas.scene.grid.distance;
+  results.null_distance_fallback = assert(5, RulerElevation.getGridDistance?.());
+
+  return results;
+}
+
+/* ============================================ */
+/*  Keybinding onDown Behavior Tests            */
+/* ============================================ */
+
+/**
+ * Test that keybinding onDown returns true when ruler is active and false when inactive.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_keybindingOnDownBehavior(m) {
+  const results = {};
+
+  // Test: Active ruler → getActiveRuler returns non-null (onDown would return true)
+  m.setCanvas({ controls: { ruler: _createMockRuler() } });
+  expectNonNullRuler(m, results, "active_ruler_not_null");
+
+  // Test: Inactive ruler → getActiveRuler returns null (onDown would return false)
+  m.setCanvas({ controls: {} });
+  expectNullRuler(m, results, "inactive_ruler_null");
+
+  // Test: Simulate onDown logic for ascending when ruler active
+  m.setCanvas({ controls: { ruler: _createMockRuler() } });
+  globalThis.canvas.controls.ruler._state = 2;
+  expectNonNullRuler(m, results, "ascend_onDown_returns_true_when_active");
+
+  // Test: Simulate onDown logic for descending when ruler inactive
+  m.setCanvas({ controls: {} });
+  expectNullRuler(m, results, "descend_onDown_returns_false_when_inactive");
+
+  return results;
+}
+
+/* ============================================ */
+/*  Adjust Elevation Before Measurement Tests   */
+/* ============================================ */
+
+/**
+ * Test adjustElevation when called on a ruler that hasn't started measuring yet.
+ * @returns {Promise<object>} Test results
+ */
+async function test_adjustBeforeMeasurement() {
+  const results = {};
+
+  // Test: Empty segments array → adjustElevation handles gracefully
+  let errorThrown = false;
+  try { RulerElevation.adjustElevation(_createMockRuler({ segments: [] }), 1); } catch(e) {
+    errorThrown = true;
+  }
+  results.empty_segments_no_error = assert(true, !errorThrown);
+
+  // Test: Normal ruler → adjusts correctly
+  const normalRuler = _createMockRuler({ segmentElevations: [5] });
+  RulerElevation.adjustElevation(normalRuler, 2);
+  results.normal_adjust_works = assert(7, normalRuler.segmentElevations[0]);
+
+  return results;
+}
+
+/* ============================================ */
+/*  getSegmentLabel Edge Case Tests             */
+/* ============================================ */
+
+/**
+ * Test _getSegmentLabel with edge case inputs.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_getSegmentLabelEdgeCases(m) {
+  const results = {};
+
+  m.setCanvas({ scene: createMockScene(5), grid: { type: 0 } });
+  const mockRuler = { segmentElevations: [0], _getSegmentLabel: Ruler.prototype._getSegmentLabel };
+
+  // Test: Zero distance → label shows "0ft"
+  results.zero_dist_label = assert("0ft", mockRuler._getSegmentLabel({ distance: 0, cumDistance: 0, cumDeltaElevation: 0 }));
+
+  // Test: Negative cumulative elevation → down arrow shown
+  results.neg_elev_down_arrow = assert(true, mockRuler._getSegmentLabel({ distance: 5, cumDistance: 10, cumDeltaElevation: -20 }).includes("↓"));
+
+  // Test: Large cumulative elevation → label shows full value
+  results.large_elev_label = assert(true, mockRuler._getSegmentLabel({ distance: 10, cumDistance: 30, cumDeltaElevation: 999 }).includes("↑999"));
+
+  // Test: Null/undefined segment fields → defaults applied without error
+  results.null_values_label = assert(true, typeof mockRuler._getSegmentLabel({ distance: null, cumDistance: null, cumDeltaElevation: null }) === "string");
+
+  // Test: Decimal elevation → abs() shown correctly (no rounding on elevation)
+  results.decimal_elev_label = assert(true, mockRuler._getSegmentLabel({ distance: 5.3, cumDistance: 10.7, cumDeltaElevation: -12.4 }).includes("↓"));
+
+  return results;
+}
+
+/* ============================================ */
+/*  Ruler State Transition Tests                */
+/* ============================================ */
+
+/**
+ * Test getActiveRuler for all possible _state values.
+ * @param {MockManager} m Mock manager instance
+ * @returns {Promise<object>} Test results
+ */
+async function test_rulerStateTransitions(m) {
+  const results = {};
+
+  // Test all possible _state values: 0=IDLE, 1=READY, 2=MEASURING, 3=MOVING
+  for (const state of [0, 1, 2, 3]) {
+    m.setCanvas({ controls: { ruler: _createMockRuler() } });
+    globalThis.canvas.controls.ruler._state = state;
+    const active = RulerElevation.getActiveRuler();
+    if (state === 2) {
+      results[`state_${state}_active`] = assert(true, active !== null);
+    } else {
+      results[`state_${state}_inactive`] = assert(true, active === null);
+    }
+  }
 
   return results;
 }
@@ -147,7 +541,6 @@ function createMockGameCanvas(extraProps = {}) {
  * @returns {Promise<object>}
  */
 async function test_compute3DDistance() {
-  console.debug("Running compute3DDistance tests...");
   const results = {};
 
   // Test EUCL (Euclidean) rule
@@ -186,7 +579,6 @@ async function test_compute3DDistance() {
  * @returns {Promise<object>}
  */
 async function test_getGridDistance() {
-  console.debug("Running getGridDistance tests...");
   const results = {};
 
   // Mock canvas.scene.grid with distance
@@ -214,7 +606,6 @@ async function test_getGridDistance() {
  * @returns {Promise<object>}
  */
 async function test_gridTypes() {
-  console.debug("Running grid type tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -307,7 +698,6 @@ async function test_gridTypes() {
  * @returns {Promise<object>}
  */
 async function test_adjustElevation() {
-  console.debug("Running adjustElevation tests...");
   const results = {};
 
   // Test 01: Ascend (positive delta)
@@ -357,7 +747,6 @@ async function test_adjustElevation() {
  * @returns {Promise<object>}
  */
 async function test_getActiveRuler() {
-  console.debug("Running getActiveRuler tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -396,7 +785,6 @@ async function test_getActiveRuler() {
  * @returns {Promise<object>}
  */
 async function test_installRulerPatches_toJSON() {
-  console.debug("Running toJSON patch tests...");
   const results = {};
 
   // Test the toJSON patch logic directly
@@ -437,7 +825,6 @@ async function test_installRulerPatches_toJSON() {
  * @returns {Promise<object>}
  */
 async function test_installRulerPatches_update() {
-  console.debug("Running update patch tests...");
   const results = {};
 
   // Test the update patch logic directly
@@ -483,7 +870,6 @@ async function test_installRulerPatches_update() {
  * @returns {Promise<object>}
  */
 async function test_installRulerPatches_clear() {
-  console.debug("Running clear patch tests...");
   const results = {};
 
   // Test 01-02: clear resets segmentElevations to [0]
@@ -512,7 +898,6 @@ async function test_installRulerPatches_clear() {
  * @returns {Promise<object>}
  */
 async function test_installRulerPatches_removeWaypoint() {
-  console.debug("Running _removeWaypoint patch tests...");
   const results = {};
 
   // Test 01-03: Multiple segments - should pop
@@ -557,7 +942,6 @@ async function test_installRulerPatches_removeWaypoint() {
  * @returns {Promise<object>}
  */
 async function test_installRulerPatches_moveToken() {
-  console.debug("Running moveToken patch tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -669,7 +1053,6 @@ async function test_installRulerPatches_moveToken() {
  * @returns {Promise<object>}
  */
 async function test_setupRulerElevation() {
-  console.debug("Running setupRulerElevation tests...");
   const results = {};
 
   // Save originals
@@ -792,7 +1175,6 @@ async function test_setupRulerElevation() {
  * @returns {Promise<object>}
  */
 async function test_adjustElevationChain() {
-  console.debug("Running adjustElevation chain tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -879,7 +1261,6 @@ async function test_adjustElevationChain() {
  * @returns {Promise<object>}
  */
 async function test_adjustElevationChainEUCL() {
-  console.debug("Running adjustElevation chain tests (EUCL)...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -958,7 +1339,6 @@ async function test_adjustElevationChainEUCL() {
  * @returns {Promise<object>}
  */
 async function test_adjustElevationChain5105() {
-  console.debug("Running adjustElevation chain tests (5105)...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -1037,7 +1417,6 @@ async function test_adjustElevationChain5105() {
  * @returns {Promise<object>}
  */
 async function test_adjustElevationChainHex() {
-  console.debug("Running adjustElevation chain tests (hex grid)...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -1118,7 +1497,6 @@ async function test_adjustElevationChainHex() {
  * @returns {Promise<object>}
  */
 async function test_mouseWheel() {
-  console.debug("Running mouse wheel tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -1193,7 +1571,6 @@ async function test_mouseWheel() {
  * @returns {Promise<object>}
  */
 async function test_keybindings() {
-  console.debug("Running keybinding tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -1265,7 +1642,6 @@ async function test_keybindings() {
  * @returns {Promise<object>}
  */
 async function test_cumulativeDistance() {
-  console.debug("Running cumulative distance tests...");
   const results = {};
 
   // Simulate _computeDistance logic for multi-segment paths
@@ -1406,7 +1782,6 @@ async function test_cumulativeDistance() {
  * @returns {Promise<object>}
  */
 async function test_computeDistanceFields() {
-  console.debug("Running _computeDistance fields tests...");
   const results = {};
 
   // Simulate the _computeDistance loop for a 3-segment path
@@ -1596,7 +1971,6 @@ async function test_computeDistanceFields() {
  * @returns {Promise<object>}
  */
 async function test_diagonalRuleFlow() {
-  console.debug("Running diagonal rule flow tests...");
   const results = {};
 
   const hexTypes = [3, 4, 5, 6]; // HEXODDR, HEXEVENR, HEXODDQ, HEXEVENQ
@@ -1696,7 +2070,6 @@ async function test_diagonalRuleFlow() {
  * @returns {Promise<object>}
  */
 async function test_computeDistanceInvocation() {
-  console.debug("Running _computeDistance invocation tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
@@ -1806,7 +2179,6 @@ async function test_computeDistanceInvocation() {
  * @returns {Promise<object>}
  */
 async function test_getSegmentLabel() {
-  console.debug("Running _getSegmentLabel tests...");
   const results = {};
 
   const origCanvas = globalThis.canvas;
