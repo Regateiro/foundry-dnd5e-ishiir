@@ -78,9 +78,10 @@ export default class Token5e extends Token {
   _drawHPBar(number, bar, data) {
 
     // Extract health data
-    let {value, max, temp, tempmax} = this.document.actor.system.attributes.hp;
+    let {value, max, temp, tempmax, armor} = this.document.actor.system.attributes.hp;
     temp = Number(temp || 0);
     tempmax = Number(tempmax || 0);
+    armor = Number(armor || 0);
 
     // Differentiate between effective maximum and displayed maximum
     const effectiveMax = Math.max(0, max + tempmax);
@@ -123,7 +124,13 @@ export default class Token5e extends Token {
 
     // Temporary hit points
     if ( temp > 0 ) {
-      bar.beginFill(c.temp, 1.0).lineStyle(0).drawRoundedRect(bs1, bs1, (tempPct*w)-(2*bs1), h-(2*bs1), 1);
+      bar.beginFill(c.temp, 1.0).lineStyle(1, blk, 1.0).drawRoundedRect(bs1, bs1, (tempPct*w)-(2*bs1), h-(2*bs1), 1);
+    }
+
+    // Armor Mastery hit points — drawn last on top with transparency so THP shows through
+    if ( armor > 0 ) {
+      const ahpPct = Math.clamped(armor, 0, displayMax) / displayMax;
+      bar.beginFill(c.armor, 1).lineStyle(1, blk, 1.0).drawRoundedRect(bs1, bs1, (ahpPct*w)-(2*bs1), h-(2*bs1), 1);
     }
 
     // Set position

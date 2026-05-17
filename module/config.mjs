@@ -481,7 +481,8 @@ DND5E.tokenHPColors = {
   healing: 0x00FF00,
   temp: 0x66CCFF,
   tempmax: 0x440066,
-  negmax: 0x550000
+  negmax: 0x550000,
+  armor: 0xA0A0A0
 };
 
 /* -------------------------------------------- */
