@@ -20,25 +20,29 @@ export default class Token5e extends Token {
 
   /**
    * Custom sorting function for token draw order.
-   * Order: smaller tokens on top > player tokens on top of NPC > more recently moved on top.
+   * Order: higher elevation on top > smaller tokens on top > player characters above NPCs > more recently moved on top.
    * @param {Token} tokenA  First token
    * @param {Token} tokenB  Second token
    * @returns {number} Sorting order
    */
   static sortTokens(tokenA, tokenB) {
-    // First sort by size: smaller tokens should appear on top (higher z-index)
+    // First sort by elevation: higher elevation appears on top
+    const elevDiff = (tokenA.document.elevation || 0) - (tokenB.document.elevation || 0);
+    if (elevDiff !== 0) return elevDiff;
+
+    // Second sort by size: smaller tokens should appear on top (higher z-index)
     const tokenASize = tokenA.document.width * tokenA.document.height;
     const tokenBSize = tokenB.document.width * tokenB.document.height;
     if ( tokenASize !== tokenBSize ) return tokenBSize - tokenASize;
 
-    // Second sort by actor type: player characters ("character") appear above NPCs
+    // Third sort by actor type: player characters ("character") appear above NPCs
     const tokenAType = tokenA.document.actor?.type;
     const tokenBType = tokenB.document.actor?.type;
     const tokenAisPlayer = tokenAType === "character";
     const tokenBisPlayer = tokenBType === "character";
     if ( tokenAisPlayer !== tokenBisPlayer ) return tokenAisPlayer - tokenBisPlayer;
 
-    // Third sort by last moved time: more recently moved tokens appear on top
+    // Fourth sort by last moved time: more recently moved tokens appear on top
     // Uses static Map to track movement timestamps; defaults to 0 if not yet moved
     const tokenAMovedTime = Token5e.lastMoved.get(tokenA.document.id) ?? 0;
     const tokenBMovedTime = Token5e.lastMoved.get(tokenB.document.id) ?? 0;

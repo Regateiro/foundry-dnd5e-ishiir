@@ -369,8 +369,26 @@ Hooks.on("canvasReady", gameCanvas => {
     return originalSort.call(PrimaryCanvasGroup, a, b);
   };
 
-  // Force an immediate sort of all tokens on the canvas so they appear in the
-  // correct z-order when the scene first loads.
+  // --- TokenLayer objects container sorting override ---
+  //
+  // Purpose: Override _sortObjectsByElevation (set by core when elevationSorting is true)
+  // so that same-elevation tokens are sorted by our custom z-order rules instead of
+  // the generic document.sort field.
+  //
+  // Sort order (Token5e.sortTokens): higher elevation on top > smaller tokens > player chars > recently moved.
+  const tokensObjects = globalThis.canvas.tokens?.objects;
+  if (tokensObjects) {
+    tokensObjects.sortChildren = function() {
+      this.children.sort((a, b) => dnd5e.canvas.Token5e.sortTokens(a, b));
+      this.sortDirty = false;
+    }.bind(tokensObjects);
+
+    // Trigger initial sort so existing tokens are in correct z-order on scene load.
+    tokensObjects.sortChildren();
+  }
+
+
+  // Force an immediate sort of all objects on the canvas primary group.
   globalThis.canvas.primary.sortChildren();
 
   // --- Ruler elevation support ---
