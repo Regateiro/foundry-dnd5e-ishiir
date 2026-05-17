@@ -88,9 +88,20 @@
                         data-attribution-caption="DND5E.ArmorClass" data-tooltip-direction="DOWN">
                         <span>{{system.attributes.ac.value}}</span>
                     </div>
+                    {{#if actor.flags.dnd5e.armorMastery}}
+                    <footer class="attribute-footer">
+                        <span class="sep"> Mastery: </span>
+                        <input name="system.attributes.hp.armor" type="text" value="{{hp.armor}}" class="armor" placeholder="0"
+                            data-tooltip="DND5E.ArmorMasteryCurrent" data-dtype="Number" style="width: 0%">
+                        <span class="sep"> / </span>
+                        <input name="system.attributes.hp.armormax" type="text" value="{{hp.armormax}}" class="armor" placeholder="0"
+                            data-tooltip="DND5E.ArmorMasteryMax" data-dtype="Number" style="width: 0%">
+                    </footer>
+                    {{else}}
                     <footer class="attribute-footer">
                         <span>{{labels.armorType}}</span>
                     </footer>
+                    {{/if}}
                 </li>
 
                 <li class="attribute movement">
