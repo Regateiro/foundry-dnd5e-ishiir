@@ -113,15 +113,15 @@ Tokens are sorted by a **multi-criteria** z-order: higher elevation on top → s
 ```
 Canvas scene load / token update
     │
-    ├─ dnd5e.mjs canvasReady hook ───────────────────────────────┐
-    │   PrimaryCanvasGroup._sortObjects = (a, b) =>              │  [Foundry: CanvasGroup]
-    │     if both are TokenMesh → Token5e.sortTokens(a, b)       │
-    │     else → originalSort.call(PrimaryCanvasGroup, a, b)      │
-    │                                                             │
-    ├─ canvas.tokens.objects.sortChildren = fn =>                 │  [Foundry: Container]
-    │   children.sort(Token5e.sortTokens(a, b))                  │
-    │   (overrides _sortObjectsByElevation set by core)           │
-    └─────────────────────────────────────────────────────────────┘
+    ├─ dnd5e.mjs canvasReady hook ────────────────────────────┐
+    │   PrimaryCanvasGroup._sortObjects = (a, b) =>           │  [Foundry: CanvasGroup]
+    │     if both are TokenMesh → Token5e.sortTokens(a, b)    │
+    │     else → originalSort.call(PrimaryCanvasGroup, a, b)  │
+    │                                                         │
+    ├─ canvas.tokens.objects.sortChildren = fn =>             │  [Foundry: Container]
+    │   children.sort(Token5e.sortTokens(a, b))               │
+    │   (overrides _sortObjectsByElevation set by core)       │
+    └─────────────────────────────────────────────────────────┘
 
 Token5e.sortTokens(tokenA, tokenB):
   1. elevDiff = tokenA.elevation - tokenB.elevation      → if ≠0: return elevDiff
@@ -149,39 +149,39 @@ Adds vertical movement tracking to Foundry's ruler tool: mouse wheel / arrow key
 
 ### Data Flow
 ```
-┌─ User measures on canvas ────────────────────────────────────────┐
-│                                                                   │
-│  Mouse Wheel Handler (canvasReady)                                │
-│    ↓                                                              │
-│  getActiveRuler() → ruler._state === 2 ? ruler : null            │
-│    ↓                                                              │
-│  adjustElevation(ruler, delta)                                    │
-│    ├─ Ensure ruler.segmentElevations[] exists (pad to segment count)
-│    ├─ segmentElevations[lastIndex] += delta                       │
-│    ├─ ruler._computeDistance(true) → recalculates 3D distances   │
-│    ├─ ruler.ruler.clear(); ruler._drawMeasuredPath()             │
-│    └─ game.user.broadcastActivity({ ruler: ruler.toJSON() })     │
-│                                                                    │
-│  Arrow Key Binding (registerElevationKeybindings)                 │
-│    ↑/↓ → adjustElevation(ruler, ±1) [same flow as above]         │
-│                                                                   │
-│  Ruler._computeDistance patched in setupRulerElevation():         │
-│    for each segment i:                                            │
-│      ground = grid.measureDistances(segments)[i]                  │
-│      elevationFeet = |segmentElevations[i]| × grid.distance       │
-│      adjusted = compute3DDistance(ground, elevationFeet, rule)   │
-│      segment.distance = adjusted                                  │
-│      segment.cumDistance += adjusted                              │
-│      segment.cumDeltaElevation += elevation * gridDistance        │
-│      segment.text = _getSegmentLabel(segment) → "25ft > 75ft | ↑20ft"
-│                                                                   │
-│  Ruler.moveToken() patched:                                       │
-│    cumulativeElev = sum(segmentElevations[])                      │
-│    elevationDeltaFeet = cumulativeElev × gridDistance             │
-│    rounded = ceil(elevationDelta / 5) * 5                         │
-│    await token.document.update({ elevation: +rounded })           │
-│                                                                   │
-└───────────────────────────────────────────────────────────────────┘
+┌─ User measures on canvas ─────────────────────────────────────────────┐
+│                                                                       │
+│  Mouse Wheel Handler (canvasReady)                                    │
+│    ↓                                                                  │
+│  getActiveRuler() → ruler._state === 2 ? ruler : null                 │
+│    ↓                                                                  │
+│  adjustElevation(ruler, delta)                                        │
+│    ├─ Ensure ruler.segmentElevations[] exists (pad to segment count)  |
+│    ├─ segmentElevations[lastIndex] += delta                           │
+│    ├─ ruler._computeDistance(true) → recalculates 3D distances        │
+│    ├─ ruler.ruler.clear(); ruler._drawMeasuredPath()                  │
+│    └─ game.user.broadcastActivity({ ruler: ruler.toJSON() })          │
+│                                                                       │
+│  Arrow Key Binding (registerElevationKeybindings)                     │
+│    ↑/↓ → adjustElevation(ruler, ±1) [same flow as above]              │
+│                                                                       │
+│  Ruler._computeDistance patched in setupRulerElevation():             │
+│    for each segment i:                                                │
+│      ground = grid.measureDistances(segments)[i]                      │
+│      elevationFeet = |segmentElevations[i]| × grid.distance           │
+│      adjusted = compute3DDistance(ground, elevationFeet, rule)        │
+│      segment.distance = adjusted                                      │
+│      segment.cumDistance += adjusted                                  │
+│      segment.cumDeltaElevation += elevation * gridDistance            │
+│      segment.text = _getSegmentLabel(segment) → "25ft > 75ft | ↑20ft" |
+│                                                                       │
+│  Ruler.moveToken() patched:                                           │
+│    cumulativeElev = sum(segmentElevations[])                          │
+│    elevationDeltaFeet = cumulativeElev × gridDistance                 │
+│    rounded = ceil(elevationDelta / 5) * 5                             │
+│    await token.document.update({ elevation: +rounded })               │
+│                                                                       │
+└───────────────────────────────────────────────────────────────────────┘
 
 Remote Sync Flow:
   Sender → broadcastActivity({ ruler: ruler.toJSON() })
