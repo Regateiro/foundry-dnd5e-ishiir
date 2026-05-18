@@ -7,7 +7,30 @@ import DetailsFields from "./templates/details.mjs";
 import TraitsFields from "./templates/traits.mjs";
 
 /**
- * System data definition for NPCs.
+ * NPCData — System data definition for NPCs with Sieg5e custom additions.
+ *
+ * Custom fields added beyond standard dnd5e:
+ *
+ * - resources.legres (Fortitude Points / Legendary Resistances):
+ *   PURPOSE: A pool of "fortitude points" that high-CR NPCs can spend to absorb damage
+ *   when they drop below a configurable HP threshold percentage.
+ *
+ *   WHY NEEDED: In D&D 5e, powerful monsters have legendary resistances. Sieg5e extends this
+ *   concept by using the same resource as an automatic damage buffer (fortitude points). When
+ *   a monster's HP drops below the fortitudePointsThreshold setting (default 50%), further
+ *   damage is deducted from legres.value instead of hp.value until legres reaches zero.
+ *   This simulates a creature "pushing through" mortal wounds using its legendary resilience,
+ *   but only if it has reserves remaining. Once depleted, the monster takes normal HP damage
+ *   and can die like any other creature.
+ *
+ * - attributes.hp.armor / armormax (Armor Mastery Hit Points):
+ *   PURPOSE: A separate pool of hit points representing defensive techniques and natural armor
+ *   toughness beyond the creature's base health.
+ *
+ *   WHY NEEDED: Standard dnd5e only has a single HP value per actor. Sieg5e adds Armor Mastery
+ *   HP (armor/armormax) as an extra layer that absorbs damage BEFORE regular HP. This gives NPCs
+ *   additional durability without increasing their CR's base hit point calculation, allowing fine-
+ *   tuned tuning of monster toughness independently from challenge rating.
  *
  * @property {object} attributes
  * @property {object} attributes.ac

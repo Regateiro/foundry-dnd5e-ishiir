@@ -22,6 +22,13 @@
 /**
  * Get the active ruler if it is currently measuring. Returns null otherwise.
  * Encapsulates the "get ruler + check state" pattern shared by wheel and key bindings.
+ *
+ * PURPOSE: Centralized guard that all elevation-adjustment entry points (wheel handler,
+ * arrow keys) use to verify a ruler measurement session is active before applying changes.
+ *
+ * WHY NEEDED: Without this guard, elevation adjustments could be applied when no ruler
+ * is measuring, causing errors or silent failures. The _state === 2 check ensures we only
+ * act during the "measuring" phase (not after placement or cancelation).
  * @returns {Ruler | null}
  */
 export function getActiveRuler() {
@@ -32,6 +39,13 @@ export function getActiveRuler() {
 
 /**
  * Get the grid distance in feet, falling back to 5.
+ *
+ * PURPOSE: Provide a safe accessor for the scene's grid cell size (e.g., 5ft).
+ *
+ * WHY NEEDED: Different scenes may use different grid sizes (10ft, 15ft hex grids). Elevation
+ * calculations must scale proportionally — an elevation of "2 units" means 10ft on a 5ft grid
+ * but 20ft on a 10ft grid. This function centralizes that lookup so all elevation math uses the
+ * correct value.
  * @returns {number}
  */
 export function getGridDistance() {
@@ -41,6 +55,14 @@ export function getGridDistance() {
 /**
  * Adjust the current (last) ruler segment's elevation and re-render.
  * This function is called by both the mouse wheel handler and arrow key keybindings.
+ *
+ * PURPOSE: Mutate a single segment's elevation value in-place, then trigger a full
+ * re-derender of the ruler path with updated 3D distance labels.
+ *
+ * WHY NEEDED: Segments need per-segment elevation tracking because a measurement path may
+ * go up for one segment and down for another. A flat "ruler elevation" attribute wouldn't
+ * capture this nuance. This function ensures only the tip of the ruler (where the user is
+ * actively measuring) gets adjusted, while previous segments retain their values.
  *
  * @param {Ruler} ruler The active ruler instance
  * @param {number} delta Elevation change in grid units (+1 = ascend, -1 = descend)
@@ -73,6 +95,20 @@ export function adjustElevation(ruler, delta) {
 
 /**
  * Installs patches on the Ruler class to add elevation support.
+ *
+ * PURPOSE: Apply 7 distinct patches to Foundry's core `Ruler` prototype to enable:
+ *   (1) Serialization of segmentElevations via toJSON()
+ *   (2) Deserialization via update() for remote client sync
+ *   (3) Custom labels showing distance + elevation per segment
+ *   (4) Reset on ruler clear()
+ *   (5) Elevation slot cleanup on waypoint removal
+ *   (6) Token elevation application after moveToken()
+ *   (7) Mouse wheel event handler for real-time adjustment
+ *
+ * WHY NEEDED: Foundry's Ruler class has no built-in concept of vertical movement. Without these
+ * patches, the ruler can only measure ground distance on a flat plane. D&D 5e combat is inherently
+ * three-dimensional — creatures fly, climb walls, fight in dungeons with multiple floors — so the
+ * ruler must compute 3D hypotenuse distances and track where tokens end up vertically.
  *
  * @param {object} gameCanvas The canvas instance
  */
@@ -272,6 +308,15 @@ export function installRulerPatches(gameCanvas) {
  * These PRIORITY keybindings override the core pan keybindings when the ruler
  * is in MEASURING state, allowing arrow keys to adjust elevation instead of panning.
  *
+ * PURPOSE: Register two keybinding pairs (ArrowUp/Down and Numpad8/2) that:
+ *   - When a ruler is measuring: consume the event and adjust segment elevation (+1 or -1)
+ *   - When no ruler is measuring: pass through to core pan behavior
+ *
+ * WHY NEEDED: Without PRIORITY precedence, Foundry's default arrow-key-to-pan binding fires first,
+ * making it impossible to use arrow keys for elevation. The dual key support (Arrow + Numpad) gives
+ * users flexibility regardless of keyboard layout. Ctrl+ modifier allows creating new segments while
+ * simultaneously adjusting their elevation.
+ *
  * @param {string} namespace The module namespace (e.g., "dnd5e")
  */
 export function registerElevationKeybindings(namespace) {
@@ -325,6 +370,17 @@ export function registerElevationKeybindings(namespace) {
 /**
  * Compute 3D distance from ground distance, elevation (in feet), and diagonal rule.
  *
+ * PURPOSE: Convert a 2D ground measurement into a 3D hypotenuse by combining horizontal
+ * displacement with vertical displacement using the scene's configured diagonal movement rule.
+ *
+ * WHY NEEDED: D&D 5e has three different rules for computing diagonal movement distance:
+ *   - PHB ("555"): max(ground, elevation) — counts only the larger dimension
+ *   - DMG ("5105"): ground + (elevation/10 × 5) — extra cost per 10ft of vertical
+ *   - Euclidean: sqrt(ground² + elevation²) — true geometric distance
+ *
+ * Without this function, ruler measurements would ignore the third dimension entirely,
+ * giving incorrect movement costs for flying creatures or multi-floor dungeon navigation.
+ *
  * @param {number} groundDistance Ground distance in feet
  * @param {number} elevationFeet Elevation in feet
  * @param {string} diagonalRule Diagonal movement rule (EUCL, 5105, or 555)
@@ -341,6 +397,16 @@ export function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
 /**
  * Setup ruler elevation on canvas ready.
  * Called from the canvasReady hook in dnd5e.mjs.
+ *
+ * PURPOSE: Perform a two-phase setup:
+ *   Phase 1 — Replace grid.measureDistances with Sieg5e's diagonal-aware version and set
+ *             the scene's diagonalRule (forced to "555" for hex grids).
+ *   Phase 2 — Call installRulerPatches() which applies all Ruler prototype patches.
+ *
+ * WHY NEEDED: Without replacing measureDistances, Foundry would use its default grid distance
+ * calculation which ignores the PHB/DMG diagonal rules entirely. The diagonalRule override for
+ * hex grids is required because 5e standard movement on hex maps always uses "5-5-5" (every
+ * hex costs exactly one move), regardless of the user's preferred diagonal rule.
  *
  * @param {Canvas} gameCanvas The Foundry canvas instance
  * @param {object} canvasModule The canvas module containing measureDistances

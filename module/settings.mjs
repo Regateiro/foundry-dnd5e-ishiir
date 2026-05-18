@@ -81,6 +81,17 @@ export default function registerSystemSettings() {
     type: Boolean
   });
 
+  /**
+   * Fortitude Points Threshold Setting.
+   *
+   * PURPOSE: Configure the HP percentage at which damage starts draining from a creature's
+   * legendary resistance pool ("fortitude points") instead of regular hit points.
+   *
+   * WHY NEEDED: This is Sieg5e-specific. It allows GMs to tune how "graceful" high-CR monsters are.
+   * At 50% default, once a monster drops below half HP it begins spending legendary resistances
+   * as an automatic buffer before taking real damage. A lower threshold (e.g., 25%) makes the
+   * creature more durable; higher (75%) makes FP activate sooner for dramatic effect.
+   */
   game.settings.register("dnd5e", "fortitudePointsThreshold", {
     name: "Fortitude Points HP Percentage Trigger",
     hint: "Use Fortitude Points instead of HP at the given HP percentage.",

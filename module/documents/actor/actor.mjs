@@ -917,7 +917,27 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /* -------------------------------------------- */
 
   /**
-   * Apply a certain amount of damage or healing to the health pool for Actor
+   * Apply a certain amount of damage or healing to the health pool for Actor.
+   *
+   * PURPOSE: Implement multi-layer damage absorption with Sieg5e's custom "Fortitude Points"
+   * system. Damage is deducted in this order:
+   *   1. Armor Mastery HP (gray layer) — first line of defense
+   *   2. Temporary HP (blue layer)
+   *   3. Regular HP down to a configurable threshold percentage
+   *   4. Fortitude Points (legendary resistance pool) below the threshold
+   *
+   * WHY NEEDED: Standard Foundry/dnd5e deducts damage sequentially from tempHP → regular HP.
+   * Sieg5e adds two custom layers:
+   *   - Armor Mastery HP for NPCs gives them an extra shield of hit points beyond their base pool,
+   *     representing defensive techniques and natural armor toughness. This is a separate value
+   *     (system.attributes.hp.armor) that absorbs damage first before touching the creature's actual health.
+   *   - Fortitude Points let high-CR NPCs survive past their HP threshold by spending legendary
+   *     resistances as an automatic buffer. The threshold percentage is configurable via game settings
+   *     (default: 50%). When a monster drops below this % of max HP, further damage drains FP instead.
+   *     This simulates the D&D 5e mechanic where powerful creatures can "push through" mortal wounds,
+   *     but only if they have legendary resistances remaining. Once FP is exhausted, normal HP depletion
+   *     resumes and the creature can die.
+   *
    * @param {number} amount       An amount of damage (positive) or healing (negative) to sustain
    * @param {number} multiplier   A multiplier which allows for resistance, vulnerability, or healing
    * @returns {Promise<Actor5e>}  A Promise which resolves once the damage has been applied

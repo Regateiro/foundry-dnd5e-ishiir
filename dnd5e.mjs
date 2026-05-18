@@ -337,16 +337,31 @@ Hooks.once("ready", function() {
  * Also sets up ruler elevation support.
  */
 Hooks.on("canvasReady", gameCanvas => {
-  // --- Custom token sorting ---
-  //
-  // Purpose: Override _sortObjects to use our custom token z-ordering.
-  //
-  // How it works:
-  // 1. Intercept every sort comparison between two objects on the canvas
-  // 2. If both are TokenMesh instances with valid documents, apply custom sort
-  // 3. Otherwise, fall back to the original Foundry sorting behavior
-  //
-  // Sort order: smaller tokens on top > player tokens on top of NPC > more recently moved on top
+/**
+ * CanvasReady Hook: Custom Token Sorting Override
+ *
+ * PURPOSE: Replace Foundry's default canvas object sorting with Sieg5e's multi-criteria token
+ * ordering system. Two separate overrides are installed:
+ *
+ *   (1) PrimaryCanvasGroup._sortObjects — intercepts every pairwise comparison during z-ordering.
+ *       If both objects are TokenMesh instances, delegates to Token5e.sortTokens(). Otherwise,
+ *       falls back to Foundry's original sort for non-token objects (walls, tokens not yet loaded).
+ *
+ *   (2) TokenLayer.objects.sortChildren — replaces the container-level sort so that when
+ *       elevation sorting is enabled by core, same-elevation siblings are still ordered by our
+ *       custom rules rather than Foundry's generic document.sort field.
+ *
+ * WHY NEEDED: Standard Foundry sorts tokens purely by a single numeric field (usually elevation or
+ * creation time). D&D 5e combat requires nuanced visual layering:
+ *   - Higher-elevation tokens must appear ON TOP of lower ones (taller creatures block shorter)
+ *   - Smaller tokens need to be visible — tiny creatures would be invisible under large ogre tokens
+ *     without overriding by size
+ *   - Player characters should visually override NPCs so the GM can easily track who's whose
+ *   - Recently moved tokens briefly go on top for visual feedback during movement
+ *
+ * Without this, combat becomes confusing: a Tiny Fey hiding behind a Huge Dragon would be completely
+ * occluded, and players wouldn't know which of their characters are currently active.
+ */
   const PrimaryCanvasGroup = globalThis.canvas.primary.constructor;
 
   // Store the original Foundry sort function so we can fall back to it for non-tokens.
@@ -391,10 +406,21 @@ Hooks.on("canvasReady", gameCanvas => {
   // Force an immediate sort of all objects on the canvas primary group.
   globalThis.canvas.primary.sortChildren();
 
-  // --- Ruler elevation support ---
-  //
-  // Purpose: Set up 3D distance calculations, mouse wheel, and keybinding support
-  // for ruler elevation measurement.
+  /**
+   * CanvasReady Hook: Ruler Elevation Support Setup
+   *
+   * PURPOSE: Initialize the full 3D ruler system by calling setupRulerElevation(), which:
+   *   (1) Replaces grid.measureDistances with Sieg5e's diagonal-rule-aware implementation
+   *   (2) Sets the scene's diagonalRule from game settings (forced to "555" for hex grids)
+   *   (3) Patches Ruler._computeDistance to calculate 3D hypotenuse distances per segment
+   *   (4) Installs all Ruler prototype patches (toJSON, update, clear, moveToken, etc.)
+   *
+   * WHY NEEDED: Foundry's ruler can only measure flat ground distance. Without this setup,
+   * flying creatures climbing buildings or fighting in multi-level dungeons would get incorrect
+   * movement costs. The 3D elevation system lets GMs draw measurement paths that include
+   * vertical components, with the ruler computing proper hypotenuse distances using the scene's
+   * diagonal rule (PHB/5-5-5, DMG/5/10/5, or Euclidean).
+   */
   const { setupRulerElevation } = canvas;
   setupRulerElevation(gameCanvas, canvas);
 });

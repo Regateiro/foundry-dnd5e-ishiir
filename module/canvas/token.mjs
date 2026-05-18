@@ -1,5 +1,20 @@
 /**
  * Extend the base Token class to implement additional system-specific logic.
+ *
+ * Custom functionality:
+ * - sortTokens(): Custom z-ordering for token draw order on the canvas. Standard Foundry uses
+ *   a simple document ID or elevation-based sort. Sieg5e needs multi-criteria sorting because
+ *   D&D 5e has meaningful vertical positioning: tokens at higher elevations should appear on top,
+ *   smaller tokens (tiny creatures) need to be visible above larger ones, player characters must
+ *   visually override NPCs for clarity during combat.
+ *
+ * - _drawHPBar(): Custom HP bar rendering that includes multiple layers — base HP color gradient,
+ *   temporary HP (blue overlay), tempmax adjustments (purple for increases, dark red for decreases),
+ *   and armor mastery hit points (gray). Standard Foundry only renders a single HP bar.
+ *
+ * - _onUpdate(): Tracks token movement timestamps in Token5e.lastMoved Map to support the
+ *   "most recently moved on top" sort criterion. Without this, tokens that are moved would not
+ *   visually update their z-order until the canvas re-renders via a separate trigger.
  */
 
 export default class Token5e extends Token {
