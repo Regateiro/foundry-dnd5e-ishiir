@@ -2314,8 +2314,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
         updates.push({_id: item.id, "system.uses.value": uses.max});
       }
 
-      // Items that fully recharge on a long rest should also have their recharge status reset
-      if ( recoverLongRestUses && item.system.recharge?.value ) {
+      // Items with recharge values get their charged flag reset on both short and long rests
+      if ( (recoverShortRestUses || recoverLongRestUses) && item.system.recharge?.value ) {
         updates.push({_id: item.id, "system.recharge.charged": true});
       }
 
