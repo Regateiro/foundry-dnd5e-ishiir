@@ -2027,7 +2027,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     }
 
     // Recover armor mastery temporary hit points if enabled
-    if ( this.flags.dnd5e.armorMastery && recoverArmorMastery ) {
+    if ( this.flags?.dnd5e?.armorMastery && recoverArmorMastery ) {
       armorMasteryRecovered = Number(this.system.attributes.hp.armormax) - Number(this.system.attributes.hp.armor);
       armorMasteryUpdates["system.attributes.hp.armor"] = this.system.attributes.hp.armormax;
     }
@@ -2130,7 +2130,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     // Determine the armor mastery message to display
     const armorMessage = armorType === "unarmored" ? "DND5E.RestArmorMasteryCostUnarmoured" : "DND5E.RestArmorMasteryCostNormal";
     // If armor mastery temp HP are being recovered, display it in the message
-    if ( this.flags.dnd5e.armorMastery && dam > 0 ) {
+    if ( this.flags?.dnd5e?.armorMastery && dam > 0 ) {
       // The multiplier is 10 for heavy armor, 1 for light armor, and 5 for medium armor / unarmored
       const multiplier = ( armorType === "heavy" ? 10 : ( armorType === "light" ? 1 : 5 ));
       // Append the armor mastery recovery message
