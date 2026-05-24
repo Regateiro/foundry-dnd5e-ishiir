@@ -24,6 +24,13 @@ regenerate-packs-ishiir:
 	@python3 generate_ishiir_packs.py ishiir
 	@.venv/bin/npm run build:clean
 	@.venv/bin/npm run build
+	@echo "Resetting pack JSON files whose only diff is _stats.modifiedTime..."
+	@git ls-files -- 'packs/src/**/*.json' | grep -v '^sieg5e-' | while read f; do \
+	  if git diff --quiet "$${f}" 2>/dev/null; then continue; fi; \
+	  changes=$$(git diff "$$f" | grep '^[-+]' | sed 's/^[-+]//' | grep -v '"modifiedTime"' | grep -v '^-- a/' | grep -v '++ b/' || true); \
+	  if [ -z "$$changes" ]; then git checkout -- "$$f" && echo "  reset: $$f"; fi; \
+	done
+	@echo "Done."
 
 lint-py:
 	@isort --profile black ./generate_ishiir_packs.py

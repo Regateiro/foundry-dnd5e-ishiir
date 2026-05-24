@@ -1,0 +1,85 @@
+{
+  "name": "Vermin Form",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can shape-shift into a Medium swarm of Tiny pests, such as cockroaches, maggots, or rats. While you're in this form, you retain your general shape, personality, memories, and the ability to speak; any equipment you're wearing or carrying doesn't transform with you, but you can continue using that equipment while in this form. Your game statistics remain the same, apart from the following changes:</p><ul><li><strong>Condition Immunities.</strong> You have Immunity to the Grappled, Paralyzed, Prone, and Restrained conditions.</li><li><strong>Movement.</strong> You can enter and occupy another creature's space and vice versa. Additionally, you have a Climb Speed equal to your Speed, and you can climb difficult surfaces—including along ceilings—without needing to make an ability check.</li><li><strong>Empowered Plague.</strong> While you are in this form, the areas of effect for your <i>Plague Blessing</i> and your <i>Virulent Burst</i> double. Additionally, the maximum number of Exhaustion levels your <i>Plague Blessing</i> can inflict increases to 6 and the damage of your <i>Virulent Burst</i> increases by your Cleric level.</li></ul><p>You revert to your true form after 10 minutes, if you choose to end the transformation (no action required), if you have the Incapacitated condition, or if you die.</p><p>Once you use this feature, you can't use it again until you finish a Long Rest unless you expend a level 5+ spell slot (no action required) to restore your use of it.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "se94e741f2dd9372",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1779654527365,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!se94e741f2dd9372",
+  "flags": {},
+  "sort": 0
+}

@@ -1,17 +1,17 @@
 {
-  "name": "Extended Spell",
+  "name": "Back to Back",
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point per duration step to increase its duration by 1 step, to a maximum duration of 24 hours. If the affected spell requires Concentration, you have Advantage on any Saving Throw you make to maintain that Concentration.</p>",
+      "value": "<p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and optionally switch places with that creature, provided you spend at least 5 feet of movement, the creature is willing, and isn't Incapacitated. This movement doesn't provoke Opportunity Attacks.</p><p>Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled. This effect ends early if either of you become Incapaciated or you are more than 5 feet away from each other. The AC bonus from this maneuver does not stack with that from Evasive Footwork.</p>",
       "chat": "",
       "unidentified": ""
     },
     "source": "",
     "activation": {
-      "type": "special",
+      "type": "",
       "cost": null,
-      "condition": "when you cast a spell that has a duration of 1 minute or longer"
+      "condition": ""
     },
     "duration": {
       "value": "",
@@ -42,7 +42,7 @@
       "amount": null
     },
     "ability": null,
-    "actionType": "util",
+    "actionType": null,
     "attackBonus": "",
     "chatFlavor": "",
     "critical": {
@@ -69,8 +69,8 @@
       "charged": null
     }
   },
-  "img": "icons/magic/time/hourglass-yellow-green.webp",
-  "_id": "s17960420065f341",
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfab61836a614428",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
@@ -79,7 +79,7 @@
     "modifiedTime": 1779654527365,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s17960420065f341",
+  "_key": "!items!sfab61836a614428",
   "flags": {},
   "sort": 0
 }

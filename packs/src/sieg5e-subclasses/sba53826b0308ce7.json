@@ -1,0 +1,58 @@
+{
+  "_id": "sba53826b0308ce7",
+  "name": "Cleric: Pestilence Domain",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "cleric",
+    "identifier": "cleric-pestilence-domain",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbdf48172cc22d1f",
+            "Compendium.dnd5e.sieg5e-classfeatures.se4dda7c1d6b8431"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sec6d5f1837dad1b"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 17,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.se94e741f2dd9372"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/acid/dissolve-vomit-green-brown.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1779654527365,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sba53826b0308ce7",
+  "flags": {},
+  "sort": 0
+}

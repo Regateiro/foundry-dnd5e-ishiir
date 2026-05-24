@@ -1,17 +1,17 @@
 {
-  "name": "Extended Spell",
+  "name": "Virulent Burst",
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you cast a spell that has a duration of 1 minute or longer, you can spend 1 sorcery point per duration step to increase its duration by 1 step, to a maximum duration of 24 hours. If the affected spell requires Concentration, you have Advantage on any Saving Throw you make to maintain that Concentration.</p>",
+      "value": "<p>When an enemy within 60 feet of you is reduced to 0 Hit Points, you can take a Reaction to cause plague to burst from that creature, spreading pestilence in a 10-foot Emanation originating from the enemy; if the enemy had at least 1 Exhaustion level, the size of the Emanation increases to 20 feet.</p><p>Each creature of your choice in the Emanation makes a Constitution Saving Throw against your spell save DC. On a failed save, a target suffers one of the following effects:</p><ul><li><strong>Putrid Shock.</strong> The target has the Incapacitated condition until the end of its next turn. While Incapacitated, the target's Speed is 0.</li><li><strong>Toxic Infection.</strong> The target takes 3d6 Necrotic or Poison damage (your choice).</li></ul><p>You can use this feature a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses when you finish a Long Rest.</p>",
       "chat": "",
       "unidentified": ""
     },
     "source": "",
     "activation": {
-      "type": "special",
+      "type": "",
       "cost": null,
-      "condition": "when you cast a spell that has a duration of 1 minute or longer"
+      "condition": ""
     },
     "duration": {
       "value": "",
@@ -42,7 +42,7 @@
       "amount": null
     },
     "ability": null,
-    "actionType": "util",
+    "actionType": null,
     "attackBonus": "",
     "chatFlavor": "",
     "critical": {
@@ -69,8 +69,8 @@
       "charged": null
     }
   },
-  "img": "icons/magic/time/hourglass-yellow-green.webp",
-  "_id": "s17960420065f341",
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sec6d5f1837dad1b",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
@@ -79,7 +79,7 @@
     "modifiedTime": 1779654527365,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
-  "_key": "!items!s17960420065f341",
+  "_key": "!items!sec6d5f1837dad1b",
   "flags": {},
   "sort": 0
 }
