@@ -68,13 +68,14 @@ export function getGridDistance() {
  * @param {number} delta Elevation change in grid units (+1 = ascend, -1 = descend)
  */
 export function adjustElevation(ruler, delta) {
-  // Ensure array exists and matches segments length
+  // Ensure array exists and matches segments length (truncate or pad as needed)
   const targetLen = ruler.segments.length;
-  if (!ruler.segmentElevations || ruler.segmentElevations.length < targetLen) {
-    ruler.segmentElevations ??= [];
-    while (ruler.segmentElevations.length < targetLen) {
-      ruler.segmentElevations.push(0);
-    }
+  ruler.segmentElevations ??= [];
+  if (ruler.segmentElevations.length > targetLen) {
+    ruler.segmentElevations.length = targetLen;
+  }
+  while (ruler.segmentElevations.length < targetLen) {
+    ruler.segmentElevations.push(0);
   }
 
   // Adjust only the current (last) segment - that's where the user is measuring
@@ -180,8 +181,8 @@ export function installRulerPatches(gameCanvas) {
     const segmentCumDistance = Math.ceil((segment?.cumDistance || 0) * 10) / 10;
     const segmentCumDeltaElevation = segment?.cumDeltaElevation || 0;
 
-    // Get the unit string from the scene grid scale
-    const units = canvas.scene.grid.units;
+    // Get the unit string from the scene grid scale, fall back to localized default
+    const units = canvas.scene.grid.units || "ft";
 
     // Format segment label.
     let segmentLabel = `${segmentDistance}${units}`;
@@ -389,7 +390,10 @@ export function registerElevationKeybindings(namespace) {
 export function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
   switch (diagonalRule) {
     case "EUCL": return Math.hypot(groundDistance, elevationFeet);
-    case "5105": return groundDistance + ((elevationFeet / 10) * 5);
+    case "5105": {
+      const steps = Math.floor(elevationFeet / 5);
+      return groundDistance + (Math.floor(steps / 2) * 15) + ((steps % 2) * 5);
+    }
     default: return Math.max(groundDistance, elevationFeet);
   }
 }
