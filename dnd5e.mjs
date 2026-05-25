@@ -397,13 +397,9 @@ Hooks.on("canvasReady", gameCanvas => {
       this.children.sort((a, b) => dnd5e.canvas.Token5e.sortTokens(a, b));
       this.sortDirty = false;
     }.bind(tokensObjects);
-
-    // Trigger initial sort so existing tokens are in correct z-order on scene load.
-    tokensObjects.sortChildren();
   }
 
-
-  // Force an immediate sort of all objects on the canvas primary group.
+  // Force an immediate sort of all objects on the canvas (cascades through children).
   globalThis.canvas.primary.sortChildren();
 
   /**
