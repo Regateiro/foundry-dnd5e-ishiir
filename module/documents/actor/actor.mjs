@@ -946,7 +946,10 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     amount = Math.floor(parseInt(amount) * multiplier);
     const hp = this.system.attributes.hp;
     const fp = this.system.resources.legres;
-    if ( !hp ) return this; // Group actors don't have HP at the moment
+    if ( !hp ) {
+      console.warn("applyDamage called on actor without HP data", this.id, this.name);
+      return this;
+    }
 
     // Variable to track the amount of damage to still be applied
     let damage = amount;
