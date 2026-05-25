@@ -93,8 +93,8 @@ export default function registerSystemSettings() {
    * creature more durable; higher (75%) makes FP activate sooner for dramatic effect.
    */
   game.settings.register("dnd5e", "fortitudePointsThreshold", {
-    name: "Fortitude Points HP Percentage Trigger",
-    hint: "Use Fortitude Points instead of HP at the given HP percentage.",
+    name: "DND5E.FortitudePointsThreshold",
+    hint: "DND5E.FortitudePointsThresholdHint",
     scope: "world",
     config: true,
     default: 50,

@@ -615,6 +615,7 @@
 "DND5E.FortitudePoints": "Fortitude Points",
 "DND5E.FortitudePointsCurrent": "Current Fortitude Points",
 "DND5E.FortitudePointsThreshold": "Fortitude Points Threshold",
+"DND5E.FortitudePointsThresholdHint": "Use Fortitude Points instead of HP when current HP drops below this percentage of maximum.",
 "DND5E.Loot.Art": "Art Object",
 "DND5E.Loot.Gear": "Adventuring Gear",
 "DND5E.Loot.Gem": "Gemstone",
