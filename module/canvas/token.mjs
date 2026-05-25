@@ -69,15 +69,11 @@ export default class Token5e extends Token {
   /** @inheritdoc */
   _onUpdate(...args) {
     const [data] = args;
-    // Track when this token was last moved by updating the static Map.
-    // The timestamp is used by sortTokens() to sort by "most recently moved on top".
-    if ( data.hasOwnProperty("x") || data.hasOwnProperty("y") ) {
+    const positionChanged = Object.hasOwn(data, "x") || Object.hasOwn(data, "y");
+    if ( positionChanged ) {
       Token5e.lastMoved.set(this.document.id, Date.now());
+      globalThis.canvas.primary.sortChildren();
     }
-    // Force immediate re-sort of all tokens on the canvas so the moved token's new
-    // position in the z-order is reflected right away (e.g., for same-size, same-type tokens).
-    globalThis.canvas.primary.sortChildren();
-    // Perform the rest of the updates
     return super._onUpdate(...args);
   }
 
@@ -93,10 +89,11 @@ export default class Token5e extends Token {
   _drawHPBar(number, bar, data) {
 
     // Extract health data
-    let {value, max, temp, tempmax, armor} = this.document.actor.system.attributes.hp;
-    temp = Number(temp || 0);
-    tempmax = Number(tempmax || 0);
-    armor = Number(armor || 0);
+    const hp = this.document.actor?.system?.attributes?.hp || {};
+    let {value=0, max=0, temp=0, tempmax=0, armor=0} = hp;
+    temp = Number(temp);
+    tempmax = Number(tempmax);
+    armor = Number(armor);
 
     // Differentiate between effective maximum and displayed maximum
     const effectiveMax = Math.max(0, max + tempmax);
