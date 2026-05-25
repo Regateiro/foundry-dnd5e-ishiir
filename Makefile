@@ -31,6 +31,7 @@ regenerate-packs-ishiir:
 	  if [ -z "$$changes" ]; then git checkout -- "$$f" && echo "  reset: $$f"; fi; \
 	done
 	@echo "Done."
+	@rm sieg5e-*.json
 
 lint-py:
 	@isort --profile black ./generate_ishiir_packs.py
