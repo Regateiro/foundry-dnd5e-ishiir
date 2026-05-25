@@ -73,6 +73,7 @@ export default class Token5e extends Token {
     if ( positionChanged ) {
       Token5e.lastMoved.set(this.document.id, Date.now());
       globalThis.canvas.primary.sortChildren();
+      globalThis.canvas.tokens?.objects?.sortChildren();
     }
     return super._onUpdate(...args);
   }
