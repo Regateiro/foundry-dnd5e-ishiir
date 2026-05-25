@@ -2,6 +2,21 @@
 export function measureDistances(segments, options={}) {
   if ( !options.gridSpaces ) return BaseGrid.prototype.measureDistances.call(this, segments, options);
 
+  // Hex grids need native hex distance — the square-grid diagonal formula produces wrong results
+  const hexTypes = [
+    CONST.GRID_TYPES.HEXODDR, CONST.GRID_TYPES.HEXEVENR,
+    CONST.GRID_TYPES.HEXODDQ, CONST.GRID_TYPES.HEXEVENQ
+  ];
+  if ( hexTypes.includes(canvas.grid.type) ) {
+    return segments.map(s => {
+      // Use this.grid.measureDistance (HexagonalGrid) which returns hex count
+      // in grid units, NOT this.measureDistance (GridLayer) which returns feet.
+      const hexCount = this.grid.measureDistance(s.ray.A, s.ray.B);
+      const snapped = Math.round(hexCount);
+      return snapped * canvas.dimensions.distance;
+    });
+  }
+
   // Track the total number of diagonals
   let nDiagonal = 0;
   const rule = this.parent.diagonalRule;
@@ -24,15 +39,15 @@ export function measureDistances(segments, options={}) {
     if (rule === "5105") {
       let nd10 = Math.floor(nDiagonal / 2) - Math.floor((nDiagonal - nd) / 2);
       let spaces = (nd10 * 2) + (nd - nd10) + ns;
-      return spaces * canvas.dimensions.distance;
+      return spaces * d.distance;
     }
 
     // Euclidean Measurement
     else if (rule === "EUCL") {
-      return Math.hypot(nx, ny) * canvas.scene.grid.distance;
+      return Math.hypot(nx, ny) * d.distance;
     }
 
     // Standard PHB Movement
-    else return (ns + nd) * canvas.scene.grid.distance;
+    else return (ns + nd) * d.distance;
   });
 }
