@@ -3,6 +3,7 @@
 // elevation adjustment, 3D distance computation, and patch behavior.
 
 import * as RulerElevation from "../../module/canvas/ruler-elevation.mjs";
+import { getGridDistance as _getGridDistance } from "../../module/canvas/grid.mjs";
 import { runE2ETests } from "./e2e.mjs";
 import { withMocks, createMockRuler as _createMockRuler, expectNullRuler, expectNonNullRuler } from "../mocks.mjs";
 
@@ -294,33 +295,33 @@ async function test_negativeZeroGridDistance(m) {
   // Test: Negative grid distance → returns the negative value (shouldn't happen in practice)
   globalThis.canvas = { scene: createMockScene(-5) };
   globalThis.canvas.scene.grid.distance = -5;
-  results.negative_dist_01 = assert(true, RulerElevation.getGridDistance?.() === -5);
+  results.negative_dist_01 = assert(true, _getGridDistance?.() === -5);
 
   // Test: Zero grid distance → returns fallback 5 (0 is falsy)
   globalThis.canvas = { scene: { grid: { distance: 0, units: "ft" } } };
-  results.zero_dist_01 = assert(5, RulerElevation.getGridDistance?.());
+  results.zero_dist_01 = assert(5, _getGridDistance?.());
 
   // Test: Grid with no distance property → falls back to 5
   globalThis.canvas = { scene: createMockScene(5) };
   delete globalThis.canvas.scene.grid.distance;
-  results.no_distance_prop_fallback = assert(5, RulerElevation.getGridDistance?.());
+  results.no_distance_prop_fallback = assert(5, _getGridDistance?.());
 
   // Test: Scene has no grid → falls back to 5
   globalThis.canvas = { scene: null };
-  results.no_grid_fallback = assert(5, RulerElevation.getGridDistance?.());
+  results.no_grid_fallback = assert(5, _getGridDistance?.());
 
   // Test: Gridless mode (no scene) → falls back to 5
   globalThis.canvas = {};
-  results.gridless_full_fallback = assert(5, RulerElevation.getGridDistance?.());
+  results.gridless_full_fallback = assert(5, _getGridDistance?.());
 
   // Test: Very large grid distance returned correctly
   globalThis.canvas = { scene: createMockScene(9999) };
-  results.large_grid_dist_01 = assert(9999, RulerElevation.getGridDistance?.());
+  results.large_grid_dist_01 = assert(9999, _getGridDistance?.());
 
   // Test: Grid with null distance → falls back to 5 (null is falsy)
   globalThis.canvas = { scene: createMockScene(5) };
   delete globalThis.canvas.scene.grid.distance;
-  results.null_distance_fallback = assert(5, RulerElevation.getGridDistance?.());
+  results.null_distance_fallback = assert(5, _getGridDistance?.());
 
   return results;
 }
@@ -588,10 +589,10 @@ async function test_getGridDistance() {
   // Note: getGridDistance is not exported, test via adjustElevation indirectly
   // This test validates the fallback when grid.distance is undefined
   globalThis.canvas = { scene: { grid: {} } };
-  results.fallback_01 = assert(5, RulerElevation.getGridDistance?.());
+  results.fallback_01 = assert(5, _getGridDistance?.());
 
   globalThis.canvas = { scene: createMockScene(15) };
-  results.custom_01 = assert(15, RulerElevation.getGridDistance?.());
+  results.custom_01 = assert(15, _getGridDistance?.());
 
   globalThis.canvas = origCanvas;
   return results;
@@ -615,13 +616,13 @@ async function test_gridTypes() {
   for (const dist of gridDistances) {
     const key = `grid_${dist}`;
     globalThis.canvas = { scene: { grid: { distance: dist, units: "ft" } } };
-    const actual = RulerElevation.getGridDistance?.();
+    const actual = _getGridDistance?.();
     results[key] = assert(dist, actual);
   }
 
   // Test gridless mode (no grid)
   globalThis.canvas = { scene: { grid: null } };
-  results.gridless_01 = assert(5, RulerElevation.getGridDistance?.());
+  results.gridless_01 = assert(5, _getGridDistance?.());
 
   // Test hex grid types force 555 rule
   // Hex types: HEXODDR=3, HEXEVENR=4, HEXODDQ=5, HEXEVENQ=6
