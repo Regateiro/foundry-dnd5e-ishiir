@@ -17,6 +17,7 @@
  * For local use: segmentElevations is modified directly by the wheel handler.
  * For remote sync: segmentElevations is included in toJSON() and restored in update().
  */
+import { getGridDistance } from "./grid.mjs";
 
 
 /**
@@ -35,21 +36,6 @@ export function getActiveRuler() {
   const ruler = canvas?.controls?.ruler;
   if (!ruler || !ruler.segments?.length || ruler._state !== 2) return null;
   return ruler;
-}
-
-/**
- * Get the grid distance in feet, falling back to 5.
- *
- * PURPOSE: Provide a safe accessor for the scene's grid cell size (e.g., 5ft).
- *
- * WHY NEEDED: Different scenes may use different grid sizes (10ft, 15ft hex grids). Elevation
- * calculations must scale proportionally — an elevation of "2 units" means 10ft on a 5ft grid
- * but 20ft on a 10ft grid. This function centralizes that lookup so all elevation math uses the
- * correct value.
- * @returns {number}
- */
-export function getGridDistance() {
-  return canvas.scene?.grid?.distance || 5;
 }
 
 /**

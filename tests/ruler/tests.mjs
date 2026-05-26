@@ -550,11 +550,11 @@ async function test_compute3DDistance() {
   const eucl_03_actual = RulerElevation.compute3DDistance(30, 40, "EUCL");
   results.eucl_03 = assertApprox(50, eucl_03_actual, 0.001);
 
-  // Test 5105 rule
+  // Test 5105 rule — discrete step model: every pair of 5ft elevation steps costs 5+10=15 extra
   results["5105_01"] = assert(10, RulerElevation.compute3DDistance(10, 0, "5105"));
-  results["5105_02"] = assert(15, RulerElevation.compute3DDistance(10, 10, "5105"));
-  results["5105_03"] = assert(30, RulerElevation.compute3DDistance(20, 20, "5105"));
-  results["5105_04"] = assert(5, RulerElevation.compute3DDistance(0, 10, "5105"));
+  results["5105_02"] = assert(25, RulerElevation.compute3DDistance(10, 10, "5105"));
+  results["5105_03"] = assert(50, RulerElevation.compute3DDistance(20, 20, "5105"));
+  results["5105_04"] = assert(15, RulerElevation.compute3DDistance(0, 10, "5105"));
 
   // Test 555 rule (max)
   results["555_01"] = assert(10, RulerElevation.compute3DDistance(10, 0, "555"));
@@ -565,7 +565,7 @@ async function test_compute3DDistance() {
   // Test default (falls through to 555)
   results.default_01 = assert(15, RulerElevation.compute3DDistance(15, 15, "INVALID"));
   results.negElev_01 = assert(10, RulerElevation.compute3DDistance(10, -10, "555"));
-  results.negElev_03 = assert(15, RulerElevation.compute3DDistance(10, 10, "5105"));
+  results.negElev_03 = assert(25, RulerElevation.compute3DDistance(10, 10, "5105"));
 
   return results;
 }
@@ -1382,23 +1382,23 @@ async function test_adjustElevationChain5105() {
   results.chain_initial_cum = assert(5, ruler.segments[0].cumDistance);
   results.chain_initial_delta = assert(0, ruler.segments[0].cumDeltaElevation);
 
-  // Test 02: adjustElevation(+1) → segmentElevations[0] = 1 → 5105: 5 + (5/10)*5 = 7.5
+  // Test 02: adjustElevation(+1) → segmentElevations[0] = 1 → 5105: 5 + 5 = 10
   RulerElevation.adjustElevation(ruler, 1);
   results.chain_adj_segElev = assert(1, ruler.segmentElevations[0]);
-  results.chain_adj_ground = assertApprox(7.5, ruler.segments[0].cumDistance, 0.001);
+  results.chain_adj_ground = assertApprox(10, ruler.segments[0].cumDistance, 0.001);
   results.chain_adj_cumDelta = assert(5, ruler.segments[0].cumDeltaElevation);
 
-  // Test 03: adjustElevation(+2) → segmentElevations[0] = 3 → 5105: 5 + (15/10)*5 = 12.5
+  // Test 03: adjustElevation(+2) → segmentElevations[0] = 3 → 5105: 5 + 5 + 10 + 5 = 25
   RulerElevation.adjustElevation(ruler, 2);
   results.chain_adj2_segElev = assert(3, ruler.segmentElevations[0]);
-  results.chain_adj2_dist = assertApprox(12.5, ruler.segments[0].distance, 0.001);
-  results.chain_adj2_cum = assertApprox(12.5, ruler.segments[0].cumDistance, 0.001);
+  results.chain_adj2_dist = assertApprox(25, ruler.segments[0].distance, 0.001);
+  results.chain_adj2_cum = assertApprox(25, ruler.segments[0].cumDistance, 0.001);
   results.chain_adj2_cumDelta = assert(15, ruler.segments[0].cumDeltaElevation);
 
-  // Test 04: adjustElevation(-1) → segmentElevations[0] = 2 → 5105: 5 + (10/10)*5 = 10.0
+  // Test 04: adjustElevation(-1) → segmentElevations[0] = 2 → 5105: 5 + 5 + 10 = 20
   RulerElevation.adjustElevation(ruler, -1);
   results.chain_desc_segElev = assert(2, ruler.segmentElevations[0]);
-  results.chain_desc_dist = assertApprox(10.0, ruler.segments[0].distance, 0.001);
+  results.chain_desc_dist = assertApprox(20, ruler.segments[0].distance, 0.001);
   results.chain_desc_cumDelta = assert(10, ruler.segments[0].cumDeltaElevation);
 
   // Restore
