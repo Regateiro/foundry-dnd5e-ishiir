@@ -47,6 +47,11 @@ This is a fork of the official [`foundryvtt/dnd5e`](https://github.com/foundryvt
 - During rests, allows recovery of Armor Mastery temporary hit points
 - Added rest dialog options to toggle Armor Mastery recovery
 
+#### Group Check
+- GM-initiated group skill checks with automatic roll capture
+- Live tally window with inline result editing
+- Averaged result posted to chat on completion
+
 #### Masterworked Items
 - Added `masterworked` property to physical items
 - Toggle button on character sheet to mark items as masterworked

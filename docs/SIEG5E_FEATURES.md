@@ -167,7 +167,30 @@ masterworked: new foundry.data.fields.BooleanField({initial: false, label: "DND5
 
 ---
 
-## 6. Custom Compendium Packs
+## 6. Group Check
+
+**File:** `module/canvas/group-check.mjs`, `module/applications/group-check.mjs`
+
+### Description
+Real-time group skill check system. GM starts a check, rolls are auto-captured, averaged result posted to chat.
+
+### Implementation
+- `GroupCheckManager` - Core logic (start, capture, end, cancel, socket handler)
+- `GroupCheckApplication` - Singleton tally window (singleton via `#instance`)
+- Canvas button pushed into `"token"` control group's tools array
+- Socket transport via `game.socket.emit("system.dnd5e")` with start/result/end operations
+- State persisted in world setting `dnd5e.activeGroupCheck`
+- Roll capture via existing `dnd5e.rollSkill` hook — first roll per actor only
+
+### Key Behaviors
+- Cancel clears state without chat card; End Check posts averaged result
+- X button close does NOT end check — canvas button reopens tally
+- Zero participants → warning notification, no empty chat card
+- State restored on reload for all clients (before GM guard)
+
+---
+
+## 7. Custom Compendium Packs
 
 **Location:** JSON source files in repo root
 
@@ -184,7 +207,7 @@ masterworked: new foundry.data.fields.BooleanField({initial: false, label: "DND5
 
 ---
 
-## 7. Upstream Changes Merged
+## 8. Upstream Changes Merged
 
 ### Removed Content
 - Chain shirt removed from SRD items
@@ -218,3 +241,13 @@ masterworked: new foundry.data.fields.BooleanField({initial: false, label: "DND5
 - Verify toggle appears on character sheet
 - Verify visual distinction for masterworked items
 - Verify property persists on items
+
+### Group Check
+- Test full flow: start → players roll → end → chat card appears with floored average
+- Verify first-roll-only: second roll for same actor is ignored
+- Verify ownership guard: player cannot submit another player's roll
+- Verify Canvas Cancel clears state without chat card, End Check posts card
+- Verify X button does NOT end check — canvas button reopens tally
+- Verify zero-participant guard: End with 0 rolls shows warning notification
+- Verify state recovery: player refreshes mid-check, rolls → captured
+- Verify inline editing: DM edits a result, value persists on refresh

@@ -523,6 +523,56 @@ CONFIG.Actor.trackableAttributes = { character, npc, vehicle, group }[actorType]
 | `dnd5e.mjs` — `_configureTrackableAttributes()` | Builds per-type trackable attributes for token resource bars and combat tracker display |
 
 
+## 12. Group Check
+
+### Overview
+Real-time group skill check system. GM initiates a skill check, players roll normally, first roll per actor is auto-captured, and the GM ends the check to post an averaged result to chat. No player-side UI changes.
+
+### Data Flow
+```
+GM clicks canvas button → opens window → selects skill → Start Check
+  ├─ Persist world setting: dnd5e.activeGroupCheck
+  ├─ Socket emit: { operation: "start", checkId, skill, ability }
+  ├─ Hooks.callAll("dnd5e.groupCheckStart", activeCheck)
+  └─ Tally window opens (Waiting state)
+
+Players receive socket → store activeCheck locally
+Player rolls normally → dnd5e.rollSkill(actor, roll, skillId) fires
+  ├─ Player → socket emit { operation: "result", actorId, actorName, total }
+  └─ GM (NPC roll) → submitResult() directly
+
+GM tally updates live. GM clicks End Check:
+  ├─ average = Math.floor(sum / count)
+  ├─ ChatMessage.create() with rendered result-card.hbs
+  ├─ Clear world setting, socket emit "end"
+  └─ activeCheck = null
+
+Cancel: same flow, no chat card.
+```
+
+### Key Files
+| File | Role |
+|------|------|
+| `module/canvas/group-check.mjs` | GroupCheckManager — start, submitResult, updateResult, end, cancel, socket handler, roll hook |
+| `module/applications/group-check.mjs` | GroupCheckApplication — singleton tally window UI |
+| `templates/group-check/application.hbs` | Tally window template (skill select, live table, waiting, End/Cancel) |
+| `templates/group-check/result-card.hbs` | Chat card template (average headline, breakdown table, metadata) |
+| `lang/en.json` | 13 `DND5E.GroupCheck*` localization keys |
+| `module/settings.mjs` | Registers `activeGroupCheck` world setting |
+| `module/canvas/_module.mjs` | Re-exports GroupCheckManager |
+| `module/applications/_module.mjs` | Re-exports GroupCheckApplication |
+| `dnd5e.mjs` | Wiring: imports, init hook (socket listener), ready hook (state restore), top-level hooks (canvas button, roll capture) |
+
+### Key Behaviors
+- **First-roll-only**: `submitResult()` checks `activeCheck.results[actorId]` — subsequent rolls for same actor are ignored
+- **Ownership guard**: `actor.testUserPermission(game.user, "OWNER")` prevents submitting others' rolls
+- **Zero-participant guard**: `end()` with 0 entries returns early with warning, no empty chat card
+- **State recovery**: `ready` hook restores from world setting for ALL clients (before GM guard)
+- **X button preserve**: Closing tally via X does NOT end the check — canvas button reopens it
+- **Singleton window**: `GroupCheckApplication.#instance` prevents duplicate tally windows
+- **Canvas button**: Pushed into existing `"token"` control group (avoids layer conflict)
+
+
 ## Foundry Core Reference
 The system extends Foundry VTT's core classes (e.g., `Token`, `Actor`, `Item`). Refer to `docs/foundry.js` and `docs/commons.js` for the base implementation. **Do not import from or modify these files** — use them only for understanding the inherited behavior and API.
 
