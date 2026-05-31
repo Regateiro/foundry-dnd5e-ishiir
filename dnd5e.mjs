@@ -22,6 +22,8 @@ import * as enrichers from "./module/enrichers.mjs";
 import * as migrations from "./module/migration.mjs";
 import * as utils from "./module/utils.mjs";
 import {ModuleArt} from "./module/module-art.mjs";
+import {GroupCheckManager} from "./module/canvas/group-check.mjs";
+import GroupCheckApplication from "./module/applications/group-check.mjs";
 
 /* -------------------------------------------- */
 /*  Define Module Structure                     */
@@ -133,6 +135,9 @@ Hooks.once("init", function() {
   canvas.registerElevationKeybindings("dnd5e");
 
   enrichers.registerCustomEnrichers();
+
+  // Register group check socket listener
+  game.socket.on("system.dnd5e", GroupCheckManager._onSocketMessage);
 });
 
 /**
@@ -313,6 +318,12 @@ Hooks.once("ready", function() {
   });
 
   // Determine whether a system migration is required and feasible
+  // Restore active group check state (all clients — non-GM may have disconnected mid-check)
+  const savedCheck = game.settings.get("dnd5e", "activeGroupCheck");
+  if ( savedCheck ) {
+    GroupCheckManager.restoreFromSetting(savedCheck);
+  }
+
   if ( !game.user.isGM ) return;
   const cv = game.settings.get("dnd5e", "systemMigrationVersion") || game.world.flags.dnd5e?.version;
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
@@ -431,6 +442,26 @@ Hooks.on("getChatLogEntryContext", documents.chat.addChatMessageContextOptions);
 Hooks.on("renderChatLog", (app, html, data) => documents.Item5e.chatListeners(html));
 Hooks.on("renderChatPopout", (app, html, data) => documents.Item5e.chatListeners(html));
 Hooks.on("getActorDirectoryEntryContext", documents.Actor5e.addDirectoryContextOptions);
+
+// Group check roll capture
+Hooks.on("dnd5e.rollSkill", GroupCheckManager._onRollSkill);
+
+// Canvas control button
+Hooks.on("getSceneControlButtons", controls => {
+  const tokenControls = controls.find(c => c.name === "token");
+  if ( !tokenControls ) return;
+  tokenControls.tools.push({
+    name: "groupcheck",
+    title: game.i18n.localize("DND5E.GroupCheck"),
+    icon: "fas fa-users",
+    button: true,
+    onClick: () => {
+      const app = GroupCheckApplication.getInstance();
+      if ( app.rendered ) app.close();
+      else app.render(true);
+    }
+  });
+});
 
 /* -------------------------------------------- */
 /*  Bundled Module Exports                      */

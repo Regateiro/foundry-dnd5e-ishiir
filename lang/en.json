@@ -1454,5 +1454,19 @@
 "Sieg5e.RulerElevationUp": "Adjust Elevation Up",
 "Sieg5e.RulerElevationUpHint": "Increase ruler segment elevation while measuring",
 "Sieg5e.RulerElevationDown": "Adjust Elevation Down",
-"Sieg5e.RulerElevationDownHint": "Decrease ruler segment elevation while measuring"
+"Sieg5e.RulerElevationDownHint": "Decrease ruler segment elevation while measuring",
+
+"DND5E.GroupCheck": "Group Check",
+"DND5E.GroupCheckStart": "Start Check",
+"DND5E.GroupCheckEnd": "End Check",
+"DND5E.GroupCheckCancel": "Cancel",
+"DND5E.GroupCheckPrompt": "Select a skill for the group check",
+"DND5E.GroupCheckResult": "Group Check Results",
+"DND5E.GroupCheckActor": "Actor",
+"DND5E.GroupCheckRoll": "Roll",
+"DND5E.GroupCheckAverage": "Average",
+"DND5E.GroupCheckTotal": "Total",
+"DND5E.GroupCheckParticipants": "Participants",
+"DND5E.GroupCheckWaiting": "Waiting for participants...",
+"DND5E.GroupCheckNoParticipants": "No participants have rolled yet."
 }

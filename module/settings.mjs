@@ -284,5 +284,13 @@ export default function registerSystemSettings() {
     }
   });
 
+  // Group Check active state
+  game.settings.register("dnd5e", "activeGroupCheck", {
+    scope: "world",
+    config: false,
+    type: Object,
+    default: null
+  });
+
   //
 }
