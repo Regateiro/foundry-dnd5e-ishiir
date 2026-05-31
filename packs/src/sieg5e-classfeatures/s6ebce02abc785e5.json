@@ -1,0 +1,85 @@
+{
+  "name": "Titan Form",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you use Wild Shape, you can expend two of its uses instead of one to adopt a Titan Form, choosing from the Behemoth, Leviathan, and Insectoid stat blocks.</p><p>While you are in Titan Form, your Strength and Constitution score are equal to your Wisdom score. Your current and maximum hit points change accordingly. You do not lose any hit points gained in this manner when you revert to your original form unless they exceed your maximum. Otherwise, all the usual rules for Wildshape apply to your Titan Form as well.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s6ebce02abc785e5",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780260598677,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s6ebce02abc785e5",
+  "flags": {},
+  "sort": 0
+}

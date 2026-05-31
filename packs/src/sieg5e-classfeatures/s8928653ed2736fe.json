@@ -1,0 +1,85 @@
+{
+  "name": "Circle Spells",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you reach a Druid level specified in the Circle of the Titan Spells table, you thereafter always have the listed spells prepared.</p><p>In addition, you can cast the spells from this feature while you're in your Titan Form.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Circle of the Titan Spells</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Prepared Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Cure Wounds, Longstrider, Thaumaturgy</td></tr><tr><td>5th</td><td>Fear</td></tr><tr><td>7th</td><td>Stoneskin</td></tr><tr><td>9th</td><td>Destructive Wave</td></tr></tbody></table></div>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/water/projectile-ice-teardrop.webp",
+  "_id": "s8928653ed2736fe",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780260598677,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s8928653ed2736fe",
+  "flags": {},
+  "sort": 0
+}

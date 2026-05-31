@@ -1,0 +1,69 @@
+{
+  "_id": "sd363e25da8d49af",
+  "name": "Druid: Circle of the Titan",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "druid",
+    "identifier": "druid-circle-of-the-titan",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8928653ed2736fe",
+            "Compendium.dnd5e.sieg5e-classfeatures.s6ebce02abc785e5"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s8c4131d66649236"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sbdd2e4da1987ff3"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sfff887fab34fb45"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780260598677,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd363e25da8d49af",
+  "flags": {},
+  "sort": 0
+}

@@ -1,0 +1,85 @@
+{
+  "name": "Primal Havoc",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>The unbridled power of nature surges within you, granting you the following benefits.</p><p><strong>Improved Titan Form.</strong> You can choose to become Huge when assuming your Titan Form. Each Titan Form also gains an additional benefit, as noted in its respective stat block.</p><p><strong>Above It All.</strong> While you are Huge or larger in your Titan Form, you ignore 3.</p><p><strong>Primal Infusion.</strong> When you assume your Titan Form, you can expend a level 3+ spell slot to increase your Strength and Constitution by 2 for the duration.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sbdd2e4da1987ff3",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780260598677,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sbdd2e4da1987ff3",
+  "flags": {},
+  "sort": 0
+}

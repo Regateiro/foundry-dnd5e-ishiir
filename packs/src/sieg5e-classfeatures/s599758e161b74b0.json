@@ -1,0 +1,85 @@
+{
+  "name": "Emperor's Scourge",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>As a Bonus Action, you can light a melee weapon you are holding aflame. The fire is harmless to you and remains for 10 minutes or until you are no longer holding the weapon. Alternatively, you can end the effect yourself (no Action required).</p><p>While aflame, the weapon sheds bright light in a 20 feet radius and dim light in a 20 feet radius beyond that. When you deal damage with a weapon under this effect, you can choose to deal fire damage instead of the weapon's normal damage type.</p><p>Once on your turn, you can also deal an additional 1d6 fire damage with this weapon. If you have Advantage on the attack roll or an ally of yours that is not Incapacitated is within 5 feet of the target, this fire damage increases by a number of d6s equal to half your Proficiency (rounded down).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s599758e161b74b0",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780260598677,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s599758e161b74b0",
+  "flags": {},
+  "sort": 0
+}

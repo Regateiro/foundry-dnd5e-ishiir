@@ -1,0 +1,85 @@
+{
+  "name": "Walking Catastrophe",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your transformation embodies the vast size and terror of nature's titans. You gain the following benefits.</p><p><strong>Supreme Titan Form.</strong> You can choose to become Gargantuan when assuming your Titan Form. Each Titan Form also gains an additional benefit, as noted in its respective stat block.</p><p><strong>Greater Primal Infusion.</strong> When you use Primal Infusion, you can expend a level 5+ spell slot instead to increase your Strength and Constitution by 4 for the duration of your Titan Form.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sfff887fab34fb45",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780260598677,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sfff887fab34fb45",
+  "flags": {},
+  "sort": 0
+}
