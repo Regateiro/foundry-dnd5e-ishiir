@@ -423,7 +423,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {number} checkBonus      Global ability check bonus.
    * @protected
    */
-  _prepareTools(bonusData, globalBonuses, checkBonus) {
+  _prepareTools(bonusData, _globalBonuses, checkBonus) {
     if ( this.type === "vehicle" ) return;
     const flags = this.flags.dnd5e ?? {};
     for ( const tool of Object.values(this.system.tools) ) {
@@ -726,7 +726,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {SpellcastingDescription} spellcasting  Spellcasting descriptive object.
    * @param {number} count                          Number of classes with this type of spellcasting.
    */
-  static computeLeveledProgression(progression, actor, cls, spellcasting, count) {
+  static computeLeveledProgression(progression, _actor, _cls, spellcasting, count) {
     const prog = CONFIG.DND5E.spellcastingTypes.leveled.progression[spellcasting.progression];
     if ( !prog ) return;
     const rounding = prog.roundUp ? Math.ceil : Math.floor;
@@ -747,7 +747,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {SpellcastingDescription} spellcasting  Spellcasting descriptive object.
    * @param {number} count                          Number of classes with this type of spellcasting.
    */
-  static computePactProgression(progression, actor, cls, spellcasting, count) {
+  static computePactProgression(progression, _actor, _cls, spellcasting, _count) {
     progression.pact += spellcasting.levels;
   }
 
@@ -786,7 +786,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {Actor5e} actor        Actor for whom the data is being prepared.
    * @param {object} progression   Spellcasting progression data.
    */
-  static prepareLeveledSlots(spells, actor, progression) {
+  static prepareLeveledSlots(spells, _actor, progression) {
     const levels = Math.clamped(progression.slot, 0, CONFIG.DND5E.maxLevel);
     const slots = CONFIG.DND5E.SPELL_SLOT_TABLE[Math.min(levels, CONFIG.DND5E.SPELL_SLOT_TABLE.length) - 1] ?? [];
     for ( const level of Array.fromRange(Object.keys(CONFIG.DND5E.spellLevels).length - 1, 1) ) {
@@ -912,7 +912,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
         return this;
       }
       value = Number(value);
-      // Only reject non-finite values — negative numbers are valid healing inputs
+      // Reject only non-finite values — both positive and negative deltas are valid (damage vs healing)
       if ( !Number.isFinite(value) ) {
         ui.notifications.warn(game.i18n.format("DND5E.InvalidHPValue", { value }));
         return this;
@@ -2797,7 +2797,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @param {jQuery} html         The sidebar HTML
    * @param {Array} entryOptions  The default array of context menu options
    */
-  static addDirectoryContextOptions(html, entryOptions) {
+  static addDirectoryContextOptions(_html, entryOptions) {
     entryOptions.push({
       name: "DND5E.PolymorphRestoreTransformation",
       icon: '<i class="fas fa-backward"></i>',
