@@ -42,8 +42,8 @@ export default function registerSystemSettings() {
       EUCL: "SETTINGS.5eDiagEuclidean"
     },
     onChange: rule => {
-      canvas.grid.diagonalRule = rule;
-      if (canvas.grid.parent) canvas.grid.parent.diagonalRule = rule;
+      if ( canvas.grid ) canvas.grid.diagonalRule = rule;
+      if ( canvas.grid?.parent ) canvas.grid.parent.diagonalRule = rule;
     }
   });
 

@@ -1,17 +1,17 @@
 <h3>{{localize "DND5E.GroupCheckResult"}} &mdash; {{skillLabel}}</h3>
 <div style="text-align:center;font-size:2.5em;font-weight:bold;margin:8px 0 12px 0">{{average}}</div>
-<table>
+<table style="border-collapse:collapse">
     <thead>
       <tr>
-        <th>{{localize "DND5E.GroupCheckActor"}}</th>
-        <th style="text-align:right">{{localize "DND5E.GroupCheckRoll"}}</th>
+        <th style="text-align:center;padding:6px 8px;border:1px solid #7a7971">{{localize "DND5E.GroupCheckActor"}}</th>
+        <th style="text-align:center;padding:6px 8px;border:1px solid #7a7971">{{localize "DND5E.GroupCheckRoll"}}</th>
       </tr>
     </thead>
     <tbody>
     {{#each entries}}
       <tr>
-        <td>{{this.name}}</td>
-        <td style="text-align:right">{{this.total}}</td>
+        <td style="text-align:center;padding:4px 8px;border:1px solid #7a7971">{{this.name}}</td>
+        <td style="text-align:center;padding:4px 8px;border:1px solid #7a7971">{{this.total}}</td>
       </tr>
     {{/each}}
     </tbody>

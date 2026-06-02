@@ -1605,7 +1605,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     const roll = await new Roll(rollConfig.formula, rollConfig.data).roll({async: true});
 
     if ( rollConfig.chatMessage ) {
-      roll.toMessage({
+      await roll.toMessage({
         speaker: ChatMessage.getSpeaker({actor: this.actor}),
         flavor: `${this.name} - ${game.i18n.localize("DND5E.OtherFormula")}`,
         rollMode: game.settings.get("core", "rollMode"),
@@ -1661,7 +1661,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
 
     if ( rollConfig.chatMessage ) {
       const resultMessage = game.i18n.localize(`DND5E.ItemRecharge${success ? "Success" : "Failure"}`);
-      roll.toMessage({
+      await roll.toMessage({
         flavor: `${game.i18n.format("DND5E.ItemRechargeCheck", {name: this.name})} - ${resultMessage}`,
         speaker: ChatMessage.getSpeaker({actor: this.actor, token: this.actor.token})
       });
@@ -1678,7 +1678,7 @@ export default class Item5e extends SystemDocumentMixin(Item) {
     if ( Hooks.call("dnd5e.rollRecharge", this, roll) === false ) return roll;
 
     // Update the Item data
-    if ( success ) this.update({"system.recharge.charged": true});
+    if ( success ) await this.update({"system.recharge.charged": true});
 
     return roll;
   }

@@ -274,7 +274,7 @@ Hooks.once("i18nInit", () => utils.performPreLocalization(CONFIG.DND5E));
 /**
  * Once the entire VTT framework is initialized, check to see if we should perform a data migration
  */
-Hooks.once("ready", function() {
+Hooks.once("ready", async function() {
   if ( game.dnd5e.isV10 ) {
     // Configure validation strictness.
     _configureValidationStrictness();
@@ -285,9 +285,9 @@ Hooks.once("ready", function() {
 
     // If the user name is "TestRunner", import and run all tests.
     if ( game.user.name === "TestRunner" ) {
-      import("./tests/tests.mjs").then(tests => {
-        // Run all tests
-        tests.runAllTests().then(results => {
+      import("./tests/tests.mjs").then(async tests => {
+        try {
+          const results = await tests.runAllTests();
           // Collect all failures with expected/actual values
           const allFailures = [];
           for (const [moduleName, moduleResult] of Object.entries(results)) {
@@ -295,22 +295,36 @@ Hooks.once("ready", function() {
             allFailures.push(...failures);
           }
 
-          // Notify the user of the outcome
+          // Print per-suite results for visibility
+          for (const [moduleName, moduleResult] of Object.entries(results)) {
+            const failures = tests.collectFailures(moduleResult, moduleName);
+            if ( failures.length > 0 ) {
+              console.log(`\n📊 ${moduleName}: ${failures.length} failure(s)`);
+              console.log(tests.formatFailures(failures));
+            }
+          }
+
+          // Overall summary notification
           if ( allFailures.length === 0 ) {
             ui.notifications.info("All tests passed successfully!", {localize: true});
             console.log("\n✅ All tests passed!");
           } else {
             ui.notifications.error(`Test failures: ${allFailures.length} test(s) failed. Check the console for details.`, {localize: true});
-            console.log(`\n📊 Test Results: ${allFailures.length} failure(s)\n`);
-            console.log(tests.formatFailures(allFailures));
+            console.log(`\n📊 Total: ${allFailures.length} failure(s)`);
           }
-        });
+        } catch(err) {
+          ui.notifications.error(`Test runner error: ${err.message}`, { localize: true });
+          console.error("[BUG-FIXES] Test run failed:", err);
+        }
+      }).catch(err => {
+        ui.notifications.error(`Failed to load test suite: ${err.message}`, { localize: true });
+        console.error("[BUG-FIXES] Import error:", err);
       });
     }
   }
 
   // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
-  Hooks.on("hotbarDrop", (bar, data, slot) => {
+  Hooks.on("hotbarDrop", (_bar, data, slot) => {
     if ( ["Item", "ActiveEffect"].includes(data.type) ) {
       documents.macro.create5eMacro(data, slot);
       return false;
@@ -327,14 +341,15 @@ Hooks.once("ready", function() {
   if ( !game.user.isGM ) return;
   const cv = game.settings.get("dnd5e", "systemMigrationVersion") || game.world.flags.dnd5e?.version;
   const totalDocuments = game.actors.size + game.scenes.size + game.items.size;
-  if ( !cv && totalDocuments === 0 ) return game.settings.set("dnd5e", "systemMigrationVersion", game.system.version);
+  if ( !cv && totalDocuments === 0 ) return game.settings.set("dnd5e", "systemMigrationVersion", game.system.version)
+    .catch(err => console.error("Failed to persist migration version:", err));
   if ( cv && !isNewerVersion(game.system.flags.needsMigrationVersion, cv) ) return;
 
   // Perform the migration
   if ( cv && isNewerVersion(game.system.flags.compatibleMigrationVersion, cv) ) {
     ui.notifications.error("MIGRATION.5eVersionTooOldWarning", {localize: true, permanent: true});
   }
-  migrations.migrateWorld();
+  await migrations.migrateWorld();
 });
 
 /* -------------------------------------------- */
@@ -407,7 +422,7 @@ Hooks.on("canvasReady", gameCanvas => {
     tokensObjects.sortChildren = function() {
       this.children.sort((a, b) => dnd5e.canvas.Token5e.sortTokens(a, b));
       this.sortDirty = false;
-    }.bind(tokensObjects);
+    };
   }
 
   // Force an immediate sort of all objects on the canvas (cascades through children).
@@ -439,8 +454,8 @@ Hooks.on("canvasReady", gameCanvas => {
 Hooks.on("renderChatMessage", documents.chat.onRenderChatMessage);
 Hooks.on("getChatLogEntryContext", documents.chat.addChatMessageContextOptions);
 
-Hooks.on("renderChatLog", (app, html, data) => documents.Item5e.chatListeners(html));
-Hooks.on("renderChatPopout", (app, html, data) => documents.Item5e.chatListeners(html));
+Hooks.on("renderChatLog", (_app, html, _data) => documents.Item5e.chatListeners(html));
+Hooks.on("renderChatPopout", (_app, html, _data) => documents.Item5e.chatListeners(html));
 Hooks.on("getActorDirectoryEntryContext", documents.Actor5e.addDirectoryContextOptions);
 
 // Group check roll capture
@@ -455,6 +470,7 @@ Hooks.on("getSceneControlButtons", controls => {
     title: game.i18n.localize("DND5E.GroupCheck"),
     icon: "fas fa-users",
     button: true,
+    visible: game.user.isGM,
     onClick: () => {
       const app = GroupCheckApplication.getInstance();
       if ( app.rendered ) app.close();

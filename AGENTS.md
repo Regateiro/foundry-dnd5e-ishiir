@@ -104,6 +104,91 @@ Configured in `system.json` flags for development:
 
 This section documents all Sieg5e-specific features beyond standard Foundry VTT / dnd5e. Each entry includes purpose, data flow, and references to core classes in `docs/foundry.js`.
 
+## Accessing the Foundry Dev Server via `agent_browser`
+
+### Overview
+The local dev server runs as a Foundry VTT Electron app at **`http://localhost:30000`** (world: "development"). All browser automation uses the native `agent_browser` tool — do not run direct `agent-browser` bash commands unless explicitly asked.
+
+### Joining the Game Session
+
+#### Step 1 — Open the join page
+```bash
+# Fresh session (recommended for each new interaction)
+ing agent_browser open http://localhost:30000/join --session-mode fresh
+```
+
+#### Step 2 — Inspect the DOM structure
+```bash
+ing agent_browser snapshot -i
+```
+
+The join page (`/join`) has these key elements (ref numbers vary per session):
+| Element | Type | Label / Placeholder | Notes |
+|---------|------|---------------------|-------|
+| Role selector | combobox | — | Custom UI dropdown; select via `select @<ref> <RoleName>` or click the option directly |
+| Password field | textbox | "Password" | Required if user has a password set (see below) |
+| Join button | button | "Join Game Session" | Click after role is selected and password entered |
+
+#### Step 3 — Select role and join
+```bash
+# Check which roles are available (some may be disabled depending on server state)
+ing agent_browser snapshot -i
+
+# Select a selectable role from the combobox
+ing agent_browser select @<ref> TestRunner
+
+# Fill password if user has one configured (see "Available Roles" below)
+ing agent_browser fill @<password-ref> <password>
+
+# Click join
+ing agent_browser click @<join-btn-ref>
+```
+
+> **Note:** After clicking Join, Foundry authenticates and loads world data. This takes a few seconds while the page redirects from `/join` to `/game`. Do not check for navigation or take snapshots immediately — wait 3–5 seconds before verifying.
+
+#### Step 4 — Verify you're on the game page
+```bash
+ing agent_browser snapshot -i   # Should show canvas, chat input, hotbar, etc.
+ing agent_browser screenshot    # Visual confirmation of game state
+```
+
+After a successful join, the session origin changes to `http://localhost:30000/game`.
+
+### Reconnecting Without Full Join Flow
+If you already have an active Foundry session and just need to refresh (e.g., after hot-reload):
+```bash
+# Refresh current page without re-authenticating
+ing agent_browser navigate http://localhost:30000/game --session-mode auto
+```
+
+### Available Roles & Permissions
+Roles are configured in the world's `users.db` NEDB database (`~/.local/share/FoundryVTT/Data/worlds/development/data/users.db`).
+
+| Role | Foundry Role ID | Can Run Tests | Can Modify Actors/Items | Can Use GM Tools |
+|------|-----------------|---------------|------------------------|------------------|
+| **Gamemaster** | `GAMEMASTER` (4) | No | Yes | Full access |
+| **TestRunner** | `TRUSTED` (3) | Yes | Limited (test scope only) | No |
+| **Player1** | `PLAYER` (1) | No | No | No |
+| **Player2** | `PLAYER` (1) | No | No | No |
+
+> **Note:** All configured users have individual passwords set. When joining via `agent_browser`, you must enter the user's password in the Password field before clicking Join.
+
+### Troubleshooting Browser Issues
+- **Stale refs after navigation**: Run `snapshot -i` to refresh ref mapping, then retry with new refs
+- **Custom dropdown doesn't respond to click**: Use `select @<ref> <RoleName>` or `semanticAction` instead of raw click
+- **Session lost / redirect back to join page**: Re-open with `sessionMode: "fresh"` and re-enter credentials
+- **Resolution warning** ("minimum 1024x700"): agent_browser headless Chromium may report lower resolution — this is non-blocking but some UI elements may render incorrectly
+- **No active game session**: If navigating to `/game` redirects back to `/join`, no one has joined yet. Someone must join first via the `/join` page.
+
+### Key Post-Join UI Elements (on `http://localhost:30000/game`)
+| Element | Type | Purpose |
+|---------|------|---------|
+| Chat input | textbox | Send chat messages, execute macros |
+| Scene navigation | navigation | Switch between scenes |
+| Hotbar | navigation | Macro hotbar items (listable via snapshot) |
+| Players panel | — | Connected user list |
+| Sidebar | — | Compendia, journals, settings |
+
 ## 1. Token Sorting & Z-Ordering
 
 ### Overview
@@ -718,6 +803,50 @@ Refer to **`docs/commons.js`** for these utilities used throughout Sieg5e custom
 | `foundry.utils.deepClone()` | Roll data isolation, group member removal |
 | `Roll.safeEval()` / `validate()` | FormulaField validation for deterministic formulas |
 
+
+---
+
+## Testing Workflow (Live Foundry Instance)
+
+For code changes that affect runtime behavior (JavaScript logic), follow this loop:
+
+### 1. Deploy Changes
+```bash
+make install          # build → rsync to /home/regateiro/.local/share/FoundryVTT/Data/systems/dnd5e
+```
+This runs `npm run build:clean` + `npm run build` then syncs everything to the local dev environment.
+
+### 2. Refresh Foundry Session
+Hot reload covers `.css`, `.hbs`, and `.json` files automatically. For JavaScript changes, a browser refresh is required:
+
+```bash
+# Option A — Refresh current page (keeps session logged in)
+ing agent_browser navigate http://localhost:30000/game --session-mode auto
+
+# Option B — Full reconnect if hot-reload fails or system.json changed
+ing agent_browser open http://localhost:30000/join  # sessionMode fresh
+ing agent_browser select @<combobox-ref> Gamemaster
+ing agent_browser click @<join-button-ref>
+```
+
+### 3. Verify Changes
+```bash
+# Snapshot to inspect DOM / verify UI state
+ing agent_browser snapshot -i --session-mode auto
+
+# Screenshot for visual confirmation
+ing agent_browser screenshot --session-mode auto
+
+# Evaluate JS in the Foundry context (game object is available)
+ing agent_browser eval --stdin 'game.system.version'
+```
+
+### 4. Iteration Loop
+Repeat steps 1–3 after each code change. Keep the session alive with `--session-mode auto` so you stay logged in.
+
+> **Tip**: If the browser session becomes stale (e.g., Foundry server restart, network issue), reconnect by re-joining from `/join` as described above.
+
+---
 
 ## Release Process
 - CI triggered by pushing a tag matching `release-x.x.x`

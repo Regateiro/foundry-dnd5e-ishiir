@@ -35,9 +35,9 @@ export default class BackgroundData extends SystemDataModel.mixin(ItemDescriptio
    * @see {Document#_onCreate}
    * @protected
    */
-  _onCreate(data, options, userId) {
+  async _onCreate(data, options, userId) {
     if ( (game.user.id !== userId) || this.parent.actor?.type !== "character" ) return;
-    this.parent.actor.update({"system.details.background": this.parent.id});
+    await this.parent.actor.update({"system.details.background": this.parent.id});
   }
 
   /* -------------------------------------------- */

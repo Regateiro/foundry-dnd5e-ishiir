@@ -907,8 +907,17 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /** @override */
   async modifyTokenAttribute(attribute, value, isDelta, isBar) {
     if ( attribute === "attributes.hp" ) {
+      if ( (typeof value === "string" && value.trim() === "") || value === null || value === undefined ) {
+        ui.notifications.warn(game.i18n.format("DND5E.InvalidHPValue", { value }));
+        return this;
+      }
+      value = Number(value);
+      if ( !Number.isFinite(value) || value < 0 ) {
+        ui.notifications.warn(game.i18n.format("DND5E.InvalidHPValue", { value }));
+        return this;
+      }
       const hp = this.system.attributes.hp;
-      const delta = isDelta ? (-1 * value) : (hp.value + hp.temp) - value;
+      const delta = isDelta ? (-1 * value) : (hp.value + hp.temp + (hp.armor || 0)) - value;
       return this.applyDamage(delta);
     }
     return super.modifyTokenAttribute(attribute, value, isDelta, isBar);
@@ -1041,6 +1050,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    * @returns {Color}               The color used to represent the HP percentage
    */
   static getHPColor(current, max) {
+    if ( max <= 0 ) return Color.fromRGB([1, 0, 0]);
     const pct = Math.clamped(current, 0, max) / max;
     return Color.fromRGB([(1-(pct/2)), pct, 0]);
   }
@@ -1757,7 +1767,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     if ( Hooks.call("dnd5e.preRollHitDie", this, rollConfig, denomination) === false ) return;
 
     const roll = await new Roll(rollConfig.formula, rollConfig.data).roll({async: true});
-    if ( rollConfig.chatMessage ) roll.toMessage(rollConfig.messageData);
+    if ( rollConfig.chatMessage ) await roll.toMessage(rollConfig.messageData);
 
     const hp = this.system.attributes.hp;
     const dhp = Math.min(Math.max(0, hp.max + (hp.tempmax ?? 0)) - hp.value, roll.total);
@@ -2854,7 +2864,9 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const tokens = this.isToken ? [this.token?.object] : this.getActiveTokens(true);
     for ( const t of tokens ) {
       if ( !t.visible || !t.renderable ) continue;
-      const pct = Math.clamped(Math.abs(dhp) / this.system.attributes.hp.max, 0, 1);
+      const pct = this.system.attributes.hp.max > 0
+        ? Math.clamped(Math.abs(dhp) / this.system.attributes.hp.max, 0, 1)
+        : 0;
       canvas.interface.createScrollingText(t.center, dhp.signedString(), {
         anchor: CONST.TEXT_ANCHOR_POINTS.TOP,
         fontSize: 16 + (32 * pct), // Range between [16, 48]
