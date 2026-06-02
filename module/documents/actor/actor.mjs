@@ -912,7 +912,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
         return this;
       }
       value = Number(value);
-      if ( !Number.isFinite(value) || value < 0 ) {
+      // Only reject non-finite values — negative numbers are valid healing inputs
+      if ( !Number.isFinite(value) ) {
         ui.notifications.warn(game.i18n.format("DND5E.InvalidHPValue", { value }));
         return this;
       }
