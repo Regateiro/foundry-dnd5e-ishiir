@@ -98,11 +98,11 @@ export default class Token5e extends Token {
 
     // Differentiate between effective maximum and displayed maximum
     const effectiveMax = Math.max(0, max + tempmax);
-    let displayMax = max + (tempmax > 0 ? tempmax : 0);
+    const displayMax = Math.max(0, max + (tempmax > 0 ? tempmax : 0));
 
     // Allocate percentages of the total
-    const tempPct = Math.clamped(temp, 0, displayMax) / displayMax;
-    const colorPct = Math.clamped(value, 0, effectiveMax) / displayMax;
+    const tempPct = displayMax > 0 ? Math.clamped(temp, 0, displayMax) / displayMax : 0;
+    const colorPct = displayMax > 0 ? Math.clamped(value, 0, effectiveMax) / displayMax : 0;
     const hpColor = dnd5e.documents.Actor5e.getHPColor(value, effectiveMax);
 
     // Determine colors to use
@@ -110,6 +110,7 @@ export default class Token5e extends Token {
     const c = CONFIG.DND5E.tokenHPColors;
 
     // Determine the container size (logic borrowed from core)
+    if ( !canvas?.dimensions ) return;
     const w = this.w;
     let h = Math.max((canvas.dimensions.size / 12), 8);
     if ( this.document.height >= 2 ) h *= 1.6;
@@ -128,7 +129,7 @@ export default class Token5e extends Token {
 
     // Maximum HP penalty
     else if (tempmax < 0) {
-      const pct = (max + tempmax) / max;
+      const pct = max > 0 ? (max + tempmax) / max : 0;
       bar.beginFill(c.negmax, 1.0).lineStyle(1, blk, 1.0).drawRoundedRect(pct*w, 0, (1-pct)*w, h, 2);
     }
 
@@ -142,7 +143,7 @@ export default class Token5e extends Token {
 
     // Armor Mastery hit points — drawn last on top with transparency so THP shows through
     if ( armor > 0 ) {
-      const ahpPct = Math.clamped(armor, 0, displayMax) / displayMax;
+      const ahpPct = displayMax > 0 ? Math.clamped(armor, 0, displayMax) / displayMax : 0;
       bar.beginFill(c.armor, 1).lineStyle(1, blk, 1.0).drawRoundedRect(bs1, bs1, (ahpPct*w)-(2*bs1), h-(2*bs1), 1);
     }
 

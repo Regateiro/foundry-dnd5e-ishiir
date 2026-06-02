@@ -104,6 +104,8 @@ export function installRulerPatches(gameCanvas) {
   if (gameCanvas._sieg5eRulerPatched) return;
   gameCanvas._sieg5eRulerPatched = true;
 
+  let _wheelHandler = null;
+
   // === Patch: Ruler.toJSON() ===
   //
   // Purpose: Include segmentElevations in the serialized ruler data.
@@ -168,7 +170,7 @@ export function installRulerPatches(gameCanvas) {
     const segmentCumDeltaElevation = segment?.cumDeltaElevation || 0;
 
     // Get the unit string from the scene grid scale, fall back to localized default
-    const units = canvas.scene.grid.units || "ft";
+    const units = canvas.scene?.grid?.units || "ft";
 
     // Format segment label.
     let segmentLabel = `${segmentDistance}${units}`;
@@ -237,29 +239,30 @@ export function installRulerPatches(gameCanvas) {
   // How: Get cumulative elevation (sum of all segmentElevations), convert to feet,
   // round to nearest 5ft (standard D&D rounding), and update token's elevation.
   //
-  // Note: We get the token BEFORE movement because after movement the state changes.
-  // We apply elevation AFTER originalMoveToken completes.
+  // Note: We capture cumulativeElevation and token reference BEFORE calling
+  // originalMoveToken, because segments are cleared once movement starts.
   const originalMoveToken = Ruler.prototype.moveToken;
   if (originalMoveToken) {
     Ruler.prototype.moveToken = async function() {
-      // Guard: skip if no segments exist to prevent errors
-      if (!this.segments || this.segments.length === 0) {
-        return false;
-      }
-
-      const token = this._getMovementToken();
+      // Determine if the token is done moving
       const cumulativeElevation = this.segmentElevations?.reduce((a, b) => a + b, 0) || 0;
-      const result = await originalMoveToken.call(this);
+      const token = this._getMovementToken();
+      const doneMoving = await originalMoveToken.call(this);
 
-      // Apply elevation delta to token after movement completes
-      if (result && token && cumulativeElevation !== 0) {
-        const gridDistance = getGridDistance();
-        const elevationDelta = cumulativeElevation * gridDistance;
-        // Round to nearest 5ft (D&D standard)
-        const roundedElevationDelta = Math.ceil(elevationDelta / 5) * 5;
-        await token.document.update({ elevation: token.document.elevation + roundedElevationDelta });
+      // Apply stored elevation delta to token after movement completes
+      if (doneMoving) {
+        // Apply elevation delta to token after movement completes
+        if (token && cumulativeElevation !== 0) {
+          const gridDistance = getGridDistance();
+          const elevationDelta = cumulativeElevation * gridDistance;
+          // Round to nearest 5ft (D&D standard)
+          const roundedElevationDelta = Math.ceil(elevationDelta / 5) * 5;
+          await token.document.update({ elevation: token.document.elevation + roundedElevationDelta });
+        }
       }
-      return result;
+
+      // Return the original result
+      return doneMoving;
     };
   }
 
@@ -287,7 +290,11 @@ export function installRulerPatches(gameCanvas) {
     adjustElevation(ruler, delta);
   };
 
-  gameCanvas.app.view.addEventListener("wheel", handleWheel, { passive: false });
+  if (_wheelHandler) {
+    gameCanvas.app.view.removeEventListener("wheel", _wheelHandler);
+  }
+  _wheelHandler = handleWheel;
+  gameCanvas.app.view.addEventListener("wheel", _wheelHandler, { passive: false });
 }
 
 /**
@@ -362,7 +369,7 @@ export function registerElevationKeybindings(namespace) {
  *
  * WHY NEEDED: D&D 5e has three different rules for computing diagonal movement distance:
  *   - PHB ("555"): max(ground, elevation) — counts only the larger dimension
- *   - DMG ("5105"): ground + (elevation/10 × 5) — extra cost per 10ft of vertical
+ *   - DMG ("5105"): alternating 5-10-5 on paired diagonals, straight-line on remaining steps
  *   - Euclidean: sqrt(ground² + elevation²) — true geometric distance
  *
  * Without this function, ruler measurements would ignore the third dimension entirely,
@@ -371,14 +378,20 @@ export function registerElevationKeybindings(namespace) {
  * @param {number} groundDistance Ground distance in feet
  * @param {number} elevationFeet Elevation in feet
  * @param {string} diagonalRule Diagonal movement rule (EUCL, 5105, or 555)
+ * @param {number} [gridDistance] Grid cell size in feet
  * @returns {number} 3D-adjusted distance in feet
  */
-export function compute3DDistance(groundDistance, elevationFeet, diagonalRule) {
+export function compute3DDistance(groundDistance, elevationFeet, diagonalRule, gridDistance = getGridDistance()) {
   switch (diagonalRule) {
     case "EUCL": return Math.hypot(groundDistance, elevationFeet);
     case "5105": {
-      const steps = Math.floor(elevationFeet / 5);
-      return groundDistance + (Math.floor(steps / 2) * 15) + ((steps % 2) * 5);
+      const hSteps = Math.ceil(groundDistance / gridDistance) || 0;
+      const vSteps = Math.abs(elevationFeet) / gridDistance;
+      // Count steps that cross two axes (true diagonals) vs straight extension
+      const pairedDiagonals = Math.min(hSteps, vSteps);
+      const remainingStraight = Math.max(hSteps, vSteps) - pairedDiagonals;
+      return ((Math.floor(pairedDiagonals / 2) * 15) + ((pairedDiagonals % 2) * 5))
+           + ((remainingStraight * gridDistance));
     }
     default: return Math.max(groundDistance, elevationFeet);
   }
@@ -422,8 +435,8 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
     CONST.GRID_TYPES.HEXODDQ,
     CONST.GRID_TYPES.HEXEVENQ
   ];
-  if (hexTypes.includes(gameCanvas.grid.type)) diagonalRule = "555";
-  gameCanvas.grid.parent.diagonalRule = diagonalRule;
+  if ( gameCanvas.grid?.type && hexTypes.includes(gameCanvas.grid.type) ) diagonalRule = "555";
+  if ( gameCanvas.grid?.parent ) gameCanvas.grid.parent.diagonalRule = diagonalRule;
 
   // Step 3: Replace Ruler._computeDistance to apply elevation
   //
@@ -439,12 +452,12 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
   //    - 555 (default): max(ground, elevation) - only counts larger dimension
   // 5. Set segment.distance to the adjusted 3D distance
   // 6. Generate label with elevation info via _getSegmentLabel
-  Ruler.prototype._computeDistance = function(force) {
+  Ruler.prototype._computeDistance = function(_force) {
     // Get ground-only distances from grid (array of distances for each segment)
     const distances = canvas.grid.measureDistances(this.segments, { gridSpaces: true });
     const gridDistance = getGridDistance();
     // Read diagonal rule from the grid parent (already handles hex grid override)
-    const diagonalRule = gameCanvas.grid.parent.diagonalRule;
+    const diagonalRule = gameCanvas.grid?.parent?.diagonalRule ?? "555";
 
     // Create variables to store cumulative distance and elevation change between segments
     let cumulativeDistance = 0;

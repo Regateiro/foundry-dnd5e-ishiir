@@ -8,12 +8,16 @@ export class GroupCheckManager {
 
   /* -------------------------------------------------- */
 
-  static start(skillId) {
+  static async start(skillId) {
     if ( !game.user.isGM ) return;
+    if ( GroupCheckManager.activeCheck ) {
+      ui.notifications.warn("A group check is already in progress.");
+      return;
+    }
     const ability = CONFIG.DND5E.skills[skillId].ability;
     const checkId = foundry.utils.randomID();
     GroupCheckManager.activeCheck = { id: checkId, skill: skillId, ability, results: {} };
-    game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+    await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
     game.socket.emit("system.dnd5e", { operation: "start", checkId, skill: skillId, ability });
     Hooks.callAll("dnd5e.groupCheckStart", GroupCheckManager.activeCheck);
     GroupCheckApplication.getInstance().render(true);
@@ -21,23 +25,23 @@ export class GroupCheckManager {
 
   /* -------------------------------------------------- */
 
-  static submitResult(actorId, actorName, total) {
+  static async submitResult(actorId, actorName, total) {
     if ( !GroupCheckManager.activeCheck ) return;
     if ( !game.user.isGM ) return;
     if ( GroupCheckManager.activeCheck.results[actorId] ) return;
     GroupCheckManager.activeCheck.results[actorId] = { name: actorName, total };
-    game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+    await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
     GroupCheckApplication.getInstance().refresh();
   }
 
   /* -------------------------------------------------- */
 
-  static updateResult(actorId, newTotal) {
+  static async updateResult(actorId, newTotal) {
     if ( !GroupCheckManager.activeCheck ) return;
     if ( !game.user.isGM ) return;
     if ( GroupCheckManager.activeCheck.results[actorId] ) {
       GroupCheckManager.activeCheck.results[actorId].total = newTotal;
-      game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+      await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
     }
   }
 
@@ -60,7 +64,7 @@ export class GroupCheckManager {
       entries: entries.map(e => ({ name: e.name, total: e.total })),
       average, sum, count
     });
-    ChatMessage.create({
+    await ChatMessage.create({
       content,
       flavor: skillLabel,
       speaker: ChatMessage.getSpeaker({ alias: game.i18n.localize("DND5E.GroupCheck") })
@@ -74,12 +78,12 @@ export class GroupCheckManager {
 
   /* -------------------------------------------------- */
 
-  static cancel() {
+  static async cancel() {
     if ( !GroupCheckManager.activeCheck ) return;
     if ( !game.user.isGM ) return;
     const checkId = GroupCheckManager.activeCheck.id;
     game.socket.emit("system.dnd5e", { operation: "end", checkId });
-    game.settings.set("dnd5e", "activeGroupCheck", null);
+    await game.settings.set("dnd5e", "activeGroupCheck", null);
     GroupCheckApplication.getInstance().close({force: true});
     Hooks.callAll("dnd5e.groupCheckEnd", GroupCheckManager.activeCheck);
     GroupCheckManager.activeCheck = null;
@@ -88,16 +92,22 @@ export class GroupCheckManager {
   /* -------------------------------------------------- */
 
   static restoreFromSetting(data) {
-    GroupCheckManager.activeCheck = data;
-    if ( game.user.isGM ) GroupCheckApplication.getInstance().render(true);
+    if ( data && typeof data === "object" && data.id && data.skill && data.ability ) {
+      GroupCheckManager.activeCheck = data;
+      if ( game.user.isGM ) GroupCheckApplication.getInstance().render(true);
+    } else {
+      GroupCheckManager.activeCheck = null;
+    }
   }
 
   /* -------------------------------------------------- */
 
-  static _onSocketMessage(data) {
+  static async _onSocketMessage(data) {
+    if ( !data || typeof data !== "object" ) return;
     switch ( data.operation ) {
       case "start":
         if ( game.user.isGM ) return;
+        if ( !data.checkId || !data.skill || !data.ability ) return;
         GroupCheckManager.activeCheck = {
           id: data.checkId, skill: data.skill, ability: data.ability, results: {}
         };
@@ -105,7 +115,8 @@ export class GroupCheckManager {
         break;
       case "result":
         if ( !game.user.isGM ) return;
-        GroupCheckManager.submitResult(data.actorId, data.actorName, data.total);
+        if ( !data.actorId || typeof data.total !== "number" ) return;
+        await GroupCheckManager.submitResult(data.actorId, data.actorName, data.total);
         break;
       case "end":
         if ( game.user.isGM ) return;
@@ -118,7 +129,7 @@ export class GroupCheckManager {
 
   /* -------------------------------------------------- */
 
-  static _onRollSkill(actor, roll, skillId) {
+  static async _onRollSkill(actor, roll, skillId) {
     const check = GroupCheckManager.activeCheck;
     if ( !check ) return;
     if ( skillId !== check.skill ) return;
@@ -127,7 +138,7 @@ export class GroupCheckManager {
     const total = roll.total;
     const actorName = actor.name;
     if ( game.user.isGM ) {
-      GroupCheckManager.submitResult(actor.id, actorName, total);
+      await GroupCheckManager.submitResult(actor.id, actorName, total);
     } else {
       game.socket.emit("system.dnd5e", {
         operation: "result",

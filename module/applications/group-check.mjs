@@ -6,6 +6,8 @@ import { GroupCheckManager } from "../canvas/group-check.mjs";
 export default class GroupCheckApplication extends Application {
   static #instance = null;
 
+  static #hooksRegistered = false;
+
   static getInstance() {
     if ( !GroupCheckApplication.#instance ) {
       GroupCheckApplication.#instance = new GroupCheckApplication();
@@ -17,8 +19,11 @@ export default class GroupCheckApplication extends Application {
 
   constructor() {
     super();
-    Hooks.on("dnd5e.groupCheckStart", () => this.refresh());
-    Hooks.on("dnd5e.groupCheckEnd", () => this.refresh());
+    if ( !GroupCheckApplication.#hooksRegistered ) {
+      Hooks.on("dnd5e.groupCheckStart", () => this.refresh());
+      Hooks.on("dnd5e.groupCheckEnd", () => this.refresh());
+      GroupCheckApplication.#hooksRegistered = true;
+    }
   }
 
   /* -------------------------------------------------- */

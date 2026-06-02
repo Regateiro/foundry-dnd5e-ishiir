@@ -2,6 +2,7 @@
 // Imports and executes tests from various modules and aggregates the results.
 import { runActorTests } from "./actor/tests.mjs";
 import { runRulerElevationTests } from "./ruler/tests.mjs";
+import { runBugFixTests } from "./bug-fixes.mjs";
 
 /**
  * Assert helper that compares expected vs actual for failure reporting.
@@ -253,6 +254,7 @@ export async function runAllTests() {
   // Import and run tests from various modules
   results.actor = await runActorTests();
   results.ruler = await runRulerElevationTests();
+  results["bug-fixes"] = await runBugFixTests();
 
   // Infrastructure (assert, collectFailures, formatFailures) self-tests
   results.infrastructure = {

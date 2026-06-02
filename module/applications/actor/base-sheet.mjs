@@ -874,7 +874,9 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
         options[el.name] = el.checked;
       });
       const settings = foundry.utils.mergeObject(game.settings.get("dnd5e", "polymorphSettings") ?? {}, options);
-      game.settings.set("dnd5e", "polymorphSettings", settings);
+      game.settings.set("dnd5e", "polymorphSettings", settings).catch(err => {
+        console.error("Failed to save polymorph settings:", err);
+      });
       return settings;
     };
 
@@ -900,7 +902,7 @@ export default class ActorSheet5e extends ActorSheetMixin(ActorSheet) {
           label: CONFIG.DND5E.transformationPresets.wildshape.label,
           callback: html => this.actor.transformInto(sourceActor, foundry.utils.mergeObject(
             CONFIG.DND5E.transformationPresets.wildshape.options,
-            { transformTokens: rememberOptions(html).transformTokens, druidLevel: Number(html.find("#druidLevel")[0].value) }
+            { transformTokens: rememberOptions(html).transformTokens, druidLevel: Number(html.find("#druidLevel")[0]?.value ?? 0) }
           ))
         },
         polymorph: {

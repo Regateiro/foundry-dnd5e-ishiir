@@ -16,6 +16,9 @@ export function getGridDistance() {
 /** @inheritDoc */
 export function measureDistances(segments, options={}) {
   if ( !options.gridSpaces ) return BaseGrid.prototype.measureDistances.call(this, segments, options);
+  if ( !canvas?.dimensions || !canvas?.grid ) {
+    return BaseGrid.prototype.measureDistances.call(this, segments, options);
+  }
 
   // Hex grids need native hex distance — the square-grid diagonal formula produces wrong results
   const hexTypes = [

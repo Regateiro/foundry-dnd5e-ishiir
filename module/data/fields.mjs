@@ -290,8 +290,11 @@ export class MappingField extends foundry.data.fields.ObjectField {
 
   /** @inheritdoc */
   _cleanType(value, options) {
-    Object.entries(value).forEach(([k, v]) => value[k] = this.model.clean(v, options));
-    return value;
+    const result = {};
+    for ( const [k, v] of Object.entries(value) ) {
+      result[k] = this.model.clean(v, options);
+    }
+    return result;
   }
 
   /* -------------------------------------------- */
