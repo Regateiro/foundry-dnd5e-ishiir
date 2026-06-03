@@ -11,8 +11,9 @@ export default function simplifyRollFormula(formula, { preserveFlavor=false } = 
   // Create a new roll and verify that the formula is valid before attempting simplification.
   let roll;
   try { roll = new Roll(formula); }
-  catch(err) { console.warn(`Unable to simplify formula '${formula}': ${err}`); }
-  Roll.validate(roll.formula);
+  catch(err) {
+    throw new Error(`Unable to simplify formula '${formula}': ${err.message}`);
+  }
 
   // Optionally strip flavor annotations.
   if ( !preserveFlavor ) roll.terms = Roll.parse(roll.formula.replace(RollTerm.FLAVOR_REGEXP, ""));
