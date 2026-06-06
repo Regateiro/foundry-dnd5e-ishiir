@@ -1,0 +1,85 @@
+{
+  "name": "Spellcasting",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to cast spells through studying the mystical forces of nature. The information below details how you use those rules with Druid spells, which appear on the Druid spell list.</p><p><strong>Cantrips.</strong> You know two cantrips of your choice from the Druid spell list. You learn additional druid cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Druid table.</p><p><strong>Spell Slots.</strong> The Druid Features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p><p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose four level 1 spells from the druid spell list.</p><p>The number of spells on your list increases as you gain Druid levels, as shown in the Prepared Spells column of the Druid Features table. Whenever that number increases, choose additional spells from the Druid spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 3 Druid, your list of prepared spells can include six spells of levels 1 and 2 in any combination.</p><p>If another Druid feature gives you spells that you always have prepared, those spells don't count against the number of spells you can prepare with this feature, but those spells otherwise count as Druid spells for you.</p><p><strong>Changing Your Prepared Spells.</strong> Whenever you finish a Short Rest, you can replace one of your prepared spells with another Druid spell for which you have spell slots.</p><p>Whenever you finish a Long Rest, you can change your list of prepared spells, replacing any of the spells there with other Druid spells for which you have spell slots.</p><p><strong>Spellcasting Ability.</strong> Wisdom is your spellcasting ability for your Druid spells.</p><p><strong>Spellcasting Focus.</strong> You can use a druidic focus as a spellcasting focus for your druid spells.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/symbols/cog-shield-white-blue.webp",
+  "_id": "sd0690f0eb6688ea",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780786541330,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sd0690f0eb6688ea",
+  "flags": {},
+  "sort": 0
+}

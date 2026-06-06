@@ -1,0 +1,85 @@
+{
+  "name": "Eidolon",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>By studying the magic of the planes, coming into contact with an extraplanar entity, or other circumstances you have acquired the ability to call forth a magical entity called an Eidolon.</p><p>To summon your Eidolon, you have to spend 10 minutes performing a magical ritual. Upon completion, your Eidolon appears in an unoccupied space you can see within 10 feet of you.</p><p>When the Eidolon drops to 0 hit points, it disappears, leaving behind no physical form. If your Eidolon is more than 1000 feet away from you or you die, it also disappears. You can also dismiss your Eidolon as a Bonus Action.</p><p>Your Eidolon can understand and speak all languages you speak. While it is on the same plane of existence as you, you can communicate with your Eidolon telepathically.</p><p>Additionally, as an Action, you can see through your Eidolon's eyes and hear what it hears until you end the effect (no action required), gaining the benefits of any special senses that the Eidolon has. During this time, you are deaf and blind with regard to your own senses.</p><p>Your Eidolon acts independently of you, but it always obeys your commands. In combat, it rolls its own initiative and acts on its own turn.</p><p>When you acquire this feature, you choose a template for your Eidolon that determines it's base statistics. Your options are: aquatic, avian, biped, quadruped, serpentine, and tauric. Your Eidolon shares your mental ability scores and all Saving Throw proficiencies.</p><p>Additionally, your Eidolon learns two skills of your choice.</p><p>If you have a bonus to spell save DC, you also apply this bonus to your Eidolon's Attack Rolls, damage rolls, and armor class.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": 10,
+      "units": "minute"
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/creatures/magical/humanoid-giant-forest-blue.webp",
+  "_id": "s00ac1cc27b785e9",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780786541330,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s00ac1cc27b785e9",
+  "flags": {},
+  "sort": 0
+}

@@ -148,8 +148,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sab3287e49ae0b88",
-            "Compendium.dnd5e.sieg5e-classfeatures.s4fe1eb50197c4c5"
+            "Compendium.dnd5e.sieg5e-classfeatures.s40b388761ea6448",
+            "Compendium.dnd5e.sieg5e-classfeatures.s858d1b014724f95"
           ]
         }
       },
@@ -160,10 +160,10 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sb64cb4020280dde",
-            "Compendium.dnd5e.sieg5e-classfeatures.s500bae2ecaed3ad",
-            "Compendium.dnd5e.sieg5e-classfeatures.s7b9c930422454d6",
-            "Compendium.dnd5e.sieg5e-classfeatures.s12d1b9531fe395d"
+            "Compendium.dnd5e.sieg5e-classfeatures.s89518426be951c0",
+            "Compendium.dnd5e.sieg5e-classfeatures.sb3710e1530ead92",
+            "Compendium.dnd5e.sieg5e-classfeatures.s3ab55bcad5bbb10",
+            "Compendium.dnd5e.sieg5e-classfeatures.sbc567219a143893"
           ]
         }
       },
@@ -174,7 +174,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sa3708d95815e525"
+            "Compendium.dnd5e.sieg5e-classfeatures.s4312180842cb11b"
           ]
         }
       },
@@ -185,8 +185,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.sf61942f11cd5deb",
-            "Compendium.dnd5e.sieg5e-classfeatures.se8811458f88af80"
+            "Compendium.dnd5e.sieg5e-classfeatures.s2f90da797e814a0",
+            "Compendium.dnd5e.sieg5e-classfeatures.s8248439d0cd0a0d"
           ]
         }
       },
@@ -197,7 +197,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s9724a44a097b256"
+            "Compendium.dnd5e.sieg5e-classfeatures.s9a13ae153327cb0"
           ]
         }
       },
@@ -208,7 +208,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s9875556ae604260"
+            "Compendium.dnd5e.sieg5e-classfeatures.s2980da3e7453ffe"
           ]
         }
       },
@@ -219,8 +219,8 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s29ed1bd04285cbe",
-            "Compendium.dnd5e.sieg5e-classfeatures.sd9da1e208e5d966"
+            "Compendium.dnd5e.sieg5e-classfeatures.s21f421b572a7db3",
+            "Compendium.dnd5e.sieg5e-classfeatures.s075ac58e4c98633"
           ]
         }
       },
@@ -231,7 +231,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.scb48f3a01a334e9"
+            "Compendium.dnd5e.sieg5e-classfeatures.s1eb2e68827088c3"
           ]
         }
       },
@@ -242,7 +242,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s49f9c606f0441fe"
+            "Compendium.dnd5e.sieg5e-classfeatures.s8f5059cfdd7ccc8"
           ]
         }
       },
@@ -253,7 +253,7 @@
         "icon": "systems/dnd5e/icons/svg/item-grant.svg",
         "configuration": {
           "items": [
-            "Compendium.dnd5e.sieg5e-classfeatures.s8f2051e810bf9f2"
+            "Compendium.dnd5e.sieg5e-classfeatures.s7b4d88d70d84776"
           ]
         }
       },
@@ -355,7 +355,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210590934,
+    "modifiedTime": 1780786541330,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sfe9d094f8a71c0c",

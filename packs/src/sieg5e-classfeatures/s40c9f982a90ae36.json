@@ -1,0 +1,85 @@
+{
+  "name": "Ki",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your focus and martial training allow you to harness a well of extraordinary energy within yourself. This energy is represented by Ki Points. Your Monk level determines the amount of Ki Points you have, as shown in the Ki Points column of the Monk Features table.</p><p>You can expend these points to enhance or fuel certain Monk features. You start knowing three such features: Flurry of Blows, Patient Defense, and Step of the Wind, each of which is detailed below.</p><p>When you expend Ki Points, it is unavailable until you finish a Short or a Long Rest, at the end of which you regain all your expended Ki Points.</p><p>Some features that use Ki Points require your target to make a Saving Throw. The save DC equals 8 plus your Wisdom modifier and Proficiency Bonus.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "@scale.monk.ki-points",
+      "per": "sr",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/light/explosion-beam-impact-silhouette.webp",
+  "_id": "s40c9f982a90ae36",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780786541330,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s40c9f982a90ae36",
+  "flags": {},
+  "sort": 0
+}

@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you reach a Druid level specified in the Circle of the Titan Spells table, you thereafter always have the listed spells prepared.</p><p>In addition, you can cast the spells from this feature while you're in your Titan Form.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Circle of the Titan Spells</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Prepared Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Cure Wounds, Longstrider, Thaumaturgy</td></tr><tr><td>5th</td><td>Fear</td></tr><tr><td>7th</td><td>Stoneskin</td></tr><tr><td>9th</td><td>Destructive Wave</td></tr></tbody></table></div>",
+      "value": "<p>When you reach a Druid level specified in the Circle of the Titan Spells table, you thereafter always have the listed spells prepared.</p><p>In addition, you can cast the spells from this feature while you're in your Titan Form.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Circle of the Titan Spells</caption><thead><tr><th scope=\"col\">Druid Level</th><th scope=\"col\">Prepared Spells</th></tr></thead><tbody><tr><td>3rd</td><td>Cure Wounds, Enlarge/Reduce, Thaumaturgy</td></tr><tr><td>5th</td><td>Fear</td></tr><tr><td>7th</td><td>Stoneskin</td></tr><tr><td>9th</td><td>Destructive Wave</td></tr></tbody></table></div>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1780260598677,
+    "modifiedTime": 1780786541330,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s8928653ed2736fe",

@@ -1,0 +1,85 @@
+{
+  "name": "Spellcasting",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You have learned to use the magical essence of the planes to cast spells. The information below details how you use those rules with Summoner spells, which appear in the Summoner spell list.</p><p><strong>Cantrips.</strong> You know four cantrips of your choice from the Summoner spell list.</p><p>Whenever you gain a Summoner level, you can replace one of these cantrips with another cantrip of your choice from the Summoner spell list.</p><p><strong>Spell Slots.</strong> The Summoner features table shows how many spell slots you have to cast your level 1+ spells. You regain all expended slots when you finish a Long Rest.</p><p><strong>Prepared Spells of Level 1+.</strong> You prepare the list of level 1+ spells that are available for you to cast with this feature. To start, choose three level 1 spells from the Summoner spell list.</p><p>The number of spells on your list increases as you gain Summoner levels, as shown in the Prepared Spells column of the Summoner features table. Whenever that number increases, choose additional spells from the Summoner spell list until the number of spells on your list matches the number on the table. The chosen spells must be of a level for which you have spell slots. For example, if you're a level 7 Summoner, your list of prepared spells can include five Summoner spells of levels 1 and 2 in any combination.</p><p><strong>Changing Your Prepared Spells.</strong> Whenever you gain a Summoner level, you can replace one spell on your list with another Summoner spell for which you have spell slots.</p><p><strong>Spellcasting Ability.</strong> Intelligence or Charisma (your choice) is your spellcasting ability for your Summoner spells.</p><p><strong>Spellcasting Focus.</strong> You can use an Arcane Focus as a Spellcasting Focus for your Summoner spells.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/symbols/cog-shield-white-blue.webp",
+  "_id": "sf837a1838698e56",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1780786541330,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sf837a1838698e56",
+  "flags": {},
+  "sort": 0
+}

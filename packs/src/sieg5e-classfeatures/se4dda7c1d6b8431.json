@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>As a Magic Action, you can present your Holy Symbol and expend a use of Channel Divinity to manifest a 5-foot Emanation withering plague that surrounds you or one willing creature you touch for 1 minute. It ends early if you dismiss it (no action required), manifest it again, or have the Incapacitated condition.</p><p>Each creature of your choice that starts its turn in the Emanation must succeed on a Constitution Saving Throw against your spell save DC or gain 1 Exhaustion level. This feature can't increase a creature's Exhaustion level higher than a level equal to your Wisdom modifier (minimum of 1). For example, if you have a Wisdom score of 16, this feature can't increase a creature's Exhaustion level higher than 3.</p><p>The plague spread by this feature manifests with a specific symptom. Choose it from the Plague Symptoms table or determine it randomly.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Plague Symptoms</caption><thead><tr><th scope=\"col\">1d6</th><th scope=\"col\">While Infected, a Creature…</th></tr></thead><tbody><tr><td>1</td><td>Is drained of all color, appearing in monochromatic grays.</td></tr><tr><td>2</td><td>Sheds metallic, rust-hued flakes and creaks while moving.</td></tr><tr><td>3</td><td>Secretes foul-smelling mucus.</td></tr><tr><td>4</td><td>Is surrounded by a cloud of buzzing insects.</td></tr><tr><td>5</td><td>Sprouts fungi or other foliage from its flesh.</td></tr><tr><td>6</td><td>Is covered in glowing pustules.</td></tr></tbody></table></div>",
+      "value": "<p>As a Magic, you can present your Holy Symbol and expend a use of Channel Divinity to manifest a 5-foot Emanation withering plague that surrounds you or one willing creature you touch for 1 minute. It ends early if you dismiss it (no action required), manifest it again, or have the Incapacitated condition.</p><p>Each creature of your choice that starts its turn in the Emanation must succeed on a Constitution Saving Throw against your spell save DC or gain 1 Exhaustion level. This feature can't increase a creature's Exhaustion level higher than a level equal to your Wisdom modifier (minimum of 1). For example, if you have a Wisdom score of 16, this feature can't increase a creature's Exhaustion level higher than 3.</p><p>The plague spread by this feature manifests with a specific symptom. Choose it from the Plague Symptoms table or determine it randomly.</p><div style=\"width: 100%;\"><table style=\"width: 100%;\"><caption>Plague Symptoms</caption><thead><tr><th scope=\"col\">1d6</th><th scope=\"col\">While Infected, a Creature…</th></tr></thead><tbody><tr><td>1</td><td>Is drained of all color, appearing in monochromatic grays.</td></tr><tr><td>2</td><td>Sheds metallic, rust-hued flakes and creaks while moving.</td></tr><tr><td>3</td><td>Secretes foul-smelling mucus.</td></tr><tr><td>4</td><td>Is surrounded by a cloud of buzzing insects.</td></tr><tr><td>5</td><td>Sprouts fungi or other foliage from its flesh.</td></tr><tr><td>6</td><td>Is covered in glowing pustules.</td></tr></tbody></table></div>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1779659497231,
+    "modifiedTime": 1780786541330,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!se4dda7c1d6b8431",

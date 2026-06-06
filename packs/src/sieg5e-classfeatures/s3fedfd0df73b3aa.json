@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>Based on your chosen season, you always have the following spells prepared. You can cast each of those spells without expending a spell slot. And you cannot do so again until you have finished a Long Rest.</p><p><strong>Spring.</strong> Heal, Regenerate.</p><p><strong>Summer.</strong> Sunbeam, Firestorm.</p><p><strong>Autumn.</strong> Chain Lightning, Circle of Death.</p><p><strong>Winter.</strong> Wall of Ice, Icy Prison.</p>",
+      "value": "<p>Based on your chosen season, you always have the following spells prepared. You can cast each of those spells without expending a spell slot. And you cannot do so again until you have finished a Long Rest.</p><p><strong>Spring.</strong> Heal, Regenerate.</p><p><strong>Summer.</strong> Sunbeam, Fire Storm.</p><p><strong>Autumn.</strong> Chain Lightning, Circle of Death.</p><p><strong>Winter.</strong> Wall of Ice, Icy Prison.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189565,
+    "modifiedTime": 1780786541330,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s3fedfd0df73b3aa",

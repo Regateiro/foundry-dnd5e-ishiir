@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You can spend 6 kinesis points to cast Flesh  to Stone, but using only a somatic component.</p>",
+      "value": "<p>You can spend 6 kinesis points to cast Flesh to Stone, but using only a somatic component.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210591068,
+    "modifiedTime": 1780786541330,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s75083f6ebd01e46",
