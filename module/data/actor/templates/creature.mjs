@@ -8,6 +8,7 @@ import CommonTemplate from "./common.mjs";
  * @property {object} bonuses          Bonuses for this skill.
  * @property {string} bonuses.check    Numeric or dice bonus to skill's check.
  * @property {string} bonuses.passive  Numeric bonus to skill's passive check.
+ * @property {string} formula          Custom die expression replacing "1d20" for this skill's rolls.
  */
 
 /**
@@ -52,7 +53,8 @@ export default class CreatureTemplate extends CommonTemplate {
         bonuses: new foundry.data.fields.SchemaField({
           check: new FormulaField({required: true, label: "DND5E.SkillBonusCheck"}),
           passive: new FormulaField({required: true, label: "DND5E.SkillBonusPassive"})
-        }, {label: "DND5E.SkillBonuses"})
+        }, {label: "DND5E.SkillBonuses"}),
+        formula: new FormulaField({required: true, label: "DND5E.SkillRollFormula"})
       }), {
         initialKeys: CONFIG.DND5E.skills, initialValue: this._initialSkillValue,
         initialKeysOnly: true, label: "DND5E.Skills"

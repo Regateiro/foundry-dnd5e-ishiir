@@ -138,13 +138,18 @@ export default class D20Roll extends Roll {
     if ( !this.validD20Roll ) return;
 
     const d20 = this.terms[0];
+
+    // Preserve any custom modifiers set via the skill's formula field (e.g. "r<2", "min10" from "1d20r<2min10")
+    const customModifiers = d20.modifiers.filter(m => !["kh", "kl", "r1=1", "min10"].includes(m));
     d20.modifiers = [];
 
     // Halfling Lucky
     if ( this.options.halflingLucky ) d20.modifiers.push("r1=1");
 
-    // Reliable Talent
-    if ( this.options.reliableTalent ) d20.modifiers.push("min10");
+    // Reliable Talent — don't duplicate if user already set a min modifier
+    if ( this.options.reliableTalent ) {
+      if ( !customModifiers.some(m => m.startsWith("min")) ) d20.modifiers.push("min10");
+    }
 
     // Handle Advantage or Disadvantage
     if ( this.hasAdvantage ) {
@@ -160,6 +165,9 @@ export default class D20Roll extends Roll {
       d20.options.disadvantage = true;
     }
     else d20.number = 1;
+
+    // Reapply custom modifiers after system modifiers
+    d20.modifiers.push(...customModifiers);
 
     // Assign critical and fumble thresholds
     if ( this.options.critical ) d20.options.critical = this.options.critical;

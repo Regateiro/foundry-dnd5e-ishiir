@@ -7,6 +7,7 @@
  *
  * @typedef {object} D20RollConfiguration
  *
+ * @property {string} [die="1d20"]  The base die expression (e.g. "1d20", "1d20r<2"). Defaults to "1d20".
  * @property {string[]} [parts=[]]  The dice roll component parts, excluding the initial d20.
  * @property {object} [data={}]     Data that will be used when parsing this roll.
  * @property {Event} [event]        The triggering event for this roll.
@@ -53,11 +54,11 @@ export async function d20Roll({
   advantage, disadvantage, critical=20, fumble=1, targetValue,
   elvenAccuracy, bladeMastery, tripleAdvantage, halflingLucky, reliableTalent,
   fastForward, chooseModifier=false, template, title, dialogOptions,
-  chatMessage=true, messageData={}, rollMode, flavor
+  chatMessage=true, messageData={}, rollMode, flavor, die="1d20"
 }={}) {
 
   // Handle input arguments
-  const formula = ["1d20"].concat(parts).join(" + ");
+  const formula = [die].concat(parts).join(" + ");
   const {advantageMode, isFF} = CONFIG.Dice.D20Roll.determineAdvantageMode({
     advantage, disadvantage, fastForward, event
   });

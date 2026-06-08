@@ -1092,6 +1092,8 @@
 "DND5E.SkillBonuses": "Skill Bonuses",
 "DND5E.SkillBonusCheck": "Check Bonus",
 "DND5E.SkillBonusPassive": "Passive Bonus",
+"DND5E.SkillRollFormula": "Roll Formula",
+"DND5E.SkillRollFormulaHint": "Custom die expression (e.g. \"1d20r<2\"). Replaces the base d20 roll for this skill.",
 "DND5E.SkillConfigurationHint": "Configure skill proficiency and bonuses.",
 "DND5E.SkillGlobalBonusCheckHint": "This bonus applies to all skill checks made by this actor.",
 "DND5E.SkillModifierHint": "{skill} Modifier",

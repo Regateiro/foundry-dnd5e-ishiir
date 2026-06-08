@@ -23,6 +23,12 @@
     </div>
     <hr>
     <div class="form-group">
+        <label>{{localize "DND5E.SkillRollFormula"}}</label>
+        <input name="system.skills.{{key}}.formula" type="text" value="{{entry.formula}}" placeholder="1d20">
+        <p class="notes">{{localize "DND5E.SkillRollFormulaHint"}}</p>
+    </div>
+    <hr>
+    <div class="form-group">
         <label>{{localize "DND5E.BonusAbilitySkill"}}</label>
         <input name="system.bonuses.abilities.skill" type="text" value="{{bonusGlobal}}">
         <p class="notes">{{localize "DND5E.SkillGlobalBonusCheckHint"}}</p>

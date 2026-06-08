@@ -1129,6 +1129,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       data: data,
       title: `${flavor}: ${this.name}`,
       flavor,
+      die: skl.formula || "1d20",
       chooseModifier: true,
       halflingLucky: this.getFlag("dnd5e", "halflingLucky"),
       reliableTalent,
