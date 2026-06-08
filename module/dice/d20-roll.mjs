@@ -146,11 +146,6 @@ export default class D20Roll extends Roll {
     // Halfling Lucky
     if ( this.options.halflingLucky ) d20.modifiers.push("r1=1");
 
-    // Reliable Talent — don't duplicate if user already set a min modifier
-    if ( this.options.reliableTalent ) {
-      if ( !customModifiers.some(m => m.startsWith("min")) ) d20.modifiers.push("min10");
-    }
-
     // Handle Advantage or Disadvantage
     if ( this.hasAdvantage ) {
       d20.number = this.options.elvenAccuracy
@@ -168,6 +163,11 @@ export default class D20Roll extends Roll {
 
     // Reapply custom modifiers after system modifiers
     d20.modifiers.push(...customModifiers);
+
+    // Reliable Talent — applied after custom modifiers so it covers all results (including rerolls)
+    if ( this.options.reliableTalent ) {
+      if ( !customModifiers.some(m => m.startsWith("min")) ) d20.modifiers.push("min10");
+    }
 
     // Assign critical and fumble thresholds
     if ( this.options.critical ) d20.options.critical = this.options.critical;
