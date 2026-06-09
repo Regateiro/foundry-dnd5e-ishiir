@@ -31,7 +31,7 @@ This is a fork of the official [`foundryvtt/dnd5e`](https://github.com/foundryvt
 - Mouse wheel scroll to adjust vertical elevation while measuring distance
 - Supports all three diagonal movement rules:
   - **555**: `max(groundDistance, elevationDistance)`
-  - **5105**: `groundDistance + (elevationDistance * 0.5)`
+  - **5105**: ground and elevation steps paired as diagonals (alternating 5-10-5 cost per pair), remaining single-axis steps at grid distance
   - **EUCL**: `sqrt(ground² + elevation²)`
 - Displays cumulative elevation in ruler labels (e.g., "25.0ft | ↑15.0ft")
 - After movement (SPACEBAR), token elevation is updated (rounded up to nearest 5ft)
@@ -43,9 +43,10 @@ This is a fork of the official [`foundryvtt/dnd5e`](https://github.com/foundryvt
 - More recently moved tokens render on top
 
 #### Armor Mastery
-- Added Armor Mastery actor flag for characters with the Armor Mastery feature
-- During rests, allows recovery of Armor Mastery temporary hit points
-- Added rest dialog options to toggle Armor Mastery recovery
+- Characters and NPCs gain a separate Armor HP pool (`system.attributes.hp.armor`) that absorbs damage before regular HP
+- An armor mastery flag can be set to allow recovery of Armor HP during rests
+- Rest dialog options to toggle Armor HP recovery
+- Token HP bar includes Armor HP in the total value and renders a grey armor bar overlay
 
 #### Group Check
 - GM-initiated group skill checks with automatic roll capture
@@ -58,9 +59,10 @@ This is a fork of the official [`foundryvtt/dnd5e`](https://github.com/foundryvt
 - Items can be visually distinguished as masterworked
 
 #### Other Changes
-- Removed chain shirt from SRD items
-- Updated polymorph/wildshape behavior and option labels
-- Added icon for setting masterworked status on character sheet
+- HP preservation during polymorph (keep original HP by default, revert preserves current HP)
+- Optional polymorph temp HP modes: target's HP as temp HP, or druid-level-based temp HP for Wild Shape
+- Wild Shape now retains feats, spells, and items
+- Font Awesome star icon for marking items as masterworked on character sheet
 - Various bug fixes merged from upstream
 
 

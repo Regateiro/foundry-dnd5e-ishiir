@@ -448,7 +448,7 @@ export function setupRulerElevation(gameCanvas, canvasModule) {
   // 3. Convert elevation to feet using grid distance (e.g., 2 units * 5ft = 10ft)
   // 4. Apply 3D distance formula based on diagonal movement rule:
   //    - EUCL (Euclidean): hypotenuse of ground + elevation
-  //    - 5105: ground + (elevation/10 * 5) extra per 10ft of elevation
+  //    - 5105: ground+elevation paired as diagonals (alternating 5-10-5), excess one-axis steps at grid distance
   //    - 555 (default): max(ground, elevation) - only counts larger dimension
   // 5. Set segment.distance to the adjusted 3D distance
   // 6. Generate label with elevation info via _getSegmentLabel
