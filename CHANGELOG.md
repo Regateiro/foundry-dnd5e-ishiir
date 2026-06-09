@@ -5,6 +5,11 @@ All notable changes to the Sieg5e system (forked from Foundry VTT D&D5e) are doc
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.4.24] - 2026-06-09
+
+### Fixed
+- Remove default 1-round duration on newly created temporary effects
+
 ## [2.4.23] - 2026-06-08
 
 ### Added

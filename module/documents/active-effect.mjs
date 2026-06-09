@@ -132,7 +132,6 @@ export default class ActiveEffect5e extends ActiveEffect {
           label: isActor ? game.i18n.localize("DND5E.EffectNew") : owner.name,
           icon: isActor ? "icons/svg/aura.svg" : owner.img,
           origin: owner.uuid,
-          "duration.rounds": li.dataset.effectType === "temporary" ? 1 : undefined,
           disabled: li.dataset.effectType === "inactive"
         }]);
       case "edit":
