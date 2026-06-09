@@ -59,6 +59,13 @@ export default class ActorSheet5eNPC extends ActorSheet5e {
       const {quantity, uses, recharge, target} = item.system;
       const ctx = context.itemContext[item.id] ??= {};
       ctx.isStack = Number.isNumeric(quantity) && (quantity !== 1);
+      if ( item.type !== "spell" && ("masterworked" in (item.system ?? {})) ) {
+        ctx.supportsMasterworked = true;
+        const isMasterworked = !!item.system.masterworked;
+        ctx.toggleMasterworkedClass = isMasterworked ? "active" : "";
+        ctx.toggleMasterworkedTitle = game.i18n.localize(isMasterworked ? "DND5E.Masterworked" : "DND5E.NotMasterworked");
+        ctx.toggleMasterworkedIcon = isMasterworked ? "solid" : "regular";
+      }
       ctx.isExpanded = this._expanded.has(item.id);
       ctx.hasUses = uses && (uses.max > 0);
       ctx.isOnCooldown = recharge && !!recharge.value && (recharge.charged === false);
@@ -106,6 +113,33 @@ export default class ActorSheet5eNPC extends ActorSheet5e {
     else label.push(game.i18n.localize(CONFIG.DND5E.armorClasses[ac.calc].label));
     if ( this.actor.shield ) label.push(this.actor.shield.name);
     return label.filterJoin(", ");
+  }
+
+  /* -------------------------------------------- */
+  /*  Event Listeners and Handlers                */
+  /* -------------------------------------------- */
+
+  /** @inheritDoc */
+  activateListeners(html) {
+    super.activateListeners(html);
+    if ( !this.isEditable ) return;
+    html.find(".item-toggle-masterworked").click(this._onToggleItemMasterworked.bind(this));
+  }
+
+  /* -------------------------------------------- */
+
+  /**
+   * Handle toggling the masterworked state of an Owned Item within the Actor.
+   * @param {Event} event        The triggering click event.
+   * @returns {Promise<Item5e>}  Item with the updates applied.
+   * @private
+   */
+  _onToggleItemMasterworked(event) {
+    event.preventDefault();
+    const itemId = event.currentTarget.closest(".item").dataset.itemId;
+    const item = this.actor.items.get(itemId);
+    const attr = "system.masterworked";
+    return item.update({[attr]: !foundry.utils.getProperty(item, attr)});
   }
 
   /* -------------------------------------------- */
