@@ -187,7 +187,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
    */
   getCRExp(cr) {
     if ( cr < 1.0 ) return Math.max(200 * cr, 10);
-    return CONFIG.DND5E.CR_EXP_LEVELS[cr];
+    return CONFIG.DND5E.CR_EXP_LEVELS[Math.min(cr, 30)];
   }
 
   /* -------------------------------------------- */
