@@ -94,7 +94,15 @@ export default class ActorSheetFlags extends BaseConfigSheet {
       {name: "system.bonuses.abilities.check", label: "DND5E.BonusAbilityCheck"},
       {name: "system.bonuses.abilities.save", label: "DND5E.BonusAbilitySave"},
       {name: "system.bonuses.abilities.skill", label: "DND5E.BonusAbilitySkill"},
-      {name: "system.bonuses.spell.dc", label: "DND5E.BonusSpellDC"}
+      {name: "system.bonuses.spell.dc", label: "DND5E.BonusSpellDC"},
+      {name: "system.bonuses.mwak.critThreshold", label: "DND5E.BonusMWCritThreshold"},
+      {name: "system.bonuses.mwak.critDamage", label: "DND5E.BonusMWCritDamage"},
+      {name: "system.bonuses.rwak.critThreshold", label: "DND5E.BonusRWCritThreshold"},
+      {name: "system.bonuses.rwak.critDamage", label: "DND5E.BonusRWCritDamage"},
+      {name: "system.bonuses.msak.critThreshold", label: "DND5E.BonusMSCritThreshold"},
+      {name: "system.bonuses.msak.critDamage", label: "DND5E.BonusMSCritDamage"},
+      {name: "system.bonuses.rsak.critThreshold", label: "DND5E.BonusRSCritThreshold"},
+      {name: "system.bonuses.rsak.critDamage", label: "DND5E.BonusRSCritDamage"}
     ];
     for ( let b of bonuses ) {
       b.value = foundry.utils.getProperty(src, b.name) || "";

@@ -1471,8 +1471,14 @@ export default class Item5e extends SystemDocumentMixin(Item) {
       rollConfig.criticalBonusDice = this.actor.getFlag("dnd5e", "meleeCriticalDamageDice") ?? 0;
     }
 
-    // Factor in extra weapon-specific critical damage
-    if ( this.system.critical?.damage ) rollConfig.criticalBonusDamage = this.system.critical.damage;
+    // Factor in actor-level and item-level critical damage bonuses
+    const critDamageParts = [];
+    const at = this.system.actionType;
+    if ( this.actor.system.bonuses?.[at]?.critDamage ) {
+      critDamageParts.push(this.actor.system.bonuses[at].critDamage);
+    }
+    if ( this.system.critical?.damage ) critDamageParts.push(this.system.critical.damage);
+    if ( critDamageParts.length ) rollConfig.criticalBonusDamage = critDamageParts.join(" + ");
 
     foundry.utils.mergeObject(rollConfig, options);
     rollConfig.parts = parts.concat(options.parts ?? []);

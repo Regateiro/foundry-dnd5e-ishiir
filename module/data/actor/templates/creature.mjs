@@ -25,6 +25,14 @@ import CommonTemplate from "./common.mjs";
  * @property {string} bonuses.abilities.skill        Numeric or dice bonus to skill checks.
  * @property {object} bonuses.spell                  Bonuses to spells.
  * @property {string} bonuses.spell.dc               Numeric bonus to spellcasting DC.
+ * @property {number} bonuses.mwak.critThreshold     Bonus subtracted from melee weapon crit threshold.
+ * @property {string} bonuses.mwak.critDamage        Formula added to melee weapon damage on a crit.
+ * @property {number} bonuses.rwak.critThreshold     Bonus subtracted from ranged weapon crit threshold.
+ * @property {string} bonuses.rwak.critDamage        Formula added to ranged weapon damage on a crit.
+ * @property {number} bonuses.msak.critThreshold     Bonus subtracted from melee spell crit threshold.
+ * @property {string} bonuses.msak.critDamage        Formula added to melee spell damage on a crit.
+ * @property {number} bonuses.rsak.critThreshold     Bonus subtracted from ranged spell crit threshold.
+ * @property {string} bonuses.rsak.critDamage        Formula added to ranged spell damage on a crit.
  * @property {Object<string, SkillData>} skills      Actor's skills.
  * @property {Object<string, SpellSlotData>} spells  Actor's spell slots.
  */
@@ -186,8 +194,10 @@ export default class CreatureTemplate extends CommonTemplate {
  * Data structure for actor's attack bonuses.
  *
  * @typedef {object} AttackBonusesData
- * @property {string} attack  Numeric or dice bonus to attack rolls.
- * @property {string} damage  Numeric or dice bonus to damage rolls.
+ * @property {string} attack         Numeric or dice bonus to attack rolls.
+ * @property {string} damage         Numeric or dice bonus to damage rolls.
+ * @property {number} critThreshold  Bonus subtracted from critical hit threshold.
+ * @property {string} critDamage     Formula added to damage on a critical hit.
  */
 
 /**
@@ -198,6 +208,10 @@ export default class CreatureTemplate extends CommonTemplate {
 function makeAttackBonuses(schemaOptions={}) {
   return new foundry.data.fields.SchemaField({
     attack: new FormulaField({required: true, label: "DND5E.BonusAttack"}),
-    damage: new FormulaField({required: true, label: "DND5E.BonusDamage"})
+    damage: new FormulaField({required: true, label: "DND5E.BonusDamage"}),
+    critThreshold: new foundry.data.fields.NumberField({
+      integer: true, min: 0, initial: 0, label: "DND5E.BonusCritThreshold"
+    }),
+    critDamage: new FormulaField({label: "DND5E.BonusCritDamage"})
   }, schemaOptions);
 }

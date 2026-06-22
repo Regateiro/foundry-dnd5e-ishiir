@@ -66,6 +66,10 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
       // Item details
       const ctx = context.itemContext[item.id] ??= {};
       ctx.isStack = Number.isNumeric(quantity) && (quantity !== 1);
+      const ft = CONFIG.DND5E.featureTypes[item.system.type?.value];
+      ctx.typeLabel = ft
+        ? game.i18n.localize(ft.label)
+        : game.i18n.localize(CONFIG.Item.typeLabels[item.type]) || item.type;
       ctx.attunement = {
         [CONFIG.DND5E.attunementTypes.REQUIRED]: {
           icon: "fa-sun",
@@ -145,6 +149,7 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
     }
 
     // Organize Features
+    const typeColumn = { label: game.i18n.localize("DND5E.ItemFeatureType"), css: "item-type", property: "typeLabel" };
     const features = {
       race: {
         label: CONFIG.Item.typeLabels.race, items: races,
@@ -157,10 +162,11 @@ export default class ActorSheet5eCharacter extends ActorSheet5e {
         hasActions: false, dataset: {type: "class"}, isClass: true },
       active: {
         label: "DND5E.FeatureActive", items: [],
-        hasActions: true, dataset: {type: "feat", "activation.type": "action"} },
+        hasActions: true, dataset: {type: "feat", "activation.type": "action"},
+        columns: [typeColumn] },
       passive: {
         label: "DND5E.FeaturePassive", items: [],
-        hasActions: false, dataset: {type: "feat"} }
+        hasActions: false, dataset: {type: "feat"}, columns: [typeColumn] }
     };
     for ( const feat of feats ) {
       if ( feat.system.activation?.type ) features.active.items.push(feat);
