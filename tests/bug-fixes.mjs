@@ -13,6 +13,53 @@
 // Import shared test utilities (runTest for [TEST] logging, runBugFixTests uses safeTest internally)
 import { assert } from "./tests.mjs";
 
+/* -------------------------------------------- */
+
+/**
+ * Read the compiled bundle (dnd5e-compiled.mjs) which contains all module code inlined.
+ * This is the authoritative source for source-inspection tests — it's always present
+ * after `make install` (unlike individual module/ source files).
+ *
+ * Falls back to individual module files for development setups that use source entry points.
+ *
+ * @param {string} [modulePath]  Optional path to individual module file for fallback.
+ * @returns {Promise<string|null>}  The file content, or null if unavailable.
+ */
+async function readBundledSource(modulePath) {
+  const fs = globalThis.fs;
+
+  // Primary: read the compiled bundle (always present after npm run build)
+  if (fs) {
+    try {
+      const content = fs.readFileSync(
+        new URL("../dnd5e-compiled.mjs", import.meta.url), "utf8"
+      );
+      if (content) return content;
+    } catch {}
+  }
+  try {
+    const resp = await fetch("systems/dnd5e/dnd5e-compiled.mjs");
+    if (resp.ok) return await resp.text();
+  } catch {}
+
+  // Fallback: try individual source file for development setups
+  if (modulePath) {
+    if (fs) {
+      try {
+        return fs.readFileSync(new URL(modulePath, import.meta.url), "utf8");
+      } catch {}
+    }
+    try {
+      const resp = await fetch(
+        `systems/dnd5e/${modulePath.replace(/^\.\.\//, "")}`
+      );
+      if (resp.ok) return await resp.text();
+    } catch {}
+  }
+
+  return null;
+}
+
 /* ============================================ */
 /*  TEST RUNNER                                   */
 /* ============================================ */
@@ -83,21 +130,8 @@ export async function runBugFixTests() {
 async function test_todo_2() {
   const results = {};
 
-  // Read the enrichers.mjs file and verify the fix is in place
-  const fs = globalThis.fs;
-  let enrichersContent;
-
-  if (fs) {
-    try {
-      enrichersContent = fs.readFileSync(
-        new URL("../module/enrichers.mjs", import.meta.url),
-        "utf8"
-      );
-    } catch {
-      return { file_read_error: assert(false, false) };
-    }
-  } else {
-    // Browser context — skip source inspection test
+  const enrichersContent = await readBundledSource("../module/enrichers.mjs");
+  if (!enrichersContent) {
     results.file_skip = assert(true, true);
     return results;
   }
@@ -127,17 +161,8 @@ async function test_todo_2() {
 async function test_todo_3() {
   const results = {};
 
-  // Source inspection of token.mjs _drawHPBar
-  let content;
-  try { content = await import("../module/canvas/token.mjs").then(() => null) || globalThis.fs?.readFileSync ? globalThis.fs.readFileSync(new URL("../module/canvas/token.mjs", import.meta.url), "utf8") : null; }
-catch { /* skip */ }
-  if (!content) {
-    // Try reading via fetch (Foundry context)
-    try {
-      const resp = await fetch("systems/dnd5e/module/canvas/token.mjs");
-      content = await resp.text();
-    } catch { return { source_read_skip: assert(true, true) }; }
-  }
+  const content = await readBundledSource("../module/canvas/token.mjs");
+  if (!content) return { source_read_skip: assert(true, true) };
 
   // Check for displayMax guard pattern (Math.max(0, ...) or > 0 ternary)
   const hasDisplayMaxGuard = /displayMax\s*=.*Math\.max\(0|displayMax\s*>\s*0/.test(content);
@@ -165,22 +190,10 @@ catch { /* skip */ }
 async function test_todo_4() {
   const results = {};
 
-  // Read group-check.mjs and verify the guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
+  const gcContent = await readBundledSource("../module/canvas/group-check.mjs");
+  if (!gcContent) {
     results.file_skip = assert(true, true);
     return results;
-  }
-
-  let gcContent;
-  try {
-    gcContent = fs.readFileSync(
-      new URL("../module/canvas/group-check.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the activeCheck guard in start() method
@@ -190,24 +203,6 @@ async function test_todo_4() {
   // Verify it calls ui.notifications.warn (not just silently returns)
   const hasWarningNotification = /ui\.notifications\.warn/.test(gcContent);
   results.has_warning_notification = assert(true, hasWarningNotification);
-
-  // Check that the guard appears before any socket emit in start() context
-  // The guard should return early, preventing multiple concurrent checks
-  const lines = gcContent.split("\n");
-  let inStartMethod = false;
-  let guardBeforeEmit = false;
-
-  for (let i = 0; i < lines.length; i++) {
-    if (/start\s*\(/.test(lines[i])) {
-      // Found start method — look ahead for guard before any socket emit
-      inStartMethod = true;
-    }
-    if (inStartMethod && /GroupCheckManager\.activeCheck/.test(lines[i]) && !guardBeforeEmit) {
-      // Check that there's no socket.emit between start() declaration and the activeCheck check
-      guardBeforeEmit = true;
-      break;
-    }
-  }
 
   results.guard_prevents_concurrent_starts = assert(true, hasActiveCheckGuard);
 
@@ -226,13 +221,8 @@ async function test_todo_4() {
 async function test_todo_5() {
   const results = {};
 
-  // Source inspection of compute3DDistance in ruler-elevation.mjs
-  let content;
-  try { content = await import("../module/canvas/ruler-elevation.mjs").then(() => null) || globalThis.fs?.readFileSync ? globalThis.fs.readFileSync(new URL("../module/canvas/ruler-elevation.mjs", import.meta.url), "utf8") : null; }
-catch { /* skip */ }
-  if (!content) {
-    try { const resp = await fetch("systems/dnd5e/module/canvas/ruler-elevation.mjs"); content = await resp.text(); } catch { return { source_read_skip: assert(true, true) }; }
-  }
+  const content = await readBundledSource("../module/canvas/ruler-elevation.mjs");
+  if (!content) return { source_read_skip: assert(true, true) };
 
   // Verify the interleaved algorithm is present (pairedDiagonals + remainingStraight)
   const hasInterleavedFormula = /pairedDiagonals.*Math\.min|remainingStraight.*Math\.max/.test(content);
@@ -256,22 +246,10 @@ catch { /* skip */ }
 async function test_todo_6() {
   const results = {};
 
-  // Read actor.mjs to verify the guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
+  const actorContent = await readBundledSource("../module/documents/actor/actor.mjs");
+  if (!actorContent) {
     results.file_skip = assert(true, true);
     return results;
-  }
-
-  let actorContent;
-  try {
-    actorContent = fs.readFileSync(
-      new URL("../module/documents/actor/actor.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Find the getHPColor static method and verify it has a max <= 0 guard
@@ -300,22 +278,10 @@ async function test_todo_6() {
 async function test_todo_8() {
   const results = {};
 
-  // Read vehicle-sheet.mjs to verify the guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const vsContent = await readBundledSource("../module/applications/actor/vehicle-sheet.mjs");
+  if (!vsContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let vsContent;
-  try {
-    vsContent = fs.readFileSync(
-      new URL("../module/applications/actor/vehicle-sheet.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the ternary guard pattern (max > 0 ? ... : 0)
@@ -342,22 +308,10 @@ async function test_todo_8() {
 async function test_todo_11() {
   const results = {};
 
-  // Read ability-template.mjs to verify the null guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const atContent = await readBundledSource("../module/canvas/ability-template.mjs");
+  if (!atContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let atContent;
-  try {
-    atContent = fs.readFileSync(
-      new URL("../module/canvas/ability-template.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for optional chaining on canvas.dimensions.distance with ?? fallback to 5
@@ -380,22 +334,10 @@ async function test_todo_11() {
 async function test_todo_12() {
   const results = {};
 
-  // Read token.mjs to verify the null guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const tokenContent = await readBundledSource("../module/canvas/token.mjs");
+  if (!tokenContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let tokenContent;
-  try {
-    tokenContent = fs.readFileSync(
-      new URL("../module/canvas/token.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the canvas?.dimensions guard in _drawHPBar method
@@ -420,28 +362,10 @@ async function test_todo_15() {
   const results = {};
 
   // Read both rest dialog files
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip_short = assert(true, true);
-    results.file_skip_long = assert(true, true);
-    return results;
-  }
-
-  let shortRestContent, longRestContent;
-  try {
-    shortRestContent = fs.readFileSync(
-      new URL("../module/applications/actor/short-rest.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch { shortRestContent = null; }
-
-  try {
-    longRestContent = fs.readFileSync(
-      new URL("../module/applications/actor/long-rest.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch { longRestContent = null; }
+  const [shortRestContent, longRestContent] = await Promise.all([
+    readBundledSource("../module/applications/actor/short-rest.mjs"),
+    readBundledSource("../module/applications/actor/long-rest.mjs")
+  ]);
 
   // Check short-rest.mjs for checkbox guards
   if (shortRestContent) {
@@ -498,22 +422,10 @@ async function test_todo_15() {
 async function test_todo_16() {
   const results = {};
 
-  // Read fields.mjs to verify the immutability fix
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const fieldsContent = await readBundledSource("../module/data/fields.mjs");
+  if (!fieldsContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let fieldsContent;
-  try {
-    fieldsContent = fs.readFileSync(
-      new URL("../module/data/fields.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the result object pattern (not mutating `value`)
@@ -540,22 +452,10 @@ async function test_todo_16() {
 async function test_todo_18() {
   const results = {};
 
-  // Read dnd5e.mjs to verify the catch handler is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const mainContent = await readBundledSource("../dnd5e.mjs");
+  if (!mainContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let mainContent;
-  try {
-    mainContent = fs.readFileSync(
-      new URL("../dnd5e.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for .catch() handler on game.settings.set in the ready hook
@@ -578,22 +478,10 @@ async function test_todo_18() {
 async function test_todo_20() {
   const results = {};
 
-  // Read token.mjs to verify the guard is present in the tempmax<0 branch
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const tokenContent = await readBundledSource("../module/canvas/token.mjs");
+  if (!tokenContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let tokenContent;
-  try {
-    tokenContent = fs.readFileSync(
-      new URL("../module/canvas/token.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the tempmax < 0 guard pattern in _drawHPBar
@@ -616,22 +504,10 @@ async function test_todo_20() {
 async function test_todo_21() {
   const results = {};
 
-  // Read settings.mjs to verify the null guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const settingsContent = await readBundledSource("../module/settings.mjs");
+  if (!settingsContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let settingsContent;
-  try {
-    settingsContent = fs.readFileSync(
-      new URL("../module/settings.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for canvas.grid guard in diagonalMovement onChange
@@ -655,22 +531,10 @@ async function test_todo_21() {
 async function test_todo_26() {
   const results = {};
 
-  // Read group-check.mjs to verify the validation is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const gcContent = await readBundledSource("../module/canvas/group-check.mjs");
+  if (!gcContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let gcContent;
-  try {
-    gcContent = fs.readFileSync(
-      new URL("../module/canvas/group-check.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the restoreFromSetting method with data validation
@@ -696,22 +560,10 @@ async function test_todo_26() {
 async function test_todo_37() {
   const results = {};
 
-  // Read group-sheet.mjs to verify the guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const gsContent = await readBundledSource("../module/applications/actor/group-sheet.mjs");
+  if (!gsContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let gsContent;
-  try {
-    gsContent = fs.readFileSync(
-      new URL("../module/applications/actor/group-sheet.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the hp.max > 0 guard pattern
@@ -738,22 +590,10 @@ async function test_todo_37() {
 async function test_todo_40() {
   const results = {};
 
-  // Read actor.mjs to verify the guard is present in hit die recovery
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const actorContent = await readBundledSource("../module/documents/actor/actor.mjs");
+  if (!actorContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let actorContent;
-  try {
-    actorContent = fs.readFileSync(
-      new URL("../module/documents/actor/actor.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for hp.max > 0 guard in hit die recovery (dhp / hp.max area)
@@ -781,22 +621,10 @@ async function test_todo_40() {
 async function test_todo_G() {
   const results = {};
 
-  // Read ruler-elevation.mjs to verify the guard is present
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const reContent = await readBundledSource("../module/canvas/ruler-elevation.mjs");
+  if (!reContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let reContent;
-  try {
-    reContent = fs.readFileSync(
-      new URL("../module/canvas/ruler-elevation.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for canvas.scene?.grid?.units pattern in _getSegmentLabel
@@ -819,22 +647,10 @@ async function test_todo_G() {
 async function test_todo_H() {
   const results = {};
 
-  // Read ruler-elevation.mjs to verify the guard is present in _computeDistance patch
-  const fs = globalThis.fs;
-
-  if (!fs) {
-    results.file_skip = assert(true, true);
+  const reContent = await readBundledSource("../module/canvas/ruler-elevation.mjs");
+  if (!reContent) {
+    results.source_read_skip = assert(true, true);
     return results;
-  }
-
-  let reContent;
-  try {
-    reContent = fs.readFileSync(
-      new URL("../module/canvas/ruler-elevation.mjs", import.meta.url),
-      "utf8"
-    );
-  } catch {
-    return { file_read_error: assert(false, false) };
   }
 
   // Check for the guarded read in _computeDistance patch area
