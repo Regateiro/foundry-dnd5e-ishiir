@@ -35,26 +35,26 @@ async function readBundledSource(modulePath) {
         new URL("../dnd5e-compiled.mjs", import.meta.url), "utf8"
       );
       if (content) return content;
-    } catch {}
+    } catch{}
   }
   try {
     const resp = await fetch("systems/dnd5e/dnd5e-compiled.mjs");
     if (resp.ok) return await resp.text();
-  } catch {}
+  } catch{}
 
   // Fallback: try individual source file for development setups
   if (modulePath) {
     if (fs) {
       try {
         return fs.readFileSync(new URL(modulePath, import.meta.url), "utf8");
-      } catch {}
+      } catch{}
     }
     try {
       const resp = await fetch(
         `systems/dnd5e/${modulePath.replace(/^\.\.\//, "")}`
       );
       if (resp.ok) return await resp.text();
-    } catch {}
+    } catch{}
   }
 
   return null;
@@ -74,6 +74,9 @@ export async function runBugFixTests() {
   /**
    * Run a single test group, catching any errors so one failure doesn't kill all results.
    * Logs [TEST] name prefix for consistency with actor/ruler suites.
+   * @param {string} label  Test label.
+   * @param {Function} fn   Test function to execute.
+   * @returns {Promise<object>} Test result object.
    */
   async function safeTest(label, fn) {
     const testName = `bug-fixes.${label}`;
@@ -126,6 +129,7 @@ export async function runBugFixTests() {
  * The fix adds await before .total access.
  *
  * We test by inspecting the source code for correct async pattern matching.
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_2() {
   const results = {};
@@ -157,6 +161,7 @@ async function test_todo_2() {
 /**
  * Verify the HP bar draw logic guards against displayMax === 0.
  * The fix adds: displayMax > 0 ? ... : 0 for tempPct, colorPct, and ahpPct.
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_3() {
   const results = {};
@@ -186,6 +191,7 @@ async function test_todo_3() {
 /**
  * Verify GroupCheckManager.start() has the activeCheck concurrency guard.
  * The fix adds: if (GroupCheckManager.activeCheck) { ui.notifications.warn(...); return; }
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_4() {
   const results = {};
@@ -217,6 +223,7 @@ async function test_todo_4() {
  * Verify the interleaved 5105 diagonal rule produces correct distances.
  * Old buggy: groundDistance + (Math.floor(steps/2)*15) + ((steps%2)*5)
  * New fixed: pairs*15 + odd*5 + straight*5 where pairs = floor(diagonals/2), diagonals = min(hSteps, vSteps)
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_5() {
   const results = {};
@@ -242,6 +249,7 @@ async function test_todo_5() {
 /**
  * Verify Actor5e.getHPColor guards against max=0.
  * The fix adds: if (max <= 0) return Color.fromRGB([1, 0, 0])
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_6() {
   const results = {};
@@ -274,6 +282,7 @@ async function test_todo_6() {
 /**
  * Verify the vehicle sheet guards against zero cargo max.
  * The fix: max > 0 ? Math.clamped((totalWeight*100)/max, 0, 100) : 0
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_8() {
   const results = {};
@@ -304,6 +313,7 @@ async function test_todo_8() {
 /**
  * Verify AbilityTemplate.fromItem guards against undefined canvas.dimensions for ray templates.
  * The fix: target.width ?? canvas.dimensions?.distance ?? 5
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_11() {
   const results = {};
@@ -330,6 +340,7 @@ async function test_todo_11() {
 /**
  * Verify Token5e._drawHPBar guards against undefined canvas.dimensions.
  * The fix: if (!canvas?.dimensions) return; at the top of the method.
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_12() {
   const results = {};
@@ -357,6 +368,7 @@ async function test_todo_12() {
 /**
  * Verify both short-rest.mjs and long-rest.mjs guard against missing checkboxes.
  * The fix: const armorCheckbox = html.find(...)[0]; const recoverArmorMastery = armorCheckbox ? ... : false;
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_15() {
   const results = {};
@@ -418,6 +430,7 @@ async function test_todo_15() {
 /**
  * Verify _cleanType creates a new result object instead of mutating input.
  * The fix: const result = {}; for (const [k,v] ...) { result[k] = ... } return result;
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_16() {
   const results = {};
@@ -448,6 +461,7 @@ async function test_todo_16() {
 /**
  * Verify the ready hook adds .catch() to game.settings.set().
  * The fix: return game.settings.set(...).catch(err => console.error(...));
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_18() {
   const results = {};
@@ -474,6 +488,7 @@ async function test_todo_18() {
 /**
  * Verify the tempmax < 0 branch in _drawHPBar guards against zero max.
  * The fix: const pct = max > 0 ? (max + tempmax) / max : 0;
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_20() {
   const results = {};
@@ -485,7 +500,8 @@ async function test_todo_20() {
   }
 
   // Check for the tempmax < 0 guard pattern in _drawHPBar
-  const hasTempmaxGuard = /tempmax\s*<\s*0[\s\S]{0,300}?\!\s*\)\s+return|tempmax\s*<\s*0[\s\S]{0,300}?max\s*>\s*0/.test(tokenContent);
+  const hasTempmaxGuard = /tempmax\s*<\s*0[\s\S]{0,300}?!\s*\)\s+return|tempmax\s*<\s*0[\s\S]{0,300}?max\s*>\s*0/
+    .test(tokenContent);
   results.has_tempmax_neg_guard = assert(true, hasTempmaxGuard);
 
   // Verify the pct calculation uses a ternary guard (not direct division)
@@ -500,6 +516,7 @@ async function test_todo_20() {
 /**
  * Verify settings.mjs diagonalMovement onChange guards canvas.grid.
  * The fix: if (canvas.grid) canvas.grid.diagonalRule = rule;
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_21() {
   const results = {};
@@ -517,7 +534,8 @@ async function test_todo_21() {
 
   // Verify it uses optional chaining on parent access too
   const hasOptionalChainingOrCheck = /canvas\.grid\?\.parent/.test(settingsContent);
-  results.has_optional_or_explicit_check = assert(true, hasDiagonalMovement && hasCanvasGridGuard && hasOptionalChainingOrCheck);
+  results.has_optional_or_explicit_check = assert(true,
+    hasDiagonalMovement && hasCanvasGridGuard && hasOptionalChainingOrCheck);
 
   return results;
 }
@@ -527,6 +545,7 @@ async function test_todo_21() {
 /**
  * Verify GroupCheckManager.restoreFromSetting validates the restored data.
  * The fix: checks for data.id, data.skill, data.ability before accepting.
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_26() {
   const results = {};
@@ -556,6 +575,7 @@ async function test_todo_26() {
 /**
  * Verify group-sheet.mjs guards against zero hp.max.
  * The fix: m.hp.max > 0 ? Math.clamped(...) : "0.00"
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_37() {
   const results = {};
@@ -586,6 +606,7 @@ async function test_todo_37() {
 /**
  * Verify actor.mjs hit die recovery guards against zero hp.max.
  * The fix: hp.max > 0 ? Math.clamped(Math.abs(dhp)/hp.max, 0, 1) : 0
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_40() {
   const results = {};
@@ -605,8 +626,8 @@ async function test_todo_40() {
   results.has_zero_fallback = assert(true, hasHpMaxGuard || hasZeroFallback);
 
   // Verify Math.clamped is still used for non-zero max case
-  const hasClampedCalc = /Math\.clamped[\s\S]{0,200}hp\.max/.test(actorContent) ||
-                         /hp\.max[\s\S]{0,300}Math\.clamped/.test(actorContent);
+  const hasClampedCalc = /Math\.clamped[\s\S]{0,200}hp\.max/.test(actorContent)
+                         || /hp\.max[\s\S]{0,300}Math\.clamped/.test(actorContent);
   results.has_clamped_calculation = assert(true, hasHpMaxGuard && hasClampedCalc);
 
   return results;
@@ -617,6 +638,7 @@ async function test_todo_40() {
 /**
  * Verify ruler-elevation.mjs _getSegmentLabel guards canvas.scene.grid.units.
  * The fix: const units = canvas.scene?.grid?.units || "ft";
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_G() {
   const results = {};
@@ -643,6 +665,7 @@ async function test_todo_G() {
 /**
  * Verify ruler-elevation.mjs _computeDistance patch guards gameCanvas.grid.parent.diagonalRule read.
  * The fix: const diagonalRule = gameCanvas.grid?.parent?.diagonalRule ?? "555";
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_H() {
   const results = {};
@@ -669,6 +692,7 @@ async function test_todo_H() {
 /**
  * Verify that Math.clamped(0, x, max) === Math.clamped(x, 0, max).
  * This is NOT a bug — both produce identical results due to Math.max commutativity.
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_28() {
   const results = {};
@@ -679,6 +703,13 @@ async function test_todo_28() {
     const key = `clamped_${testVal}`;
 
     // Simulate Foundry's Math.clamped: min(max(val, min), max)
+    /**
+     * Clamp a value between min and max.
+     * @param {number} value  Value to clamp.
+     * @param {number} min    Lower bound.
+     * @param {number} max    Upper bound.
+     * @returns {number} Clamped value.
+     */
     function clamped(value, min, max) {
       return Math.min(Math.max(value, min), max);
     }
@@ -694,7 +725,7 @@ async function test_todo_28() {
     Math.min(Math.max(0, -5), 10) === Math.min(Math.max(-5, 0), 10));
 
   results.zero_val = assert(true,
-    Math.min(Math.max(0, 0), 10) === Math.min(Math.max(0, 0), 10));
+    clamped(0, 0, 10) === 0);
 
   results.above_max = assert(true,
     Math.min(Math.max(0, 20), 10) === Math.min(Math.max(20, 0), 10));
@@ -710,11 +741,19 @@ async function test_todo_28() {
 /**
  * Same analysis as #28: Math.clamped(0, x, max) === Math.clamped(x, 0, max).
  * This is NOT a bug.
+ * @returns {Promise<object>} Test results.
  */
 async function test_todo_29() {
   const results = {};
 
   // Test mathematical equivalence for vehicle HP values
+  /**
+   * Clamp a value between min and max.
+   * @param {number} value  Value to clamp.
+   * @param {number} min    Lower bound.
+   * @param {number} max    Upper bound.
+   * @returns {number} Clamped value.
+   */
   function clamped(value, min, max) {
     return Math.min(Math.max(value, min), max);
   }

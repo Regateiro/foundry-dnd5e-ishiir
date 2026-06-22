@@ -419,7 +419,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /**
    * Prepare tool checks. Mutates the values of system.tools.
    * @param {object} bonusData       Data produced by `getRollData` to be applied to bonus formulae.
-   * @param {object} globalBonuses   Global bonus data.
+   * @param {object} _globalBonuses   Global bonus data.
    * @param {number} checkBonus      Global ability check bonus.
    * @protected
    */
@@ -721,8 +721,8 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /**
    * Contribute to the actor's spellcasting progression for a class with leveled spellcasting.
    * @param {object} progression                    Spellcasting progression data. *Will be mutated.*
-   * @param {Actor5e} actor                         Actor for whom the data is being prepared.
-   * @param {Item5e} cls                            Class for whom this progression is being computed.
+   * @param {Actor5e} _actor                         Actor for whom the data is being prepared.
+   * @param {Item5e} _cls                            Class for whom this progression is being computed.
    * @param {SpellcastingDescription} spellcasting  Spellcasting descriptive object.
    * @param {number} count                          Number of classes with this type of spellcasting.
    */
@@ -742,10 +742,10 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /**
    * Contribute to the actor's spellcasting progression for a class with pact spellcasting.
    * @param {object} progression                    Spellcasting progression data. *Will be mutated.*
-   * @param {Actor5e} actor                         Actor for whom the data is being prepared.
-   * @param {Item5e} cls                            Class for whom this progression is being computed.
+   * @param {Actor5e} _actor                         Actor for whom the data is being prepared.
+   * @param {Item5e} _cls                            Class for whom this progression is being computed.
    * @param {SpellcastingDescription} spellcasting  Spellcasting descriptive object.
-   * @param {number} count                          Number of classes with this type of spellcasting.
+   * @param {number} _count                          Number of classes with this type of spellcasting.
    */
   static computePactProgression(progression, _actor, _cls, spellcasting, _count) {
     progression.pact += spellcasting.levels;
@@ -783,7 +783,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
   /**
    * Prepare leveled spell slots using progression data.
    * @param {object} spells        The `data.spells` object within actor's data. *Will be mutated.*
-   * @param {Actor5e} actor        Actor for whom the data is being prepared.
+   * @param {Actor5e} _actor        Actor for whom the data is being prepared.
    * @param {object} progression   Spellcasting progression data.
    */
   static prepareLeveledSlots(spells, _actor, progression) {
@@ -2795,7 +2795,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
 
   /**
    * Add additional system-specific sidebar directory context menu options for Actor documents
-   * @param {jQuery} html         The sidebar HTML
+   * @param {jQuery} _html         The sidebar HTML
    * @param {Array} entryOptions  The default array of context menu options
    */
   static addDirectoryContextOptions(_html, entryOptions) {

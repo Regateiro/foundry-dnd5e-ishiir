@@ -555,9 +555,9 @@ async function test_compute3DDistance() {
   // remaining straight steps in the larger dimension cost gridDistance each.
   // Pure vertical (ground=0) costs exactly elevationFeet — no diagonal premium on pure vertical.
   results["5105_01"] = assert(10, RulerElevation.compute3DDistance(10, 0, "5105"));
-  results["5105_02"] = assert(15, RulerElevation.compute3DDistance(10, 10, "5105"));      // h=2,v=2 → paired=2 → floor(2/2)*15 = 15
-  results["5105_03"] = assert(30, RulerElevation.compute3DDistance(20, 20, "5105"));      // h=4,v=4 → paired=4 → floor(4/2)*15 = 30
-  results["5105_04"] = assert(10, RulerElevation.compute3DDistance(0, 10, "5105"));       // pure vertical = elevationFeet
+  results["5105_02"] = assert(15, RulerElevation.compute3DDistance(10, 10, "5105"));      // H=2,v=2 → paired=2 → floor(2/2)*15 = 15
+  results["5105_03"] = assert(30, RulerElevation.compute3DDistance(20, 20, "5105"));      // H=4,v=4 → paired=4 → floor(4/2)*15 = 30
+  results["5105_04"] = assert(10, RulerElevation.compute3DDistance(0, 10, "5105"));       // Pure vertical = elevationFeet
 
   // Test 555 rule (max)
   results["555_01"] = assert(10, RulerElevation.compute3DDistance(10, 0, "555"));
@@ -568,7 +568,7 @@ async function test_compute3DDistance() {
   // Test default (falls through to 555)
   results.default_01 = assert(15, RulerElevation.compute3DDistance(15, 15, "INVALID"));
   results.negElev_01 = assert(10, RulerElevation.compute3DDistance(10, -10, "555"));
-  results.negElev_03 = assert(15, RulerElevation.compute3DDistance(10, -10, "5105"));     // same as pos elev, abs() handles sign
+  results.negElev_03 = assert(15, RulerElevation.compute3DDistance(10, -10, "5105"));     // Same as pos elev, abs() handles sign
 
   return results;
 }
