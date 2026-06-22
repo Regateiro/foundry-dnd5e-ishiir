@@ -5,6 +5,25 @@ All notable changes to the Sieg5e system (forked from Foundry VTT D&D5e) are doc
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.4.26] - 2026-06-22
+
+### Added
+- Actor-wide critical threshold and critical damage bonus configuration per attack type (melee weapon, ranged weapon, melee spell, ranged spell) via the flags/bonuses sheet
+  - Item critical threshold now subtracts actor-level bonus (floor 1)
+  - Item critical damage combines actor-level + item-level bonuses
+- Feature type label column (Background, Class, Monster, Race) on character sheet active/passive feature lists
+
+### Changed
+- Simplified feature type localizations (removed "Feature" suffix: "Class Feature" → "Class")
+- Rewrote bug-fix test suite: simplified source-inspection tests, removed redundant cases
+
+### Fixed
+- Resolved 50 lint warnings across `module/documents/actor/actor.mjs`, `tests/bug-fixes.mjs`, and `tests/ruler/tests.mjs`
+  - Fixed JSDoc `@param` name mismatches (underscore-prefixed params)
+  - Added missing `@returns` declarations on test functions
+  - Fixed `catch` keyword spacing to match project style
+  - Fixed line length, unnecessary escapes, self-compare, and comment capitalization issues
+
 ## [2.4.25] - 2026-06-10
 
 ### Fixed
