@@ -5,6 +5,24 @@ All notable changes to the Sieg5e system (forked from Foundry VTT D&D5e) are doc
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.4.27] - 2026-06-26
+
+### Added
+- Group check actor removal: GM can now remove individual actors from the active group check tally
+- Dedicated `less/group-check.less` stylesheet for group check UI (compiled into `dnd5e.css`)
+- Localization string for the new "Remove" action on group check entries
+
+### Changed
+- Group check result card and application template styling improvements
+- Simplified `test_todo_28` and `test_todo_29` by replacing duplicated local `clamped()` functions with Foundry's built-in `Math.clamped()`
+
+### Fixed
+- Resolved Rollup circular dependency warnings across 6 import chains
+  - Group-check: replaced direct `GroupCheckApplication` import from `canvas/group-check.mjs` with Hook-based communication, breaking the `canvas ↔ applications` cycle
+  - Tests: extracted shared utilities (`assert`, `assertApprox`, `collectFailures`, `formatFailures`) into `tests/shared.mjs` to eliminate test → test circular imports
+- Fixed `inlineDynamicImports` Rollup deprecation warning by using `output.inlineDynamicImports`
+- Fixed `clamped is not defined` runtime error in `test_todo_28` — the local `function clamped` was block-scoped inside a `for` loop and inaccessible outside it
+
 ## [2.4.26] - 2026-06-22
 
 ### Added
