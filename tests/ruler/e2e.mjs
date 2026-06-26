@@ -1,7 +1,7 @@
 // End-to-end tests for ruler elevation common user workflows.
 // These tests simulate realistic user scenarios by chaining multiple operations.
 
-import { assert } from "../tests.mjs";
+import { assert } from "../shared.mjs";
 
 /**
  * Run all end-to-end tests.

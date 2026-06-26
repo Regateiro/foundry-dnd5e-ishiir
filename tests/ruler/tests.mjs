@@ -8,7 +8,7 @@ import { runE2ETests } from "./e2e.mjs";
 import { withMocks, createMockRuler as _createMockRuler, expectNullRuler, expectNonNullRuler } from "../mocks.mjs";
 
 
-import { assert, assertApprox } from "../tests.mjs";
+import { assert, assertApprox } from "../shared.mjs";
 
 /**
  * Run a test and log its name before execution.

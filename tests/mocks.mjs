@@ -11,7 +11,7 @@
  */
 
 
-import { assert } from "./tests.mjs";
+import { assert } from "./shared.mjs";
 export class MockManager {
   constructor() {
     this._origCanvas = globalThis.canvas;

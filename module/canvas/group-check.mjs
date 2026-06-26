@@ -1,8 +1,3 @@
-// NOTE: GroupCheckManager ↔ GroupCheckApplication is a circular import.
-// ES live bindings make it safe ONLY if no cross-references at module scope.
-
-import GroupCheckApplication from "../applications/group-check.mjs";
-
 export class GroupCheckManager {
   static activeCheck = null;
 
@@ -17,10 +12,10 @@ export class GroupCheckManager {
     const ability = CONFIG.DND5E.skills[skillId].ability;
     const checkId = foundry.utils.randomID();
     GroupCheckManager.activeCheck = { id: checkId, skill: skillId, ability, results: {} };
+    Hooks.callAll("dnd5e.groupCheckRender");
     await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
     game.socket.emit("system.dnd5e", { operation: "start", checkId, skill: skillId, ability });
     Hooks.callAll("dnd5e.groupCheckStart", GroupCheckManager.activeCheck);
-    GroupCheckApplication.getInstance().render(true);
   }
 
   /* -------------------------------------------------- */
@@ -31,7 +26,7 @@ export class GroupCheckManager {
     if ( GroupCheckManager.activeCheck.results[actorId] ) return;
     GroupCheckManager.activeCheck.results[actorId] = { name: actorName, total };
     await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
-    GroupCheckApplication.getInstance().refresh();
+    Hooks.callAll("dnd5e.groupCheckRefresh");
   }
 
   /* -------------------------------------------------- */
@@ -53,7 +48,7 @@ export class GroupCheckManager {
     if ( !GroupCheckManager.activeCheck.results[actorId] ) return;
     delete GroupCheckManager.activeCheck.results[actorId];
     await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
-    GroupCheckApplication.getInstance().refresh();
+    Hooks.callAll("dnd5e.groupCheckRefresh");
   }
 
   /* -------------------------------------------------- */
@@ -82,7 +77,7 @@ export class GroupCheckManager {
     });
     game.socket.emit("system.dnd5e", { operation: "end", checkId: GroupCheckManager.activeCheck.id });
     await game.settings.set("dnd5e", "activeGroupCheck", null);
-    GroupCheckApplication.getInstance().close({force: true});
+    Hooks.callAll("dnd5e.groupCheckClose");
     Hooks.callAll("dnd5e.groupCheckEnd", GroupCheckManager.activeCheck);
     GroupCheckManager.activeCheck = null;
   }
@@ -95,7 +90,7 @@ export class GroupCheckManager {
     const checkId = GroupCheckManager.activeCheck.id;
     game.socket.emit("system.dnd5e", { operation: "end", checkId });
     await game.settings.set("dnd5e", "activeGroupCheck", null);
-    GroupCheckApplication.getInstance().close({force: true});
+    Hooks.callAll("dnd5e.groupCheckClose");
     Hooks.callAll("dnd5e.groupCheckEnd", GroupCheckManager.activeCheck);
     GroupCheckManager.activeCheck = null;
   }
@@ -105,7 +100,7 @@ export class GroupCheckManager {
   static restoreFromSetting(data) {
     if ( data && typeof data === "object" && data.id && data.skill && data.ability ) {
       GroupCheckManager.activeCheck = data;
-      if ( game.user.isGM ) GroupCheckApplication.getInstance().render(true);
+      if ( game.user.isGM ) Hooks.callAll("dnd5e.groupCheckRender");
     } else {
       GroupCheckManager.activeCheck = null;
     }

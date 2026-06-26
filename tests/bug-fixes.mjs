@@ -11,7 +11,7 @@
 // adjustElevation, group-check manager behavior at runtime inside Foundry.
 
 // Import shared test utilities (runTest for [TEST] logging, runBugFixTests uses safeTest internally)
-import { assert } from "./tests.mjs";
+import { assert } from "./shared.mjs";
 
 /* -------------------------------------------- */
 

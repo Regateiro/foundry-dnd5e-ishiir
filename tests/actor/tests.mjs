@@ -1,6 +1,6 @@
 // This file contains tests for the Actor class in the DND5E system.
 
-import { assert } from "../tests.mjs";
+import { assert } from "../shared.mjs";
 
 /**
  * Run a test and log its name before execution.

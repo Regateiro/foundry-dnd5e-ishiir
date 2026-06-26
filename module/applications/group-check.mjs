@@ -1,6 +1,3 @@
-// NOTE: GroupCheckApplication ↔ GroupCheckManager is a circular import.
-// ES live bindings make it safe ONLY if no cross-references at module scope.
-
 import { GroupCheckManager } from "../canvas/group-check.mjs";
 
 export default class GroupCheckApplication extends Application {
@@ -22,6 +19,9 @@ export default class GroupCheckApplication extends Application {
     if ( !GroupCheckApplication.#hooksRegistered ) {
       Hooks.on("dnd5e.groupCheckStart", () => this.refresh());
       Hooks.on("dnd5e.groupCheckEnd", () => this.refresh());
+      Hooks.on("dnd5e.groupCheckRender", () => this.render(true));
+      Hooks.on("dnd5e.groupCheckRefresh", () => this.refresh());
+      Hooks.on("dnd5e.groupCheckClose", () => this.close({force: true}));
       GroupCheckApplication.#hooksRegistered = true;
     }
   }
