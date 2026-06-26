@@ -2,6 +2,7 @@ import { runActorTests } from "./actor/tests.mjs";
 import { runRulerElevationTests } from "./ruler/tests.mjs";
 import { runBugFixTests } from "./bug-fixes.mjs";
 import { assert, assertApprox, collectFailures, formatFailures } from "./shared.mjs";
+export { assert, assertApprox, collectFailures, formatFailures };
 
 // Extended tests for test infrastructure: assert helper, collectFailures traversal, etc.
 

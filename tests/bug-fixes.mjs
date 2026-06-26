@@ -697,40 +697,18 @@ async function test_todo_H() {
 async function test_todo_28() {
   const results = {};
 
-  // Test mathematical equivalence: clamped(0, x, max) vs clamped(x, 0, max)
-
   for (const testVal of [0, -5, 3, 7, 10]) {
     const key = `clamped_${testVal}`;
-
-    // Simulate Foundry's Math.clamped: min(max(val, min), max)
-    /**
-     * Clamp a value between min and max.
-     * @param {number} value  Value to clamp.
-     * @param {number} min    Lower bound.
-     * @param {number} max    Upper bound.
-     * @returns {number} Clamped value.
-     */
-    function clamped(value, min, max) {
-      return Math.min(Math.max(value, min), max);
-    }
-
-    const swappedResult = clamped(0, testVal, 10);
-    const normalResult = clamped(testVal, 0, 10);
-
-    results[key] = assert(true, swappedResult === normalResult);
+    results[key] = assert(true,
+      Math.clamped(0, testVal, 10) === Math.clamped(testVal, 0, 10));
   }
 
-  // Verify the equivalence holds for all edge cases
   results.negative_val = assert(true,
-    Math.min(Math.max(0, -5), 10) === Math.min(Math.max(-5, 0), 10));
-
+    Math.clamped(0, -5, 10) === Math.clamped(-5, 0, 10));
   results.zero_val = assert(true,
-    clamped(0, 0, 10) === 0);
-
+    Math.clamped(0, 0, 10) === 0);
   results.above_max = assert(true,
-    Math.min(Math.max(0, 20), 10) === Math.min(Math.max(20, 0), 10));
-
-  // Mark as false positive (no bug exists)
+    Math.clamped(0, 20, 10) === Math.clamped(20, 0, 10));
   results.is_false_positive = assert(true, true);
 
   return results;
@@ -746,27 +724,10 @@ async function test_todo_28() {
 async function test_todo_29() {
   const results = {};
 
-  // Test mathematical equivalence for vehicle HP values
-  /**
-   * Clamp a value between min and max.
-   * @param {number} value  Value to clamp.
-   * @param {number} min    Lower bound.
-   * @param {number} max    Upper bound.
-   * @returns {number} Clamped value.
-   */
-  function clamped(value, min, max) {
-    return Math.min(Math.max(value, min), max);
-  }
-
   for (const hpVal of [0, -10, 5, 25, 50]) {
     const key = `hp_${hpVal}`;
-
-    // Simulate the "swapped" pattern: clamped(0, parseInt(value), max)
-    // vs correct interpretation: clamped(parseInt(value), 0, max)
-    const swappedResult = clamped(0, hpVal, 50);
-    const normalResult = clamped(hpVal, 0, 50);
-
-    results[key] = assert(true, swappedResult === normalResult);
+    results[key] = assert(true,
+      Math.clamped(0, hpVal, 50) === Math.clamped(hpVal, 0, 50));
   }
 
   // Mark as false positive (no bug exists)
