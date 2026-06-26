@@ -1481,5 +1481,6 @@
 "DND5E.GroupCheckParticipants": "Participants",
 "DND5E.GroupCheckWaiting": "Waiting for participants...",
 "DND5E.GroupCheckNoParticipants": "No participants have rolled yet.",
+"DND5E.GroupCheckRemove": "Remove",
 "DND5E.InvalidHPValue": "\"{value}\" is not a valid HP value."
 }

@@ -47,6 +47,17 @@ export class GroupCheckManager {
 
   /* -------------------------------------------------- */
 
+  static async removeResult(actorId) {
+    if ( !GroupCheckManager.activeCheck ) return;
+    if ( !game.user.isGM ) return;
+    if ( !GroupCheckManager.activeCheck.results[actorId] ) return;
+    delete GroupCheckManager.activeCheck.results[actorId];
+    await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+    GroupCheckApplication.getInstance().refresh();
+  }
+
+  /* -------------------------------------------------- */
+
   static async end() {
     if ( !GroupCheckManager.activeCheck ) return;
     if ( !game.user.isGM ) return;

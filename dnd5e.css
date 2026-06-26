@@ -2684,3 +2684,91 @@ a.roll-link i {
   flex: 0 0 64px;
   text-align: right;
 }
+.dnd5e .group-check-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 8px 0;
+}
+.dnd5e .group-check-form h2 {
+  margin: 0 0 4px 0;
+}
+.dnd5e .group-check-form h2 span {
+  font-weight: normal;
+  margin: 0 0 0 8px;
+}
+.dnd5e .group-check-form .group-check-table {
+  border-collapse: collapse;
+}
+.dnd5e .group-check-form .group-check-table th,
+.dnd5e .group-check-form .group-check-table td {
+  border: 1px solid #7a7971;
+}
+.dnd5e .group-check-form .group-check-table th:nth-child(1) {
+  width: 61%;
+}
+.dnd5e .group-check-form .group-check-table th:nth-child(2) {
+  width: 31%;
+}
+.dnd5e .group-check-form .group-check-table th:nth-child(3) {
+  width: 8%;
+}
+.dnd5e .group-check-form .group-check-table td {
+  text-align: center;
+}
+.dnd5e .group-check-form .group-check-table input[type="number"] {
+  text-align: center;
+  width: 70px;
+}
+.dnd5e .group-check-form .group-check-participants {
+  margin: 0;
+  opacity: 0.7;
+}
+.dnd5e .group-check-form .group-check-waiting {
+  margin: 0;
+  opacity: 0.7;
+  font-style: italic;
+}
+.dnd5e .group-check-form .group-check-buttons {
+  display: flex;
+  gap: 6px;
+  margin-top: 2px;
+}
+.dnd5e .group-check-form .group-check-buttons button {
+  flex: 1;
+}
+.dnd5e .group-check-form > label {
+  opacity: 0.7;
+  margin-bottom: 2px;
+}
+.dnd5e .group-check-form select[name="skill"] {
+  padding: 4px 6px;
+}
+.dnd5e .group-check-form button.start-check {
+  margin-top: 4px;
+  padding: 6px 12px;
+}
+.group-check-result .group-check-average {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 8px 0 12px 0;
+}
+.group-check-result table {
+  border-collapse: collapse;
+}
+.group-check-result table th,
+.group-check-result table td {
+  border: 1px solid #7a7971;
+  text-align: center;
+}
+.group-check-result table th {
+  padding: 6px 8px;
+}
+.group-check-result table td {
+  padding: 4px 8px;
+}
+.group-check-result .group-check-footer {
+  margin: 0;
+  opacity: 0.7;
+}

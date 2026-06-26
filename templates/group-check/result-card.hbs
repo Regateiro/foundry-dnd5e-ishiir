@@ -1,20 +1,21 @@
+<div class="group-check-result">
 <h3>{{localize "DND5E.GroupCheckResult"}} &mdash; {{skillLabel}}</h3>
-<div style="text-align:center;font-size:2.5em;font-weight:bold;margin:8px 0 12px 0">{{average}}</div>
-<table style="border-collapse:collapse">
+<div class="group-check-average">{{average}}</div>
+<table>
     <thead>
       <tr>
-        <th style="text-align:center;padding:6px 8px;border:1px solid #7a7971">{{localize "DND5E.GroupCheckActor"}}</th>
-        <th style="text-align:center;padding:6px 8px;border:1px solid #7a7971">{{localize "DND5E.GroupCheckRoll"}}</th>
+        <th>{{localize "DND5E.GroupCheckActor"}}</th>
+        <th>{{localize "DND5E.GroupCheckRoll"}}</th>
       </tr>
     </thead>
     <tbody>
     {{#each entries}}
       <tr>
-        <td style="text-align:center;padding:4px 8px;border:1px solid #7a7971">{{this.name}}</td>
-        <td style="text-align:center;padding:4px 8px;border:1px solid #7a7971">{{this.total}}</td>
+        <td>{{this.name}}</td>
+        <td>{{this.total}}</td>
       </tr>
     {{/each}}
     </tbody>
   </table>
   <hr>
-  <p style="margin:0;opacity:.7">{{localize "DND5E.GroupCheckTotal"}}: {{sum}}  |  {{localize "DND5E.GroupCheckParticipants"}}: {{count}}</p>
+  <p class="group-check-footer">{{localize "DND5E.GroupCheckTotal"}}: {{sum}}  |  {{localize "DND5E.GroupCheckParticipants"}}: {{count}}</p>

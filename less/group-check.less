@@ -1,0 +1,106 @@
+@import "./variables.less";
+
+.dnd5e {
+  .group-check-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 0;
+
+    h2 {
+      margin: 0 0 4px 0;
+
+      span {
+        font-weight: normal;
+        margin: 0 0 0 8px;
+      }
+    }
+
+    .group-check-table {
+      border-collapse: collapse;
+
+      th, td {
+        border: 1px solid @colorTan;
+      }
+
+      th:nth-child(1) { width: 61%; }
+      th:nth-child(2) { width: 31%; }
+      th:nth-child(3) { width: 8%; }
+
+      td {
+        text-align: center;
+      }
+
+      input[type="number"] {
+        text-align: center;
+        width: 70px;
+      }
+    }
+
+    .group-check-participants {
+      margin: 0;
+      opacity: 0.7;
+    }
+
+    .group-check-waiting {
+      margin: 0;
+      opacity: 0.7;
+      font-style: italic;
+    }
+
+    .group-check-buttons {
+      display: flex;
+      gap: 6px;
+      margin-top: 2px;
+
+      button {
+        flex: 1;
+      }
+    }
+
+    > label {
+      opacity: 0.7;
+      margin-bottom: 2px;
+    }
+
+    select[name="skill"] {
+      padding: 4px 6px;
+    }
+
+    button.start-check {
+      margin-top: 4px;
+      padding: 6px 12px;
+    }
+  }
+}
+
+.group-check-result {
+  .group-check-average {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 8px 0 12px 0;
+  }
+
+  table {
+    border-collapse: collapse;
+
+    th, td {
+      border: 1px solid @colorTan;
+      text-align: center;
+    }
+
+    th {
+      padding: 6px 8px;
+    }
+
+    td {
+      padding: 4px 8px;
+    }
+  }
+
+  .group-check-footer {
+    margin: 0;
+    opacity: 0.7;
+  }
+}

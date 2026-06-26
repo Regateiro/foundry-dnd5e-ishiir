@@ -1,39 +1,41 @@
-<form autocomplete="off" style="display:flex;flex-direction:column;gap:10px;padding:8px 0">
+<form class="group-check-form" autocomplete="off">
 {{#if active}}
-  <h2 style="margin:0 0 4px 0">{{localize "DND5E.GroupCheck"}}<span style="font-weight:normal;margin:0 0 0 8px">&mdash; {{skillLabel}}</span></h2>
+  <h2>{{localize "DND5E.GroupCheck"}}<span>&mdash; {{skillLabel}}</span></h2>
   {{#if hasEntries}}
-  <table>
+  <table class="group-check-table">
     <thead>
       <tr>
         <th>{{localize "DND5E.GroupCheckActor"}}</th>
         <th>{{localize "DND5E.GroupCheckRoll"}}</th>
+        <th></th>
       </tr>
     </thead>
     <tbody>
     {{#each entries}}
       <tr>
         <td>{{this.name}}</td>
-        <td style="width:1px"><input type="number" data-actor-id="{{this.id}}" value="{{this.total}}" style="padding:2px 4px;width:70px"></td>
+        <td><input type="number" data-actor-id="{{this.id}}" value="{{this.total}}"></td>
+        <td><a class="remove-actor" data-actor-id="{{this.id}}" title="{{localize "DND5E.GroupCheckRemove"}}"><i class="fas fa-times"></i></a></td>
       </tr>
     {{/each}}
     </tbody>
   </table>
-  <p style="margin:0;opacity:.7">{{localize "DND5E.GroupCheckParticipants"}}: {{count}}</p>
+  <p class="group-check-participants">{{localize "DND5E.GroupCheckParticipants"}}: {{count}}</p>
   {{else}}
-  <p style="margin:0;opacity:.7;font-style:italic">{{localize "DND5E.GroupCheckWaiting"}}</p>
+  <p class="group-check-waiting">{{localize "DND5E.GroupCheckWaiting"}}</p>
   {{/if}}
-  <div style="display:flex;gap:6px;margin-top:2px">
-    <button class="end-check" type="button" style="flex:1">{{localize "DND5E.GroupCheckEnd"}}</button>
-    <button class="cancel-check" type="button" style="flex:1">{{localize "DND5E.GroupCheckCancel"}}</button>
+  <div class="group-check-buttons">
+    <button class="end-check" type="button">{{localize "DND5E.GroupCheckEnd"}}</button>
+    <button class="cancel-check" type="button">{{localize "DND5E.GroupCheckCancel"}}</button>
   </div>
 {{else}}
-  <h2 style="margin:0 0 2px 0">{{localize "DND5E.GroupCheck"}}</h2>
-  <label style="opacity:.7;margin-bottom:2px">{{localize "DND5E.GroupCheckPrompt"}}</label>
-  <select name="skill" style="padding:4px 6px">
+  <h2>{{localize "DND5E.GroupCheck"}}</h2>
+  <label>{{localize "DND5E.GroupCheckPrompt"}}</label>
+  <select name="skill">
     {{#each skills}}
     <option value="{{this.key}}">{{this.label}}</option>
     {{/each}}
   </select>
-  <button class="start-check" type="button" style="margin-top:4px;padding:6px 12px">{{localize "DND5E.GroupCheckStart"}}</button>
+  <button class="start-check" type="button">{{localize "DND5E.GroupCheckStart"}}</button>
 {{/if}}
 </form>

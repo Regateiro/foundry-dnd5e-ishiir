@@ -30,6 +30,7 @@ export default class GroupCheckApplication extends Application {
 
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
+      classes: ["dnd5e"],
       template: "systems/dnd5e/templates/group-check/application.hbs",
       title: game.i18n.localize("DND5E.GroupCheck"),
       width: 400,
@@ -77,6 +78,7 @@ export default class GroupCheckApplication extends Application {
     html.find(".end-check").click(this._onEndCheck.bind(this));
     html.find(".cancel-check").click(this._onCancel.bind(this));
     html.find("input[data-actor-id]").on("change blur", this._onEditResult.bind(this));
+    html.find(".remove-actor").click(this._onRemoveActor.bind(this));
   }
 
   /* -------------------------------------------------- */
@@ -107,6 +109,14 @@ export default class GroupCheckApplication extends Application {
     const actorId = event.currentTarget.dataset.actorId;
     const newTotal = Number(event.currentTarget.value);
     if ( actorId && !isNaN(newTotal) ) GroupCheckManager.updateResult(actorId, newTotal);
+  }
+
+  /* -------------------------------------------------- */
+
+  _onRemoveActor(event) {
+    event.preventDefault();
+    const actorId = event.currentTarget.dataset.actorId;
+    if ( actorId ) GroupCheckManager.removeResult(actorId);
   }
 
   /* -------------------------------------------------- */
