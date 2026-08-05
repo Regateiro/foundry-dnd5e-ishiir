@@ -69,14 +69,14 @@
       "charged": null
     }
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/skills/melee/unarmed-punch-fist-yellow-red.webp",
   "_id": "sbfd6299dea6fcbd",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777210591053,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sbfd6299dea6fcbd",

@@ -69,14 +69,14 @@
       "charged": null
     }
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
   "_id": "s4fe6d949ed7887d",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189545,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s4fe6d949ed7887d",

@@ -69,14 +69,14 @@
       "charged": null
     }
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/skills/melee/strike-flail-destructive-yellow.webp",
   "_id": "sf3b79a2c84cd72f",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777218428353,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sf3b79a2c84cd72f",

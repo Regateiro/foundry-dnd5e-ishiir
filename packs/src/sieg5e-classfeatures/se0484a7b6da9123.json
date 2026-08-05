@@ -69,14 +69,14 @@
       "charged": null
     }
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/life/heart-glowing-red.webp",
   "_id": "se0484a7b6da9123",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189515,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!se0484a7b6da9123",

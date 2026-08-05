@@ -245,7 +245,7 @@
         "configuration": {
           "items": [
             "Compendium.dnd5e.sieg5e-classfeatures.s044f465bacb220f",
-            "Compendium.dnd5e.sieg5e-classfeatures.s9c6ae4e5642b2ad"
+            "Compendium.dnd5e.sieg5e-classfeatures.s38940c78d2a1fee"
           ]
         }
       },
@@ -383,7 +383,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1780786541330,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s1ba83ef4de3cccc",

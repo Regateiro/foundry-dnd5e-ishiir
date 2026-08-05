@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You have a mind for tactics on and off the battlefield. When you fail an Ability Check, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the Ability Check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.</p>",
+      "value": "<p>You have a mind for tactics on the battlefield. When you roll Initiative, you roll a d10 and add it to the result. When you fail a Skill Check you are proficient in during Combat, you can expend a use of your Second Wind to push yourself toward success. Rather than regaining Hit Points, you roll 1d10 and add the number rolled to the Ability Check, potentially turning it into a success. If the check still fails, this use of Second Wind isn't expended.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1780786541330,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s5783df2430993f1",

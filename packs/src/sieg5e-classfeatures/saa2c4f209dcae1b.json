@@ -69,14 +69,14 @@
       "charged": null
     }
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/control/control-influence-rally-purple.webp",
   "_id": "saa2c4f209dcae1b",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189528,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!saa2c4f209dcae1b",

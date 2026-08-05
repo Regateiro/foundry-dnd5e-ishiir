@@ -1,0 +1,85 @@
+{
+  "name": "Tactical Acumen",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you use your Second Wind feature, you can choose one of the following additional effects:</p><ul><li>You can move up to half your Speed without provoking Attacks of Opportunity.</li><li>If you are under the effect of the Dodge action, you also have Advantage on Strength and Constitution Saving Throws for its duration.</li><li>If you are under the effect of the Dash action, you can make a single weapon attack with a weapon you are holding.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/skills/melee/strike-flail-destructive-yellow.webp",
+  "_id": "s38940c78d2a1fee",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1785969175120,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s38940c78d2a1fee",
+  "flags": {},
+  "sort": 0
+}

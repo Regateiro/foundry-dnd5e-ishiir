@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>When you use Second Wind and Tactical Shift, you can move up to your full Speed instead. If you choose to not receive healing from Second Wind, you can activate it without a Bonus Action. You can do so only once on your turn.</p><p>Additionally, this movement allows you to move through the spaces of hostile creatures, treating them as 3.</p>",
+      "value": "<p>When you use Second Wind and Tactical Acumen, you can move up to your full Speed instead. If you choose to not receive healing from Second Wind, you can activate it without a Bonus Action. You can do so only once on your turn.</p><p>Additionally, this movement allows you to move through the spaces of hostile creatures, treating them as 3.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -69,14 +69,14 @@
       "charged": null
     }
   },
-  "img": "icons/svg/item-bag.svg",
+  "img": "icons/magic/life/heart-glowing-red.webp",
   "_id": "se9e5a33742b8c23",
   "_stats": {
     "systemId": "dnd5e",
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1777217189500,
+    "modifiedTime": 1785969175120,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!se9e5a33742b8c23",
