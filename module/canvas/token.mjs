@@ -15,6 +15,11 @@
  * - _onUpdate(): Tracks token movement timestamps in Token5e.lastMoved Map to support the
  *   "most recently moved on top" sort criterion. Without this, tokens that are moved would not
  *   visually update their z-order until the canvas re-renders via a separate trigger.
+ *
+ * - _draw() override: Moves the effects container from the Token (InterfaceCanvasGroup) to the
+ *   TokenMesh (PrimaryCanvasGroup) so that effect icons and overlays respect the same z-ordering
+ *   as the token texture itself. Without this, effects from "behind" tokens would appear on top
+ *   of "front" tokens because the InterfaceCanvasGroup renders above the PrimaryCanvasGroup.
  */
 
 export default class Token5e extends Token {
@@ -29,6 +34,46 @@ export default class Token5e extends Token {
   _drawBar(number, bar, data) {
     if ( data.attribute === "attributes.hp" ) return this._drawHPBar(number, bar, data);
     return super._drawBar(number, bar, data);
+  }
+
+  /* -------------------------------------------- */
+
+  /** @inheritdoc */
+  async _draw() {
+    await super._draw();
+    // Move effects container from Token (InterfaceCanvasGroup) to TokenMesh (PrimaryCanvasGroup)
+    // so that effect icons and overlays respect the same z-ordering as the token texture.
+    // Without this, effects from "behind" tokens appear on top of "front" tokens because
+    // the InterfaceCanvasGroup renders above the PrimaryCanvasGroup.
+    if ( this.effects && this.mesh ) {
+      // Remove any existing effects container from the mesh to prevent duplication
+      // when the token is redrawn (e.g., due to dimension or texture changes)
+      if ( this.mesh._effectsContainer && this.mesh._effectsContainer !== this.effects ) {
+        this.mesh.removeChild(this.mesh._effectsContainer);
+        this.mesh._effectsContainer.destroy({children: true});
+      }
+      this.removeChild(this.effects);
+      this.mesh.addChild(this.effects);
+      this.mesh._effectsContainer = this.effects;
+    }
+  }
+
+  /* -------------------------------------------- */
+
+  /** @inheritdoc */
+  _refreshEffects() {
+    // Call parent implementation to position effects
+    super._refreshEffects();
+    // The TokenMesh applies a scale to fit its texture into the grid rect, and the effects
+    // container (now a child of TokenMesh) inherits that scale. Counteract it so icons
+    // render at their intended size. Also, the TokenMesh's origin is at its center, so
+    // offset the effects container to align with the top-left corner, accounting for scale.
+    if ( this.effects && this.mesh ) {
+      const sx = this.mesh.scale.x;
+      const sy = this.mesh.scale.y;
+      this.effects.scale.set(1 / sx, 1 / sy);
+      this.effects.position.set(-this.w / (2 * sx), -this.h / (2 * sy));
+    }
   }
 
   /* -------------------------------------------- */
