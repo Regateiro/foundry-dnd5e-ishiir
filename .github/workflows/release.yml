@@ -29,10 +29,7 @@ jobs:
         echo "ZIP_NAME=sieg5e-$TAG.zip" >> $GITHUB_OUTPUT
         echo "RELEASE_DOWNLOAD_URL=https://github.com/${{github.repository}}/releases/download/$TAG/sieg5e-$TAG.zip" >> $GITHUB_OUTPUT
         echo "RELEASE_INSTALL_URL=https://github.com/${{github.repository}}/releases/download/$TAG/system.json" >> $GITHUB_OUTPUT
-        JSON=$(cat ./system.json)
-        JSON="${JSON//'%'/'%25'}"
-        JSON="${JSON//$'\n'/'%0A'}"
-        JSON="${JSON//$'\r'/'%0D'}"
+        JSON=$(jq -c . ./system.json)
         echo "SYSTEM_JSON=$JSON" >> $GITHUB_OUTPUT
 
 
