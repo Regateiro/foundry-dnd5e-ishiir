@@ -1,0 +1,85 @@
+{
+  "name": "Otherworldly Anguish",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>You draw power from a sorrow so deep it extends beyond the boundaries of the realm of the living. You gain the following benefits.</p><ul><li><strong>Deathly Wail.</strong> If a target fails its Saving Throw against your Banshee's Wail and it has Hit Points equal to twice your Barbarian level or fewer, it drops to 0 Hit Points instead of taking damage.</li><li><strong>Impenetrable Sorrow.</strong> You can't be possessed.</li><li><strong>Resistance.</strong> You have Resistance to Cold and Necrotic damage while your Rage is active.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/death/skull-flames-white-blue.webp",
+  "_id": "s611f159cc17f712",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1786187398951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s611f159cc17f712",
+  "flags": {},
+  "sort": 0
+}

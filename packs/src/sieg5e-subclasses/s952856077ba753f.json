@@ -1,0 +1,69 @@
+{
+  "_id": "s952856077ba753f",
+  "name": "Barbarian: Path of Lament",
+  "type": "subclass",
+  "system": {
+    "source": "Ishiir",
+    "classIdentifier": "barbarian",
+    "identifier": "barbarian-path-of-lament",
+    "advancement": [
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 3,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s980968ea73b4705"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 6,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.sd2679b84556d47f",
+            "Compendium.dnd5e.sieg5e-classfeatures.s5f315b0f5ff98a1"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 10,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s611f159cc17f712"
+          ]
+        }
+      },
+      {
+        "title": "Features",
+        "type": "ItemGrant",
+        "level": 14,
+        "icon": "systems/dnd5e/icons/svg/item-grant.svg",
+        "configuration": {
+          "items": [
+            "Compendium.dnd5e.sieg5e-classfeatures.s1826eb262064163"
+          ]
+        }
+      }
+    ]
+  },
+  "img": "icons/magic/death/skull-flames-white-blue.webp",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1786187398951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s952856077ba753f",
+  "flags": {},
+  "sort": 0
+}

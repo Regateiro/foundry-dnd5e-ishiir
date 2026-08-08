@@ -1,0 +1,85 @@
+{
+  "name": "Banshee's Wail",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you activate your Rage or as a Bonus Action while your Rage is active, you can let out a doleful wail. Each creature of your choice in a 30-foot Emanation originating from you makes a Constitution Saving Throw (DC 8 plus your Constitution modifier and Proficiency bonus). On a failed save, a creature takes Psychic damage and has the Deafened condition for 1 minute. On a successful save, a creature takes half as much damage only. To determine the Psychic damage, roll a number of d12s equal to your Rage Damage bonus, and add them together.</p><p>You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a Long Rest. You can also regain all uses by expending a use of your Rage (no action required).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/sonic/scream-wail-shout-teal.webp",
+  "_id": "s980968ea73b4705",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1786187398951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s980968ea73b4705",
+  "flags": {},
+  "sort": 0
+}

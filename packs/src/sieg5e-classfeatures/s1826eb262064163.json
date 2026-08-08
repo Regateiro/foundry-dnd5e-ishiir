@@ -1,0 +1,85 @@
+{
+  "name": "Sorrow Form",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>When you activate your Rage, you can empower yourself with undeath. You gain the benefits below for 1 minute or until you drop to 0 Hit Points. Once you use this feature, you can't do so again until you finish a Long Rest.</p><ul><li><strong>Immunities.</strong> You have Immunity to the Charmed and Frightened conditions. If you're Charmed or Frightened when you empower yourself, the condition ends on you. In addition, you can't gain Exhaustion levels.</li><li><strong>Life-Draining Strike.</strong> When a creature fails its Saving Throw against your Horrifying Strike, the creature takes 2d10 Necrotic damage. You regain Hit Points equal to the Necrotic damage dealt.</li></ul>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/magic/death/skull-energy-light-white.webp",
+  "_id": "s1826eb262064163",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1786187398951,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s1826eb262064163",
+  "flags": {},
+  "sort": 0
+}
