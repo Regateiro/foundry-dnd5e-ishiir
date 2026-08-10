@@ -5,6 +5,26 @@ All notable changes to the Sieg5e system (forked from Foundry VTT D&D5e) are doc
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.4.30] - 2026-08-10
+
+### Fixed
+- Text selection in the chat log and UI no longer breaks after pasting into the chat input
+  - Firefox produces an empty selection range when double-clicking text whose ancestor chain contains a `user-select: none` element after interacting with a `<textarea>` — Foundry then mistook the empty selection for a token copy
+  - Fixed by overriding core's universal `user-select: none` with `html, body, body * { user-select: text }` in `less/dnd5e.less`, keeping the entire document selectable
+- Chat log, app window, and journal content are now fully text-selectable (previously blocked by core's global `user-select: none`)
+
+## [2.4.29] - 2026-08-08
+
+### Added
+- Path of Lament subclass and its class features to the Sieg5e compendia (`sieg5e-subclasses`, `sieg5e-classfeatures`)
+
+## [2.4.28] - 2026-08-05
+
+### Changed
+- Token effect icons and overlays now respect the same z-ordering as the token texture: the effects container was moved from the Token (`InterfaceCanvasGroup`) to the `TokenMesh` (`PrimaryCanvasGroup`), so effects from "behind" tokens no longer render on top of "front" tokens
+- Effect icon scale/position is counteracted against the token mesh scale so icons render at their intended size and alignment
+- Updated compendium pack data (packs, classfeatures database)
+
 ## [2.4.27] - 2026-06-26
 
 ### Added
