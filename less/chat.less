@@ -1,6 +1,19 @@
 @import "variables.less";
 
 /* ----------------------------------------- */
+/*  Text Selection                           */
+/* ----------------------------------------- */
+
+.chat-message,
+#chat-log,
+#chat-log * {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* ----------------------------------------- */
 /*  Chat Cards                               */
 /* ----------------------------------------- */
 
@@ -38,13 +51,6 @@
       font-size: 12px;
       margin: 0;
       font-weight: bold;
-    }
-
-    > * {
-      -webkit-user-select: text;
-      -moz-user-select: text;
-      -ms-user-select: text;
-      user-select: text;
     }
   }
 

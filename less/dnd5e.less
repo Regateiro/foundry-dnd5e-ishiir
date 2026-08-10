@@ -10,3 +10,19 @@
 @import "vehicle.less";
 @import "group.less";
 @import "group-check.less";
+
+/* ----------------------------------------- */
+/*  Text Selection                           */
+/* ----------------------------------------- */
+
+/* Override Foundry core's universal "user-select: none". Firefox's word-extend
+   (double-click) selection breaks after interacting with a textarea when the
+   clicked text has a "user-select: none" ancestor — it produces an empty
+   selection range, which Foundry then mistakes for a token copy. Keep the
+   entire document selectable so every text selection works reliably. */
+html, body, body * {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
