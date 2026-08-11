@@ -1123,6 +1123,9 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     // Reliable Talent applies to any skill check we have full or better proficiency in
     const reliableTalent = (skl.value >= 1 && this.getFlag("dnd5e", "reliableTalent"));
 
+    // Expertise rerolls ones once on any check we have proficiency in
+    const expertise = (skl.prof.hasProficiency && this.getFlag("dnd5e", "expertise"));
+
     // Roll and return
     const flavor = game.i18n.format("DND5E.SkillPromptTitle", {skill: CONFIG.DND5E.skills[skillId]?.label ?? ""});
     const rollData = foundry.utils.mergeObject({
@@ -1132,6 +1135,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       die: skl.formula || "1d20",
       chooseModifier: true,
       halflingLucky: this.getFlag("dnd5e", "halflingLucky"),
+      expertise,
       reliableTalent,
       messageData: {
         speaker: options.speaker || ChatMessage.getSpeaker({actor: this}),
@@ -1216,12 +1220,16 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     // Reliable Talent applies to any tool check we have full or better proficiency in
     const reliableTalent = (prof.multiplier >= 1 && this.getFlag("dnd5e", "reliableTalent"));
 
+    // Expertise rerolls ones once on any check we have proficiency in
+    const expertise = (prof?.hasProficiency && this.getFlag("dnd5e", "expertise"));
+
     const flavor = game.i18n.format("DND5E.ToolPromptTitle", {tool: Trait.keyLabel(toolId, {trait: "tool"}) ?? ""});
     const rollData = foundry.utils.mergeObject({
       data, flavor,
       title: `${flavor}: ${this.name}`,
       chooseModifier: true,
       halflingLucky: this.getFlag("dnd5e", "halflingLucky"),
+      expertise,
       reliableTalent,
       messageData: {
         speaker: options.speaker || ChatMessage.implementation.getSpeaker({actor: this}),
@@ -1328,6 +1336,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
       title: `${flavor}: ${this.name}`,
       flavor,
       halflingLucky: this.getFlag("dnd5e", "halflingLucky"),
+      expertise: this.getFlag("dnd5e", "expertise") && abl?.checkProf.hasProficiency,
       messageData: {
         speaker: options.speaker || ChatMessage.getSpeaker({actor: this}),
         "flags.dnd5e.roll": {type: "ability", abilityId }
@@ -1640,6 +1649,7 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     options = foundry.utils.mergeObject({
       flavor: options.flavor ?? game.i18n.localize("DND5E.Initiative"),
       halflingLucky: flags.halflingLucky ?? false,
+      expertise: (flags.expertise ?? false) && init?.prof?.hasProficiency,
       critical: null,
       fumble: null
     }, options);

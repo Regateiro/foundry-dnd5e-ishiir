@@ -11,6 +11,7 @@
  *                                               compared
  * @param {boolean} [options.elvenAccuracy=false]      Allow Elven Accuracy to modify this roll?
  * @param {boolean} [options.halflingLucky=false]      Allow Halfling Luck to modify this roll?
+ * @param {boolean} [options.expertise=false]          Allow Expertise to reroll ones on this roll?
  * @param {boolean} [options.reliableTalent=false]     Allow Reliable Talent to modify this roll?
  */
 export default class D20Roll extends Roll {
@@ -143,8 +144,8 @@ export default class D20Roll extends Roll {
     const customModifiers = d20.modifiers.filter(m => !["kh", "kl", "r1=1", "min10"].includes(m));
     d20.modifiers = [];
 
-    // Halfling Lucky
-    if ( this.options.halflingLucky ) d20.modifiers.push("r1=1");
+    // Halfling Lucky / Expertise Feat
+    if ( this.options.halflingLucky || this.options.expertise ) d20.modifiers.push("r1=1");
 
     // Handle Advantage or Disadvantage
     if ( this.hasAdvantage ) {

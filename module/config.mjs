@@ -2028,6 +2028,12 @@ DND5E.characterFlags = {
     section: "DND5E.Feats",
     type: Boolean
   },
+  expertise: {
+    name: "DND5E.FlagsExpertise",
+    hint: "DND5E.FlagsExpertiseHint",
+    section: "DND5E.Feats",
+    type: Boolean
+  },
   remarkableAthlete: {
     name: "DND5E.FlagsRemarkableAthlete",
     hint: "DND5E.FlagsRemarkableAthleteHint",
