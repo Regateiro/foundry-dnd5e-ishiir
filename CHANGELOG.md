@@ -5,6 +5,14 @@ All notable changes to the Sieg5e system (forked from Foundry VTT D&D5e) are doc
 The format is based on [Keep a Changelog](https://keepachangelog.com/),
 and this project adheres to [Semantic Versioning](https://semver.org/).
 
+## [2.4.31] - 2026-08-11
+
+### Added
+- New "Expertise Feat" character flag (Feature Flags sheet) that rerolls ones once (`r1=1`) on any ability check the actor has any level of proficiency in
+  - Applies to skill checks, tool checks, raw ability tests, and initiative
+  - Half-proficiency from Jack of All Trades or Remarkable Athlete counts as proficiency, so unskilled checks also reroll ones when those flags are active
+  - Saving throws, death saves, and attacks are unaffected
+
 ## [2.4.30] - 2026-08-10
 
 ### Fixed
