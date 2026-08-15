@@ -2028,9 +2028,9 @@ DND5E.characterFlags = {
     section: "DND5E.Feats",
     type: Boolean
   },
-  expertise: {
-    name: "DND5E.FlagsExpertise",
-    hint: "DND5E.FlagsExpertiseHint",
+  expert: {
+    name: "DND5E.FlagsExpert",
+    hint: "DND5E.FlagsExpertHint",
     section: "DND5E.Feats",
     type: Boolean
   },

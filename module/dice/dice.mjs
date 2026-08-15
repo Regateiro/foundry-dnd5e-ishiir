@@ -24,7 +24,7 @@
  * ## Flags
  * @property {boolean} [elvenAccuracy]   Allow Elven Accuracy to modify this roll?
  * @property {boolean} [halflingLucky]   Allow Halfling Luck to modify this roll?
- * @property {boolean} [expertise]       Allow Expertise to reroll ones on this roll?
+ * @property {boolean} [expert]         Allow Expert to reroll ones on this roll?
  * @property {boolean} [reliableTalent]  Allow Reliable Talent to modify this roll?
  *
  * ## Roll Configuration Dialog
@@ -53,7 +53,7 @@
 export async function d20Roll({
   parts=[], data={}, event,
   advantage, disadvantage, critical=20, fumble=1, targetValue,
-  elvenAccuracy, bladeMastery, tripleAdvantage, halflingLucky, expertise, reliableTalent,
+  elvenAccuracy, bladeMastery, tripleAdvantage, halflingLucky, expert, reliableTalent,
   fastForward, chooseModifier=false, template, title, dialogOptions,
   chatMessage=true, messageData={}, rollMode, flavor, die="1d20"
 }={}) {
@@ -82,7 +82,7 @@ export async function d20Roll({
     bladeMastery,
     tripleAdvantage,
     halflingLucky,
-    expertise,
+    expert,
     reliableTalent
   });
 
