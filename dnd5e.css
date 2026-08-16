@@ -82,13 +82,6 @@ h5 {
   margin-block-end: 0;
   font-size: var(--font-size-13);
 }
-.window-app.dnd5e .window-content,
-.window-app.dnd5e .window-content * {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
 .dnd5e {
   /* ----------------------------------------- */
   /*  Element Styles                           */
@@ -2166,13 +2159,6 @@ h5 {
   min-height: 480px;
   min-width: 640px;
 }
-.srd-compendium.app .window-content,
-.srd-compendium.app .window-content * {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
-}
 .srd-compendium.app .window-content {
   background: url(ui/parchment.jpg) repeat;
   color: var(--color-text-dark-primary);
@@ -2290,9 +2276,24 @@ h5 {
 /* ----------------------------------------- */
 /*  Text Selection                           */
 /* ----------------------------------------- */
-.chat-message,
+/* Firefox's word-extend (double-click) selection produces an empty range when
+   the clicked text has a "user-select: none" ancestor (e.g. after interacting
+   with the chat textarea) — Foundry then mistakes the empty selection for a
+   token copy. Keep the entire chat subtree selectable, including the full
+   ancestor chain, without making the rest of the UI (canvas, sheets, other
+   sidebar tabs) selectable. */
+html,
+body,
+#interface,
+#ui-right,
+#sidebar,
+#chat,
+#chat-form,
+#chat-message,
 #chat-log,
-#chat-log * {
+#chat-log *,
+.window-app.sidebar-popout,
+.window-app.sidebar-popout * {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
@@ -2790,20 +2791,4 @@ a.roll-link i {
 .group-check-result .group-check-footer {
   margin: 0;
   opacity: 0.7;
-}
-/* ----------------------------------------- */
-/*  Text Selection                           */
-/* ----------------------------------------- */
-/* Override Foundry core's universal "user-select: none". Firefox's word-extend
-   (double-click) selection breaks after interacting with a textarea when the
-   clicked text has a "user-select: none" ancestor — it produces an empty
-   selection range, which Foundry then mistakes for a token copy. Keep the
-   entire document selectable so every text selection works reliably. */
-html,
-body,
-body * {
-  -webkit-user-select: text;
-  -moz-user-select: text;
-  -ms-user-select: text;
-  user-select: text;
 }

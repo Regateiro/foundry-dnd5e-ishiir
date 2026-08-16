@@ -4,9 +4,14 @@
 /*  Text Selection                           */
 /* ----------------------------------------- */
 
-.chat-message,
-#chat-log,
-#chat-log * {
+/* Firefox's word-extend (double-click) selection produces an empty range when
+   the clicked text has a "user-select: none" ancestor (e.g. after interacting
+   with the chat textarea) — Foundry then mistakes the empty selection for a
+   token copy. Keep the entire chat subtree selectable, including the full
+   ancestor chain, without making the rest of the UI (canvas, sheets, other
+   sidebar tabs) selectable. */
+html, body, #interface, #ui-right, #sidebar, #chat, #chat-form, #chat-message,
+#chat-log, #chat-log *, .window-app.sidebar-popout, .window-app.sidebar-popout * {
   -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
