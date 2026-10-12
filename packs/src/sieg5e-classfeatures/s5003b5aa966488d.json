@@ -1,0 +1,85 @@
+{
+  "name": "Student of Death",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Your study of death grants you the following benefits.</p><p><strong>Undead Familiar.</strong> The Find Familiar spell appears in your spellbook. When you cast the spell, you choose one of the normal forms for your familiar or one of the following special forms: Skeleton or Zombie. When you choose one of the normal forms, you can choose Undead as its creature type.</p><p><strong>Necromantic Attunement.</strong> Undead creatures you control automatically succeed on Saving Throws against features from this subclass and Necromancy spells that you cast and do not take damage from them. When you cast a Necromancy spell with a spell slot, you can choose one Undead creature you control that you can see within 60 feet of yourself. The target regains hit points equal to twice the expended spell slot's level + your Intelligence modifier + half your Wizard level (rounded down).</p><p><strong>Grim Harvest.</strong> Whenever a hostile creature or an Undead creature you control dies within 60 feet of you, you can use your Reaction to regain hit points equal to your Wizard level. This feature has no effect if the hostile creature is a construct.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "s5003b5aa966488d",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1791827977088,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!s5003b5aa966488d",
+  "flags": {},
+  "sort": 0
+}

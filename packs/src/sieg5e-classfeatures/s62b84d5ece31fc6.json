@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>Any creature that you summon or create with a conjuration spell has temporary hit points equal to twice your Wizard level.</p>",
+      "value": "<p>When you cast a conjuration spell to summon or create a creature using a spell slot, that creature gains temporary hit points equal to twice your Wizard level when it first appears. While it has these temporary hit points, the creature has Resistance to every damage type except Force, Necrotic, Psychic, and Radiant.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1785969175120,
+    "modifiedTime": 1791827977088,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!s62b84d5ece31fc6",

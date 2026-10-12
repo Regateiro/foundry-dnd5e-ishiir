@@ -3,7 +3,7 @@
   "type": "feat",
   "system": {
     "description": {
-      "value": "<p>You always have the Animate Dead and Summon Undead spells prepared and they do not count against the number of your prepared spells. When you cast Animate Dead, you can target one additional corpse or pile of bones, creating another zombie or skeleton, as appropriate.</p><p>Any undead creature you control has the following additional benefits:</p><ul><li>The creature's hit point maximum is increased by an amount equal to your wizard level.</li><li>The creature adds your Proficiency bonus to its weapon damage rolls.</li></ul>",
+      "value": "<p>You always have the Animate Dead and Summon Undead spells prepared. For you, these two spells count as one spell level higher than they actually are. Whenever you start casting either spell, you can increase the spell's effective level by 1. Additionally, you can cast Animate Dead without expending a spell slot, but only to reassert control over Undead that you have raised with the spell. Once you have done so, you cannot do so again until you have finished a Short or a Long Rest.</p><p>In addition, you gain the following benefits.</p><p><strong>Undead Fortitude.</strong> Whenever you cast a Necromancy spell that creates or summons an Undead, the Undead's Hit Point maximum and current Hit Points increase by a number equal to your Wizard level.</p><p><strong>Imbued with Death.</strong> When an Undead creature you control deals damage, you can change the damage type to Necrotic. Additionally, Undead creatures controlled by you deal additional damage equal to your proficiency with their attacks and features.</p>",
       "chat": "",
       "unidentified": ""
     },
@@ -76,7 +76,7 @@
     "systemVersion": "2.4.9",
     "coreVersion": "10.303",
     "createdTime": 1777072572464,
-    "modifiedTime": 1785969175120,
+    "modifiedTime": 1791827977088,
     "lastModifiedBy": "dnd5ebuilder0000"
   },
   "_key": "!items!sd1eebb34901fd3b",

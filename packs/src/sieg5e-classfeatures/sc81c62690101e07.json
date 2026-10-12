@@ -1,0 +1,85 @@
+{
+  "name": "Lord of the Undead",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Through your mastery of the necromantic art you gain the following benefits:</p><p><strong>Death Denied.</strong> When you are reduced to 0 hit points but not killed outright, you can use your Reaction to instantly destroy an Undead within 60 feet you control and instead change your hit points to twice your Wizard level. You cannot use this feature again until you have finished a Long Rest or expend a level 5+ spell slot to use this feature again.</p><p><strong>Necrotic Rupture.</strong> Once per turn, when an Undead creature within 60 feet you control is reduced to 0 hit points, you can choose it to explode in a burst of negative energy (no action required). All creatures in a 20-feet radius of the target have to make a Dexterity Saving Throw or take 6d6 necrotic damage. On a success, they take half as much damage.</p><p><strong>Dominate Undead.</strong> Choose an Undead creature you can see within 60 feet of you. The target has to make a Charisma Saving Throw against your spell save DC. On a failure, the target falls under your control as if you had raised it with the Animate Dead spell. On a success, it is immune to this feature for the next 24 hours.</p><p>If the target's CR is equal to or higher than your level in this class, it can repeat the Saving Throw at the end of every hour, ending the effect on a success. Otherwise, this effect lasts until 24 hours have passed, you die, or use this feature again.</p><p>Additionally, you can direct all Undead created or summoned by you with the same Bonus Action (if an action cost is specified).</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "",
+    "activation": {
+      "type": "",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": null,
+      "amount": null
+    },
+    "ability": null,
+    "actionType": null,
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": null
+    }
+  },
+  "img": "icons/svg/item-bag.svg",
+  "_id": "sc81c62690101e07",
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.4.9",
+    "coreVersion": "10.303",
+    "createdTime": 1777072572464,
+    "modifiedTime": 1791827977088,
+    "lastModifiedBy": "dnd5ebuilder0000"
+  },
+  "_key": "!items!sc81c62690101e07",
+  "flags": {},
+  "sort": 0
+}
