@@ -39,6 +39,35 @@ export function getActiveRuler() {
 }
 
 /**
+ * Trim or pad a ruler's `segmentElevations` array so it matches the ruler's current segment count.
+ *
+ * PURPOSE: Keep the per-segment elevation array aligned with `ruler.segments` after the segment
+ * list changes shape — waypoints added or removed, or a remote `update()` recomputing segments
+ * from incoming waypoints.
+ *
+ * WHY NEEDED: `segments` is rebuilt from `waypoints` on every measurement step, so the two arrays
+ * can drift apart. Without this, a stale trailing elevation bleeds onto a newly created segment,
+ * and `toJSON()` ships an array whose length disagrees with the ruler being drawn.
+ *
+ * @param {Ruler} ruler The ruler instance whose elevation array should be synchronized.
+ * @returns {number[]} The synchronized elevation array.
+ */
+function syncSegmentElevations(ruler) {
+  ruler.segmentElevations ??= [];
+
+  // `segments` only exists once the ruler has measured at least once. Core leaves it undefined on a
+  // fresh Ruler, and `_addWaypoint` runs during `_onDragStart` — i.e. before the first measure() of
+  // a session, and before the first measure() after a scene change builds new Ruler instances. So
+  // it can legitimately be undefined here; there is nothing to align to yet, so leave the array be.
+  if ( !ruler.segments ) return ruler.segmentElevations;
+
+  const targetLen = ruler.segments.length;
+  if ( ruler.segmentElevations.length > targetLen ) ruler.segmentElevations.length = targetLen;
+  while ( ruler.segmentElevations.length < targetLen ) ruler.segmentElevations.push(0);
+  return ruler.segmentElevations;
+}
+
+/**
  * Adjust the current (last) ruler segment's elevation and re-render.
  * This function is called by both the mouse wheel handler and arrow key keybindings.
  *
@@ -55,18 +84,11 @@ export function getActiveRuler() {
  */
 export function adjustElevation(ruler, delta) {
   // Ensure array exists and matches segments length (truncate or pad as needed)
-  const targetLen = ruler.segments.length;
-  ruler.segmentElevations ??= [];
-  if (ruler.segmentElevations.length > targetLen) {
-    ruler.segmentElevations.length = targetLen;
-  }
-  while (ruler.segmentElevations.length < targetLen) {
-    ruler.segmentElevations.push(0);
-  }
+  const segmentElevations = syncSegmentElevations(ruler);
 
   // Adjust only the current (last) segment - that's where the user is measuring
   const lastIndex = ruler.segments.length - 1;
-  ruler.segmentElevations[lastIndex] = (ruler.segmentElevations[lastIndex] || 0) + delta;
+  segmentElevations[lastIndex] = (segmentElevations[lastIndex] || 0) + delta;
 
   // Force re-render - _drawMeasuredPath will apply elevation before drawing labels
   ruler._computeDistance(true);
@@ -83,14 +105,15 @@ export function adjustElevation(ruler, delta) {
 /**
  * Installs patches on the Ruler class to add elevation support.
  *
- * PURPOSE: Apply 7 distinct patches to Foundry's core `Ruler` prototype to enable:
+ * PURPOSE: Apply 8 distinct patches to Foundry's core `Ruler` prototype to enable:
  *   (1) Serialization of segmentElevations via toJSON()
  *   (2) Deserialization via update() for remote client sync
  *   (3) Custom labels showing distance + elevation per segment
  *   (4) Reset on ruler clear()
  *   (5) Elevation slot cleanup on waypoint removal
- *   (6) Token elevation application after moveToken()
- *   (7) Mouse wheel event handler for real-time adjustment
+ *   (6) Elevation slot growth on waypoint addition
+ *   (7) Token elevation application after moveToken()
+ *   (8) Mouse wheel event handler for real-time adjustment
  *
  * WHY NEEDED: Foundry's Ruler class has no built-in concept of vertical movement. Without these
  * patches, the ruler can only measure ground distance on a flat plane. D&D 5e combat is inherently
@@ -100,11 +123,38 @@ export function adjustElevation(ruler, delta) {
  * @param {object} gameCanvas The canvas instance
  */
 export function installRulerPatches(gameCanvas) {
-  // Guard: avoid re-patching on scene switch (canvasReady fires again).
-  if (gameCanvas._sieg5eRulerPatched) return;
+  // Install the wheel listener on this canvas view. It lives on the DOM element, so it can be
+  // (re)installed whenever the canvas is rebuilt, independently of the Ruler prototype patches.
+  // Guarded on the element itself so it is never added twice.
+  //
+  // How it works: listen for wheel events on the canvas view; if a ruler is actively measuring,
+  // scroll up (deltaY < 0) ascends and scroll down descends by one grid unit. passive: false lets
+  // preventDefault() stop the page from scrolling.
+  const wheelView = gameCanvas.app?.view;
+  if ( wheelView && !wheelView._sieg5eRulerWheel ) {
+    wheelView._sieg5eRulerWheel = true;
+    wheelView.addEventListener("wheel", event => {
+      const ruler = getActiveRuler();
+      if (!ruler) return;
+      event.preventDefault();
+      event.stopPropagation();
+      adjustElevation(ruler, event.deltaY > 0 ? -1 : 1);
+    }, { passive: false });
+  }
+
+  // Record that the installer has run against this canvas (used by callers/tests).
   gameCanvas._sieg5eRulerPatched = true;
 
-  let _wheelHandler = null;
+  // Guard: patch the Ruler prototype exactly once per page session. canvasReady fires from
+  // Canvas#draw() on every scene navigation, on Scene updates touching grid/dimensions, and on
+  // several core setting changes — and the canvas object handed to the hook is not a dependable
+  // per-page singleton marker. Every extra pass used to stack another wrapper onto the already
+  // patched prototype methods, so a single measurement applied its elevation delta once per layer
+  // (14 stacked `moveToken` wrappers moved a token 70ft for a "↑5ft" reading). The Ruler prototype
+  // is process-wide, so guard on it instead — this also covers the case where two copies of the
+  // system module are evaluated.
+  if ( Ruler.prototype._sieg5eElevationPatched ) return;
+  Ruler.prototype._sieg5eElevationPatched = true;
 
   // === Patch: Ruler.toJSON() ===
   //
@@ -141,16 +191,38 @@ export function installRulerPatches(gameCanvas) {
   const originalUpdate = Ruler.prototype.update;
   if (originalUpdate) {
     Ruler.prototype.update = function(data) {
-      // Restore elevation BEFORE calling original update
+      // Restore elevation BEFORE calling original update, so that the elevation-aware
+      // _computeDistance() invoked by core's measure() sees the correct values.
+      //
+      // Copy rather than alias: adjustElevation() mutates this array in place and
+      // _removeWaypoint() pops from it, so holding a reference to the broadcast payload would
+      // let local measurement corrupt the serialized data.
       if (data.segmentElevations) {
-        this.segmentElevations = data.segmentElevations;
+        this.segmentElevations = [...data.segmentElevations];
       }
+
+      // Core's update() sets the waypoints and then calls measure(). When the destination actually
+      // moved, measure() recomputes segments, runs _computeDistance() (elevation-aware, since we
+      // patch it), and redraws — that single pass is sufficient, so there is no need to duplicate it.
+      //
+      // But measure() early-returns when the destination is unchanged from the last measurement
+      // (docs/foundry.js:32396), before reassigning this.segments or redrawing anything. An
+      // elevation-only broadcast — the user scrolling the wheel without moving the mouse — is
+      // exactly that case, so we must drive the recompute/render ourselves or remote clients would
+      // keep showing stale elevation labels. Detect the bail-out by segment-array identity.
+      const segmentsBefore = this.segments;
       const result = originalUpdate.call(this, data);
 
-      // Force re-render - _drawMeasuredPath will apply elevation before drawing labels
-      this._computeDistance(true);
-      this.ruler.clear();
-      this._drawMeasuredPath();
+      if ( this.segments === segmentsBefore ) {
+        this._computeDistance(true);
+        this.ruler.clear();
+        this._drawMeasuredPath();
+      }
+
+      // Core rebuilds this.segments from the incoming waypoints, so re-align the elevation array
+      // with the new segment count rather than leaving stale trailing values in place.
+      syncSegmentElevations(this);
+
       return result;
     };
   }
@@ -191,10 +263,14 @@ export function installRulerPatches(gameCanvas) {
   // The ruler instance on canvas.controls.ruler needs to have segmentElevations
   // initialized before any measurement. We initialize with [0] meaning zero
   // elevation for the first (and typically only) segment.
-  const rulerInstance = globalThis.canvas.controls.ruler;
-  if (!rulerInstance) return;
-
-  rulerInstance.segmentElevations = [0];
+  //
+  // Only this line needs the *instance*; every patch above targets the Ruler prototype and the
+  // wheel listener below targets app.view. So guard it inline rather than returning early: an
+  // early return would skip the remaining prototype patches (clear, _addWaypoint, _removeWaypoint,
+  // moveToken) and the wheel listener whenever the ruler is not yet available, and the idempotency
+  // flag set above would then prevent them from ever being installed on that page.
+  const rulerInstance = globalThis.canvas.controls?.ruler;
+  if ( rulerInstance ) rulerInstance.segmentElevations = [0];
 
   // === Patch: Ruler.clear() ===
   //
@@ -211,6 +287,22 @@ export function installRulerPatches(gameCanvas) {
     };
   }
 
+  // === Patch: Ruler._addWaypoint() ===
+  //
+  // Purpose: Grow the elevation array when a waypoint is added, so the new segment it creates
+  // has its own elevation slot instead of silently borrowing a stale trailing value.
+  //
+  // Why: Ctrl+click adds a waypoint mid-measurement. measure() then rebuilds segments from
+  // waypoints, so without this the array is one element short and elevations shift by one segment.
+  const originalAddWaypoint = Ruler.prototype._addWaypoint;
+  if (originalAddWaypoint) {
+    Ruler.prototype._addWaypoint = function(point) {
+      const result = originalAddWaypoint.call(this, point);
+      syncSegmentElevations(this);
+      return result;
+    };
+  }
+
   // === Patch: Ruler._removeWaypoint() ===
   //
   // Purpose: Remove elevation slot when a waypoint is removed.
@@ -221,11 +313,20 @@ export function installRulerPatches(gameCanvas) {
   const originalRemoveWaypoint = Ruler.prototype._removeWaypoint;
   if (originalRemoveWaypoint) {
     Ruler.prototype._removeWaypoint = function(point, options) {
-      // Only pop if we have more than one segment (keep at least [0])
-      if (this.segmentElevations && this.segmentElevations.length > 1) {
-        this.segmentElevations.pop();
-      }
-      return originalRemoveWaypoint.call(this, point, options);
+      const waypointsBefore = this.waypoints.length;
+      const result = originalRemoveWaypoint.call(this, point, options);
+
+      // Core no-ops when the point is not near an existing waypoint. Only resync if one was
+      // actually removed — a blind pop would desync the array in the no-op case.
+      //
+      // Note this.segments is still the pre-removal list here (core recomputes it on the next
+      // measure()), so syncSegmentElevations may only trim here. That is the safe direction: a
+      // trailing surplus entry is ignored by _computeDistance, whereas a too-short array would
+      // shift every segment's elevation onto the wrong one.
+      if ( this.waypoints.length < waypointsBefore ) syncSegmentElevations(this);
+      else if ( !this.waypoints.length ) this.segmentElevations = [0];
+
+      return result;
     };
   }
 
@@ -236,17 +337,35 @@ export function installRulerPatches(gameCanvas) {
   // Why: When a token moves via SPACEBAR (ruler movement), if the user measured
   // with elevation, the token should end up at that elevation (or close to it).
   //
-  // How: Get cumulative elevation (sum of all segmentElevations), convert to feet,
+  // How: Sum the elevations of the segments actually being traversed, convert to feet,
   // round to nearest 5ft (standard D&D rounding), and update token's elevation.
   //
   // Note: We capture cumulativeElevation and token reference BEFORE calling
   // originalMoveToken, because segments are cleared once movement starts.
+  //
+  // Only the first `segments.length` entries are summed, because that is exactly the slice
+  // `_computeDistance()` reads when it writes the ruler label, so the applied elevation always
+  // matches the displayed one regardless of the array shape.
+  //
+  // The measured elevation is *consumed* synchronously before the move starts. Core can invoke
+  // `moveToken()` more than once for a single measurement — a held Space key repeats the
+  // `core.measuredRulerMovement` keybinding, and each repeat reaches here before the first move
+  // finishes and clears the ruler. Re-applying the same vertical delta on every invocation stacked
+  // it (a "↑5ft" reading moved the token 70ft). Resetting the array up-front means only the first
+  // invocation can apply a non-zero delta; later ones read 0.
   const originalMoveToken = Ruler.prototype.moveToken;
   if (originalMoveToken) {
     Ruler.prototype.moveToken = async function() {
       // Determine if the token is done moving
-      const cumulativeElevation = this.segmentElevations?.reduce((a, b) => a + b, 0) || 0;
+      const segmentCount = this.segments?.length ?? 0;
+      const cumulativeElevation = (this.segmentElevations || [])
+        .slice(0, segmentCount)
+        .reduce((a, b) => a + b, 0);
       const token = this._getMovementToken();
+
+      // Consume the measured elevation so it can only be applied once per measurement.
+      if ( this.segmentElevations?.length ) this.segmentElevations = [0];
+
       const doneMoving = await originalMoveToken.call(this);
 
       // Apply stored elevation delta to token after movement completes
@@ -265,36 +384,6 @@ export function installRulerPatches(gameCanvas) {
       return doneMoving;
     };
   }
-
-  // === Mouse Wheel Handler ===
-  //
-  // Purpose: Adjust elevation with mouse wheel while measuring.
-  //
-  // How it works:
-  // 1. Listen for wheel events on the canvas view
-  // 2. Check that ruler is in MEASURING state (_state === 2)
-  // 3. Determine direction: scroll up = increase, scroll down = decrease
-  // 4. Delegate to adjustElevation()
-  //
-  // Note: We use passive: false to allow preventDefault() to stop page scrolling.
-  const handleWheel = event => {
-    const ruler = getActiveRuler();
-    if (!ruler) return;
-
-    event.preventDefault();
-    event.stopPropagation();
-
-    // DeltaY > 0 means scrolling down (toward user) = descend = decrease elevation
-    // deltaY < 0 means scrolling up (away from user) = ascend = increase elevation
-    const delta = event.deltaY > 0 ? -1 : 1;
-    adjustElevation(ruler, delta);
-  };
-
-  if (_wheelHandler) {
-    gameCanvas.app.view.removeEventListener("wheel", _wheelHandler);
-  }
-  _wheelHandler = handleWheel;
-  gameCanvas.app.view.addEventListener("wheel", _wheelHandler, { passive: false });
 }
 
 /**

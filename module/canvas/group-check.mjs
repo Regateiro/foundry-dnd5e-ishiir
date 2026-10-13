@@ -1,6 +1,62 @@
 export class GroupCheckManager {
   static activeCheck = null;
 
+  /**
+   * Handle for the pending debounced world-setting write, if any.
+   * @type {number|null}
+   */
+  static #persistTimer = null;
+
+  /* -------------------------------------------------- */
+
+  /**
+   * Schedule a debounced write of the active check to the world setting.
+   *
+   * PURPOSE: Keep the tally recoverable across a client reconnect without paying a world Setting
+   * document write (DB round-trip plus a broadcast to every connected client) for every result.
+   *
+   * WHY NEEDED: A single group check can produce one result per participant, each of which
+   * previously wrote the whole payload and re-rendered the GM's tally window. Intermediate
+   * tallies have little durability value — clients reconstruct live state from the socket — so
+   * coalescing the writes and flushing on end/cancel keeps that recovery path at roughly one
+   * write per check instead of one per roll.
+   */
+  static #schedulePersist() {
+    if ( GroupCheckManager.#persistTimer ) window.clearTimeout(GroupCheckManager.#persistTimer);
+    GroupCheckManager.#persistTimer = window.setTimeout(() => GroupCheckManager.#flushPersist(), 2000);
+  }
+
+  /* -------------------------------------------------- */
+
+  /**
+   * Write any pending debounced update immediately, discarding the timer.
+   *
+   * PURPOSE: Guarantee the setting is current at the boundaries where it matters (end, cancel)
+   * rather than up to the debounce interval stale.
+   *
+   * @returns {Promise<void>|void}
+   */
+  static #flushPersist() {
+    if ( !GroupCheckManager.#persistTimer ) return;
+    window.clearTimeout(GroupCheckManager.#persistTimer);
+    GroupCheckManager.#persistTimer = null;
+    return game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+  }
+
+  /* -------------------------------------------------- */
+
+  /**
+   * Cancel a pending debounced write without performing it.
+   *
+   * PURPOSE: Stop a queued write from landing after the caller has already written the setting
+   * to its final value, which would otherwise overwrite that value.
+   */
+  static #discardPendingPersist() {
+    if ( !GroupCheckManager.#persistTimer ) return;
+    window.clearTimeout(GroupCheckManager.#persistTimer);
+    GroupCheckManager.#persistTimer = null;
+  }
+
   /* -------------------------------------------------- */
 
   static async start(skillId) {
@@ -25,7 +81,7 @@ export class GroupCheckManager {
     if ( !game.user.isGM ) return;
     if ( GroupCheckManager.activeCheck.results[actorId] ) return;
     GroupCheckManager.activeCheck.results[actorId] = { name: actorName, total };
-    await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+    GroupCheckManager.#schedulePersist();
     Hooks.callAll("dnd5e.groupCheckRefresh");
   }
 
@@ -34,10 +90,12 @@ export class GroupCheckManager {
   static async updateResult(actorId, newTotal) {
     if ( !GroupCheckManager.activeCheck ) return;
     if ( !game.user.isGM ) return;
-    if ( GroupCheckManager.activeCheck.results[actorId] ) {
-      GroupCheckManager.activeCheck.results[actorId].total = newTotal;
-      await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
-    }
+    const result = GroupCheckManager.activeCheck.results[actorId];
+    // Skip no-op writes: re-submitting an unchanged total has no effect worth persisting or
+    // re-rendering for.
+    if ( !result || result.total === newTotal ) return;
+    result.total = newTotal;
+    GroupCheckManager.#schedulePersist();
   }
 
   /* -------------------------------------------------- */
@@ -47,7 +105,7 @@ export class GroupCheckManager {
     if ( !game.user.isGM ) return;
     if ( !GroupCheckManager.activeCheck.results[actorId] ) return;
     delete GroupCheckManager.activeCheck.results[actorId];
-    await game.settings.set("dnd5e", "activeGroupCheck", GroupCheckManager.activeCheck);
+    GroupCheckManager.#schedulePersist();
     Hooks.callAll("dnd5e.groupCheckRefresh");
   }
 
@@ -76,6 +134,10 @@ export class GroupCheckManager {
       speaker: ChatMessage.getSpeaker({ alias: game.i18n.localize("DND5E.GroupCheck") })
     });
     game.socket.emit("system.dnd5e", { operation: "end", checkId: GroupCheckManager.activeCheck.id });
+
+    // Drop any debounced write before clearing, so a queued timer cannot resurrect the setting
+    // after it has been nulled out.
+    GroupCheckManager.#discardPendingPersist();
     await game.settings.set("dnd5e", "activeGroupCheck", null);
     Hooks.callAll("dnd5e.groupCheckClose");
     Hooks.callAll("dnd5e.groupCheckEnd", GroupCheckManager.activeCheck);
@@ -89,6 +151,10 @@ export class GroupCheckManager {
     if ( !game.user.isGM ) return;
     const checkId = GroupCheckManager.activeCheck.id;
     game.socket.emit("system.dnd5e", { operation: "end", checkId });
+
+    // Drop any debounced write before clearing, so a queued timer cannot resurrect the setting
+    // after it has been nulled out.
+    GroupCheckManager.#discardPendingPersist();
     await game.settings.set("dnd5e", "activeGroupCheck", null);
     Hooks.callAll("dnd5e.groupCheckClose");
     Hooks.callAll("dnd5e.groupCheckEnd", GroupCheckManager.activeCheck);
@@ -122,6 +188,10 @@ export class GroupCheckManager {
       case "result":
         if ( !game.user.isGM ) return;
         if ( !data.actorId || typeof data.total !== "number" ) return;
+        // Reject results tagged for a different check. A player who rolls at the moment the GM
+        // ends one check and starts another would otherwise have that stale total recorded
+        // against the new tally, since the emit side has no way to know the check was replaced.
+        if ( data.checkId !== GroupCheckManager.activeCheck?.id ) return;
         await GroupCheckManager.submitResult(data.actorId, data.actorName, data.total);
         break;
       case "end":

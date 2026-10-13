@@ -30,6 +30,24 @@ export default class Token5e extends Token {
    */
   static lastMoved = new Map();
 
+  /**
+   * Drop cached movement timestamps for tokens that no longer exist.
+   *
+   * PURPOSE: Keep `lastMoved` bounded to the tokens actually present on the active scene.
+   *
+   * WHY NEEDED: `lastMoved` is a static Map keyed by token ID with no eviction path, so entries
+   * for deleted tokens — and tokens belonging to scenes that are no longer rendered — would
+   * otherwise accumulate for the lifetime of the client. `sortTokens()` reads this map on every
+   * token-vs-token comparison, so it is on the z-ordering hot path as well as a memory concern.
+   */
+  static pruneLastMoved() {
+    const liveIds = new Set();
+    for ( const token of (canvas?.scene?.tokens ?? []) ) liveIds.add(token.id);
+    for ( const id of Token5e.lastMoved.keys() ) {
+      if ( !liveIds.has(id) ) Token5e.lastMoved.delete(id);
+    }
+  }
+
   /** @inheritdoc */
   _drawBar(number, bar, data) {
     if ( data.attribute === "attributes.hp" ) return this._drawHPBar(number, bar, data);
@@ -117,10 +135,26 @@ export default class Token5e extends Token {
     const positionChanged = Object.hasOwn(data, "x") || Object.hasOwn(data, "y");
     if ( positionChanged ) {
       Token5e.lastMoved.set(this.document.id, Date.now());
-      globalThis.canvas.primary.sortChildren();
-      globalThis.canvas.tokens?.objects?.sortChildren();
+
+      // Guard the whole canvas access: _onUpdate can fire before the canvas has drawn (e.g. during
+      // initial scene load), and canvas.primary is the deepest of these accesses.
+      const primary = globalThis.canvas?.primary;
+      if ( primary ) primary.sortChildren();
+      globalThis.canvas?.tokens?.objects?.sortChildren();
     }
     return super._onUpdate(...args);
+  }
+
+  /* -------------------------------------------- */
+
+  /** @inheritdoc */
+  _onDelete(...args) {
+    // Evict this token's movement timestamp so `lastMoved` does not grow without bound.
+    // Note core only dispatches this while the token is rendered (docs/foundry.js:12378), so this
+    // is an immediate-cleanup fast path; pruneLastMoved() on canvasReady is what guarantees the
+    // map stays bounded, including for tokens deleted while off-canvas.
+    Token5e.lastMoved.delete(this.document?.id);
+    return super._onDelete(...args);
   }
 
   /* -------------------------------------------- */

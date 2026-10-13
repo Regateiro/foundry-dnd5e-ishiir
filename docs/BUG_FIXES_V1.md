@@ -616,34 +616,49 @@ onChange: rule => {
 
 ## LOW
 
-### 22. Stale wheel listener on `app.view` if canvas recreated
+### 22. `installRulerPatches` re-patches `Ruler.prototype` on every `canvasReady`
 
-**File**: `module/canvas/ruler-elevation.mjs:104,290`
+**File**: `module/canvas/ruler-elevation.mjs` (`installRulerPatches`)
 
 ```js
 if (gameCanvas._sieg5eRulerPatched) return;
 gameCanvas._sieg5eRulerPatched = true;
-// ...
-gameCanvas.app.view.addEventListener("wheel", handleWheel, { passive: false });
+// ... Ruler.prototype.toJSON = wrapper; ...; Ruler.prototype.moveToken = wrapper;
 ```
 
-**Note**: This issue is **theoretical only**. Foundry VTT destroys the entire `Canvas` instance (including its associated `app.view` DOM element) when recreating the canvas on scene switch. `canvasReady` fires with a new `Canvas` object where `_sieg5eRulerPatched` is `undefined`, so the guard passes and a new listener is attached to the new `app.view`. The old detached DOM element is garbage collected. No real scenario in current Foundry v10-v11 causes a mid-session `app.view` swap on the same Canvas instance.
+**Problem**: Foundry re-creates the `Canvas` instance on scene navigation, so `canvasReady`
+fires with a **new** `Canvas` object whose `_sieg5eRulerPatched` is `undefined`. The guard
+therefore passes again and every prototype patch is applied a second time. Because each patch
+captures `Ruler.prototype[name]` as its `originalX`, the wrappers **chain**: one
+`moveToken` call walks N nested wrappers, and each wrapper applies the measured elevation
+delta. With 14 scene loads in a session, a single "↑5ft" reading moved the token **70ft**
+(14 × 5). This was originally recorded here as "theoretical only" for the wheel listener; the
+prototype-wrapper stacking is the real, user-visible consequence.
 
-**Fix** (defensive only): Store a reference to the handler and manage it explicitly:
+**Fix**: Patch the prototype **once per page session** by guarding on the prototype itself (a
+process-wide singleton) instead of on the passed canvas. Install the wheel listener separately,
+guarded on the DOM element so it is added once per view:
 ```js
-let _wheelHandler = null;
-
-// In installRulerPatches, before addEventListener:
-if (_wheelHandler) {
-  gameCanvas.app.view.removeEventListener("wheel", _wheelHandler);
+const wheelView = gameCanvas.app?.view;
+if ( wheelView && !wheelView._sieg5eRulerWheel ) {
+  wheelView._sieg5eRulerWheel = true;
+  wheelView.addEventListener("wheel", ...);
 }
-_wheelHandler = handleWheel;
-gameCanvas.app.view.addEventListener("wheel", _wheelHandler, { passive: false });
+
+gameCanvas._sieg5eRulerPatched = true; // still recorded for callers/tests
+if ( Ruler.prototype._sieg5eElevationPatched ) return;
+Ruler.prototype._sieg5eElevationPatched = true;
+// ... prototype patches ...
 ```
 
-**Risk**: Near-zero. The guard flag still prevents duplicate attachment in normal operation. If `_wheelHandler` somehow holds a stale reference (impossible under normal flow), `removeEventListener` on a non-existent handler is a no-op. This fix adds robustness for edge-case scenarios (hot-reload, canvas backend swap) without affecting normal behavior.
+**Risk**: Low. The prototype patch now happens exactly once; the wheel listener still attaches
+to each freshly-created canvas view. Additionally, the elevation delta is consumed synchronously
+at the top of the patched `moveToken` (and summed only over `segments.length`), so even a single
+stray repeated invocation cannot re-apply it.
 **Decision**: [X] Implement  [ ] Reject  [ ] Defer
 **Notes**:
+- Reproduced in a headless harness: 14 distinct canvas objects → 14 stacked `moveToken`
+  wrappers → +70ft before, +5ft after.
 - Test using the pi-agent-browser
 
 ---
@@ -1340,16 +1355,17 @@ The doc describes Armor Mastery as "recovering temporary HP during rests." The a
 
 | Pri | Issue | Effort | Impact |
 |-----|-------|--------|--------|
-| 1 | **#2** Enrichers average damage NaN | 2 lines | All inline damage tooltips show NaN |
-| 2 | **#3, #20, #6** HP bar / getHPColor div-by-zero (×5: temp, color, armor, tempmax, getHPColor) | 4 lines | Broken token HP bar + color corruption |
-| 3 | **#4** Group check concurrent start | 1 line | Duplicate checks, state corruption |
-| 4 | **#5** 5105 distance formula overcounts | 3 lines | Excessive movement costs |
-| 5 | **#7, #18-19, #30-31, #34-35** Unawaited promises (16× await) | ~16× `await` | Possible state loss on crash |
-| 6 | **#14, #16-17, #21, #24, #11,G,H** Null guards (grid ×4, rest checkboxes, druidLevel, onChange, grid.type, ability-template, _drawHPBar, _computeDistance, _getSegmentLabel, grid.parent read) | 1-2 lines each | Potential crashes on edge cases |
-| 7 | **#27** simplifyRollFormula no return after catch | 1 line | Crash on invalid formula |
-| 8 | **#37, #40, #8** Division-by-zero guards (group sheet, hit die anim, vehicle cargo) | 1 line each | NaN display / misleading pct |
-| 9 | **#16-17** Data integrity (MappingField mutation, FP edge case) | varies | Subtle data bugs |
-| 10 | **#22-25, #38** Low severity / edge cases | varies | Edge cases, maintainability |
+| 1 | **#22** `installRulerPatches` re-patches `Ruler.prototype` when `canvasReady` hands back a new canvas | guard on prototype | One "↑5ft" reading moved the token +70ft |
+| 2 | **#2** Enrichers average damage NaN | 2 lines | All inline damage tooltips show NaN |
+| 3 | **#3, #20, #6** HP bar / getHPColor div-by-zero (×5: temp, color, armor, tempmax, getHPColor) | 4 lines | Broken token HP bar + color corruption |
+| 4 | **#4** Group check concurrent start | 1 line | Duplicate checks, state corruption |
+| 5 | **#5** 5105 distance formula overcounts | 3 lines | Excessive movement costs |
+| 6 | **#7, #18-19, #30-31, #34-35** Unawaited promises (16× await) | ~16× `await` | Possible state loss on crash |
+| 7 | **#14, #16-17, #21, #24, #11,G,H** Null guards (grid ×4, rest checkboxes, druidLevel, onChange, grid.type, ability-template, _drawHPBar, _computeDistance, _getSegmentLabel, grid.parent read) | 1-2 lines each | Potential crashes on edge cases |
+| 8 | **#27** simplifyRollFormula no return after catch | 1 line | Crash on invalid formula |
+| 9 | **#37, #40, #8** Division-by-zero guards (group sheet, hit die anim, vehicle cargo) | 1 line each | NaN display / misleading pct |
+| 10 | **#16-17** Data integrity (MappingField mutation, FP edge case) | varies | Subtle data bugs |
+| 11 | **#23-25, #38** Low severity / edge cases | varies | Edge cases, maintainability |
 | — | **#28-29** Math.clamped arg order | N/A | **FALSE POSITIVES** — no bug exists |
 | — | **I,J,D** Doc mismatches (SIEG5E_FEATURES.md token sort + armor mastery + 5105 formula) | N/A | **DOCS** — inaccurate but no code impact |
 
@@ -1385,7 +1401,7 @@ All items marked **[X] Implement** were implemented and validated against the li
 | 19 | Unawaited `migrations.migrateWorld()` in ready hook | Source diff: `await` added; ready hook made `async` | ✅ |
 | 20 | `_drawHPBar` `tempmax < 0` branch div-by-zero | Source diff: `max > 0 ? (max+tempmax)/max : 0` guard | ✅ |
 | 21 | Missing `canvas.grid` null guard in diagonalMovement onChange | Source diff: `if (canvas.grid)` guard + `canvas.grid?.parent` optional chaining | ✅ |
-| 22 | Stale wheel listener on `app.view` if canvas recreated | Source diff: `_wheelHandler` reference with remove/add pattern | ✅ |
+| 22 | `installRulerPatches` re-patches `Ruler.prototype` on canvas recreation (stacked `moveToken` wrappers) | Source diff: prototype guard `Ruler.prototype._sieg5eElevationPatched` + per-view wheel guard; headless harness: 14 distinct canvases → +5ft (was +70ft) | ✅ |
 | 23 | Redundant `.bind()` on `sortChildren` override | Source diff: `.bind(tokensObjects)` removed | ✅ |
 | 24 | setupRulerElevation missing null guard on `grid.parent` (write) | Source diff: `if (gameCanvas.grid?.parent)` guard | ✅ |
 | 25 | GroupCheckApplication constructor hooks never cleaned up | Source diff: `#hooksRegistered` static flag prevents duplicate registration | ✅ |

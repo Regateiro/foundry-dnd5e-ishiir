@@ -388,29 +388,48 @@ Hooks.on("canvasReady", gameCanvas => {
  * Without this, combat becomes confusing: a Tiny Fey hiding behind a Huge Dragon would be completely
  * occluded, and players wouldn't know which of their characters are currently active.
  */
-  const PrimaryCanvasGroup = globalThis.canvas.primary.constructor;
+  // Override (1) must be installed exactly once per page.
+  //
+  // `_sortObjects` is a *static* on the PrimaryCanvasGroup class, and that class outlives any
+  // individual scene draw: groups are constructed once in Canvas#initialize() and bound
+  // non-writable onto the canvas, and Canvas#tearDown() only clears their children.
+  //
+  // canvasReady, by contrast, fires from Canvas#draw() — i.e. once per scene navigation, once
+  // per Scene update touching grid/dimensions/embedded collections, and on several core setting
+  // changes. Re-running this block would capture our own wrapper as `originalSort`, adding one
+  // comparison layer per redraw for every non-token pair (walls, tiles, lights, drawings), and
+  // would permanently clobber any other module's patch of this static.
+  if ( !gameCanvas._sieg5eTokenSortPatched ) {
+    gameCanvas._sieg5eTokenSortPatched = true;
+    const PrimaryCanvasGroup = globalThis.canvas.primary.constructor;
 
-  // Store the original Foundry sort function so we can fall back to it for non-tokens.
-  const originalSort = PrimaryCanvasGroup._sortObjects;
+    // Store the original Foundry sort function so we can fall back to it for non-tokens.
+    const originalSort = PrimaryCanvasGroup._sortObjects;
 
-  // Override _sortObjects to intercept token sorting and use our custom logic.
-  // This method is called by Foundry whenever objects on the canvas need to be sorted
-  // (e.g., for z-index ordering). We check if both objects are TokenMesh instances
-  // and if they have valid documents before applying our custom sort order.
-  PrimaryCanvasGroup._sortObjects = (a, b) => {
-    const aIsToken = a.constructor.name === "TokenMesh";
-    const bIsToken = b.constructor.name === "TokenMesh";
+    // Override _sortObjects to intercept token sorting and use our custom logic.
+    // This method is called by Foundry whenever objects on the canvas need to be sorted
+    // (e.g., for z-index ordering). We check if both objects are TokenMesh instances
+    // and if they have valid documents before applying our custom sort order.
+    PrimaryCanvasGroup._sortObjects = (a, b) => {
+      const aIsToken = a.constructor.name === "TokenMesh";
+      const bIsToken = b.constructor.name === "TokenMesh";
 
-    // Only apply custom sorting when both objects are tokens with valid documents.
-    // Otherwise, fall back to the original Foundry sorting behavior.
-    if (aIsToken && bIsToken && a.document && b.document) {
-      return dnd5e.canvas.Token5e.sortTokens(a.document.object, b.document.object);
-    }
+      // Only apply custom sorting when both objects are tokens with valid documents.
+      // Otherwise, fall back to the original Foundry sorting behavior.
+      if (aIsToken && bIsToken && a.document && b.document) {
+        return dnd5e.canvas.Token5e.sortTokens(a.document.object, b.document.object);
+      }
 
-    return originalSort.call(PrimaryCanvasGroup, a, b);
-  };
+      return originalSort.call(PrimaryCanvasGroup, a, b);
+    };
+  }
 
   // --- TokenLayer objects container sorting override ---
+  //
+  // Unlike the static above, this one IS re-installed on every canvasReady, and deliberately so:
+  // PlaceableObjectLayer._draw() creates a fresh `objects` container on each draw and assigns
+  // core's `_sortObjectsByElevation` to it, and _draw() runs before canvasReady. So the freshly
+  // created container always needs re-overriding. The old container is discarded and collected.
   //
   // Purpose: Override _sortObjectsByElevation (set by core when elevationSorting is true)
   // so that same-elevation tokens are sorted by our custom z-order rules instead of
@@ -427,6 +446,10 @@ Hooks.on("canvasReady", gameCanvas => {
 
   // Force an immediate sort of all objects on the canvas (cascades through children).
   globalThis.canvas.primary.sortChildren();
+
+  // Drop movement timestamps for tokens belonging to scenes that are no longer rendered, so the
+  // static map stays bounded across scene navigation.
+  dnd5e.canvas.Token5e.pruneLastMoved();
 
   /**
    * CanvasReady Hook: Ruler Elevation Support Setup

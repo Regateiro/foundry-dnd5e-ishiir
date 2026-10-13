@@ -1006,9 +1006,15 @@ export default class Actor5e extends SystemDocumentMixin(Actor) {
     const updates = {
       "system.attributes.hp.armor": newAHP,
       "system.attributes.hp.temp": newTHP,
-      "system.attributes.hp.value": newHP,
-      "system.resources.legres.value": newFP
+      "system.attributes.hp.value": newHP
     };
+
+    // Fortitude Points are an NPC-only mechanic, so `fp` is undefined for characters (whose
+    // `resources` schema has only primary/secondary/tertiary — see
+    // module/data/actor/character.mjs). Only include the path when the field actually exists:
+    // SchemaField#_cleanType silently drops unknown keys, so sending it costs a dead entry in
+    // every character damage update and reports a meaningless delta.
+    if ( fp ) updates["system.resources.legres.value"] = newFP;
 
     // Delegate damage application to a hook
     // TODO replace this in the future with a better modifyTokenAttribute function in the core

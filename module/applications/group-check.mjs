@@ -77,7 +77,10 @@ export default class GroupCheckApplication extends Application {
     html.find(".start-check").click(this._onStartCheck.bind(this));
     html.find(".end-check").click(this._onEndCheck.bind(this));
     html.find(".cancel-check").click(this._onCancel.bind(this));
-    html.find("input[data-actor-id]").on("change blur", this._onEditResult.bind(this));
+    // Bind "change" only, not "change blur": jQuery fires change during the blur sequence and
+    // then blur, so binding both invoked the handler twice per edit. change alone still covers
+    // both blur-after-edit and Enter.
+    html.find("input[data-actor-id]").on("change", this._onEditResult.bind(this));
     html.find(".remove-actor").click(this._onRemoveActor.bind(this));
   }
 

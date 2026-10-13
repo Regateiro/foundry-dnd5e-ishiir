@@ -197,6 +197,17 @@ export default class AbilityTemplate extends MeasuredTemplate {
 
   /**
    * Cancel placement when the right mouse button is clicked.
+   *
+   * The rejection below is deliberately argument-less, and that is load-bearing: callers surface
+   * failures via `Hooks.onError(..., {notify: "error"})`, which returns immediately for anything
+   * that is not an `instanceof Error` (docs/foundry.js:745). Rejecting with `undefined` is
+   * therefore what keeps a user-initiated cancel from producing an error notification.
+   *
+   * Do not "improve" this to `reject(new Error("Cancelled"))` without also adding a sentinel that
+   * the callers filter on — doing so would make every right-click cancel raise an error toast.
+   * Genuine failures (e.g. createEmbeddedDocuments rejecting in _onConfirmPlacement) still carry a
+   * real Error and notify correctly.
+   *
    * @param {Event} event  Triggering mouse event.
    */
   async _onCancelPlacement(event) {
