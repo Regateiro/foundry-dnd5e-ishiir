@@ -5,7 +5,8 @@
  * Features:
  * - Mouse wheel or arrow keys (↑/↓) to adjust elevation per segment
  * - Display cumulative distance and elevation in ruler labels
- * - Apply elevation to token after movement (rounded to nearest 5ft)
+ * - Move every selected token along the measured path (core moves only one)
+ * - Apply elevation to every moved token (rounded to nearest 5ft)
  * - Support for all diagonal movement rules (555, 5105, EUCL)
  * - Sync elevation to other connected clients via broadcastActivity
  *
@@ -103,6 +104,38 @@ export function adjustElevation(ruler, delta) {
 }
 
 /**
+ * Collect every token that a ruler movement should move.
+ *
+ * PURPOSE: Core's `Ruler#_getMovementToken()` returns a *single* token — the controlled token whose
+ * footprint contains the ruler origin. This helper widens that to the whole selection so a ruler
+ * move behaves like dragging one selected token: everything selected travels the same path.
+ *
+ * WHY NEEDED: Without it, measuring a path with several tokens selected silently moved only the
+ * token under the origin, which is surprising for GMs moving squads or mounted pairs.
+ *
+ * The origin-on-a-token rule is preserved deliberately: measuring from empty ground must not
+ * teleport a selection that happens to be selected elsewhere on the canvas.
+ *
+ * @param {Ruler} ruler The ruler whose origin determines which tokens are eligible.
+ * @returns {Token[]} The tokens to move, in selection order. Empty when none are eligible.
+ */
+function getMovementTokens(ruler) {
+  const origin = ruler.waypoints?.[0];
+  if ( !origin ) return [];
+  const containsOrigin = token => new PIXI.Rectangle(token.x - 1, token.y - 1, token.w + 2, token.h + 2)
+    .contains(origin.x, origin.y);
+
+  // A selection only moves when the measurement starts on one of the selected tokens. When it does,
+  // every selected token moves — each keeping its own offset from the ruler origin, exactly like a
+  // multi-token drag.
+  const controlled = canvas.tokens.controlled;
+  if ( controlled.length ) return controlled.some(containsOrigin) ? [...controlled] : [];
+
+  // No selection: fall back to the user's assigned character, matching core's `_getMovementToken()`.
+  return (game.user.character?.getActiveTokens() ?? []).filter(containsOrigin);
+}
+
+/**
  * Installs patches on the Ruler class to add elevation support.
  *
  * PURPOSE: Apply 8 distinct patches to Foundry's core `Ruler` prototype to enable:
@@ -112,7 +145,7 @@ export function adjustElevation(ruler, delta) {
  *   (4) Reset on ruler clear()
  *   (5) Elevation slot cleanup on waypoint removal
  *   (6) Elevation slot growth on waypoint addition
- *   (7) Token elevation application after moveToken()
+ *   (7) Multi-token movement with elevation application in moveToken()
  *   (8) Mouse wheel event handler for real-time adjustment
  *
  * WHY NEEDED: Foundry's Ruler class has no built-in concept of vertical movement. Without these
@@ -332,56 +365,78 @@ export function installRulerPatches(gameCanvas) {
 
   // === Patch: Ruler.moveToken() ===
   //
-  // Purpose: Apply cumulative elevation to token after movement.
+  // Purpose: Move every selected token along the measured path, and apply the cumulative measured
+  // elevation to each of them once the movement completes.
   //
-  // Why: When a token moves via SPACEBAR (ruler movement), if the user measured
-  // with elevation, the token should end up at that elevation (or close to it).
+  // Why: Core's `moveToken()` resolves a single token via `_getMovementToken()` (the controlled
+  // token under the ruler origin), so a multi-token selection only ever moved one token. This
+  // replacement animates the whole selection simultaneously and applies the vertical delta to all
+  // of them.
   //
-  // How: Sum the elevations of the segments actually being traversed, convert to feet,
-  // round to nearest 5ft (standard D&D rounding), and update token's elevation.
-  //
-  // Note: We capture cumulativeElevation and token reference BEFORE calling
-  // originalMoveToken, because segments are cleared once movement starts.
-  //
-  // Only the first `segments.length` entries are summed, because that is exactly the slice
-  // `_computeDistance()` reads when it writes the ruler label, so the applied elevation always
-  // matches the displayed one regardless of the array shape.
+  // How: The elevation is summed over the segments actually being traversed, converted to feet,
+  // and rounded to the nearest 5ft (standard D&D rounding). Only the first `segments.length`
+  // entries are summed, because that is exactly the slice `_computeDistance()` reads when it writes
+  // the ruler label, so the applied elevation always matches the displayed one regardless of the
+  // array shape.
   //
   // The measured elevation is *consumed* synchronously before the move starts. Core can invoke
   // `moveToken()` more than once for a single measurement — a held Space key repeats the
   // `core.measuredRulerMovement` keybinding, and each repeat reaches here before the first move
   // finishes and clears the ruler. Re-applying the same vertical delta on every invocation stacked
   // it (a "↑5ft" reading moved the token 70ft). Resetting the array up-front means only the first
-  // invocation can apply a non-zero delta; later ones read 0.
-  const originalMoveToken = Ruler.prototype.moveToken;
-  if (originalMoveToken) {
+  // invocation can apply a non-zero delta; later ones read 0. The MOVING-state guard below stops
+  // those repeats from re-animating the group on top of itself.
+  if ( Ruler.prototype.moveToken ) {
     Ruler.prototype.moveToken = async function() {
-      // Determine if the token is done moving
+      if ( game.paused && !game.user.isGM ) {
+        ui.notifications.warn("GAME.PausedWarning", { localize: true });
+        return false;
+      }
+      if ( !this.visible || !this.destination ) return false;
+
+      // A movement is already in flight — ignore keybinding repeats rather than restarting it.
+      if ( this._state === Ruler.STATES.MOVING ) return false;
+
+      const tokens = getMovementTokens(this);
+      if ( !tokens.length ) return false;
+
+      // Test collision for every token so the selection never splits up: if any path is blocked,
+      // the whole group stays put and the same error core raises is shown.
+      for ( const token of tokens ) {
+        const hasCollision = this.segments.some(s => token.checkCollision(s.ray.B, {
+          origin: s.ray.A, type: "move", mode: "any"
+        }));
+        if ( hasCollision ) {
+          ui.notifications.error("ERROR.TokenCollide", { localize: true, console: false });
+          return false;
+        }
+      }
+
       const segmentCount = this.segments?.length ?? 0;
       const cumulativeElevation = (this.segmentElevations || [])
         .slice(0, segmentCount)
         .reduce((a, b) => a + b, 0);
-      const token = this._getMovementToken();
 
       // Consume the measured elevation so it can only be applied once per measurement.
       if ( this.segmentElevations?.length ) this.segmentElevations = [0];
 
-      const doneMoving = await originalMoveToken.call(this);
+      // Animate every token at the same time, each along the same measured path. Core offsets each
+      // token's destination by its own position relative to the ruler origin, so relative spacing
+      // is preserved.
+      await Promise.all(tokens.map(token => this._animateMovement(token)));
+      this._endMeasurement();
 
-      // Apply stored elevation delta to token after movement completes
-      if (doneMoving) {
-        // Apply elevation delta to token after movement completes
-        if (token && cumulativeElevation !== 0) {
-          const gridDistance = getGridDistance();
-          const elevationDelta = cumulativeElevation * gridDistance;
-          // Round to nearest 5ft (D&D standard)
-          const roundedElevationDelta = Math.ceil(elevationDelta / 5) * 5;
-          await token.document.update({ elevation: token.document.elevation + roundedElevationDelta });
-        }
+      if ( cumulativeElevation !== 0 ) {
+        const gridDistance = getGridDistance();
+        const elevationDelta = cumulativeElevation * gridDistance;
+        // Round to nearest 5ft (D&D standard)
+        const roundedElevationDelta = Math.ceil(elevationDelta / 5) * 5;
+        await Promise.all(tokens.map(token => token.document.update({
+          elevation: token.document.elevation + roundedElevationDelta
+        })));
       }
 
-      // Return the original result
-      return doneMoving;
+      return true;
     };
   }
 }

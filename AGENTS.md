@@ -261,10 +261,14 @@ Adds vertical movement tracking to Foundry's ruler tool: mouse wheel / arrow key
 │      segment.text = _getSegmentLabel(segment) → "25ft > 75ft | ↑20ft" |
 │                                                                       │
 │  Ruler.moveToken() patched:                                           │
+│    tokens = getMovementTokens(ruler)                                  │
+│      → all controlled tokens if the ruler origin is on one of them    │
+│      → else game.user.character.getActiveTokens() under the origin    │
 │    cumulativeElev = sum(segmentElevations[])                          │
 │    elevationDeltaFeet = cumulativeElev × gridDistance                 │
 │    rounded = ceil(elevationDelta / 5) * 5                             │
-│    await token.document.update({ elevation: +rounded })               │
+│    await Promise.all(tokens.map(t => t.document.update(               │
+│      { elevation: t.document.elevation + rounded })))                 │
 │                                                                       │
 └───────────────────────────────────────────────────────────────────────┘
 
@@ -290,7 +294,7 @@ Remote Sync Flow:
 - **`Ruler.prototype._getSegmentLabel(segment)`** — `[Foundry: Ruler._getSegmentLabel]` in `docs/foundry.js`. Replaced entirely for elevation-aware labels.
 - **`Ruler.prototype.clear()`** — `[Foundry: Ruler.clear]` in `docs/foundry.js`. Patched to reset segmentElevations to [0].
 - **`Ruler.prototype._removeWaypoint(point, options)`** — `[Foundry: Ruler._removeWaypoint]` in `docs/foundry.js`. Patched to pop corresponding elevation slot.
-- **`Ruler.prototype.moveToken()`** — `[Foundry: Ruler.moveToken]` in `docs/foundry.js. Patched to apply cumulative elevation delta after movement completes.
+- **`Ruler.prototype.moveToken()`** — `[Foundry: Ruler.moveToken]` in `docs/foundry.js. Patched to move every eligible token along the measured path and apply the cumulative elevation delta (rounded to nearest 5ft) to each after movement completes. Core's `_getMovementToken()` returns a single token, so a multi-token selection only moved one.
 - **`InterfaceCanvasGroup._sortObjectsByElevation`** — Set by core when elevation sorting is enabled; overridden via `canvas.tokens.objects.sortChildren`.
 
 ---
@@ -765,7 +769,7 @@ See the **Custom Functionality** section above for full data flows and documenta
 | `Ruler.prototype._getSegmentLabel(segment)` | `ruler-elevation.mjs:installRulerPatches()` line ~128 | Custom label format: "distance > cumDistance | ↑/↓elevation" with units |
 | `Ruler.prototype.clear()` | `ruler-elevation.mjs:installRulerPatches()` line ~150 | Reset segmentElevations to [0] on ruler cancelation |
 | `Ruler.prototype._removeWaypoint(point, options)` | `ruler-elevation.mjs:installRulerPatches()` line ~162 | Pop corresponding elevation slot when waypoint removed |
-| `Ruler.prototype.moveToken()` | `ruler-elevation.mjs:installRulerPatches()` line ~178 | Apply cumulative elevation delta (rounded to nearest 5ft) after movement completes |
+| `Ruler.prototype.moveToken()` | `ruler-elevation.mjs:installRulerPatches()` line ~178 | Move every selected token along the path (core moves only one) and apply the cumulative elevation delta (rounded to nearest 5ft) to each |
 | Mouse wheel handler on canvas.app.view | `ruler-elevation.mjs:installRulerPatches()` line ~209 | Scroll up = ascend, scroll down = descend; prevents page scrolling via passive:false |
 | Arrow key bindings (↑/↓ + Numpad8/2) | `ruler-elevation.mjs:registerElevationKeybindings()` | PRIORITY precedence overrides core pan bindings during ruler measurement |
 | `canvas.grid.measureDistances` | `grid.mjs` | Per-segment distance with PHB(5-5-5), DMG(5/10/5), Euclidean diagonal rules |
@@ -782,7 +786,9 @@ Refer to **`docs/foundry.js`** for the following core classes when modifying pat
 | `Ruler._getSegmentLabel(segment)` | `[Foundry: Ruler._getSegmentLabel]` | Custom ruler labels |
 | `Ruler.clear()` | `[Foundry: Ruler.clear]` | Elevation reset on cancel |
 | `Ruler._removeWaypoint(point, options)` | `[Foundry: Ruler._removeWaypoint]` | Waypoint elevation cleanup |
-| `Ruler.moveToken()` | `[Foundry: Ruler.moveToken]` | Token vertical position after movement |
+| `Ruler.moveToken()` | `[Foundry: Ruler.moveToken]` | Multi-token movement + vertical position after movement |
+| `Ruler._getMovementToken()` | `[Foundry: Ruler._getMovementToken]` | Core's single-token resolver (superseded by `getMovementTokens()` in `ruler-elevation.mjs`) |
+| `Ruler._animateMovement(token)` | `[Foundry: Ruler._animateMovement]` | Per-token path animation, reused once per selected token |
 | `InterfaceCanvasGroup._sortObjectsByElevation` | `[Foundry: InterfaceCanvasGroup._sortObjectsByElevation]` | Elevation-aware token sorting trigger |
 | `UserActivity._handleUserActivity(data)` | `[Foundry: UserActivity._handleUserActivity]` | Remote ruler state propagation |
 | `InterfaceCanvasGroup.updateRuler(user, data)` | `[Foundry: InterfaceCanvasGroup.updateRuler]` | Ruler update from remote client |
